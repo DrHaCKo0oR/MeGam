@@ -1,0 +1,177 @@
+[
+ {
+  "name": "aqar-list-masif",
+  "status": 200,
+  "len": 419022,
+  "final_url": "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D8%B5%D9%8A%D9%81",
+  "content_type": "text/html; charset=utf-8",
+  "server": "cloudflare",
+  "detail": {
+   "url": "https://sa.aqar.fm/شقق-للإيجار/الرياض/شمال-الرياض/حي-المصيف/شارع-الحسين-بن-علي-حي-المصيف-مدينة-الرياض-منطقة-الرياض-6708521",
+   "status": 200,
+   "len": 278359
+  }
+ },
+ {
+  "name": "aqar-list-masif-p2",
+  "status": 200,
+  "len": 401725,
+  "final_url": "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D8%B5%D9%8A%D9%81/2",
+  "content_type": "text/html; charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "aqar-list-masif-q2",
+  "status": 200,
+  "len": 419121,
+  "final_url": "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D8%B5%D9%8A%D9%81?page=2",
+  "content_type": "text/html; charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "aqar-list-north",
+  "status": 200,
+  "len": 472665,
+  "final_url": "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+  "content_type": "text/html; charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "aqar-floor-masif",
+  "status": 200,
+  "len": 319451,
+  "final_url": "https://sa.aqar.fm/%D8%AF%D9%88%D8%B1-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D8%B5%D9%8A%D9%81",
+  "content_type": "text/html; charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "aqar-graphql-get",
+  "status": 400,
+  "len": 96,
+  "final_url": "https://sa.aqar.fm/graphql",
+  "content_type": "application/json; charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "haraj-masif-tag",
+  "status": 200,
+  "len": 14236,
+  "final_url": "https://graphql.haraj.com.sa/?queryName=posts&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+  "content_type": "application/json; charset=UTF-8",
+  "server": "Apache/2.4.68 (Debian)"
+ },
+ {
+  "name": "haraj-near-latlng",
+  "status": 200,
+  "len": 44663,
+  "final_url": "https://graphql.haraj.com.sa/?queryName=posts&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+  "content_type": "application/json; charset=UTF-8",
+  "server": "Apache/2.4.68 (Debian)"
+ },
+ {
+  "name": "haraj-near-geohash",
+  "status": 200,
+  "len": 44417,
+  "final_url": "https://graphql.haraj.com.sa/?queryName=posts&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+  "content_type": "application/json; charset=UTF-8",
+  "server": "Apache/2.4.68 (Debian)"
+ },
+ {
+  "name": "haraj-riyadh-images",
+  "status": 200,
+  "len": 112897,
+  "final_url": "https://graphql.haraj.com.sa/?queryName=posts&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+  "content_type": "application/json; charset=UTF-8",
+  "server": "Apache/2.4.68 (Debian)"
+ },
+ {
+  "name": "haraj-floor-riyadh",
+  "status": 200,
+  "len": 52399,
+  "final_url": "https://graphql.haraj.com.sa/?queryName=posts&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+  "content_type": "application/json; charset=UTF-8",
+  "server": "Apache/2.4.68 (Debian)"
+ },
+ {
+  "name": "pf-north",
+  "status": 200,
+  "len": 1200626,
+  "final_url": "https://www.propertyfinder.sa/ar/%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA-%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1.html",
+  "content_type": "text/html; charset=utf-8",
+  "server": "istio-envoy",
+  "detail": {
+   "url": "https://www.propertyfinder.sa/ar/plp/rent/apartment-for-rent-ar-riyadh-king-fahd-51460177.html",
+   "status": 200,
+   "len": 413729
+  }
+ },
+ {
+  "name": "pf-north-p2",
+  "status": 404,
+  "len": 675725,
+  "final_url": "https://www.propertyfinder.sa/ar/%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1-%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.html?page=2",
+  "content_type": "text/html; charset=utf-8",
+  "server": "istio-envoy"
+ },
+ {
+  "name": "pf-api-count",
+  "status": 200,
+  "len": 3,
+  "final_url": "https://www.propertyfinder.sa/api/pwa/property/count?locale=ar&filters.category_id=2&filters.furnished=all",
+  "content_type": "application/json; charset=utf-8",
+  "server": "istio-envoy"
+ },
+ {
+  "name": "opensooq-riyadh",
+  "status": 200,
+  "len": 466082,
+  "final_url": "https://sa.opensooq.com/ar/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1",
+  "content_type": "text/html; charset=utf-8",
+  "server": "nginx",
+  "detail": {
+   "url": "https://sa.opensooq.com/ar/search/288663068",
+   "status": 200,
+   "len": 903310
+  }
+ },
+ {
+  "name": "opensooq-all",
+  "status": 200,
+  "len": 514364,
+  "final_url": "https://sa.opensooq.com/ar/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1",
+  "content_type": "text/html; charset=utf-8",
+  "server": "nginx"
+ },
+ {
+  "name": "kite-search",
+  "status": 200,
+  "len": 62375,
+  "final_url": "https://kite.sa/ar/search?city=riyadh",
+  "content_type": "text/html; charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "kite-neighborhoods",
+  "status": 200,
+  "len": 19525,
+  "final_url": "https://kite.sa/api/app/neighborhoods?city=riyadh",
+  "content_type": "application/json;charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "bayut-home",
+  "status": 503,
+  "len": 199911,
+  "final_url": "https://www.bayut.sa/",
+  "content_type": "text/html",
+  "server": "CloudFront"
+ },
+ {
+  "name": "wasalt-home",
+  "status": 403,
+  "len": 5670,
+  "final_url": "https://wasalt.sa/",
+  "content_type": "text/html; charset=UTF-8",
+  "server": "cloudflare"
+ }
+]
