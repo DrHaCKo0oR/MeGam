@@ -1,0 +1,3 @@
+  Current WebView package (name, version): (com.google.android.webview, 113.0.5672.136)
+  Minimum targetSdkVersion: 33
+  Minimum WebView version code: 567263637

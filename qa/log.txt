@@ -10,40 +10,12 @@ shot en-07-detail
 shot en-08-detail-finish
 shot en-09-detail-requirements
 map ready=true
-shot en-10-map
-js: "pins=1"
-map pin card=true
-shot en-10b-map-pin
-shot en-11-settings
-shot en-12-settings-ai
-picker ready=true
-shot en-13-work-picker
-seeded 34 ads; buckets={NEAR_MISSES=6, ALL=27, MATCHES=1}
-locale en -> ar
-shot ar-02-feed
-shot ar-03-to-check
-shot ar-04-close
-shot ar-05-all
-shot ar-06-saved
-shot ar-07-detail
-shot ar-08-detail-finish
-shot ar-09-detail-requirements
-map ready=true
-shot ar-10-map
-js: "pins=1"
-map pin card=true
-shot ar-10b-map-pin
-shot ar-11-settings
-shot ar-12-settings-ai
-picker ready=true
-shot ar-13-work-picker
-locale ar -> en
 shot live-00-searching
-live error=null in 88s ads={aqar=718, haraj=131, pf=69, deal=75, opensooq=3} details=13 buckets={UNCONFIRMED=15, ALL=650, NEAR_MISSES=217, MATCHES=99}
+live error=null in 84s ads={aqar=718, haraj=131, pf=69, deal=74, opensooq=3} details=13 buckets={UNCONFIRMED=15, ALL=650, NEAR_MISSES=216, MATCHES=99}
 source aqar: ok=true found=718 pages=11 blocked=false 
 source haraj: ok=true found=131 pages=28 blocked=false 
 source pf: ok=true found=69 pages=5 blocked=false 
-source deal: ok=true found=75 pages=18 blocked=false 
+source deal: ok=true found=74 pages=18 blocked=false 
 source opensooq: ok=true found=3 pages=1 blocked=false 
 match 73 aqar:6920843 45000.0 am=9 المصيف photos=11
 match 72 aqar:6797817 50000.0 am=15 الوادي photos=8
@@ -59,3 +31,4 @@ shot live-01-feed
 shot live-02-detail
 live map ready=true
 shot live-03-map
+webShot live-03c-map-content

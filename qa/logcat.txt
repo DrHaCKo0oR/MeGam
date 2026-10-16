@@ -1,238 +1,329 @@
 --------- beginning of main
-10-16 19:32:31.426   521   549 E system_server: No package ID 7f found for resource ID 0x7f080107.
-10-16 19:32:31.426   521   549 E system_server: No package ID 7f found for resource ID 0x7f150560.
-10-16 19:32:31.537  3526  3831 I ShaqatiQA: shot ar-10-map
-10-16 19:32:31.580  3526  3526 I ShaqatiQA: js: "pins=1"
-10-16 19:32:31.634  3526  3831 I ShaqatiQA: map pin card=true
-10-16 19:32:33.143  1774  5953 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050045
-10-16 19:32:33.145  1774  5954 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050044
-10-16 19:32:33.663  3526  3831 I ShaqatiQA: shot ar-10b-map-pin
-10-16 19:32:33.707  1774  5953 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050048_a64a3f98d26fa7e7180cd6d29bf44fced216fc32
-10-16 19:32:33.722  1774  2593 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050047_1d48ae4b292cd15bc945ae5ddedb9565d268f7e2
-10-16 19:32:33.870  1774  5954 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050049_5e9da2701f510020f2592c1e5b468922569445d7
-10-16 19:32:33.921  1774  2593 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050046
-10-16 19:32:33.921  1774  5953 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050050_b56351a773b9354cf1ebcacf86f309b6489173ac
-10-16 19:32:33.996  1774  2578 E SingleDataFileGroupPop: Failed to add file group 
-10-16 19:32:33.996  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:33.996  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:33.996  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:33.996  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:33.996  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:33.996  1774  2578 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@98cca5a} with executor MoreExecutors.directExecutor()
-10-16 19:32:33.996  1774  2578 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.android.libraries.mdi.download.gf.apply(Unknown Source:4)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.apps.tiktok.tracing.eo.apply(PG:2)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.common.util.concurrent.do.run(PG:4)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
-10-16 19:32:33.996  1774  2578 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-10-16 19:32:33.996  1774  2578 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
-10-16 19:32:33.996  1774  2578 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
-10-16 19:32:33.996  1774  2578 E d       : 	at java.lang.Thread.run(Thread.java:1012)
-10-16 19:32:33.996  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:33.996  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:33.996  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:34.010  1774  2578 E SingleDataFileGroupPop: Failed to add file group 
-10-16 19:32:34.010  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:34.010  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:34.010  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:34.010  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:34.010  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:34.010  1774  2578 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@b3d3226} with executor MoreExecutors.directExecutor()
-10-16 19:32:34.010  1774  2578 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.android.libraries.mdi.download.gf.apply(Unknown Source:4)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.apps.tiktok.tracing.eo.apply(PG:2)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.common.util.concurrent.do.run(PG:4)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
-10-16 19:32:34.010  1774  2578 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-10-16 19:32:34.010  1774  2578 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
-10-16 19:32:34.010  1774  2578 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
-10-16 19:32:34.010  1774  2578 E d       : 	at java.lang.Thread.run(Thread.java:1012)
-10-16 19:32:34.010  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:34.010  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:34.010  1774  2578 E PhFileGroupPop: Failed to add file group 
-10-16 19:32:36.244  3526  3831 I ShaqatiQA: shot ar-11-settings
-10-16 19:32:38.357  3526  3831 I ShaqatiQA: shot ar-12-settings-ai
-10-16 19:32:38.654  6195  6195 E ocessService0:3: Not starting debugger since process cannot load the jdwp agent.
-10-16 19:32:38.958  3526  3831 I ShaqatiQA: picker ready=true
-10-16 19:32:42.898   336   364 E BpfHandler: Unsupported protocol: 1
-10-16 19:32:43.912  5523  5638 E WakeLock: DG:service ** IS FORCE-RELEASED ON TIMEOUT **
-10-16 19:32:44.032  1774  1774 E A       : onError
-10-16 19:32:44.032  1774  1774 E A       : com.google.android.apps.gsa.shared.speech.a.m: errorCode: 65561, engine: 2
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:3)
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.cd.g.a.f.e(PG:2)
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.s3.o.e(PG:14)
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.s3.p.run(PG:1)
-10-16 19:32:44.032  1774  1774 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
-10-16 19:32:44.032  1774  1774 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
-10-16 19:32:44.032  1774  1774 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-10-16 19:32:44.032  1774  1774 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-10-16 19:32:44.032  1774  1774 E A       : 	at java.lang.Thread.run(Thread.java:1012)
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
-10-16 19:32:44.032  1774  1774 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.o: errorCode: 65586, engine: 2
-10-16 19:32:44.032  1774  1774 E A       : 	... 15 more
-10-16 19:32:44.032  1774  1774 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.k: errorCode: 401, engine: 2
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.h.a(PG:5)
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hE(PG:2)
-10-16 19:32:44.032  1774  1774 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:16)
-10-16 19:32:44.032  1774  1774 E A       : 	... 12 more
-10-16 19:32:44.085   843  6277 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
-10-16 19:32:44.087   843  6277 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_CALL_STREAMING
-10-16 19:32:44.222  5523  6256 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
-10-16 19:32:44.497  5523  5632 E Pay     : [Migration operation] Active tapandpay account not found! [CONTEXT service_id=198 ]
-10-16 19:32:44.844  3526  3831 I ShaqatiQA: shot ar-13-work-picker
-10-16 19:32:44.993   843  6277 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
-10-16 19:32:44.997   843  6277 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_CALL_STREAMING
+10-16 19:50:22.855  5427  5644 E NanoAppLogging: Failed to begin contexthub communication
+10-16 19:50:22.973  5453  5590 E Pay     : [Migration operation] Active tapandpay account not found! [CONTEXT service_id=198 ]
+10-16 19:50:26.019  1783  2567 E TipSharedPrefManager: invalid tip 40070019: tip does not need conditions checked only once
+10-16 19:50:26.020  1783  2567 E TipSharedPrefManager: invalid tip 40070055: tip does not need conditions checked only once
+10-16 19:50:26.024  1783  2567 E TipSharedPrefManager: invalid tip 40070197: tip does not need conditions checked only once
+10-16 19:50:26.030  1783  2567 E TipSharedPrefManager: invalid tip 40070251: tip does not need conditions checked only once
+10-16 19:50:26.082  1783  6098 E PCP.BackgroundTask: Missing PCP TNG entry point binding, or zero state response to PCP is not enabled.
+10-16 19:50:26.193  1783  6088 E SingleDataFileGroupPop: Failed to add file group 
+10-16 19:50:26.194  1783  6099 E SingleDataFileGroupPop: Failed to add file group 
+10-16 19:50:26.195  1783  6082 E SingleDataFileGroupPop: Failed to add file group 
+10-16 19:50:26.209  1783  6088 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.209  1783  6088 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.209  1783  6088 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.209  1783  6088 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.209  1783  6088 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.209  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.209  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.209  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.209  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.209  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.210  1783  6082 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.210  1783  6082 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.210  1783  6082 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.210  1783  6082 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.210  1783  6082 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.212  1783  6099 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@a303c22} with executor MoreExecutors.directExecutor()
+10-16 19:50:26.212  1783  6099 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.android.libraries.mdi.download.gs.g(PG:4)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.android.apps.gsa.staticplugins.bw.a.a(PG:1)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.android.libraries.gsa.k.a.i.apply(PG:2)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.android.apps.gsa.shared.logger.f.a.a.l.i(PG:2)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.android.apps.gsa.shared.logger.f.a.a.i.apply(Unknown Source:4)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-16 19:50:26.212  1783  6099 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-16 19:50:26.212  1783  6099 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
+10-16 19:50:26.212  1783  6099 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-16 19:50:26.212  1783  6099 E d       : 	at java.lang.Thread.run(Thread.java:1012)
+10-16 19:50:26.212  1783  6082 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@7553470} with executor MoreExecutors.directExecutor()
+10-16 19:50:26.212  1783  6082 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.android.libraries.mdi.download.gs.s(PG:1)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.android.libraries.mdi.download.gs.g(PG:2)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.android.apps.gsa.staticplugins.bw.a.a(PG:1)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.android.libraries.gsa.k.a.i.apply(PG:2)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.android.apps.gsa.shared.logger.f.a.a.l.i(PG:2)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.android.apps.gsa.shared.logger.f.a.a.i.apply(Unknown Source:4)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-16 19:50:26.212  1783  6082 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-16 19:50:26.212  1783  6082 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
+10-16 19:50:26.212  1783  6082 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-16 19:50:26.212  1783  6082 E d       : 	at java.lang.Thread.run(Thread.java:1012)
+10-16 19:50:26.212  1783  6082 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.212  1783  6082 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.212  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.212  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.212  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.213  1783  6082 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.220  1783  6088 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@e87b92b} with executor MoreExecutors.directExecutor()
+10-16 19:50:26.220  1783  6088 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.android.libraries.mdi.download.gs.s(PG:1)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.android.libraries.mdi.download.gs.g(PG:3)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.android.apps.gsa.staticplugins.bw.a.a(PG:1)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.android.libraries.gsa.k.a.i.apply(PG:2)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.android.apps.gsa.shared.logger.f.a.a.l.i(PG:2)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.android.apps.gsa.shared.logger.f.a.a.i.apply(Unknown Source:4)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-16 19:50:26.220  1783  6088 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-16 19:50:26.220  1783  6088 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
+10-16 19:50:26.220  1783  6088 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-16 19:50:26.220  1783  6088 E d       : 	at java.lang.Thread.run(Thread.java:1012)
+10-16 19:50:26.220  1783  6088 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.220  1783  6088 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:26.220  1783  6088 E PhFileGroupPop: Failed to add file group 
+10-16 19:50:27.095   848  1013 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+10-16 19:50:27.096   848  1013 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_CALL_STREAMING
+10-16 19:50:29.343  1783  2249 E ModelDnldProcssHelpr: pending download info for pending_hotword_model_download_info is null
+10-16 19:50:29.344  1783  2249 E ModelDnldProcssHelpr: pending download info for pending_xgoogle_hotword_model_download_info is null
+10-16 19:50:33.868  1783  1783 E A       : disposing SearchServiceClient after timeout []
+10-16 19:50:34.514   519   545 E system_server: No package ID 7f found for resource ID 0x7f080107.
+10-16 19:50:34.514   519   545 E system_server: No package ID 7f found for resource ID 0x7f150560.
+10-16 19:50:34.645  1597  1612 E native  : E0000 00:00:1792180234.645201    1612 mmap.cc:233] Error during Unmap / munmap: Invalid argument
+10-16 19:50:51.216  5453  5589 E constellation: [api_verify_phone_operation] Failed to generate Client Signature
+10-16 19:50:51.216  5453  5589 E constellation: acwp: Stored private key deleted
+10-16 19:50:51.216  5453  5589 E constellation: 	at acos.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-16 19:50:51.216  5453  5589 E constellation: 	at acos.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-16 19:50:51.216  5453  5589 E constellation: 	at acoa.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+10-16 19:50:51.216  5453  5589 E constellation: 	at acoa.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12)
+10-16 19:50:51.216  5453  5589 E constellation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-16 19:50:51.216  5453  5589 E constellation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-16 19:50:51.216  5453  5589 E constellation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-16 19:50:51.216  5453  5589 E constellation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-16 19:50:51.216  5453  5589 E constellation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-16 19:50:51.216  5453  5589 E constellation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-16 19:50:51.216  5453  5589 E constellation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-16 19:50:51.216  5453  5589 E constellation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-16 19:50:51.216  5453  5589 E constellation: 	at java.lang.Thread.run(Thread.java:1012)
+10-16 19:51:05.244   334   364 E BpfHandler: Unsupported protocol: 1
+10-16 19:51:05.862  5453  6159 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+10-16 19:51:05.970  5453  5590 E Pay     : [Migration operation] Active tapandpay account not found! [CONTEXT service_id=198 ]
+10-16 19:51:06.240  5453  5615 E WakeLock: DG:service ** IS FORCE-RELEASED ON TIMEOUT **
+10-16 19:51:06.264   848  6190 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+10-16 19:51:06.265   848  6190 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_CALL_STREAMING
+10-16 19:51:07.253  1783  2774 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186447
+10-16 19:51:07.254  1783  6100 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186446
+10-16 19:51:07.321  1783  6100 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186450_a64a3f98d26fa7e7180cd6d29bf44fced216fc32
+10-16 19:51:07.357  1783  6092 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186449_1d48ae4b292cd15bc945ae5ddedb9565d268f7e2
+10-16 19:51:07.417  1783  2774 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186451_5e9da2701f510020f2592c1e5b468922569445d7
+10-16 19:51:07.464  1783  2774 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186448
+10-16 19:51:07.470  1783  6100 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186452_b56351a773b9354cf1ebcacf86f309b6489173ac
+10-16 19:51:07.475  1783  6099 E SingleDataFileGroupPop: Failed to add file group 
+10-16 19:51:07.475  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.475  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.475  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.475  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.475  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.476  1783  6099 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@a9ad40} with executor MoreExecutors.directExecutor()
+10-16 19:51:07.476  1783  6099 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.android.libraries.mdi.download.gf.apply(Unknown Source:4)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.apps.tiktok.tracing.eo.apply(PG:2)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.common.util.concurrent.do.run(PG:4)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-16 19:51:07.476  1783  6099 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-16 19:51:07.476  1783  6099 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
+10-16 19:51:07.476  1783  6099 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-16 19:51:07.476  1783  6099 E d       : 	at java.lang.Thread.run(Thread.java:1012)
+10-16 19:51:07.476  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.476  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.476  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.530  1783  6099 E SingleDataFileGroupPop: Failed to add file group 
+10-16 19:51:07.530  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.530  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.530  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.530  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.530  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.530  1783  6099 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@fbcbfed} with executor MoreExecutors.directExecutor()
+10-16 19:51:07.530  1783  6099 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.android.libraries.mdi.download.gf.apply(Unknown Source:4)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.apps.tiktok.tracing.eo.apply(PG:2)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.common.util.concurrent.do.run(PG:4)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-16 19:51:07.530  1783  6099 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-16 19:51:07.530  1783  6099 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
+10-16 19:51:07.530  1783  6099 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-16 19:51:07.530  1783  6099 E d       : 	at java.lang.Thread.run(Thread.java:1012)
+10-16 19:51:07.530  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.530  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:07.530  1783  6099 E PhFileGroupPop: Failed to add file group 
+10-16 19:51:08.589   519   545 E system_server: No package ID 7f found for resource ID 0x7f080107.
+10-16 19:51:08.589   519   545 E system_server: No package ID 7f found for resource ID 0x7f150560.
+10-16 19:51:17.291  1783  1783 E A       : onError
+10-16 19:51:17.291  1783  1783 E A       : com.google.android.apps.gsa.shared.speech.a.m: errorCode: 65561, engine: 2
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:3)
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.cd.g.a.f.e(PG:2)
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+10-16 19:51:17.291  1783  1783 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-16 19:51:17.291  1783  1783 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-16 19:51:17.291  1783  1783 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-16 19:51:17.291  1783  1783 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-16 19:51:17.291  1783  1783 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+10-16 19:51:17.291  1783  1783 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.o: errorCode: 65586, engine: 2
+10-16 19:51:17.291  1783  1783 E A       : 	... 15 more
+10-16 19:51:17.291  1783  1783 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.k: errorCode: 401, engine: 2
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.h.a(PG:5)
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hE(PG:2)
+10-16 19:51:17.291  1783  1783 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:16)
+10-16 19:51:17.291  1783  1783 E A       : 	... 12 more
+10-16 19:51:18.594   519   545 E system_server: No package ID 7f found for resource ID 0x7f080107.
+10-16 19:51:18.595   519   545 E system_server: No package ID 7f found for resource ID 0x7f150560.
+10-16 19:51:26.154  1783  1783 E A       : Task 255 failed or timed out. Client 7843509109444660 disconnecting from SearchService!
+10-16 19:51:26.154  1783  1783 E A       : java.util.concurrent.CancellationException: Task was cancelled.
+10-16 19:51:26.154  1783  1783 E A       : 	at com.google.common.util.concurrent.d.s(PG:3)
+10-16 19:51:26.154  1783  1783 E A       : 	at com.google.common.util.concurrent.d.get(PG:4)
+10-16 19:51:26.154  1783  1783 E A       : 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-16 19:51:26.154  1783  1783 E A       : 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-16 19:51:26.154  1783  1783 E A       : 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-16 19:51:26.154  1783  1783 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(PG:1)
+10-16 19:51:26.154  1783  1783 E A       : 	at android.os.Handler.handleCallback(Handler.java:958)
+10-16 19:51:26.154  1783  1783 E A       : 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-16 19:51:26.154  1783  1783 E A       : 	at android.os.Looper.loopOnce(Looper.java:205)
+10-16 19:51:26.154  1783  1783 E A       : 	at android.os.Looper.loop(Looper.java:294)
+10-16 19:51:26.154  1783  1783 E A       : 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+10-16 19:51:26.154  1783  1783 E A       : 	at java.lang.reflect.Method.invoke(Native Method)
+10-16 19:51:26.154  1783  1783 E A       : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+10-16 19:51:26.154  1783  1783 E A       : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: PERIODIC background task MDD_CELLULAR_CHARGING_TASK was cancelled.
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: java.util.concurrent.CancellationException: Task was cancelled.
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.s(PG:3)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.get(PG:4)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.i.run(PG:2)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.p.run(PG:4)
+10-16 19:51:26.157  1783  6099 E BgTaskExecutorImpl: 	at java.lang.Thread.run(Thread.java:1012)
+10-16 19:51:26.179  1783  1783 E A       : Task 255 failed or timed out. Client 7843509109444666 disconnecting from SearchService!
+10-16 19:51:26.179  1783  1783 E A       : java.util.concurrent.CancellationException: Task was cancelled.
+10-16 19:51:26.179  1783  1783 E A       : 	at com.google.common.util.concurrent.d.s(PG:3)
+10-16 19:51:26.179  1783  1783 E A       : 	at com.google.common.util.concurrent.d.get(PG:4)
+10-16 19:51:26.179  1783  1783 E A       : 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-16 19:51:26.179  1783  1783 E A       : 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-16 19:51:26.179  1783  1783 E A       : 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-16 19:51:26.179  1783  1783 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(PG:1)
+10-16 19:51:26.179  1783  1783 E A       : 	at android.os.Handler.handleCallback(Handler.java:958)
+10-16 19:51:26.179  1783  1783 E A       : 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-16 19:51:26.179  1783  1783 E A       : 	at android.os.Looper.loopOnce(Looper.java:205)
+10-16 19:51:26.179  1783  1783 E A       : 	at android.os.Looper.loop(Looper.java:294)
+10-16 19:51:26.179  1783  1783 E A       : 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+10-16 19:51:26.179  1783  1783 E A       : 	at java.lang.reflect.Method.invoke(Native Method)
+10-16 19:51:26.179  1783  1783 E A       : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+10-16 19:51:26.179  1783  1783 E A       : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: PERIODIC background task MDD_WIFI_CHARGING_TASK was cancelled.
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: java.util.concurrent.CancellationException: Task was cancelled.
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.s(PG:3)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.get(PG:4)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.i.run(PG:2)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.p.run(PG:4)
+10-16 19:51:26.194  1783  6099 E BgTaskExecutorImpl: 	at java.lang.Thread.run(Thread.java:1012)
+10-16 19:51:26.533  1783  6100 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186458
+10-16 19:51:26.605  1783  6099 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186457
+10-16 19:51:26.632  1783  6100 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186453
+10-16 19:51:26.651  1783  6092 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186459
+10-16 19:51:26.863  1783  6099 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186454
+10-16 19:51:27.113  1783  6092 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186455
+10-16 19:51:27.264  1783  6100 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792180186456
+10-16 19:51:33.150  5594  5739 I ShaqatiQA: live error=null in 84s ads={aqar=718, haraj=131, pf=69, deal=74, opensooq=3} details=13 buckets={UNCONFIRMED=15, ALL=650, NEAR_MISSES=216, MATCHES=99}
+10-16 19:51:33.150  5594  5739 I ShaqatiQA: source aqar: ok=true found=718 pages=11 blocked=false 
+10-16 19:51:33.150  5594  5739 I ShaqatiQA: source haraj: ok=true found=131 pages=28 blocked=false 
+10-16 19:51:33.150  5594  5739 I ShaqatiQA: source pf: ok=true found=69 pages=5 blocked=false 
+10-16 19:51:33.150  5594  5739 I ShaqatiQA: source deal: ok=true found=74 pages=18 blocked=false 
+10-16 19:51:33.150  5594  5739 I ShaqatiQA: source opensooq: ok=true found=3 pages=1 blocked=false 
+10-16 19:51:33.151  5594  5739 I ShaqatiQA: match 73 aqar:6920843 45000.0 am=9 المصيف photos=11
+10-16 19:51:33.151  5594  5739 I ShaqatiQA: match 72 aqar:6797817 50000.0 am=15 الوادي photos=8
+10-16 19:51:33.151  5594  5739 I ShaqatiQA: match 66 aqar:6857317 30000.0 am=28 الازدهار photos=5
+10-16 19:51:33.151  5594  5739 I ShaqatiQA: match 66 aqar:6572375 50000.0 am=31 المغرزات photos=5
+10-16 19:51:33.151  5594  5739 I ShaqatiQA: match 65 aqar:6798738 43000.0 am=37 العقيق photos=6
+10-16 19:51:33.151  5594  5739 I ShaqatiQA: match 64 aqar:6617546 45000.0 am=40 العقيق photos=14
+10-16 19:51:33.151  5594  5739 I ShaqatiQA: match 64 aqar:6851693 50000.0 am=17 الوادي photos=13
+10-16 19:51:33.151  5594  5739 I ShaqatiQA: match 64 aqar:6918141 43300.0 am=12 المصيف photos=8
+10-16 19:51:33.151  5594  5739 I ShaqatiQA: match 64 aqar:6852748 47000.0 am=38 الصحافة photos=7
+10-16 19:51:33.151  5594  5739 I ShaqatiQA: match 63 aqar:6880228 45000.0 am=23 الوادي photos=6
+10-16 19:51:36.668  5594  5739 I ShaqatiQA: shot live-01-feed
+10-16 19:51:40.612  5594  5739 I ShaqatiQA: shot live-02-detail
+10-16 19:51:41.092  6262  6262 E ocessService0:0: Not starting debugger since process cannot load the jdwp agent.
+10-16 19:51:41.647  5594  5739 I ShaqatiQA: live map ready=true
+10-16 19:51:48.458  5594  5739 I ShaqatiQA: shot live-03-map
+10-16 19:51:48.471  5594  5739 I ShaqatiQA: webShot live-03c-map-content
 --------- beginning of system
-10-16 19:32:46.696   521  2049 E ActivityManager: Unable to freeze binder for 3526: -11
-10-16 19:32:46.871   521   543 E IPCThreadState: Binder transaction failure: 683768/29189/-3
-10-16 19:32:47.039   521   549 E system_server: No package ID 7f found for resource ID 0x7f080107.
-10-16 19:32:47.066   521   549 E system_server: No package ID 7f found for resource ID 0x7f150560.
-10-16 19:32:49.241   521  3239 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-10-16 19:32:49.828  1642  2259 E HwDetectorWithState: a: 3
-10-16 19:32:51.905  1774  1774 E A       : Task 255 failed or timed out. Client 7803926689721514 disconnecting from SearchService!
-10-16 19:32:51.905  1774  1774 E A       : java.util.concurrent.CancellationException: Task was cancelled.
-10-16 19:32:51.905  1774  1774 E A       : 	at com.google.common.util.concurrent.d.s(PG:3)
-10-16 19:32:51.905  1774  1774 E A       : 	at com.google.common.util.concurrent.d.get(PG:4)
-10-16 19:32:51.905  1774  1774 E A       : 	at com.google.common.util.concurrent.eb.a(PG:1)
-10-16 19:32:51.905  1774  1774 E A       : 	at com.google.common.util.concurrent.ci.r(PG:2)
-10-16 19:32:51.905  1774  1774 E A       : 	at com.google.common.util.concurrent.cb.run(PG:4)
-10-16 19:32:51.905  1774  1774 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(PG:1)
-10-16 19:32:51.905  1774  1774 E A       : 	at android.os.Handler.handleCallback(Handler.java:958)
-10-16 19:32:51.905  1774  1774 E A       : 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-16 19:32:51.905  1774  1774 E A       : 	at android.os.Looper.loopOnce(Looper.java:205)
-10-16 19:32:51.905  1774  1774 E A       : 	at android.os.Looper.loop(Looper.java:294)
-10-16 19:32:51.905  1774  1774 E A       : 	at android.app.ActivityThread.main(ActivityThread.java:8177)
-10-16 19:32:51.905  1774  1774 E A       : 	at java.lang.reflect.Method.invoke(Native Method)
-10-16 19:32:51.905  1774  1774 E A       : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
-10-16 19:32:51.905  1774  1774 E A       : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: PERIODIC background task MDD_CELLULAR_CHARGING_TASK was cancelled.
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: java.util.concurrent.CancellationException: Task was cancelled.
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.s(PG:3)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.get(PG:4)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.eb.a(PG:1)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.ci.r(PG:2)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.cb.run(PG:4)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.ae.run(PG:1)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.i.run(PG:2)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.p.run(PG:4)
-10-16 19:32:51.922  1774  2578 E BgTaskExecutorImpl: 	at java.lang.Thread.run(Thread.java:1012)
-10-16 19:32:52.071  1774  1774 E A       : Task 255 failed or timed out. Client 7803926689721536 disconnecting from SearchService!
-10-16 19:32:52.071  1774  1774 E A       : java.util.concurrent.CancellationException: Task was cancelled.
-10-16 19:32:52.071  1774  1774 E A       : 	at com.google.common.util.concurrent.d.s(PG:3)
-10-16 19:32:52.071  1774  1774 E A       : 	at com.google.common.util.concurrent.d.get(PG:4)
-10-16 19:32:52.071  1774  1774 E A       : 	at com.google.common.util.concurrent.eb.a(PG:1)
-10-16 19:32:52.071  1774  1774 E A       : 	at com.google.common.util.concurrent.ci.r(PG:2)
-10-16 19:32:52.071  1774  1774 E A       : 	at com.google.common.util.concurrent.cb.run(PG:4)
-10-16 19:32:52.071  1774  1774 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(PG:1)
-10-16 19:32:52.071  1774  1774 E A       : 	at android.os.Handler.handleCallback(Handler.java:958)
-10-16 19:32:52.071  1774  1774 E A       : 	at android.os.Handler.dispatchMessage(Handler.java:99)
-10-16 19:32:52.071  1774  1774 E A       : 	at android.os.Looper.loopOnce(Looper.java:205)
-10-16 19:32:52.071  1774  1774 E A       : 	at android.os.Looper.loop(Looper.java:294)
-10-16 19:32:52.071  1774  1774 E A       : 	at android.app.ActivityThread.main(ActivityThread.java:8177)
-10-16 19:32:52.071  1774  1774 E A       : 	at java.lang.reflect.Method.invoke(Native Method)
-10-16 19:32:52.071  1774  1774 E A       : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
-10-16 19:32:52.071  1774  1774 E A       : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: PERIODIC background task MDD_WIFI_CHARGING_TASK was cancelled.
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: java.util.concurrent.CancellationException: Task was cancelled.
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.s(PG:3)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.get(PG:4)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.eb.a(PG:1)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.ci.r(PG:2)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.cb.run(PG:4)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.ae.run(PG:1)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.i.run(PG:2)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.p.run(PG:4)
-10-16 19:32:52.144  1774  5951 E BgTaskExecutorImpl: 	at java.lang.Thread.run(Thread.java:1012)
-10-16 19:32:52.465  1774  2593 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050057
-10-16 19:32:52.476  1774  2578 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050056
-10-16 19:32:52.494  1774  5951 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050051
-10-16 19:32:52.522  1774  2593 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050052
-10-16 19:32:53.009  1774  2578 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050053
-10-16 19:32:53.427  1774  5951 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050054
-10-16 19:32:53.577  1774  2593 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792179050055
-10-16 19:32:54.092  6324  6345 I ShaqatiQA: locale ar -> en
-10-16 19:32:54.183   521  3239 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-10-16 19:32:56.595   521   549 E system_server: No package ID 7f found for resource ID 0x7f080107.
-10-16 19:32:56.595   521   549 E system_server: No package ID 7f found for resource ID 0x7f150560.
-10-16 19:33:01.763  6324  6345 I ShaqatiQA: shot live-00-searching
-10-16 19:33:16.971  1774  1774 E A       : disposing SearchServiceClient after timeout []
-10-16 19:33:44.678  5523  5638 E WakeLock: DG:service ** IS FORCE-RELEASED ON TIMEOUT **
-10-16 19:34:09.729  5523  5619 E constellation: [api_verify_phone_operation] Failed to generate Client Signature
-10-16 19:34:09.729  5523  5619 E constellation: acwp: Stored private key deleted
-10-16 19:34:09.729  5523  5619 E constellation: 	at acos.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
-10-16 19:34:09.729  5523  5619 E constellation: 	at acos.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
-10-16 19:34:09.729  5523  5619 E constellation: 	at acoa.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
-10-16 19:34:09.729  5523  5619 E constellation: 	at acoa.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12)
-10-16 19:34:09.729  5523  5619 E constellation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
-10-16 19:34:09.729  5523  5619 E constellation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
-10-16 19:34:09.729  5523  5619 E constellation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
-10-16 19:34:09.729  5523  5619 E constellation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
-10-16 19:34:09.729  5523  5619 E constellation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
-10-16 19:34:09.729  5523  5619 E constellation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-10-16 19:34:09.729  5523  5619 E constellation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-10-16 19:34:09.729  5523  5619 E constellation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
-10-16 19:34:09.729  5523  5619 E constellation: 	at java.lang.Thread.run(Thread.java:1012)
-10-16 19:34:23.345  6324  6345 I ShaqatiQA: live error=null in 88s ads={aqar=718, haraj=131, pf=69, deal=75, opensooq=3} details=13 buckets={UNCONFIRMED=15, ALL=650, NEAR_MISSES=217, MATCHES=99}
-10-16 19:34:23.346  6324  6345 I ShaqatiQA: source aqar: ok=true found=718 pages=11 blocked=false 
-10-16 19:34:23.346  6324  6345 I ShaqatiQA: source haraj: ok=true found=131 pages=28 blocked=false 
-10-16 19:34:23.346  6324  6345 I ShaqatiQA: source pf: ok=true found=69 pages=5 blocked=false 
-10-16 19:34:23.346  6324  6345 I ShaqatiQA: source deal: ok=true found=75 pages=18 blocked=false 
-10-16 19:34:23.346  6324  6345 I ShaqatiQA: source opensooq: ok=true found=3 pages=1 blocked=false 
-10-16 19:34:23.347  6324  6345 I ShaqatiQA: match 73 aqar:6920843 45000.0 am=9 المصيف photos=11
-10-16 19:34:23.347  6324  6345 I ShaqatiQA: match 72 aqar:6797817 50000.0 am=15 الوادي photos=8
-10-16 19:34:23.348  6324  6345 I ShaqatiQA: match 66 aqar:6857317 30000.0 am=28 الازدهار photos=5
-10-16 19:34:23.348  6324  6345 I ShaqatiQA: match 66 aqar:6572375 50000.0 am=31 المغرزات photos=5
-10-16 19:34:23.348  6324  6345 I ShaqatiQA: match 65 aqar:6798738 43000.0 am=37 العقيق photos=6
-10-16 19:34:23.348  6324  6345 I ShaqatiQA: match 64 aqar:6617546 45000.0 am=40 العقيق photos=14
-10-16 19:34:23.348  6324  6345 I ShaqatiQA: match 64 aqar:6851693 50000.0 am=17 الوادي photos=13
-10-16 19:34:23.349  6324  6345 I ShaqatiQA: match 64 aqar:6918141 43300.0 am=12 المصيف photos=8
-10-16 19:34:23.349  6324  6345 I ShaqatiQA: match 64 aqar:6852748 47000.0 am=38 الصحافة photos=7
-10-16 19:34:23.349  6324  6345 I ShaqatiQA: match 63 aqar:6880228 45000.0 am=23 الوادي photos=6
-10-16 19:34:26.964  6324  6345 I ShaqatiQA: shot live-01-feed
-10-16 19:34:31.200  6324  6345 I ShaqatiQA: shot live-02-detail
-10-16 19:34:31.850  6485  6485 E ocessService0:0: Not starting debugger since process cannot load the jdwp agent.
-10-16 19:34:31.913  6324  6499 E chromium: [ERROR:simple_file_enumerator.cc(21)] opendir /data/user/0/app.shaqati/cache/WebView/Default/HTTP Cache/Code Cache/js: No such file or directory (2)
-10-16 19:34:31.913  6324  6499 E chromium: [ERROR:simple_index_file.cc(614)] Could not reconstruct index from disk
-10-16 19:34:31.914  6324  6498 E chromium: [ERROR:simple_file_enumerator.cc(21)] opendir /data/user/0/app.shaqati/cache/WebView/Default/HTTP Cache/Code Cache/wasm: No such file or directory (2)
-10-16 19:34:31.914  6324  6498 E chromium: [ERROR:simple_index_file.cc(614)] Could not reconstruct index from disk
-10-16 19:34:32.408  6324  6345 I ShaqatiQA: live map ready=true
-10-16 19:34:39.267  6324  6345 I ShaqatiQA: shot live-03-map
-10-16 19:34:40.561   521  2370 E ActivityManager: Unable to freeze binder for 6324: -11
+10-16 19:51:49.340   519  2258 E ActivityManager: Unable to freeze binder for 5594: -11
