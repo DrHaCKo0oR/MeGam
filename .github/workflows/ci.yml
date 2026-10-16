@@ -14,7 +14,8 @@ permissions:
 
 concurrency:
   group: ci-${{ github.ref }}
-  cancel-in-progress: true
+  # Queue instead of cancelling, so device QA and live checks always finish.
+  cancel-in-progress: false
 
 jobs:
   core:

@@ -80,6 +80,11 @@ class QaTour {
             Qa.shot("$lang-11-settings")
             compose.onNodeWithTag("settings_list").performScrollToIndex(4)
             Qa.shot("$lang-12-settings-ai")
+            compose.onNodeWithTag("settings_list").performScrollToIndex(0)
+            compose.onNode(hasText(Qa.str(lang, R.string.set_work_change))).performClick()
+            Thread.sleep(6_000)
+            Qa.shot("$lang-13-work-picker")
+            UiDevice.getInstance(Qa.instr).pressBack()
         }
     }
 }

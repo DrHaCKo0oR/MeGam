@@ -158,7 +158,7 @@
     }
   }
 
-  window.moveTo = function (lat, lng, zoom) {
+  window.moveMap = function (lat, lng, zoom) {
     if (!S.map) return;
     if (S.provider === 'google') { S.map.setCenter({ lat: lat, lng: lng }); if (zoom) S.map.setZoom(zoom); }
     else S.map.setView([lat, lng], zoom || S.map.getZoom());

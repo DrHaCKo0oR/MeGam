@@ -130,7 +130,7 @@ fun MapWeb(
         val w = web
         val p = moveTo
         if (ready && w != null && p != null) {
-            w.evaluateJavascript(String.format(Locale.ROOT, "moveTo(%.6f,%.6f,15)", p.lat, p.lng), null)
+            w.evaluateJavascript(String.format(Locale.ROOT, "moveMap(%.6f,%.6f,15)", p.lat, p.lng), null)
         }
     }
     DisposableEffect(Unit) {
