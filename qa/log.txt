@@ -54,11 +54,11 @@ shot zz-map-page-plain
 webShot zz-map-page-plain-content
 locale ar -> en
 shot live-00-searching
-live error=null in 87s ads={aqar=718, haraj=130, pf=69, deal=65, opensooq=3} details=13 buckets={UNCONFIRMED=15, MATCHES=100, ALL=639, NEAR_MISSES=216}
+live error=null in 81s ads={aqar=718, haraj=131, pf=69, deal=68, opensooq=3} details=13 buckets={UNCONFIRMED=15, MATCHES=100, ALL=643, NEAR_MISSES=216}
 source aqar: ok=true found=718 pages=11 blocked=false 
-source haraj: ok=true found=130 pages=28 blocked=false 
+source haraj: ok=true found=131 pages=28 blocked=false 
 source pf: ok=true found=69 pages=5 blocked=false 
-source deal: ok=true found=65 pages=18 blocked=false 
+source deal: ok=true found=68 pages=18 blocked=false 
 source opensooq: ok=true found=3 pages=1 blocked=false 
 match 77 aqar:6891322 25000.0 am=6 المصيف photos=1
 match 73 aqar:6920843 45000.0 am=9 المصيف photos=11

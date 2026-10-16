@@ -1,7 +1,7 @@
 
 app.shaqati.LiveRefreshTest:.
 
-Time: 112.185
+Time: 104.451
 
 OK (1 test)
 
