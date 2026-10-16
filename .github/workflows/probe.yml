@@ -39,7 +39,7 @@ jobs:
       - name: Run probe
         run: |
           set -a; . probe/REQUEST; set +a
-          python probe/probe.py 2>&1 | tail -c 60000
+          timeout 30m python probe/probe.py 2>&1 | tail -c 60000 || true
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"

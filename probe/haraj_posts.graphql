@@ -1,0 +1,113 @@
+query FetchAds($id: [Int] = null, $city: String = null, $cities: [String], $authorUsername: String = null, $page: Int = null, $limit: Int = null, $afterPostDate: Int = null, $afterUpdateDate: Int = null, $beforeUpdateDate: Int = null, $beforePostDate: Int = null, $tag: String = null, $near: String = null, $onlyWithImage: Boolean = null, $onlyWithVideo: Boolean = null, $orderMainByPostId: Boolean = null, $notTag: String = null) {
+  posts(
+    id: $id
+    city: $city
+    cities: $cities
+    authorUsername: $authorUsername
+    page: $page
+    limit: $limit
+    afterPostDate: $afterPostDate
+    afterUpdateDate: $afterUpdateDate
+    beforeUpdateDate: $beforeUpdateDate
+    beforePostDate: $beforePostDate
+    tag: $tag
+    near: $near
+    onlyWithImage: $onlyWithImage
+    onlyWithVideo: $onlyWithVideo
+    orderMainByPostId: $orderMainByPostId
+    notTag: $notTag
+  ) {
+    analyticsContext
+    items {
+      ...PostFields
+    }
+    pageInfo {
+      hasNextPage
+    }
+    viewOptions {
+      hasSellersList
+      mustLoginToView
+    }
+  }
+}
+    
+    fragment PostFields on Post {
+  id
+  title
+  postDate
+  updateDate
+  authorUsername
+  authorId
+  URL
+  bodyTEXT
+  bodyHTML
+  thumbURL
+  hasImage
+  hasVideo
+  city
+  geoCity
+  geoNeighborhood
+  geoHash
+  tags
+  imagesList
+  commentEnabled
+  commentStatus
+  isPromoted
+  commentCount
+  upRank
+  downRank
+  status
+  postType
+  generalInfo {
+    key
+    value
+  }
+  price {
+    formattedPrice
+    inputPrice
+  }
+  realEstateInfo {
+    ...realEstateOptions
+  }
+  carInfo {
+    sellOrWaiver
+    is4DW
+    model
+    mileage
+    fuel
+    gear
+    condition
+    carOrRelated
+    Bank
+  }
+  tagsFilters
+  jobsInfo {
+    jobs_OfferType
+    jobs_ExperienceLevel
+    jobs_ContractType
+    jobs_Qualification
+    jobs_CommercialeRgisterNumber
+  }
+  postNotesList {
+    iconName
+    iconUrl
+    note
+    link
+  }
+  BuyButton {
+    Link
+    StoreName
+    Name
+    canRequestWasataService
+    isMakeOfferEnabled
+  }
+  generalInfo {
+    key
+    value
+  }
+}
+    
+    fragment realEstateOptions on reInfo {
+  re_REGA_Advertiser_registration_number
+  re_REGA_Authorization_number
+}

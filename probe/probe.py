@@ -330,6 +330,64 @@ def maven_versions():
     write(OUT / "versions.json", res)
 
 
+HARAJ_QUERY = (ROOT / "haraj_posts.graphql").read_text(encoding="utf-8") if (ROOT / "haraj_posts.graphql").exists() else ""
+
+
+def fetch_step():
+    """Plain HTTP requests whose full responses are saved (masked) for offline parsing."""
+    spec = json.loads((ROOT / "fetch.json").read_text(encoding="utf-8"))
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": MOBILE_UA, "Accept-Language": "ar-SA,ar;q=0.9,en;q=0.8"})
+    summary = []
+    for item in spec.get("requests", []):
+        name = item["name"]
+        try:
+            if item.get("graphql") == "haraj":
+                body = {"query": HARAJ_QUERY, "variables": item.get("variables", {})}
+                r = sess.post(item["url"], json=body, timeout=40,
+                              headers={"Origin": "https://haraj.com.sa", "Referer": "https://haraj.com.sa/"})
+            elif item.get("method") == "POST":
+                r = sess.post(item["url"], json=item.get("json"), timeout=40, headers=item.get("headers", {}))
+            else:
+                r = sess.get(item["url"], timeout=40, headers=item.get("headers", {}))
+            text = r.text
+            ext = "json" if "json" in r.headers.get("content-type", "") else "html"
+            write(OUT / "fetch" / f"{name}.{ext}", text)
+            entry = {"name": name, "status": r.status_code, "len": len(text), "final_url": r.url,
+                     "content_type": r.headers.get("content-type"), "server": r.headers.get("server")}
+            # Follow the first detail link found in the response.
+            if item.get("detail_re") and r.ok:
+                from urllib.parse import unquote
+                m = re.search(item["detail_re"], unquote(text))
+                if m:
+                    durl = urljoin(r.url, m.group(0))
+                    d = sess.get(durl, timeout=40)
+                    write(OUT / "fetch" / f"{name}-detail.html", d.text)
+                    entry["detail"] = {"url": durl, "status": d.status_code, "len": len(d.text)}
+            summary.append(entry)
+        except Exception as e:  # noqa: BLE001
+            summary.append({"name": name, "error": repr(e)})
+        print(json.dumps(summary[-1], ensure_ascii=False), flush=True)
+        time.sleep(1.5)
+    write(OUT / "fetch" / "_summary.json", summary)
+
+
+async def browse_step():
+    """Browser captures of specific pages (for sites whose API is only visible from the app UI)."""
+    from playwright.async_api import async_playwright
+
+    spec = json.loads((ROOT / "fetch.json").read_text(encoding="utf-8"))
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        context = await browser.new_context(user_agent=MOBILE_UA, locale="ar-SA", timezone_id="Asia/Riyadh",
+                                            viewport={"width": 412, "height": 915}, is_mobile=True, has_touch=True)
+        for item in spec.get("browse", []):
+            r = await capture(context, item["url"], scroll=True, wait_ms=item.get("wait_ms", 8000))
+            write(OUT / "browse" / f"{item['name']}.json", r)
+            print(item["name"], r.get("status"), r.get("title"), len(r.get("network", [])), flush=True)
+        await browser.close()
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     only = [x for x in os.environ.get("PROBE_ONLY", "").split(",") if x]
@@ -338,6 +396,10 @@ def main():
         maven_versions()
     if "geo" in steps:
         geocode()
+    if "fetch" in steps:
+        fetch_step()
+    if "browse" in steps:
+        asyncio.run(browse_step())
     if "sites" in steps:
         asyncio.run(probe_sites(only or None))
     print("probe done", flush=True)

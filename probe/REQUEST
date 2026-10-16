@@ -1,4 +1,4 @@
 # Sourced by the probe workflow. Edit to request a new probe run.
-PROBE_STEPS=versions,geo,sites
+PROBE_STEPS=fetch,browse
 PROBE_ONLY=
-RUN=1
+RUN=2
