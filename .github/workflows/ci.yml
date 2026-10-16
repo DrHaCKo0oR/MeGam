@@ -199,6 +199,9 @@ jobs:
           VERSION="1.0.${GITHUB_RUN_NUMBER}"
           cp app/build/outputs/apk/release/app-release.apk "shaqati-${VERSION}.apk"
           sha256sum "shaqati-${VERSION}.apk" > "shaqati-${VERSION}.apk.sha256"
-          gh release create "v${VERSION}" "shaqati-${VERSION}.apk" "shaqati-${VERSION}.apk.sha256" \
-            --target "${GITHUB_SHA}" --title "Shaqati ${VERSION}" --latest \
-            --notes-file .github/release-notes.md
+          FILES=("shaqati-${VERSION}.apk" "shaqati-${VERSION}.apk.sha256")
+          # Some repository settings only let workflow tokens publish pre-releases; fall back to one.
+          gh release create "shaqati-${VERSION}" "${FILES[@]}" --target "${GITHUB_SHA}" \
+            --title "Shaqati ${VERSION}" --notes-file .github/release-notes.md ||
+          gh release create "shaqati-${VERSION}" "${FILES[@]}" --target "${GITHUB_SHA}" --prerelease \
+            --title "Shaqati ${VERSION}" --notes-file .github/release-notes.md
