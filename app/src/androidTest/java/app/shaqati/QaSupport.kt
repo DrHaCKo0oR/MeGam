@@ -8,6 +8,8 @@ import android.webkit.WebView
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
 import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.uiautomator.By
+import androidx.test.uiautomator.UiDevice
 import app.shaqati.core.Engine
 import app.shaqati.core.FeedMode
 import app.shaqati.core.ai.AiAssessment
@@ -45,8 +47,20 @@ object Qa {
         android.util.Log.i("ShaqatiQA", line)
     }
 
+    /** Taps "Wait" on a system "isn't responding" dialog, which would otherwise cover the app. */
+    fun dismissSystemDialogs() {
+        val device = UiDevice.getInstance(instr)
+        repeat(3) {
+            val wait = device.findObject(By.res("android", "aerr_wait")) ?: return
+            log("dismissed a system 'not responding' dialog")
+            wait.click()
+            device.waitForIdle()
+        }
+    }
+
     /** Half-size JPEG of the whole screen. */
     fun shot(name: String) {
+        dismissSystemDialogs()
         instr.waitForIdleSync()
         Thread.sleep(700)
         val bmp = instr.uiAutomation.takeScreenshot() ?: return

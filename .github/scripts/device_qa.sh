@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Runs the on-device QA tests on the CI emulator and collects screenshots and logs into qa/.
 set -x
+# A busy CI emulator sometimes reports the launcher as not responding; that dialog would cover
+# the app and swallow taps, so error dialogs are turned off for the run.
+adb shell settings put global hide_error_dialogs 1 || true
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 adb install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
 adb shell am instrument -w -e class app.shaqati.QaTour app.shaqati.test/androidx.test.runner.AndroidJUnitRunner | tee qa-tour.txt

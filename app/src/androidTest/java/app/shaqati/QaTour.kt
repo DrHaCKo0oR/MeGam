@@ -4,13 +4,13 @@ import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.hasTestTag
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createEmptyComposeRule
+import androidx.compose.ui.test.onAllNodesWithContentDescription
 import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollToIndex
 import androidx.test.core.app.ActivityScenario
-import androidx.test.uiautomator.UiDevice
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import app.shaqati.ui.MainActivity
 import kotlinx.coroutines.runBlocking
@@ -82,7 +82,8 @@ class QaTour {
                 shot("$lang-08-detail-finish")
                 compose.onNodeWithTag("detail_list").performScrollToIndex(5)
                 shot("$lang-09-detail-requirements")
-                UiDevice.getInstance(Qa.instr).pressBack()
+                compose.onNodeWithTag("detail_list").performScrollToIndex(0)
+                compose.onAllNodesWithContentDescription(Qa.str(lang, R.string.action_back)).onFirst().performClick()
             }
 
             compose.onNodeWithTag("tab_map").performClick()
@@ -102,7 +103,8 @@ class QaTour {
             compose.onNode(hasText(Qa.str(lang, R.string.set_work_change))).performClick()
             Qa.log("picker ready=" + waitForMap())
             shot("$lang-13-work-picker", 5_000)
-            UiDevice.getInstance(Qa.instr).pressBack()
+            compose.onAllNodesWithContentDescription(Qa.str(lang, R.string.action_back)).onFirst().performClick()
+            compose.waitUntilAtLeastOneExists(hasTestTag("settings_list"), 5_000)
         }
     }
 }

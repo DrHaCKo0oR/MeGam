@@ -4,6 +4,7 @@ import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.hasTestTag
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createEmptyComposeRule
+import androidx.compose.ui.test.onAllNodesWithContentDescription
 import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithTag
@@ -11,7 +12,6 @@ import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.uiautomator.UiDevice
 import app.shaqati.core.FeedMode
 import app.shaqati.ui.MainActivity
 import kotlinx.coroutines.flow.first
@@ -73,7 +73,7 @@ class LiveRefreshTest {
             compose.waitUntilAtLeastOneExists(hasTestTag("detail_list"), 10_000)
             settle()
             Qa.shot("live-02-detail")
-            UiDevice.getInstance(Qa.instr).pressBack()
+            compose.onAllNodesWithContentDescription(Qa.str("en", R.string.action_back)).onFirst().performClick()
 
             compose.onNodeWithTag("tab_map").performClick()
             val mapReady = runCatching { compose.waitUntilAtLeastOneExists(hasTestTag("map_ready"), 25_000) }.isSuccess
