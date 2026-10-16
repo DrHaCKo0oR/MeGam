@@ -55,6 +55,8 @@ data class ListingView(
     val firstSeenAt: Long,
     val isNew: Boolean,
     val gone: Boolean,
+    /** Which feed tab the apartment belongs to; [FeedMode.ALL] when it fits none of the others. */
+    val bucket: FeedMode = FeedMode.ALL,
 ) {
     val id: String get() = listing.id
     val sources: List<Source> get() = alsoOn.map { it.source }.distinct()
@@ -211,6 +213,13 @@ class Engine(
         return est.size
     }
 
+    /** Stores forecasts computed outside [computeCommutes]. */
+    suspend fun putCommutes(estimates: Map<GeoPoint, CommuteEstimate>) = mutex.withLock {
+        if (estimates.isEmpty()) return@withLock
+        val s = snapshot
+        snapshot = s.copy(commute = s.commute + estimates.mapKeys { Geo.cellKey(it.key, 3) })
+    }
+
     fun commuteFor(l: Listing): CommuteEstimate? = l.location?.let { snapshot.commute[Geo.cellKey(it, 3)] }
 
     /** Drops cached commute results, e.g. after the work pin or calibration changes. */
@@ -245,14 +254,13 @@ class Engine(
             val ids = members.map { it.listing.id }
             val hidden = ids.any { it in s.user.hidden }
             if (hidden && !includeHidden) continue
-            val confirmed = eval.passes && eval.unconfirmed.none { it in CRITICAL }
-            val keep = when (mode) {
-                FeedMode.MATCHES -> confirmed
-                FeedMode.UNCONFIRMED -> eval.passes && !confirmed
-                FeedMode.NEAR_MISSES -> !eval.passes && nearMiss(eval, r, commute, criteria)
-                FeedMode.ALL -> true
+            val bucket = when {
+                eval.passes && eval.unconfirmed.none { it in CRITICAL } -> FeedMode.MATCHES
+                eval.passes -> FeedMode.UNCONFIRMED
+                nearMiss(eval, r, commute, criteria) -> FeedMode.NEAR_MISSES
+                else -> FeedMode.ALL
             }
-            if (!keep) continue
+            if (mode != FeedMode.ALL && bucket != mode) continue
             val first = members.minOf { s.tracked[it.listing.id]!!.firstSeenAt }
             out += ListingView(
                 listing = l,
@@ -267,6 +275,7 @@ class Engine(
                 firstSeenAt = first,
                 isNew = ids.none { it in s.user.seen } && now - first < 3 * Evaluator.DAY_MS,
                 gone = members.all { s.tracked[it.listing.id]?.goneAt != null },
+                bucket = bucket,
             )
         }
         return sort(out, sort)

@@ -48,3 +48,49 @@ jobs:
           gh release create dev-deps m2.zip --prerelease --target "${GITHUB_SHA}" \
             --title "Development dependency bundle" \
             --notes "Maven-layout bundle of build dependencies for offline development sandboxes. Not an app release."
+
+  android:
+    name: android app
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Android SDK packages
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "build-tools;35.0.0" "build-tools;36.0.0" > /dev/null
+          ls "$ANDROID_HOME/platforms" "$ANDROID_HOME/build-tools"
+      - name: Resolve dependencies
+        run: ./gradlew :app:resolveAll --continue -q || true
+      - name: Build, unit tests and lint
+        run: ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug --continue
+      - name: Test summary
+        if: always()
+        run: python3 .github/scripts/junit_summary.py app/build/test-results || true
+      - name: Lint summary
+        if: always()
+        run: python3 .github/scripts/lint_summary.py app/build/reports/lint-results-debug.xml
+      - name: Upload APK
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shaqati-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+      - name: Publish Android SDK and dependency bundle for offline development
+        if: always() && contains(github.event.head_commit.message, '[sdk]')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 .github/scripts/export_m2.py ~/.gradle/caches/modules-2/files-2.1 m2
+          (cd m2 && zip -qr ../m2-android.zip .)
+          (cd "$ANDROID_HOME" && zip -qr "$GITHUB_WORKSPACE/android-sdk.zip" platforms/android-36 build-tools/35.0.0 build-tools/36.0.0 licenses)
+          ls -la m2-android.zip android-sdk.zip
+          gh release delete dev-sdk -y --cleanup-tag || true
+          gh release create dev-sdk m2-android.zip android-sdk.zip --prerelease --target "${GITHUB_SHA}" \
+            --title "Android development bundle" \
+            --notes "Android SDK platform/build-tools and Maven-layout build dependencies for offline development sandboxes. Not an app release."

@@ -102,6 +102,7 @@ dependencies {
     androidTestImplementation(composeBom)
 
     implementation("androidx.core:core-ktx:${v("coreKtxVersion")}")
+    implementation("androidx.appcompat:appcompat:${v("appcompatVersion")}")
     implementation("androidx.activity:activity-compose:${v("activityVersion")}")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:${v("lifecycleVersion")}")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:${v("lifecycleVersion")}")
@@ -136,4 +137,14 @@ dependencies {
     androidTestImplementation("androidx.test:rules:${v("androidxRulesVersion")}")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     androidTestImplementation("androidx.test.uiautomator:uiautomator:${v("uiautomatorVersion")}")
+}
+
+// Resolves every classpath so CI can publish a complete offline dependency bundle.
+tasks.register("resolveAll") {
+    notCompatibleWithConfigurationCache("resolves configurations at execution time")
+    doLast {
+        configurations.filter { it.isCanBeResolved }.forEach { c ->
+            runCatching { c.resolve() }.onFailure { logger.info("skip ${c.name}: ${it.message}") }
+        }
+    }
 }
