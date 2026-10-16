@@ -388,6 +388,41 @@ async def browse_step():
         await browser.close()
 
 
+def jsgrep_step():
+    """Downloads a site's JavaScript bundles and saves snippets around API patterns."""
+    spec = json.loads((ROOT / "fetch.json").read_text(encoding="utf-8"))
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": MOBILE_UA, "Accept-Language": "ar-SA,ar;q=0.9"})
+    for item in spec.get("jsgrep", []):
+        out_lines = []
+        try:
+            html = sess.get(item["page"], timeout=40).text
+            srcs = re.findall(r'<script[^>]+src="([^"]+\.js[^"]*)"', html)
+            srcs += re.findall(r'"(/_next/static/chunks/[^"]+\.js)"', html)
+            srcs += [s for s in re.findall(r'(https://[^"\'\s]+/_next/static/chunks/[^"\'\s\\]+\.js)', html)]
+            srcs += item.get("extra_js", [])
+            seen = set()
+            for s in srcs:
+                u = urljoin(item["page"], s.replace("\\u0026", "&"))
+                if u in seen or len(seen) >= item.get("max_js", 120):
+                    continue
+                seen.add(u)
+                try:
+                    js = sess.get(u, timeout=40).text
+                except Exception as e:  # noqa: BLE001
+                    out_lines.append(f"!! {u} {e!r}")
+                    continue
+                for pat in item["patterns"]:
+                    for m in list(re.finditer(pat, js))[: item.get("max_hits", 6)]:
+                        a, b = max(0, m.start() - item.get("before", 400)), min(len(js), m.end() + item.get("after", 1200))
+                        out_lines.append(f"=== {u} :: {pat} @ {m.start()}\n{js[a:b]}\n")
+            out_lines.insert(0, f"scripts scanned: {len(seen)}")
+        except Exception as e:  # noqa: BLE001
+            out_lines.append(f"ERROR {e!r}")
+        write(OUT / "jsgrep" / f"{item['name']}.txt", "\n".join(out_lines))
+        print(item["name"], len(out_lines), flush=True)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     only = [x for x in os.environ.get("PROBE_ONLY", "").split(",") if x]
@@ -396,6 +431,8 @@ def main():
         maven_versions()
     if "geo" in steps:
         geocode()
+    if "jsgrep" in steps:
+        jsgrep_step()
     if "fetch" in steps:
         fetch_step()
     if "browse" in steps:

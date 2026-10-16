@@ -1,43 +1,28 @@
 {
-  "requests": [
-    {"name": "aqar-list-masif", "url": "https://sa.aqar.fm/شقق-للإيجار/الرياض/شمال-الرياض/حي-المصيف",
-     "detail_re": "/شقق-للإيجار/[^\"'\\s<>\\\\]{5,300}?-\\d{6,8}(?=[\"'\\\\])"},
-    {"name": "aqar-list-masif-p2", "url": "https://sa.aqar.fm/شقق-للإيجار/الرياض/شمال-الرياض/حي-المصيف/2"},
-    {"name": "aqar-list-masif-q2", "url": "https://sa.aqar.fm/شقق-للإيجار/الرياض/شمال-الرياض/حي-المصيف?page=2"},
-    {"name": "aqar-list-north", "url": "https://sa.aqar.fm/شقق-للإيجار/الرياض/شمال-الرياض"},
-    {"name": "aqar-floor-masif", "url": "https://sa.aqar.fm/دور-للإيجار/الرياض/شمال-الرياض/حي-المصيف"},
-    {"name": "aqar-graphql-get", "url": "https://sa.aqar.fm/graphql"},
-    {"name": "haraj-masif-tag", "graphql": "haraj",
-     "url": "https://graphql.haraj.com.sa/?queryName=posts&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
-     "variables": {"tag": "شقق للايجار في حي المصيف في الرياض", "page": 1}},
-    {"name": "haraj-near-latlng", "graphql": "haraj",
-     "url": "https://graphql.haraj.com.sa/?queryName=posts&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
-     "variables": {"tag": "شقق للايجار", "near": "24.7655,46.6802", "page": 1}},
-    {"name": "haraj-near-geohash", "graphql": "haraj",
-     "url": "https://graphql.haraj.com.sa/?queryName=posts&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
-     "variables": {"tag": "شقق للايجار", "near": "th3jj", "page": 1}},
-    {"name": "haraj-riyadh-images", "graphql": "haraj",
-     "url": "https://graphql.haraj.com.sa/?queryName=posts&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
-     "variables": {"tag": "شقق للايجار", "cities": ["الرياض"], "page": 1, "onlyWithImage": true, "limit": 50}},
-    {"name": "haraj-floor-riyadh", "graphql": "haraj",
-     "url": "https://graphql.haraj.com.sa/?queryName=posts&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
-     "variables": {"tag": "ادوار للايجار", "cities": ["الرياض"], "page": 1}},
-    {"name": "pf-north", "url": "https://www.propertyfinder.sa/ar/للايجار/الرياض/شقق-للايجار-شمال-الرياض.html",
-     "detail_re": "/ar/plp/[^\"'\\s<>\\\\]+?\\.html"},
-    {"name": "pf-north-p2", "url": "https://www.propertyfinder.sa/ar/للايجار/الرياض/شقق-للايجار-شمال-الرياض.html?page=2"},
-    {"name": "pf-api-count", "url": "https://www.propertyfinder.sa/api/pwa/property/count?locale=ar&filters.category_id=2&filters.furnished=all"},
-    {"name": "opensooq-riyadh", "url": "https://sa.opensooq.com/ar/الرياض/عقارات/شقق-للايجار",
-     "detail_re": "/ar/search/\\d{6,}[^\"'\\s<>\\\\]*"},
-    {"name": "opensooq-all", "url": "https://sa.opensooq.com/ar/عقارات/شقق-للايجار"},
-    {"name": "kite-search", "url": "https://kite.sa/ar/search?city=riyadh", "detail_re": "/ar/listing/\\d+"},
-    {"name": "kite-neighborhoods", "url": "https://kite.sa/api/app/neighborhoods?city=riyadh"},
-    {"name": "bayut-home", "url": "https://www.bayut.sa/"},
-    {"name": "wasalt-home", "url": "https://wasalt.sa/"}
+  "jsgrep": [
+    {"name": "aqar", "page": "https://sa.aqar.fm/شقق-للإيجار/الرياض/شمال-الرياض/حي-المصيف",
+     "patterns": ["graphql", "operationName", "query [A-Za-z]+\\(", "findListings", "next-api/"], "max_js": 120, "max_hits": 5},
+    {"name": "kite", "page": "https://kite.sa/ar/search?city=riyadh",
+     "patterns": ["api/app/listings", "max_price", "min_bedrooms", "neighborhoods=", "searchParams", "developer", "x-search-request-id"], "max_js": 120, "max_hits": 6},
+    {"name": "deal", "page": "https://dealapp.sa/ar/tabs/marketplace",
+     "patterns": ["production/ad\\?", "\"ad\\?", "/ad\\?", "priceFrom", "minPrice", "propertyType=", "district", "purpose="], "max_js": 60, "max_hits": 6}
   ],
-  "browse": [
-    {"name": "deal-market", "url": "https://dealapp.sa/ar/السوق/الاعلانات/عقارات_المملكة/جميع_العقارات/بيع_و_إيجار", "wait_ms": 9000},
-    {"name": "deal-market-riyadh", "url": "https://dealapp.sa/ar/tabs/marketplace", "wait_ms": 9000},
-    {"name": "kite-search", "url": "https://kite.sa/ar/search?city=riyadh", "wait_ms": 6000},
-    {"name": "opensooq-riyadh", "url": "https://sa.opensooq.com/ar/الرياض/عقارات/شقق-للايجار", "wait_ms": 5000}
-  ]
+  "requests": [
+    {"name": "kite-devdocs-1", "url": "https://kite.sa/developers"},
+    {"name": "kite-devdocs-2", "url": "https://kite.sa/ar/developers"},
+    {"name": "kite-devdocs-3", "url": "https://kite.sa/api/docs"},
+    {"name": "kite-devdocs-4", "url": "https://kite.sa/docs"},
+    {"name": "kite-listings-default", "url": "https://kite.sa/api/app/listings?"},
+    {"name": "kite-listings-riyadh", "url": "https://kite.sa/api/app/listings?city=riyadh&listing_type=rent&property_type=apartment&max_price=50000&min_bedrooms=2&sort=newest&page=1"},
+    {"name": "kite-listings-riyadh-p2", "url": "https://kite.sa/api/app/listings?city=riyadh&listing_type=rent&property_type=apartment&max_price=50000&min_bedrooms=2&sort=newest&page=2"},
+    {"name": "kite-map-masif", "url": "https://kite.sa/api/app/map-listings?bounds=24.70,46.60,24.83,46.76&zoom=14&sort=relevance"},
+    {"name": "kite-listing-detail", "url": "https://kite.sa/ar/listing/112659998"},
+    {"name": "kite-directions", "url": "https://kite.sa/api/app/directions?city=riyadh"},
+    {"name": "deal-guest", "method": "POST", "url": "https://api.dealapp.sa/production/user/skip",
+     "json": {"os": "Mozilla/5.0 (Linux; Android 14)", "name": "Linux x86_64", "devicePlatform": "web"},
+     "headers": {"Origin": "https://dealapp.sa", "Accept-Language": "ar"}},
+    {"name": "aqar-graphql-post", "method": "POST", "url": "https://sa.aqar.fm/graphql",
+     "json": {"query": "{ __typename }"}, "headers": {"Origin": "https://sa.aqar.fm", "Referer": "https://sa.aqar.fm/"}}
+  ],
+  "browse": []
 }
