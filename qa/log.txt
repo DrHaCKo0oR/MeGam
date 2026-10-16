@@ -1,5 +1,6 @@
+locale  -> en
 shot en-01-onboarding
-seeded 34 ads; buckets={NEAR_MISSES=6, ALL=25, MATCHES=3}
+seeded 34 ads; buckets={NEAR_MISSES=6, ALL=27, MATCHES=1}
 shot en-02-feed
 shot en-03-to-check
 shot en-04-close
@@ -11,21 +12,37 @@ shot en-09-detail-requirements
 shot en-10-map
 shot en-11-settings
 shot en-12-settings-ai
-live ok=true in 31s ads={aqar=88, haraj=141, pf=69, deal=21, opensooq=3} details=3 buckets={NEAR_MISSES=42, ALL=248, MATCHES=19, UNCONFIRMED=8}
-source aqar: ok=true found=88 pages=2 blocked=false 
-source haraj: ok=true found=141 pages=28 blocked=false 
+shot en-13-work-picker
+seeded 34 ads; buckets={NEAR_MISSES=6, ALL=27, MATCHES=1}
+locale en -> ar
+shot ar-02-feed
+shot ar-03-to-check
+shot ar-04-close
+shot ar-05-all
+shot ar-06-saved
+shot ar-07-detail
+shot ar-08-detail-finish
+shot ar-09-detail-requirements
+shot ar-10-map
+shot ar-11-settings
+shot ar-12-settings-ai
+shot ar-13-work-picker
+locale ar -> en
+live ok=true in 88s ads={aqar=718, haraj=132, pf=69, deal=76, opensooq=3} details=13 buckets={UNCONFIRMED=15, ALL=652, NEAR_MISSES=218, MATCHES=98}
+source aqar: ok=true found=718 pages=11 blocked=false 
+source haraj: ok=true found=132 pages=28 blocked=false 
 source pf: ok=true found=69 pages=5 blocked=false 
-source deal: ok=true found=21 pages=10 blocked=false 
+source deal: ok=true found=76 pages=18 blocked=false 
 source opensooq: ok=true found=3 pages=1 blocked=false 
-match 62 aqar:6865953 50000.0 am=20 الوادي photos=8
-match 60 aqar:6848514 38000.0 am=40 السليمانية photos=1
-match 59 aqar:6774856 40000.0 am=39 الياسمين photos=1
-match 57 haraj:172091853 48000.0 am=13 المروج photos=3
-match 56 aqar:6798741 45000.0 am=37 العقيق photos=10
-match 54 haraj:189122749 50000.0 am=20 الوادي photos=7
-match 54 aqar:6905327 36000.0 am=36 العقيق photos=1
-match 54 aqar:6905753 36000.0 am=36 العقيق photos=1
-match 53 haraj:172764179 45000.0 am=16 النفل photos=19
-match 53 aqar:6905404 35000.0 am=39 الياسمين photos=1
+match 73 aqar:6920843 45000.0 am=9 المصيف photos=11
+match 72 aqar:6797817 50000.0 am=15 الوادي photos=8
+match 66 aqar:6572375 50000.0 am=31 المغرزات photos=5
+match 65 aqar:6798738 43000.0 am=37 العقيق photos=6
+match 65 aqar:6857317 30000.0 am=28 الازدهار photos=5
+match 64 aqar:6617546 45000.0 am=40 العقيق photos=14
+match 64 aqar:6851693 50000.0 am=17 الوادي photos=13
+match 64 aqar:6918141 43300.0 am=12 المصيف photos=8
+match 64 aqar:6852748 47000.0 am=38 الصحافة photos=7
+match 63 aqar:6922677 50000.0 am=9 المصيف photos=14
 shot live-01-feed
 shot live-02-detail

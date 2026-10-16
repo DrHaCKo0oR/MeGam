@@ -1,3 +1,8 @@
 
-app.shaqati.QaTour:.INSTRUMENTATION_RESULT: shortMsg=Process crashed.
-INSTRUMENTATION_CODE: 0
+app.shaqati.QaTour:...
+
+Time: 139.561
+
+OK (3 tests)
+
+
