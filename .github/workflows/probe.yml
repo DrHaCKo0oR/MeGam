@@ -1,0 +1,53 @@
+name: probe
+
+# Records what the listing sites serve (network calls, embedded JSON) from a
+# real browser, plus geocoding and dependency versions, and commits masked
+# results to probe/out on the same branch. Edit probe/REQUEST to re-run.
+on:
+  push:
+    paths:
+      - "probe/probe.py"
+      - "probe/targets.json"
+      - "probe/requirements.txt"
+      - "probe/REQUEST"
+      - ".github/workflows/probe.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: probe-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: |
+          pip install -r probe/requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Run probe
+        run: |
+          set -a; . probe/REQUEST; set +a
+          python probe/probe.py 2>&1 | tail -c 60000
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add probe/out
+          git commit -q -m "probe: results for ${GITHUB_SHA::7} [skip ci]" || exit 0
+          for i in 1 2 3 4; do
+            git pull -q --rebase origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
