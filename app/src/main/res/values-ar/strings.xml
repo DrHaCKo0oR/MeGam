@@ -62,7 +62,6 @@
     <string name="time_now">الآن</string>
     <string name="time_minutes">قبل %1$d د</string>
     <string name="time_hours">قبل %1$d س</string>
-    <string name="time_days">قبل %1$d يوم</string>
     <string name="unknown">غير مذكور</string>
     <string name="majlis">مجلس</string>
 
@@ -173,7 +172,6 @@
     <string name="req_audience">مسموح للعوائل</string>
     <string name="req_commute">مشوار الصباح حتى %1$d دقيقة</string>
     <string name="req_kind">شقة أو دور أو ملحق</string>
-    <string name="req_age">إعلان أحدث من %1$d يوماً</string>
     <string name="req_city">في الرياض</string>
     <string name="req_district">ليست في حي مستبعد</string>
 
@@ -194,7 +192,6 @@
     <string name="set_commute_max">أقصى مشوار صباحي: %1$d دقيقة</string>
     <string name="set_allow_furnished">تضمين الشقق المفروشة بالكامل</string>
     <string name="set_exclude_singles">إخفاء إعلانات العزاب فقط</string>
-    <string name="set_max_age">تجاهل الإعلانات الأقدم من %1$d يوماً</string>
     <string name="set_commute">المشوار</string>
     <string name="set_departures">الخروج من البيت %1$s · من العمل %2$s (الأحد إلى الخميس)</string>
     <string name="set_calibration">المعايرة بمشواري الحالي</string>
@@ -269,5 +266,29 @@
         <item quantity="few">%1$d سنوات</item>
         <item quantity="many">%1$d سنة</item>
         <item quantity="other">%1$d سنة</item>
+    </plurals>
+    <plurals name="time_days">
+        <item quantity="zero">قبل %1$d يوم</item>
+        <item quantity="one">قبل يوم</item>
+        <item quantity="two">قبل يومين</item>
+        <item quantity="few">قبل %1$d أيام</item>
+        <item quantity="many">قبل %1$d يوماً</item>
+        <item quantity="other">قبل %1$d يوم</item>
+    </plurals>
+    <plurals name="req_age">
+        <item quantity="zero">إعلان أحدث من %1$d يوم</item>
+        <item quantity="one">إعلان أحدث من يوم</item>
+        <item quantity="two">إعلان أحدث من يومين</item>
+        <item quantity="few">إعلان أحدث من %1$d أيام</item>
+        <item quantity="many">إعلان أحدث من %1$d يوماً</item>
+        <item quantity="other">إعلان أحدث من %1$d يوم</item>
+    </plurals>
+    <plurals name="set_max_age">
+        <item quantity="zero">تجاهل الإعلانات الأقدم من %1$d يوم</item>
+        <item quantity="one">تجاهل الإعلانات الأقدم من يوم</item>
+        <item quantity="two">تجاهل الإعلانات الأقدم من يومين</item>
+        <item quantity="few">تجاهل الإعلانات الأقدم من %1$d أيام</item>
+        <item quantity="many">تجاهل الإعلانات الأقدم من %1$d يوماً</item>
+        <item quantity="other">تجاهل الإعلانات الأقدم من %1$d يوم</item>
     </plurals>
 </resources>

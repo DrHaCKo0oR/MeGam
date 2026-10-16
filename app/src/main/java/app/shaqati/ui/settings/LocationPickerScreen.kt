@@ -44,6 +44,7 @@ import app.shaqati.R
 import app.shaqati.core.model.GeoPoint
 import app.shaqati.core.sources.Districts
 import app.shaqati.ui.AppViewModel
+import app.shaqati.ui.components.coordinates
 import app.shaqati.ui.components.isArabic
 import app.shaqati.ui.map.MapWeb
 import app.shaqati.ui.theme.AppTheme
@@ -153,7 +154,7 @@ fun LocationPickerScreen(vm: AppViewModel, target: String, onDone: () -> Unit) {
                 Text(stringResource(R.string.pick_hint), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 Spacer(Modifier.height(4.dp))
                 Text(
-                    listOfNotNull(district?.let { if (ar) it.ar else it.en }, String.format(Locale.ROOT, "%.5f, %.5f", center.lat, center.lng)).joinToString(" · "),
+                    listOfNotNull(district?.let { if (ar) it.ar else it.en }, coordinates(center)).joinToString(" · "),
                     style = MaterialTheme.typography.bodyMedium,
                 )
                 Spacer(Modifier.height(10.dp))

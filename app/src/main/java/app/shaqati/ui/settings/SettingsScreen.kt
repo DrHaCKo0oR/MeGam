@@ -47,6 +47,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
@@ -59,6 +60,7 @@ import app.shaqati.data.KeyVault
 import app.shaqati.data.Settings
 import app.shaqati.ui.AppViewModel
 import app.shaqati.ui.components.clock
+import app.shaqati.ui.components.coordinates
 import app.shaqati.ui.components.isArabic
 import app.shaqati.ui.components.money
 import app.shaqati.ui.components.sourceName
@@ -94,7 +96,7 @@ fun SettingsScreen(vm: AppViewModel, openPicker: (String) -> Unit, openHidden: (
                         else stringResource(R.string.set_work_default),
                         style = MaterialTheme.typography.bodyMedium,
                     )
-                    Text(String.format(Locale.ROOT, "%.5f, %.5f", s.work.lat, s.work.lng), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.outline)
+                    Text(coordinates(s.work), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.outline)
                     Spacer(Modifier.height(8.dp))
                     FilledTonalButton(onClick = { openPicker("work") }) { Text(stringResource(R.string.set_work_change)) }
                     Spacer(Modifier.height(8.dp))
@@ -191,7 +193,7 @@ private fun RequirementsGroup(vm: AppViewModel, s: Settings) {
         SliderRow(stringResource(R.string.set_commute_max, c.maxMorningMinutes), c.maxMorningMinutes.toFloat(), 15f..75f, 11) { v ->
             vm.updateSettings { it.copy(criteria = it.criteria.copy(maxMorningMinutes = (v / 5).roundToInt() * 5)) }
         }
-        SliderRow(stringResource(R.string.set_max_age, c.maxListingAgeDays), c.maxListingAgeDays.toFloat(), 15f..180f, 10) { v ->
+        SliderRow(pluralStringResource(R.plurals.set_max_age, c.maxListingAgeDays, c.maxListingAgeDays), c.maxListingAgeDays.toFloat(), 15f..180f, 10) { v ->
             vm.updateSettings { it.copy(criteria = it.criteria.copy(maxListingAgeDays = (v / 15).roundToInt() * 15)) }
         }
         SwitchRow(stringResource(R.string.set_allow_furnished), c.allowFurnished) { on -> vm.updateSettings { it.copy(criteria = it.criteria.copy(allowFurnished = on)) } }

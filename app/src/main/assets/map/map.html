@@ -31,7 +31,9 @@
   d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/></svg>
 <script src="leaflet.js"></script>
 <script>
-  var S = { provider: null, map: null, markers: [], work: null, pick: false, pending: null, selected: null };
+  var S = { provider: null, map: null, markers: [], work: null, pick: false, pending: null, pendingMove: null, selected: null, started: false };
+
+  window.addEventListener('error', function (e) { console.error('map error: ' + e.message + ' line ' + e.lineno); });
 
   function bridge(name, payload) {
     try { if (window.Android && Android[name]) Android[name](JSON.stringify(payload || {})); } catch (e) {}
@@ -120,6 +122,7 @@
     if (S.pick) document.getElementById('cross').style.display = 'block';
     bridge('onReady', { provider: S.provider });
     if (S.pending) { var d = S.pending; S.pending = null; setData(d); }
+    if (S.pendingMove) { var m = S.pendingMove; S.pendingMove = null; moveMap(m[0], m[1], m[2]); }
   }
 
   function marker(p, html, onClick) {
@@ -143,6 +146,7 @@
       S.markers.push(marker(p, html, function () { select(p.id); }));
     });
     if (d.fit) fit(d);
+    console.log('map shows ' + (d.pins || []).length + ' pins on ' + S.provider);
   };
 
   function fit(d) {
@@ -159,14 +163,24 @@
   }
 
   window.moveMap = function (lat, lng, zoom) {
-    if (!S.map) return;
+    if (!S.map) { S.pendingMove = [lat, lng, zoom]; return; }
     if (S.provider === 'google') { S.map.setCenter({ lat: lat, lng: lng }); if (zoom) S.map.setZoom(zoom); }
     else S.map.setView([lat, lng], zoom || S.map.getZoom());
   };
 
+  // Called by the app once the page has loaded; a second call is ignored.
   window.initMap = function (cfg) {
+    if (S.started) return 'started';
+    S.started = true;
     S.pick = !!cfg.pick;
-    if (cfg.key) initGoogle(cfg); else initLeaflet(cfg);
+    try {
+      if (cfg.key) initGoogle(cfg); else initLeaflet(cfg);
+    } catch (e) {
+      console.error('map init failed: ' + e);
+      S.started = false;
+      return 'failed';
+    }
+    return S.provider || 'loading';
   };
 
   bridge('onLoaded', {});

@@ -3,6 +3,7 @@ package app.shaqati.ui.components
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import app.shaqati.R
 import app.shaqati.core.ai.Verdict
@@ -38,7 +39,7 @@ fun timeAgo(ms: Long?, now: Long = System.currentTimeMillis()): String {
         minutes < 2 -> stringResource(R.string.time_now)
         minutes < 60 -> stringResource(R.string.time_minutes, minutes.toInt())
         minutes < 48 * 60 -> stringResource(R.string.time_hours, (minutes / 60).toInt())
-        else -> stringResource(R.string.time_days, (minutes / (60 * 24)).toInt())
+        else -> (minutes / (60 * 24)).toInt().let { pluralStringResource(R.plurals.time_days, it, it) }
     }
 }
 

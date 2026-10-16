@@ -499,8 +499,9 @@ private fun RatingRow(label: String, r: ItemRating) {
             }
         }
     }
-    if (r.note.isNotBlank()) {
-        Text(r.note, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+    val note = if (isArabic() && r.noteAr.isNotBlank()) r.noteAr else r.note
+    if (note.isNotBlank()) {
+        Text(note, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }
 
@@ -580,7 +581,7 @@ private fun RequirementsSection(v: ListingView, c: Criteria) {
     if (c.excludeSinglesOnly) ReqRow(stringResource(R.string.req_audience), audienceLabel(r.audience), if (Check.AUDIENCE in e.failed) false else true)
     ReqRow(stringResource(R.string.req_commute, c.maxMorningMinutes), v.commute?.morningMinutes?.let { stringResource(R.string.commute_minutes, it) }, state(Check.COMMUTE_AM))
     ReqRow(stringResource(R.string.req_kind), kindLabel(v.listing.kind), state(Check.KIND))
-    ReqRow(stringResource(R.string.req_age, c.maxListingAgeDays), null, state(Check.AGE))
+    ReqRow(pluralStringResource(R.plurals.req_age, c.maxListingAgeDays, c.maxListingAgeDays), null, state(Check.AGE))
     if (Check.CITY in e.failed) ReqRow(stringResource(R.string.req_city), v.listing.city, false)
     if (Check.DISTRICT in e.failed) ReqRow(stringResource(R.string.req_district), v.listing.district, false)
 }

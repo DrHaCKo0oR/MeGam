@@ -14,7 +14,7 @@ enum class Verdict {
 
 /** One checklist item. [rating] is 0–10, or null when the photos do not show it. */
 @Serializable
-data class ItemRating(val rating: Int? = null, val note: String = "")
+data class ItemRating(val rating: Int? = null, val note: String = "", @SerialName("note_ar") val noteAr: String = "")
 
 @Serializable
 data class PhotoNote(val photo: Int, val note: String)

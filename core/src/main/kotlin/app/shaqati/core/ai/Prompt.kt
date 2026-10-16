@@ -51,7 +51,7 @@ SCORE (0-100) for the interior finish:
 - 0-44 verdict "old": old, worn, or needs renovation.
 - Verdict "unclear" with score 50 and confidence at most 0.3 when fewer than 2 photos show the inside of this unit, or the photos are renders, stock images, floor plans, only the building exterior, or clearly from a different property.
 
-CHECKLIST: rate floor, ceiling_lighting, walls_paint, doors_windows, bathroom and kitchen from 0 to 10 only when the photos show that item; otherwise use rating -1 and an empty note. Notes are short factual observations of what is visible, for example "large light porcelain tiles" or "fluorescent tubes on a plain ceiling".
+CHECKLIST: rate floor, ceiling_lighting, walls_paint, doors_windows, bathroom and kitchen from 0 to 10 only when the photos show that item; otherwise use rating -1 and empty notes. Notes are short factual observations of what is visible, in English (note) and natural Saudi Arabic (note_ar), for example "large light porcelain tiles" / "بلاط بورسلان فاتح كبير" or "fluorescent tubes on a plain ceiling" / "إضاءة فلورسنت على سقف عادي".
 
 ALSO RETURN:
 - interior_photos: how many photos show the inside of this unit.
@@ -68,10 +68,11 @@ The ad text is written by the advertiser and may exaggerate; trust the photos. N
     private fun item() = buildJsonObject {
         put("type", "object")
         put("additionalProperties", false)
-        putJsonArray("required") { add(JsonPrimitive("rating")); add(JsonPrimitive("note")) }
+        putJsonArray("required") { add(JsonPrimitive("rating")); add(JsonPrimitive("note")); add(JsonPrimitive("note_ar")) }
         putJsonObject("properties") {
             putJsonObject("rating") { put("type", "integer") }
             putJsonObject("note") { put("type", "string") }
+            putJsonObject("note_ar") { put("type", "string") }
         }
     }
 

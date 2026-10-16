@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import app.shaqati.ui.components.LatinDigits
 import app.shaqati.ui.theme.ShaqatiTheme
 
 class MainActivity : AppCompatActivity() {
@@ -17,8 +18,10 @@ class MainActivity : AppCompatActivity() {
         splash.setKeepOnScreenCondition { vm.settings.value == null }
         enableEdgeToEdge()
         setContent {
-            ShaqatiTheme {
-                AppRoot(vm)
+            LatinDigits {
+                ShaqatiTheme {
+                    AppRoot(vm)
+                }
             }
         }
     }

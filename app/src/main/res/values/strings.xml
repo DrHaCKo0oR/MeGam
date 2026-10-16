@@ -62,7 +62,6 @@
     <string name="time_now">just now</string>
     <string name="time_minutes">%1$d min ago</string>
     <string name="time_hours">%1$d h ago</string>
-    <string name="time_days">%1$d d ago</string>
     <string name="unknown">Not stated</string>
     <string name="majlis">majlis</string>
 
@@ -173,7 +172,6 @@
     <string name="req_audience">Families allowed</string>
     <string name="req_commute">Morning commute up to %1$d min</string>
     <string name="req_kind">Apartment, floor or annex</string>
-    <string name="req_age">Ad newer than %1$d days</string>
     <string name="req_city">In Riyadh</string>
     <string name="req_district">Not in an excluded district</string>
 
@@ -194,7 +192,6 @@
     <string name="set_commute_max">Max morning commute: %1$d min</string>
     <string name="set_allow_furnished">Include fully furnished apartments</string>
     <string name="set_exclude_singles">Hide singles-only ads</string>
-    <string name="set_max_age">Ignore ads older than %1$d days</string>
     <string name="set_commute">Commute</string>
     <string name="set_departures">Leave home %1$s · leave work %2$s (Sunday to Thursday)</string>
     <string name="set_calibration">Calibrate with my current trip</string>
@@ -265,5 +262,17 @@
     <plurals name="years">
         <item quantity="one">%1$d year</item>
         <item quantity="other">%1$d years</item>
+    </plurals>
+    <plurals name="time_days">
+        <item quantity="one">%1$d d ago</item>
+        <item quantity="other">%1$d d ago</item>
+    </plurals>
+    <plurals name="req_age">
+        <item quantity="one">Ad newer than %1$d day</item>
+        <item quantity="other">Ad newer than %1$d days</item>
+    </plurals>
+    <plurals name="set_max_age">
+        <item quantity="one">Ignore ads older than %1$d day</item>
+        <item quantity="other">Ignore ads older than %1$d days</item>
     </plurals>
 </resources>

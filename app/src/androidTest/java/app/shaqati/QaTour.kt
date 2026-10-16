@@ -36,6 +36,10 @@ class QaTour {
         Qa.shot(name)
     }
 
+    /** Waits until the map page has started (the WebView reports back); returns false on timeout. */
+    private fun waitForMap(): Boolean =
+        runCatching { compose.waitUntilAtLeastOneExists(hasTestTag("map_ready"), 25_000) }.isSuccess
+
     @Test
     fun a_onboarding() {
         runBlocking { Qa.repo.updateSettings { it.copy(onboarded = false) } }
@@ -82,10 +86,13 @@ class QaTour {
             }
 
             compose.onNodeWithTag("tab_map").performClick()
-            compose.waitForIdle()
-            // The WebView loads on its own; the pins are pushed once the page reports ready.
-            Thread.sleep(6_000)
-            shot("$lang-10-map", 3_000)
+            Qa.log("map ready=" + waitForMap())
+            shot("$lang-10-map", 5_000)
+            // Tapping a pin goes through the page's bridge back to the app, which shows the card.
+            Qa.js(sc, "var p = document.querySelector('.pin'); if (p) p.click(); 'pins=' + document.querySelectorAll('.pin').length")
+            val card = runCatching { compose.waitUntilAtLeastOneExists(hasTestTag("card"), 8_000) }.isSuccess
+            Qa.log("map pin card=$card")
+            shot("$lang-10b-map-pin")
 
             compose.onNodeWithTag("tab_settings").performClick()
             shot("$lang-11-settings")
@@ -93,9 +100,8 @@ class QaTour {
             shot("$lang-12-settings-ai")
             compose.onNodeWithTag("settings_list").performScrollToIndex(0)
             compose.onNode(hasText(Qa.str(lang, R.string.set_work_change))).performClick()
-            compose.waitForIdle()
-            Thread.sleep(6_000)
-            shot("$lang-13-work-picker", 2_000)
+            Qa.log("picker ready=" + waitForMap())
+            shot("$lang-13-work-picker", 5_000)
             UiDevice.getInstance(Qa.instr).pressBack()
         }
     }

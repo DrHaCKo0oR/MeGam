@@ -2,6 +2,9 @@ package app.shaqati
 
 import android.content.res.Configuration
 import android.graphics.Bitmap
+import android.view.View
+import android.view.ViewGroup
+import android.webkit.WebView
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
 import androidx.test.platform.app.InstrumentationRegistry
@@ -66,6 +69,21 @@ object Qa {
         log("locale $current -> $tag")
     }
 
+    /** Runs [script] in the first WebView on screen and logs its result. */
+    fun js(scenario: androidx.test.core.app.ActivityScenario<*>, script: String) {
+        scenario.onActivity { a ->
+            val web = findWebView(a.window.decorView)
+            if (web == null) log("js: no WebView") else web.evaluateJavascript(script) { log("js: $it") }
+        }
+        instr.waitForIdleSync()
+    }
+
+    private fun findWebView(v: View): WebView? = when (v) {
+        is WebView -> v
+        is ViewGroup -> (0 until v.childCount).firstNotNullOfOrNull { findWebView(v.getChildAt(it)) }
+        else -> null
+    }
+
     fun str(tag: String, id: Int, vararg args: Any): String {
         val conf = Configuration(app.resources.configuration).apply { setLocale(Locale.forLanguageTag(tag)) }
         return app.createConfigurationContext(conf).getString(id, *args)
@@ -101,11 +119,11 @@ object Qa {
                     listingId = pick.id,
                     body = AssessmentBody(
                         score = 84, verdict = Verdict.MODERN, confidence = 0.78,
-                        floor = ItemRating(9, "Large light porcelain tiles"),
-                        ceilingLighting = ItemRating(8, "Gypsum ceiling with spotlights"),
-                        wallsPaint = ItemRating(8, "Fresh neutral paint"),
-                        doorsWindows = ItemRating(7, "Modern doors"),
-                        bathroom = ItemRating(8, "Wall-hung toilet, new vanity"),
+                        floor = ItemRating(9, "Large light porcelain tiles", "بلاط بورسلان فاتح كبير"),
+                        ceilingLighting = ItemRating(8, "Gypsum ceiling with spotlights", "سقف جبس مع إضاءة سبوت"),
+                        wallsPaint = ItemRating(8, "Fresh neutral paint", "دهان جديد بألوان هادئة"),
+                        doorsWindows = ItemRating(7, "Modern doors", "أبواب حديثة"),
+                        bathroom = ItemRating(8, "Wall-hung toilet, new vanity", "كرسي معلق ومغسلة جديدة"),
                         kitchen = ItemRating(null, ""),
                         highlightsEn = listOf("Spotlights and hidden lighting", "New porcelain floors"),
                         highlightsAr = listOf("إضاءة سبوت ومخفية", "أرضيات بورسلان جديدة"),
