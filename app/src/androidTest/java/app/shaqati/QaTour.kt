@@ -20,6 +20,7 @@ import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import app.shaqati.ui.MainActivity
 import kotlinx.coroutines.runBlocking
+import org.junit.Assert.assertTrue
 import org.junit.FixMethodOrder
 import org.junit.Rule
 import org.junit.Test
@@ -153,7 +154,8 @@ class QaTour {
             compose.onNodeWithTag("tab_map").performClick()
             Qa.log("map ready=" + waitForMap())
             shot("$lang-10-map", 5_000)
-            Qa.js(sc, Qa.MAP_PROBE)
+            Qa.jsResult(sc, Qa.MAP_PROBE)
+            assertTrue("map page laid out with no height", Qa.mapHeight(sc) > 0)
             Qa.webShot(sc, "$lang-10c-map-content")
             // Tapping a pin goes through the page's bridge back to the app, which shows the card.
             Qa.js(sc, "var p = document.querySelector('.pin'); if (p) p.click(); 'pins=' + document.querySelectorAll('.pin').length")
@@ -169,6 +171,7 @@ class QaTour {
             compose.onNode(hasText(Qa.str(lang, R.string.set_work_change))).performClick()
             Qa.log("picker ready=" + waitForMap())
             shot("$lang-13-work-picker", 5_000)
+            assertTrue("picker map laid out with no height", Qa.mapHeight(sc) > 0)
             Qa.webShot(sc, "$lang-13c-picker-content")
             compose.onAllNodesWithContentDescription(Qa.str(lang, R.string.action_back)).onFirst().performClick()
             compose.waitUntilAtLeastOneExists(hasTestTag("settings_list"), 5_000)

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
+import android.view.ViewGroup
 import android.webkit.ConsoleMessage
 import android.webkit.JavascriptInterface
 import android.webkit.RenderProcessGoneDetail
@@ -95,6 +96,10 @@ fun MapWeb(
                     language, pick,
                 )
                 WebView(activityContext).apply {
+                    // Without explicit MATCH_PARENT params the WebView treats its height as
+                    // wrap-content and lays the page out with zero height, so the map's
+                    // height:100% container collapsed to nothing.
+                    layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
                     settings.javaScriptEnabled = true
                     settings.domStorageEnabled = true
                     // OpenStreetMap's tile servers ask apps to identify themselves.

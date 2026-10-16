@@ -80,7 +80,8 @@ class LiveRefreshTest {
             Qa.log("live map ready=$mapReady")
             settle(6_000)
             Qa.shot("live-03-map")
-            Qa.js(sc, Qa.MAP_PROBE)
+            Qa.jsResult(sc, Qa.MAP_PROBE)
+            assertTrue("map page laid out with no height", Qa.mapHeight(sc) > 0)
             Qa.webShot(sc, "live-03c-map-content")
 
             assertTrue("only $bySource", bySource.size >= 3)

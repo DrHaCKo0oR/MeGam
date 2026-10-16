@@ -33,6 +33,8 @@ import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import java.io.File
+import java.util.concurrent.CountDownLatch
+import java.util.concurrent.TimeUnit
 import java.util.Locale
 
 /** Shared helpers for the on-device QA tests: seeding, locale switching and screenshots. */
@@ -93,6 +95,23 @@ object Qa {
             "bg:cs.backgroundColor,pos:cs.position,sheets:document.styleSheets.length,tiles:imgs.length,loaded:ok," +
             "pins:document.querySelectorAll('.pin').length,work:document.querySelectorAll('.work').length," +
             "provider:S.provider,vis:document.visibilityState});})()"
+
+    /** Height of the map element in the page on screen, in CSS pixels (0 when it collapsed). */
+    fun mapHeight(scenario: androidx.test.core.app.ActivityScenario<*>): Int =
+        jsResult(scenario, "document.getElementById('map').clientHeight")?.toDoubleOrNull()?.toInt() ?: 0
+
+    /** Runs [script] in the first WebView on screen, waits for its result and logs it. */
+    fun jsResult(scenario: androidx.test.core.app.ActivityScenario<*>, script: String): String? {
+        val done = CountDownLatch(1)
+        var out: String? = null
+        scenario.onActivity { a ->
+            val web = findWebView(a.window.decorView)
+            if (web == null) done.countDown() else web.evaluateJavascript(script) { out = it; done.countDown() }
+        }
+        done.await(10, TimeUnit.SECONDS)
+        log("js: $out")
+        return out
+    }
 
     /** Runs [script] in the first WebView on screen and logs its result. */
     fun js(scenario: androidx.test.core.app.ActivityScenario<*>, script: String) {

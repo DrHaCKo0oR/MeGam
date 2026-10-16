@@ -120,7 +120,26 @@
   }
 
   // ---- shared ----
+  // Safety net: if the page is laid out with no height (a WebView sized to its content does
+  // that), size the map to the window instead of leaving it collapsed.
+  function fitToWindow() {
+    var el = document.getElementById('map');
+    if (el.clientHeight === 0 && window.innerHeight > 0) {
+      el.style.height = window.innerHeight + 'px';
+      console.log('map container had no height; sized to ' + window.innerHeight + 'px');
+    }
+    if (!S.map) return;
+    if (S.provider === 'google') google.maps.event.trigger(S.map, 'resize');
+    else S.map.invalidateSize();
+  }
+  window.addEventListener('resize', function () {
+    var el = document.getElementById('map');
+    if (el.style.height) el.style.height = window.innerHeight + 'px';
+    fitToWindow();
+  });
+
   function ready() {
+    fitToWindow();
     if (S.pick) document.getElementById('cross').style.display = 'block';
     bridge('onReady', { provider: S.provider });
     if (S.pending) { var d = S.pending; S.pending = null; setData(d); }
