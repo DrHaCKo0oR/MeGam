@@ -41,24 +41,26 @@ shot ar-12-settings-ai
 picker ready=true
 shot ar-13-work-picker
 webShot ar-13c-picker-content
+shot zz-webview-control
+webShot zz-webview-control-content
 locale ar -> en
 shot live-00-searching
-live error=null in 82s ads={aqar=718, haraj=130, pf=69, deal=59, opensooq=3} details=12 buckets={UNCONFIRMED=15, MATCHES=101, ALL=635, NEAR_MISSES=214}
-source aqar: ok=true found=718 pages=11 blocked=false 
-source haraj: ok=true found=130 pages=28 blocked=false 
+live error=null in 82s ads={aqar=717, haraj=131, pf=69, deal=65, opensooq=3} details=13 buckets={UNCONFIRMED=15, MATCHES=100, ALL=639, NEAR_MISSES=216}
+source aqar: ok=true found=717 pages=11 blocked=false 
+source haraj: ok=true found=131 pages=28 blocked=false 
 source pf: ok=true found=69 pages=5 blocked=false 
-source deal: ok=true found=59 pages=18 blocked=false 
+source deal: ok=true found=65 pages=18 blocked=false 
 source opensooq: ok=true found=3 pages=1 blocked=false 
 match 77 aqar:6891322 25000.0 am=6 المصيف photos=1
 match 73 aqar:6920843 45000.0 am=9 المصيف photos=11
 match 72 aqar:6797817 50000.0 am=15 الوادي photos=8
-match 70 deal:6a53e1b40a872b085c961d19 35000.0 am=18 التعاون photos=1
 match 70 deal:6a527d19896877027ec3ae5e 40000.0 am=16 النفل photos=1
 match 66 aqar:6857317 30000.0 am=28 الازدهار photos=5
 match 66 aqar:6572375 50000.0 am=31 المغرزات photos=5
 match 65 aqar:6798738 43000.0 am=37 العقيق photos=6
 match 64 aqar:6617546 45000.0 am=40 العقيق photos=14
 match 64 aqar:6851693 50000.0 am=17 الوادي photos=13
+match 64 aqar:6918141 43300.0 am=12 المصيف photos=8
 shot live-01-feed
 shot live-02-detail
 live map ready=true
