@@ -11,11 +11,15 @@ adb install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
 adb shell am instrument -w -e class app.shaqati.QaTour app.shaqati.test/androidx.test.runner.AndroidJUnitRunner | tee qa-tour.txt
 adb logcat -d -v time ShaqatiMap:V chromium:V '*:S' > map-log.txt || true
 adb logcat -d -b crash > crash.txt || true
+# Everything the tour left in the log buffers (process deaths, native crashes, memory kills).
+adb logcat -d -b all -v time > tour-full.txt || true
+tail -n 6000 tour-full.txt > tour-log.txt
 adb shell am instrument -w -e class app.shaqati.LiveRefreshTest app.shaqati.test/androidx.test.runner.AndroidJUnitRunner | tee qa-live.txt
 adb logcat -d -b crash >> crash.txt || true
 rm -rf qa && mkdir -p qa
 adb pull /sdcard/Android/data/app.shaqati/files/qa/. qa/ || true
-cp qa-tour.txt qa-live.txt map-log.txt webview.txt crash.txt qa/ || true
-adb logcat -d -t 3000 '*:E' ShaqatiQA:I > qa/logcat.txt || true
+cp qa-tour.txt qa-live.txt map-log.txt webview.txt crash.txt tour-log.txt qa/ || true
+adb logcat -d '*:E' ShaqatiQA:I | tail -n 3000 > qa/logcat.txt || true
 ls -la qa
-exit 0
+# The job fails when a test class did not finish with OK (the files above are kept either way).
+grep -q "^OK (" qa-tour.txt && grep -q "^OK (" qa-live.txt

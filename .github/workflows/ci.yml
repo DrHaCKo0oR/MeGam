@@ -163,7 +163,8 @@ jobs:
         id: qa
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 34
+          # Android 15 image: its newer WebView; the Android 14 image's WebView 113 drew no frames.
+          api-level: 35
           arch: x86_64
           target: google_apis
           profile: pixel_7
