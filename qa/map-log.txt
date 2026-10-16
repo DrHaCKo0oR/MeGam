@@ -1,44 +1,45 @@
 --------- beginning of main
-10-16 21:22:10.457 W/chromium( 1330): [1016/212210.457850:WARNING:dns_config_service_android.cc(81)] Failed to read DnsConfig.
-10-16 21:22:22.987 W/chromium( 1570): [1016/212222.983564:WARNING:url_request_context_config.cc(716)] Unrecognized Cronet experimental option "enable_telemetry" with params "false
-10-16 21:22:22.987 W/chromium( 1570): 
-10-16 21:22:35.506 W/chromium( 1570): [1016/212235.506725:WARNING:url_request_context_config.cc(716)] Unrecognized Cronet experimental option "enable_telemetry" with params "false
-10-16 21:22:35.506 W/chromium( 1570): 
-10-16 21:22:36.489 I/chromium( 1570): [INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
-10-16 21:22:36.490 I/chromium( 1570): [INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
-10-16 21:23:22.085 I/chromium( 2463): [1016/212322.078782:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
-10-16 21:23:22.086 I/chromium( 2463): [INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
-10-16 21:23:22.512 W/chromium( 4154): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
-10-16 21:23:22.512 W/chromium( 4154): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
-10-16 21:23:23.350 I/ShaqatiMap( 2463): ready {"provider":"leaflet"}
-10-16 21:23:23.356 I/ShaqatiMap( 2463): initMap -> "leaflet"
-10-16 21:23:23.360 I/ShaqatiMap( 2463): setData 1 pins
-10-16 21:23:23.375 I/ShaqatiMap( 2463): LOG map shows 1 pins on leaflet (map.html:151)
-10-16 21:23:23.613 I/ShaqatiMap( 2463): page loaded
-10-16 21:23:23.618 I/ShaqatiMap( 2463): initMap -> "started"
-10-16 21:23:31.885 E/chromium( 2463): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4154) crash detected (code -1).
-10-16 21:23:37.183 W/chromium( 4317): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
-10-16 21:23:37.183 W/chromium( 4317): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
-10-16 21:23:37.375 I/ShaqatiMap( 2463): page loaded
-10-16 21:23:37.384 I/ShaqatiMap( 2463): ready {"provider":"leaflet"}
-10-16 21:23:37.387 I/ShaqatiMap( 2463): initMap -> "leaflet"
-10-16 21:23:37.390 I/ShaqatiMap( 2463): initMap -> "started"
-10-16 21:23:43.417 E/chromium( 2463): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4317) crash detected (code -1).
-10-16 21:24:10.912 W/chromium( 4402): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
-10-16 21:24:10.913 W/chromium( 4402): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
-10-16 21:24:11.425 I/ShaqatiMap( 2463): ready {"provider":"leaflet"}
-10-16 21:24:11.426 I/ShaqatiMap( 2463): setData 1 pins
-10-16 21:24:11.428 I/ShaqatiMap( 2463): initMap -> "leaflet"
-10-16 21:24:11.431 I/ShaqatiMap( 2463): LOG map shows 1 pins on leaflet (map.html:151)
-10-16 21:24:11.441 I/ShaqatiMap( 2463): page loaded
-10-16 21:24:11.442 I/ShaqatiMap( 2463): initMap -> "started"
-10-16 21:24:19.469 E/chromium( 2463): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4402) crash detected (code -1).
-10-16 21:24:24.304 W/chromium( 4430): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
-10-16 21:24:24.304 W/chromium( 4430): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
-10-16 21:24:24.438 I/ShaqatiMap( 2463): page loaded
-10-16 21:24:24.450 I/ShaqatiMap( 2463): ready {"provider":"leaflet"}
-10-16 21:24:24.452 I/ShaqatiMap( 2463): initMap -> "leaflet"
-10-16 21:24:24.452 I/ShaqatiMap( 2463): initMap -> "started"
-10-16 21:24:30.706 E/chromium( 2463): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4430) crash detected (code -1).
-10-16 21:24:32.947 W/chromium( 4528): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
-10-16 21:24:32.947 W/chromium( 4528): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+10-16 21:41:45.378 W/chromium( 1333): [1016/214145.376603:WARNING:dns_config_service_android.cc(81)] Failed to read DnsConfig.
+10-16 21:42:02.902 W/chromium( 1646): [1016/214202.902863:WARNING:url_request_context_config.cc(716)] Unrecognized Cronet experimental option "enable_telemetry" with params "false
+10-16 21:42:02.902 W/chromium( 1646): 
+10-16 21:42:34.638 W/chromium( 1646): [1016/214234.638014:WARNING:url_request_context_config.cc(716)] Unrecognized Cronet experimental option "enable_telemetry" with params "false
+10-16 21:42:34.638 W/chromium( 1646): 
+10-16 21:42:56.192 I/chromium( 2219): [1016/214256.177564:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
+10-16 21:42:56.197 I/chromium( 2219): [INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
+10-16 21:42:57.208 W/chromium( 4085): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+10-16 21:42:57.208 W/chromium( 4085): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+10-16 21:42:58.226 I/ShaqatiMap( 2219): ready {"provider":"leaflet"}
+10-16 21:42:58.229 I/ShaqatiMap( 2219): setData 1 pins
+10-16 21:42:58.236 I/ShaqatiMap( 2219): initMap -> "leaflet"
+10-16 21:42:58.266 I/ShaqatiMap( 2219): LOG map shows 1 pins on leaflet (map.html:151)
+10-16 21:42:58.460 I/ShaqatiMap( 2219): page loaded
+10-16 21:42:58.465 I/ShaqatiMap( 2219): initMap -> "started"
+10-16 21:43:07.511 E/chromium( 2219): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4085) crash detected (code -1).
+10-16 21:43:13.352 W/chromium( 4329): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+10-16 21:43:13.352 W/chromium( 4329): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+10-16 21:43:13.769 I/ShaqatiMap( 2219): ready {"provider":"leaflet"}
+10-16 21:43:13.775 I/ShaqatiMap( 2219): initMap -> "leaflet"
+10-16 21:43:14.204 I/ShaqatiMap( 2219): page loaded
+10-16 21:43:14.211 I/ShaqatiMap( 2219): initMap -> "started"
+10-16 21:43:19.940 E/chromium( 2219): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4329) crash detected (code -1).
+10-16 21:43:24.119 I/chromium( 1646): [1016/214324.119758:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
+10-16 21:43:24.121 I/chromium( 1646): [1016/214324.121015:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
+10-16 21:43:48.768 W/chromium( 4518): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+10-16 21:43:48.769 W/chromium( 4518): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+10-16 21:43:48.923 I/ShaqatiMap( 2219): page loaded
+10-16 21:43:48.966 I/ShaqatiMap( 2219): ready {"provider":"leaflet"}
+10-16 21:43:48.968 I/ShaqatiMap( 2219): initMap -> "leaflet"
+10-16 21:43:48.973 I/ShaqatiMap( 2219): initMap -> "started"
+10-16 21:43:48.979 I/ShaqatiMap( 2219): setData 1 pins
+10-16 21:43:49.038 I/ShaqatiMap( 2219): LOG map shows 1 pins on leaflet (map.html:151)
+10-16 21:43:57.010 E/chromium( 2219): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4518) crash detected (code -1).
+10-16 21:44:01.938 W/chromium( 4547): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+10-16 21:44:01.938 W/chromium( 4547): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+10-16 21:44:02.059 I/ShaqatiMap( 2219): page loaded
+10-16 21:44:02.077 I/ShaqatiMap( 2219): ready {"provider":"leaflet"}
+10-16 21:44:02.080 I/ShaqatiMap( 2219): initMap -> "leaflet"
+10-16 21:44:02.080 I/ShaqatiMap( 2219): initMap -> "started"
+10-16 21:44:08.044 E/chromium( 2219): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4547) crash detected (code -1).
+10-16 21:44:12.085 W/chromium( 4614): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+10-16 21:44:12.148 W/chromium( 4614): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+10-16 21:44:22.212 I/chromium( 2219): [INFO:CONSOLE(151)] "map shows 1 pins on leaflet", source: https://appassets.androidplatform.net/assets/map/map.html (151)
