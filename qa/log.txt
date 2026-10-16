@@ -11,7 +11,8 @@ shot en-08-detail-finish
 shot en-09-detail-requirements
 map ready=true
 shot en-10-map
-js: "{\"vw\":412,\"vh\":759,\"dpr\":2.625,\"mw\":412,\"mh\":0,\"bg\":\"rgb(221, 221, 221)\",\"pos\":\"relative\",\"sheets\":2,\"tiles\":3,\"loaded\":3,\"pins\":1,\"work\":1,\"provider\":\"leaflet\",\"vis\":\"visible\"}"
+js: "{\"vw\":412,\"vh\":759,\"dpr\":2.625,\"mw\":412,\"mh\":759,\"bg\":\"rgb(221, 221, 221)\",\"pos\":\"relative\",\"sheets\":2,\"tiles\":12,\"loaded\":12,\"pins\":1,\"work\":1,\"provider\":\"leaflet\",\"vis\":\"visible\"}"
+js: 759
 webShot en-10c-map-content
 js: "pins=1"
 map pin card=true
@@ -20,6 +21,7 @@ shot en-11-settings
 shot en-12-settings-ai
 picker ready=true
 shot en-13-work-picker
+js: 915
 webShot en-13c-picker-content
 seeded 34 ads; buckets={NEAR_MISSES=6, ALL=27, MATCHES=1}
 locale en -> ar
@@ -33,7 +35,8 @@ shot ar-08-detail-finish
 shot ar-09-detail-requirements
 map ready=true
 shot ar-10-map
-js: "{\"vw\":412,\"vh\":759,\"dpr\":2.625,\"mw\":412,\"mh\":0,\"bg\":\"rgb(221, 221, 221)\",\"pos\":\"relative\",\"sheets\":2,\"tiles\":3,\"loaded\":3,\"pins\":1,\"work\":1,\"provider\":\"leaflet\",\"vis\":\"visible\"}"
+js: "{\"vw\":412,\"vh\":759,\"dpr\":2.625,\"mw\":412,\"mh\":759,\"bg\":\"rgb(221, 221, 221)\",\"pos\":\"relative\",\"sheets\":2,\"tiles\":12,\"loaded\":12,\"pins\":1,\"work\":1,\"provider\":\"leaflet\",\"vis\":\"visible\"}"
+js: 759
 webShot ar-10c-map-content
 js: "pins=1"
 map pin card=true
@@ -42,6 +45,7 @@ shot ar-11-settings
 shot ar-12-settings-ai
 picker ready=true
 shot ar-13-work-picker
+js: 915
 webShot ar-13c-picker-content
 shot zz-webview-control
 webShot zz-webview-control-content
@@ -50,11 +54,11 @@ shot zz-map-page-plain
 webShot zz-map-page-plain-content
 locale ar -> en
 shot live-00-searching
-live error=null in 81s ads={aqar=718, haraj=130, pf=69, deal=66, opensooq=3} details=13 buckets={UNCONFIRMED=15, MATCHES=100, ALL=640, NEAR_MISSES=216}
+live error=null in 87s ads={aqar=718, haraj=130, pf=69, deal=65, opensooq=3} details=13 buckets={UNCONFIRMED=15, MATCHES=100, ALL=639, NEAR_MISSES=216}
 source aqar: ok=true found=718 pages=11 blocked=false 
 source haraj: ok=true found=130 pages=28 blocked=false 
 source pf: ok=true found=69 pages=5 blocked=false 
-source deal: ok=true found=66 pages=18 blocked=false 
+source deal: ok=true found=65 pages=18 blocked=false 
 source opensooq: ok=true found=3 pages=1 blocked=false 
 match 77 aqar:6891322 25000.0 am=6 المصيف photos=1
 match 73 aqar:6920843 45000.0 am=9 المصيف photos=11
@@ -70,5 +74,6 @@ shot live-01-feed
 shot live-02-detail
 live map ready=true
 shot live-03-map
-js: "{\"vw\":412,\"vh\":759,\"dpr\":2.625,\"mw\":412,\"mh\":0,\"bg\":\"rgb(221, 221, 221)\",\"pos\":\"relative\",\"sheets\":2,\"tiles\":3,\"loaded\":3,\"pins\":115,\"work\":1,\"provider\":\"leaflet\",\"vis\":\"visible\"}"
+js: "{\"vw\":412,\"vh\":759,\"dpr\":2.625,\"mw\":412,\"mh\":759,\"bg\":\"rgb(221, 221, 221)\",\"pos\":\"relative\",\"sheets\":2,\"tiles\":12,\"loaded\":12,\"pins\":115,\"work\":1,\"provider\":\"leaflet\",\"vis\":\"visible\"}"
+js: 759
 webShot live-03c-map-content
