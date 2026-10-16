@@ -148,11 +148,19 @@ jobs:
           sudo udevadm trigger --name-match=kvm
       - name: Android SDK packages
         run: |
-          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
-          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "build-tools;35.0.0" > /dev/null
+          SDKM="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKM" --licenses > /dev/null || true
+          "$SDKM" "platforms;android-36" "build-tools;35.0.0" > /dev/null
+          # The emulator download from Google's repository sometimes arrives corrupt ("Error on
+          # ZipFile unknown archive"); install it here with retries so the emulator step finds it.
+          for i in 1 2 3; do
+            "$SDKM" --install emulator --channel=0 > /dev/null && [ -x "$ANDROID_HOME/emulator/emulator" ] && break
+            echo "emulator install failed (attempt $i)"; sleep 15
+          done
       - name: Build app and test APKs
         run: ./gradlew :app:assembleDebug :app:assembleDebugAndroidTest
       - name: Run QA on an emulator
+        id: qa
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 34
@@ -169,6 +177,8 @@ jobs:
       - name: Results
         if: always()
         run: |
+          # qa/ holds the previous run's files when the emulator step did not run its tests.
+          echo "emulator step: ${{ steps.qa.outcome }} (run ${GITHUB_RUN_NUMBER}, ${GITHUB_SHA::7})" | tee qa/status.txt
           cat qa/qa-tour.txt qa/qa-live.txt qa/log.txt 2>/dev/null | tail -150 || true
       - name: Commit screenshots
         if: always()
