@@ -10,6 +10,8 @@ import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollToIndex
+import android.view.ViewGroup
+import android.webkit.WebView
 import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import app.shaqati.ui.MainActivity
@@ -52,6 +54,29 @@ class QaTour {
 
     @Test
     fun b_english() = tour("en")
+
+    /**
+     * Control for the map screenshots: a plain WebView (no Compose) showing a red square. If the
+     * square does not appear either, the emulator itself cannot show WebView content.
+     */
+    @Test
+    fun d_webviewControl() {
+        ActivityScenario.launch(MainActivity::class.java).use { sc ->
+            sc.onActivity { a ->
+                val web = WebView(a)
+                a.addContentView(web, ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 900))
+                web.loadDataWithBaseURL(
+                    "https://appassets.androidplatform.net/",
+                    "<html><body style='margin:0;background:#e9e3d8'><div style='width:320px;height:320px;background:#d00000'></div>" +
+                        "<p style='font:40px sans-serif'>WebView control</p></body></html>",
+                    "text/html", "utf-8", null,
+                )
+            }
+            Thread.sleep(6_000)
+            Qa.shot("zz-webview-control")
+            Qa.webShot(sc, "zz-webview-control-content")
+        }
+    }
 
     @Test
     fun c_arabic() = tour("ar")
