@@ -481,12 +481,66 @@ def experiments_step():
     write(OUT / "exp" / "_results.json", results)
 
 
+def deal_districts_step():
+    """Pages through Deal's Riyadh rentals and records every district id with its Arabic name."""
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": MOBILE_UA, "Accept-Language": "ar"})
+    r0 = sess.post("https://api.dealapp.sa/production/user/skip",
+                   json={"os": "Android", "name": "Android", "devicePlatform": "web"},
+                   headers={"Origin": "https://dealapp.sa"}, timeout=30)
+    token = next((v for k, v in r0.headers.items() if k.lower() == "authorization"), "")
+    headers = {"Authorization": token if token.startswith("Bearer") else "Bearer " + token, "Origin": "https://dealapp.sa"}
+    districts, log = {}, []
+    # Guessed list endpoints first; then crawl ads.
+    for u in ["https://api.dealapp.sa/production/district/city/6009d941950ada00061eeeab",
+              "https://api.dealapp.sa/production/districts?city=6009d941950ada00061eeeab",
+              "https://api.dealapp.sa/production/city/6009d941950ada00061eeeab/districts",
+              "https://api.dealapp.sa/production/location/districts?city=6009d941950ada00061eeeab"]:
+        try:
+            r = sess.get(u, headers=headers, timeout=30)
+            log.append({"url": u, "status": r.status_code, "body": r.text[:600]})
+        except Exception as e:  # noqa: BLE001
+            log.append({"url": u, "error": repr(e)})
+    for ptype in ["63091bcd45e4ba93412d5d25", "63091cd645e4ba2cf22d5d64"]:
+        for page in range(1, 260):
+            u = ("https://api.dealapp.sa/production/ad?page=%d&limit=10&city=6009d941950ada00061eeeab"
+                 "&purpose=RENT&propertyType=%s" % (page, ptype))
+            try:
+                r = sess.get(u, headers=headers, timeout=30)
+            except Exception as e:  # noqa: BLE001
+                log.append({"page": page, "error": repr(e)})
+                break
+            if r.status_code != 200:
+                log.append({"page": page, "status": r.status_code, "body": r.text[:300]})
+                if r.status_code == 429:
+                    time.sleep(20)
+                    continue
+                break
+            j = r.json()
+            for d in j.get("data") or []:
+                dd = d.get("district") or {}
+                if dd.get("_id"):
+                    e = districts.setdefault(dd["_id"], {"ar": dd.get("name_ar"), "en": dd.get("name_en"), "n": 0, "pts": []})
+                    e["n"] += 1
+                    c = ((d.get("location") or {}).get("value") or {}).get("coordinates")
+                    if c and len(e["pts"]) < 5:
+                        e["pts"].append([round(c[1], 4), round(c[0], 4)])
+            if not j.get("hasNextPage"):
+                log.append({"type": ptype, "last_page": page, "total": j.get("total")})
+                break
+            time.sleep(0.35)
+    write(OUT / "exp" / "deal-district-map.json", {"districts": districts, "log": log})
+    print("deal districts", len(districts), flush=True)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     only = [x for x in os.environ.get("PROBE_ONLY", "").split(",") if x]
     steps = os.environ.get("PROBE_STEPS", "versions,geo,sites").split(",")
     if "experiments" in steps:
         experiments_step()
+    if "deal_districts" in steps:
+        deal_districts_step()
     if "versions" in steps:
         maven_versions()
     if "geo" in steps:

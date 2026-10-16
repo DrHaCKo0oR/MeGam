@@ -1,4 +1,4 @@
 # Sourced by the probe workflow. Edit to request a new probe run.
-PROBE_STEPS=experiments
+PROBE_STEPS=deal_districts
 PROBE_ONLY=
-RUN=5
+RUN=6

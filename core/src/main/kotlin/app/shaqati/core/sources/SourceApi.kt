@@ -43,7 +43,8 @@ interface ListingSource {
 
 /** Al Masif and neighbouring districts within a 40-minute rush-hour drive. */
 object RiyadhNorth {
-    val DEFAULT_WORK = GeoPoint(24.7645, 46.6675)
+    /** Centre of Al Masif; the exact workplace pin is set in the app. */
+    val DEFAULT_WORK = GeoPoint(24.7655, 46.6802)
 
     /** Districts around Al Masif, Arabic names as the sites spell them. */
     val NEARBY_DISTRICTS = listOf(
