@@ -43,9 +43,11 @@
   function initLeaflet(cfg) {
     S.provider = 'leaflet';
     S.map = L.map('map', { zoomControl: false, attributionControl: true }).setView([cfg.lat, cfg.lng], cfg.zoom);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-      maxZoom: 19, subdomains: 'abcd',
-      attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+    // OpenStreetMap's standard tiles: free for light use like this app, which identifies itself
+    // in the User-Agent and sends the page address as Referer.
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(S.map);
     S.map.on('moveend', function () { if (S.pick) { var c = S.map.getCenter(); bridge('onCenter', { lat: c.lat, lng: c.lng }); } });
     S.map.on('click', function () { select(null); });

@@ -5,11 +5,14 @@ The CI emulator cannot draw WebView content, so this shows the same page (same L
 build, styles and pin markup) in Chrome with real map tiles. The page is started the way
 the app starts it: initMap with the work pin, then setData with pins.
 """
+import functools
+import http.server
 import json
 import pathlib
 import shutil
 import subprocess
 import sys
+import threading
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 SRC = ROOT / "app/src/main/assets/map"
@@ -44,12 +47,22 @@ def main() -> int:
     if not chrome:
         print("no Chrome found")
         return 0
+    # Served over http so tile requests carry a Referer, with the app's User-Agent suffix, as the
+    # app's WebView sends them.
+    handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(OUT))
+    server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    url = f"http://127.0.0.1:{server.server_port}/map.html"
+    agent = ("Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) "
+             "Chrome/126.0 Mobile Safari/537.36 Shaqati/1.0 (+https://github.com/DrHaCKo0oR/MeGam)")
     cmd = [
         chrome, "--headless=new", "--no-sandbox", "--hide-scrollbars", "--window-size=412,760",
-        "--virtual-time-budget=20000", "--allow-file-access-from-files",
-        f"--screenshot={shot}", (OUT / "map.html").as_uri(),
+        "--virtual-time-budget=20000", f"--user-agent={agent}", f"--screenshot={shot}", url,
     ]
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+    finally:
+        server.shutdown()
     print(result.stdout[-2000:], result.stderr[-2000:])
     print("saved" if shot.exists() else "no screenshot", shot)
     return 0

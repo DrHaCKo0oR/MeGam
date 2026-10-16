@@ -49,9 +49,10 @@ data class MapPayload(val work: MapPoint?, val pins: List<MapPin>, val fit: Bool
 private val mapJson = Json { encodeDefaults = true }
 
 private const val TAG = "ShaqatiMap"
+private const val MAP_USER_AGENT = "Shaqati/1.0 (+https://github.com/DrHaCKo0oR/MeGam)"
 
 /**
- * Google Maps (JavaScript API, with the user's key) or OpenStreetMap tiles in a WebView.
+ * Google Maps (JavaScript API, with the user's key) or OpenStreetMap's standard tiles in a WebView.
  * The page is served from an https origin so a referrer-restricted key works.
  */
 @SuppressLint("SetJavaScriptEnabled")
@@ -96,6 +97,8 @@ fun MapWeb(
                 WebView(activityContext).apply {
                     settings.javaScriptEnabled = true
                     settings.domStorageEnabled = true
+                    // OpenStreetMap's tile servers ask apps to identify themselves.
+                    settings.userAgentString = settings.userAgentString + " " + MAP_USER_AGENT
                     // Starts the map once the page has loaded. The page also asks for this through the
                     // bridge; initMap ignores the second call. setData before the map exists is queued.
                     val start = {
