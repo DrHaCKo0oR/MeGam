@@ -15,7 +15,7 @@
     <string name="feed_all">All</string>
     <string name="feed_updated">Updated %1$s</string>
     <string name="feed_never_updated">Not searched yet</string>
-    <string name="feed_count_ads">%1$d ads tracked</string>
+    <string name="feed_count_ads">Ads: %1$d</string>
     <string name="action_refresh">Refresh</string>
     <string name="action_sort">Sort</string>
     <string name="sort_best">Best match</string>
@@ -153,7 +153,6 @@
     <string name="audience_any">Anyone</string>
     <string name="kitchen_fitted">Fitted</string>
     <string name="kitchen_empty">Not fitted</string>
-    <string name="years">%1$d years</string>
     <string name="new_building">New</string>
     <string name="floor_ground">Ground</string>
     <string name="kind_apartment">Apartment</string>
@@ -166,9 +165,9 @@
     <string name="show_more">Show more</string>
     <string name="show_less">Show less</string>
     <string name="req_rent">Rent up to %1$s SAR a year</string>
-    <string name="req_rooms">At least %1$d rooms (bedrooms + extra)</string>
+    <string name="req_rooms">Rooms (bedrooms + extra): %1$d or more</string>
     <string name="req_living">Living room</string>
-    <string name="req_bathrooms">At least %1$d bathrooms</string>
+    <string name="req_bathrooms">Bathrooms: %1$d or more</string>
     <string name="req_kitchen">Kitchen</string>
     <string name="req_furnishing">Unfurnished or semi-furnished</string>
     <string name="req_audience">Families allowed</string>
@@ -179,7 +178,7 @@
     <string name="req_district">Not in an excluded district</string>
 
     <!-- Map -->
-    <string name="map_no_location">%1$d apartments have no map location</string>
+    <string name="map_no_location">Without a map location: %1$d</string>
 
     <!-- Settings -->
     <string name="settings_title">Settings</string>
@@ -223,10 +222,10 @@
     <string name="set_ai_cap">Monthly limit: $%1$s</string>
     <string name="set_ai_photos">Photos per apartment: %1$d</string>
     <string name="set_ai_per_refresh">Apartments per search: up to %1$d</string>
-    <string name="set_ai_spend">This month: $%1$s of $%2$s · %3$d apartments analysed</string>
+    <string name="set_ai_spend">This month: $%1$s of $%2$s · analysed: %3$d</string>
     <string name="set_ai_cost">About $%1$s per apartment with these settings.</string>
     <string name="set_sources">Sites</string>
-    <string name="source_status_ok">%1$d ads · %2$s</string>
+    <string name="source_status_ok">Ads: %1$d · %2$s</string>
     <string name="source_status_failed">Last search failed: %1$s</string>
     <string name="source_status_blocked">The site refused access last time</string>
     <string name="source_status_never">Not searched yet</string>
@@ -263,4 +262,8 @@
     <string name="onb_keys">Optional keys</string>
     <string name="onb_keys_body">You can add them now or later in Settings. Google gives traffic-accurate commute times; Anthropic enables photo analysis.</string>
     <string name="onb_start">Start searching</string>
+    <plurals name="years">
+        <item quantity="one">%1$d year</item>
+        <item quantity="other">%1$d years</item>
+    </plurals>
 </resources>

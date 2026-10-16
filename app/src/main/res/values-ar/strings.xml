@@ -15,7 +15,7 @@
     <string name="feed_all">الكل</string>
     <string name="feed_updated">آخر تحديث %1$s</string>
     <string name="feed_never_updated">لم يتم البحث بعد</string>
-    <string name="feed_count_ads">%1$d إعلان</string>
+    <string name="feed_count_ads">الإعلانات: %1$d</string>
     <string name="action_refresh">تحديث</string>
     <string name="action_sort">ترتيب</string>
     <string name="sort_best">الأفضل تطابقاً</string>
@@ -153,7 +153,6 @@
     <string name="audience_any">الجميع</string>
     <string name="kitchen_fitted">راكب</string>
     <string name="kitchen_empty">غير راكب</string>
-    <string name="years">%1$d سنوات</string>
     <string name="new_building">جديد</string>
     <string name="floor_ground">أرضي</string>
     <string name="kind_apartment">شقة</string>
@@ -166,9 +165,9 @@
     <string name="show_more">عرض المزيد</string>
     <string name="show_less">عرض أقل</string>
     <string name="req_rent">الإيجار حتى %1$s ريال سنوياً</string>
-    <string name="req_rooms">%1$d غرف على الأقل (نوم + إضافية)</string>
+    <string name="req_rooms">الغرف (نوم + إضافية): %1$d أو أكثر</string>
     <string name="req_living">صالة</string>
-    <string name="req_bathrooms">%1$d دورات مياه على الأقل</string>
+    <string name="req_bathrooms">دورات المياه: %1$d أو أكثر</string>
     <string name="req_kitchen">مطبخ</string>
     <string name="req_furnishing">غير مفروشة أو شبه مفروشة</string>
     <string name="req_audience">مسموح للعوائل</string>
@@ -179,7 +178,7 @@
     <string name="req_district">ليست في حي مستبعد</string>
 
     <!-- Map -->
-    <string name="map_no_location">%1$d شقة بدون موقع على الخريطة</string>
+    <string name="map_no_location">بدون موقع على الخريطة: %1$d</string>
 
     <!-- Settings -->
     <string name="settings_title">الإعدادات</string>
@@ -223,10 +222,10 @@
     <string name="set_ai_cap">الحد الشهري: %1$s$</string>
     <string name="set_ai_photos">الصور لكل شقة: %1$d</string>
     <string name="set_ai_per_refresh">الشقق في كل بحث: حتى %1$d</string>
-    <string name="set_ai_spend">هذا الشهر: %1$s$ من %2$s$ · تم تحليل %3$d شقة</string>
+    <string name="set_ai_spend">هذا الشهر: %1$s$ من %2$s$ · تم تحليل: %3$d</string>
     <string name="set_ai_cost">قرابة %1$s$ لكل شقة بهذه الإعدادات.</string>
     <string name="set_sources">المواقع</string>
-    <string name="source_status_ok">%1$d إعلان · %2$s</string>
+    <string name="source_status_ok">الإعلانات: %1$d · %2$s</string>
     <string name="source_status_failed">فشل آخر بحث: %1$s</string>
     <string name="source_status_blocked">رفض الموقع الوصول في آخر مرة</string>
     <string name="source_status_never">لم يُبحث بعد</string>
@@ -263,4 +262,12 @@
     <string name="onb_keys">مفاتيح اختيارية</string>
     <string name="onb_keys_body">يمكنك إضافتها الآن أو لاحقاً من الإعدادات. مفتاح Google يعطي مشواراً دقيقاً حسب الزحام، ومفتاح Anthropic يفعّل تحليل الصور.</string>
     <string name="onb_start">ابدأ البحث</string>
+    <plurals name="years">
+        <item quantity="zero">%1$d سنة</item>
+        <item quantity="one">سنة واحدة</item>
+        <item quantity="two">سنتان</item>
+        <item quantity="few">%1$d سنوات</item>
+        <item quantity="many">%1$d سنة</item>
+        <item quantity="other">%1$d سنة</item>
+    </plurals>
 </resources>

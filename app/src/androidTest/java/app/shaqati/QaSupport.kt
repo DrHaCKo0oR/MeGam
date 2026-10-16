@@ -52,9 +52,18 @@ object Qa {
         log("shot $name")
     }
 
-    fun setLocale(tag: String) {
-        instr.runOnMainSync { AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(tag)) }
+    /**
+     * Switches the app language while [scenario]'s activity is on screen. Android restarts the
+     * process when the language changes with no activity open, which would end the test run.
+     */
+    fun setLocale(scenario: androidx.test.core.app.ActivityScenario<*>, tag: String) {
+        var current = ""
+        scenario.onActivity { current = AppCompatDelegate.getApplicationLocales().toLanguageTags() }
+        if (current == tag) return
+        scenario.onActivity { AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(tag)) }
         instr.waitForIdleSync()
+        Thread.sleep(2_000)
+        log("locale $current -> $tag")
     }
 
     fun str(tag: String, id: Int, vararg args: Any): String {

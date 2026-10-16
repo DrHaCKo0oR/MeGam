@@ -125,7 +125,7 @@ fun ListingCard(
                 Column(Modifier.weight(1f)) {
                     PriceLine(v)
                     Text(
-                        listOfNotNull(l.district?.takeIf { it.isNotBlank() }, kindLabel(l.kind)).joinToString(" · "),
+                        listOfNotNull(districtName(l.district), kindLabel(l.kind)).joinToString(" · "),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         maxLines = 1,
@@ -138,7 +138,7 @@ fun ListingCard(
                 r.bedrooms?.let { Fact(Icons.Outlined.Bed, if (r.hasMajlis) "$it+1" else "$it") }
                 r.livingRooms?.let { Fact(Icons.Outlined.Weekend, "$it") }
                 r.bathrooms?.let { Fact(Icons.Outlined.Bathtub, "$it") }
-                l.areaSqm?.takeIf { it in 20.0..2000.0 }?.let { Fact(Icons.Outlined.SquareFoot, stringResource(R.string.area_sqm, money(it))) }
+                plausibleArea(l.areaSqm, l.kind)?.let { Fact(Icons.Outlined.SquareFoot, stringResource(R.string.area_sqm, money(it))) }
             }
             CommuteLine(v, morningTime)
             Row(verticalAlignment = Alignment.CenterVertically) {

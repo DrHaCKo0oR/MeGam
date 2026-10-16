@@ -45,6 +45,23 @@ fun timeAgo(ms: Long?, now: Long = System.currentTimeMillis()): String {
 @Composable
 fun sourceName(s: Source): String = if (isArabic()) s.nameAr else s.nameEn
 
+/** District names come in Arabic from the sites; the English UI shows the English name when known. */
+@Composable
+fun districtName(name: String?): String? {
+    val n = name?.trim()?.takeIf { it.isNotEmpty() } ?: return null
+    if (isArabic()) return n
+    return app.shaqati.core.sources.Districts.find(n)?.en ?: n
+}
+
+/** Floor area worth showing: sites often put the plot or building size in the same field. */
+fun plausibleArea(sqm: Double?, kind: PropertyKind): Double? {
+    val max = when (kind) {
+        PropertyKind.APARTMENT, PropertyKind.STUDIO, PropertyKind.ROOM -> 400.0
+        else -> 1_000.0
+    }
+    return sqm?.takeIf { it in 25.0..max }
+}
+
 @Composable
 fun verdictLabel(v: Verdict): String = stringResource(
     when (v) {

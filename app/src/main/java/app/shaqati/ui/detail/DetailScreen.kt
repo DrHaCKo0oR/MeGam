@@ -23,7 +23,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.statusBars
+import androidx.compose.foundation.layout.windowInsetsTopHeight
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.CircleShape
@@ -73,6 +77,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDirection
@@ -97,6 +102,8 @@ import app.shaqati.ui.components.ScoreRing
 import app.shaqati.ui.components.audienceLabel
 import app.shaqati.ui.components.checkLabel
 import app.shaqati.ui.components.clock
+import app.shaqati.ui.components.districtName
+import app.shaqati.ui.components.plausibleArea
 import app.shaqati.ui.components.furnishingLabel
 import app.shaqati.ui.components.isArabic
 import app.shaqati.ui.components.kindLabel
@@ -124,8 +131,9 @@ fun DetailScreen(vm: AppViewModel, id: String, onBack: () -> Unit, openPhotos: (
         return
     }
     var hideDialog by remember { mutableStateOf(false) }
+    val listState = rememberLazyListState()
     Box(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)) {
-        LazyColumn(Modifier.fillMaxSize().testTag("detail_list"), contentPadding = PaddingValues(bottom = 32.dp)) {
+        LazyColumn(Modifier.fillMaxSize().testTag("detail_list"), state = listState, contentPadding = PaddingValues(bottom = 32.dp)) {
             item { PhotoHeader(v, onBack, openPhotos, onSave = { vm.setSaved(v.id, !v.saved) }) }
             item { Header(v) }
             item { Actions(v, s) }
@@ -156,6 +164,13 @@ fun DetailScreen(vm: AppViewModel, id: String, onBack: () -> Unit, openPhotos: (
                     }
                 }
             }
+        }
+        // Once the photos scroll away, keep text from running under the status bar.
+        if (listState.firstVisibleItemIndex > 0) {
+            Box(
+                Modifier.fillMaxWidth().windowInsetsTopHeight(WindowInsets.statusBars)
+                    .background(MaterialTheme.colorScheme.background)
+            )
         }
     }
     if (hideDialog) {
@@ -230,7 +245,7 @@ private fun Header(v: ListingView) {
             Column(Modifier.weight(1f)) {
                 PriceLine(v)
                 Text(
-                    listOfNotNull(l.district?.takeIf { it.isNotBlank() }, kindLabel(l.kind)).joinToString(" · "),
+                    listOfNotNull(districtName(l.district), kindLabel(l.kind)).joinToString(" · "),
                     style = MaterialTheme.typography.titleMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
@@ -590,9 +605,9 @@ private fun ReqRow(label: String, value: String?, ok: Boolean?) {
 private fun FactsSection(v: ListingView) {
     val l = v.listing
     val r = v.resolved
-    Fact(stringResource(R.string.fact_area), l.areaSqm?.let { stringResource(R.string.area_sqm, money(it)) })
+    Fact(stringResource(R.string.fact_area), plausibleArea(l.areaSqm, l.kind)?.let { stringResource(R.string.area_sqm, money(it)) })
     Fact(stringResource(R.string.fact_floor), l.floor?.let { if (it == 0) stringResource(R.string.floor_ground) else "$it" })
-    Fact(stringResource(R.string.fact_age), l.buildingAgeYears?.let { if (it == 0) stringResource(R.string.new_building) else stringResource(R.string.years, it) })
+    Fact(stringResource(R.string.fact_age), l.buildingAgeYears?.let { if (it == 0) stringResource(R.string.new_building) else pluralStringResource(R.plurals.years, it, it) })
     Fact(stringResource(R.string.fact_furnishing), furnishingLabel(r.furnishing))
     Fact(stringResource(R.string.fact_audience), audienceLabel(r.audience))
     Fact(stringResource(R.string.fact_kitchen), r.kitchenFitted?.let { stringResource(if (it) R.string.kitchen_fitted else R.string.kitchen_empty) })

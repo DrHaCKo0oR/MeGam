@@ -24,6 +24,12 @@ class LiveRefreshTest {
     @get:Rule
     val compose = createEmptyComposeRule()
 
+    private fun settle() {
+        compose.waitForIdle()
+        Thread.sleep(2_500)
+        compose.waitForIdle()
+    }
+
     @Test
     fun searchesTheLiveSites() {
         val repo = Qa.repo
@@ -31,8 +37,8 @@ class LiveRefreshTest {
             repo.clearCatalog()
             repo.updateSettings { it.copy(onboarded = true) }
         }
-        Qa.setLocale("en")
-        ActivityScenario.launch(MainActivity::class.java).use {
+        ActivityScenario.launch(MainActivity::class.java).use { sc ->
+            Qa.setLocale(sc, "en")
             val started = System.currentTimeMillis()
             val ok = runBlocking { withTimeout(420_000) { repo.refresh() } }
             val snap = repo.catalog.value
@@ -47,10 +53,11 @@ class LiveRefreshTest {
                 Qa.log("match ${v.score.total} ${v.id} ${v.resolved.annualRent} am=${v.commute?.morningMinutes} ${v.listing.district} photos=${v.listing.photos.size}")
             }
             compose.waitUntilAtLeastOneExists(hasText(Qa.str("en", R.string.feed_matches), substring = true), 10_000)
+            settle()
             Qa.shot("live-01-feed")
             if (compose.onAllNodesWithTag("card").fetchSemanticsNodes().isNotEmpty()) {
                 compose.onAllNodesWithTag("card").onFirst().performClick()
-                Thread.sleep(2_500)
+                settle()
                 Qa.shot("live-02-detail")
             }
             assertTrue("only $bySource", bySource.size >= 3)
