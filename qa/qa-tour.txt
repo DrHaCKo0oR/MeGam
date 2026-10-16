@@ -1,60 +1,8 @@
 
-app.shaqati.QaTour:.
-Error in b_english(app.shaqati.QaTour):
-java.lang.AssertionError: Failed to inject touch input.
-Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'tab_map')
+app.shaqati.QaTour:...
 
-	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
-	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
-	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
-	at androidx.compose.ui.test.ActionsKt.performTouchInput(Actions.kt:389)
-	at androidx.compose.ui.test.AndroidActions.performClickImpl(Actions.android.kt:23)
-	at androidx.compose.ui.test.ActionsKt.performClick(Actions.kt:60)
-	at app.shaqati.QaTour.tour(QaTour.kt:88)
-	at app.shaqati.QaTour.b_english(QaTour.kt:54)
+Time: 122.115
 
-Error in c_arabic(app.shaqati.QaTour):
-java.lang.AssertionError: Failed to inject touch input.
-Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'tab_map')
-
-	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
-	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
-	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
-	at androidx.compose.ui.test.ActionsKt.performTouchInput(Actions.kt:389)
-	at androidx.compose.ui.test.AndroidActions.performClickImpl(Actions.android.kt:23)
-	at androidx.compose.ui.test.ActionsKt.performClick(Actions.kt:60)
-	at app.shaqati.QaTour.tour(QaTour.kt:88)
-	at app.shaqati.QaTour.c_arabic(QaTour.kt:57)
-
-
-Time: 74.293
-There were 2 failures:
-1) b_english(app.shaqati.QaTour)
-java.lang.AssertionError: Failed to inject touch input.
-Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'tab_map')
-
-	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
-	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
-	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
-	at androidx.compose.ui.test.ActionsKt.performTouchInput(Actions.kt:389)
-	at androidx.compose.ui.test.AndroidActions.performClickImpl(Actions.android.kt:23)
-	at androidx.compose.ui.test.ActionsKt.performClick(Actions.kt:60)
-	at app.shaqati.QaTour.tour(QaTour.kt:88)
-	at app.shaqati.QaTour.b_english(QaTour.kt:54)
-2) c_arabic(app.shaqati.QaTour)
-java.lang.AssertionError: Failed to inject touch input.
-Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'tab_map')
-
-	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
-	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
-	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
-	at androidx.compose.ui.test.ActionsKt.performTouchInput(Actions.kt:389)
-	at androidx.compose.ui.test.AndroidActions.performClickImpl(Actions.android.kt:23)
-	at androidx.compose.ui.test.ActionsKt.performClick(Actions.kt:60)
-	at app.shaqati.QaTour.tour(QaTour.kt:88)
-	at app.shaqati.QaTour.c_arabic(QaTour.kt:57)
-
-FAILURES!!!
-Tests run: 3,  Failures: 2
+OK (3 tests)
 
 
