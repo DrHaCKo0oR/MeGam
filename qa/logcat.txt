@@ -1,0 +1,121 @@
+--------- beginning of main
+10-16 18:16:47.185  1524  1774 E PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():268 Get empty configurations.
+10-16 18:16:47.291  5205  5377 E NanoAppLogging: Failed to begin contexthub communication
+10-16 18:16:47.371  5315  5449 E Pay     : [Migration operation] Active tapandpay account not found! [CONTEXT service_id=198 ]
+10-16 18:16:54.236  1735  1735 E A       : disposing SearchServiceClient after timeout []
+10-16 18:16:55.738   521   549 E system_server: No package ID 7f found for resource ID 0x7f080107.
+10-16 18:16:55.738   521   549 E system_server: No package ID 7f found for resource ID 0x7f150560.
+10-16 18:17:01.350  5289  5520 I ShaqatiQA: live ok=true in 31s ads={aqar=88, haraj=141, pf=69, deal=21, opensooq=3} details=3 buckets={NEAR_MISSES=42, ALL=248, MATCHES=19, UNCONFIRMED=8}
+10-16 18:17:01.350  5289  5520 I ShaqatiQA: source aqar: ok=true found=88 pages=2 blocked=false 
+10-16 18:17:01.350  5289  5520 I ShaqatiQA: source haraj: ok=true found=141 pages=28 blocked=false 
+10-16 18:17:01.350  5289  5520 I ShaqatiQA: source pf: ok=true found=69 pages=5 blocked=false 
+10-16 18:17:01.350  5289  5520 I ShaqatiQA: source deal: ok=true found=21 pages=10 blocked=false 
+10-16 18:17:01.350  5289  5520 I ShaqatiQA: source opensooq: ok=true found=3 pages=1 blocked=false 
+10-16 18:17:01.351  5289  5520 I ShaqatiQA: match 62 aqar:6865953 50000.0 am=20 الوادي photos=8
+10-16 18:17:01.351  5289  5520 I ShaqatiQA: match 60 aqar:6848514 38000.0 am=40 السليمانية photos=1
+10-16 18:17:01.351  5289  5520 I ShaqatiQA: match 59 aqar:6774856 40000.0 am=39 الياسمين photos=1
+10-16 18:17:01.351  5289  5520 I ShaqatiQA: match 57 haraj:172091853 48000.0 am=13 المروج photos=3
+10-16 18:17:01.351  5289  5520 I ShaqatiQA: match 56 aqar:6798741 45000.0 am=37 العقيق photos=10
+10-16 18:17:01.351  5289  5520 I ShaqatiQA: match 54 haraj:189122749 50000.0 am=20 الوادي photos=7
+10-16 18:17:01.351  5289  5520 I ShaqatiQA: match 54 aqar:6905327 36000.0 am=36 العقيق photos=1
+10-16 18:17:01.351  5289  5520 I ShaqatiQA: match 54 aqar:6905753 36000.0 am=36 العقيق photos=1
+10-16 18:17:01.351  5289  5520 I ShaqatiQA: match 53 haraj:172764179 45000.0 am=16 النفل photos=19
+10-16 18:17:01.351  5289  5520 I ShaqatiQA: match 53 aqar:6905404 35000.0 am=39 الياسمين photos=1
+10-16 18:17:02.530  5289  5520 I ShaqatiQA: shot live-01-feed
+10-16 18:17:05.843  5289  5520 I ShaqatiQA: shot live-02-detail
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: Exception in upload method
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.r.d: Error code: 262182
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.ab.bk.d(PG:5)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.ar.d(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.bo.b(PG:5)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.e.a(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.a.run(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.i(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:12)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.c.a(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bu.cancel(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:17)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.bk.b.h.run(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.i(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:12)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.aj.a(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.c.a(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.o.c(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.r.a(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.c.e(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.c.c(PG:3)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:5)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.cd.g.a.f.e(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:1012)
+10-16 18:17:06.028  1735  2365 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+10-16 18:17:06.028  1735  1735 E A       : onError
+10-16 18:17:06.028  1735  1735 E A       : com.google.android.apps.gsa.shared.speech.a.m: errorCode: 65561, engine: 2
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:3)
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.cd.g.a.f.e(PG:2)
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+10-16 18:17:06.028  1735  1735 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-16 18:17:06.028  1735  1735 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-16 18:17:06.028  1735  1735 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-16 18:17:06.028  1735  1735 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-16 18:17:06.028  1735  1735 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+10-16 18:17:06.028  1735  1735 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.o: errorCode: 65586, engine: 2
+10-16 18:17:06.028  1735  1735 E A       : 	... 15 more
+10-16 18:17:06.028  1735  1735 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.k: errorCode: 401, engine: 2
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.h.a(PG:5)
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hE(PG:2)
+10-16 18:17:06.028  1735  1735 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:16)
+10-16 18:17:06.028  1735  1735 E A       : 	... 12 more
+--------- beginning of system
+10-16 18:17:06.572   521  2406 E ActivityManager: Unable to freeze binder for 5289: -11

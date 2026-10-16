@@ -1,0 +1,31 @@
+shot en-01-onboarding
+seeded 34 ads; buckets={NEAR_MISSES=6, ALL=25, MATCHES=3}
+shot en-02-feed
+shot en-03-to-check
+shot en-04-close
+shot en-05-all
+shot en-06-saved
+shot en-07-detail
+shot en-08-detail-finish
+shot en-09-detail-requirements
+shot en-10-map
+shot en-11-settings
+shot en-12-settings-ai
+live ok=true in 31s ads={aqar=88, haraj=141, pf=69, deal=21, opensooq=3} details=3 buckets={NEAR_MISSES=42, ALL=248, MATCHES=19, UNCONFIRMED=8}
+source aqar: ok=true found=88 pages=2 blocked=false 
+source haraj: ok=true found=141 pages=28 blocked=false 
+source pf: ok=true found=69 pages=5 blocked=false 
+source deal: ok=true found=21 pages=10 blocked=false 
+source opensooq: ok=true found=3 pages=1 blocked=false 
+match 62 aqar:6865953 50000.0 am=20 الوادي photos=8
+match 60 aqar:6848514 38000.0 am=40 السليمانية photos=1
+match 59 aqar:6774856 40000.0 am=39 الياسمين photos=1
+match 57 haraj:172091853 48000.0 am=13 المروج photos=3
+match 56 aqar:6798741 45000.0 am=37 العقيق photos=10
+match 54 haraj:189122749 50000.0 am=20 الوادي photos=7
+match 54 aqar:6905327 36000.0 am=36 العقيق photos=1
+match 54 aqar:6905753 36000.0 am=36 العقيق photos=1
+match 53 haraj:172764179 45000.0 am=16 النفل photos=19
+match 53 aqar:6905404 35000.0 am=39 الياسمين photos=1
+shot live-01-feed
+shot live-02-detail
