@@ -1,0 +1,654 @@
+[
+ {
+  "name": "aq-intro-query",
+  "status": 200,
+  "len": 66,
+  "body": "{\"data\":{\"__schema\":{\"queryType\":{\"name\":\"Query\"}},\"__type\":null}}"
+ },
+ {
+  "name": "aq-intro-where",
+  "status": 200,
+  "len": 8811,
+  "body": "{\"data\":{\"__type\":{\"inputFields\":[{\"name\":\"status\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"has_img\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"has_video\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"special\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"verified\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"ac\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"age\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"apts\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"area\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"backyard\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"basement\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"beds\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"car_entrance\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"category\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"city_id\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"direction_id\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"district_id\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"province_id\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"create_time\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"driver\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"duplex\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"extra_unit\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"family\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"family_section\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"fb\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"fl\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"furnished\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"ketchen\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"lift\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"last_update\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"refresh\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"livings\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"maid\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"men_place\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"meter_price\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"playground\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"pool\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"premium\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"price\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"price_2_payments\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"price_4_payments\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"price_12_payments\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"project_id\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"rent_period\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"accept_monthly\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"accept_quarterly\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"accept_semiannually\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"rooms\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"stairs\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"stores\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"street_direction\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"street_width\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"tent\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"trees\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"user_id\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"user_type\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"unverified_owner\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"vb\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"type\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"wc\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"wells\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"women_place\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"appraisal_id\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"verified_owner\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"direct_from_owners\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"verified_office\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"unique_listing\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"gh_id\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"_id\",\"type\":{\"name\":\"IntSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"water_availability\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"electrical_availability\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"drainage_availability\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"private_roof\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"apartment_in_villa\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"two_entrances\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"special_entrance\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"bookable_unit\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"published\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"comments_enabled\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"commission_type\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"commission_percentage\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"commission_amount\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"biddable\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"has_multiple_units\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"maintained\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"villa_type\",\"type\":{\"name\":\"VillaTypes\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"apartment_type\",\"type\":{\"name\":\"ApartmentTypes\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"floor_type\",\"type\":{\"name\":\"FloorTypes\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"near_metro\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"near_bus\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"freehold_zone\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"is_auction\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"is_active_district_broker\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"rega_total_price\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"rega_meter_price\",\"type\":{\"name\":\"FloatSearchField\",\"kind\":\"INPUT_OBJECT\",\"ofType\":null}},{\"name\":\"keyword\",\"type\":{\"name\":\"String\",\"kind\":\"SCALAR\",\"ofType\":null}}]}}}"
+ },
+ {
+  "name": "aq-intro-sort",
+  "status": 200,
+  "len": 7468,
+  "body": "{\"data\":{\"__type\":{\"inputFields\":[{\"name\":\"status\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"has_img\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"has_video\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"special\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"verified\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"ac\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"age\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"apts\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"area\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"backyard\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"basement\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"beds\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"car_entrance\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"category\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"city_id\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"direction_id\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"district_id\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"province_id\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"create_time\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"driver\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"duplex\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"extra_unit\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"family\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"family_section\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"fb\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"fl\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"furnished\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"ketchen\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"lift\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"last_update\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"refresh\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"livings\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"maid\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"men_place\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"meter_price\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"playground\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"pool\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"premium\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"price\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"price_2_payments\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"price_4_payments\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"price_12_payments\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"project_id\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"rent_period\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"accept_monthly\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"accept_quarterly\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"accept_semiannually\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"rooms\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"stairs\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"stores\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"street_direction\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"street_width\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"tent\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"trees\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"user_id\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"user_type\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"unverified_owner\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"vb\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"type\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"wc\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"wells\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"women_place\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"appraisal_id\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"verified_owner\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"direct_from_owners\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"verified_office\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"unique_listing\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"gh_id\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"_id\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"water_availability\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"electrical_availability\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"drainage_availability\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"private_roof\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"apartment_in_villa\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"two_entrances\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"special_entrance\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"bookable_unit\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"name\":\"published\",\"type\":{\"name\":\"SortType\",\"kind\":\"ENUM\",\"ofType\":null}},{\"na"
+ },
+ {
+  "name": "aq-intro-location",
+  "status": 200,
+  "len": 145,
+  "body": "{\"data\":{\"__type\":{\"inputFields\":[{\"name\":\"lat\",\"type\":{\"name\":null,\"kind\":\"NON_NULL\"}},{\"name\":\"lng\",\"type\":{\"name\":null,\"kind\":\"NON_NULL\"}}]}}}"
+ },
+ {
+  "name": "aq-find-structure",
+  "status": 200,
+  "len": 115,
+  "body": "{\"data\":{\"Web\":{\"find\":{\"total\":174272,\"listings\":[{\"id\":6781382,\"price\":599000},{\"id\":6874530,\"price\":720000}]}}}}"
+ },
+ {
+  "name": "aq-find-structure2",
+  "status": 200,
+  "len": 100,
+  "body": "{\"data\":{\"Web\":{\"find\":{\"listings\":[{\"id\":6781382,\"price\":599000},{\"id\":6874530,\"price\":720000}]}}}}"
+ },
+ {
+  "name": "aq-find-where",
+  "status": 200,
+  "len": 2064,
+  "body": "{\"data\":{\"Web\":{\"find\":{\"total\":8004,\"listings\":[{\"id\":6918516,\"price\":39000,\"rent_period\":3,\"beds\":2,\"livings\":1,\"wc\":2,\"area\":150,\"category\":1,\"title\":\"شقة للإيجار في شارع الشجاعة, حي العارض, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/شمال-الرياض/حي-العارض/شارع-الشجاعة-حي-العارض-مدينة-الرياض-منطقة-الرياض-6918516\",\"location\":{\"lat\":24.859199,\"lng\":46.605141},\"district\":\"حي العارض\",\"create_time\":1791899917,\"last_update\":1792170031},{\"id\":6909490,\"price\":43000,\"rent_period\":3,\"beds\":2,\"livings\":1,\"wc\":3,\"area\":114,\"category\":1,\"title\":\"شقة للإيجار في شارع الجنادريه, حي ظهرة لبن, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/غرب-الرياض/حي-ظهرة-لبن/شارع-الجنادريه-حي-ظهرة-لبن-مدينة-الرياض-منطقة-الرياض-6909490\",\"location\":{\"lat\":24.617228,\"lng\":46.509041},\"district\":\"حي ظهرة لبن\",\"create_time\":1791384661,\"last_update\":1792170031},{\"id\":6838364,\"price\":46000,\"rent_period\":3,\"beds\":4,\"livings\":1,\"wc\":2,\"area\":160,\"category\":1,\"title\":\"شقة للإيجار في شارع الشباب, حي المونسية, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/شرق-الرياض/حي-المونسية/شارع-الشباب-حي-المونسية-مدينة-الرياض-منطقة-الرياض-6838364\",\"location\":{\"lat\":24.8251,\"lng\":46.764557},\"district\":\"حي المونسية\",\"create_time\":1787557796,\"last_update\":1792170031},{\"id\":6892365,\"price\":34000,\"rent_period\":3,\"beds\":3,\"livings\":1,\"wc\":2,\"area\":140,\"category\":1,\"title\":\"شقة للإيجار في شارع كراتشي, حي ظهرة لبن, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/غرب-الرياض/حي-ظهرة-لبن/شارع-كراتشي-حي-ظهرة-لبن-مدينة-الرياض-منطقة-الرياض-6892365\",\"location\":{\"lat\":24.624882,\"lng\":46.561625},\"district\":\"حي ظهرة لبن\",\"create_time\":1790433355,\"last_update\":1792170031},{\"id\":6898989,\"price\":45000,\"rent_period\":3,\"beds\":3,\"livings\":1,\"wc\":3,\"area\":136,\"category\":1,\"title\":\"شقة للإيجار في شارع الصحراء الليبية, حي عكاظ, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/جنوب-الرياض/حي-عكاظ/شارع-الريان-حي-عكاظ-الرياض-منطقة-الرياض-6898989\",\"location\":{\"lat\":24.519827,\"lng\":46.68333},\"district\":\"حي عكاظ\",\"create_time\":1790758862,\"last_update\":1792170031}]}}}}"
+ },
+ {
+  "name": "aq-find-polygon",
+  "status": 200,
+  "len": 29117,
+  "body": "{\"data\":{\"Web\":{\"find\":{\"total\":553,\"listings\":[{\"id\":6906410,\"price\":8000,\"rent_period\":3,\"beds\":3,\"livings\":1,\"wc\":4,\"area\":121,\"category\":1,\"title\":\"شقة للإيجار في شارع العمرة, حي الملقا, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/شمال-الرياض/حي-الملقا/شارع-العمرة-حي-الملقا-مدينة-الرياض-منطقة-الرياض-6906410\",\"location\":{\"lat\":24.795934,\"lng\":46.622693},\"district\":\"حي الملقا\",\"create_time\":1791222519,\"last_update\":1792170031},{\"id\":6897236,\"price\":45000,\"rent_period\":3,\"beds\":3,\"livings\":1,\"wc\":2,\"area\":840,\"category\":1,\"title\":\"شقة للإيجار في شارع سعود بن عبدالعزيز بن محمد, حي المصيف, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/شمال-الرياض/حي-المصيف/شارع-سعود-بن-عبدالعزيز-بن-محمد-حي-المصيف-مدينة-الرياض-منطقة-الرياض-6897236\",\"location\":{\"lat\":24.755198,\"lng\":46.679703},\"district\":\"حي المصيف\",\"create_time\":1790672477,\"last_update\":1792170025},{\"id\":6876434,\"price\":45000,\"rent_period\":3,\"beds\":2,\"livings\":0,\"wc\":0,\"area\":325,\"category\":1,\"title\":\"شقة للإيجار في شارع شهيد الدين ثم الوطن عبدالله حسين ثعيل, حي الشهداء, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/شرق-الرياض/حي-الشهداء/شارع-شهيد-الدين-ثم-الوطن-عبدالله-حسين-ثعيل-حي-الشهداء-مدينة-الرياض-منطقة-الرياض-6876434\",\"location\":{\"lat\":24.784189,\"lng\":46.74613},\"district\":\"حي الشهداء\",\"create_time\":1789496490,\"last_update\":1792170023},{\"id\":6856550,\"price\":50000,\"rent_period\":3,\"beds\":3,\"livings\":1,\"wc\":2,\"area\":540,\"category\":1,\"title\":\"شقة للإيجار في شارع معقل بن سنان, حي السليمانية, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/شمال-الرياض/حي-السليمانية/شارع-معقل-بن-سنان-حي-السليمانية-مدينة-الرياض-منطقة-الرياض-6856550\",\"location\":{\"lat\":24.711732,\"lng\":46.693721},\"district\":\"حي السليمانية\",\"create_time\":1788453195,\"last_update\":1792170021},{\"id\":6920843,\"price\":45000,\"rent_period\":3,\"beds\":2,\"livings\":1,\"wc\":2,\"area\":140,\"category\":1,\"title\":\"شقة للإيجار في شارع ميسرة العبسي, حي المصيف, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/شمال-الرياض/حي-المصيف/شارع-ميسرة-العبسي-حي-المصيف-مدينة-الرياض-منطقة-الرياض-6920843\",\"location\":{\"lat\":24.763448,\"lng\":46.672641},\"district\":\"حي المصيف\",\"create_time\":1792002551,\"last_update\":1792166211},{\"id\":6817075,\"price\":42000,\"rent_period\":3,\"beds\":3,\"livings\":1,\"wc\":2,\"area\":242,\"category\":1,\"title\":\"شقة للإيجار في شارع الشديدة, حي قرطبة, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/شرق-الرياض/حي-قرطبة/شارع-الشديدة-حي-قرطبة-مدينة-الرياض-منطقة-الرياض-6817075\",\"location\":{\"lat\":24.818077,\"lng\":46.730027},\"district\":\"حي قرطبة\",\"create_time\":1786470037,\"last_update\":1792103886},{\"id\":6908392,\"price\":45000,\"rent_period\":3,\"beds\":2,\"livings\":1,\"wc\":3,\"area\":74,\"category\":1,\"title\":\"شقة للإيجار في شارع وادي الصمان, حي حطين, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/شمال-الرياض/حي-حطين/شارع-وادي-الصمان-حي-حطين-مدينة-الرياض-منطقة-الرياض-6908392\",\"location\":{\"lat\":24.773569,\"lng\":46.614199},\"district\":\"حي حطين\",\"create_time\":1791316858,\"last_update\":1791319266},{\"id\":6915671,\"price\":26000"
+ },
+ {
+  "name": "aq-find-sort1",
+  "status": 200,
+  "len": 379,
+  "body": "{\"data\":{\"Web\":{\"find\":{\"total\":23479,\"listings\":[{\"id\":6918516,\"create_time\":1791899917,\"last_update\":1792170031},{\"id\":6834150,\"create_time\":1787316710,\"last_update\":1792170031},{\"id\":6881689,\"create_time\":1789806200,\"last_update\":1792170031},{\"id\":6909490,\"create_time\":1791384661,\"last_update\":1792170031},{\"id\":6672445,\"create_time\":1777313741,\"last_update\":1792170030}]}}}}"
+ },
+ {
+  "name": "aq-find-sort2",
+  "status": 500,
+  "len": 466,
+  "body": "{\"errors\":[{\"error\":\"GRAPHQL_ERROR\",\"code\":414,\"message\":\"Variable \\\"$sort\\\" got invalid value {\\\"by\\\":\\\"last_update\\\",\\\"order\\\":\\\"desc\\\"}; Field \\\"by\\\" is not defined by type SortInput.\",\"locations\":[{\"line\":1,\"column\":29}]},{\"error\":\"GRAPHQL_ERROR\",\"code\":414,\"message\":\"Variable \\\"$sort\\\" got invalid value {\\\"by\\\":\\\"last_update\\\",\\\"order\\\":\\\"desc\\\"}; Field \\\"order\\\" is not defined by type SortInput; did you mean driver?\",\"locations\":[{\"line\":1,\"column\":29}]}]}"
+ },
+ {
+  "name": "aq-intro-listing",
+  "status": 200,
+  "len": 4524,
+  "body": "{\"data\":{\"__type\":{\"fields\":[{\"name\":\"title\"},{\"name\":\"path\"},{\"name\":\"city\"},{\"name\":\"direction\"},{\"name\":\"district\"},{\"name\":\"id\"},{\"name\":\"_id\"},{\"name\":\"create_time\"},{\"name\":\"published_at\"},{\"name\":\"last_update\"},{\"name\":\"refresh\"},{\"name\":\"category\"},{\"name\":\"has_img\"},{\"name\":\"special\"},{\"name\":\"imgs\"},{\"name\":\"imgs_desc\"},{\"name\":\"status\"},{\"name\":\"support_imgs\"},{\"name\":\"support_imgs_desc\"},{\"name\":\"premium\"},{\"name\":\"price\"},{\"name\":\"price_2_payments\"},{\"name\":\"price_4_payments\"},{\"name\":\"price_12_payments\"},{\"name\":\"wc\"},{\"name\":\"meter_price\"},{\"name\":\"age\"},{\"name\":\"area\"},{\"name\":\"fl\"},{\"name\":\"rent_period\"},{\"name\":\"accept_monthly\"},{\"name\":\"accept_quarterly\"},{\"name\":\"accept_semiannually\"},{\"name\":\"beds\"},{\"name\":\"ketchen\"},{\"name\":\"livings\"},{\"name\":\"men_place\"},{\"name\":\"women_place\"},{\"name\":\"apts\"},{\"name\":\"stores\"},{\"name\":\"duplex\"},{\"name\":\"furnished\"},{\"name\":\"driver\"},{\"name\":\"maid\"},{\"name\":\"basement\"},{\"name\":\"lift\"},{\"name\":\"pool\"},{\"name\":\"stairs\"},{\"name\":\"fb\"},{\"name\":\"vb\"},{\"name\":\"tent\"},{\"name\":\"rooms\"},{\"name\":\"wells\"},{\"name\":\"trees\"},{\"name\":\"backyard\"},{\"name\":\"playground\"},{\"name\":\"family\"},{\"name\":\"family_section\"},{\"name\":\"street_direction\"},{\"name\":\"street_width\"},{\"name\":\"type\"},{\"name\":\"car_entrance\"},{\"name\":\"ac\"},{\"name\":\"location\"},{\"name\":\"boosted\"},{\"name\":\"address\"},{\"name\":\"content\"},{\"name\":\"content_en\"},{\"name\":\"services\"},{\"name\":\"uri\"},{\"name\":\"city_id\"},{\"name\":\"direction_id\"},{\"name\":\"district_id\"},{\"name\":\"province_id\"},{\"name\":\"views\"},{\"name\":\"user\"},{\"name\":\"user_id\"},{\"name\":\"user_type\"},{\"name\":\"extra_unit\"},{\"name\":\"verified\"},{\"name\":\"has_video\"},{\"name\":\"videos\"},{\"name\":\"cf_videos\"},{\"name\":\"subscription\"},{\"name\":\"employee\"},{\"name\":\"employee_user_id\"},{\"name\":\"mgr_user_id\"},{\"name\":\"stc_coverage\"},{\"name\":\"deed_id\"},{\"name\":\"owner_name\"},{\"name\":\"owner_id\"},{\"name\":\"owner_id_type\"},{\"name\":\"is_rent\"},{\"name\":\"capacity\"},{\"name\":\"phone_1\"},{\"name\":\"phone_2\"},{\"name\":\"assigned_to\"},{\"name\":\"approved\"},{\"name\":\"gh_id\"},{\"name\":\"inspector_images\"},{\"name\":\"building_no\"},{\"name\":\"unique_listing\"},{\"name\":\"advertiser_type\"},{\"name\":\"structure\"},{\"name\":\"appraisal_id\"},{\"name\":\"appraisal\"},{\"name\":\"virtual_tour_link\"},{\"name\":\"rnpl_monthly_price\"},{\"name\":\"accurate_location\"},{\"name\":\"private_listing\"},{\"name\":\"blur\"},{\"name\":\"location_circle_radius\"},{\"name\":\"map_premium_services\"},{\"name\":\"plan_no\"},{\"name\":\"parcel_no\"},{\"name\":\"show_parcel_info\"},{\"name\":\"project_id\"},{\"name\":\"project\"},{\"name\":\"width\"},{\"name\":\"length\"},{\"name\":\"water_availability\"},{\"name\":\"electrical_availability\"},{\"name\":\"drainage_availability\"},{\"name\":\"private_roof\"},{\"name\":\"apartment_in_villa\"},{\"name\":\"two_entrances\"},{\"name\":\"special_entrance\"},{\"name\":\"daily_rentable\"},{\"name\":\"closed_reason\"},{\"name\":\"closed_by\"},{\"name\":\"has_extended_details\"},{\"name\":\"hide_contact_details\"},{\"name\":\"disable_phone\"},{\"name\":\"disable_whatsapp\"},{\"name\":\"disable_message\"},{\"name\":\"unit_code\"},{\"name\":\"bookable_unit\"},{\"name\":\"bookable_unit_plans\"},{\"name\":\"bookable_unit_down_payment\"},{\"name\":\"bookable_unit_interested_users_count\"},{\"name\":\"bookable_unit_developer_id\"},{\"name\":\"bookable_unit_project_status\"},{\"name\":\"bookable_unit_project_type\"},{\"name\":\"bookable_unit_project_title\"},{\"name\":\"bookable_unit_project_title_en\"},{\"name\":\"rega_advertisement_details_id\"},{\"name\":\"ad_license_number\"},{\"name\":\"off_plan_license_number\"},{\"name\":\"deed_number\"},{\"name\":\"deed_area\"},{\"name\":\"usages\"},{\"name\":\"rega_licensed\"},{\"name\":\"rega_license_url\"},{\"name\":\"published\"},{\"name\":\"comments_enabled\"},{\"name\":\"commission_type\"},{\"name\":\"commission_percentage\"},{\"name\":\"commission_amount\"},{\"name\":\"biddable\"},{\"name\":\"sov_campaign_id\"},{\"name\":\"mot_license_number\"},{\"name\":\"whatsapp_requested_count\"},{\"name\":\"whatsapp_responded_count\"},{\"name\":\"precise_location_request_status\"},{\"name\":\"precise_location_request_approved_at\"},{\"name\":\"is_exclusive\"},{\"name\":\"has_multiple_units\"},{\"name\":\"villa_type\"},{\"name\":\"apartment_type\"},{\"name\":\"floor_type\"},{\"name\":\"near_bus\"},{\"name\":\"near_metro\"},{\"name\":\"freehold_zone\"},{\"name\":\"white_lands_percentage\"},{\"name\":\"rega_total_price\"},{\"name\":\"rega_meter_price\"},{\"name\":\"is_auction\"},{\"name\":\"is_unique_deed\"},{\"name\":\"is_active_district_broker\"},{\"name\":\"license_near_expiry\"},{\"name\":\"license_expiry_date\"},{\"name\":\"rega_category\"},{\"name\":\"rega_rooms\"},{\"name\":\"auction_end_date\"},{\"name\":\"document_pdf\"},{\"name\":\"is_precise_location\"},{\"name\":\"links\"},{\"name\":\"details\"},{\"name\":\"alert_box\"}]}}}"
+ },
+ {
+  "name": "aq-intro-result",
+  "status": 200,
+  "len": 24,
+  "body": "{\"data\":{\"__type\":null}}"
+ },
+ {
+  "name": "aq-getlisting",
+  "status": 400,
+  "len": 181,
+  "body": "{\"errors\":[{\"error\":\"GRAPHQL_ERROR\",\"code\":414,\"message\":\"Cannot query field \\\"getListing\\\" on type \\\"WebQryOps\\\". Did you mean \\\"listing\\\"?\",\"locations\":[{\"line\":1,\"column\":35}]}]}"
+ },
+ {
+  "name": "deal-token",
+  "status": 200,
+  "headers": {
+   "Content-Type": "application/…",
+   "Transfer-Encoding": "chunked…",
+   "Connection": "keep-alive…",
+   "Date": "Fri, 16 Oct …",
+   "content-encoding": "gzip…",
+   "ETag": "W/\"e51-bdiW2…",
+   "Server": "nginx/1.24.0…",
+   "Access-Control-Allow-Origin": "*…",
+   "Access-Control-Expose-Headers": "authorizatio…",
+   "Content-Security-Policy": "default-src …",
+   "Cross-Origin-Opener-Policy": "same-origin…",
+   "Cross-Origin-Resource-Policy": "same-origin…",
+   "Origin-Agent-Cluster": "?1…",
+   "Referrer-Policy": "no-referrer…",
+   "Strict-Transport-Security": "max-age=3153…",
+   "X-Content-Type-Options": "nosniff…",
+   "X-DNS-Prefetch-Control": "off…",
+   "X-Download-Options": "noopen…",
+   "X-Frame-Options": "SAMEORIGIN…",
+   "X-Permitted-Cross-Domain-Policies": "none…",
+   "X-XSS-Protection": "0…",
+   "x-env-source": "production…",
+   "x-human": "true…",
+   "x-env": "production…",
+   "X-RateLimit-Limit": "20…",
+   "X-RateLimit-Remaining": "19…",
+   "X-RateLimit-Reset": "1792256724…",
+   "authorization": "eyJhbGciOiJI…",
+   "vary": "Accept-Encod…",
+   "X-Cache": "Miss from cl…",
+   "Via": "1.1 71b24e89…",
+   "X-Amz-Cf-Pop": "IAD55-P7…",
+   "X-Amz-Cf-Id": "bjB4c_wqPeS6…"
+  },
+  "cookies": [],
+  "has_token": true
+ },
+ {
+  "name": "deal-base",
+  "status": 200,
+  "len": 9112,
+  "total": 56564,
+  "sample": [
+   {
+    "price": 70000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "جدة",
+     "_id": "6009d942950ada00061eeeac",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الروضة",
+     "_id": "5dd490b0bc2e91004242e702",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   },
+   {
+    "price": 499500,
+    "purpose": "SALE",
+    "rentType": null,
+    "city": {
+     "name_ar": "خليص",
+     "_id": "5dd49004af8af4002cbfb27e",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "غران",
+     "_id": "5dd490b1bc2e91004242e750",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "630910da45e4bab52f2d5c02",
+     "propertyType": "RESIDENTIAL-LAND"
+    }
+   },
+   {
+    "price": 33000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الجبيلة",
+     "_id": "5ec2e2d7ebec72761e3d108e",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "6309189345e4ba7dfd2d5cde",
+     "propertyType": "VILLA3-APARTMENTS"
+    }
+   }
+  ]
+ },
+ {
+  "name": "deal-city",
+  "status": 200,
+  "len": 9385,
+  "total": 15757,
+  "sample": [
+   {
+    "price": 33000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الجبيلة",
+     "_id": "5ec2e2d7ebec72761e3d108e",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "6309189345e4ba7dfd2d5cde",
+     "propertyType": "VILLA3-APARTMENTS"
+    }
+   },
+   {
+    "price": 1200000,
+    "purpose": "SALE",
+    "rentType": null,
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الرمال",
+     "_id": "5dd490aebc2e91004242e4e7",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "6884c492af23aa37800f0e38",
+     "propertyType": "TOWNHOUSE"
+    }
+   },
+   {
+    "price": 600000,
+    "purpose": "SALE",
+    "rentType": null,
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الندوة",
+     "_id": "5dd490aebc2e91004242e4f5",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bec45e4bacf002d5d2d",
+     "propertyType": "FLOOR"
+    }
+   }
+  ]
+ },
+ {
+  "name": "deal-cityId",
+  "status": 400,
+  "len": 43,
+  "total": null,
+  "sample": []
+ },
+ {
+  "name": "deal-cities",
+  "status": 400,
+  "len": 43,
+  "total": null,
+  "sample": []
+ },
+ {
+  "name": "deal-purpose",
+  "status": 200,
+  "len": 9648,
+  "total": 18538,
+  "sample": [
+   {
+    "price": 70000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "جدة",
+     "_id": "6009d942950ada00061eeeac",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الروضة",
+     "_id": "5dd490b0bc2e91004242e702",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   },
+   {
+    "price": 33000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الجبيلة",
+     "_id": "5ec2e2d7ebec72761e3d108e",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "6309189345e4ba7dfd2d5cde",
+     "propertyType": "VILLA3-APARTMENTS"
+    }
+   },
+   {
+    "price": 60000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "جدة",
+     "_id": "6009d942950ada00061eeeac",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الكوثر",
+     "_id": "5dd490b0bc2e91004242e70f",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   }
+  ]
+ },
+ {
+  "name": "deal-ptype",
+  "status": 200,
+  "len": 9809,
+  "total": 19118,
+  "sample": [
+   {
+    "price": 70000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "جدة",
+     "_id": "6009d942950ada00061eeeac",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الروضة",
+     "_id": "5dd490b0bc2e91004242e702",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   },
+   {
+    "price": 60000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "جدة",
+     "_id": "6009d942950ada00061eeeac",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الكوثر",
+     "_id": "5dd490b0bc2e91004242e70f",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   },
+   {
+    "price": 850000,
+    "purpose": "SALE",
+    "rentType": null,
+    "city": {
+     "name_ar": "جدة",
+     "_id": "6009d942950ada00061eeeac",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الورود",
+     "_id": "5dd490b0bc2e91004242e708",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   }
+  ]
+ },
+ {
+  "name": "deal-ptypes",
+  "status": 400,
+  "len": 50,
+  "total": null,
+  "sample": []
+ },
+ {
+  "name": "deal-price1",
+  "status": 400,
+  "len": 44,
+  "total": null,
+  "sample": []
+ },
+ {
+  "name": "deal-price2",
+  "status": 200,
+  "len": 9555,
+  "total": 13194,
+  "sample": [
+   {
+    "price": 33000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الجبيلة",
+     "_id": "5ec2e2d7ebec72761e3d108e",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "6309189345e4ba7dfd2d5cde",
+     "propertyType": "VILLA3-APARTMENTS"
+    }
+   },
+   {
+    "price": 40000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "جدة",
+     "_id": "6009d942950ada00061eeeac",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الشرفية",
+     "_id": "5dd490b0bc2e91004242e6e7",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   },
+   {
+    "price": 40000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "الخبر",
+     "_id": "5dd49004af8af4002cbfae4c",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الحمراء",
+     "_id": "5dd490b2bc2e91004242ea45",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   }
+  ]
+ },
+ {
+  "name": "deal-price3",
+  "status": 400,
+  "len": 47,
+  "total": null,
+  "sample": []
+ },
+ {
+  "name": "deal-combo",
+  "status": 200,
+  "len": 9640,
+  "total": 3327,
+  "sample": [
+   {
+    "price": 18000,
+    "purpose": "RENT",
+    "rentType": "MONTHLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "حطين",
+     "_id": "5dd490aebc2e91004242e4de",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   },
+   {
+    "price": 23400,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الفوطة",
+     "_id": "5dd490aebc2e91004242e4c8",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   },
+   {
+    "price": 100000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "النرجس",
+     "_id": "5dd490aebc2e91004242e4e4",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   }
+  ]
+ },
+ {
+  "name": "deal-ad-detail",
+  "status": 200,
+  "len": 4431,
+  "body": "{\"data\":{\"location\":{\"value\":{\"type\":\"Point\",\"coordinates\":[39.16469656725476,21.57420050532706]},\"type\":\"PRECISE\"},\"media\":{\"main\":{\"url\":\"https://uploads.deal-app.com/1bc5f009-a51d-45b7-9ab7-12344169e6b1.qt\",\"type\":\"VIDEO\",\"thumbnail\":\"https://uploads.deal-app.com/1bc5f009-a51d-45b7-9ab7-12344169e6b1.png\",\"preview\":\"https://uploads.deal-app.com/1bc5f009-a51d-45b7-9ab7-12344169e6b1_preview.mp4\"},\"extra\":[]},\"refreshed\":{\"at\":\"2026-10-16T16:38:23.327Z\"},\"interactionsCounts\":{\"favorite\":0,\"call\":0,\"whatsapp\":0,\"chat\":0,\"read\":12,\"reject\":0,\"readAndFavoriteTotal\":12,\"communicationsTotal\":0,\"total\":12,\"totalNonCommunicationsInteractionsCount\":12},\"promotion\":{\"from\":\"2026-10-16T16:38:23.327Z\",\"to\":\"2026-11-15T16:38:23.327Z\"},\"_id\":\"6ad0bcf5a53db52f093f832a\",\"title\":\"شقة إيجار\",\"propertyType\":{\"_id\":\"63091bcd45e4ba93412d5d25\",\"propertyType\":\"APARTMENT\",\"propertyType_ar\":\"شقة\",\"category\":{\"name_en\":\"APARTMENTS-AND-ROOMS\",\"name_ar\":\"شقق وغرف\",\"id\":null},\"regaPropertyType\":\"Apartment\",\"regaPropertyTypeAr\":\"شقة\"},\"propertyCategory\":\"6307c64e45e4badb612be78a\",\"purpose\":\"RENT\",\"price\":70000,\"priceType\":\"SPECIFIC\",\"area\":124.53,\"city\":{\"_id\":\"6009d942950ada00061eeeac\",\"name_ar\":\"جدة\",\"name_en\":\"Jeddah\"},\"district\":{\"_id\":\"5dd490b0bc2e91004242e702\",\"name_ar\":\"الروضة\",\"name_en\":\"Ar Rawdah Dist.\"},\"rentType\":\"ANNUALLY\",\"relatedQuestions\":{\"propertyUsages\":[\"Residential\"]},\"accommodationType\":[\"FAMILY\",\"SINGLES\"],\"notificationMethods\":[\"CHAT\",\"WHATSAPP\",\"CALL_PHONE\"],\"description\":\"🔴 للايجار شقة بحي الروضة / جدة]\\n \\n📍 الموقع:]\\n🏢 المواصفات:\\n• المساحة: [ 134] م²\\n• الغرف: [ 4 )غرف + صالة + مطبخ + [3 ] دورات مياه\\n• الدور: [ 3 ] \\n• عمر العقار: [ جديدة] سنوات\\n• التشطيب: [جديد ]\\n• الأثاث: [مفروشة ]\\n• التكييف: / سبليت /]\\n• المصعد: [نعم \\n• المواقف: [متوفر\\n• الخدمات: [كهرباء / ماء / إنترنت / صرف صحي] \\n💰 الإيجار: [ 70000 ] ريال سنويًا\\n💳 طريقة الدفع: [دفعة واحدة / دفعتين /]\\n🪪 رخصة فال:\\n📞 للتواصل:] – [رقم الجوال] 050XXXXXXX\",\"createdBy\":{\"entity\":{\"type\":\"INDIVIDUAL\",\"name\":\"مسوق لمشاريع شركة بن سعيدان وداركو بجدة\"},\"_id\":\"648d952c291c67b093c3b706\",\"role\":\"REAL_STATE_AGENT\",\"avatar\":\"https://uploads.deal-app.com/d2cb58fb-29cd-450b-9c13-71d8043a2431-n.webp\",\"isVerifiedByNafath\":true,\"name\":\"علي الزهراني\",\"nameEn\":\"Ali Jamaan Al-Zahrani\",\"agentType\":\"BROKER\",\"subscription\":{\"packageName\":\"PROFESSIONAL_ONE_YEAR\"},\"id\":\"648d952c291c67b093c3b706\",\"notificationMethods\":[\"WHATSAPP\",\"CALL_PHONE\",\"CHAT\"]},\"status\":\"APPROVED\",\"published\":true,\"isChatTextSent\":[],\"regaRawData\":{\"adLicenseNumber\":\"7100332020\",\"advertiserName\":\"علي زهراني\",\"responsibleEmployeeName\":\"علي جمعان احمد زهراني\",\"responsibleEmployeePhoneNumber\":\"050XXXXXXX\",\"brokerageAndMarketingLicenseNumber\":\"1100237344\",\"isConstrained\":false,\"isPawned\":true,\"streetWidth\":0,\"propertyArea\":124.53,\"propertyPrice\":70000,\"numberOfRooms\":3,\"propertyType\":\"شقة\",\"propertyAge\":\"جديد\",\"advertisementType\":\"إيجار\",\"location\":{\"region\":\"منطقة مكة المكرمة\",\"regionCode\":\"2\",\"city\":\"جدة\",\"district\":\"الروضة\",\"districtCode\":\"4306\",\"street\":\"اسعد رستم\",\"postalCode\":\"23434\",\"buildingNumber\":\"4292\",\"additionalNumber\":\"8847\",\"longitude\":\"39.16469656725476\",\"latitude\":\"21.57420050532706\",\"districtId\":\"9c5ed0ed-dfa8-6ba1-a1f9-4ff782eb18f3\",\"cityId\":\"202ea443-2031-9ce7-c413-078e4ad890aa\",\"regionId\":\"9e7cb8e3-f28d-0fa8-3388-f4273702054b\",\"districtNameEn\":\"Ar Rawdah\",\"regionNameEn\":\"Makkah Al Mukarramah\",\"cityNameEn\":\"Jida\"},\"propertyFace\":\"شمالية\",\"planNumber\":\"373 / ب\",\"landNumber\":\"11\",\"channels\":[\"منصات التواصل الإجتماعي\"],\"propertyUsages\":[],\"mainLandUseTypeName\":\"سكني\",\"redZoneTypeName\":\"لا يوجد حظر\",\"propertyUtilities\":[\"تصريف الفيضانات \",\"مياه\",\"كهرباء\",\"صرف صحي\",\"ألياف ضوئية\"],\"creationDate\":\"15/10/2026\",\"adLicenseUrl\":\"https://eservicesredp.rega.gov.sa/public/IndividualBroker/ElanDetails/20334972-eb11-49e9-b041-cf3797724bb7\",\"locationDescriptionOnMOJDeed\":\"حي الروضة بمدينة جدة  مساحة الوحدة من الأرض 34.18 متر   وتختص من المنافع والأجزاء المشتركة بمساحة 69.48 متر \"},\"regaLicenseEndDate\":\"2026-12-06T00:00:00.000Z\",\"adLicenseNumber\":\"7100332020\",\"idType\":\"CITIZEN\",\"isCorrectLocation\":true,\"isPromoted\":true,\"platform\":\"DEAL\",\"onBoardMatchingRequests\":false,\"favoriteBy\":[],\"code\":609747,\"createdAt\":\"2026-10-15T11:45:57.177Z\",\"mlCommunicationInsight\":false,\"id\":\"6ad0bcf5a53db52f093f832a\",\"isFavorite\":false,\"isInteractedBefore\":false,\"linkedNoteId\":null,\"isReported\":false,\"hasEntityUpgradeResource\":false,\"lastEntityActivityLog\":null}}"
+ },
+ {
+  "name": "kite-doc-terms",
+  "status": 200,
+  "len": 164444,
+  "body": "<!DOCTYPE html><html data-dpl-id=\"dpl_4qNforeA4guYnUEp2W2QApstDvEV\" lang=\"en\" dir=\"ltr\" data-brand=\"kite\" class=\"zgRZpa_variable D70TpG_variable antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"v"
+ },
+ {
+  "name": "kite-doc-coverage",
+  "status": 200,
+  "len": 165556,
+  "body": "<!DOCTYPE html><html data-dpl-id=\"dpl_4qNforeA4guYnUEp2W2QApstDvEV\" lang=\"en\" dir=\"ltr\" data-brand=\"kite\" class=\"zgRZpa_variable D70TpG_variable antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"v"
+ },
+ {
+  "name": "kite-doc-searching",
+  "status": 200,
+  "len": 175273,
+  "body": "<!DOCTYPE html><html data-dpl-id=\"dpl_4qNforeA4guYnUEp2W2QApstDvEV\" lang=\"en\" dir=\"ltr\" data-brand=\"kite\" class=\"zgRZpa_variable D70TpG_variable antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"v"
+ },
+ {
+  "name": "kite-doc-quickstart",
+  "status": 200,
+  "len": 164406,
+  "body": "<!DOCTYPE html><html data-dpl-id=\"dpl_4qNforeA4guYnUEp2W2QApstDvEV\" lang=\"en\" dir=\"ltr\" data-brand=\"kite\" class=\"zgRZpa_variable D70TpG_variable antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"v"
+ },
+ {
+  "name": "kite-doc-authentication",
+  "status": 200,
+  "len": 165405,
+  "body": "<!DOCTYPE html><html data-dpl-id=\"dpl_4qNforeA4guYnUEp2W2QApstDvEV\" lang=\"en\" dir=\"ltr\" data-brand=\"kite\" class=\"zgRZpa_variable D70TpG_variable antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"v"
+ },
+ {
+  "name": "kite-doc-limits",
+  "status": 200,
+  "len": 166843,
+  "body": "<!DOCTYPE html><html data-dpl-id=\"dpl_4qNforeA4guYnUEp2W2QApstDvEV\" lang=\"en\" dir=\"ltr\" data-brand=\"kite\" class=\"zgRZpa_variable D70TpG_variable antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"v"
+ },
+ {
+  "name": "kite-doc-listings",
+  "status": 200,
+  "len": 163360,
+  "body": "<!DOCTYPE html><html data-dpl-id=\"dpl_4qNforeA4guYnUEp2W2QApstDvEV\" lang=\"en\" dir=\"ltr\" data-brand=\"kite\" class=\"zgRZpa_variable D70TpG_variable antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"v"
+ },
+ {
+  "name": "kite-doc-pagination",
+  "status": 200,
+  "len": 161533,
+  "body": "<!DOCTYPE html><html data-dpl-id=\"dpl_4qNforeA4guYnUEp2W2QApstDvEV\" lang=\"en\" dir=\"ltr\" data-brand=\"kite\" class=\"zgRZpa_variable D70TpG_variable antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"v"
+ },
+ {
+  "name": "robots-kite.sa",
+  "status": 200,
+  "len": 1500,
+  "body": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /*/listing/*/opengraph-image\n\nUser-Agent: GPTBot\nAllow: /\nDisallow: /api/\nDisallow: /*/listing/*/opengraph-image\nDisallow: /*/listing/\n\nUser-Agent: ClaudeBot\nAllow: /\nDisallow: /api/\nDisallow: /*/listing/*/opengraph-image\nDisallow: /*/listing/\n\nUser-Agent: anthropic-ai\nAllow: /\nDisallow: /api/\nDisallow: /*/listing/*/opengraph-image\nDisallow: /*/listing/\n\nUser-Agent: Google-Extended\nAllow: /\nDisallow: /api/\nDisallow: /*/listing/*/opengraph-image\nDisallow: /*/listing/\n\nUser-Agent: CCBot\nAllow: /\nDisallow: /api/\nDisallow: /*/listing/*/opengraph-image\nDisallow: /*/listing/\n\nSitemap: https://kite.sa/sitemap/pages.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-riyadh.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-jeddah.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-eastern-province.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-makkah.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-madinah.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-qassim.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-jazan.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-abha.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-khamis-mushait.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-taif.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-al-ahsa.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-hail.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-hafar-al-batin.xml\nSitemap: https://kite.sa/sitemap/neighborhoods-tabuk.xml"
+ },
+ {
+  "name": "robots-sa.aqar.fm",
+  "status": 200,
+  "len": 1299,
+  "body": "User-agent: *\nDisallow: /contact-us\nDisallow: /اتصل-بنا\nDisallow: /معلومات-المعلن\nDisallow: /contact_user\nDisallow: /send_iphone\nDisallow: /send_android\nDisallow: /download_app\nDisallow: /search/\nDisallow: /regions/\n#Disallow: /user/\nDisallow: /view/\nDisallow: /map/\nDisallow: /map-ad/\nDisallow: /district/\nDisallow: /direction/\nDisallow: /city/\nDisallow: /asasasasasa\nDisallow: /أراضي/\nDisallow: /أراضي-/\nDisallow: /شقق/\nDisallow: /شقق-/\nDisallow: /بيت/\nDisallow: /بيت-/\nDisallow: /استراحة/\nDisallow: /استراحة-/\nDisallow: /عقارات-/\nDisallow: /عقارات-للبيع/\nDisallow: /عقارات-للإيجار/\nDisallow: /شقق-للإيج/\nDisallow: /مكتب-تجاري/\nDisallow: /%D9%85%D9%83%D8%AA%D8%A8%20%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A/\nDisallow: /مكتب تجاري/\nDisallow: /مكتب تجاري-للإيجار/\nDisallow: /%D9%85%D9%83%D8%AA%D8%A8%20%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/\nDisallow: /فلل/\nDisallow: /فلل-/\nDisallow: /محلات/\nDisallow: /محلات-/\nDisallow: /عمائر/\nDisallow: /عمائر-/\nDisallow: /add-listing/\nDisallow: /add-rega-listing/\nDisallow: /editlisting/\nDisallow: /user/bookings\nDisallow: /financing/application\nDisallow: /login\nDisallow: /graphql\nDisallow: /auth-graphql\nDisallow: /listings/*/statistics/\n\nSitemap: https://sa.aqar.fm/blog/sitemap.xml\nSitemap: https://sa.aqar.fm/blog/news-sitemap.xml\n"
+ },
+ {
+  "name": "robots-haraj.com.sa",
+  "status": 200,
+  "len": 690,
+  "body": "User-agent: *\nDisallow: /prismic/*\nDisallow: /chat/*\nDisallow: /m/*\nDisallow: /post/*\nDisallow: /users/*/edit\nDisallow: /users/*/edit/*\nDisallow: /users/*/createpage\nDisallow: /users/*/updatepassword\nDisallow: /users/*/verify-mobile\nDisallow: /users/*/updatemobile\nDisallow: /users/*/updateusername\nDisallow: /users/*/updateemail\nDisallow: /users/*/editpage/*\nDisallow: /users/*/updateemail/*/*\nDisallow: /users/*/campaigns\nDisallow: /users/*/settings/*\nDisallow: /payment/history\nDisallow: /payment/membership\nDisallow: /notification-controls\nDisallow: /wallet\nDisallow: /verify\nDisallow: /promote/*\nDisallow: /s.php/*\nDisallow: /fav.php\nAllow: /\n\nSitemap: https://haraj.com.sa/sitemap.xml"
+ },
+ {
+  "name": "robots-www.propertyfinder.sa",
+  "status": 200,
+  "len": 2402,
+  "body": "User-agent: *\nDisallow: /ajax/\nDisallow: /promo/\nDisallow: /manager/\nDisallow: /to/\nDisallow: /en/search?*\nDisallow: /ar/search?*\nDisallow: /fr/recherche\nDisallow: /ar/recherche\nDisallow: /search?*\nDisallow: /en/search-v2\nDisallow: /ar/search-v2\nDisallow: /en/review\nDisallow: /ar/review\nDisallow: /en/area-insights/*\nDisallow: /ar/area-insights/*\nDisallow: */transactions/*?\nDisallow: */insightshub*\nDisallow: */tools/home-value-estimator\nDisallow: /sp_events/*\nDisallow: */undefined$\nDisallow: */preview$\nDisallow: */preview?*\nDisallow: *?*sublocation=*\nDisallow: *?*location=*\nDisallow: *?*price=*\nDisallow: *?*category=*\nDisallow: *?*built_up_area=*\nDisallow: *?*city=*\nDisallow: *?*pmt=*\nDisallow: *?*payment_freq=*\nDisallow: *?*pkw=*\nDisallow: *?*ob=*\nDisallow: *?*company_profile=*\nDisallow: *?*bedrooms=*\nDisallow: *?*furnished=*\nDisallow: *?*bf=*\nDisallow: *?*bt=*\nDisallow: *?*brand_name=*\n\nDisallow: */map-search\nDisallow: */find-agent/?\nDisallow: */find-broker/?\nDisallow: /manager/*\nAllow: /manager/login/\n\nDisallow: /en/new-projects?*\nDisallow: /ar/new-projects?*\nAllow: */new-projects?page=*\nDisallow: */new-projects?page=*l=*\nDisallow: */new-projects?page=*c=*\nDisallow: */new-projects?page=*ob=*\n\nDisallow: *?*ls=*\n\nDisallow: *?*minbed=*\n\nDisallow: *?*vid=*\n\nDisallow: *?*direction=*\n\nDisallow: *?*fitted=*\n\nDisallow: *?*furniture=*\n\nDisallow: *?*psafe_param=*\n\nDisallow: *?*task=*\nDisallow: *?*page=*&*\nDisallow: *&*page=*\n\n# Allow pagination when standalone\n\nAllow: *?page=*\n\nSitemap: https://www.propertyfinder.sa/sitemaps/index-sitemap.xml\n\n# Block crawling software\nUser-agent: sitecheck.internetseer.com\nDisallow: /\n\nUser-agent: Zealbot\nDisallow: /\n\nUser-agent: MSIECrawler\nDisallow: /\n\nUser-agent: SiteSnagger\nDisallow: /\n\nUser-agent: WebStripper\nDisallow: /\n\nUser-agent: WebCopier\nDisallow: /\n\nUser-agent: Fetch\nDisallow: /\n\nUser-agent: Offline Explorer\nDisallow: /\n\nUser-agent: Teleport\nDisallow: /\n\nUser-agent: TeleportPro\nDisallow: /\n\nUser-agent: WebZIP\nDisallow: /\n\nUser-agent: linko\nDisallow: /\n\nUser-agent: HTTrack\nDisallow: /\n\nUser-agent: Microsoft.URL.Control\nDisallow: /\n\nUser-agent: Xenu\nDisallow: /\n\nUser-agent: larbin\nDisallow: /\n\nUser-agent: libwww\nDisallow: /\n\nUser-agent: ZyBORG\nDisallow: /\n\nUser-agent: Download Ninja\nDisallow: /\n\nUser-agent: WebReaper\nDisallow: /\n\nUser-agent: Screaming Frog SEO Spider\nDisallow: /\n\nUser-agent: Mediapartners-Google\nDisallow: /"
+ },
+ {
+  "name": "robots-kite.sa-terms",
+  "status": 200,
+  "len": 99279,
+  "body": "<!DOCTYPE html><html data-dpl-id=\"dpl_4qNforeA4guYnUEp2W2QApstDvEV\" lang=\"ar\" dir=\"rtl\" data-brand=\"kite\" class=\"zgRZpa_variable D70TpG_variable antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"/><link rel=\"stylesheet\" href=\"/_next/static/immutable/chunks/1c56vg29rboeb.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/immutable/chunks/2d_j69ykxkbo6.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/immutable/chunks/43pp69qgia-j5.js\"/><script src=\"/_next/static/immutable/chunks/083xkst6w-yqf.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/3vdlhz85cv1vm.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/14m-rlx0d3-u3.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/01ffuoqh96gtm.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/turbopack-1byz1flvc-bu1.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/0luit_h-rvpzx.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/0g78x9z_46pe7.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/119isq9-69gkp.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/3p3yjkdsgudkc.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/1-m3ym9cn1x9i.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/0u5v3enbqa_nv.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/251-nwyji4ix5.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/1iafxjdos1lnk.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/0pneel_62uiwl.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/1eo342r225wpo.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/283caks2hf30y.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/1ghpppwb-9wi7.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/1buc0ylk3unxw.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/1deyax05--x4s.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/0_fr5mbxvm7c0.js\" async=\"\"></script><meta name=\"theme-color\" content=\"#4F46E5\"/><meta name=\"next-size-adjust\" content=\"\"/><title>شروط الاستخدام | كايت</title><meta name=\"description\" content=\"شروط استخدام موقع كايت — ما يجب معرفته قبل استخدام الخدمة.\"/><meta name=\"application-name\" content=\"كايت\"/><link rel=\"manifest\" href=\"/brand/kite/manifest.webmanifest\"/><link rel=\"canonical\" href=\"https://kite.sa/ar/terms\"/><link rel=\"alternate\" hrefLang=\"ar\" href=\"https://kite.sa/ar/terms\"/><link rel=\"alternate\" hrefLang=\"en\" href=\"https://kite.sa/en/terms\"/><link rel=\"alternate\" hrefLang=\"x-default\" href=\"https://kite.sa/ar/terms\"/><meta name=\"mobile-web-app-capable\" content=\"yes\"/><meta name=\"apple-mobile-web-app-title\" content=\"كايت\"/><meta name=\"apple-mobile-web-app-status-bar-style\" content=\"default\"/><meta property=\"og:title\" content=\"شروط الاستخدام\"/><meta property=\"og:description\" content=\"شروط استخدام موقع كايت — ما يجب معرفته قبل استخدام الخدمة.\"/><meta property=\"og:image\" content=\"https://kite.sa/brand/kite/og.jpg\"/><meta property=\"og:image:width\" content=\"1200\"/><meta property=\"og:image:height\" content=\"630\"/><meta name=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:title\" content=\"شروط الاستخدام\"/><meta name=\"twitter:description\" content=\"شروط استخدام موقع كايت — ما يجب معرفته قبل استخدام الخدمة.\"/><meta name=\"twitter:image\" content=\"https://kite.sa/brand/kite/og.jpg\"/><link rel=\"icon\" href=\"/favicon.ico?favicon.1-ovz_xer_o3m.ico\" sizes=\"48x48\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/brand/kite/icon.svg\" type=\"image/svg+xml\"/><link rel=\"icon\" href=\"/brand/kite/icon-96x96.png\" type=\"image/png\" sizes=\"96x96\"/><link rel=\"apple-touch-icon\" href=\"/brand/kite/apple-touch-icon.png\"/><script src=\"/_next/static/immutable/chunks/0c0hxoamwjsbw.js\" noModule=\"\"></script></head><body><div hidden=\"\"><!--$--><!--/$--></div><!--&--><!--&--><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://kite.sa/#organization\",\"name\":\"Kite\",\"alternateName\":[\"Kite\",\"كايت\",\"Kite.sa\",\"Kite App\",\"منصة كايت\"],\"url\":\"https://kite.sa\",\"logo\":\"https://kite.sa/brand/kite/icon-512x512.png\",\"description\":\"منصة كايت لتجميع الإعلانات العقارية في السعودية. ابحث في إعلانات الإيجار والبيع عبر ٢٠+ منصة في بحث واحد.\",\"sameAs\":[\"https://x.com/getdarak\",\"https://www.reddit.com/user/Epicreator\"],\"areaServed\":{\"@type\":\"Country\",\"name\":\"Saudi Arabia\",\"sameAs\":\"https://en.wikipedia.org/wiki/Saudi_Arabia\"},\"subjectOf\":{\"@type\":\"NewsArticle\",\"headline\":\"Real estate marketplace Darak launches in Saudi Arabia\",\"url\":\"https://aimgroup.com/2026/03/30/real-estate-marketplace-darak-launches-in-saudi-arabia/\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"AIM Group\"}}}</script><!--$?--><template id=\"B:2\"></template><!--/$--><!--$--><!--/$--><div data-route-content=\"true\" c"
+ },
+ {
+  "name": "robots-platform.kite.sa-terms",
+  "status": 200,
+  "len": 222719,
+  "body": "<!DOCTYPE html><html data-dpl-id=\"dpl_4qNforeA4guYnUEp2W2QApstDvEV\" lang=\"en\" dir=\"ltr\" data-brand=\"kite\" class=\"zgRZpa_variable D70TpG_variable antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"/><link rel=\"stylesheet\" href=\"/_next/static/immutable/chunks/1c56vg29rboeb.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/immutable/chunks/2d_j69ykxkbo6.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/immutable/chunks/43pp69qgia-j5.js\"/><script src=\"/_next/static/immutable/chunks/083xkst6w-yqf.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/3vdlhz85cv1vm.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/14m-rlx0d3-u3.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/01ffuoqh96gtm.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/turbopack-1byz1flvc-bu1.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/0luit_h-rvpzx.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/0g78x9z_46pe7.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/119isq9-69gkp.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/3p3yjkdsgudkc.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/1-m3ym9cn1x9i.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/0u5v3enbqa_nv.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/1lhw2yml5rkvc.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/1mu31_77ecxhw.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/06rtxgk2-jd-g.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/1eo342r225wpo.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/1buc0ylk3unxw.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/3c4ynyijqcyxo.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/09jrz59u32u28.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/283caks2hf30y.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/1u_uxbbu2f7lh.js\" async=\"\"></script><script src=\"/_next/static/immutable/chunks/0_fr5mbxvm7c0.js\" async=\"\"></script><meta name=\"theme-color\" content=\"#4F46E5\"/><meta name=\"next-size-adjust\" content=\"\"/><script src=\"/_next/static/immutable/chunks/0c0hxoamwjsbw.js\" noModule=\"\"></script></head><body><div hidden=\"\"><!--$?--><template id=\"B:4\"></template><!--/$--></div><!--&--><!--&--><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://kite.sa/#organization\",\"name\":\"Kite\",\"alternateName\":[\"Kite\",\"كايت\",\"Kite.sa\",\"Kite App\",\"منصة كايت\"],\"url\":\"https://kite.sa\",\"logo\":\"https://kite.sa/brand/kite/icon-512x512.png\",\"description\":\"Saudi Arabia's real estate aggregator. Search rental and sale listings across 20+ platforms.\",\"sameAs\":[\"https://x.com/getdarak\",\"https://www.reddit.com/user/Epicreator\"],\"areaServed\":{\"@type\":\"Country\",\"name\":\"Saudi Arabia\",\"sameAs\":\"https://en.wikipedia.org/wiki/Saudi_Arabia\"},\"subjectOf\":{\"@type\":\"NewsArticle\",\"headline\":\"Real estate marketplace Darak launches in Saudi Arabia\",\"url\":\"https://aimgroup.com/2026/03/30/real-estate-marketplace-darak-launches-in-saudi-arabia/\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"AIM Group\"}}}</script><!--$?--><template id=\"B:5\"></template><!--/$--><!--$--><!--/$--><div data-route-content=\"true\" class=\"contents\"><!--&--><!--$?--><template id=\"B:6\"></template><div class=\"flex min-h-screen items-center justify-center\"><div class=\"h-8 w-8 animate-spin rounded-full border-4 border-gray-200 border-t-[#4F46E5]\"></div></div><!--/$--><!--/&--></div><!--&--><!--$--><!--&--><!--&--><!--/&--><!--/&--><!--/$--><!--/&--><!--$?--><template id=\"B:0\"></template><!--/$--><!--$?--><template id=\"B:1\"></template><!--/$--><!--$?--><template id=\"B:2\"></template><!--/$--><!--$?--><template id=\"B:3\"></template><!--/$--><section aria-label=\"Notifications alt+T\" tabindex=\"-1\" aria-live=\"polite\" aria-relevant=\"additions text\" aria-atomic=\"false\" data-react-aria-top-layer=\"true\"></section><!--/&--><!--/&--><script>requestAnimationFrame(function(){$RT=performance.now()});</script><script id=\"_R_\">(globalThis[\"TURBOPACK\"] || (globalThis[\"TURBOPACK\"] = [])).push({\"otherChunks\":[\"static/immutable/chunks/43pp69qgia-j5.js\",\"static/immutable/chunks/083xkst6w-yqf.js\",\"static/immutable/chunks/3vdlhz85cv1vm.js\",\"static/immutable/chunks/14m-rlx0d3-u3.js\",\"static/immutable/chunks/01ffuoqh96gtm.js\"],\"runtimeModuleIds\":[687014]});</script><script src=\"/_next/static/immutable/chunks/43pp69qgia-j5.js\" async=\"\"></script><div hidden id=\"S:6\"><!--&--><template id=\"P:7\"></template><!--/&--></div><script>(self.__next_f=self.__next_f||[]).push([0])</script><script src=\"/_next/static/immutable/chunks/0c0hxoamwjsbw.js\" noModule=\"\"></script><script src=\"/_next/static/immutable/chunks/251-nwyji4ix5.js\" async=\"\"></script><script src"
+ }
+]
