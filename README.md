@@ -18,7 +18,7 @@ apartments from old ones.
     confirmed.
   - **To check**: nothing is broken, but the ad leaves out the rent, the rooms, the bathrooms
     or the location. A bathroom count the ad leaves out can be confirmed from the photos.
-  - **Close**: misses one requirement by a little, for example 10% over budget or 5 minutes
+  - **Almost**: misses one requirement by a little, for example 10% over budget or 5 minutes
     too far.
   - **All**: every ad around work.
 - **Commute**: Google traffic forecast for the next workday at 08:00 (home → work) and

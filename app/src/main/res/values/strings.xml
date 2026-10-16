@@ -11,7 +11,7 @@
     <!-- Feed -->
     <string name="feed_matches">Matches</string>
     <string name="feed_unconfirmed">To check</string>
-    <string name="feed_near">Close</string>
+    <string name="feed_near">Almost</string>
     <string name="feed_all">All</string>
     <string name="feed_updated">Updated %1$s</string>
     <string name="feed_never_updated">Not searched yet</string>

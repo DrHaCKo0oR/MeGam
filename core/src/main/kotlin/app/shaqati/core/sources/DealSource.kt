@@ -26,6 +26,9 @@ class DealSource(private val pace: Long = 2_500) : ListingSource {
     @Volatile
     private var token: String? = null
 
+    /** District ids seen in Deal's own results (Arabic name → id), added to [KNOWN_DISTRICTS]. */
+    private val learned = java.util.concurrent.ConcurrentHashMap<String, String>()
+
     private suspend fun guest(ctx: SearchContext): String? {
         token?.let { return it }
         val resp = ctx.http.send(
@@ -67,14 +70,39 @@ class DealSource(private val pace: Long = 2_500) : ListingSource {
                 }
                 if (!resp.ok) { errors += "HTTP ${resp.status}"; break }
                 val root = runCatching { lenientJson.parseToJsonElement(resp.body) }.getOrNull() ?: break
-                val items = root["data"].arr.mapNotNull { runCatching { toListing(it) }.getOrNull() }
-                items.filter { it.location == null || Geo.distanceKm(it.location, ctx.area.center) <= ctx.area.radiusKm * 1.5 }
-                    .forEach { out[it.id] = it }
+                collect(root, ctx, out)
                 if (root["hasNextPage"].bool != true) break
+            }
+        }
+        // Then the first page of each nearby district Deal has an id for (apartments only).
+        if (!refused) {
+            val ids = Districts.near(ctx.area.center, ctx.area.radiusKm)
+                .mapNotNull { d -> learned[d.ar] ?: KNOWN_DISTRICTS[d.ar] }
+                .distinct()
+                .take(MAX_DISTRICT_QUERIES)
+            for (id in ids) {
+                delay(pace)
+                val url = "$API/ad?page=1&limit=10&city=$RIYADH&district=$id&purpose=RENT&propertyType=${PROPERTY_TYPES[0]}&maxPrice=${ctx.criteria.maxAnnualRent.toLong()}"
+                val resp = runCatching { ctx.http.send(HttpRequest(url, headers = headers(t))) }.getOrNull() ?: break
+                pages++
+                if (resp.status == 401 || resp.status == 403 || resp.status == 429) { errors += "HTTP ${resp.status}"; break }
+                if (!resp.ok) continue
+                runCatching { lenientJson.parseToJsonElement(resp.body) }.getOrNull()?.let { collect(it, ctx, out) }
             }
         }
         token = null
         return SearchResult(source, out.values.toList(), pages, errors.distinct().take(5), blocked = refused && out.isEmpty())
+    }
+
+    private fun collect(root: kotlinx.serialization.json.JsonElement, ctx: SearchContext, out: MutableMap<String, Listing>) {
+        root["data"].arr.forEach { d ->
+            val id = d["district"]["_id"].str
+            val name = d["district"]["name_ar"].str
+            if (id != null && name != null) learned[name] = id
+        }
+        root["data"].arr.mapNotNull { runCatching { toListing(it) }.getOrNull() }
+            .filter { it.location == null || Geo.distanceKm(it.location, ctx.area.center) <= ctx.area.radiusKm * 1.5 }
+            .forEach { out[it.id] = it }
     }
 
     override suspend fun details(listing: Listing, ctx: SearchContext): Listing {
@@ -92,6 +120,25 @@ class DealSource(private val pace: Long = 2_500) : ListingSource {
         const val RIYADH = "6009d941950ada00061eeeab"
 
         const val GUEST_PAGES = 4
+        private const val MAX_DISTRICT_QUERIES = 8
+
+        /** Deal district ids for Riyadh districts around Al Masif, recorded from its own results. */
+        val KNOWN_DISTRICTS = mapOf(
+            "النفل" to "5dd490aebc2e91004242e4a2",
+            "الربيع" to "5dd490aebc2e91004242e4b7",
+            "الصحافة" to "5dd490aebc2e91004242e4ca",
+            "الشهداء" to "5dd490aebc2e91004242e45f",
+            "حطين" to "5dd490aebc2e91004242e4de",
+            "القدس" to "5dd490aebc2e91004242e4a0",
+            "الياسمين" to "5dd490aebc2e91004242e4e1",
+            "غرناطة" to "5dd490aebc2e91004242e4e8",
+            "الملقا" to "5dd490aebc2e91004242e4df",
+            "الروضة" to "5dd490aebc2e91004242e4a7",
+            "الملك فيصل" to "5dd490aebc2e91004242e46a",
+            "النرجس" to "5dd490aebc2e91004242e4e4",
+            "اليرموك" to "5dd490aebc2e91004242e4d9",
+            "المونسية" to "5ec2d42f40b9ea98a7cae7bf",
+        )
         const val FLOOR_TYPE = "63091bec45e4bacf002d5d2d"
 
         /** Apartment, apartment in a residential compound, and floor (دور). */
