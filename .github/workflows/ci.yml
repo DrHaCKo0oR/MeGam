@@ -154,8 +154,12 @@ jobs:
           target: google_apis
           profile: pixel_7
           disable-animations: true
-          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          # ANGLE on SwiftShader: WebView could not draw with the older swiftshader_indirect mode.
+          emulator-options: -no-window -gpu swangle_indirect -noaudio -no-boot-anim -camera-back none
           script: bash .github/scripts/device_qa.sh
+      - name: Map page in Chrome
+        if: always()
+        run: python3 .github/scripts/map_preview.py
       - name: Results
         if: always()
         run: |
