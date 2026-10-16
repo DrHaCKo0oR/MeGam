@@ -57,6 +57,8 @@ class GoogleRoutesClient(
                 headers = mapOf(
                     "X-Goog-Api-Key" to apiKey,
                     "X-Goog-FieldMask" to "originIndex,destinationIndex,duration,distanceMeters,status,condition",
+                    // Lets one key restricted to the in-app map's address serve these requests too.
+                    "Referer" to APP_REFERER,
                 ),
                 body = body.toString(),
                 contentType = "application/json",
@@ -110,6 +112,9 @@ class GoogleRoutesClient(
     }
 
     companion object {
+        /** Address of the in-app map page; a key restricted to this website works for both. */
+        const val APP_REFERER = "https://appassets.androidplatform.net/"
+
         /** Conservative element cap per request for traffic-aware matrices. */
         const val MAX_ELEMENTS = 25
     }

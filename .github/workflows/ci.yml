@@ -200,8 +200,12 @@ jobs:
           cp app/build/outputs/apk/release/app-release.apk "shaqati-${VERSION}.apk"
           sha256sum "shaqati-${VERSION}.apk" > "shaqati-${VERSION}.apk.sha256"
           FILES=("shaqati-${VERSION}.apk" "shaqati-${VERSION}.apk.sha256")
-          # Some repository settings only let workflow tokens publish pre-releases; fall back to one.
-          gh release create "shaqati-${VERSION}" "${FILES[@]}" --target "${GITHUB_SHA}" \
-            --title "Shaqati ${VERSION}" --notes-file .github/release-notes.md ||
-          gh release create "shaqati-${VERSION}" "${FILES[@]}" --target "${GITHUB_SHA}" --prerelease \
-            --title "Shaqati ${VERSION}" --notes-file .github/release-notes.md
+          # A full release from the workflow token was once refused (HTTP 403) while pre-releases
+          # are accepted, so try a full release first and fall back to a pre-release.
+          if ! gh release create "shaqati-${VERSION}" "${FILES[@]}" --target "${GITHUB_SHA}" \
+              --title "Shaqati ${VERSION}" --notes-file .github/release-notes.md; then
+            gh release delete "shaqati-${VERSION}" -y --cleanup-tag 2>/dev/null || true
+            gh release create "shaqati-${VERSION}" "${FILES[@]}" --target "${GITHUB_SHA}" --prerelease \
+              --title "Shaqati ${VERSION}" --notes-file .github/release-notes.md
+          fi
+          gh release view "shaqati-${VERSION}" --json url,isPrerelease,assets --jq '{url, isPrerelease, assets: [.assets[].name]}'

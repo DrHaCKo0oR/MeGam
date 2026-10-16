@@ -92,6 +92,9 @@ class CommuteTest {
         var calls = 0
         val http = Http { req ->
             calls++
+            assertEquals("key", req.headers["X-Goog-Api-Key"])
+            // A key restricted to the in-app map's website must also work for these requests.
+            assertEquals("https://appassets.androidplatform.net/", req.headers["Referer"])
             val body = req.body!!
             // Two homes → work in the morning; work → two homes in the evening.
             val resp = if (body.contains("\"destinations\":[{\"waypoint\":{\"location\":{\"latLng\":{\"latitude\":24.7655")) {
