@@ -1,8 +1,22 @@
 --------- beginning of main
-10-16 19:49:09.246 W/chromium( 1822): [1016/194909.246174:WARNING:dns_config_service_android.cc(81)] Failed to read DnsConfig.
-10-16 19:50:00.474 I/ShaqatiMap( 2767): ready {"provider":"leaflet"}
-10-16 19:50:00.484 I/ShaqatiMap( 2767): initMap -> "leaflet"
-10-16 19:50:00.488 I/ShaqatiMap( 2767): setData 1 pins
-10-16 19:50:00.501 I/ShaqatiMap( 2767): LOG map shows 1 pins on leaflet (map.html:149)
-10-16 19:50:00.746 I/ShaqatiMap( 2767): page loaded
-10-16 19:50:00.749 I/ShaqatiMap( 2767): initMap -> "started"
+10-16 20:05:38.146 W/chromium( 1804): [1016/200538.146041:WARNING:dns_config_service_android.cc(81)] Failed to read DnsConfig.
+10-16 20:06:48.021 I/ShaqatiMap( 2755): ready {"provider":"leaflet"}
+10-16 20:06:48.029 I/ShaqatiMap( 2755): initMap -> "leaflet"
+10-16 20:06:48.037 I/ShaqatiMap( 2755): setData 1 pins
+10-16 20:06:48.043 I/ShaqatiMap( 2755): LOG map shows 1 pins on leaflet (map.html:149)
+10-16 20:06:48.402 I/ShaqatiMap( 2755): page loaded
+10-16 20:06:48.410 I/ShaqatiMap( 2755): initMap -> "started"
+10-16 20:07:04.010 I/ShaqatiMap( 2755): ready {"provider":"leaflet"}
+10-16 20:07:04.024 I/ShaqatiMap( 2755): initMap -> "leaflet"
+10-16 20:07:04.084 I/ShaqatiMap( 2755): page loaded
+10-16 20:07:04.085 I/ShaqatiMap( 2755): initMap -> "started"
+10-16 20:07:44.836 I/ShaqatiMap( 2755): page loaded
+10-16 20:07:44.843 I/ShaqatiMap( 2755): ready {"provider":"leaflet"}
+10-16 20:07:44.847 I/ShaqatiMap( 2755): initMap -> "leaflet"
+10-16 20:07:44.848 I/ShaqatiMap( 2755): initMap -> "started"
+10-16 20:07:44.852 I/ShaqatiMap( 2755): setData 1 pins
+10-16 20:07:44.856 I/ShaqatiMap( 2755): LOG map shows 1 pins on leaflet (map.html:149)
+10-16 20:07:58.269 I/ShaqatiMap( 2755): page loaded
+10-16 20:07:58.292 I/ShaqatiMap( 2755): ready {"provider":"leaflet"}
+10-16 20:07:58.297 I/ShaqatiMap( 2755): initMap -> "leaflet"
+10-16 20:07:58.298 I/ShaqatiMap( 2755): initMap -> "started"
