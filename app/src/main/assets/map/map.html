@@ -126,6 +126,8 @@
     var el = document.getElementById('map');
     if (el.clientHeight === 0 && window.innerHeight > 0) {
       el.style.height = window.innerHeight + 'px';
+      // The picker's centre pin is placed against the page, which has no height either.
+      document.getElementById('cross').style.top = (window.innerHeight / 2) + 'px';
       console.log('map container had no height; sized to ' + window.innerHeight + 'px');
     }
     if (!S.map) return;
@@ -134,7 +136,10 @@
   }
   window.addEventListener('resize', function () {
     var el = document.getElementById('map');
-    if (el.style.height) el.style.height = window.innerHeight + 'px';
+    if (el.style.height) {
+      el.style.height = window.innerHeight + 'px';
+      document.getElementById('cross').style.top = (window.innerHeight / 2) + 'px';
+    }
     fitToWindow();
   });
 
