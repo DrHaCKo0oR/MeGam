@@ -1,0 +1,423 @@
+[
+ {
+  "name": "aq-intro-query",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "{ __schema { queryType { name } } __type(name:\"Web\"){ fields { name args { name type { name kind ofType { name kind } } } type { name kind ofType { name kind } } } } }",
+   "variables": {}
+  },
+  "keep": 6000,
+  "save": false
+ },
+ {
+  "name": "aq-intro-where",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "{ __type(name:\"WhereInput\"){ inputFields { name type { name kind ofType { name kind } } } } }",
+   "variables": {}
+  },
+  "keep": 12000,
+  "save": false
+ },
+ {
+  "name": "aq-intro-sort",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "{ __type(name:\"SortInput\"){ inputFields { name type { name kind ofType { name kind } } } enumValues { name } } }",
+   "variables": {}
+  },
+  "keep": 6000,
+  "save": false
+ },
+ {
+  "name": "aq-intro-location",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "{ __type(name:\"LocationInput\"){ inputFields { name type { name kind } } } }",
+   "variables": {}
+  },
+  "keep": 6000,
+  "save": false
+ },
+ {
+  "name": "aq-find-structure",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "{ Web { find(size: 2) { total listings { id price } } } }",
+   "variables": {}
+  },
+  "keep": 6000,
+  "save": false
+ },
+ {
+  "name": "aq-find-structure2",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "{ Web { find(size: 2) { listings { id price } } } }",
+   "variables": {}
+  },
+  "keep": 6000,
+  "save": false
+ },
+ {
+  "name": "aq-find-where",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "query q($where: WhereInput){ Web { find(size: 5, from: 0, where: $where) { total listings { id price rent_period beds livings wc area category title path location{lat lng} district create_time last_update } } } }",
+   "variables": {
+    "where": {
+     "category": {
+      "eq": 1
+     },
+     "city_id": {
+      "eq": 21
+     },
+     "price": {
+      "lte": 50000
+     },
+     "beds": {
+      "gte": 2
+     }
+    }
+   }
+  },
+  "keep": 8000,
+  "save": false
+ },
+ {
+  "name": "aq-find-polygon",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "query q($where: WhereInput, $polygon: [LocationInput!]){ Web { find(size: 100, from: 0, where: $where, polygon: $polygon) { total listings { id price rent_period beds livings wc area category title path location{lat lng} district create_time last_update } } } }",
+   "variables": {
+    "where": {
+     "category": {
+      "eq": 1
+     },
+     "price": {
+      "lte": 50000
+     },
+     "beds": {
+      "gte": 2
+     }
+    },
+    "polygon": [
+     {
+      "lat": 24.82,
+      "lng": 46.61
+     },
+     {
+      "lat": 24.82,
+      "lng": 46.75
+     },
+     {
+      "lat": 24.71,
+      "lng": 46.75
+     },
+     {
+      "lat": 24.71,
+      "lng": 46.61
+     },
+     {
+      "lat": 24.82,
+      "lng": 46.61
+     }
+    ]
+   }
+  },
+  "keep": 3000,
+  "save": true
+ },
+ {
+  "name": "aq-find-sort1",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "query q($where: WhereInput, $sort: SortInput){ Web { find(size: 5, where: $where, sort: $sort) { total listings { id create_time last_update } } } }",
+   "variables": {
+    "where": {
+     "category": {
+      "eq": 1
+     },
+     "city_id": {
+      "eq": 21
+     }
+    },
+    "sort": {
+     "create_time": "desc"
+    }
+   }
+  },
+  "keep": 6000,
+  "save": false
+ },
+ {
+  "name": "aq-find-sort2",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "query q($where: WhereInput, $sort: SortInput){ Web { find(size: 5, where: $where, sort: $sort) { total listings { id create_time last_update } } } }",
+   "variables": {
+    "where": {
+     "category": {
+      "eq": 1
+     },
+     "city_id": {
+      "eq": 21
+     }
+    },
+    "sort": {
+     "by": "last_update",
+     "order": "desc"
+    }
+   }
+  },
+  "keep": 6000,
+  "save": false
+ },
+ {
+  "name": "aq-intro-listing",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "{ __type(name:\"WebListing\"){ fields { name } } }",
+   "variables": {}
+  },
+  "keep": 8000,
+  "save": false
+ },
+ {
+  "name": "aq-intro-result",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "{ __type(name:\"WebResult\"){ fields { name type { name kind ofType { name kind } } } } }",
+   "variables": {}
+  },
+  "keep": 6000,
+  "save": false
+ },
+ {
+  "name": "aq-getlisting",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "query GetListing($id:Int!){ Web { getListing(id:$id) { id price furnished family age ketchen } } }",
+   "variables": {
+    "id": 6708521
+   }
+  },
+  "keep": 6000,
+  "save": false
+ },
+ {
+  "name": "deal-base",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-city",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&city=6009d941950ada00061eeeab",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-cityId",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&cityId=6009d941950ada00061eeeab",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-cities",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&cities=6009d941950ada00061eeeab",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-purpose",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&purpose=RENT",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-ptype",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&propertyType=63091bcd45e4ba93412d5d25",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-ptypes",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&propertyTypes=63091bcd45e4ba93412d5d25",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-price1",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&priceTo=50000",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-price2",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&maxPrice=50000",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-price3",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&price[lte]=50000",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-combo",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&city=6009d941950ada00061eeeab&purpose=RENT&propertyType=63091bcd45e4ba93412d5d25",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-ad-detail",
+  "url": "https://api.dealapp.sa/production/ad/6ad0bcf5a53db52f093f832a",
+  "deal_auth": true,
+  "keep": 6000
+ },
+ {
+  "name": "kite-doc-terms",
+  "url": "https://platform.kite.sa/docs/guides/terms",
+  "keep": 200,
+  "save": true
+ },
+ {
+  "name": "kite-doc-coverage",
+  "url": "https://platform.kite.sa/docs/guides/coverage",
+  "keep": 200,
+  "save": true
+ },
+ {
+  "name": "kite-doc-searching",
+  "url": "https://platform.kite.sa/docs/guides/searching",
+  "keep": 200,
+  "save": true
+ },
+ {
+  "name": "kite-doc-quickstart",
+  "url": "https://platform.kite.sa/docs/guides/quickstart",
+  "keep": 200,
+  "save": true
+ },
+ {
+  "name": "kite-doc-authentication",
+  "url": "https://platform.kite.sa/docs/guides/authentication",
+  "keep": 200,
+  "save": true
+ },
+ {
+  "name": "kite-doc-limits",
+  "url": "https://platform.kite.sa/docs/guides/limits",
+  "keep": 200,
+  "save": true
+ },
+ {
+  "name": "kite-doc-listings",
+  "url": "https://platform.kite.sa/docs/guides/listings",
+  "keep": 200,
+  "save": true
+ },
+ {
+  "name": "kite-doc-pagination",
+  "url": "https://platform.kite.sa/docs/guides/pagination",
+  "keep": 200,
+  "save": true
+ },
+ {
+  "name": "robots-kite.sa",
+  "url": "https://kite.sa/robots.txt",
+  "keep": 5000
+ },
+ {
+  "name": "robots-sa.aqar.fm",
+  "url": "https://sa.aqar.fm/robots.txt",
+  "keep": 5000
+ },
+ {
+  "name": "robots-haraj.com.sa",
+  "url": "https://haraj.com.sa/robots.txt",
+  "keep": 5000
+ },
+ {
+  "name": "robots-www.propertyfinder.sa",
+  "url": "https://www.propertyfinder.sa/robots.txt",
+  "keep": 5000
+ },
+ {
+  "name": "robots-kite.sa-terms",
+  "url": "https://kite.sa/ar/terms",
+  "keep": 5000
+ },
+ {
+  "name": "robots-platform.kite.sa-terms",
+  "url": "https://platform.kite.sa/terms",
+  "keep": 5000
+ }
+]

@@ -423,10 +423,70 @@ def jsgrep_step():
         print(item["name"], len(out_lines), flush=True)
 
 
+def experiments_step():
+    """Runs API experiments (GraphQL variants, query-parameter matrices) and records compact results."""
+    spec = json.loads((ROOT / "experiments.json").read_text(encoding="utf-8"))
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": MOBILE_UA, "Accept-Language": "ar-SA,ar;q=0.9"})
+    results = []
+    deal_token = None
+    for ex in spec:
+        name = ex["name"]
+        try:
+            headers = dict(ex.get("headers", {}))
+            if ex.get("deal_auth"):
+                if deal_token is None:
+                    r0 = sess.post("https://api.dealapp.sa/production/user/skip",
+                                   json={"os": MOBILE_UA, "name": "Linux x86_64", "devicePlatform": "web"},
+                                   headers={"Origin": "https://dealapp.sa"}, timeout=30)
+                    deal_token = r0.json().get("token") or r0.json().get("data", {}).get("token")
+                    if not deal_token:
+                        for hk, hv in r0.headers.items():
+                            if hk.lower() in ("authorization", "token", "x-auth-token", "access-token", "x-access-token") or hv.startswith("eyJ") or "Bearer" in hv:
+                                deal_token = hv
+                    if not deal_token:
+                        deal_token = r0.cookies.get("token") or ""
+                    results.append({"name": "deal-token", "status": r0.status_code,
+                                    "headers": {k: (v[:12] + "…") for k, v in r0.headers.items()},
+                                    "cookies": list(r0.cookies.keys()), "has_token": bool(deal_token)})
+                if deal_token:
+                    headers["Authorization"] = deal_token if deal_token.startswith("Bearer") else "Bearer " + deal_token
+                headers.setdefault("Origin", "https://dealapp.sa")
+            if "json" in ex:
+                r = sess.post(ex["url"], json=ex["json"], headers=headers, timeout=40)
+            else:
+                r = sess.get(ex["url"], headers=headers, timeout=40)
+            body = r.text
+            entry = {"name": name, "status": r.status_code, "len": len(body)}
+            try:
+                j = r.json()
+                if ex.get("summarize") == "deal":
+                    entry["total"] = j.get("total")
+                    entry["sample"] = [
+                        {k: (d.get(k) if not isinstance(d.get(k), dict) else {kk: d[k].get(kk) for kk in ("name_ar", "_id", "propertyType")})
+                         for k in ("price", "purpose", "rentType", "city", "district", "propertyType")}
+                        for d in (j.get("data") or [])[:3]
+                    ]
+                else:
+                    entry["body"] = body[: ex.get("keep", 4000)]
+            except Exception:  # noqa: BLE001
+                entry["body"] = body[: ex.get("keep", 2000)]
+            if ex.get("save"):
+                write(OUT / "exp" / f"{name}.json", body)
+            results.append(entry)
+        except Exception as e:  # noqa: BLE001
+            results.append({"name": name, "error": repr(e)})
+        print(json.dumps(results[-1], ensure_ascii=False)[:600], flush=True)
+        time.sleep(ex.get("sleep", 1.0))
+    write(OUT / "exp" / "_results.json", results)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     only = [x for x in os.environ.get("PROBE_ONLY", "").split(",") if x]
     steps = os.environ.get("PROBE_STEPS", "versions,geo,sites").split(",")
+    if "experiments" in steps:
+        experiments_step()
     if "versions" in steps:
         maven_versions()
     if "geo" in steps:

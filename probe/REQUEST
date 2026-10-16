@@ -1,4 +1,4 @@
 # Sourced by the probe workflow. Edit to request a new probe run.
-PROBE_STEPS=jsgrep,fetch
+PROBE_STEPS=experiments
 PROBE_ONLY=
-RUN=3
+RUN=4
