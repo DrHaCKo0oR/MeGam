@@ -32,14 +32,10 @@ jobs:
           java-version: "21"
       - uses: gradle/actions/setup-gradle@v4
       - name: Unit tests
-        run: ./gradlew :core:test --stacktrace
-      - name: Test report
+        run: ./gradlew :core:test --continue
+      - name: Test summary
         if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: core-test-report
-          path: core/build/reports/tests
-          if-no-files-found: ignore
+        run: python3 .github/scripts/junit_summary.py core/build/test-results
       - name: Publish dependency bundle for offline development
         if: contains(github.event.head_commit.message, '[deps]')
         env:

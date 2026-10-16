@@ -60,7 +60,7 @@ class CommuteService(
             val cached = cache[cacheKey(h, work)]
             val fresh = cached != null && now.toEpochMilli() - cached.computedAt < maxAgeDays * 86_400_000L &&
                 (google == null || cached.method == CommuteMethod.GOOGLE_TRAFFIC)
-            if (fresh) result[h] = cached!!.withCorrection() else todo += h
+            if (fresh && cached != null) result[h] = cached.withCorrection() else todo += h
         }
         if (todo.isEmpty()) return result
 

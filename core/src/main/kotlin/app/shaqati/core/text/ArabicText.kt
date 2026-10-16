@@ -49,6 +49,24 @@ object ArabicText {
         return spaces.replace(sb.toString(), " ").trim()
     }
 
+    /** Applies only the letter folding of [normalize]; safe on regex patterns. */
+    fun normalizeLetters(s: String): String {
+        val sb = StringBuilder(s.length)
+        for (c in s) {
+            sb.append(
+                when (c) {
+                    'أ', 'إ', 'آ', 'ٱ' -> 'ا'
+                    'ى' -> 'ي'
+                    'ة' -> 'ه'
+                    'ؤ' -> 'و'
+                    'ئ' -> 'ي'
+                    else -> c
+                }
+            )
+        }
+        return sb.toString()
+    }
+
     /** Words spelled out in Arabic ads, mapped to numbers. Keys are normalized. */
     private val numberWords = mapOf(
         "واحد" to 1, "واحده" to 1, "وحده" to 1,
