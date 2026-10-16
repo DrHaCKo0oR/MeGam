@@ -24,6 +24,8 @@
     <string name="sort_closest">الأقصر مشواراً</string>
     <string name="sort_modern">الأحدث تشطيباً</string>
     <string name="empty_matches_title">لا يوجد شيء هنا بعد</string>
+    <string name="empty_searching_title">جارٍ البحث في المواقع…</string>
+    <string name="empty_searching_body">يستغرق ذلك دقيقة أو دقيقتين، وتظهر الشقق هنا عند انتهائه.</string>
     <string name="empty_matches_body">اسحب للأسفل للبحث في كل المواقع. تظهر هنا الشقق التي تحقق كل متطلباتك.</string>
     <string name="empty_unconfirmed_body">تظهر هنا الإعلانات التي لا تذكر السعر أو عدد الغرف أو دورات المياه أو الموقع، لتتحقق منها بنفسك.</string>
     <string name="empty_near_body">تظهر هنا الشقق التي تخالف شرطاً واحداً بفارق بسيط.</string>

@@ -89,6 +89,7 @@ class QaTour {
             compose.onNodeWithTag("tab_map").performClick()
             Qa.log("map ready=" + waitForMap())
             shot("$lang-10-map", 5_000)
+            Qa.webShot(sc, "$lang-10c-map-content")
             // Tapping a pin goes through the page's bridge back to the app, which shows the card.
             Qa.js(sc, "var p = document.querySelector('.pin'); if (p) p.click(); 'pins=' + document.querySelectorAll('.pin').length")
             val card = runCatching { compose.waitUntilAtLeastOneExists(hasTestTag("card"), 8_000) }.isSuccess
@@ -103,6 +104,7 @@ class QaTour {
             compose.onNode(hasText(Qa.str(lang, R.string.set_work_change))).performClick()
             Qa.log("picker ready=" + waitForMap())
             shot("$lang-13-work-picker", 5_000)
+            Qa.webShot(sc, "$lang-13c-picker-content")
             compose.onAllNodesWithContentDescription(Qa.str(lang, R.string.action_back)).onFirst().performClick()
             compose.waitUntilAtLeastOneExists(hasTestTag("settings_list"), 5_000)
         }

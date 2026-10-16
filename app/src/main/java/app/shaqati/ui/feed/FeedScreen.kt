@@ -20,6 +20,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.outlined.Sort
 import androidx.compose.material.icons.outlined.Refresh
 import androidx.compose.material.icons.outlined.SearchOff
+import androidx.compose.material.icons.outlined.TravelExplore
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
@@ -237,19 +238,25 @@ private fun EmptyFeed(tab: FeedMode, onRefresh: () -> Unit, running: Boolean) {
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(32.dp)) {
         item {
             Column(Modifier.fillMaxWidth().padding(top = 48.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-                Icon(Icons.Outlined.SearchOff, null, Modifier.size(56.dp), tint = MaterialTheme.colorScheme.outline)
+                Icon(
+                    if (running) Icons.Outlined.TravelExplore else Icons.Outlined.SearchOff,
+                    null,
+                    Modifier.size(56.dp),
+                    tint = MaterialTheme.colorScheme.outline,
+                )
                 Spacer(Modifier.height(16.dp))
                 Text(
-                    stringResource(R.string.empty_matches_title),
+                    stringResource(if (running) R.string.empty_searching_title else R.string.empty_matches_title),
                     style = MaterialTheme.typography.titleMedium,
                     textAlign = TextAlign.Center,
                 )
                 Spacer(Modifier.height(8.dp))
                 Text(
                     stringResource(
-                        when (tab) {
-                            FeedMode.UNCONFIRMED -> R.string.empty_unconfirmed_body
-                            FeedMode.NEAR_MISSES -> R.string.empty_near_body
+                        when {
+                            running -> R.string.empty_searching_body
+                            tab == FeedMode.UNCONFIRMED -> R.string.empty_unconfirmed_body
+                            tab == FeedMode.NEAR_MISSES -> R.string.empty_near_body
                             else -> R.string.empty_matches_body
                         }
                     ),

@@ -24,6 +24,8 @@
     <string name="sort_closest">Shortest commute</string>
     <string name="sort_modern">Most modern</string>
     <string name="empty_matches_title">Nothing here yet</string>
+    <string name="empty_searching_title">Searching the sites…</string>
+    <string name="empty_searching_body">This takes a minute or two. Apartments appear here when it finishes.</string>
     <string name="empty_matches_body">Pull down to search every site. Apartments that meet all your requirements appear here.</string>
     <string name="empty_unconfirmed_body">Ads that leave out the rent, the rooms, the bathrooms or the location appear here, so you can check them yourself.</string>
     <string name="empty_near_body">Apartments that miss one requirement by a little appear here.</string>

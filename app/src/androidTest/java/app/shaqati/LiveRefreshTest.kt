@@ -80,6 +80,7 @@ class LiveRefreshTest {
             Qa.log("live map ready=$mapReady")
             settle(6_000)
             Qa.shot("live-03-map")
+            Qa.webShot(sc, "live-03c-map-content")
 
             assertTrue("only $bySource", bySource.size >= 3)
             assertTrue("no matches: $buckets", (buckets[FeedMode.MATCHES] ?: 0) > 0)

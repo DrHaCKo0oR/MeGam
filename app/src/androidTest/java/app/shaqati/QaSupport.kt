@@ -2,6 +2,7 @@ package app.shaqati
 
 import android.content.res.Configuration
 import android.graphics.Bitmap
+import android.graphics.Canvas
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
@@ -90,6 +91,25 @@ object Qa {
             if (web == null) log("js: no WebView") else web.evaluateJavascript(script) { log("js: $it") }
         }
         instr.waitForIdleSync()
+    }
+
+    /**
+     * Saves what the WebView on screen draws through its software path. The CI emulator's
+     * software GPU does not composite WebView content onto the screen, so the regular
+     * screenshot shows only the page background there.
+     */
+    fun webShot(scenario: androidx.test.core.app.ActivityScenario<*>, name: String) {
+        var bmp: Bitmap? = null
+        scenario.onActivity { a ->
+            val web = findWebView(a.window.decorView)
+            if (web != null && web.width > 0 && web.height > 0) {
+                bmp = Bitmap.createBitmap(web.width, web.height, Bitmap.Config.ARGB_8888).also { web.draw(Canvas(it)) }
+            }
+        }
+        val b = bmp ?: return log("webShot $name: no WebView")
+        val small = Bitmap.createScaledBitmap(b, b.width / 2, b.height / 2, true)
+        File(outDir, "$name.jpg").outputStream().use { small.compress(Bitmap.CompressFormat.JPEG, 85, it) }
+        log("webShot $name")
     }
 
     private fun findWebView(v: View): WebView? = when (v) {
