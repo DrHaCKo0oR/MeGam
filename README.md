@@ -89,6 +89,7 @@ apartments.
 
 - Everything runs on the phone; there is no server.
 - API keys are encrypted with the Android Keystore and only sent to Google or Anthropic.
+- Without a Google key, the map loads its tiles from OpenStreetMap.
 - Searches, saved apartments and notes stay in the app's private storage.
 
 ## For developers
@@ -101,10 +102,13 @@ apartments.
   map (WebView).
 - **CI** (`.github/workflows/ci.yml`):
   - Core tests, the Android build, unit tests and lint.
-  - On demand:
+  - On demand, with a tag in the commit message:
     - `[live]` runs the adapters against the real sites.
     - `[qa]` runs an emulator tour of every screen in both languages plus a live search,
       and commits the screenshots to `qa/`.
+    - `[release]` publishes the signed APK as a GitHub release.
+  - Running the workflow by hand from the Actions tab does the live checks and device QA, and
+    publishes a release when *release* is ticked.
 - **`probe/`**: the scripts used to learn how each site serves its listings.
 
 Build locally with `./gradlew :core:test :app:assembleDebug`. This needs JDK 17+, and the
