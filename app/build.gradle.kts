@@ -86,6 +86,9 @@ android {
         abortOnError = false
         checkReleaseBuilds = false
     }
+
+    // On-device tests reuse the recorded site responses from the core tests.
+    sourceSets["androidTest"].assets.srcDir("../core/src/test/resources")
 }
 
 kotlin {

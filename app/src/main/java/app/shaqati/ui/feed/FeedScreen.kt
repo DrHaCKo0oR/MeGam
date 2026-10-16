@@ -44,6 +44,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -79,6 +80,7 @@ fun FeedScreen(vm: AppViewModel, openDetail: (String) -> Unit) {
     val status by vm.status.collectAsStateWithLifecycle()
     val settings by vm.settings.collectAsStateWithLifecycle()
     val sort by vm.sort.collectAsStateWithLifecycle()
+    val catalog by vm.catalog.collectAsStateWithLifecycle()
     var tab by rememberSaveable { mutableStateOf(FeedMode.MATCHES) }
     val items = feed.list(tab)
     val listState = rememberLazyListState()
@@ -90,8 +92,8 @@ fun FeedScreen(vm: AppViewModel, openDetail: (String) -> Unit) {
                 Column {
                     Text(stringResource(R.string.app_name), style = MaterialTheme.typography.titleLarge)
                     Text(
-                        if (status.lastFinishedAt == null && vm.catalog.value.lastRefreshAt == null) stringResource(R.string.feed_never_updated)
-                        else stringResource(R.string.feed_updated, timeAgo(status.lastFinishedAt ?: vm.catalog.value.lastRefreshAt)) +
+                        if (status.lastFinishedAt == null && catalog.lastRefreshAt == null) stringResource(R.string.feed_never_updated)
+                        else stringResource(R.string.feed_updated, timeAgo(status.lastFinishedAt ?: catalog.lastRefreshAt)) +
                             " · " + stringResource(R.string.feed_count_ads, feed.tracked),
                         style = MaterialTheme.typography.labelMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -121,6 +123,7 @@ fun FeedScreen(vm: AppViewModel, openDetail: (String) -> Unit) {
                     selected = tab == m,
                     onClick = { tab = m },
                     label = { Text("${feedTabLabel(m)}  ${feed.count(m)}") },
+                    modifier = Modifier.testTag("chip_${m.name}"),
                 )
             }
         }

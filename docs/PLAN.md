@@ -35,7 +35,7 @@ renovated/modern finish, and measures the real rush-hour drive to work.
 ## Architecture
 
 ```
-app/   Android (Kotlin, Jetpack Compose, Room, WorkManager)
+app/   Android (Kotlin, Jetpack Compose, WorkManager, DataStore, Keystore-encrypted keys)
 core/  Pure Kotlin engine shared by the app and tests
        ├─ sources/   one adapter per site → common Listing model
        ├─ text/      Arabic normalization + renovation/furnishing/family signals
@@ -48,11 +48,21 @@ probe/ GitHub Actions probe of the live sites (the build sandbox cannot reach th
 ```
 
 ### Fetching
-Each site is read the way its own website reads it (embedded page data or its
-JSON/GraphQL API). Sites protected by bot checks are read through a hidden
-in-app browser (WebView), which behaves like the phone's Chrome. Results are
-merged into one model, duplicates across sites are linked, and ads that
-disappear are marked as gone.
+Each site is read the way its own website reads it:
+
+| Site | How | Notes |
+| --- | --- | --- |
+| Aqar | GraphQL `findListings` with a polygon around work | Every field (furnishing, families, age, licence) in one query |
+| Haraj | GraphQL posts by tag (Riyadh + nearby districts) | Price/rooms/map pin from the REGA licence block in the text |
+| Property Finder | Search-page data (`__NEXT_DATA__`), yearly and monthly prices | Ad pages add the full photo set; WebView fallback if refused |
+| Deal | Guest API, newest pages only, paced | Guests may read 4 pages per query; the app stops at the first refusal |
+| OpenSooq | Search-page data, ad pages for photos and pin | Small Riyadh inventory |
+| Bayut, Wasalt | Not supported | Bot checks block apps |
+
+Results are merged into one model, duplicates across sites are linked (REGA
+licence, or phone + size + location), and ads that disappear are marked as gone.
+Listings without a confirmed rent, room count or location are kept apart in a
+"To check" tab instead of being shown as matches.
 
 ### Modern / renovated detection
 1. Ad text: Arabic and English renovation signals (مجددة، ترميم، أول ساكن، تشطيب
@@ -61,7 +71,8 @@ disappear are marked as gone.
    lighting, walls/paint, doors/windows, bathroom, kitchen — and returns a 0–100
    score, a verdict (modern / renovated / dated / old / unclear) and evidence per
    photo. Shown in the app.
-3. Your 👍 / 👎 on listings adjusts the ranking.
+3. Hiding an apartment asks for a reason (too expensive, too far, old finish,
+   layout), so the feed only keeps what you would still consider.
 
 ### Keeping AI cost low
 - AI only runs on listings that already pass budget, layout, furnishing and

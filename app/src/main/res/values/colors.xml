@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="brand">#1F6F5C</color>
-    <color name="brand_dark">#0F3D33</color>
     <color name="sand">#F6F1E9</color>
     <color name="splash_bg">#1F6F5C</color>
     <color name="icon_bg">#1F6F5C</color>

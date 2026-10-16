@@ -33,7 +33,9 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.OpenInNew
 import androidx.compose.material.icons.automirrored.outlined.Chat
 import androidx.compose.material.icons.automirrored.outlined.HelpOutline
+import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.outlined.AutoAwesome
+import androidx.compose.material.icons.outlined.FavoriteBorder
 import androidx.compose.material.icons.outlined.Call
 import androidx.compose.material.icons.outlined.Cancel
 import androidx.compose.material.icons.outlined.CheckCircle
@@ -70,6 +72,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDirection
@@ -90,7 +93,6 @@ import app.shaqati.ui.AssessState
 import app.shaqati.ui.components.FinishBadge
 import app.shaqati.ui.components.Pill
 import app.shaqati.ui.components.PriceLine
-import app.shaqati.ui.components.SaveIconButton
 import app.shaqati.ui.components.ScoreRing
 import app.shaqati.ui.components.audienceLabel
 import app.shaqati.ui.components.checkLabel
@@ -123,7 +125,7 @@ fun DetailScreen(vm: AppViewModel, id: String, onBack: () -> Unit, openPhotos: (
     }
     var hideDialog by remember { mutableStateOf(false) }
     Box(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)) {
-        LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(bottom = 32.dp)) {
+        LazyColumn(Modifier.fillMaxSize().testTag("detail_list"), contentPadding = PaddingValues(bottom = 32.dp)) {
             item { PhotoHeader(v, onBack, openPhotos, onSave = { vm.setSaved(v.id, !v.saved) }) }
             item { Header(v) }
             item { Actions(v, s) }
@@ -204,10 +206,12 @@ private fun PhotoHeader(v: ListingView, onBack: () -> Unit, openPhotos: (Int) ->
 
 @Composable
 private fun SaveIconButtonLight(saved: Boolean, onClick: () -> Unit) {
-    Box(contentAlignment = Alignment.Center) {
-        androidx.compose.runtime.CompositionLocalProvider(androidx.compose.material3.LocalContentColor provides Color.White) {
-            SaveIconButton(saved, onClick)
-        }
+    IconButton(onClick = onClick) {
+        Icon(
+            if (saved) Icons.Filled.Favorite else Icons.Outlined.FavoriteBorder,
+            contentDescription = stringResource(if (saved) R.string.action_saved else R.string.action_save),
+            tint = if (saved) Color(0xFFFF6B6B) else Color.White,
+        )
     }
 }
 

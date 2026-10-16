@@ -501,6 +501,13 @@ class Repository(
 
     suspend fun updateSettings(change: (Settings) -> Settings): Settings = settingsStore.update(change)
 
+    /** Replaces the catalog (restores and on-device tests). */
+    suspend fun importSnapshot(snapshot: CatalogSnapshot) = jobLock.withLock {
+        engine.replace(snapshot)
+        publish()
+        saveNow()
+    }
+
     suspend fun clearCatalog() = jobLock.withLock {
         engine.replace(CatalogSnapshot(user = engine.snapshot.user.copy(seen = emptySet())))
         publish()
