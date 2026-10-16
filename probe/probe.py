@@ -533,6 +533,55 @@ def deal_districts_step():
     print("deal districts", len(districts), flush=True)
 
 
+def deal_ids_step():
+    """Finds Deal's Riyadh district ids by trying the ObjectId counter range around known ones.
+
+    Deal district ids were created in one batch (…42e490 is Okaz, …42e505 Al Bayan), so each id in the
+    range is asked for one ad; districts that have ads report their name. Also checks how deep a guest
+    can page within one district.
+    """
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": MOBILE_UA, "Accept-Language": "ar"})
+    r0 = sess.post("https://api.dealapp.sa/production/user/skip",
+                   json={"os": "Android", "name": "Android", "devicePlatform": "web"},
+                   headers={"Origin": "https://dealapp.sa"}, timeout=30)
+    token = next((v for k, v in r0.headers.items() if k.lower() == "authorization"), "")
+    headers = {"Authorization": token if token.startswith("Bearer") else "Bearer " + token, "Origin": "https://dealapp.sa"}
+    found, log = {}, []
+    base = "https://api.dealapp.sa/production/ad?page=1&limit=1&district=%s"
+    for ts in ["5dd490ae"]:
+        for counter in range(0x42E400, 0x42E600):
+            did = "%sbc2e910042%06x" % (ts, counter)
+            try:
+                r = sess.get(base % did, headers=headers, timeout=30)
+            except Exception as e:  # noqa: BLE001
+                log.append({"id": did, "error": repr(e)})
+                continue
+            if r.status_code != 200:
+                log.append({"id": did, "status": r.status_code, "body": r.text[:200]})
+                if r.status_code == 429:
+                    time.sleep(15)
+                continue
+            j = r.json()
+            data = j.get("data") or []
+            if data:
+                d = data[0].get("district") or {}
+                c = data[0].get("city") or {}
+                loc = ((data[0].get("location") or {}).get("value") or {}).get("coordinates")
+                found[did] = {"ar": d.get("name_ar"), "en": d.get("name_en"), "city": c.get("name_ar"),
+                              "total": j.get("total"), "pt": [round(loc[1], 4), round(loc[0], 4)] if loc else None}
+            time.sleep(0.2)
+    # Guest paging depth inside one district (Hittin).
+    depth = []
+    for page in range(1, 8):
+        r = sess.get("https://api.dealapp.sa/production/ad?page=%d&limit=10&district=5dd490aebc2e91004242e4de" % page,
+                     headers=headers, timeout=30)
+        depth.append({"page": page, "status": r.status_code, "n": len((r.json() or {}).get("data") or []) if r.ok else 0})
+        time.sleep(0.5)
+    write(OUT / "exp" / "deal-district-ids.json", {"found": found, "depth": depth, "log": log[:50]})
+    print("deal ids", len(found), depth, flush=True)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     only = [x for x in os.environ.get("PROBE_ONLY", "").split(",") if x]
@@ -541,6 +590,8 @@ def main():
         experiments_step()
     if "deal_districts" in steps:
         deal_districts_step()
+    if "deal_ids" in steps:
+        deal_ids_step()
     if "versions" in steps:
         maven_versions()
     if "geo" in steps:
