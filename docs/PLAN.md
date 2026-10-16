@@ -55,7 +55,7 @@ Each site is read the way its own website reads it:
 | Aqar | GraphQL `findListings` with a polygon around work | Every field (furnishing, families, age, licence) in one query |
 | Haraj | GraphQL posts by tag (Riyadh + nearby districts) | Price/rooms/map pin from the REGA licence block in the text |
 | Property Finder | Search-page data (`__NEXT_DATA__`), yearly and monthly prices | Ad pages add the full photo set; WebView fallback if refused |
-| Deal | Guest API, newest pages only, paced | Guests may read 4 pages per query; the app stops at the first refusal |
+| Deal | Guest API: newest pages, then the first page of each nearby district, paced | Guests may read 4 pages per query; the app stops at the first refusal |
 | OpenSooq | Search-page data, ad pages for photos and pin | Small Riyadh inventory |
 | Bayut, Wasalt | Not supported | Bot checks block apps |
 
