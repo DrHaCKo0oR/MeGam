@@ -1,0 +1,2164 @@
+{
+ "حي المصيف، الرياض": [
+  {
+   "place_id": 47158745,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 332584540,
+   "lat": "25.2197071",
+   "lon": "45.2960155",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.080045889219501,
+   "addresstype": "neighbourhood",
+   "name": "حي المصيف",
+   "display_name": "حي المصيف, غسلة, محافظة شقراء, منطقة الرياض, السعودية",
+   "address": {
+    "neighbourhood": "حي المصيف",
+    "village": "غسلة",
+    "city": "محافظة شقراء",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "25.2146376",
+    "25.2232567",
+    "45.2929867",
+    "45.2990924"
+   ]
+  }
+ ],
+ "Al Masif, Riyadh": [
+  {
+   "place_id": 47330305,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 13254392,
+   "lat": "24.7655143",
+   "lon": "46.6801977",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 20,
+   "importance": 0.14673728160524907,
+   "addresstype": "neighbourhood",
+   "name": "المصيف",
+   "display_name": "المصيف, محافظة الرياض, منطقة الرياض, السعودية",
+   "address": {
+    "neighbourhood": "المصيف",
+    "county": "محافظة الرياض",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "24.7534693",
+    "24.7775103",
+    "46.6683763",
+    "46.6946957"
+   ]
+  },
+  {
+   "place_id": 45095878,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 19551883,
+   "lat": "23.7567561",
+   "lon": "44.7618172",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 20,
+   "importance": 0.133380072480354,
+   "addresstype": "neighbourhood",
+   "name": "المصيف",
+   "display_name": "المصيف, الرويضة, محافظة القويعيه, منطقة الرياض, السعودية",
+   "address": {
+    "neighbourhood": "المصيف",
+    "town": "الرويضة",
+    "city": "محافظة القويعيه",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "23.7512213",
+    "23.7617150",
+    "44.7531337",
+    "44.7721630"
+   ]
+  },
+  {
+   "place_id": 47323618,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 19465334,
+   "lat": "25.5731310",
+   "lon": "45.6601252",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 20,
+   "importance": 0.1333733340962844,
+   "addresstype": "neighbourhood",
+   "name": "المصيف",
+   "display_name": "المصيف, محافظة المجمعة, منطقة الرياض, السعودية",
+   "address": {
+    "neighbourhood": "المصيف",
+    "province": "محافظة المجمعة",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "25.5690390",
+    "25.5772270",
+    "45.6573980",
+    "45.6628300"
+   ]
+  },
+  {
+   "place_id": 47437787,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 13076049408,
+   "lat": "25.6672907",
+   "lon": "45.9239782",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08004000076295106,
+   "addresstype": "neighbourhood",
+   "name": "المصيف",
+   "display_name": "المصيف, محافظة المجمعة, منطقة الرياض, السعودية",
+   "address": {
+    "neighbourhood": "المصيف",
+    "province": "محافظة المجمعة",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "25.6572907",
+    "25.6772907",
+    "45.9139782",
+    "45.9339782"
+   ]
+  }
+ ],
+ "Al Masif District, Riyadh, Saudi Arabia": [
+  {
+   "place_id": 47330305,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 13254392,
+   "lat": "24.7655143",
+   "lon": "46.6801977",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 20,
+   "importance": 0.14673728160524907,
+   "addresstype": "neighbourhood",
+   "name": "المصيف",
+   "display_name": "المصيف, محافظة الرياض, منطقة الرياض, السعودية",
+   "address": {
+    "neighbourhood": "المصيف",
+    "county": "محافظة الرياض",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "24.7534693",
+    "24.7775103",
+    "46.6683763",
+    "46.6946957"
+   ]
+  }
+ ],
+ "سلام، المصيف، الرياض": [],
+ "Salam, Riyadh": [
+  {
+   "place_id": 47109690,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 322570511,
+   "lat": "24.6219758",
+   "lon": "46.5725401",
+   "category": "highway",
+   "type": "tertiary",
+   "place_rank": 26,
+   "importance": 0.05340394827191573,
+   "addresstype": "road",
+   "name": "Salam",
+   "display_name": "Salam, ظهرة لبن, بلدية عرقة, الرياض, محافظة الرياض, منطقة الرياض, 13782, السعودية",
+   "address": {
+    "road": "Salam",
+    "suburb": "ظهرة لبن",
+    "municipality": "بلدية عرقة",
+    "city": "الرياض",
+    "county": "محافظة الرياض",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "postcode": "13782",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "24.6199821",
+    "24.6240787",
+    "46.5693474",
+    "46.5756377"
+   ]
+  },
+  {
+   "place_id": 47172926,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 227819622,
+   "lat": "24.7804485",
+   "lon": "46.6872499",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340394827191573,
+   "addresstype": "road",
+   "name": "سلام",
+   "display_name": "سلام, الوادي, بلدية الشمال, محافظة الرياض, منطقة الرياض, 12477, السعودية",
+   "address": {
+    "road": "سلام",
+    "suburb": "الوادي",
+    "municipality": "بلدية الشمال",
+    "county": "محافظة الرياض",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "postcode": "12477",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "24.7794812",
+    "24.7814173",
+    "46.6867426",
+    "46.6877601"
+   ]
+  },
+  {
+   "place_id": 47144258,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 227664830,
+   "lat": "24.6788774",
+   "lon": "46.8089814",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340394827191573,
+   "addresstype": "road",
+   "name": "سلام",
+   "display_name": "سلام, حي الفيحاء, الفيحاء, بلدية السلي, الرياض, محافظة الرياض, منطقة الرياض, 11211, السعودية",
+   "address": {
+    "road": "سلام",
+    "neighbourhood": "حي الفيحاء",
+    "suburb": "الفيحاء",
+    "municipality": "بلدية السلي",
+    "city": "الرياض",
+    "county": "محافظة الرياض",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "postcode": "11211",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "24.6781957",
+    "24.6795591",
+    "46.8085958",
+    "46.8093670"
+   ]
+  },
+  {
+   "place_id": 47188894,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 227827372,
+   "lat": "24.7597753",
+   "lon": "46.7343951",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340394827191573,
+   "addresstype": "road",
+   "name": "سلام",
+   "display_name": "سلام, المغرزات, مغرزات, الرياض, محافظة الرياض, منطقة الرياض, 13214, السعودية",
+   "address": {
+    "road": "سلام",
+    "neighbourhood": "المغرزات",
+    "suburb": "مغرزات",
+    "city": "الرياض",
+    "county": "محافظة الرياض",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "postcode": "13214",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "24.7590947",
+    "24.7604559",
+    "46.7340506",
+    "46.7347396"
+   ]
+  },
+  {
+   "place_id": 47167573,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 327534297,
+   "lat": "24.8020836",
+   "lon": "46.7425536",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053383334859235486,
+   "addresstype": "road",
+   "name": "سلام",
+   "display_name": "سلام, قرطبة, محافظة الرياض, منطقة الرياض, 13245, السعودية",
+   "address": {
+    "road": "سلام",
+    "suburb": "قرطبة",
+    "county": "محافظة الرياض",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "postcode": "13245",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "24.8016119",
+    "24.8025525",
+    "46.7423288",
+    "46.7427723"
+   ]
+  }
+ ],
+ "كمبوند المربع، الرياض": [],
+ "حي المربع، الرياض": [
+  {
+   "place_id": 47155821,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 6484628686,
+   "lat": "24.6677267",
+   "lon": "46.7038897",
+   "category": "amenity",
+   "type": "place_of_worship",
+   "place_rank": 30,
+   "importance": 7.061493858239136e-05,
+   "addresstype": "amenity",
+   "name": "مسجد حي المربع",
+   "display_name": "مسجد حي المربع, الحسناء, السلامة, المربع, الرياض, محافظة الرياض, منطقة الرياض, 12612, السعودية",
+   "address": {
+    "amenity": "مسجد حي المربع",
+    "road": "الحسناء",
+    "suburb": "السلامة",
+    "city": "الرياض",
+    "county": "محافظة الرياض",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "postcode": "12612",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "24.6676767",
+    "24.6677767",
+    "46.7038397",
+    "46.7039397"
+   ]
+  }
+ ],
+ "Al Murabba, Riyadh": [
+  {
+   "place_id": 47412377,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 1236703800,
+   "lat": "24.6599140",
+   "lon": "46.7097712",
+   "category": "place",
+   "type": "suburb",
+   "place_rank": 19,
+   "importance": 0.14673728160524907,
+   "addresstype": "suburb",
+   "name": "المربع",
+   "display_name": "المربع, الرياض, محافظة الرياض, منطقة الرياض, 12613, السعودية",
+   "address": {
+    "suburb": "المربع",
+    "city": "الرياض",
+    "county": "محافظة الرياض",
+    "state": "منطقة الرياض",
+    "ISO3166-2-lvl4": "SA-01",
+    "postcode": "12613",
+    "country": "السعودية",
+    "country_code": "sa"
+   },
+   "boundingbox": [
+    "24.6399140",
+    "24.6799140",
+    "46.6897712",
+    "46.7297712"
+   ]
+  }
+ ],
+ "photon:Salam R&D Riyadh": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 159115385,
+     "osm_key": "water",
+     "osm_value": "lake",
+     "type": "other",
+     "name": "Salam Park Lake",
+     "district": "الدحو",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "countrycode": "SA",
+     "extent": [
+      46.7071776,
+      24.6207986,
+      46.7098416,
+      24.6183073
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7086899,
+      24.619551
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 227827372,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "سلام",
+     "locality": "المغرزات",
+     "district": "مغرزات",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "13214",
+     "countrycode": "SA",
+     "extent": [
+      46.7340506,
+      24.7604559,
+      46.7347396,
+      24.7590947
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7343951,
+      24.7597753
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 53158347,
+     "osm_key": "leisure",
+     "osm_value": "park",
+     "type": "other",
+     "name": "حديقة السلام",
+     "district": "الدحو",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "countrycode": "SA",
+     "extent": [
+      46.7062739,
+      24.624644,
+      46.7107762,
+      24.6173159
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7083465,
+      24.6200169
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 52572039,
+     "osm_key": "highway",
+     "osm_value": "tertiary",
+     "type": "street",
+     "name": "آل سالم",
+     "locality": "حي المنار",
+     "district": "بلدية النسيم",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "14231",
+     "countrycode": "SA",
+     "extent": [
+      46.7935092,
+      24.7339677,
+      46.7966548,
+      24.729793
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7950597,
+      24.7318502
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 227658203,
+     "osm_key": "highway",
+     "osm_value": "tertiary",
+     "type": "street",
+     "name": "عبدالله بن سالم الصباح",
+     "locality": "حي الروابي",
+     "district": "الروابي",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "14215",
+     "countrycode": "SA",
+     "extent": [
+      46.7889899,
+      24.6933326,
+      46.7911807,
+      24.6903977
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.790083,
+      24.6918634
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 227664830,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "سلام",
+     "locality": "حي الفيحاء",
+     "district": "الفيحاء",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "11211",
+     "countrycode": "SA",
+     "extent": [
+      46.8085958,
+      24.6795591,
+      46.809367,
+      24.6781957
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.8089814,
+      24.6788774
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 334131314,
+     "osm_key": "highway",
+     "osm_value": "service",
+     "type": "street",
+     "name": "سلام",
+     "locality": "حي الفيحاء",
+     "district": "الفيحاء",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "11211",
+     "countrycode": "SA",
+     "extent": [
+      46.809367,
+      24.6781957,
+      46.8096746,
+      24.6776871
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.8095471,
+      24.6779586
+     ]
+    }
+   }
+  ]
+ },
+ "photon:Salam Riyadh": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 159115385,
+     "osm_key": "water",
+     "osm_value": "lake",
+     "type": "other",
+     "name": "Salam Park Lake",
+     "district": "الدحو",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "countrycode": "SA",
+     "extent": [
+      46.7071776,
+      24.6207986,
+      46.7098416,
+      24.6183073
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7086899,
+      24.619551
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 38886081,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "أم سلم",
+     "district": "الملك فهد",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "12272",
+     "countrycode": "SA",
+     "extent": [
+      46.6716692,
+      24.7511434,
+      46.6732284,
+      24.7480639
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.6724551,
+      24.749607
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 227827372,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "سلام",
+     "locality": "المغرزات",
+     "district": "مغرزات",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "13214",
+     "countrycode": "SA",
+     "extent": [
+      46.7340506,
+      24.7604559,
+      46.7347396,
+      24.7590947
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7343951,
+      24.7597753
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 227679746,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "عبدالغني بن سلام",
+     "district": "الملك فيصل",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "13215",
+     "countrycode": "SA",
+     "extent": [
+      46.7687222,
+      24.7651276,
+      46.7707501,
+      24.7623425
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7697448,
+      24.7637412
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 40603743,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "أبي طاهر بن السلام",
+     "district": "الوزارات",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "12612",
+     "countrycode": "SA",
+     "extent": [
+      46.7109875,
+      24.6714029,
+      46.7118381,
+      24.6713524
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7114125,
+      24.671382
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 23596328,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "ابن سلام الجمحي",
+     "district": "الربوة",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "12821",
+     "countrycode": "SA",
+     "extent": [
+      46.751371,
+      24.6906257,
+      46.7521041,
+      24.6887045
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.751751,
+      24.6896706
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 41081739,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "أبي الكرم عبدالسلام",
+     "district": "جرير",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "12836",
+     "countrycode": "SA",
+     "extent": [
+      46.7473709,
+      24.6847496,
+      46.7478394,
+      24.6835765
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7476052,
+      24.6841631
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 53086683,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "أم السلم",
+     "district": "الأندلس",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "13211",
+     "countrycode": "SA",
+     "extent": [
+      46.7868067,
+      24.7347419,
+      46.788817,
+      24.7335311
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7878118,
+      24.7341365
+     ]
+    }
+   }
+  ]
+ },
+ "photon:سلام": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "R",
+     "osm_id": 13254439,
+     "osm_key": "place",
+     "osm_value": "neighbourhood",
+     "type": "locality",
+     "name": "سلام",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "countrycode": "SA",
+     "extra": {
+      "admin_level": "10"
+     },
+     "extent": [
+      46.7058312,
+      24.6264164,
+      46.7111607,
+      24.6169521
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7082514,
+      24.6212793
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 227819622,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "سلام",
+     "district": "الوادي",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "12477",
+     "countrycode": "SA",
+     "extent": [
+      46.6867426,
+      24.7814173,
+      46.6877601,
+      24.7794812
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.6872499,
+      24.7804485
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 227827372,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "سلام",
+     "locality": "المغرزات",
+     "district": "مغرزات",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "13214",
+     "countrycode": "SA",
+     "extent": [
+      46.7340506,
+      24.7604559,
+      46.7347396,
+      24.7590947
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7343951,
+      24.7597753
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 327534297,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "سلام",
+     "district": "قرطبة",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "13245",
+     "countrycode": "SA",
+     "extent": [
+      46.7423288,
+      24.8025525,
+      46.7427723,
+      24.8016119
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7425536,
+      24.8020836
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 328337485,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "سلام",
+     "district": "طريفة",
+     "city": "الدرعية",
+     "county": "محافظة الدرعية",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "12572",
+     "countrycode": "SA",
+     "extent": [
+      46.5705458,
+      24.751804,
+      46.5724831,
+      24.7496233
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.5715166,
+      24.7507156
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 334131315,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "سلام",
+     "locality": "حي الفيحاء",
+     "district": "الفيحاء",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "11211",
+     "countrycode": "SA",
+     "extent": [
+      46.8096746,
+      24.6776871,
+      46.8104222,
+      24.6763223
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.8100484,
+      24.6770047
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 334131314,
+     "osm_key": "highway",
+     "osm_value": "service",
+     "type": "street",
+     "name": "سلام",
+     "locality": "حي الفيحاء",
+     "district": "الفيحاء",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "11211",
+     "countrycode": "SA",
+     "extent": [
+      46.809367,
+      24.6781957,
+      46.8096746,
+      24.6776871
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.8095471,
+      24.6779586
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 3431546360,
+     "osm_key": "amenity",
+     "osm_value": "restaurant",
+     "type": "house",
+     "name": "سلامة",
+     "street": "طريق المدينة المنورة",
+     "district": "جبرة",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "11131",
+     "countrycode": "SA"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7180707,
+      24.6299338
+     ]
+    }
+   }
+  ]
+ },
+ "photon:Murabba compound Riyadh": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 1540246528,
+     "osm_key": "landuse",
+     "osm_value": "construction",
+     "type": "other",
+     "name": "مشروع المربع الجديد الرياض",
+     "county": "محافظة الدرعية",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "countrycode": "SA",
+     "extent": [
+      46.5592458,
+      24.8222982,
+      46.5784739,
+      24.7986079
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.5701815,
+      24.8106152
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 1236703800,
+     "osm_key": "place",
+     "osm_value": "suburb",
+     "type": "district",
+     "name": "المربع",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "12613",
+     "countrycode": "SA"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7097712,
+      24.659914
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 1304619604,
+     "osm_key": "landuse",
+     "osm_value": "residential",
+     "type": "locality",
+     "name": "compound3 nmeis",
+     "street": "ياسمين البيطار",
+     "district": "السليمانية",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "countrycode": "SA",
+     "extent": [
+      46.6956526,
+      24.708268,
+      46.6964199,
+      24.7074847
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.6960544,
+      24.70797
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 1255300995,
+     "osm_key": "landuse",
+     "osm_value": "residential",
+     "type": "locality",
+     "name": "compound4 nmeis",
+     "street": "Abdulrahman Bin Ali Al Sheh St.",
+     "district": "السليمانية",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "countrycode": "SA",
+     "extent": [
+      46.6955171,
+      24.7076847,
+      46.6966272,
+      24.7069097
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.6958325,
+      24.7071325
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 336216070,
+     "osm_key": "tourism",
+     "osm_value": "hotel",
+     "type": "house",
+     "name": "Crowne Plaza Riyadh Palace",
+     "street": "Prince Abdul Rahman Bin Abdul Aziz St.",
+     "district": "المربع",
+     "city": "Riyadh",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "11461",
+     "countrycode": "SA"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7117319,
+      24.6646109
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 4786164036,
+     "osm_key": "shop",
+     "osm_value": "clothes",
+     "type": "house",
+     "name": "Bossini Riyadh Avenue",
+     "street": "الملك فيصل بن عبدالعزيز",
+     "district": "المربع",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "12612",
+     "countrycode": "SA"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7035965,
+      24.663824
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 6018879099,
+     "osm_key": "railway",
+     "osm_value": "stop",
+     "type": "house",
+     "name": "المربع",
+     "street": "الملك فيصل بن عبدالعزيز",
+     "district": "المربع",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "12612",
+     "countrycode": "SA"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7023599,
+      24.6647328
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 5426188621,
+     "osm_key": "office",
+     "osm_value": "government",
+     "type": "house",
+     "name": "الغرفه التجاريه الصناعيه الرياض",
+     "street": "الازاهرة",
+     "district": "المربع",
+     "city": "الرياض",
+     "county": "محافظة الرياض",
+     "state": "منطقة الرياض",
+     "country": "السعودية",
+     "postcode": "12612",
+     "countrycode": "SA"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      46.7079039,
+      24.666699
+     ]
+    }
+   }
+  ]
+ },
+ "photon:كمبوند المربع": {
+  "type": "FeatureCollection",
+  "features": []
+ },
+ "overpass:salam_near_masif": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-16T16:36:31Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 7801373107,
+    "lat": 24.7994892,
+    "lon": 46.6431682,
+    "tags": {
+     "name": "تقنيات الدهان لأدوات ومعدات السلامة",
+     "shop": "tool_hire"
+    }
+   },
+   {
+    "type": "way",
+    "id": 38876098,
+    "center": {
+     "lat": 24.7473634,
+     "lon": 46.6758035
+    },
+    "nodes": [
+     461812908,
+     461812910
+    ],
+    "tags": {
+     "highway": "residential",
+     "name": "ممر شيخ الإسلام النووي"
+    }
+   },
+   {
+    "type": "way",
+    "id": 38886081,
+    "center": {
+     "lat": 24.7496037,
+     "lon": 46.6724488
+    },
+    "nodes": [
+     461948245,
+     12086828663,
+     461948249,
+     461947884,
+     461948223,
+     12091675189
+    ],
+    "tags": {
+     "highway": "residential",
+     "name": "أم سلم",
+     "name:en": "Om Salam"
+    }
+   },
+   {
+    "type": "way",
+    "id": 39237000,
+    "center": {
+     "lat": 24.7217355,
+     "lon": 46.6727875
+    },
+    "nodes": [
+     470048189,
+     12078326401,
+     470048163,
+     12369254071,
+     470048191
+    ],
+    "tags": {
+     "highway": "living_street",
+     "name": "عبدالسلام التنوخي",
+     "name:en": "Abdulsalam Al Tanoukhi"
+    }
+   },
+   {
+    "type": "way",
+    "id": 111246328,
+    "center": {
+     "lat": 24.7531755,
+     "lon": 46.6439875
+    },
+    "nodes": [
+     1267900273,
+     11557657817,
+     12095045853,
+     12095045852,
+     1267900251,
+     1267900169,
+     1267900118,
+     11557657819,
+     11557657820
+    ],
+    "tags": {
+     "highway": "tertiary_link",
+     "maxspeed": "30",
+     "name": "شارع السلامة",
+     "name:ar": "شارع السلامة",
+     "name:en": "Al Salama Street",
+     "oneway": "yes",
+     "surface": "asphalt"
+    }
+   },
+   {
+    "type": "way",
+    "id": 111246332,
+    "center": {
+     "lat": 24.7532356,
+     "lon": 46.6441045
+    },
+    "nodes": [
+     11557657821,
+     1267900270,
+     1267900173,
+     1267900120,
+     1267900252,
+     1267900203,
+     12095045855,
+     11557657818,
+     12095045851
+    ],
+    "tags": {
+     "highway": "tertiary",
+     "maxspeed": "50",
+     "name": "شارع السلامة",
+     "name:ar": "شارع السلامة",
+     "name:en": "Al Salama Street",
+     "oneway": "yes",
+     "surface": "asphalt"
+    }
+   },
+   {
+    "type": "way",
+    "id": 210002660,
+    "center": {
+     "lat": 24.7482239,
+     "lon": 46.7019644
+    },
+    "nodes": [
+     2201530943,
+     2201530952,
+     2201530946
+    ],
+    "tags": {
+     "highway": "residential",
+     "name": "إبراهيم أبي سلمة",
+     "name:en": "Ibrahim Abi Salama"
+    }
+   },
+   {
+    "type": "way",
+    "id": 227806718,
+    "center": {
+     "lat": 24.7540579,
+     "lon": 46.722516
+    },
+    "nodes": [
+     2364530410,
+     2364530399,
+     2364530396
+    ],
+    "tags": {
+     "highway": "residential",
+     "name": "محمد بن عبدالسلام",
+     "name:en": "Mohammed Bin Abdulsalam"
+    }
+   },
+   {
+    "type": "way",
+    "id": 227819622,
+    "center": {
+     "lat": 24.7804493,
+     "lon": 46.6872513
+    },
+    "nodes": [
+     2364617448,
+     3413261548,
+     2364617427,
+     2364617419
+    ],
+    "tags": {
+     "highway": "residential",
+     "name": "سلام",
+     "name:en": "Salam"
+    }
+   },
+   {
+    "type": "way",
+    "id": 327938120,
+    "center": {
+     "lat": 24.8063122,
+     "lon": 46.7035005
+    },
+    "nodes": [
+     3347581766,
+     3347581776,
+     6230644927,
+     6230644917,
+     3347581773,
+     6230644918,
+     6230644919,
+     3347581777,
+     3347581767,
+     6230644920,
+     3347581778,
+     6230644921,
+     3347581772,
+     6230644922,
+     3347581779,
+     6230644926,
+     6230644923,
+     3347581768,
+     6230644924,
+     3347581780,
+     6230644939,
+     3347581771,
+     3347581781,
+     6230644940,
+     3347581769,
+     6230644941,
+     6230644942,
+     3347581782,
+     6230644943,
+     6230644914,
+     3347581774,
+     6230644915,
+     3347581775,
+     6230644916,
+     3347581766
+    ],
+    "tags": {
+     "description": "أحد الملاعب الرسمية المستضيفة لبطولة كأس آسيا 2027",
+     "leisure": "stadium",
+     "name": "ملعب جامعة الإمام محمد بن سعود الإسلامية",
+     "name:en": "Imam Mohammad Ibn Saud Islamic University Stadium",
+     "operator": "وزارة الرياضة"
+    }
+   },
+   {
+    "type": "way",
+    "id": 329397870,
+    "center": {
+     "lat": 24.7885316,
+     "lon": 46.6322957
+    },
+    "nodes": [
+     3362748888,
+     3362748890,
+     3362748889
+    ],
+    "tags": {
+     "highway": "living_street",
+     "lit": "yes",
+     "maxspeed": "15",
+     "name": "شارع محمد بن سلامة الكرخي",
+     "name:ar": "شارع محمد بن سلامة الكرخي",
+     "name:en": "Mohammed Bin Salamah Al Karkhi Street"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1304598339,
+    "center": {
+     "lat": 24.7224102,
+     "lon": 46.6580175
+    },
+    "nodes": [
+     12082472692,
+     12082472693,
+     12082472694,
+     12082472695,
+     12082472692
+    ],
+    "tags": {
+     "building": "school",
+     "name": "مدارس دار السلام الأهلية"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1305926377,
+    "center": {
+     "lat": 24.7512343,
+     "lon": 46.6450427
+    },
+    "nodes": [
+     11557657820,
+     12084972117,
+     11557657821
+    ],
+    "tags": {
+     "highway": "tertiary_link",
+     "maxspeed": "50",
+     "name": "شارع السلامة",
+     "name:ar": "شارع السلامة",
+     "name:en": "Al Salama Street",
+     "oneway": "yes",
+     "surface": "asphalt"
+    }
+   },
+   {
+    "type": "relation",
+    "id": 13254379,
+    "center": {
+     "lat": 24.812593,
+     "lon": 46.7023443
+    },
+    "members": [
+     {
+      "type": "way",
+      "ref": 636981321,
+      "role": "outer"
+     }
+    ],
+    "tags": {
+     "admin_level": "10",
+     "amenity": "university",
+     "boundary": "administrative",
+     "name": "جامعة الإمام محمد بن سعود الإسلامية",
+     "name:ar": "جامعة الإمام محمد بن سعود الإسلامية",
+     "name:en": "Imam Muhammad ibn Saud University",
+     "type": "boundary",
+     "wikipedia": "en:Imam Muhammad ibn Saud University"
+    }
+   }
+  ]
+ },
+ "overpass:masif_boundary": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-16T16:36:31Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 2527570589,
+    "lat": 24.7655143,
+    "lon": 46.6801977,
+    "tags": {
+     "GNS:dsg_code": "PPLX",
+     "GNS:dsg_name": "section of populated place",
+     "GNS:id": "9165487",
+     "int_name": "Al Maşīf",
+     "name": "المصيف",
+     "name:ar": "المصيف",
+     "name:de": "Al Masif",
+     "name:en": "Al Masif",
+     "name:fr": "Al Masif",
+     "name:ml": "അൽ മസീഫ്",
+     "place": "suburb"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4210307489,
+    "lat": 24.7756656,
+    "lon": 46.6838796,
+    "tags": {
+     "internet_access": "wlan",
+     "name": "المصيف هاوس",
+     "phone": "XXXXXXXXXX",
+     "tourism": "hotel"
+    }
+   },
+   {
+    "type": "node",
+    "id": 12041416098,
+    "lat": 24.7630221,
+    "lon": 46.6833189,
+    "tags": {
+     "addr:city": "Riyadh",
+     "addr:housenumber": "7079",
+     "addr:postcode": "12465",
+     "addr:street": "Dhabiyat Bint Al Barra Street",
+     "amenity": "car_wash",
+     "automated": "no",
+     "name": "مغسلة جوهرة المصيف للسيارات",
+     "operator": "مغسلة جوهرة المصيف للسيارات",
+     "payment:american_express": "yes",
+     "payment:cash": "yes",
+     "payment:contactless": "yes",
+     "payment:mada": "yes",
+     "payment:mastercard": "yes",
+     "payment:nfc": "yes",
+     "payment:visa": "yes",
+     "self_service": "no"
+    }
+   },
+   {
+    "type": "node",
+    "id": 13168547965,
+    "lat": 24.7657969,
+    "lon": 46.682842,
+    "tags": {
+     "amenity": "pharmacy",
+     "drive_through": "no",
+     "healthcare": "pharmacy",
+     "name": "صيدلية ربى المصيف الطبية"
+    }
+   },
+   {
+    "type": "node",
+    "id": 13168547969,
+    "lat": 24.7610609,
+    "lon": 46.684807,
+    "tags": {
+     "name": "الماسة المصيف",
+     "shop": "dry_cleaning"
+    }
+   },
+   {
+    "type": "relation",
+    "id": 13254392,
+    "center": {
+     "lat": 24.7654898,
+     "lon": 46.681536
+    },
+    "members": [
+     {
+      "type": "way",
+      "ref": 1305622207,
+      "role": "outer"
+     },
+     {
+      "type": "way",
+      "ref": 1305622206,
+      "role": "outer"
+     },
+     {
+      "type": "way",
+      "ref": 409505167,
+      "role": "outer"
+     }
+    ],
+    "tags": {
+     "admin_level": "10",
+     "boundary": "administrative",
+     "name": "المصيف",
+     "name:ar": "المصيف",
+     "name:en": "Al Masif District",
+     "place": "neighbourhood",
+     "type": "boundary"
+    }
+   }
+  ]
+ },
+ "overpass:murabba_compound": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-10-16T16:37:36Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 1236703800,
+    "lat": 24.659914,
+    "lon": 46.7097712,
+    "tags": {
+     "GNS:dsg_code": "PPLX",
+     "GNS:dsg_name": "section of populated place",
+     "GNS:id": "408663",
+     "int_name": "Al Murabba‘",
+     "name": "المربع",
+     "name:ar": "المربع",
+     "name:de": "Al Murabba`",
+     "name:en": "Al Murabba`",
+     "name:fa": "مربع",
+     "name:fr": "Al Murabba`",
+     "place": "suburb"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4311757411,
+    "lat": 24.6458222,
+    "lon": 46.7003289,
+    "tags": {
+     "amenity": "police",
+     "name": "شرطة المربع"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6018879099,
+    "lat": 24.6647328,
+    "lon": 46.7023599,
+    "tags": {
+     "name": "المربع",
+     "name:ar": "المربع",
+     "name:en": "Al Muorabba",
+     "public_transport": "stop_position",
+     "railway": "stop",
+     "ref": "1D5",
+     "subway": "yes"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6484628686,
+    "lat": 24.6677267,
+    "lon": 46.7038897,
+    "tags": {
+     "amenity": "place_of_worship",
+     "name": "مسجد حي المربع",
+     "religion": "muslim"
+    }
+   },
+   {
+    "type": "node",
+    "id": 12960706801,
+    "lat": 24.6581423,
+    "lon": 46.7049834,
+    "tags": {
+     "addr:postcode": "12613",
+     "addr:street": "الإمام عبدالله بن فيصل",
+     "contact:facebook": "61554430510777",
+     "internet_access": "wlan",
+     "name": "مقهى دوار المربع",
+     "name:en": "Square House Cafe",
+     "opening_hours": "Su-We 07:00-02:00; Th 07:00-03:00; Fr 11:00-03:00; Sa 09:00-02:00",
+     "phone": "+966 55 727 4336",
+     "shop": "coffee",
+     "website": "https://menuhub.org/home/c9b384fe-ecc6-420d-991c-b6fbfe5174bb"
+    }
+   },
+   {
+    "type": "way",
+    "id": 409217317,
+    "center": {
+     "lat": 24.6450119,
+     "lon": 46.7064701
+    },
+    "nodes": [
+     4111175407,
+     4111175397,
+     4111175416,
+     4111175425,
+     4111175407
+    ],
+    "tags": {
+     "building": "school",
+     "name": "مدرسة المربع الابتدائية"
+    }
+   },
+   {
+    "type": "way",
+    "id": 412129413,
+    "center": {
+     "lat": 24.6519194,
+     "lon": 46.7095222
+    },
+    "nodes": [
+     4136584190,
+     4136584083,
+     4136584073,
+     4136584088,
+     4136584190
+    ],
+    "tags": {
+     "addr:street": "شارع الوشم",
+     "building": "yes",
+     "name": "مجمع المربع التجاري و السكني",
+     "name:ar": "مجمع المربع التجاري و السكني"
+    }
+   },
+   {
+    "type": "way",
+    "id": 936548203,
+    "center": {
+     "lat": 24.6651584,
+     "lon": 46.7022139
+    },
+    "nodes": [
+     8678006161,
+     8678006162,
+     8678006163,
+     8678006164,
+     8678006161
+    ],
+    "tags": {
+     "building": "yes",
+     "layer": "-1",
+     "name": "المربع",
+     "name:ar": "المربع",
+     "name:en": "Al Muorabba",
+     "name:fa": "مربع",
+     "name:ml": "അൽ മുറബ്ബ",
+     "operator": "Riyadh Transit Network",
+     "public_transport": "station",
+     "railway": "station",
+     "station": "subway",
+     "subway": "yes"
+    }
+   },
+   {
+    "type": "relation",
+    "id": 239102,
+    "center": {
+     "lat": 24.6464896,
+     "lon": 46.7092729
+    },
+    "members": [
+     {
+      "type": "way",
+      "ref": 40589075,
+      "role": "outer"
+     },
+     {
+      "type": "way",
+      "ref": 40589076,
+      "role": "inner"
+     }
+    ],
+    "tags": {
+     "building": "yes",
+     "castle_type": "palace",
+     "historic": "castle",
+     "name": "قصر المربع",
+     "name:en": "Murraba Palace",
+     "name:fa": "کاخ مربع",
+     "type": "multipolygon",
+     "wikidata": "Q16250443",
+     "wikipedia": "en:Murabba Palace"
+    }
+   },
+   {
+    "type": "relation",
+    "id": 13254433,
+    "center": {
+     "lat": 24.6628848,
+     "lon": 46.7070539
+    },
+    "members": [
+     {
+      "type": "way",
+      "ref": 409737157,
+      "role": "outer"
+     },
+     {
+      "type": "way",
+      "ref": 1307658673,
+      "role": "outer"
+     }
+    ],
+    "tags": {
+     "admin_level": "10",
+     "boundary": "administrative",
+     "name": "المربع",
+     "name:ar": "المربع",
+     "name:en": "Al Murabba District",
+     "place": "neighbourhood",
+     "type": "boundary"
+    }
+   },
+   {
+    "type": "relation",
+    "id": 18365054,
+    "center": {
+     "lat": 24.6649018,
+     "lon": 46.7023449
+    },
+    "members": [
+     {
+      "type": "way",
+      "ref": 936548203,
+      "role": ""
+     },
+     {
+      "type": "node",
+      "ref": 6018879099,
+      "role": "stop"
+     },
+     {
+      "type": "node",
+      "ref": 12336507810,
+      "role": ""
+     },
+     {
+      "type": "node",
+      "ref": 12336663040,
+      "role": ""
+     }
+    ],
+    "tags": {
+     "name": "المربع",
+     "name:ar": "المربع",
+     "name:en": "Al Muorabba",
+     "public_transport": "stop_area",
+     "type": "public_transport"
+    }
+   }
+  ]
+ },
+ "osrm:murabba_to_masif": {
+  "code": "Ok",
+  "routes": [
+   {
+    "legs": [
+     {
+      "steps": [],
+      "weight": 828,
+      "summary": "",
+      "duration": 828,
+      "distance": 15703.9
+     }
+    ],
+    "weight_name": "routability",
+    "weight": 828,
+    "duration": 828,
+    "distance": 15703.9
+   }
+  ],
+  "waypoints": [
+   {
+    "hint": "inQ_gP___396AAAAgwAAAAAAAAAAAAAAMzkIQy-9FEEAAAAAAAAAAHoAAACDAAAAAAAAAAAAAAA1HgAA38TIAvpPeAHAxMgC8E94AQAATxUAAAAA",
+    "location": [
+     46.712031,
+     24.66201
+    ],
+    "name": "الأمير عبدالرحمن بن عبدالعزيز",
+    "distance": 3.327417423
+   },
+   {
+    "hint": "FHA3g____396AAAArQAAAAAAAAAuAAAAYVDZQktoM0IAAAAAQ2YjQnoAAACtAAAAAAAAAC4AAAA1HgAAEA7IAqjieQEoDcgCSOJ5AQAAvwkAAAAA",
+    "location": [
+     46.665232,
+     24.765096
+    ],
+    "name": "الشيخ عبدالرزاق عفيفي",
+    "distance": 25.76017496
+   }
+  ]
+ },
+ "osrm:table_sample": {
+  "code": "Ok",
+  "destinations": [
+   {
+    "hint": "FHA3g____396AAAArQAAAAAAAAAuAAAAYVDZQktoM0IAAAAAQ2YjQnoAAACtAAAAAAAAAC4AAAA1HgAAEA7IAqjieQEoDcgCSOJ5AQAAvwkAAAAA",
+    "location": [
+     46.665232,
+     24.765096
+    ],
+    "name": "الشيخ عبدالرزاق عفيفي",
+    "distance": 25.76017496
+   }
+  ],
+  "durations": [
+   [
+    558
+   ],
+   [
+    507.1
+   ],
+   [
+    828
+   ]
+  ],
+  "sources": [
+   {
+    "hint": "a0oEgndKBIJaAAAARQAAAAAAAAAAAAAAdqF8QhwzPUIAAAAAAAAAAFoAAABFAAAAAAAAAAAAAAA1HgAAUnDIAoUdegHQbsgC4Bx6AQAA7xQAAAAA",
+    "location": [
+     46.690386,
+     24.780165
+    ],
+    "name": "قارية",
+    "distance": 43.1041322
+   },
+   {
+    "hint": "hYYDif___39mAAAANwEAAFEAAACxAAAAJxyPQsicEENhUWJClj_1QmYAAAA3AQAAUQAAALEAAAA1HgAAlarHAkGAeQGAq8cCoIB5AQIA_xQAAAAA",
+    "location": [
+     46.639765,
+     24.739905
+    ],
+    "name": "شارع الثغر",
+    "distance": 26.000443
+   },
+   {
+    "hint": "inQ_gP___396AAAAgwAAAAAAAAAAAAAAMzkIQy-9FEEAAAAAAAAAAHoAAACDAAAAAAAAAAAAAAA1HgAA38TIAvpPeAHAxMgC8E94AQAATxUAAAAA",
+    "location": [
+     46.712031,
+     24.66201
+    ],
+    "name": "الأمير عبدالرحمن بن عبدالعزيز",
+    "distance": 3.327417423
+   }
+  ]
+ }
+}

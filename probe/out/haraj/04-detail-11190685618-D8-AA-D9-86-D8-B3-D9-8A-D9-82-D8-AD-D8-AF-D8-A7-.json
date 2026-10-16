@@ -1,0 +1,459 @@
+{
+ "requested_url": "https://haraj.com.sa/11190685618/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81/",
+ "status": 200,
+ "final_url": "https://haraj.com.sa/11190685618/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81/",
+ "title": "تنسيق حدائق الطائف | موقع حراج",
+ "html_len": 144020,
+ "html_head": "<!DOCTYPE html><html lang=\"ar\" dir=\"rtl\" class=\"light\" translate=\"no\" style=\"--header-height: 48px;\"><head><meta charset=\"utf8\"><meta charset=\"utf8\"><link rel=\"preconnect\" href=\"https://polyfill.haraj.com.sa\" crossorigin=\"\"><link rel=\"preconnect\" href=\"https://graphql.haraj.com.sa\" crossorigin=\"\"><link rel=\"preconnect\" href=\"https://v8-cdn.haraj.com.sa\" crossorigin=\"\"><link rel=\"preconnect\" href=\"https://thumbcdn.haraj.com.sa\" crossorigin=\"\"><link rel=\"preconnect\" href=\"https://v8-cdn.haraj.com.sa/ext_v11/\" crossorigin=\"\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\"><meta name=\"viewport\" content=\"height=device-height, width=device-width, initial-scale=1.0,\n    maximum-scale=1.0, shrink-to-fit=yes,\n    user-scalable=no, orientation=portrait, interactive-widget=resizes-content\"><link rel=\"preload\" href=\"https://v8-cdn.haraj.com.sa/fonts/thmanyahsans-Medium.woff2\" as=\"font\" crossorigin=\"\"><link rel=\"preload\" href=\"https://v8-cdn.haraj.com.sa/fonts/thmanyahsans-Bold.woff2\" as=\"font\" crossorigin=\"\"><link rel=\"preload\" as=\"image\" href=\"https://postcdn.haraj.com.sa/userfiles30/2026-10-16/540x717-1_-TZFZuD2tGTHD89.jpg-700.webp\" imagesizes=\"(max-width: 767px) 400px, (max-width: 767px) 700px 2x\" fetchpriority=\"high\"><link rel=\"preload\" as=\"image\" href=\"https://v8-cdn.haraj.com.sa/logos/ncvc.png\"><script id=\"ga-tag\" src=\"https://www.googletagmanager.com/gtag/js?id=G-2QQDXE6ED2\" type=\"text/javascript\" async=\"\"></script><link rel=\"preload\" href=\"https://polyfill.haraj.com.sa/v3/polyfill.min.js?features=URLSearchParams,Object.entries,String.prototype.replaceAll,Object.fromEntries,Array.prototype.entries,String.prototype.at,IntersectionObserver,ResizeObserver,Array.prototype.at\" as=\"script\" crossorigin=\"\"><link rel=\"preload\" href=\"https://v8-cdn.haraj.com.sa/ext_v11/scripts/setTheme.js\" as=\"script\" crossorigin=\"\"><meta name=\"google\" content=\"notranslate\"><link rel=\"icon\" sizes=\"192x192\" type=\"image/png\" href=\"https://v8-cdn.haraj.com.sa/assets/images/icon_192x192.3412c457e79a23d6a92f96ad8eeefc64.png\"><link rel=\"icon\" sizes=\"256x256\" type=\"image/png\" href=\"https://v8-cdn.haraj.com.sa/assets/images/icon_256x256.e1fab9740fc56bf67a9553750b7c9414.png\"><link rel=\"icon\" sizes=\"512x512\" type=\"image/png\" href=\"https://v8-cdn.haraj.com.sa/assets/images/icon_512x512.7066411fca0d089f078ddf49d59df968.png\"><link rel=\"apple-touch-icon\" sizes=\"192x192\" href=\"https://v8-cdn.haraj.com.sa/assets/images/icon_192x192.3412c457e79a23d6a92f96ad8eeefc64.png\"><link rel=\"shortcut icon\" href=\"https://v8-cdn.haraj.com.sa/logos/favicon.ico\"><meta name=\"theme-color\" content=\"#0473c0\"><link rel=\"manifest\" href=\"/manifest.webmanifest\"><meta name=\"format-detection\" content=\"telephone=no\"><meta property=\"og:site_name\" content=\"موقع حراج\"><meta id=\"og_type_meta\" property=\"og:type\" content=\"website\"><meta id=\"og_locale_meta\" property=\"og:locale\" content=\"ar_SA\"><meta id=\"og_country_name_meta\" property=\"og:country_name\" content=\"Saudi Arabia\"><meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:site\" content=\"haraj.com.sa\"><meta name=\"twitter:site:id\" content=\"131885812\"><meta name=\"twitter:creator\" content=\"@haraj\"><meta name=\"twitter:creator:id\" content=\"4503599629495409\"><meta property=\"al:ios:url\" content=\"https://apps.apple.com/us/app/haraj/id662557215\"><meta property=\"al:ios:app_name\" content=\"حراج\"><meta property=\"al:ios:app_store_id\" content=\"662557215\"><meta property=\"al:iphone:url\" content=\"https://apps.apple.com/us/app/haraj/id662557215\"><meta property=\"al:iphone:app_name\" content=\"حراج\"><meta property=\"al:iphone:app_store_id\" content=\"662557215\"><meta property=\"al:ipad:url\" content=\"https://apps.apple.com/us/app/haraj/id662557215\"><meta property=\"al:ipad:app_name\" content=\"حراج\"><meta property=\"al:ipad:app_store_id\" content=\"662557215\"><meta property=\"al:android:url\" content=\"https://apps.apple.com/us/app/haraj/id662557215\"><meta property=\"al:android:app_name\" content=\"حراج\"><meta property=\"al:android:package\" content=\"com.haraj.app\"><meta property=\"al:web:url\" content=\"https://haraj.com.sa\"><title id=\"title_meta\">تنسيق حدائق الطائف | موقع حراج</title><meta id=\"og_title_meta\" property=\"og:title\" content=\"تنسيق حدائق الطائف | موقع حراج\"><meta id=\"twitter_title_meta\" property=\"twitter:title\" content=\"تنسيق حدائق الطائف | موقع حراج\"><meta id=\"description_meta\" name=\"description\" content=\"تنسيق حدائق الطايف\"><meta id=\"og_description_meta\" property=\"og:description\" content=\"تنسيق حدائق الطايف\"><meta id=\"twitter_description_meta\" property=\"twitter:description\" content=\"تنسيق حدائق الطايف\"><meta id=\"og_title_meta\" property=\"og:title\" content=\"تنسيق حدائق الطائف | موقع حراج\"><meta id=\"og_description_meta\" property=\"og:description\" content=\"تنسيق حدائق الطايف\"><meta id=\"og_image_meta\" property=\"og:image\" content=\"https://mimg6cdn.haraj.com.sa/userfiles30/2026-10-16/540x717-1_-TZFZuD2tGTHD89.jpg\"><meta id=\"og_image_meta\" property=\"og:image\" content=\"https://mimg6cdn.haraj.com.sa/userfiles30/2026-10-16/867x867-1_-VdHMJWHSskP5UK.jpg\"><meta id=\"og_image_meta\" property=\"og:image\" content=\"https://mimg6cdn.haraj.com.sa/userfiles30/2026-10-16/1024x1024-1_-KHTPfBS6zVUbGg.jpg\"><meta id=\"og_image_meta\" property=\"og:image\" content=\"https://mimg6cdn.haraj.com.sa/userfiles30/2026-10-16/384x384-1_-4ghW41flrMUd1y.jpg\"><meta id=\"og_image_meta\" property=\"og:image\" content=\"https://mimg6cdn.haraj.com.sa/userfiles30/2026-10-16/1080x1080-1_-2gPLkJWeFXG6PN.jpg\"><meta id=\"og_image_meta\" property=\"og:image\" content=\"https://mimg6cdn.haraj.com.sa/userfiles30/2026-10-16/1280x720-1_-feM1ifDDZgApa4.jpg\"><meta id=\"og_image_meta\" property=\"og:image\" content=\"https://mimg6cdn.haraj.com.sa/userfiles30/2026-10-16/1080x1080-1_-GTX5dljZICFtD6.jpg\"><meta name=\"twitter:image:media",
+ "anchors": [
+  [
+   "https://haraj.com.sa/",
+   ""
+  ],
+  [
+   "https://haraj.com.sa/tags/%D9%83%D9%84%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A7%D8%AC",
+   "كل الحراج"
+  ],
+  [
+   "https://haraj.com.sa/tags/%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9%20%D9%88%D8%AD%D8%AF%D8%A7%D8%A6%D9%82",
+   "زراعة وحدائق"
+  ],
+  [
+   "https://haraj.com.sa/city/%D8%A7%D9%84%D8%B7%D8%A7%D9%8A%D9%81",
+   "الطايف"
+  ],
+  [
+   "https://haraj.com.sa/users/%D8%AA%D9%86%D8%B3%D9%8A%D9%82%20%D8%AD%D8%AF%D8%A7%D8%A6%D9%82%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%20q",
+   "تنسيق حدائق الطائف q"
+  ],
+  [
+   "https://ncvc.gov.sa/",
+   "انتبه! الحطب المحلي ليس سلعة للبيع، اتبع إرشادات المركز الوطني لتنمية الغطاء الن"
+  ],
+  [
+   "https://haraj.com.sa/tags/%D8%A7%D9%84%D8%B7%D8%A7%D9%8A%D9%81_%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9%20%D9%88%D8%AD%D8%AF%D8%A7%D8%A6%D9%82",
+   "زراعة وحدائق في الطايف"
+  ],
+  [
+   "https://haraj.com.sa/11189710789/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81/",
+   "تنسيق حدائق الطائف"
+  ],
+  [
+   "https://haraj.com.sa/11183371366/%D9%85%D8%B4%D8%AA%D9%84_%D8%A7%D8%B4%D8%AC%D8%A7%D8%B1_%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D9%8A%D9%82/",
+   "مشتل اشجار تنسيق حدايق"
+  ],
+  [
+   "https://haraj.com.sa/11178188555/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D9%89%D9%82_%D9%88_%D8%B4%D9%84%D8%A7%D9%84%D8%A7%D8%AA_%D9%88_%D9%86%D9%88%D8%A7%D9%81%D9%8A%D8%B1_%D9%88_%D8%AF%D9%8A%D9%83%D9%88%D8%B1_%D8%AF%D8%A7%D8%AE%D9%84%D9%8A_%D9%88_%D8%A7%D8%AD%D9%88%D8%A7%D8%B6_%D8%B2%D8%B1%D8%A7%D8%B9%D9%87/",
+   "تنسيق حداىق و شلالات و نوافير و ديكور داخلي و احواض زراعه"
+  ],
+  [
+   "https://haraj.com.sa/11188863749/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D9%88%D8%AA%D8%B5%D9%85%D9%8A%D9%85_%D8%A7%D9%84%D8%B4%D9%84%D8%A7%D9%84%D8%A7%D8%AA/",
+   "تنسيق حدائق وتصميم الشلالات"
+  ],
+  [
+   "https://haraj.com.sa/11178419686/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D9%88%D9%85%D8%B1%D8%A7%D9%83%D9%86_%D9%88%D8%B4%D9%84%D8%A7%D9%84%D8%A7%D8%AA_%D8%A7%D9%84%D8%B4%D9%84%D9%88%D9%8A/",
+   "تنسيق ومراكن وشلالات الشلوي"
+  ],
+  [
+   "https://haraj.com.sa/11182606366/%D8%A3%D8%AD%D9%88%D8%A7%D8%B6_%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A%D8%A9_%D9%88%D9%85%D8%B1%D8%A7%D9%83%D9%86_%D9%81%D9%8A%D8%A8%D8%B1%D8%AC%D9%84%D8%A7%D8%B3_%D8%A8%D8%A3%D9%81%D8%B6%D9%84_%D8%AC%D9%88%D8%AF%D8%A9_%D8%A3%D8%AD%D9%88%D8%A7%D8%B6_%D8%A7%D9%84%D8%B1%D9%8A%D9%85/",
+   "أحواض زراعية ومراكن فيبرجلاس بأفضل جودة أحواض الريم"
+  ],
+  [
+   "https://haraj.com.sa/11170464110/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D9%88%D8%B4%D9%84%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D9%86%D9%88%D8%A7%D9%81%D9%8A%D8%B1_%D9%88%D8%BA%D8%B1%D9%81_%D8%B2%D8%AC%D8%A7%D8%AC%D9%8A%D8%A9/",
+   "تنسيق حدائق وشلالات ونوافير وغرف زجاجية"
+  ],
+  [
+   "https://haraj.com.sa/11167563044/%D9%85%D8%B4%D8%AA%D9%84_%D8%B4%D9%87%D8%A7%D8%B1_%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%A7%D9%84%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81_%D9%88%D9%82%D8%B5_%D8%A7%D9%84%D8%A3%D8%B4%D8%AC%D8%A7%D8%B1_%D9%88%D8%B4%D8%A8%D9%83%D9%87_%D8%A7%D9%84%D8%B1%D9%8A/",
+   "مشتل شهار تنسيق الحدائق الطائف وقص الأشجار وشبكه الري"
+  ],
+  [
+   "https://haraj.com.sa/11183312278/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82/",
+   "تنسيق حدائق"
+  ],
+  [
+   "https://haraj.com.sa/11170168363/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81/",
+   "تنسيق حدائق الطائف"
+  ],
+  [
+   "https://haraj.com.sa/11178003262/%D9%86%D8%AE%D9%84_%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%88%D9%86%D9%8A_%D9%88%D8%B9%D8%B1%D8%A8%D9%8A/",
+   "نخل واشنطوني وعربي"
+  ],
+  [
+   "https://haraj.com.sa/11189094539/%D9%85%D8%B4%D8%AA%D9%84_%D8%B2%D9%87%D9%88%D8%B1_%D8%A7%D9%84%D9%86%D8%A7%D8%AF%D8%B1_%D9%84%D9%84%D8%AC%D9%84%D8%B3%D8%A7%D8%AA_%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D9%87_%D9%88%D8%A7%D9%84%D9%86%D8%AC%D9%8A%D9%84%D9%87_%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A_%D9%88%D8%A7%D9%84%D8%AC%D8%AF%D8%A7%D8%B1%D9%8A/",
+   "مشتل زهور النادر للجلسات الخارجيه والنجيله الصناعي والجداري"
+  ],
+  [
+   "https://haraj.com.sa/11190597074/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D9%88%D8%A3%D8%B9%D9%85%D8%A7%D9%84_%D8%AD%D8%AF%D8%A7%D8%AF%D8%A9_%D9%88%D8%AF%D9%8A%D9%83%D9%88%D8%B1%D8%A7%D8%AA_%D8%B9%D8%A7%D9%85%D9%87_%D9%81%D9%8A_%D8%A7%D9%84%D8%B7%D8%A7%D9%8A%D9%81/",
+   "تنسيق حدائق وأعمال حدادة وديكورات عامه في الطايف"
+  ],
+  [
+   "https://haraj.com.sa/11161094436/%D8%B2%D9%87%D8%B1%D8%A9_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81_%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%A7%D9%84%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9/",
+   "زهرة الطائف لتنسيق الحدائق العامة"
+  ],
+  [
+   "https://haraj.com.sa/11157296985/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%A7%D9%84%D8%AD%D8%AF%D8%A7%D8%A6%D9%82/",
+   "تنسيق الحدائق"
+  ],
+  [
+   "https://haraj.com.sa/all-sections",
+   "كل الأقسام"
+  ],
+  [
+   "https://haraj.com.sa/post",
+   "أضف عرض"
+  ],
+  [
+   "https://haraj.com.sa/note.php",
+   "الإشعارات"
+  ],
+  [
+   "https://haraj.com.sa/chat",
+   "الرسائل"
+  ]
+ ],
+ "script_srcs": [
+  "https://www.googletagmanager.com/gtag/js?id=G-2QQDXE6ED2",
+  "https://polyfill.haraj.com.sa/v3/polyfill.min.js?features=URLSearchParams,Object.entries,String.prototype.replaceAll,Object.fromEntries,Array.prototype.entries,String.prototype.at,IntersectionObserver,ResizeObserver,Array.prototype.at",
+  "https://info2019.haraj.com.sa/stapi/view?id=190685618&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&tag=%D9%83%D9%84&actx=eyJpYXQiOjE3OTIxNjkxMDYsImVwIjoiU2luZ2xlUG9zdHNMaXN0In0"
+ ],
+ "cookie_names": [
+  "AWSALB",
+  "AWSALBCORS",
+  "AWSALBTG",
+  "AWSALBTGCORS",
+  "CLIENT_ID",
+  "_ga",
+  "_ga_2QQDXE6ED2",
+  "theme"
+ ],
+ "body_text": "AR\nكل الحراج/\nزراعة وحدائق\nتنسيق حدائق الطائف\nالطايف\nقبل دقيقة واحدة\nت\nتنسيق حدائق الطائف q\nمتابعة\n40\n\n\nتنسيق حدائق الطايف\n\n\n\n\nتواصل\nالتعليقات (0)\n💬\nلا يوجد تعليقات\nأكتب سؤالك للعارض هنا\nاكتب تعليق...\n💬\nمراسلة\nتفضيل\nمشاركة\nبلاغ\nكل الحراج\nزراعة وحدائق\nانتبه! الحطب المحلي ليس سلعة للبيع، اتبع إرشادات المركز الوطني لتنمية الغطاء النباتي ومكافحة التصحر، واطلع على اللائحة التنفيذية للاحتطاب.\nمتابعة العروض المشابهة\nعروض مشابهة\nزراعة وحدائق في الطايف\nتنسيق حدائق الطائف\nمشتل اشجار تنسيق حدايق\nتنسيق حداىق و شلالات و نوافير و ديكور داخلي و احواض زراعه\nتنسيق حدائق وتصميم الشلالات\nتنسيق ومراكن وشلالات الشلوي\nأحواض زراعية ومراكن فيبرجلاس بأفضل جودة أحواض الريم\nتنسيق حدائق وشلالات ونوافير وغرف زجاجية\nمشتل شهار تنسيق الحدائق الطائف وقص الأشجار وشبكه الري\nتنسيق حدائق\nتنسيق حدائق الطائف\nنخل واشنطوني وعربي\nمشتل زهور النادر للجلسات الخارجيه والنجيله الصناعي والجداري\nتنسيق حدائق وأعمال حدادة وديكورات عامه في الطايف\nزهرة الطائف لتنسيق الحدائق العامة\nتنسيق الحدائق\nالرئيسية\nكل الأقسام\nأضف عرض\nالإشعارات\nالرسائل",
+ "network": [
+  {
+   "url": "https://haraj.com.sa/11190685618/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81/",
+   "method": "GET",
+   "type": "document",
+   "status": 200,
+   "content_type": "text/html",
+   "req_headers": {
+    ":authority": "haraj.com.sa",
+    ":method": "GET",
+    ":path": "/11190685618/%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81/",
+    ":scheme": "https",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA",
+    "priority": "u=0, i",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-arch": "\"arm\"",
+    "sec-ch-ua-bitness": "\"64\"",
+    "sec-ch-ua-full-version-list": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8078.4\", \"HeadlessChrome\";v=\"156.0.8078.4\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-model": "\"\"",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-ch-ua-platform-version": "\"14\"",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "none",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://o463757.ingest.us.sentry.io/api/4509661621387264/envelope/?sentry_version=7&sentry_key=6a14f4b4586be3e2d83def481049b394&sentry_client=sentry.javascript.react-router%2F10.12.0",
+   "method": "POST",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "application/json",
+   "post_data": "{\"sent_at\":\"2026-10-16T16:45:06.723Z\",\"sdk\":{\"name\":\"sentry.javascript.react-router\",\"version\":\"10.12.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"bbf2085bf7b14c48b2b6471f19cdcefc\",\"init\":true,\"started\":\"2026-10-16T16:45:06.723Z\",\"timestamp\":\"2026-10-16T16:45:06.723Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"N0.0.1 , 2026-10-11 22\",\"environment\":\"prod-ext\",\"user_agent\":\"Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36\"}}",
+   "req_headers": {
+    ":authority": "o463757.ingest.us.sentry.io",
+    ":method": "POST",
+    ":path": "/api/4509661621387264/envelope/?sentry_version=7&sentry_key=6a14f4b4586be3e2d83def481049b394&sentry_client=sentry.javascript.react-router%2F10.12.0",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "485",
+    "content-type": "text/plain;charset=UTF-8",
+    "origin": "https://haraj.com.sa",
+    "priority": "u=1, i",
+    "referer": "https://haraj.com.sa/",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   },
+   "body": "{}",
+   "body_len": 2
+  },
+  {
+   "url": "https://graphql.haraj.com.sa/?queryName=getAnnouncement&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+   "method": "POST",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "application/json; charset=UTF-8",
+   "post_data": "{\"query\":\"\\n    query GetAnnouncement {\\n  getAnnouncement {\\n    version\\n    validUntil\\n    backgroundColor\\n    body\\n  }\\n}\\n    \"}",
+   "req_headers": {
+    ":authority": "graphql.haraj.com.sa",
+    ":method": "POST",
+    ":path": "/?queryName=getAnnouncement&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "136",
+    "content-type": "application/json",
+    "origin": "https://haraj.com.sa",
+    "priority": "u=1, i",
+    "referer": "https://haraj.com.sa/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-arch": "\"arm\"",
+    "sec-ch-ua-bitness": "\"64\"",
+    "sec-ch-ua-full-version-list": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8078.4\", \"HeadlessChrome\";v=\"156.0.8078.4\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-model": "\"\"",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-ch-ua-platform-version": "\"14\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "trackid": "",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   },
+   "body": "{\"data\":{\"getAnnouncement\":{\"version\":1,\"validUntil\":0,\"backgroundColor\":\"eeeeee\",\"body\":\"\\n                نرجو المشاركة في هذا\\n                <a href=\\\"https:\\/\\/docs.google.com\\/forms\\/d\\/e\\/1FAIpQLScDQ3IfF-p80EQiNUv6WScubtktzjGxDT3d4fd0BqDKXd_kxw\\/viewform\\\"> الاستبيان <\\/a>  لتحسين خدمات حراج\\n                \"}}}",
+   "body_len": 322
+  },
+  {
+   "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-2QQDXE6ED2&gtm=45je6ae1v9255186204za208zd9255186204xf1&_p=1792169106581&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=2122326252.1792169055&frm=0&ngs=1&pscdl=noapi&rcb=1&sr=412x915&uaa=arm&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=1&uap=Android&uapv=14&uaw=0&ul=ar-sa&_s=1&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792169055&sct=1&seg=1&dl=https%3A%2F%2Fharaj.com.sa%2F11190685618%2F%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%2F&dt=%D8%AA%D9%86%D8%B3%D9%8A%D9%82%20%D8%AD%D8%AF%D8%A7%D8%A6%D9%82%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%20%7C%20%D9%85%D9%88%D9%82%D8%B9%20%D8%AD%D8%B1%D8%A7%D8%AC&en=page_view&_ee=1&ep.appName=harajV10Vite&ep.appVersion=N0.0.1%20%2C%202026-10-11%2022&tfd=602",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "content_type": "text/plain",
+   "post_data": "",
+   "req_headers": {
+    ":authority": "www.google-analytics.com",
+    ":method": "POST",
+    ":path": "/g/collect?v=2&tid=G-2QQDXE6ED2&gtm=45je6ae1v9255186204za208zd9255186204xf1&_p=1792169106581&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=2122326252.1792169055&frm=0&ngs=1&pscdl=noapi&rcb=1&sr=412x915&uaa=arm&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=1&uap=Android&uapv=14&uaw=0&ul=ar-sa&_s=1&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792169055&sct=1&seg=1&dl=https%3A%2F%2Fharaj.com.sa%2F11190685618%2F%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%2F&dt=%D8%AA%D9%86%D8%B3%D9%8A%D9%82%20%D8%AD%D8%AF%D8%A7%D8%A6%D9%82%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%20%7C%20%D9%85%D9%88%D9%82%D8%B9%20%D8%AD%D8%B1%D8%A7%D8%AC&en=page_view&_ee=1&ep.appName=harajV10Vite&ep.appVersion=N0.0.1%20%2C%202026-10-11%2022&tfd=602",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "cache-control": "no-cache",
+    "content-length": "0",
+    "origin": "https://haraj.com.sa",
+    "pragma": "no-cache",
+    "priority": "u=1, i",
+    "referer": "https://haraj.com.sa/",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://graphql.haraj.com.sa/?queryName=postLikeInfo&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+   "method": "POST",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "application/json; charset=UTF-8",
+   "post_data": "{\"query\":\"\\n    query PostLikeInfo($id: Int!, $token: String) {\\n  postLikeInfo(id: $id, token: $token) {\\n    isLike\\n    isFollowing\\n    total\\n  }\\n}\\n    \",\"variables\":{\"id\":190685618,\"token\":\"\"}}",
+   "req_headers": {
+    ":authority": "graphql.haraj.com.sa",
+    ":method": "POST",
+    ":path": "/?queryName=postLikeInfo&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "201",
+    "content-type": "application/json",
+    "origin": "https://haraj.com.sa",
+    "priority": "u=1, i",
+    "referer": "https://haraj.com.sa/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-arch": "\"arm\"",
+    "sec-ch-ua-bitness": "\"64\"",
+    "sec-ch-ua-full-version-list": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8078.4\", \"HeadlessChrome\";v=\"156.0.8078.4\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-model": "\"\"",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-ch-ua-platform-version": "\"14\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "trackid": "",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   },
+   "body": "{\"data\":{\"postLikeInfo\":{\"isLike\":false,\"isFollowing\":false,\"total\":0}}}",
+   "body_len": 72
+  },
+  {
+   "url": "https://graphql.haraj.com.sa/?queryName=comments&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+   "method": "POST",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "application/json; charset=UTF-8",
+   "post_data": "{\"query\":\"\\n    query Comments($postId: Int!, $commentsId: [Int!], $page: Int, $token: String, $newestFirst: Boolean, $oldestFirst: Boolean) {\\n  comments(\\n    postId: $postId\\n    id: $commentsId\\n    page: $page\\n    token: $token\\n    newestFirst: $newestFirst\\n    oldestFirst: $oldestFirst\\n  ) {\\n    items {\\n      id\\n      authorUsername\\n      authorId\\n      authorLevel\\n      body\\n      isNewUser\\n      status\\n      deleteReason\\n      seqId\\n      date\\n      isReply\\n      replyToCommentId\\n      mention {\\n        textContainsMention\\n        username\\n        handler\\n        userId\\n      }\\n    }\\n    pageInfo {\\n      hasNextPage\\n      hasPreviousPage\\n    }\\n  }\\n}\\n    \",\"variables\":{\"postId\":190685618,\"token\":\"\",\"oldestFirst\":false,\"newestFirst\":true}}",
+   "req_headers": {
+    ":authority": "graphql.haraj.com.sa",
+    ":method": "POST",
+    ":path": "/?queryName=comments&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "786",
+    "content-type": "application/json",
+    "origin": "https://haraj.com.sa",
+    "priority": "u=1, i",
+    "referer": "https://haraj.com.sa/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-arch": "\"arm\"",
+    "sec-ch-ua-bitness": "\"64\"",
+    "sec-ch-ua-full-version-list": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8078.4\", \"HeadlessChrome\";v=\"156.0.8078.4\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-model": "\"\"",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-ch-ua-platform-version": "\"14\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "trackid": "",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   },
+   "body": "{\"data\":{\"comments\":{\"items\":[],\"pageInfo\":{\"hasNextPage\":false,\"hasPreviousPage\":false}}}}",
+   "body_len": 91
+  },
+  {
+   "url": "https://graphql.haraj.com.sa/?queryName=getTrendingKeywords&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+   "method": "POST",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "application/json; charset=UTF-8",
+   "post_data": "{\"query\":\"\\n    query GetTrendingKeywords($rangeInDays: Int!) {\\n  getTrendingKeywords(rangeInDays: $rangeInDays) {\\n    keyword\\n    score\\n  }\\n}\\n    \",\"variables\":{\"rangeInDays\":1}}",
+   "req_headers": {
+    ":authority": "graphql.haraj.com.sa",
+    ":method": "POST",
+    ":path": "/?queryName=getTrendingKeywords&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "185",
+    "content-type": "application/json",
+    "origin": "https://haraj.com.sa",
+    "priority": "u=1, i",
+    "referer": "https://haraj.com.sa/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-arch": "\"arm\"",
+    "sec-ch-ua-bitness": "\"64\"",
+    "sec-ch-ua-full-version-list": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8078.4\", \"HeadlessChrome\";v=\"156.0.8078.4\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-model": "\"\"",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-ch-ua-platform-version": "\"14\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "trackid": "",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   },
+   "body": "{\"data\":{\"getTrendingKeywords\":[{\"keyword\":\"card\",\"score\":1},{\"keyword\":\"بطاقة شحن\",\"score\":1},{\"keyword\":\"رفيديات\",\"score\":1},{\"keyword\":\"هلكس\",\"score\":0.99},{\"keyword\":\"مطلوب شقة في حي الخالدية\",\"score\":0.93},{\"keyword\":\"لكزس es250\",\"score\":0.96},{\"keyword\":\"تقسيط بطاقات\",\"score\":0.87},{\"keyword\":\"عامل منزلي\",\"score\":0.81},{\"keyword\":\"دي جي اي\",\"score\":0.76},{\"keyword\":\"روز رايز\",\"score\":0.78},{\"keyword\":\"عامل تقطيع حطب كيس\",\"score\":0.73},{\"keyword\":\"تندرا\",\"score\":0.7},{\"keyword\":\"جيب ريو\",\"score\":0.66},{\"keyword\":\"مصور\",\"score\":0.68},{\"keyword\":\"s600\",\"score\":0.65},{\"keyword\":\"المحالة\",\"score\":0.62},{\"keyword\":\"غسيل كنب\",\"score\":0.62},{\"keyword\":\"مرخ\",\"score\":0.6},{\"keyword\":\"عصافير\",\"score\":0.59},{\"keyword\":\"طيور بادجي\",\"score\":0.51}]}}",
+   "body_len": 751
+  },
+  {
+   "url": "https://livestream.haraj.com.sa/streams/190685618",
+   "method": "GET",
+   "type": "fetch",
+   "status": 404,
+   "content_type": "application/json; charset=utf-8",
+   "req_headers": {
+    ":authority": "livestream.haraj.com.sa",
+    ":method": "GET",
+    ":path": "/streams/190685618",
+    ":scheme": "https",
+    "accept": "application/json",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "authorization": "Bearer",
+    "content-type": "application/json",
+    "origin": "https://haraj.com.sa",
+    "priority": "u=1, i",
+    "referer": "https://haraj.com.sa/",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   },
+   "body": "{\"ok\":false,\"err\":\"ERR_NOT_FOUND\",\"msg\":\"given resource is not found\",\"ts\":1792169107}\n",
+   "body_len": 87
+  },
+  {
+   "url": "https://graphql.haraj.com.sa/?queryName=similarPosts&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+   "method": "POST",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "application/json; charset=UTF-8",
+   "post_data": "{\"query\":\"\\n    query SimilarPosts($id: Int!, $lat: Float, $lon: Float) {\\n  similarPosts(id: $id, lat: $lat, lon: $lon) {\\n    id\\n    groupTags {\\n      tag\\n      city\\n      posts {\\n        analyticsContext\\n        items {\\n          ...PostFields\\n        }\\n        pageInfo {\\n          hasNextPage\\n        }\\n      }\\n    }\\n  }\\n}\\n    \\n    fragment PostFields on Post {\\n  id\\n  title\\n  postDate\\n  updateDate\\n  authorUsername\\n  authorId\\n  URL\\n  bodyTEXT\\n  bodyHTML\\n  thumbURL\\n  hasImage\\n  hasVideo\\n  city\\n  geoCity\\n  geoNeighborhood\\n  geoHash\\n  tags\\n  imagesList\\n  commentEnabled\\n  commentStatus\\n  isPromoted\\n  commentCount\\n  upRank\\n  downRank\\n  status\\n  postType\\n  generalInfo {\\n    key\\n    value\\n  }\\n  price {\\n    formattedPrice\\n    inputPrice\\n  }\\n  realEstateInfo {\\n    ...realEstateOptions\\n  }\\n  carInfo {\\n    sellOrWaiver\\n    is4DW\\n    model\\n    mileage\\n    fuel\\n    gear\\n    condition\\n    carOrRelated\\n    Bank\\n  }\\n  tagsFilters\\n  jobsInfo {\\n    jobs_OfferType\\n    jobs_ExperienceLevel\\n    jobs_ContractType\\n    jobs_Qualification\\n    jobs_CommercialeRgisterNumber\\n  }\\n  postNotesList {\\n    iconName\\n    iconUrl\\n    note\\n    link\\n  }\\n  BuyButton {\\n    Link\\n    StoreName\\n    Name\\n    canRequestWasataService\\n    isMakeOfferEnabled\\n  }\\n  generalInfo {\\n    key\\n    value\\n  }\\n}\\n    \\n    fragment realEstateOptions on reInfo {\\n  re_REGA_Advertiser_registration_number\\n  re_REGA_Authorization_number\\n}\\n    \",\"variables\":{\"id\":190685618}}",
+   "req_headers": {
+    ":authority": "graphql.haraj.com.sa",
+    ":method": "POST",
+    ":path": "/?queryName=similarPosts&clientId=xJHIubOo-8gzA-Nez7-aKHw-ehgDyO8pibQyv3&version=N0.0.1%20,%202026-10-11%2023/",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "1530",
+    "content-type": "application/json",
+    "origin": "https://haraj.com.sa",
+    "priority": "u=1, i",
+    "referer": "https://haraj.com.sa/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-arch": "\"arm\"",
+    "sec-ch-ua-bitness": "\"64\"",
+    "sec-ch-ua-full-version-list": "\"Not:A-Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"156.0.8078.4\", \"HeadlessChrome\";v=\"156.0.8078.4\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-model": "\"\"",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-ch-ua-platform-version": "\"14\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "trackid": "",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   },
+   "body": "{\"data\":{\"similarPosts\":{\"id\":190685618,\"groupTags\":[{\"tag\":\"زراعة وحدائق\",\"city\":\"الطايف\",\"posts\":{\"analyticsContext\":\"eyJpYXQiOjE3OTIxNjkxMDcsImVwIjoiU2ltaWxhclBvc3RzRnJvbUJ1aWxkZXIiLCJ0Ijoi2LLYsdin2LnYqSDZiNit2K_Yp9im2YIiLCJjIjoi2KfZhNi32KfZitmBIn0\",\"items\":[{\"id\":189710789,\"title\":\"تنسيق حدائق الطائف\",\"postDate\":1790903276,\"updateDate\":1792076000,\"authorUsername\":\"تنسبق حدائق الطائف\",\"authorId\":21841312,\"URL\":\"11189710789\\/تنسيق_حدائق_الطائف\\/\",\"bodyTEXT\":\"ابو اسماء لتنسيق الحدائق العامة والخاصة وعمل جميع انواع الديكورات المنزليه وقص  جميع انواع الأشجار وتزينها لتواصل عبر الرقم ( رقم الجوال يظهر عند الضغط على زر تواصل ) \",\"bodyHTML\":\"\",\"thumbURL\":\"1080x1028-1_-hnxmMwJr4jz1CN.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"ريحه\",\"geoHash\":\"sguf0ds8r\",\"tags\":[\"كل الحراج\",\"خدمات\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-2\\/1080x1028-1_-hnxmMwJr4jz1CN.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-2\\/1080x1040-1_-ogOhnxzPPWOTpr.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-2\\/1080x1037-1_-HdBcDQFw9zqF7o.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-2\\/1077x1010-1_-puRq2Cifzj53tX.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-2\\/1078x1035-1_-mMeprsH3zYL2u8.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-2\\/1076x1009-1_-nkUgk3aK4uZKOO.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-2\\/1077x1045-1_-yeUjMHQgX3WCkD.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-2\\/1070x1280-1_-PmFLxVcmXZPied.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-2\\/1078x987-1_-1Al2ltiqTTiYYO.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":true,\"commentCount\":0,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":{\"formattedPrice\":\"20\",\"inputPrice\":\"20\"},\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"haraj\",\"iconUrl\":\"\",\"note\":\"عرضك نيابة عن غيرك بمقابل أو دون مقابل يجعلك مسؤولا أمام الجهات المختصة.\",\"link\":\"\"}],\"BuyButton\":null},{\"id\":183371366,\"title\":\"مشتل اشجار تنسيق حدايق\",\"postDate\":1782670529,\"updateDate\":1792016710,\"authorUsername\":\"الفوخر\",\"authorId\":13809929,\"URL\":\"11183371366\\/مشتل_اشجار_تنسيق_حدايق\\/\",\"bodyTEXT\":\"سلام عليكم ورحمة الله وبركاته \\nيجود لدينا جيمع انىاع الاشجار \\nبمقاساتها وانواعها على طلب عميلنا\\nويوجد لدينا تنسيق الحدائق والبيوت\\nعمل مضلات عمل احواض زراعيه شلال\\nتمديد شبكات ري انجيله سي الفين\\nنخيل بجميع انواعه\\nواشنطن \\nعربي \\nملوكي\\nويوجد جميع انواع الاشجار الزينه والثمر والبريه\\nننسق حديقة بيتك تحت اشراف مهندس وشغل عليه\\nالضمانات بعد رب العالمين \\nالتواصل اتصال وتساب\",\"bodyHTML\":\"\",\"thumbURL\":\"832x1800_14377756-7EE4-43FA-89A7-0F0479F7CAA9.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"ج29\",\"geoHash\":\"sguc67\",\"tags\":[\"كل الحراج\",\"زراعة وحدائق\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-06-28\\/832x1800_14377756-7EE4-43FA-89A7-0F0479F7CAA9.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-06-28\\/832x1800_393BBCEE-28FD-4890-B5AA-33FF1B8FA5D9.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-06-28\\/832x1800_A54A9A5D-FA10-4FFC-9851-2C0048337333.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-06-28\\/832x1800_256EE8D8-39F6-4284-B215-7394D339652E.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-06-28\\/832x1800_DBC900A9-E4F4-400D-8C1E-CB97F1AEB980.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-06-28\\/960x1280_6D7A66B0-FD14-47B1-8DA3-680FD63ECD02.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-06-28\\/1350x1800_E8612B96-0A6F-428A-A9F7-CF8E598F7768.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-06-28\\/1350x1800_F2336C50-C3C1-4DCB-9DA0-0E9D054FADB5.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-06-28\\/1350x1800_D37E7C69-DF83-4B9F-BCAE-BB01789F4F5D.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-06-28\\/1350x1800_9C037DAE-E646-40B9-BC4F-354275097837.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":false,\"commentCount\":4,\"upRank\":1,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":null,\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"maee\",\"iconUrl\":\"https:\\/\\/v8-cdn.haraj.com.sa\\/logos\\/maee.png\",\"note\":\"غيِّر سلوكك الاستهلاكي؛ استخدام المياه باعتدال عادةٌ توفر عليك.\",\"link\":\"https:\\/\\/maee.gov.sa\\/\"}],\"BuyButton\":null},{\"id\":178188555,\"title\":\"تنسيق حداىق و شلالات و نوافير و ديكور داخلي و احواض زراعه\",\"postDate\":1775409903,\"updateDate\":1792013038,\"authorUsername\":\"تنسيق حدائق الجنه\",\"authorId\":24885659,\"URL\":\"11178188555\\/تنسيق_حداىق_و_شلالات_و_نوافير_و_ديكور_داخلي_و_احواض_زراعه\\/\",\"bodyTEXT\":\"كل ما يخص تتسيق الحدائق و الديكور الداخلي و الخارجي #مظلات#شلالات #نوافير #عشب #بديل خشب #عشب جداري #ديكورات #جلسات #مجالس\",\"bodyHTML\":\"\",\"thumbURL\":\"832x1800_9984F94D-4A41-45EA-BB8B-CF140F595781.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"الحوية\",\"geoHash\":\"sguccqmqm\",\"tags\":[\"خدمات مقاولات\",\"كل الحراج\",\"خدمات\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/832x1800_9984F94D-4A41-45EA-BB8B-CF140F595781.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/1284x1080_6B0FCFC4-C768-4FDB-ADDC-86A9BC26D224.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/1080x1080_8F3410E7-E460-4EBE-B83A-9166491FD75A.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/1001x1280_15B1D294-9706-45E9-A4F7-2564FD3BB4D9.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/1280x1280_2ABD9FD7-87E0-4F08-B92C-47B0968B8CA6.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/1080x584_4C2F9817-D16B-4F39-A6A2-B15E84BAF652.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/720x901_FDBB327D-E2FF-47E9-9B69-B74805BFA25A.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/1080x1092_A03D7A1A-3333-437C-9756-79BC57DB3F85.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/960x960_6F6BFC1B-4134-4018-A1B2-A662AF4FE51A.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/1080x1052_173CD1F0-67CA-46D1-BDF3-A0D5C877FB4F.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/738x1600_AB67D78C-439A-4ABB-B052-F34B7AEF5CE0.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/720x881_1786FEBD-71AD-4533-BCE4-A70621DF86A0.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/1080x1080_D77292FB-697C-4AAF-93FD-CF84CA952DE8.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/720x767_2A53076E-74DC-4890-B7DE-20AE36E701FD.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/1044x1280_D32F5C79-08A3-4798-AA0B-4AABB2D99FE6.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/720x861_CED38664-8620-48C2-B7AA-642358411A99.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/1080x360_76C96C45-68A9-4D91-A5E9-D18255C2405F.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/720x720_5E6BBBFB-05E1-4D95-B763-46AEAFACA928.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-05\\/960x1280_2442C2BB-CB5A-4712-AEFD-EDCFD27BF8EC.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":true,\"commentCount\":1,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":null,\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"waffy\",\"iconUrl\":\"https:\\/\\/v8-cdn.haraj.com.sa\\/logos\\/waffy.png\",\"note\":\"وفّي وسيط وتقسيط: سهِّل مشترياتك بدفعات ميسَّرة وآمنة.\",\"link\":\"https:\\/\\/waffyapp.com\\/?utm_source=Haraj&utm_medium=Haraj-Integration&utm_campaign=Haraj-Traffic\"}],\"BuyButton\":null},{\"id\":188863749,\"title\":\"تنسيق حدائق وتصميم الشلالات\",\"postDate\":1789794523,\"updateDate\":1792144062,\"authorUsername\":\"تنسيق حدائق الطائف 9578\",\"authorId\":25999575,\"URL\":\"11188863749\\/تنسيق_حدائق_وتصميم_الشلالات\\/\",\"bodyTEXT\":\"تنسيق حدائق الطائف ابو احمد للتنسيق الحدائق والشلالات والنوافير وعمل المظلات\",\"bodyHTML\":\"\",\"thumbURL\":\"1080x1303-1_-yLMxxDuL824XaM.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"الشهداء الجنوبية\",\"geoHash\":\"sgu8zxqx2\",\"tags\":[\"كل الحراج\",\"خدمات\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-19\\/1080x1303-1_-yLMxxDuL824XaM.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-19\\/1080x1169-1_-OTyGGza9LzdVeU.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-19\\/1080x1328-1_-cByvcGvuxaMaCe.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-19\\/1080x1264-1_-mHj7ZRSwtlBlxF.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-19\\/1080x1307-1_-uYTTYH2kkogMtS.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-19\\/720x1280-1_-E5zb87UaUNqrwe.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-19\\/1080x1300-1_-l9kdPTKrtY3S0h.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-19\\/1600x1204-1_-9HEu9P4fxXKaLP.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":false,\"commentCount\":0,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":{\"formattedPrice\":\"28\",\"inputPrice\":\"28\"},\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"haraj\",\"iconUrl\":\"\",\"note\":\"تجنب قبول الشيكات والمبالغ النقدية واحرص على التحويل البنكي المحلي.\",\"link\":\"\"}],\"BuyButton\":null},{\"id\":178419686,\"title\":\"تنسيق ومراكن وشلالات الشلوي\",\"postDate\":1775741161,\"updateDate\":1792011226,\"authorUsername\":\"ابو خالد ..............\",\"authorId\":3530784,\"URL\":\"11178419686\\/تنسيق_ومراكن_وشلالات_الشلوي\\/\",\"bodyTEXT\":\"مؤسسة الشلوي لتنسيق الحدائق وعمل الشلالات والنوافير\\nتسعد لخدمتكم على مدار الساعة\\nلدينا كل ماهو جديد وفريد\\nعشب جداري\\nعشب ارضي\\nنوافير\\nشلالات\\nاحواض زراعية\\nنسعد لخدمتكم على مدار الساعة ..\\nاسعار في متناول الجميع وعروض خاصة\",\"bodyHTML\":\"\",\"thumbURL\":\"1012x1800_89B1611D-8067-4FA6-BCA9-B571A6F6E905.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"مثمله\",\"geoHash\":\"sguf15skg\",\"tags\":[\"كل الحراج\",\"خدمات\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-09\\/1012x1800_89B1611D-8067-4FA6-BCA9-B571A6F6E905.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-09\\/200x200_D588DBAB-536A-4615-B51E-E13C457B147F.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-09\\/829x617_F83DD254-0F84-428F-9B53-C51CF76BB7F6.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-09\\/591x936_FF79FBB6-7DD9-4DCE-A9DB-DFF96634E8A9.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-09\\/1080x1332_A743DEF7-9EB8-433B-BDFD-7D7DE92B41F5.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-09\\/780x780_CA75144A-D3D7-41C0-84BF-40289098E84A.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-09\\/900x1600_A3A769FB-45C9-4466-BE06-4CAA59B167FE.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-09\\/768x920_66CD7603-3CFF-4339-94DA-24CA5DA67FE5.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-09\\/707x709_0A48E691-2237-470F-841F-E270E0638F3C.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-04-09\\/540x539_39FF1298-0A4E-4A32-8746-9DFD05E6BE97.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":true,\"commentCount\":0,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":null,\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"haraj\",\"iconUrl\":\"\",\"note\":\"تعاملك يجب أن يكون مع المعلن فقط وجود طرف ثالث قد يعني الاحتيال.\",\"link\":\"\"}],\"BuyButton\":null},{\"id\":182606366,\"title\":\"أحواض زراعية ومراكن فيبرجلاس بأفضل جودة   أحواض الريم\",\"postDate\":1781693416,\"updateDate\":1792147149,\"authorUsername\":\"احواض الريم\",\"authorId\":25077737,\"URL\":\"11182606366\\/أحواض_زراعية_ومراكن_فيبرجلاس_بأفضل_جودة_أحواض_الريم\\/\",\"bodyTEXT\":\"🔴 أحواض زراعية ومراكن فيبرجلاس بأفضل جودة | أحواض الريم 🔴\\n\\nهل تبحث عن **أحواض زراعية** أو **مراكن للزرع** تجمع بين الجودة والشكل العملي والعمر الطويل؟ 🌿\\nمع **أحواض الريم** نوفر لك مجموعة متنوعة من أحواض الزراعة والمراكن المصنوعة بجودة عالية لتناسب الحدائق والمنازل والاستراحات والمشاريع الزراعية.\\n\\n## أحواض زراعية تناسب جميع الاستخدامات\\n\\nنوفر أحواض ومراكن بتصميمات متنوعة مناسبة لـ:\\n\\n🌱 زراعة الأشجار والنباتات\\n🌿 تنسيق الحدائق المنزلية\\n🏡 الفلل والاستراحات\\n🌴 المشاريع الزراعية والتجارية\\n🌼 مداخل المنازل والأسطح\\n\\n## لماذا تختار أحواض ومراكن الفيبرجلاس؟\\n\\n✅ مقاومة للحرارة وأشعة الشمس\\n✅ تتحمل الرطوبة والاستخدام الخارجي\\n✅ خفيفة وسهلة النقل\\n✅ عمر افتراضي طويل\\n✅ تصميمات متعددة وأحجام مختلفة\\n\\n## مميزات أحواض الريم\\n\\n✔ تصنيع بجودة عالية\\n✔ مقاسات متنوعة حسب الحاجة\\n✔ أسعار منافسة مباشرة\\n✔ تنفيذ بعض المقاسات حسب الطلب\\n✔ منتجات مناسبة للأجواء في السعودية\\n\\n## تقسيط مريح عبر تابي\\n\\n💳 اطلب الآن واستفد من التقسيط عبر تابي\\n\\n✔ بدون فوائد\\n✔ دفع على دفعات مريحة\\n✔ إجراءات سهلة وسريعة\\n\\n📞 للتواصل والطلب: ( رقم الجوال يظهر عند الضغط على زر تواصل ) \\n\\n🌐 المتجر الإلكتروني:\\n \\n\\n🚚 توصيل لجميع مناطق المملكة\\n\\n🔑 كلمات بحث: أحواض زراعية، مراكن زراعية، أحواض فيبرجلاس، أحواض زرع كبيرة، مراكن للحدائق، أحواض نباتات، مراكن خارجية، أحواض زراعة في السعودية.\\n\\n🔥 اطلب الآن واجعل المساحات الخارجية أكثر جمالًا وتنظيمًا مع أحواض ومراكن أحواض الريم.\",\"bodyHTML\":\"\",\"thumbURL\":\"425x425-1_-GO__MTc4MTY5MzMzNTY3NDc5MDgzNDcyNQ.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"معشي\",\"geoHash\":\"sgu9p6\",\"tags\":[\"كل الحراج\",\"زراعة وحدائق\"],\"imagesList\":[\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTY3NDc5MDgzNDcyNQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMyNzc3NzE2MzAwOTQ3OQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMyNzYzMTE3OTk3MzIxOQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMyNzYxOTc3OTk3Njk2Nw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMyNzYyMzQzMDMxNjcy.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMyNzczNDkxMjA1NTkxOQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMyNzc2MzI2OTc4NzIx.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMyNzg1ODE2NzY3MzU4MQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMyNzc3NjcyNTQ1MTYwMQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMTM4MDMzODc5ODg2Mw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMTY3NTk1MDY1MjgwNA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMTY1MzYwOTgwOTU5OA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMTgwMDQ1MTI5Nzk0OA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMjE2NDg3NDIxMzEzMw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMjQ2NDM2NDA1NjgzNg.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMjM1OTYyODYwMjEyOA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMjUzNTE3NTAyODg3OA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMjY5NjcwNTQ1ODQ2MA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMjg2NjA4NTI2MTk2NQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzMjg5NTE0NDkwOTM2NQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzMzI5ODUyNjU5MjIzNw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMzAzOTk1NTEyOTMwNA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMzA5OTc3NzQ2MzU3MQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMzE4NDI2MzA4Njg4NQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMzE5NDA5MDYxOTI0OQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMzI5Mjg2MTE4Mjg0.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMzUzNjQ5NjIwODEzMA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMzU4MTMwMzI4MjI5Mg.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMzY3MzMxNTk1MTgyOQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMzc2NDEyNjU1ODU4OQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMzY2NzkzODc0NzMwOQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzMzczOTc0MDAwNzIz.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNDEzODY2NDg2ODk5NQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNDI2MTU0OTQyOTQyNg.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNDQ5NjgwOTc3Mjk3MQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNDUzNTI1NzI3NjcyOA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTA1MjM0MzkwOTgxNw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNTAzNjEyMjIxOTUwNw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTExNjcyNzk0ODkwMg.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTE5NjEzMzY5NzUwNw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTIwNDYzNTI0Mzc1Mw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTIzNjUxMjM5MzE1Mw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNTIyNzkwODIzMDEzOA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNTI0NDY1MDMwOTIzOQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTIzOTI0MjA4MzM0MQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTM1MjgyMjYyNzk3NA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNTM0NDc3MDUzMDQ1.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTM5NTM0ODg4MDQ2OA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTM1ODM4MjEyNTc0Ng.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTQ2MDUxNDI2MzI4MA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTM0MTYwMDk3MjY1Ng.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNTM5Mzk3OTI5NzE2Mw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTM5OTIzNDU2MTg2OA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNTU0MzQwNDAwMDg0Nw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNTU3MjExNDg2NzkxNw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTYyMTI3NDE2ODY2Ng.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTYwMTkxNzE4NjQ1OA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTU0MDcxNDc3ODgzNA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNTcwNTU3NDQxMDI2.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTYxMTYzNzU2NjY1NA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTc3ODk2NjYyODQ5Ng.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTc4MDU4OTgyODE5NQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTgzMzg3Mjc2NTc4Ng.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTk5ODI0MzE2NjcxOA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjAyODM4NDM0NTE1MQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNTk1ODE3MzUxNjc2Nw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNjAwODI0ODk2MTM3Ng.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjA0MjQyMDQzNzIzMw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNjA3NTQzNTU2NDY2OA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNjEzODE0MTYyOTk0Ng.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjE3NDgyOTYyNDk1Mg.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjIyMTIwMzM1NDgxOA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjIxMjU3MzU4NzMyMw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjI1NzUzNDExNjczOQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjI1OTU5NzExNTY0.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNjMwMTk0Mzg4Nzg1NQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjM3NDQyODI0Njg5Nw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjM5MzAzMzU1Mjk1Ng.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjQwOTQyNTA3ODc0Mg.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjQ1NjE3MDgzNjI2NA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjQ1MTEwNzkyMzEyNQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjQ4MzUzNTMyNjg5NQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjUxODI4NzcxMTY5Nw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjc3ODAxMTg4MjgxNQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjc4MTI2MDI4Njcx.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjc5NjM4NjU4ODI3MQ.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjgwOTU0MTExMzU0Mw.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNjg5MDIxMDUwMzYyOA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/567x567-1_-GO__MTc4MTY5MzMzNjk5MjkxMjM5MDc3OA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNzI2OTY1Mzc3NTcyNA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNzMzOTA4NDk2NjU0.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNzQ1NjI1MjMyMDQ4OA.jpg\",\"https:\\/\\/img4cdn.haraj.com.sa\\/userfiles30\\/2026-06-17\\/425x425-1_-GO__MTc4MTY5MzMzNzY4MjI3NzM1OTQyMw.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":false,\"commentCount\":2,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":null,\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"maee\",\"iconUrl\":\"https:\\/\\/v8-cdn.haraj.com.sa\\/logos\\/maee.png\",\"note\":\"اختر مقدِّم الخدمة المؤهَّل للكشف عن تسربات المياه في عقارك من تطبيق كشف.\",\"link\":\"https:\\/\\/maee.gov.sa\\/\"}],\"BuyButton\":null},{\"id\":170464110,\"title\":\"تنسيق حدائق وشلالات ونوافير وغرف زجاجية\",\"postDate\":1764155369,\"updateDate\":1792142749,\"authorUsername\":\"أبو كنزي لتنسيق الحدائق\",\"authorId\":17268056,\"URL\":\"11170464110\\/تنسيق_حدائق_وشلالات_ونوافير_وغرف_زجاجية\\/\",\"bodyTEXT\":\"نعمل على تنسيق الحدائق والشلالات والنوافير والعشب الصناعي والعشب الجداري والزراعي والمظلات والديكورات الخشبية والبحصية وشبكات الري العادي والاتوماتيك والاحواض والنخيل والورود والزهور والديكورات الداخلية والغرف الزجاجية \\nلسنا الوحيدين لكننا متميزين في فن تنسيق الحدائق \\nللتواصل معنا جوال وواتس 🇸🇦 🇸🇦 ( رقم الجوال يظهر عند الضغط على زر تواصل ) \\n( رقم الجوال يظهر عند الضغط على زر تواصل ) \",\"bodyHTML\":\"\",\"thumbURL\":\"512x512-1_-GO__MTY3MzUyMDAyMjYyMjA5Mjk5NjU3Ng.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"الشهداء الجنوبية\",\"geoHash\":\"sgu8zy4gm\",\"tags\":[\"كل الحراج\",\"خدمات اخرى\",\"خدمات\"],\"imagesList\":[],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":false,\"commentCount\":0,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":{\"formattedPrice\":\"25\",\"inputPrice\":\"25\"},\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"haraj\",\"iconUrl\":\"\",\"note\":\"إذا طلب منك أحدهم تسجيل الدخول للحصول على مميزات فاعلم أنه محتال.\",\"link\":\"\"}],\"BuyButton\":null},{\"id\":167563044,\"title\":\"مشتل شهار تنسيق الحدائق الطائف وقص الأشجار وشبكه الري\",\"postDate\":1760189795,\"updateDate\":1792050406,\"authorUsername\":\"لوي حجاج\",\"authorId\":23874269,\"URL\":\"11167563044\\/مشتل_شهار_تنسيق_الحدائق_الطائف_وقص_الأشجار_وشبكه_الري\\/\",\"bodyTEXT\":\"تنسيق حدائق\\n🌿 مشتل شهار الطائف 🌿\\nنوفر جميع أنواع الأشجار والنباتات الداخلية والخارجية\\n🌳 سرو إيطاليسرو عطري زيتون  جهينة\\n🌸 نباتات زينة &amp;ndash; شتلات موسمية  تنسيق حدائق\\n✅ أسعار منافسة\\n✅ جودة عالية\\n✅ توصيل داخل الطائف\\n✅ تنسيق حدائق وقص أشجار\",\"bodyHTML\":\"\",\"thumbURL\":\"1024x683-1_-3eOaJmXAJodGDU.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"الجال\",\"geoHash\":\"sguc06\",\"tags\":[\"كل الحراج\",\"زراعة وحدائق\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-1-29\\/1024x683-1_-3eOaJmXAJodGDU.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-1-29\\/1024x683-1_-8dEOjaTWV6f823.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-1-29\\/1536x2040-1_-i9HOHQiEFLYKMb.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-1-29\\/1536x2040-1_-79PTf1p7Eg9lcw.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-1-29\\/853x480-1_-oGUh8pEV5NJpxq.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-1-29\\/500x1040-1_-ksqMIBxiVajRof.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-1-29\\/500x1040-1_-HHPN6W6jhcOPoE.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-1-29\\/500x1040-1_-0b3cclHBBNzEgC.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-1-29\\/500x1040-1_-tVmhzid4jqUXDj.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-1-29\\/720x540-1_-C94E0Amgq129DX.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":false,\"commentCount\":1,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":null,\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"maee\",\"iconUrl\":\"https:\\/\\/v8-cdn.haraj.com.sa\\/logos\\/maee.png\",\"note\":\"تطبيق كشف قادر على اكتشاف الاستهلاك الخفي.\",\"link\":\"https:\\/\\/maee.gov.sa\\/\"}],\"BuyButton\":null},{\"id\":183312278,\"title\":\"تنسيق حدائق\",\"postDate\":1782594686,\"updateDate\":1791916123,\"authorUsername\":\"م. ابو مصعب منسق حدائق\",\"authorId\":24336428,\"URL\":\"11183312278\\/تنسيق_حدائق\\/\",\"bodyTEXT\":\"🌿 تنسيق حدائق وتنفيذ جلسات خارجية\\nتنفيذ الجلسات والمظلات والسواتر والشلالات والنوافير، تركيب العشب الصناعي والطبيعي، زراعة الأشجار والنخيل، وشبكات الري، بأعمال متقنة ولمسات جمالية مميزة.\\nجمال المكان يبدأ من حديقةٍ أُحسن تنسيقها.\\nتنفيذ احترافي وجودة عالية وأسعار مناسبة.\\nوما توفيقي إلا بالله. 🌿\",\"bodyHTML\":\"\",\"thumbURL\":\"677x900-1_-058XnI6ey14Yvs.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"جبرة\",\"geoHash\":\"sguc0mzu8\",\"tags\":[\"كل الحراج\",\"خدمات مقاولات\",\"خدمات\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-6-28\\/677x900-1_-058XnI6ey14Yvs.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-6-28\\/677x900-1_-6ow0PRWxi1DGum.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-6-28\\/720x558-1_-O8e1cgifA6eWF3.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-6-28\\/677x900-1_-iDsaahHeHTQ51s.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-6-28\\/900x900-1_-PbJ6URYY99EvPr.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":true,\"commentCount\":0,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":{\"formattedPrice\":\"1\",\"inputPrice\":\"1\"},\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"haraj\",\"iconUrl\":\"\",\"note\":\"المبايعة وجها لوجه بمكان عام  وبتحويل بنكي يقلل الخطر والاحتيال.\",\"link\":\"\"}],\"BuyButton\":null},{\"id\":170168363,\"title\":\"تنسيق حدائق الطائف\",\"postDate\":1763735164,\"updateDate\":1792051613,\"authorUsername\":\"abo yassin 0994\",\"authorId\":22249582,\"URL\":\"11170168363\\/تنسيق_حدائق_الطائف\\/\",\"bodyTEXT\":\"كل ما هو مودرن في عالم الجلسات والمجالس والاحواض والنوافير اجعل من سطح وحوش بيتك شاليه\",\"bodyHTML\":\"\",\"thumbURL\":\"900x1600-1_-RrWtrWqaNEJAg7.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"جبرة\",\"geoHash\":\"sguc0mzu8\",\"tags\":[\"كل الحراج\",\"خدمات\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-11-21\\/900x1600-1_-RrWtrWqaNEJAg7.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-11-21\\/1500x2000-1_-6pFNAWF0jraMW5.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-11-21\\/1500x2000-1_-jzJHsljRRPBolg.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-11-21\\/1500x2000-1_-EBhg2kw9DRPuLP.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-11-21\\/1500x2000-1_-OQyrk2haDtgyh9.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":false,\"commentCount\":0,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":{\"formattedPrice\":\"28\",\"inputPrice\":\"28\"},\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"haraj\",\"iconUrl\":\"\",\"note\":\"موظفو حراج لا يطلبوا منك رقمك السري أبدا فلا تخبر أحد به.\",\"link\":\"\"}],\"BuyButton\":null},{\"id\":178003262,\"title\":\"نخل واشنطوني وعربي\",\"postDate\":1775149021,\"updateDate\":1791847099,\"authorUsername\":\"ابوفيصل محفوظ\",\"authorId\":3031399,\"URL\":\"11178003262\\/نخل_واشنطوني_وعربي\\/\",\"bodyTEXT\":\"تنسيق حدائق وقصور وزراعة طرقات\\nيوجد لدينا نخل واشنطوني وعربي وملوكي وأشجار ونجيل طبيعي وتوصيل جميع مناطق المملكة اتواصل على رقم ( رقم الجوال يظهر عند الضغط على زر تواصل ) \",\"bodyHTML\":\"\",\"thumbURL\":\"720x1280-1_-9oWRAUwmrLJzf9.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"الشهداء الجنوبية\",\"geoHash\":\"sgu8zx\",\"tags\":[\"كل الحراج\",\"زراعة وحدائق\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-4-2\\/720x1280-1_-9oWRAUwmrLJzf9.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-4-2\\/225x400-1_-ZXime7zBAWIYSd.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-4-2\\/736x1600-1_-nOl6CZWyXToQJO.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-4-2\\/960x1280-1_-YT624fHZIcPmp0.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-4-2\\/651x1156-1_-9hPRtK9tjUYXp4.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-4-2\\/1156x651-1_-rN0jwWU3B0j6GM.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-4-2\\/1056x1280-1_-vxBMlELFtpgyar.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-4-2\\/651x1156-1_-Q1JLm4umKudK6g.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-4-2\\/960x1280-1_-MYjYsiyXBxlzuY.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-4-2\\/1200x1600-1_-VpiagKDiLe47h7.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":false,\"commentCount\":2,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":{\"formattedPrice\":\"250\",\"inputPrice\":\"250\"},\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"maee\",\"iconUrl\":\"https:\\/\\/v8-cdn.haraj.com.sa\\/logos\\/maee.png\",\"note\":\"غيِّر سلوكك الاستهلاكي؛ استخدام المياه باعتدال عادةٌ توفر عليك.\",\"link\":\"https:\\/\\/maee.gov.sa\\/\"}],\"BuyButton\":null},{\"id\":189094539,\"title\":\"مشتل زهور النادر للجلسات الخارجيه والنجيله الصناعي والجداري\",\"postDate\":1790075484,\"updateDate\":1791979866,\"authorUsername\":\"زهور النادر\",\"authorId\":15659859,\"URL\":\"11189094539\\/مشتل_زهور_النادر_للجلسات_الخارجيه_والنجيله_الصناعي_والجداري\\/\",\"bodyTEXT\":\"زهور النادر تنسيق حدايق شلالات نوافير نجيله صناعي نجيله جداري 3dمع الضمان والجوده \\nابداع يتجدد وثقه لاتنتهي ( رقم الجوال يظهر عند الضغط على زر تواصل ) \",\"bodyHTML\":\"\",\"thumbURL\":\"960x1280-1_-l8PFpPnbAw2hp2.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"الرحاب\",\"geoHash\":\"sgucbr4hh\",\"tags\":[\"كل الحراج\",\"خدمات\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-22\\/960x1280-1_-l8PFpPnbAw2hp2.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-22\\/960x1280-1_-tZrbheP1NzNGAm.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-22\\/585x563-1_-8e63kPpKLq9Jve.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-22\\/540x528-1_-zGjIRPLOSotnwi.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-9-22\\/571x1280-1_-i5HBC4pdyxdPMP.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":true,\"commentCount\":0,\"upRank\":1,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":null,\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"haraj\",\"iconUrl\":\"\",\"note\":\"المحتالون يتهربون من اللقاء ويحاولون إخفاء هويتهم وتعاملهم غريب.\",\"link\":\"\"}],\"BuyButton\":null},{\"id\":190597074,\"title\":\"تنسيق حدائق وأعمال حدادة وديكورات عامه في الطايف\",\"postDate\":1792058853,\"updateDate\":1792155390,\"authorUsername\":\"ديكورات_عصرية\",\"authorId\":4251587,\"URL\":\"11190597074\\/تنسيق_حدائق_وأعمال_حدادة_وديكورات_عامه_في_الطايف\\/\",\"bodyTEXT\":\"زبائنا الكرام جميع الخدمات العقارية التالية\\nتنسيق حدائق ،أعمال حدادة ،ديكورات خارجية\\nديكورات داخلية،دهانات ،مسابح\",\"bodyHTML\":\"\",\"thumbURL\":\"1021x1021_389B1464-FD25-4615-97A1-B32748E843A7.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"الربيع\",\"geoHash\":\"sguc02wd9\",\"tags\":[\"كل الحراج\",\"خدمات مقاولات\",\"خدمات\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/1021x1021_389B1464-FD25-4615-97A1-B32748E843A7.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/1080x1210_94651C44-A59D-47C1-BDB8-40A01B2327AA.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/500x500_AC37AF10-7532-42F2-B485-D8DEF4ACED82.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/500x500_1ED43D7E-8916-4B34-A0BA-0AB5C984FD60.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/800x600_5B648224-E436-40F7-9C49-F234D718ABB8.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/828x823_8CB0531E-ED04-4B66-A0E6-6CC7EE5FF90E.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/720x720_A5E62D27-0BC4-4247-A36A-EDAB83FD7CC1.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/600x600_6543BD10-234F-4D02-B5BE-CCD44700DEAE.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/564x564_5500FCEC-DAF6-4064-8867-79484546574A.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/450x450_8E62F23E-D23E-4787-A4D8-C550E2653996.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/500x500_8FD22061-1778-4C3A-B8C9-0E8489ABEAB4.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/400x400_461E81FE-B923-4633-BF71-14216A85B9CF.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/500x446_0CED4CA8-E902-44E1-A6BD-D8DE42A7652D.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/1024x1024_A09BCFA4-CCFC-439B-BCF9-9B3A075778C4.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/168x300_250226E6-1944-49EC-B66C-7F9269718AB5.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/600x800_2485FA68-5033-40AA-9DDC-AC8D38AF8F0E.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/768x768_90FCA203-28AD-4722-AE7A-3B97D82389CD.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2026-10-15\\/1080x1080_744E9D81-6802-447F-AD61-5FFC6A583319.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":false,\"commentCount\":0,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":null,\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"haraj\",\"iconUrl\":\"\",\"note\":\"إذا طلب منك أحدهم تسجيل الدخول للحصول على مميزات فاعلم أنه محتال.\",\"link\":\"\"}],\"BuyButton\":null},{\"id\":161094436,\"title\":\"زهرة الطائف لتنسيق الحدائق العامة\",\"postDate\":1751267181,\"updateDate\":1792148420,\"authorUsername\":\"الحديق الذهبية\",\"authorId\":16253640,\"URL\":\"11161094436\\/زهرة_الطائف_لتنسيق_الحدائق_العامة\\/\",\"bodyTEXT\":\"لفن وتصميم الحدائق العامة في مجال التنسيقات وعمل الدكوارت الخارجية والداخلية والمقاولات في جميع أنحاء المملكة العربية\\n#مظلات_حدائق #عشب_جداري #شلالات_نوافير #نجيله_طبيعي\\n#ديكورات #جلسات_خارجيه #ديكورات_منزليه #خشب#برقيه #عشب_جداري #ديكورات_حديثة\\n#غورف#زجوجاجي #تنسيق_حدائق_منزليه\\nمؤسسة التميز افضل وارخص شركه تنسيق حدائق في مجال التنسيقات العامة الطائف\\nلتصميم الغورف ازوجاجيه مع الامجلس\\nجميع انواع المراكن البلاستيك وجميع انواع الورود الموسميه والمستديمه وجميع اشجار الزين  ( رقم الجوال يظهر عند الضغط على زر تواصل )  ابو احمد المصري اسعار خياليه اهم حاجه عندنا ارضاء الزبون\\n#مظلات_حدائق #عشب_جداري #شلالات_نوافير #نجيله_طبيعيه\\n#جلسات_ارضيه #جلسات_خارجيه#ديكورات_حديثة#النوافير#شلالات #ديكورات_حديث ( رقم الجوال يظهر عند الضغط على زر تواصل )  #احواض_زرع #غورف#زجوجاجي #تنسيق_حدائق_منزليه #عشب_جداري#شلالات_مائية  ( رقم الجوال يظهر عند الضغط على زر تواصل )  ابو احمد\",\"bodyHTML\":\"\",\"thumbURL\":\"1242x1425-1_-ruFT3l0DWoPeu1.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"الصيانة\",\"geoHash\":\"sguc23e1d\",\"tags\":[\"كل الحراج\",\"خدمات\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-6-30\\/1242x1425-1_-ruFT3l0DWoPeu1.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-6-30\\/749x973-1_-0kzw9dcDxuxZo8.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-6-30\\/1080x1440-1_-LjnpGBQ8arjBj3.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-6-30\\/960x1280-1_-Xxfgza2ML6VkMa.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-6-30\\/1080x1440-1_-oOLsYbSF1rC5IK.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-6-30\\/1079x1261-1_-ujeGUIrDbaaxUn.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-6-30\\/1080x1337-1_-UXVvWsBuC57DaH.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-6-30\\/1080x1063-1_-7SzUf8JGFB1NDq.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-6-30\\/720x1280-1_-ShXRaTAMfevpjj.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-6-30\\/1080x1080-1_-jXoiZkcqqLSExy.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":false,\"commentCount\":1,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":{\"formattedPrice\":\"25\",\"inputPrice\":\"25\"},\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"haraj\",\"iconUrl\":\"\",\"note\":\"عرضك نيابة عن غيرك بمقابل أو دون مقابل يجعلك مسؤولا أمام الجهات المختصة.\",\"link\":\"\"}],\"BuyButton\":null},{\"id\":157296985,\"title\":\"تنسيق الحدائق\",\"postDate\":1745625330,\"updateDate\":1792151348,\"authorUsername\":\"ابو السيدs\",\"authorId\":18110334,\"URL\":\"11157296985\\/تنسيق_الحدائق\\/\",\"bodyTEXT\":\"ميزانيتك بسيطه تبي تصمم حديقتك  او منزلك من الداخل او الخارج 🏡👉اتصل علينا ولاتشيل هم\\n&lrm;👈تعال نسوي لك أجمل جلسه مع أسرتك واحبابك 💓شيء مرتب وجميل\\n&lrm;👈مناسب لميزانيتك\\n&lrm;اقل تكلفه ممكنه👌نصنع الفرق باادق التفاصيل \\n&lrm;حول حديقة منزلك 🏠لمكان يليق بك.. لتكن الطبيعه جزء من عالمك 🌳\\n&lrm;خبره أعوام سخرنا لخدمتكم في مجال تنسيق الحدائق \\n&lrm;وزراعتها وتصميم وتنفيذ كافه الخدمة قبل التخطيط والتنفيذ \\n&lrm;اسعار منافسه جدا والجوده مضمونه 👌🤝\\n&lrm;خدماتنا 👇\\n#جلسات خارجية_رخيصة#جلسات خارجيه_رخيصه#مظلات_#تنسيق_حدائق_\\n#جلسات خارجية-ساكو#جلسات_خارجيه#ديكور #تنسيق_حدائق#تنسيق_حدائق_ا#ديكورات_جبس#ديكورات_جدران#ديكورات#تنسيق_حدائق_منزلية#🌴#تنسيق_حدائق_#تنسيق_حدائق_جده#جلسات_خارجية#حدائق_منزلية_صغيرة_مودرن#تنسيق_حدائق_تنسيق_حدائق_الطائف@ #اعلان_ممول_منسق_حدائق_ #تنسيق_حدائق🌴أ🔥 # #( رقم الجوال يظهر عند الضغط على زر تواصل ) 📞👷:100:_ا#اعلان_ممول_منسق_حدائق_\",\"bodyHTML\":\"\",\"thumbURL\":\"573x573-1_-cVeWbTyYUScKR3.jpg\",\"hasImage\":true,\"hasVideo\":false,\"city\":\"الطايف\",\"geoCity\":\"الطايف\",\"geoNeighborhood\":\"المضباع\",\"geoHash\":\"sguf114sq\",\"tags\":[\"كل الحراج\",\"خدمات مقاولات\",\"خدمات\"],\"imagesList\":[\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-4-26\\/573x573-1_-cVeWbTyYUScKR3.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-4-26\\/480x599-1_-f5rSxKteydQHkP.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-4-26\\/300x300-1_-Ddk3PGnxwzPJaX.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-4-26\\/300x300-1_-rE0GcPEJEQc0Fo.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-4-26\\/400x496-1_-s2f6Rz78FWei45.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-4-26\\/438x512-1_-2bhiRZ1JCxRRSd.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-4-26\\/300x300-1_-WnBHrrf4l6b48C.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-4-26\\/300x300-1_-AG2UK8HPWFyUrJ.jpg\",\"https:\\/\\/mimg6cdn.haraj.com.sa\\/userfiles30\\/2025-4-26\\/410x512-1_-Wd5oxOw0CIuTsT.jpg\"],\"commentEnabled\":true,\"commentStatus\":0,\"isPromoted\":false,\"commentCount\":0,\"upRank\":0,\"downRank\":0,\"status\":true,\"postType\":\"AD\",\"generalInfo\":null,\"price\":{\"formattedPrice\":\"1\",\"inputPrice\":\"1\"},\"realEstateInfo\":null,\"carInfo\":null,\"tagsFilters\":[],\"jobsInfo\":null,\"postNotesList\":[{\"iconName\":\"haraj\",\"iconUrl\":\"\",\"note\":\"تعاملك يجب أن يكون مع المعلن فقط وجود طرف ثالث قد يعني الاحتيال.\",\"link\":\"\"}],\"BuyButton\":null}],\"pageInfo\":null}}]}}}",
+   "body_len": 42060
+  },
+  {
+   "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-2QQDXE6ED2&gtm=45je6ae1v9255186204za200zd9255186204xf1&_p=1792169106581&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=2122326252.1792169055&frm=0&ngs=1&pscdl=noapi&rcb=1&sr=412x915&uaa=arm&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=1&uap=Android&uapv=14&uaw=0&ul=ar-sa&_s=2&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792169055&sct=1&seg=1&dl=https%3A%2F%2Fharaj.com.sa%2F11190685618%2F%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%2F&dt=%D8%AA%D9%86%D8%B3%D9%8A%D9%82%20%D8%AD%D8%AF%D8%A7%D8%A6%D9%82%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%20%7C%20%D9%85%D9%88%D9%82%D8%B9%20%D8%AD%D8%B1%D8%A7%D8%AC&en=post_viewed&_ee=1&ep.appName=harajV10Vite&ep.appVersion=N0.0.1%20%2C%202026-10-11%2022&ep.event_category=post_view&ep.city=%D8%A7%D9%84%D8%B7%D8%A7%D9%8A%D9%81&epn.postId=190685618&ep.tags=%D9%83%D9%84%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A7%D8%AC%2C%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9%20%D9%88%D8%AD%D8%AF%D8%A7%D8%A6%D9%82&ep.source=direct&ep.owner_action=false&_et=2&tfd=5603",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "content_type": "text/plain",
+   "post_data": "",
+   "req_headers": {
+    ":authority": "www.google-analytics.com",
+    ":method": "POST",
+    ":path": "/g/collect?v=2&tid=G-2QQDXE6ED2&gtm=45je6ae1v9255186204za200zd9255186204xf1&_p=1792169106581&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=2122326252.1792169055&frm=0&ngs=1&pscdl=noapi&rcb=1&sr=412x915&uaa=arm&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=1&uap=Android&uapv=14&uaw=0&ul=ar-sa&_s=2&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792169055&sct=1&seg=1&dl=https%3A%2F%2Fharaj.com.sa%2F11190685618%2F%D8%AA%D9%86%D8%B3%D9%8A%D9%82_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%2F&dt=%D8%AA%D9%86%D8%B3%D9%8A%D9%82%20%D8%AD%D8%AF%D8%A7%D8%A6%D9%82%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%20%7C%20%D9%85%D9%88%D9%82%D8%B9%20%D8%AD%D8%B1%D8%A7%D8%AC&en=post_viewed&_ee=1&ep.appName=harajV10Vite&ep.appVersion=N0.0.1%20%2C%202026-10-11%2022&ep.event_category=post_view&ep.city=%D8%A7%D9%84%D8%B7%D8%A7%D9%8A%D9%81&epn.postId=190685618&ep.tags=%D9%83%D9%84%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A7%D8%AC%2C%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9%20%D9%88%D8%AD%D8%AF%D8%A7%D8%A6%D9%82&ep.source=direct&ep.owner_action=false&_et=2&tfd=5603",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "cache-control": "no-cache",
+    "content-length": "0",
+    "origin": "https://haraj.com.sa",
+    "pragma": "no-cache",
+    "priority": "u=1, i",
+    "referer": "https://haraj.com.sa/",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  }
+ ]
+}
