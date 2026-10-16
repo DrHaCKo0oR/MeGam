@@ -49,6 +49,15 @@ class PropertyFinderSource : ListingSource {
         return SearchResult(source, out.values.toList(), pages, errors.take(5))
     }
 
+    override suspend fun details(listing: Listing, ctx: SearchContext): Listing {
+        var resp = ctx.http.send(HttpRequest(listing.url, originPage = BASE + "/ar"))
+        if (resp.status == 403 || resp.status == 405 || resp.status == 202) {
+            resp = ctx.http.send(HttpRequest(listing.url, mode = FetchMode.BROWSER, originPage = BASE + "/ar"))
+        }
+        if (!resp.ok) return listing
+        return mergeDetails(listing, resp.body)
+    }
+
     companion object {
         const val BASE = "https://www.propertyfinder.sa"
 
@@ -64,10 +73,35 @@ class PropertyFinderSource : ListingSource {
             return listings to (sr["meta"]["page_count"].int ?: 1)
         }
 
-        private val amenityMap = mapOf(
-            "AC" to Feature.AC, "BA" to Feature.BALCONY, "CP" to Feature.PARKING, "MR" to Feature.MAID_ROOM,
-            "SP" to Feature.POOL, "PP" to Feature.POOL, "ST" to Feature.STORAGE, "EL" to Feature.ELEVATOR,
+        /** Amenity names on ad pages (the list view only carries utility codes such as EL = electricity). */
+        private val amenityNames = listOf(
+            "مصعد" to Feature.ELEVATOR, "elevator" to Feature.ELEVATOR,
+            "تكييف" to Feature.AC, "مكيف" to Feature.AC, "air condition" to Feature.AC,
+            "موقف" to Feature.PARKING, "parking" to Feature.PARKING,
+            "غرفة خادمة" to Feature.MAID_ROOM, "maid" to Feature.MAID_ROOM,
+            "مسبح" to Feature.POOL, "pool" to Feature.POOL,
+            "شرفة" to Feature.BALCONY, "بلكونة" to Feature.BALCONY, "balcony" to Feature.BALCONY,
+            "مخزن" to Feature.STORAGE, "storage" to Feature.STORAGE,
         )
+
+        /** Adds the ad page's full photo set, description, building age and amenities. */
+        fun mergeDetails(listing: Listing, html: String): Listing {
+            val p = NextData.extract(html)["props"]["pageProps"]["propertyResult"]["property"] ?: return listing
+            val photos = p["images"]["property"].arr.mapNotNull { it["full"].str ?: it["medium"].str ?: it["small"].str }
+            val features = p["amenities"].arr.mapNotNull { a ->
+                val name = (a["name"].str ?: a.str ?: return@mapNotNull null).lowercase()
+                amenityNames.firstOrNull { name.contains(it.first) }?.second
+            }
+            return listing.copy(
+                description = p["description"].str ?: listing.description,
+                photos = photos.ifEmpty { listing.photos },
+                buildingAgeYears = p["age"].int ?: listing.buildingAgeYears,
+                bedrooms = p["bedrooms_value"].int ?: listing.bedrooms,
+                bathrooms = p["bathrooms_value"].int ?: listing.bathrooms,
+                phone = listing.phone ?: p["rega_attributes"]["responsible_employee_phone_number"].str,
+                features = listing.features + features,
+            )
+        }
 
         internal fun toListing(p: JsonElement): Listing? {
             val id = p["id"].str ?: return null
@@ -109,7 +143,12 @@ class PropertyFinderSource : ListingSource {
                 city = p["location_tree"].arr.firstOrNull { it["type"].str == "CITY" }?.get("name").str,
                 district = p["location"]["name"].str,
                 location = point,
-                locationPrecision = if (point != null) LocationPrecision.APPROXIMATE else LocationPrecision.UNKNOWN,
+                // Coordinates are the district centre unless the location is a building or street.
+                locationPrecision = when {
+                    point == null -> LocationPrecision.UNKNOWN
+                    p["location"]["type"].str == "DISTRICT" -> LocationPrecision.DISTRICT
+                    else -> LocationPrecision.APPROXIMATE
+                },
                 photos = p["images"].arr.mapNotNull { it["full"].str ?: it["medium"].str ?: it["small"].str },
                 advertiserName = p["broker"]["name"].str ?: p["agent"]["name"].str,
                 phone = contact("phone"),
@@ -117,7 +156,7 @@ class PropertyFinderSource : ListingSource {
                 licenseNumber = p["rera"].str,
                 postedAt = p["listed_date"].str?.let { runCatching { Instant.parse(it).toEpochMilli() }.getOrNull() },
                 updatedAt = p["last_refreshed_at"].str?.let { runCatching { Instant.parse(it).toEpochMilli() }.getOrNull() },
-                features = p["amenities"].arr.mapNotNull { amenityMap[it.str] }.toSet(),
+                features = if (p["is_new_construction"].bool == true) setOf(Feature.NEW_BUILDING) else emptySet(),
             )
         }
     }

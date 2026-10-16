@@ -124,15 +124,19 @@ class AqarSource : ListingSource {
         internal fun toListing(o: JsonElement): Listing? {
             val id = o["id"].lng ?: return null
             val price = o["price"].dbl
-            val p12 = o["price_12_payments"].dbl
-            var period = when (o["rent_period"].int) {
-                3 -> RentPeriod.YEARLY
-                2 -> RentPeriod.MONTHLY
-                1 -> RentPeriod.DAILY
+            val p12 = o["price_12_payments"].dbl?.takeIf { it > 0 }
+            val p2 = o["price_2_payments"].dbl?.takeIf { it > 0 }
+            // rent_period is 3 on most ads whatever the price means, so the payment-plan totals decide:
+            // a 12-payment total of about 12× the price makes it monthly, a 2-payment total near it yearly.
+            val period = when {
+                price == null || price <= 0 -> RentPeriod.UNKNOWN
+                p12 != null && p12 / price in 10.0..14.5 -> RentPeriod.MONTHLY
+                p2 != null && p2 / price in 0.8..1.35 -> RentPeriod.YEARLY
+                p12 != null && p12 / price in 0.8..1.8 -> RentPeriod.YEARLY
+                o["rent_period"].int == 1 -> RentPeriod.DAILY
+                o["rent_period"].int == 2 -> RentPeriod.MONTHLY
                 else -> RentPeriod.UNKNOWN
             }
-            // A 12-payment total of about 12× the price means the price is monthly.
-            if (price != null && price > 0 && p12 != null && p12 > 0 && kotlin.math.abs(p12 - price * 12) < price * 2) period = RentPeriod.MONTHLY
             val loc = o["location"]
             val point = runCatching { GeoPoint(loc["lat"].dbl!!, loc["lng"].dbl!!) }.getOrNull()
             val user = o["user"]

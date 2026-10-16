@@ -5,6 +5,7 @@ import app.shaqati.core.model.LocationPrecision
 import app.shaqati.core.model.PropertyKind
 import app.shaqati.core.model.RentPeriod
 import app.shaqati.core.model.Source
+import app.shaqati.core.text.TextSignals
 import app.shaqati.core.util.Geo
 import app.shaqati.core.util.HttpRequest
 import kotlinx.serialization.json.JsonElement
@@ -93,7 +94,7 @@ class HarajSource : ListingSource {
         internal fun toListing(o: JsonElement): Listing? {
             val id = o["id"].lng ?: return null
             val title = o["title"].str ?: ""
-            if (WantedAd.matches(title)) return null
+            if (WantedAd.matches(title) || WantedAd.matches(o["bodyTEXT"].str?.take(60))) return null
             if (o["status"].bool == false) return null
             val body = o["bodyTEXT"].str ?: ""
             // Posts whose licence says "sale" are not rentals.
@@ -116,6 +117,9 @@ class HarajSource : ListingSource {
                 title.contains("استديو") || title.contains("استوديو") || title.contains("ستديو") -> PropertyKind.STUDIO
                 else -> PropertyKind.APARTMENT
             }
+            val licence = o["realEstateInfo"]["re_REGA_Authorization_number"].str
+            // Unlicensed posts with neither a price nor a map pin are chatter, not offers.
+            if (licence == null && price == null && mapPoint == null) return null
             val path = o["URL"].str ?: "$id"
             return Listing(
                 source = Source.HARAJ,
@@ -126,7 +130,8 @@ class HarajSource : ListingSource {
                 kind = kind,
                 price = price,
                 period = period,
-                bedrooms = regaRooms.find(body)?.groupValues?.get(1)?.toIntOrNull()?.takeIf { it in 1..8 },
+                bedrooms = TextSignals.analyze(title, body).bedrooms
+                    ?: regaRooms.find(body)?.groupValues?.get(1)?.toIntOrNull()?.let { RegaRooms.toBedrooms(it) },
                 areaSqm = regaArea.find(body)?.groupValues?.get(1)?.toDoubleOrNull(),
                 city = o["city"].str,
                 district = o["geoNeighborhood"].str,
@@ -138,7 +143,7 @@ class HarajSource : ListingSource {
                 },
                 photos = o["imagesList"].arr.mapNotNull { it.str },
                 advertiserName = o["authorUsername"].str,
-                licenseNumber = o["realEstateInfo"]["re_REGA_Authorization_number"].str,
+                licenseNumber = licence,
                 postedAt = o["postDate"].lng?.times(1000),
                 updatedAt = o["updateDate"].lng?.times(1000),
             )

@@ -54,7 +54,7 @@ object Resolver {
         }
         // A "yearly" price under the monthly ceiling is a monthly price published in the wrong field,
         // and an apartment "monthly" price in the tens of thousands is a yearly price.
-        if (period == RentPeriod.YEARLY && price != null && price <= 6_000.0) {
+        if (period == RentPeriod.YEARLY && price != null && price <= MONTHLY_CEILING) {
             period = RentPeriod.MONTHLY
             inferred = true
         } else if (period == RentPeriod.MONTHLY && price != null && price >= 20_000.0) {

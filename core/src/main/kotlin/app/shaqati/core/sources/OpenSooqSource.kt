@@ -178,10 +178,10 @@ class OpenSooqSource : ListingSource {
                 for (raw in labels) {
                     val t = ArabicText.normalize(raw)
                     c = when {
-                        t.contains("غرف") && t.contains("نوم") || t.contains("غرفه نوم") || t.contains("غرفتا") -> c.copy(bedrooms = count(t, "غرفه", "غرفتا"))
+                        t.contains("غرف") && !t.contains("حمام") -> c.copy(bedrooms = count(t, "غرفه", "غرفتا"))
                         t.contains("حمام") -> c.copy(bathrooms = count(t, "حمام", "حمامين"))
                         t.contains("غير مفروش") -> c.copy(furnishing = Furnishing.UNFURNISHED)
-                        t.contains("جزئي") -> c.copy(furnishing = Furnishing.SEMI_FURNISHED)
+                        t.contains("جزي") -> c.copy(furnishing = Furnishing.SEMI_FURNISHED)
                         t.contains("مفروش") -> c.copy(furnishing = Furnishing.FURNISHED)
                         t.contains("شهري") -> c.copy(period = RentPeriod.MONTHLY)
                         t.contains("سنوي") -> c.copy(period = RentPeriod.YEARLY)

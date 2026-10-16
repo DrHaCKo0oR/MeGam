@@ -37,12 +37,22 @@ internal val JsonElement?.arr: List<JsonElement> get() = (this as? JsonArray) ?:
 
 /** Next.js App Router pages stream their data as `self.__next_f.push([1,"…"])` chunks. */
 object RscPayload {
-    private val chunk = Regex("""self\.__next_f\.push\(\[1,"((?:[^"\\]|\\.)*)"]\)""")
+    private const val PUSH = "self.__next_f.push([1,\""
 
+    /** Concatenates and unescapes the string chunks (scanned by hand: a regex overflows the stack on large pages). */
     fun decode(html: String): String {
         val sb = StringBuilder()
-        for (m in chunk.findAll(html)) {
-            sb.append(lenientJson.decodeFromString<String>("\"" + m.groupValues[1] + "\""))
+        var i = html.indexOf(PUSH)
+        while (i >= 0) {
+            val start = i + PUSH.length
+            var j = start
+            while (j < html.length && html[j] != '"') {
+                if (html[j] == '\\') j++
+                j++
+            }
+            if (j >= html.length) break
+            runCatching { lenientJson.decodeFromString<String>("\"" + html.substring(start, j) + "\"") }.onSuccess { sb.append(it) }
+            i = html.indexOf(PUSH, j)
         }
         return sb.toString()
     }
@@ -162,6 +172,8 @@ object PriceText {
     private val thousand = Regex("""$num\s*(?:الف|ألف|آلاف|الاف|k\b)""")
     private val keyed = Regex("""(?:السعر|الايجار|الإيجار|ايجار|إيجار|سعر الوحده|سعر الوحدة|الاجار|المبلغ|price|rent)\s*(?:السنوي|الشهري)?\s*[:：\-]?\s*$num""")
     private val withCurrency = Regex("""$num\s*(?:ريال|رس|ر\.س|sar|﷼)""")
+    private val afterPeriod = Regex("""(?:شهري|شهريا|سنوي|سنويا|سعرها|سعره|بسعر)\s*[:：\-]?\s*(\d{1,3}(?:[,.]\d{3})+|\d{4,6})(?!\d)""")
+    private val attachedBa = Regex("""(?<![\p{L}\d])ب\s?(\d{1,3}(?:[,.]\d{3})+|\d{4,6})(?!\d)""")
 
     fun extract(raw: String?): Found? {
         if (raw.isNullOrBlank()) return null
@@ -170,6 +182,8 @@ object PriceText {
         thousand.findAll(t).forEach { m -> parseNum(m.groupValues[1])?.let { candidates += it * 1000 to m.range.first } }
         keyed.findAll(t).forEach { m -> parseNum(m.groupValues[1])?.let { candidates += it to m.range.first } }
         withCurrency.findAll(t).forEach { m -> parseNum(m.groupValues[1])?.let { candidates += it to m.range.first } }
+        afterPeriod.findAll(t).forEach { m -> parseNum(m.groupValues[1])?.let { candidates += it to m.range.first } }
+        attachedBa.findAll(t).forEach { m -> parseNum(m.groupValues[1])?.let { candidates += it to m.range.first } }
         val plausible = candidates.filter { it.first in 800.0..400_000.0 }
         val best = plausible.minByOrNull { it.second } ?: return null
         val around = t.substring((best.second - 25).coerceAtLeast(0), (best.second + 45).coerceAtMost(t.length))
@@ -198,8 +212,19 @@ object MapLink {
     }
 }
 
+/** REGA licences count every room; one of them is usually the living room. */
+object RegaRooms {
+    fun toBedrooms(rooms: Int): Int? = when {
+        rooms !in 1..12 -> null
+        rooms == 1 -> 1
+        else -> rooms - 1
+    }
+}
+
 /** Ads that ask for an apartment rather than offer one. */
 object WantedAd {
-    private val wanted = Regex("^\\s*(مطلوب|مطلوووب|ابحث|أبحث|احتاج|أحتاج|محتاج|محتاجه|ودي|نبي|ابغى|أبغى|ابي|wanted|looking for)")
+    private val wanted = Regex(
+        "^\\s*(?:السلام عليكم(?: ورحمه الله(?: وبركاته)?)?[\\s,.،!]*)?(مطلوب|مطلوووب|ابحث|أبحث|احتاج|أحتاج|محتاج|محتاجه|ودي|نبي|ابغى|أبغى|ابي|wanted|looking for)"
+    )
     fun matches(title: String?): Boolean = wanted.containsMatchIn(ArabicText.normalizeLetters(title ?: ""))
 }

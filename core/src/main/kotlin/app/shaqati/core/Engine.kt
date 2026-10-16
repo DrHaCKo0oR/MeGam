@@ -2,7 +2,9 @@ package app.shaqati.core
 
 import app.shaqati.core.ai.AiAssessment
 import app.shaqati.core.ai.Prompt
+import app.shaqati.core.commute.ApproximateCommute
 import app.shaqati.core.commute.CommuteEstimate
+import app.shaqati.core.commute.CommuteMethod
 import app.shaqati.core.commute.CommuteService
 import app.shaqati.core.dedupe.Dedupe
 import app.shaqati.core.filter.Check
@@ -62,8 +64,11 @@ enum class Sort { BEST, NEWEST, CHEAPEST, CLOSEST, MODERN }
 
 /** How strict the feed is. */
 enum class FeedMode {
-    /** Meets every stated requirement; unknown details allowed but labelled. */
+    /** Meets every requirement, with rent, rooms and commute confirmed; minor unknowns are labelled. */
     MATCHES,
+
+    /** Breaks no stated requirement, but the ad omits the rent, the room count or the location. */
+    UNCONFIRMED,
 
     /** Fails exactly one soft requirement (commute, rent, rooms) by a small margin. */
     NEAR_MISSES,
@@ -211,10 +216,21 @@ class Engine(
     /** Drops cached commute results, e.g. after the work pin or calibration changes. */
     suspend fun clearCommutes() = mutex.withLock { snapshot = snapshot.copy(commute = emptyMap()) }
 
-    fun views(criteria: Criteria, mode: FeedMode = FeedMode.MATCHES, sort: Sort = Sort.BEST, includeHidden: Boolean = false): List<ListingView> {
+    /**
+     * Feed items for [mode]. [work] enables the straight-line commute estimate for listings
+     * whose traffic forecast is not computed yet.
+     */
+    fun views(
+        criteria: Criteria,
+        mode: FeedMode = FeedMode.MATCHES,
+        sort: Sort = Sort.BEST,
+        includeHidden: Boolean = false,
+        work: GeoPoint? = null,
+        includeGone: Boolean = false,
+    ): List<ListingView> {
         val s = snapshot
         val now = clock()
-        val live = s.tracked.values.filter { it.goneAt == null }
+        val live = s.tracked.values.filter { includeGone || it.goneAt == null }
         val items = live.map { Dedupe.Item(it.listing, resolved(it.listing)) }
         val groups = Dedupe.group(items)
         val byGroup = items.groupBy { groups[it.listing.id] ?: it.listing.id }
@@ -223,14 +239,16 @@ class Engine(
             val main = members.first { it.listing.id == gid }
             val l = main.listing
             val r = main.resolved
-            val commute = commuteFor(l)
+            val commute = commuteFor(l) ?: work?.let { w -> l.location?.let { approximate(it, w, now) } }
             val ai = s.ai[gid] ?: members.firstNotNullOfOrNull { s.ai[it.listing.id] }
             val eval = Evaluator.evaluate(l, r, criteria, commute?.morningMinutes, commute?.eveningMinutes, now)
             val ids = members.map { it.listing.id }
             val hidden = ids.any { it in s.user.hidden }
             if (hidden && !includeHidden) continue
+            val confirmed = eval.passes && eval.unconfirmed.none { it in CRITICAL }
             val keep = when (mode) {
-                FeedMode.MATCHES -> eval.passes
+                FeedMode.MATCHES -> confirmed
+                FeedMode.UNCONFIRMED -> eval.passes && !confirmed
                 FeedMode.NEAR_MISSES -> !eval.passes && nearMiss(eval, r, commute, criteria)
                 FeedMode.ALL -> true
             }
@@ -248,10 +266,15 @@ class Engine(
                 hidden = hidden,
                 firstSeenAt = first,
                 isNew = ids.none { it in s.user.seen } && now - first < 3 * Evaluator.DAY_MS,
-                gone = false,
+                gone = members.all { s.tracked[it.listing.id]?.goneAt != null },
             )
         }
         return sort(out, sort)
+    }
+
+    private fun approximate(home: GeoPoint, work: GeoPoint, now: Long): CommuteEstimate {
+        val m = ApproximateCommute.minutes(home, work)
+        return CommuteEstimate(m, m, m, m, ApproximateCommute.roadKm(home, work), CommuteMethod.APPROXIMATE, now, null, null)
     }
 
     private fun nearMiss(e: Evaluation, r: Resolved, c: CommuteEstimate?, k: Criteria): Boolean {
@@ -273,15 +296,15 @@ class Engine(
         Sort.MODERN -> list.sortedByDescending { it.score.finish }
     }
 
-    fun savedViews(criteria: Criteria): List<ListingView> {
+    fun savedViews(criteria: Criteria, work: GeoPoint? = null): List<ListingView> {
         val saved = snapshot.user.saved
-        return views(criteria, FeedMode.ALL, Sort.BEST, includeHidden = true)
+        return views(criteria, FeedMode.ALL, Sort.BEST, includeHidden = true, work = work, includeGone = true)
             .filter { v -> v.alsoOn.any { it.id in saved } }
             .sortedByDescending { v -> v.alsoOn.maxOf { saved[it.id] ?: 0L } }
     }
 
-    fun view(id: String, criteria: Criteria): ListingView? =
-        views(criteria, FeedMode.ALL, includeHidden = true).firstOrNull { v -> v.alsoOn.any { it.id == id } }
+    fun view(id: String, criteria: Criteria, work: GeoPoint? = null): ListingView? =
+        views(criteria, FeedMode.ALL, includeHidden = true, work = work, includeGone = true).firstOrNull { v -> v.alsoOn.any { it.id == id } }
 
     // ---- user actions ----
 
@@ -309,10 +332,10 @@ class Engine(
      * Listings worth assessing: they meet the requirements (unknowns allowed),
      * have enough photos, are not hidden, and were not assessed before.
      */
-    fun aiQueue(criteria: Criteria, minPhotos: Int = 3): List<ListingView> {
+    fun aiQueue(criteria: Criteria, work: GeoPoint? = null, minPhotos: Int = 3): List<ListingView> {
         val s = snapshot
         val pending = s.batches.flatMap { it.listingIds }.toSet()
-        return views(criteria, FeedMode.MATCHES)
+        return views(criteria, FeedMode.MATCHES, work = work)
             .filter { it.ai == null && it.id !in pending && it.listing.photos.size >= minPhotos }
             .filter { it.resolved.text.renovationScore > -4 }
             .sortedByDescending { it.score.total }
@@ -339,6 +362,11 @@ class Engine(
     suspend fun replace(newSnapshot: CatalogSnapshot) = mutex.withLock {
         snapshot = newSnapshot
         resolvedCache = java.util.concurrent.ConcurrentHashMap()
+    }
+
+    companion object {
+        /** Unknowns that keep a listing out of the confirmed matches. */
+        val CRITICAL = setOf(Check.RENT, Check.PRICE_PERIOD, Check.ROOMS, Check.COMMUTE_AM)
     }
 
     private fun monthKey(ms: Long): String = Instant.ofEpochMilli(ms).atZone(ZoneOffset.UTC).let { "%04d-%02d".format(it.year, it.monthValue) }

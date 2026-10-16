@@ -7,6 +7,7 @@ import app.shaqati.core.model.LocationPrecision
 import app.shaqati.core.model.PropertyKind
 import app.shaqati.core.model.RentPeriod
 import app.shaqati.core.model.Source
+import app.shaqati.core.text.TextSignals
 import app.shaqati.core.util.Geo
 import app.shaqati.core.util.HttpRequest
 import kotlinx.coroutines.delay
@@ -15,9 +16,11 @@ import java.time.Instant
 
 /**
  * Deal (dealapp.sa) through its public app API with a guest session.
- * The API returns at most 10 ads per page and rate-limits, so requests are paced.
+ * Guests may read the first [GUEST_PAGES] pages (10 ads each) of a query, and the API
+ * rate-limits and blocks fast clients, so each refresh reads only the newest ads at a
+ * gentle pace and stops at the first refusal.
  */
-class DealSource(private val pace: Long = 900) : ListingSource {
+class DealSource(private val pace: Long = 2_500) : ListingSource {
     override val source = Source.DEAL
 
     @Volatile
@@ -35,41 +38,50 @@ class DealSource(private val pace: Long = 900) : ListingSource {
             )
         )
         val t = resp.headers.entries.firstOrNull { it.key.equals("authorization", ignoreCase = true) }?.value
-        token = t?.let { if (it.startsWith("Bearer")) it else "Bearer $it" }
+        token = t?.takeIf { it.isNotBlank() }?.let { if (it.startsWith("Bearer")) it else "Bearer $it" }
         return token
     }
 
     private fun headers(t: String) = mapOf("Authorization" to t, "Origin" to "https://dealapp.sa", "Accept-Language" to "ar")
 
     override suspend fun search(ctx: SearchContext): SearchResult {
+        // A fresh guest session per refresh, like opening the site again.
+        token = null
         val t = runCatching { guest(ctx) }.getOrNull()
             ?: return SearchResult(source, emptyList(), 0, listOf("guest session failed"), blocked = true)
         val out = LinkedHashMap<String, Listing>()
         val errors = mutableListOf<String>()
         var pages = 0
-        for (type in PROPERTY_TYPES) {
-            for (page in 1..ctx.maxPages * 3) {
+        var refused = false
+        types@ for (type in PROPERTY_TYPES) {
+            for (page in 1..GUEST_PAGES) {
+                if (pages > 0) delay(pace)
                 val url = "$API/ad?page=$page&limit=10&city=$RIYADH&purpose=RENT&propertyType=$type&maxPrice=${ctx.criteria.maxAnnualRent.toLong()}"
                 val resp = runCatching { ctx.http.send(HttpRequest(url, headers = headers(t))) }
                     .getOrElse { errors += it.message ?: "error"; null } ?: break
                 pages++
-                if (resp.status == 401) { token = null; errors += "session expired"; break }
-                if (resp.status == 429) { errors += "rate limited"; break }
+                if (resp.status == 401 || resp.status == 403 || resp.status == 429) {
+                    errors += "HTTP ${resp.status}"
+                    refused = true
+                    break@types
+                }
                 if (!resp.ok) { errors += "HTTP ${resp.status}"; break }
                 val root = runCatching { lenientJson.parseToJsonElement(resp.body) }.getOrNull() ?: break
                 val items = root["data"].arr.mapNotNull { runCatching { toListing(it) }.getOrNull() }
                 items.filter { it.location == null || Geo.distanceKm(it.location, ctx.area.center) <= ctx.area.radiusKm * 1.5 }
                     .forEach { out[it.id] = it }
                 if (root["hasNextPage"].bool != true) break
-                delay(pace)
             }
         }
-        return SearchResult(source, out.values.toList(), pages, errors.distinct().take(5))
+        token = null
+        return SearchResult(source, out.values.toList(), pages, errors.distinct().take(5), blocked = refused && out.isEmpty())
     }
 
     override suspend fun details(listing: Listing, ctx: SearchContext): Listing {
         val t = guest(ctx) ?: return listing
+        delay(pace)
         val resp = ctx.http.send(HttpRequest("$API/ad/${listing.sourceId}", headers = headers(t)))
+        if (resp.status == 401 || resp.status == 403) token = null
         if (!resp.ok) return listing
         val d = lenientJson.parseToJsonElement(resp.body)["data"] ?: return listing
         return toListing(d)?.let { full -> full.copy(title = full.title.ifBlank { listing.title }) } ?: listing
@@ -79,8 +91,11 @@ class DealSource(private val pace: Long = 900) : ListingSource {
         const val API = "https://api.dealapp.sa/production"
         const val RIYADH = "6009d941950ada00061eeeab"
 
-        /** Apartment and apartment-in-compound. */
-        val PROPERTY_TYPES = listOf("63091bcd45e4ba93412d5d25", "63091cd645e4ba2cf22d5d64")
+        const val GUEST_PAGES = 4
+        const val FLOOR_TYPE = "63091bec45e4bacf002d5d2d"
+
+        /** Apartment, apartment in a residential compound, and floor (دور). */
+        val PROPERTY_TYPES = listOf("63091bcd45e4ba93412d5d25", "63091cd645e4ba2cf22d5d64", FLOOR_TYPE)
 
         internal fun toListing(o: JsonElement): Listing? {
             val id = o["_id"].str ?: o["id"].str ?: return null
@@ -110,7 +125,7 @@ class DealSource(private val pace: Long = 900) : ListingSource {
                 url = if (code != null) "https://dealapp.sa/ar/ad-details/$code" else "https://dealapp.sa/ar",
                 title = o["title"].str ?: "",
                 description = o["description"].str ?: "",
-                kind = PropertyKind.APARTMENT,
+                kind = if (o["propertyType"]["_id"].str == FLOOR_TYPE) PropertyKind.FLOOR else PropertyKind.APARTMENT,
                 price = o["price"].dbl?.takeIf { it > 0 },
                 period = when (o["rentType"].str?.uppercase()) {
                     "ANNUALLY", "YEARLY" -> RentPeriod.YEARLY
@@ -119,7 +134,8 @@ class DealSource(private val pace: Long = 900) : ListingSource {
                     "DAILY" -> RentPeriod.DAILY
                     else -> RentPeriod.UNKNOWN
                 },
-                bedrooms = rega["numberOfRooms"].int?.takeIf { it in 1..10 },
+                bedrooms = TextSignals.analyze(o["title"].str, o["description"].str).bedrooms
+                    ?: rega["numberOfRooms"].int?.let { RegaRooms.toBedrooms(it) },
                 areaSqm = o["area"].dbl ?: rega["propertyArea"].dbl,
                 audience = when {
                     "FAMILY" in accommodation && "SINGLES" in accommodation -> Audience.ANY
