@@ -21,6 +21,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.webkit.WebViewAssetLoader
@@ -74,13 +75,16 @@ fun MapWeb(
     val select by rememberUpdatedState(onSelect)
     val centerCb by rememberUpdatedState(onCenter)
     val main = remember { Handler(Looper.getMainLooper()) }
+    // The activity itself rather than LocalContext, which carries resources set up for Western
+    // digits; WebView loads its own resources through the context it is given.
+    val activityContext = LocalView.current.context
 
     key(generation) {
         AndroidView(
             modifier = modifier.testTag(if (ready) "map_ready" else "map_loading"),
-            factory = { ctx ->
+            factory = { _ ->
                 val loader = WebViewAssetLoader.Builder()
-                    .addPathHandler("/assets/", WebViewAssetLoader.AssetsPathHandler(ctx))
+                    .addPathHandler("/assets/", WebViewAssetLoader.AssetsPathHandler(activityContext))
                     .build()
                 val initJs = String.format(
                     Locale.ROOT,
@@ -89,7 +93,7 @@ fun MapWeb(
                     googleKey?.let { mapJson.encodeToString(String.serializer(), it) } ?: "null",
                     language, pick,
                 )
-                WebView(ctx).apply {
+                WebView(activityContext).apply {
                     settings.javaScriptEnabled = true
                     settings.domStorageEnabled = true
                     // Starts the map once the page has loaded. The page also asks for this through the
