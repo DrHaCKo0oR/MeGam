@@ -106,6 +106,10 @@ object TextSignals {
         ar("(\\d{1,2})\\s*(bath(room)?s?|wc|toilets?)\\b"),
     )
     private val twoBathrooms = ar("دورتين|دورتان|دورتي مياه|حمامين|حمامان|two bath(room)?s?")
+    // "غرفة وصالة وحمام" (room, living room and a bathroom) or "حمام واحد": a single bathroom.
+    private val oneBathroom = ar(
+        "(غرفه|غرفتين|غرف)[^.\\n]{0,30}صاله[^.\\n]{0,20}(و|\\+)\\s*(حمام|دوره مياه)(?!ين|ات|ان)|(حمام|دوره مياه) (واحد|واحده)|one bath(room)?\\b"
+    )
     private val majlis = ar("مجلس|majlis|guest room|diwan|ديوانيه")
     private val kitchenWord = ar("مطبخ|kitchen")
     private val kitchenFitted = ar("مطبخ (راكب|مركب|جاهز|مجهز|كامل|مع الاجهزه)|مع المطبخ|المطبخ راكب|fitted kitchen|equipped kitchen|kitchen installed|built[- ]in kitchen")
@@ -164,7 +168,11 @@ object TextSignals {
             anyLiving.containsMatchIn(t) -> 1
             else -> null
         }
-        val baths = maxCount(t, bathroomPatterns) ?: if (twoBathrooms.containsMatchIn(t)) 2 else null
+        val baths = maxCount(t, bathroomPatterns) ?: when {
+            twoBathrooms.containsMatchIn(t) -> 2
+            oneBathroom.containsMatchIn(t) -> 1
+            else -> null
+        }
 
         val fitted = when {
             kitchenFitted.containsMatchIn(t) -> true

@@ -27,6 +27,7 @@ class OpenSooqSource : ListingSource {
         var pages = 0
         var mode = FetchMode.DIRECT
         var page = 1
+        var complete = false
         while (page <= ctx.maxPages) {
             val resp = runCatching {
                 ctx.http.send(HttpRequest(listUrl(page), headers = mapOf("Accept-Language" to "ar"), mode = mode))
@@ -38,10 +39,10 @@ class OpenSooqSource : ListingSource {
             val (items, pageCount) = parseSearch(resp.body)
             items.filter { it.location == null || Geo.distanceKm(it.location, ctx.area.center) <= ctx.area.radiusKm * 1.5 }
                 .forEach { out[it.id] = it }
-            if (items.isEmpty() || page >= pageCount) break
+            if (items.isEmpty() || page >= pageCount) { complete = true; break }
             page++
         }
-        return SearchResult(source, out.values.toList(), pages, errors.distinct().take(5))
+        return SearchResult(source, out.values.toList(), pages, errors.distinct().take(5), complete = complete && errors.isEmpty())
     }
 
     override suspend fun details(listing: Listing, ctx: SearchContext): Listing {

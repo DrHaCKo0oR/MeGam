@@ -33,9 +33,11 @@ class AqarSource : ListingSource {
         val errors = mutableListOf<String>()
         var pages = 0
         val polygon = circle(ctx.area.center, ctx.area.radiusKm)
+        var complete = true
         // Category 1: apartments for rent; 4: floors for rent.
         for (category in listOf(1, 4)) {
             var from = 0
+            var reachedEnd = false
             for (page in 1..ctx.maxPages * 2) {
                 val body = query(category, ctx.criteria.maxAnnualRent, polygon, from, PAGE_SIZE)
                 val resp = runCatching {
@@ -55,13 +57,15 @@ class AqarSource : ListingSource {
                     return SearchResult(source, out.values.toList(), pages, errors + "HTTP ${resp.status}", blocked = true)
                 }
                 if (!resp.ok) { errors += "HTTP ${resp.status}"; break }
-                val (items, total) = parseSearch(resp.body)
-                items.forEach { out[it.id] = it }
-                from += PAGE_SIZE
-                if (items.size < PAGE_SIZE || from >= total) break
+                // Aqar returns fewer ads than asked for (70 per page), so paging follows what came back.
+                val result = parseSearch(resp.body)
+                result.listings.forEach { out[it.id] = it }
+                from += result.received
+                if (result.received == 0 || from >= result.total) { reachedEnd = true; break }
             }
+            if (!reachedEnd) complete = false
         }
-        return SearchResult(source, out.values.toList(), pages, errors.distinct().take(5))
+        return SearchResult(source, out.values.toList(), pages, errors.distinct().take(5), complete = complete && errors.isEmpty())
     }
 
     companion object {
@@ -103,12 +107,15 @@ class AqarSource : ListingSource {
             }
         }.toString()
 
-        /** Listings and the total count from a search response. */
-        fun parseSearch(body: String): Pair<List<Listing>, Int> {
-            val root = runCatching { lenientJson.parseToJsonElement(body) }.getOrNull() ?: return emptyList<Listing>() to 0
+        /** One page of results: the parsed listings, the total matching ads and how many ads the page held. */
+        data class Page(val listings: List<Listing>, val total: Int, val received: Int)
+
+        fun parseSearch(body: String): Page {
+            val root = runCatching { lenientJson.parseToJsonElement(body) }.getOrNull() ?: return Page(emptyList(), 0, 0)
             val find = root["data"]["Web"]["find"]
-            val listings = find["listings"].arr.mapNotNull { runCatching { toListing(it) }.getOrNull() }
-            return listings to (find["total"].int ?: listings.size)
+            val raw = find["listings"].arr
+            val listings = raw.mapNotNull { runCatching { toListing(it) }.getOrNull() }
+            return Page(listings, find["total"].int ?: raw.size, raw.size)
         }
 
         /** Percent-encodes the Arabic path while keeping separators. */

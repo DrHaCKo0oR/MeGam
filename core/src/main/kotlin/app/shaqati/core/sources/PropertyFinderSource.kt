@@ -27,8 +27,11 @@ class PropertyFinderSource : ListingSource {
         var pages = 0
         var mode = FetchMode.DIRECT
         // Yearly-priced ads up to the budget, then monthly-priced ads up to a twelfth of it.
+        var complete = true
         for ((period, max) in listOf("y" to ctx.criteria.maxAnnualRent, "m" to ctx.criteria.maxAnnualRent / 12)) {
-            val maxPages = if (period == "y") ctx.maxPages else (ctx.maxPages + 1) / 2
+            // Results are city-wide and newest first; yearly-priced ads are most of them.
+            val maxPages = if (period == "y") ctx.maxPages + 3 else (ctx.maxPages + 1) / 2
+            var reachedEnd = false
             for (page in 1..maxPages) {
                 val url = searchUrl(max, page, period)
                 var resp = runCatching { ctx.http.send(HttpRequest(url, mode = mode, originPage = BASE + "/ar")) }
@@ -43,10 +46,11 @@ class PropertyFinderSource : ListingSource {
                 val (items, pageCount) = parseSearch(resp.body)
                 items.filter { it.location == null || Geo.distanceKm(it.location, ctx.area.center) <= ctx.area.radiusKm * 1.5 }
                     .forEach { out[it.id] = it }
-                if (items.isEmpty() || page >= pageCount) break
+                if (items.isEmpty() || page >= pageCount) { reachedEnd = true; break }
             }
+            if (!reachedEnd) complete = false
         }
-        return SearchResult(source, out.values.toList(), pages, errors.take(5))
+        return SearchResult(source, out.values.toList(), pages, errors.take(5), complete = complete && errors.isEmpty())
     }
 
     override suspend fun details(listing: Listing, ctx: SearchContext): Listing {

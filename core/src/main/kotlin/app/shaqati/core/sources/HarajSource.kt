@@ -109,8 +109,12 @@ class HarajSource : ListingSource {
             val period = textPrice?.period ?: RentPeriod.UNKNOWN
 
             val mapPoint = MapLink.find(body)
-            val hashPoint = o["geoHash"].str?.let { Geohash.decode(it) }?.takeIf { Geo.inRiyadh(it) }
-            val point = mapPoint ?: hashPoint
+            val rawHash = o["geoHash"].str?.let { Geohash.decode(it) }
+            // A post pinned outside Riyadh (Al Kharj, Shaqra…) is not a Riyadh apartment.
+            if (mapPoint == null && rawHash != null && !Geo.inRiyadh(rawHash)) return null
+            val hashPoint = rawHash?.takeIf { Geo.inRiyadh(it) }
+            val districtPoint = (Districts.find(o["geoNeighborhood"].str) ?: Districts.inText(title + "\n" + body))?.center
+            val point = mapPoint ?: hashPoint ?: districtPoint ?: return null
             val kind = when {
                 o["tags"].arr.any { it.str?.contains("ادوار") == true } || title.contains("دور") -> PropertyKind.FLOOR
                 title.contains("ملحق") -> PropertyKind.ANNEX
@@ -139,7 +143,7 @@ class HarajSource : ListingSource {
                 locationPrecision = when {
                     mapPoint != null -> LocationPrecision.EXACT
                     hashPoint != null -> LocationPrecision.APPROXIMATE
-                    else -> LocationPrecision.UNKNOWN
+                    else -> LocationPrecision.DISTRICT
                 },
                 photos = o["imagesList"].arr.mapNotNull { it.str },
                 advertiserName = o["authorUsername"].str,

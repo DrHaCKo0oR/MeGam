@@ -26,6 +26,20 @@ object Districts {
 
     fun find(name: String?): District? = name?.let { byKey[key(it)] }
 
+    private val hayPhrase = Regex("""(?:^|\s|ب)حي\s+(\S+)(?:\s+(\S+))?""")
+
+    /** The first Riyadh district written as "حي X" in ad text. */
+    fun inText(text: String?): District? {
+        val t = ArabicText.normalize(text ?: return null)
+        for (m in hayPhrase.findAll(t)) {
+            val one = m.groupValues[1].trim(',', '.', '،', ')', '(')
+            val two = m.groupValues[2].trim(',', '.', '،', ')', '(')
+            if (two.isNotEmpty()) find("$one $two")?.let { return it }
+            find(one)?.let { return it }
+        }
+        return null
+    }
+
     fun near(point: GeoPoint, radiusKm: Double): List<District> =
         all.map { it to Geo.distanceKm(point, it.center) }.filter { it.second <= radiusKm }.sortedBy { it.second }.map { it.first }
 }

@@ -58,7 +58,7 @@ class EngineTest {
 
     private class FakeSource(override val source: Source, var items: List<Listing>, var fail: Boolean = false) : ListingSource {
         override suspend fun search(ctx: SearchContext): SearchResult =
-            if (fail) SearchResult(source, emptyList(), 1, listOf("HTTP 500")) else SearchResult(source, items, 1)
+            if (fail) SearchResult(source, emptyList(), 1, listOf("HTTP 500")) else SearchResult(source, items, 1, complete = true)
     }
 
     private fun engine() = Engine(clock = { now })
@@ -169,5 +169,20 @@ class EngineTest {
         e.refresh(listOf(FakeSource(Source.AQAR, listOf(ad("1", price = 60_000.0, baths = 1)))), { http }, area, Criteria())
         val v = e.views(Criteria(), FeedMode.ALL, work = work).single()
         assertEquals(setOf(Check.RENT, Check.BATHROOMS), v.evaluation.failed.toSet())
+    }
+
+    @Test
+    fun `ads outside a newest-first window are not marked gone`() = runBlocking {
+        val e = engine()
+        val window = object : ListingSource {
+            override val source = Source.HARAJ
+            var items = listOf(ad("1", source = Source.HARAJ), ad("2", source = Source.HARAJ))
+            override suspend fun search(ctx: SearchContext) = SearchResult(source, items, 1, complete = false)
+        }
+        e.refresh(listOf(window), { http }, area, Criteria())
+        window.items = listOf(ad("3", source = Source.HARAJ))
+        now += 5 * 86_400_000L
+        e.refresh(listOf(window), { http }, area, Criteria())
+        assertEquals(setOf("haraj:1", "haraj:2", "haraj:3"), e.views(Criteria(), FeedMode.ALL).map { it.id }.toSet())
     }
 }

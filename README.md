@@ -14,9 +14,10 @@ apartments from old ones.
   (monthly rents ×12), one bedroom plus at least one extra room, a living room, two
   bathrooms, unfurnished or semi-furnished, families allowed, morning commute up to 40 min.
 - **Sorts results into four tabs**:
-  - **Matches**: every requirement is met and rent, rooms and location are confirmed.
-  - **To check**: nothing is broken, but the ad leaves out the rent, the rooms or the
-    location.
+  - **Matches**: every requirement is met and rent, rooms, bathrooms and location are
+    confirmed.
+  - **To check**: nothing is broken, but the ad leaves out the rent, the rooms, the bathrooms
+    or the location. A bathroom count the ad leaves out can be confirmed from the photos.
   - **Close**: misses one requirement by a little, for example 10% over budget or 5 minutes
     too far.
   - **All**: every ad around work.

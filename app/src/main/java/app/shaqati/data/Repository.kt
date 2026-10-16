@@ -558,7 +558,7 @@ class Repository(
 
     companion object {
         private const val DAY = 86_400_000L
-        private const val MAX_DETAILS_PER_RUN = 40
+        private const val MAX_DETAILS_PER_RUN = 30
         private const val MAX_COMMUTES_PER_RUN = 150
         const val REFRESH_WORK = "refresh"
         const val BATCH_WORK = "batch-poll"

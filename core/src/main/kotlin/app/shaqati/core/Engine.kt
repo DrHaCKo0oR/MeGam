@@ -142,9 +142,9 @@ class Engine(
                 Tracked(mergeListing(prev.listing, l), prev.firstSeenAt, now, goneAt = null, detailsFetchedAt = prev.detailsFetchedAt)
             }
         }
-        // A clean run that returned results is a complete view of that source's
-        // current inventory (within the pages fetched): ads not seen for 3 days are gone.
-        if (result.errors.isEmpty() && !result.blocked && result.listings.isNotEmpty()) {
+        // Only a complete, clean run shows the source's whole inventory: then ads not seen
+        // for 3 days are gone. Sources read newest-first never make that claim.
+        if (result.complete && result.errors.isEmpty() && !result.blocked && result.listings.isNotEmpty()) {
             for ((id, t) in tracked) {
                 if (t.listing.source == result.source && id !in seenIds && t.goneAt == null &&
                     now - t.lastSeenAt > 3 * Evaluator.DAY_MS
@@ -247,9 +247,13 @@ class Engine(
         for ((gid, members) in byGroup) {
             val main = members.first { it.listing.id == gid }
             val l = main.listing
-            val r = main.resolved
             val commute = commuteFor(l) ?: work?.let { w -> l.location?.let { approximate(it, w, now) } }
             val ai = s.ai[gid] ?: members.firstNotNullOfOrNull { s.ai[it.listing.id] }
+            // Photos that show enough bathrooms confirm a count the ad left out.
+            val seenBaths = ai?.body?.visibleBathrooms
+            val r = if (main.resolved.bathrooms == null && seenBaths != null && seenBaths >= criteria.minBathrooms) {
+                main.resolved.copy(bathrooms = seenBaths)
+            } else main.resolved
             val eval = Evaluator.evaluate(l, r, criteria, commute?.morningMinutes, commute?.eveningMinutes, now)
             val ids = members.map { it.listing.id }
             val hidden = ids.any { it in s.user.hidden }
@@ -344,7 +348,12 @@ class Engine(
     fun aiQueue(criteria: Criteria, work: GeoPoint? = null, minPhotos: Int = 3): List<ListingView> {
         val s = snapshot
         val pending = s.batches.flatMap { it.listingIds }.toSet()
-        return views(criteria, FeedMode.MATCHES, work = work)
+        // Matches, plus apartments whose only open question is the bathroom count (the photos can answer it).
+        return views(criteria, FeedMode.ALL, work = work)
+            .filter { v ->
+                v.bucket == FeedMode.MATCHES ||
+                    (v.bucket == FeedMode.UNCONFIRMED && v.evaluation.unconfirmed.filter { it in CRITICAL }.all { it == Check.BATHROOMS })
+            }
             .filter { it.ai == null && it.id !in pending && it.listing.photos.size >= minPhotos }
             .filter { it.resolved.text.renovationScore > -4 }
             .sortedByDescending { it.score.total }
@@ -375,7 +384,7 @@ class Engine(
 
     companion object {
         /** Unknowns that keep a listing out of the confirmed matches. */
-        val CRITICAL = setOf(Check.RENT, Check.PRICE_PERIOD, Check.ROOMS, Check.COMMUTE_AM)
+        val CRITICAL = setOf(Check.RENT, Check.PRICE_PERIOD, Check.ROOMS, Check.BATHROOMS, Check.COMMUTE_AM)
     }
 
     private fun monthKey(ms: Long): String = Instant.ofEpochMilli(ms).atZone(ZoneOffset.UTC).let { "%04d-%02d".format(it.year, it.monthValue) }

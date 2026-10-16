@@ -70,7 +70,7 @@ object Qa {
     fun seed() = runBlocking {
         val s = settings()
         val data = mapOf(
-            Source.AQAR to AqarSource.parseSearch(fixture("aqar-search.json")).first,
+            Source.AQAR to AqarSource.parseSearch(fixture("aqar-search.json")).listings,
             Source.HARAJ to HarajSource.parse(fixture("haraj-posts.json")),
             Source.PROPERTY_FINDER to PropertyFinderSource.parseSearch(fixture("pf-search.html")).first,
             Source.OPENSOOQ to OpenSooqSource.parseSearch(fixture("opensooq-search.html")).first,

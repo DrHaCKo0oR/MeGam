@@ -34,6 +34,9 @@ object Resolver {
     /** Above this an unlabelled price is almost certainly yearly. */
     private const val YEARLY_FLOOR = 14_000.0
 
+    /** No Riyadh apartment rents for less than this per month. */
+    private const val MIN_PRICE = 700.0
+
     fun resolve(l: Listing): Resolved {
         val facts = TextSignals.analyze(l.title, l.description)
 
@@ -43,7 +46,8 @@ object Resolver {
             period = facts.period
             inferred = period != RentPeriod.UNKNOWN
         }
-        val price = l.price?.takeIf { it > 0 }
+        // Amounts under a few hundred riyals are typos or prices in thousands; treat them as missing.
+        val price = l.price?.takeIf { it >= MIN_PRICE }
         if (period == RentPeriod.UNKNOWN && price != null) {
             period = when {
                 price <= MONTHLY_CEILING -> RentPeriod.MONTHLY

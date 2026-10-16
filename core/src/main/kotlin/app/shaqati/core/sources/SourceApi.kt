@@ -29,6 +29,11 @@ data class SearchResult(
     val errors: List<String> = emptyList(),
     /** True when the site refused automated access (bot check, 401/403). */
     val blocked: Boolean = false,
+    /**
+     * True when every matching ad was read (paging reached the end). Only then can an ad
+     * missing from the result be considered removed.
+     */
+    val complete: Boolean = false,
 )
 
 interface ListingSource {
