@@ -582,6 +582,68 @@ def deal_ids_step():
     print("deal ids", len(found), depth, flush=True)
 
 
+def pf_locations_step():
+    """Finds Property Finder location ids for districts near work (from their SEO pages) and
+    checks whether the search accepts several locations at once."""
+    import math
+    from urllib.parse import quote
+    districts = json.loads((ROOT.parent / "core/src/main/resources/shaqati/riyadh_districts.json").read_text(encoding="utf-8"))
+    work = (24.7655, 46.6802)
+
+    def km(a, b):
+        dlat = math.radians(b[0] - a[0]); dlng = math.radians(b[1] - a[1])
+        h = math.sin(dlat / 2) ** 2 + math.cos(math.radians(a[0])) * math.cos(math.radians(b[0])) * math.sin(dlng / 2) ** 2
+        return 6371 * 2 * math.asin(math.sqrt(h))
+
+    near = sorted([d for d in districts if km(work, (d["lat"], d["lng"])) <= 11], key=lambda d: km(work, (d["lat"], d["lng"])))
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": MOBILE_UA, "Accept-Language": "ar-SA,ar;q=0.9"})
+    found, log = {}, []
+
+    def next_data(html):
+        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
+        return json.loads(m.group(1)) if m else None
+
+    for d in near[:40]:
+        name = d["ar"].replace(" ", "-")
+        url = "https://www.propertyfinder.sa/ar/" + quote("للايجار/الرياض/شقق-للايجار-الرياض-" + name + ".html")
+        try:
+            r = sess.get(url, timeout=40)
+            nd = next_data(r.text) if r.status_code == 200 else None
+            pp = (nd or {}).get("props", {}).get("pageProps", {})
+            seo = pp.get("seoData") or {}
+            locs = (pp.get("filtersValueFromQuery") or {}).get("filter[locations_ids]") or []
+            meta = ((pp.get("searchResult") or {}).get("meta") or {})
+            entry = {"status": r.status_code, "id": seo.get("locationId"), "name": seo.get("locationName"),
+                     "types": [x.get("l_t") for x in locs], "total": meta.get("total_count")}
+            if entry["id"] and entry["id"] != "8216":
+                found[d["ar"]] = entry
+            log.append({"district": d["ar"], **entry})
+        except Exception as e:  # noqa: BLE001
+            log.append({"district": d["ar"], "error": repr(e)})
+        time.sleep(1.2)
+
+    tests = []
+    ids = [v["id"] for v in found.values()][:3]
+    if len(ids) >= 2:
+        for sep in ["-", ",", "%2C"]:
+            url = ("https://www.propertyfinder.sa/ar/search?c=2&t=1&rp=y&pt=50000&ob=nd&l=" + sep.join(ids))
+            try:
+                r = sess.get(url, timeout=40)
+                nd = next_data(r.text) if r.status_code == 200 else None
+                pp = (nd or {}).get("props", {}).get("pageProps", {})
+                locs = (pp.get("filtersValueFromQuery") or {}).get("filter[locations_ids]") or []
+                meta = ((pp.get("searchResult") or {}).get("meta") or {})
+                listing_locs = sorted({(l.get("property") or {}).get("location", {}).get("id") for l in (pp.get("searchResult") or {}).get("listings", [])} - {None})
+                tests.append({"sep": sep, "status": r.status_code, "locations": [x.get("id") for x in locs],
+                              "total": meta.get("total_count"), "listing_location_ids": listing_locs[:12]})
+            except Exception as e:  # noqa: BLE001
+                tests.append({"sep": sep, "error": repr(e)})
+            time.sleep(1.5)
+    write(OUT / "exp" / "pf-locations.json", {"found": found, "multi": tests, "log": log})
+    print("pf locations", len(found), tests, flush=True)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     only = [x for x in os.environ.get("PROBE_ONLY", "").split(",") if x]
@@ -592,6 +654,8 @@ def main():
         deal_districts_step()
     if "deal_ids" in steps:
         deal_ids_step()
+    if "pf_locations" in steps:
+        pf_locations_step()
     if "versions" in steps:
         maven_versions()
     if "geo" in steps:

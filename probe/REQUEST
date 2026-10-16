@@ -1,4 +1,4 @@
 # Sourced by the probe workflow. Edit to request a new probe run.
-PROBE_STEPS=deal_ids
+PROBE_STEPS=pf_locations
 PROBE_ONLY=
-RUN=7
+RUN=8
