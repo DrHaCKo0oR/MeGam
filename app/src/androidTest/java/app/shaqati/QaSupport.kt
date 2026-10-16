@@ -84,6 +84,16 @@ object Qa {
         log("locale $current -> $tag")
     }
 
+    /** Script that reports how the map page is laid out and what it has loaded. */
+    const val MAP_PROBE =
+        "(function(){var m=document.getElementById('map');var cs=getComputedStyle(m);" +
+            "var imgs=document.querySelectorAll('img.leaflet-tile');var ok=0;" +
+            "imgs.forEach(function(i){if(i.complete&&i.naturalWidth>0)ok++;});" +
+            "return JSON.stringify({vw:innerWidth,vh:innerHeight,dpr:devicePixelRatio,mw:m.clientWidth,mh:m.clientHeight," +
+            "bg:cs.backgroundColor,pos:cs.position,sheets:document.styleSheets.length,tiles:imgs.length,loaded:ok," +
+            "pins:document.querySelectorAll('.pin').length,work:document.querySelectorAll('.work').length," +
+            "provider:S.provider,vis:document.visibilityState});})()"
+
     /** Runs [script] in the first WebView on screen and logs its result. */
     fun js(scenario: androidx.test.core.app.ActivityScenario<*>, script: String) {
         scenario.onActivity { a ->
