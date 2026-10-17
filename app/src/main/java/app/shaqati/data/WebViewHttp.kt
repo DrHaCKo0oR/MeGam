@@ -55,12 +55,26 @@ class WebViewHttp(private val context: Context) : Http {
 
             fun probe(attempt: Int) {
                 if (done) return
-                web.evaluateJavascript("(function(){return document.documentElement.outerHTML})()") { raw ->
-                    val html = runCatching { Json.decodeFromString<String>(raw) }.getOrNull().orEmpty()
-                    val ready = html.contains("__NEXT_DATA__") || html.contains("self.__next_f") ||
-                        html.contains("window.state = ") || html.length > 200_000
-                    if (ready || attempt >= MAX_PROBES) finish(html) else handler.postDelayed({ probe(attempt + 1) }, 1_500)
+                // The data is in the page's HTML, so it can be read once the HTML is parsed, without
+                // waiting for every script and ad on the page.
+                web.evaluateJavascript(READ_PAGE) { raw ->
+                    val page = runCatching { Json.decodeFromString<String>(raw) }.getOrNull().orEmpty()
+                    val parsed = !page.startsWith("loading|")
+                    val html = page.substringAfter('|')
+                    val ready = parsed && (
+                        html.contains("__NEXT_DATA__") || html.contains("self.__next_f") ||
+                            html.contains("window.state = ") || html.length > 200_000
+                        )
+                    // Attempts count once the page itself has arrived (not while it is still loading).
+                    val next = if (parsed && html.length > 500) attempt + 1 else attempt
+                    if (ready || next >= MAX_PROBES) finish(html) else handler.postDelayed({ probe(next) }, 1_500)
                 }
+            }
+
+            fun startProbing(delayMs: Long) {
+                if (probing || done) return
+                probing = true
+                handler.postDelayed({ probe(0) }, delayMs)
             }
 
             web.webViewClient = object : WebViewClient() {
@@ -69,12 +83,7 @@ class WebViewHttp(private val context: Context) : Http {
                     status = 200
                 }
 
-                override fun onPageFinished(view: WebView, url: String) {
-                    if (!probing) {
-                        probing = true
-                        handler.postDelayed({ probe(0) }, 800)
-                    }
-                }
+                override fun onPageFinished(view: WebView, url: String) = startProbing(800)
 
                 override fun onReceivedHttpError(view: WebView, req: WebResourceRequest, response: WebResourceResponse) {
                     if (req.isForMainFrame) status = response.statusCode
@@ -82,6 +91,8 @@ class WebViewHttp(private val context: Context) : Http {
             }
             val headers = request.headers.filterKeys { it.equals("Accept-Language", ignoreCase = true) }
             web.loadUrl(request.url, headers)
+            // Heavy pages can take long to finish loading their scripts; start reading anyway.
+            startProbing(5_000)
             cont.invokeOnCancellation {
                 handler.post {
                     if (!done) {
@@ -96,5 +107,7 @@ class WebViewHttp(private val context: Context) : Http {
     companion object {
         private const val TIMEOUT_MS = 45_000L
         private const val MAX_PROBES = 10
+        private const val READ_PAGE =
+            "(function(){var s=document.readyState;return s+'|'+(s=='loading'?'':document.documentElement.outerHTML)})()"
     }
 }
