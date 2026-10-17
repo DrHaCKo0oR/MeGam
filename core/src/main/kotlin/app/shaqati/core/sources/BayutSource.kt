@@ -40,8 +40,9 @@ class BayutSource : ListingSource {
                     return SearchResult(source, out.values.toList(), pages, errors + BotCheck.MESSAGE, blocked = true)
                 }
                 if (!resp.ok) { errors += "HTTP ${resp.status}"; break }
+                // Every Bayut page carries the site's state; a page without it is a check or an error page.
                 val result = parseSearch(resp.body)
-                if (result == null) { errors += "no listings data"; break }
+                    ?: return SearchResult(source, out.values.toList(), pages, errors + BotCheck.MESSAGE, blocked = true)
                 if (page == 1) ctx.log("bayut $period: ${result.total} ads in ${result.pageCount} pages")
                 result.listings.filter { it.location == null || Geo.distanceKm(it.location, ctx.area.center) <= ctx.area.radiusKm * 1.5 }
                     .forEach { out[it.id] = it }
@@ -207,15 +208,20 @@ class BayutSource : ListingSource {
 object BotCheck {
     const val MESSAGE = "bot check"
 
+    private val titles = listOf("Security check", "Just a moment", "لحظة", "Attention Required", "Performing security verification")
     private val markers = listOf(
-        "hcaptcha", "h-captcha", "cf-turnstile", "challenges.cloudflare.com", "cf_chl_opt",
-        "Security check", "Just a moment", "لحظة…", "Attention Required", "captcha-delivery",
+        "hcaptcha", "h-captcha", "cf-turnstile", "challenges.cloudflare.com", "cf_chl_opt", "captcha-delivery",
     )
+    private val dataMarkers = listOf("window.state = ", "__NEXT_DATA__", "self.__next_f")
+    private val title = Regex("""<title[^>]*>([^<]*)</title>""", RegexOption.IGNORE_CASE)
 
     fun blocked(resp: app.shaqati.core.util.HttpResponse): Boolean {
         if (resp.status == 401 || resp.status == 403 || resp.status == 429 || resp.status == 503) return true
-        // A real page is large; a check page is small and names its captcha.
-        return resp.body.length < 60_000 && markers.any { resp.body.contains(it, ignoreCase = true) }
+        val body = resp.body
+        val pageTitle = title.find(body)?.groupValues?.get(1).orEmpty()
+        if (titles.any { pageTitle.contains(it, ignoreCase = true) }) return true
+        // A check page names its captcha and carries none of the site's data.
+        return dataMarkers.none { body.contains(it) } && markers.any { body.contains(it, ignoreCase = true) }
     }
 }
 

@@ -161,6 +161,19 @@ class QaTour {
             shot("$lang-04-close")
             compose.onNodeWithTag("chip_ALL").performClick()
             shot("$lang-05-all")
+            // An ad from each site read in the browser, with its photos.
+            if (lang == "en") {
+                for (site in listOf("Bayut", "Wasalt")) {
+                    val label = hasText(site)
+                    compose.onNodeWithTag("feed_list").performScrollToNode(label)
+                    compose.onAllNodes(label).onFirst().performClick()
+                    compose.waitUntilAtLeastOneExists(hasTestTag("detail_list"), 5_000)
+                    shot("$lang-05b-detail-${site.lowercase()}", 4_000)
+                    compose.onAllNodesWithContentDescription(Qa.str(lang, R.string.action_back)).onFirst().performClick()
+                    compose.waitUntilAtLeastOneExists(hasTestTag("feed_list"), 5_000)
+                }
+                compose.onNodeWithTag("feed_list").performScrollToIndex(0)
+            }
 
             compose.onNodeWithTag("tab_saved").performClick()
             compose.waitUntilAtLeastOneExists(hasText(Qa.str(lang, R.string.tab_saved)), 5_000)
@@ -201,6 +214,8 @@ class QaTour {
             shot("$lang-11-settings")
             compose.onNodeWithTag("settings_list").performScrollToIndex(4)
             shot("$lang-12-settings-ai")
+            compose.onNodeWithTag("settings_list").performScrollToNode(hasTestTag("subscription_status"))
+            shot("$lang-12b-settings-subscription")
             compose.onNodeWithTag("settings_list").performScrollToIndex(0)
             compose.onNode(hasText(Qa.str(lang, R.string.set_work_change))).performClick()
             Qa.log("picker ready=" + waitForMap())

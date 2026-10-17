@@ -69,6 +69,8 @@ private const val LISTINGS_PROBE = """(function(){try{
 if(window.state&&window.state.algolia&&window.state.algolia.content)return 'ok';
 var nd=document.getElementById('__NEXT_DATA__');
 if(nd&&nd.textContent.indexOf('"searchResult"')>=0)return 'ok';
+for(var i=0;i<document.scripts.length;i++){var t=document.scripts[i].text;
+if(t.indexOf('window.state = ')>=0&&t.indexOf('"hits"')>=0)return 'ok';}
 return 'no';}catch(e){return 'no';}})()"""
 
 /**

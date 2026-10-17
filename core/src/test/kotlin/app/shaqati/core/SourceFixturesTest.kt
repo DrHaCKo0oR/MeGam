@@ -245,6 +245,20 @@ class SourceFixturesTest {
     }
 
     @Test
+    fun `a bayut or wasalt page without listings data is a check`() = kotlinx.coroutines.runBlocking {
+        val check = "<html><head><title>Bayut</title></head><body>please wait</body></html>"
+        val ctx = app.shaqati.core.sources.SearchContext(
+            http = { app.shaqati.core.util.HttpResponse(200, check, it.url) },
+            area = app.shaqati.core.sources.SearchArea(app.shaqati.core.model.GeoPoint(24.7655, 46.6802), 9.0),
+            criteria = app.shaqati.core.filter.Criteria(),
+        )
+        val bayut = BayutSource().search(ctx)
+        assertTrue(bayut.blocked)
+        assertEquals(1, bayut.pagesFetched)
+        assertTrue(WasaltSource().search(ctx).blocked)
+    }
+
+    @Test
     fun `bayut search urls page newest first within the budget`() {
         assertEquals(
             "https://www.bayut.sa/en/to-rent/apartments/riyadh/?rent_frequency=yearly&price_max=50000&sort=date_desc",
@@ -262,7 +276,12 @@ class SourceFixturesTest {
         assertTrue(BotCheck.blocked(resp(503, "<html><title>Security check</title></html>")))
         assertTrue(BotCheck.blocked(resp(200, "<html><title>Just a moment...</title><script src=\"https://challenges.cloudflare.com/x.js\"></script></html>")))
         assertTrue(BotCheck.blocked(resp(200, "<div class=\"h-captcha\" data-sitekey=\"x\"></div>")))
+        // Bayut's check page is large (inline scripts) and answers 200.
+        val bigCheck = "<html><head><title>Security check | Bayut</title></head><body>" + "x".repeat(120_000) + "</body></html>"
+        assertTrue(BotCheck.blocked(resp(200, bigCheck)))
+        assertTrue(BotCheck.blocked(resp(200, "<title>wasalt.sa</title><h2>Performing security verification</h2>" + "y".repeat(90_000) + "<div class=\"cf-turnstile\"></div>")))
         assertFalse(BotCheck.blocked(resp(200, fixture("bayut-search.html"))))
+        assertFalse(BotCheck.blocked(resp(200, fixture("wasalt-search.html"))))
         assertFalse(BotCheck.blocked(resp(200, "<html><title>Wasalt</title></html>")))
     }
 

@@ -80,7 +80,7 @@ class LiveRefreshTest {
             // Sites read in the browser: when one asked for a check, show what the check screen opens.
             val checked = snap.sources.values.firstOrNull { it.blocked && it.source in setOf(Source.BAYUT, Source.WASALT) }
             if (checked != null) {
-                compose.onNodeWithTag("site_check_banner").assertExists()
+                compose.onAllNodesWithTag("site_check_banner").onFirst().assertExists()
                 compose.onAllNodesWithText(Qa.str("en", R.string.check_title, checked.source.nameEn)).onFirst().performClick()
                 compose.waitUntilAtLeastOneExists(hasTestTag("site_check_web"), 10_000)
                 Thread.sleep(20_000)

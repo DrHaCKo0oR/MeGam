@@ -148,7 +148,7 @@ fun FeedScreen(vm: AppViewModel, openDetail: (String) -> Unit, openCheck: (Sourc
                     state = listState,
                     contentPadding = PaddingValues(start = 14.dp, end = 14.dp, top = 6.dp, bottom = 24.dp),
                     verticalArrangement = Arrangement.spacedBy(14.dp),
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier.fillMaxSize().testTag("feed_list"),
                 ) {
                     items(items, key = { it.id }) { v ->
                         ListingCard(

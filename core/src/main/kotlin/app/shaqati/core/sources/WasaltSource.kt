@@ -38,8 +38,9 @@ class WasaltSource : ListingSource {
                 return SearchResult(source, out.values.toList(), pages, errors + BotCheck.MESSAGE, blocked = true)
             }
             if (!resp.ok) { errors += "HTTP ${resp.status}"; break }
+            // Every list page carries its Next.js data; a page without it is a check or an error page.
             val result = parseSearch(resp.body)
-            if (result == null) { errors += "no listings data"; break }
+                ?: return SearchResult(source, out.values.toList(), pages, errors + BotCheck.MESSAGE, blocked = true)
             if (page == 1) ctx.log("wasalt: ${result.total} ads in ${result.pageCount} pages")
             result.listings.filter { it.location == null || Geo.distanceKm(it.location, ctx.area.center) <= ctx.area.radiusKm * 1.5 }
                 .forEach { out[it.id] = it }
