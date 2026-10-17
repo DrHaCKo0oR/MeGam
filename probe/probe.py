@@ -15,7 +15,7 @@ import re
 import sys
 import time
 import traceback
-from urllib.parse import urljoin, urlparse
+from urllib.parse import unquote, urljoin, urlparse
 
 import requests
 
@@ -721,6 +721,142 @@ def archive_step():
     write(OUT / "archive" / "_log.json", log)
 
 
+def cdx_rows(sess, url, match, limit, fl="timestamp,original", collapse=False):
+    params = {"url": url, "matchType": match, "output": "json", "from": "2025", "limit": limit, "fl": fl,
+              "filter": ["statuscode:200", "mimetype:text/html"]}
+    if collapse:
+        params["collapse"] = "urlkey"
+    r = requests.get("https://web.archive.org/cdx/search/cdx", params=params, timeout=180,
+                     headers={"User-Agent": "Shaqati-probe/1.0 (personal apartment search research)"})
+    data = r.json() if r.ok and r.text.strip() else []
+    return r.status_code, (data[1:] if data else [])
+
+
+def archived(sess, ts, original):
+    r = sess.get(f"https://web.archive.org/web/{ts}id_/{original}", timeout=90)
+    html = r.text
+    title = unquote((re.search(r"<title[^>]*>([^<]*)", html) or [None, ""])[1])
+    blocked = any(x in title for x in ("Just a moment", "لحظة", "Attention Required", "Security check"))
+    return r, html, title, blocked
+
+
+def bayut_state(html):
+    i = html.find("window.state = ")
+    if i < 0:
+        return None
+    try:
+        return json.JSONDecoder().raw_decode(html, i + len("window.state = "))[0]
+    except ValueError:
+        return None
+
+
+def archive2_step():
+    """Second pass: Wasalt's URL layout and pages, Bayut's filter URLs and a rent detail page."""
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": "Shaqati-probe/1.0 (personal apartment search research)"})
+    log = {}
+
+    # Wasalt: every archived URL, grouped into path templates.
+    st, rows = cdx_rows(sess, "wasalt.sa", "domain", "30000", collapse=True)
+    templates = {}
+    for ts, original in rows:
+        path = unquote(urlparse(original).path)
+        key = re.sub(r"\d+", "N", "/".join(path.split("/")[:4]))
+        t = templates.setdefault(key, {"n": 0, "examples": []})
+        t["n"] += 1
+        if len(t["examples"]) < 4:
+            t["examples"].append(unquote(original))
+    log["wasalt_cdx"] = {"status": st, "rows": len(rows)}
+    write(OUT / "archive" / "_wasalt_paths.json",
+          dict(sorted(templates.items(), key=lambda kv: -kv[1]["n"])[:150]))
+    rentish = [(ts, o) for ts, o in rows if re.search(r"rent|إيجار|ايجار", unquote(o), re.I)]
+    write(OUT / "archive" / "_wasalt_rent_urls.json", [unquote(o) for _, o in rentish[:400]])
+    props = [(ts, o) for ts, o in rentish if "/property/" in o]
+    lists = [(ts, o) for ts, o in rentish if "/property/" not in o]
+    for name, cands in (("wasalt-rent-property", props), ("wasalt-rent-list", lists)):
+        entry = log.setdefault(name, [])
+        saved = 0
+        for ts, original in sorted(cands, key=lambda x: x[0], reverse=True)[:8]:
+            if saved >= 2:
+                break
+            try:
+                r, html, title, blocked = archived(sess, ts, original)
+                entry.append({"ts": ts, "url": unquote(original), "status": r.status_code, "len": len(html),
+                              "next_data": "__NEXT_DATA__" in html, "title": title, "blocked": blocked})
+                if r.ok and len(html) > 20000 and not blocked:
+                    saved += 1
+                    write(OUT / "archive" / f"{name}-{saved}.html", redact_secrets(html))
+            except Exception as e:  # noqa: BLE001
+                entry.append({"url": original, "error": repr(e)})
+            time.sleep(3)
+
+    # Bayut: which query parameters its rent search URLs use.
+    st, rows = cdx_rows(sess, "bayut.sa/en/to-rent/", "prefix", "30000", collapse=True)
+    params, pages = {}, []
+    for ts, original in rows:
+        q = urlparse(original).query
+        for kv in filter(None, q.split("&")):
+            k = kv.split("=")[0]
+            p = params.setdefault(k, {"n": 0, "examples": []})
+            p["n"] += 1
+            if len(p["examples"]) < 3:
+                p["examples"].append(unquote(original))
+        if "/page-" in original and len(pages) < 10:
+            pages.append(unquote(original))
+    log["bayut_cdx"] = {"status": st, "rows": len(rows)}
+    write(OUT / "archive" / "_bayut_params.json", {"params": params, "pages": pages})
+    filtered = [(ts, o) for ts, o in rows if "riyadh" in o and re.search(r"price_max|beds|baths|furnish", o)]
+    entry = log.setdefault("bayut-filtered", [])
+    for ts, original in sorted(filtered, key=lambda x: x[0], reverse=True)[:3]:
+        try:
+            r, html, title, blocked = archived(sess, ts, original)
+            state = bayut_state(html)
+            params_seen = state["search"]["url"]["params"] if state else None
+            entry.append({"ts": ts, "url": unquote(original), "status": r.status_code, "title": title,
+                          "blocked": blocked, "params": params_seen})
+            if state and not blocked:
+                write(OUT / "archive" / "bayut-filtered-1.html", redact_secrets(html))
+                break
+        except Exception as e:  # noqa: BLE001
+            entry.append({"url": original, "error": repr(e)})
+        time.sleep(3)
+
+    # Bayut: a Riyadh rent detail page, English and Arabic.
+    for name, pattern in (("bayut-rent-detail-en", "bayut.sa/en/property/details-"),
+                          ("bayut-rent-detail-ar", "bayut.sa/property/تفاصيل-")):
+        entry = log.setdefault(name, [])
+        st, rows = cdx_rows(sess, pattern, "prefix", "-300")
+        entry.append({"cdx": st, "rows": len(rows)})
+        for ts, original in sorted(rows, key=lambda x: x[0], reverse=True)[:12]:
+            try:
+                r, html, title, blocked = archived(sess, ts, original)
+                data = ((bayut_state(html) or {}).get("property") or {}).get("data") or {}
+                where = [x.get("name") for x in data.get("location") or []]
+                entry.append({"ts": ts, "title": title, "purpose": data.get("purpose"), "where": where})
+                if data.get("purpose") == "for-rent" and "Riyadh" in where:
+                    write(OUT / "archive" / f"{name}-1.html", redact_secrets(html))
+                    break
+            except Exception as e:  # noqa: BLE001
+                entry.append({"url": original, "error": repr(e)})
+            time.sleep(3)
+
+    # Photo hosts: are listing photos served to plain clients?
+    shots = ["https://images.bayut.sa/thumbnails/9587649-800x600.jpeg",
+             "https://images.bayut.sa/thumbnails/9587649-800x600.webp"]
+    for f in sorted((OUT / "archive").glob("wasalt-*.html")):
+        shots += re.findall(r"https://[^\"'\\\s]+\.(?:jpe?g|webp|png)", f.read_text(encoding="utf-8"))[:2]
+    entry = log.setdefault("photos", [])
+    for url in shots[:6]:
+        try:
+            r = requests.get(url, timeout=30, headers={"User-Agent": MOBILE_UA})
+            entry.append({"url": url, "status": r.status_code, "type": r.headers.get("content-type"),
+                          "len": len(r.content)})
+        except Exception as e:  # noqa: BLE001
+            entry.append({"url": url, "error": repr(e)})
+    write(OUT / "archive" / "_log2.json", log)
+    print(json.dumps(log, ensure_ascii=False)[:6000], flush=True)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     only = [x for x in os.environ.get("PROBE_ONLY", "").split(",") if x]
@@ -735,6 +871,8 @@ def main():
         pf_locations_step()
     if "archive" in steps:
         archive_step()
+    if "archive2" in steps:
+        archive2_step()
     if "versions" in steps:
         maven_versions()
     if "geo" in steps:
