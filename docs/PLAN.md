@@ -57,7 +57,8 @@ Each site is read the way its own website reads it:
 | Property Finder | Search-page data (`__NEXT_DATA__`), yearly and monthly prices | Ad pages add the full photo set; WebView fallback if refused |
 | Deal | Guest API: newest pages, then the first page of each nearby district, paced | Guests may read 4 pages per query; the app stops at the first refusal |
 | OpenSooq | Search-page data, ad pages for photos and pin | Small Riyadh inventory |
-| Bayut, Wasalt | Not supported | Bot checks block apps |
+| Bayut | Search and ad pages read in the app's browser; the page state (`window.state`) holds the Algolia hits | hCaptcha check for servers; the app shows the site so the person can pass it once |
+| Wasalt | List and ad pages read in the app's browser; `__NEXT_DATA__` holds `searchResult` | Cloudflare check for servers; same check screen |
 
 Results are merged into one model, duplicates across sites are linked (REGA
 licence, or phone + size + location), and ads that disappear are marked as gone.
@@ -83,8 +84,13 @@ Listings without a confirmed rent, room count or location are kept apart in a
 - A monthly spending cap in Settings; the app stops when it is reached.
 
 Expected cost: about $0.006–0.012 per listing assessed, i.e. a few dollars a
-month. A Claude.ai subscription cannot be used by third-party apps, so the app
-uses an Anthropic API key.
+month, when the app uses an Anthropic API key.
+
+On the owner's Claude subscription instead: Anthropic lets only its own apps sign
+in with a subscription, so the app hands photos to the Claude app (Ask Claude),
+and the photo-check workflow runs the official Claude Code CLI in GitHub Actions
+with the owner's `claude setup-token` token. It rates up to 10 new matches every
+6 hours with the same rubric and schema, and the app downloads the verdicts.
 
 ### Commute
 Google Routes API with traffic-aware routing for the next Sunday–Thursday at
