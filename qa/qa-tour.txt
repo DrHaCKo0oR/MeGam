@@ -1,8 +1,8 @@
 
-app.shaqati.QaTour:.....
+app.shaqati.QaTour:......
 
-Time: 148.25
+Time: 181.017
 
-OK (5 tests)
+OK (6 tests)
 
 
