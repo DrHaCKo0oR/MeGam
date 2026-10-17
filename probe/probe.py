@@ -952,6 +952,31 @@ def archive4_step():
     print(json.dumps(log, ensure_ascii=False)[:6000], flush=True)
 
 
+IMAGE_CHECKS = [
+    # Wasalt (Cloudflare Images): an October ad, at the size the app asks for and the site's own.
+    "https://imagedelivery.net/1DNKFJPRaeUdy_j8F7HT3w/production/properties/5946174/images/1aeb9809-24fd-4809-bf60-aee04f88b843.webp/width=1000,quality=70,format=auto",
+    "https://imagedelivery.net/1DNKFJPRaeUdy_j8F7HT3w/production/properties/5946174/images/1aeb9809-24fd-4809-bf60-aee04f88b843.webp/width=800,quality=60,format=auto",
+    # A February ad (the test data), exactly as its page linked it.
+    "https://imagedelivery.net/1DNKFJPRaeUdy_j8F7HT3w/production/properties/5847704/images/555960e7-017e-45bd-8038-ecb74201ae82.jpg/width=500,quality=60,format=auto",
+    "https://images.bayut.sa/thumbnails/9587649-800x600.jpeg",
+]
+
+
+def images_step():
+    """Whether the photo hosts serve the photo URLs the app builds."""
+    log = []
+    for url in IMAGE_CHECKS:
+        for accept in ("image/*", "image/avif,image/webp,image/*"):
+            try:
+                r = requests.get(url, timeout=30, headers={"User-Agent": MOBILE_UA, "Accept": accept})
+                log.append({"url": url, "accept": accept, "status": r.status_code,
+                            "type": r.headers.get("content-type"), "len": len(r.content)})
+            except Exception as e:  # noqa: BLE001
+                log.append({"url": url, "accept": accept, "error": repr(e)})
+    write(OUT / "images.json", log)
+    print(json.dumps(log, indent=1), flush=True)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     only = [x for x in os.environ.get("PROBE_ONLY", "").split(",") if x]
@@ -972,6 +997,8 @@ def main():
         archive3_step()
     if "archive4" in steps:
         archive4_step()
+    if "images" in steps:
+        images_step()
     if "versions" in steps:
         maven_versions()
     if "geo" in steps:
