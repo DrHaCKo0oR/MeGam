@@ -57,6 +57,7 @@ jobs:
         if: steps.token.outputs.work == 'true'
         env:
           SHAQATI_WORK: ${{ secrets.SHAQATI_WORK }}
+          SHAQATI_RADIUS_KM: ${{ vars.SHAQATI_RADIUS_KM }}
           SHAQATI_MAX_RENT: ${{ vars.SHAQATI_MAX_RENT }}
         run: ./gradlew -q :tools:run --args="queue $PWD/build/photo-queue $PWD/photo-results/assessments.json $PER_RUN"
       - name: Convert photos to JPEG

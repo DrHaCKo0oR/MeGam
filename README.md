@@ -92,8 +92,8 @@ Turn it on once:
    (Settings → Secrets and variables → Actions → New repository secret).
 3. Merge the app's pull request: GitHub runs scheduled workflows from the default branch only.
 
-Optional: the secret `SHAQATI_WORK` (`lat,lng` of work) and the variables `SHAQATI_MAX_RENT`
-and `PHOTO_CHECKS_PER_RUN`. Usage counts against your plan's limits; when a limit is reached
+Optional: the secret `SHAQATI_WORK` (`lat,lng` of work) and the variables `SHAQATI_RADIUS_KM`
+(default 9), `SHAQATI_MAX_RENT` (default 50000) and `PHOTO_CHECKS_PER_RUN` (default 10). Usage counts against your plan's limits; when a limit is reached
 the run stops and the next one continues. Bayut and Wasalt apartments are rated when the same
 apartment is also on another site, or with **Ask Claude** on the apartment's page.
 
