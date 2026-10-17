@@ -644,6 +644,68 @@ def pf_locations_step():
     print("pf locations", len(found), tests, flush=True)
 
 
+ARCHIVE_TARGETS = {
+    # name: (Wayback URL pattern, match type)
+    "bayut-search-en": ("bayut.sa/en/to-rent/apartments/riyadh/", "prefix"),
+    "bayut-search-ar": ("bayut.sa/للايجار/شقق/الرياض/", "prefix"),
+    "bayut-detail-en": ("bayut.sa/en/property/details-", "prefix"),
+    "bayut-detail-ar": ("bayut.sa/property/details-", "prefix"),
+    "wasalt-search-ar": ("wasalt.sa/ar/search/rent/riyadh", "prefix"),
+    "wasalt-search-en": ("wasalt.sa/en/search/rent/riyadh", "prefix"),
+    "wasalt-property": ("wasalt.sa/ar/property/", "prefix"),
+    "wasalt-property-en": ("wasalt.sa/en/property/", "prefix"),
+}
+
+
+def archive_step():
+    """Saves archived copies (Internet Archive) of Bayut and Wasalt pages.
+
+    Both sites answer cloud servers with a bot check, so their page structure (how listings are
+    embedded) is learned from archived copies; the app itself reads them in a browser on the phone.
+    """
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": "Shaqati-probe/1.0 (personal apartment search research)"})
+    log = {}
+    for name, (pattern, match) in ARCHIVE_TARGETS.items():
+        entry = {"pattern": pattern, "tried": []}
+        log[name] = entry
+        rows = []
+        for host_prefix in ("www.", ""):
+            try:
+                r = sess.get("https://web.archive.org/cdx/search/cdx", params={
+                    "url": host_prefix + pattern, "matchType": match, "output": "json",
+                    "filter": ["statuscode:200", "mimetype:text/html"], "from": "2024",
+                    "limit": "-40", "fl": "timestamp,original,length",
+                }, timeout=90)
+                data = r.json() if r.ok and r.text.strip() else []
+                rows += data[1:] if data else []
+                entry.setdefault("cdx", []).append({"host": host_prefix, "status": r.status_code, "rows": max(len(data) - 1, 0)})
+            except Exception as e:  # noqa: BLE001
+                entry.setdefault("cdx", []).append({"host": host_prefix, "error": repr(e)})
+            time.sleep(2)
+        rows.sort(key=lambda x: x[0], reverse=True)
+        saved = 0
+        for ts, original, length in rows[:8]:
+            if saved >= 2:
+                break
+            url = f"https://web.archive.org/web/{ts}id_/{original}"
+            try:
+                r = sess.get(url, timeout=90)
+                html = r.text
+                info = {"ts": ts, "url": original, "status": r.status_code, "len": len(html),
+                        "window_state": "window.state" in html, "next_data": "__NEXT_DATA__" in html,
+                        "next_f": "self.__next_f" in html, "title": (re.search(r"<title[^>]*>([^<]*)", html) or [None, None])[1]}
+                entry["tried"].append(info)
+                if r.ok and len(html) > 20000 and "Security check" not in html and "challenge-platform" not in html:
+                    saved += 1
+                    write(OUT / "archive" / f"{name}-{saved}.html", html)
+            except Exception as e:  # noqa: BLE001
+                entry["tried"].append({"ts": ts, "url": original, "error": repr(e)})
+            time.sleep(3)
+        print(name, json.dumps(entry, ensure_ascii=False)[:800], flush=True)
+    write(OUT / "archive" / "_log.json", log)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     only = [x for x in os.environ.get("PROBE_ONLY", "").split(",") if x]
@@ -656,6 +718,8 @@ def main():
         deal_ids_step()
     if "pf_locations" in steps:
         pf_locations_step()
+    if "archive" in steps:
+        archive_step()
     if "versions" in steps:
         maven_versions()
     if "geo" in steps:
