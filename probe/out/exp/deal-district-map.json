@@ -1,0 +1,523 @@
+{
+ "districts": {
+  "5dd490aebc2e91004242e4a7": {
+   "ar": "الروضة",
+   "en": "Al Rawdah Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.7445,
+     46.7645
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4e4": {
+   "ar": "النرجس",
+   "en": "Al Narjis Dist.",
+   "n": 10,
+   "pts": [
+    [
+     24.8316,
+     46.6886
+    ],
+    [
+     24.8512,
+     46.6582
+    ],
+    [
+     24.8959,
+     46.6517
+    ],
+    [
+     24.8806,
+     46.6373
+    ],
+    [
+     24.9033,
+     46.6311
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4a2": {
+   "ar": "النفل",
+   "en": "Al Nafel Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.7877,
+     46.6727
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4de": {
+   "ar": "حطين",
+   "en": "Hitteen Dist.",
+   "n": 2,
+   "pts": [
+    [
+     24.7701,
+     46.6153
+    ],
+    [
+     24.7731,
+     46.6173
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4e1": {
+   "ar": "الياسمين",
+   "en": "Al Yasmeen Dist.",
+   "n": 3,
+   "pts": [
+    [
+     24.826,
+     46.6394
+    ],
+    [
+     24.8161,
+     46.6635
+    ],
+    [
+     24.8218,
+     46.6547
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4e7": {
+   "ar": "الرمال",
+   "en": "Al Rimal Dist.",
+   "n": 2,
+   "pts": [
+    [
+     24.8606,
+     46.81
+    ],
+    [
+     24.8376,
+     46.8143
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e489": {
+   "ar": "ديراب",
+   "en": "Dirab Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.4963,
+     46.6248
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e490": {
+   "ar": "عكاظ",
+   "en": "Okaz Dist.",
+   "n": 2,
+   "pts": [
+    [
+     24.5222,
+     46.6589
+    ],
+    [
+     24.5246,
+     46.6647
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4c8": {
+   "ar": "الفوطة",
+   "en": "Al Futah Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.6445,
+     46.7154
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e48f": {
+   "ar": "المروة",
+   "en": "Al Marwah Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.5369,
+     46.6676
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e498": {
+   "ar": "القادسية",
+   "en": "Al Qadisiyah Dist.",
+   "n": 3,
+   "pts": [
+    [
+     24.8103,
+     46.8209
+    ],
+    [
+     24.8037,
+     46.8185
+    ],
+    [
+     24.8035,
+     46.8147
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e504": {
+   "ar": "المرجان",
+   "en": "Al Marjan Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.8977,
+     46.8465
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4dd": {
+   "ar": "ظهرة لبن",
+   "en": "Dhahrat Laban Dist.",
+   "n": 2,
+   "pts": [
+    [
+     24.6131,
+     46.4952
+    ],
+    [
+     24.6564,
+     46.5821
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e505": {
+   "ar": "البيان",
+   "en": "Al Bayan Dist.",
+   "n": 2,
+   "pts": [
+    [
+     24.8877,
+     46.8678
+    ],
+    [
+     24.879,
+     46.8761
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e46f": {
+   "ar": "الفاروق",
+   "en": "Al Farooq Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.6567,
+     46.7649
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e499": {
+   "ar": "الصفا",
+   "en": "Al Safa Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.6583,
+     46.7602
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4d6": {
+   "ar": "الجنادرية",
+   "en": "Al Janadriyah Dist.",
+   "n": 2,
+   "pts": [
+    [
+     24.8499,
+     46.9028
+    ],
+    [
+     24.8479,
+     46.8674
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4b6": {
+   "ar": "العوالي",
+   "en": "Al Awaly Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.5593,
+     46.6119
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e45f": {
+   "ar": "الشهداء",
+   "en": "Al Shohda Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.7856,
+     46.7466
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4e2": {
+   "ar": "العارض",
+   "en": "Al Arid Dist.",
+   "n": 8,
+   "pts": [
+    [
+     24.8897,
+     46.6125
+    ],
+    [
+     24.8772,
+     46.6122
+    ],
+    [
+     24.8977,
+     46.6196
+    ],
+    [
+     24.8852,
+     46.6302
+    ],
+    [
+     24.8934,
+     46.618
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4d9": {
+   "ar": "اليرموك",
+   "en": "Al Yarmuk Dist.",
+   "n": 3,
+   "pts": [
+    [
+     24.8063,
+     46.7632
+    ],
+    [
+     24.8059,
+     46.7624
+    ],
+    [
+     24.8061,
+     46.7632
+    ]
+   ]
+  },
+  "5ec2d42f40b9ea98a7cae7bf": {
+   "ar": "المونسية",
+   "en": "almunsiyah",
+   "n": 12,
+   "pts": [
+    [
+     24.8299,
+     46.7567
+    ],
+    [
+     24.8296,
+     46.7552
+    ],
+    [
+     24.8379,
+     46.7789
+    ],
+    [
+     24.8317,
+     46.7654
+    ],
+    [
+     24.8284,
+     46.7531
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4e8": {
+   "ar": "غرناطة",
+   "en": "Ghirnatah Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.7919,
+     46.7621
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4f0": {
+   "ar": "بدر",
+   "en": "Badr Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.552,
+     46.6998
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4a0": {
+   "ar": "القدس",
+   "en": "Al Quds Dist.",
+   "n": 4,
+   "pts": [
+    [
+     24.7582,
+     46.7605
+    ],
+    [
+     24.7489,
+     46.7542
+    ],
+    [
+     24.7526,
+     46.7594
+    ],
+    [
+     24.7575,
+     46.7478
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e486": {
+   "ar": "الخليج",
+   "en": "Al Khaleej Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.7653,
+     46.7977
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e46a": {
+   "ar": "الملك فيصل",
+   "en": "King Faisal Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.7599,
+     46.7674
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4df": {
+   "ar": "الملقا",
+   "en": "Al Malqa Dist.",
+   "n": 6,
+   "pts": [
+    [
+     24.8056,
+     46.5897
+    ],
+    [
+     24.7795,
+     46.5871
+    ],
+    [
+     24.7942,
+     46.6147
+    ],
+    [
+     24.7973,
+     46.6187
+    ],
+    [
+     24.8125,
+     46.612
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4ca": {
+   "ar": "الصحافة",
+   "en": "Al Sahafah Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.8072,
+     46.637
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4d0": {
+   "ar": "الدار البيضاء",
+   "en": "Al Dar Al Baida Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.5679,
+     46.7811
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4b7": {
+   "ar": "الربيع",
+   "en": "Al Rabie Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.7922,
+     46.6717
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4b5": {
+   "ar": "طويق",
+   "en": "Tuwaiq Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.5559,
+     46.5141
+    ]
+   ]
+  },
+  "5dd490aebc2e91004242e4a9": {
+   "ar": "الريان",
+   "en": "Al Rayan Dist.",
+   "n": 1,
+   "pts": [
+    [
+     24.7169,
+     46.7861
+    ]
+   ]
+  }
+ },
+ "log": [
+  {
+   "url": "https://api.dealapp.sa/production/district/city/6009d941950ada00061eeeab",
+   "status": 404,
+   "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /production/district/city/6009d941950ada00061eeeab</pre>\n</body>\n</html>\n"
+  },
+  {
+   "url": "https://api.dealapp.sa/production/districts?city=6009d941950ada00061eeeab",
+   "status": 404,
+   "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /production/districts</pre>\n</body>\n</html>\n"
+  },
+  {
+   "url": "https://api.dealapp.sa/production/city/6009d941950ada00061eeeab/districts",
+   "status": 404,
+   "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /production/city/6009d941950ada00061eeeab/districts</pre>\n</body>\n</html>\n"
+  },
+  {
+   "url": "https://api.dealapp.sa/production/location/districts?city=6009d941950ada00061eeeab",
+   "status": 404,
+   "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /production/location/districts</pre>\n</body>\n</html>\n"
+  },
+  {
+   "page": 5,
+   "status": 403,
+   "body": "{\"error\":{\"message\":\"يرجى تسجيل الدخول للاستمرار في مشاهدة الإعلانات\",\"code\":\"error.pleaseLoginToContinueViewingAds\"}}"
+  },
+  {
+   "page": 5,
+   "status": 403,
+   "body": "{\"error\":{\"message\":\"يرجى تسجيل الدخول للاستمرار في مشاهدة الإعلانات\",\"code\":\"error.pleaseLoginToContinueViewingAds\"}}"
+  }
+ ]
+}

@@ -1,0 +1,238 @@
+{
+ "scripts": [
+  {
+   "src": "/_next/static/-U7IL8X8cLxjlkOJJ00WX/_buildManifest.js",
+   "status": 404,
+   "len": 0,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/-U7IL8X8cLxjlkOJJ00WX/_ssgManifest.js",
+   "status": 404,
+   "len": 0,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/1367-29c79670bb456056.js",
+   "status": 404,
+   "len": 0,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/1373.326e4093666cc703.js",
+   "status": 200,
+   "len": 2525,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/1621-acd225ba814f47fd.js",
+   "status": 404,
+   "len": 0,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/1636.0a4c58ced5eb351e.js",
+   "status": 200,
+   "len": 2375,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/2623.b8a5b5f11dae6051.js",
+   "status": 200,
+   "len": 2308,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/2906-7ccae0736d621fb1.js",
+   "status": 404,
+   "len": 0,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/2937-d74c349c3c229802.js",
+   "status": 200,
+   "len": 21117,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/4189-f5c5ad8afb8d144c.js",
+   "status": 404,
+   "len": 0,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/4419-18751fc9e1cbce00.js",
+   "status": 200,
+   "len": 36262,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/4624-9c52caf271059b12.js",
+   "status": 200,
+   "len": 11875,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/4625.6ebf695416a708f6.js",
+   "status": 200,
+   "len": 12886,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/4726.9b70f67a24781196.js",
+   "status": 200,
+   "len": 4730,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/5102-d26c46d78be53d3e.js",
+   "status": 200,
+   "len": 58001,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/5453.b730d1a3491092cf.js",
+   "status": 200,
+   "len": 11871,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/5470-cbfbe4fc7a5884d1.js",
+   "status": 200,
+   "len": 14533,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/5825-a61aeab2cc33abf3.js",
+   "status": 404,
+   "len": 0,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/6455-047b7e50096be282.js",
+   "status": 404,
+   "len": 0,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/6661-c299ba5b9448ace7.js",
+   "status": 200,
+   "len": 10000,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/6687-24aabc13e3673075.js",
+   "status": 200,
+   "len": 24413,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/7186-520e12dc3eee2a3b.js",
+   "status": 200,
+   "len": 21083,
+   "keys": [
+    "includeProperties",
+    "max_price",
+    "pageSize"
+   ]
+  },
+  {
+   "src": "/_next/static/chunks/72.4fcf120258f324d8.js",
+   "status": 200,
+   "len": 3195,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/7297.effb3852dbd77d7c.js",
+   "status": 200,
+   "len": 1940,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/765-5970e64665711858.js",
+   "status": 404,
+   "len": 0,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/8836.b873f4ef172a24dc.js",
+   "status": 200,
+   "len": 5934,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/9320-12837b03c0ea27d5.js",
+   "status": 200,
+   "len": 6282,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/9363-8120dcfea1a4c59b.js",
+   "status": 200,
+   "len": 108862,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/9705-8adde246d9c30f88.js",
+   "status": 200,
+   "len": 7851,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/framework-1506599bc21dcb74.js",
+   "status": 200,
+   "len": 139852,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/main-57f60d21abcff503.js",
+   "status": 200,
+   "len": 137460,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/pages/%5Bslug%5D-bfc1d656edbce43f.js",
+   "status": 404,
+   "len": 0,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/pages/_app-7c81eb61947aab52.js",
+   "status": 404,
+   "len": 0,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+   "status": 200,
+   "len": 112541,
+   "keys": []
+  },
+  {
+   "src": "/_next/static/chunks/webpack-d7494ad34fce010d.js",
+   "status": 404,
+   "len": 0,
+   "keys": []
+  }
+ ],
+ "search_pages": [
+  {
+   "pattern": "wasalt.sa/rent/search",
+   "cdx": 200,
+   "rows": 0,
+   "urls": []
+  },
+  {
+   "pattern": "wasalt.sa/en/rent/search",
+   "cdx": 200,
+   "rows": 0,
+   "urls": []
+  },
+  {
+   "pattern": "wasalt.sa/ar/rent/search",
+   "cdx": 200,
+   "rows": 0,
+   "urls": []
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+[
+ {
+  "pattern": "wasalt.sa/شقق-للايجار-في-الرياض",
+  "cdx": 200,
+  "rows": 30,
+  "tried": [
+   {
+    "ts": "20260511022813",
+    "url": "https://wasalt.sa/شقق-للايجار-في-الرياض-ب-5000-ريال",
+    "status": 200,
+    "title": "شقق للايجار في الرياض رخيصة | موقع وصلت",
+    "blocked": false,
+    "count": 818,
+    "properties": 32
+   }
+  ]
+ },
+ {
+  "pattern": "wasalt.sa/شقق-للايجار-في-شمال-الرياض",
+  "cdx": 200,
+  "rows": 18,
+  "tried": [
+   {
+    "ts": "20260210181853",
+    "url": "https://wasalt.sa/شقق-للايجار-في-شمال-الرياض",
+    "status": 200,
+    "title": "شقق للايجار في شمال الرياض | موقع وصلت",
+    "blocked": false,
+    "count": 3380,
+    "properties": 32
+   }
+  ]
+ },
+ {
+  "pattern": "wasalt.sa/en/apartments-for-rent-in-riyadh",
+  "cdx": 200,
+  "rows": 6,
+  "tried": [
+   {
+    "ts": "20260119115158",
+    "url": "https://wasalt.sa/en/apartments-for-rent-in-riyadh",
+    "status": 200,
+    "title": " Apartments for Rent in Riyadh,KSA  | Wasalt",
+    "blocked": false,
+    "count": 6123,
+    "properties": 32
+   }
+  ]
+ }
+]

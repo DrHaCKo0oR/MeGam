@@ -1,0 +1,141 @@
+name: photo-check
+
+# Rates apartment photos with Claude Code on the owner's own Claude subscription and commits
+# the verdicts to photo-results/assessments.json, which the app downloads.
+#
+# One-time setup: on a computer with Claude Code, run `claude setup-token` and add the token
+# as the repository secret CLAUDE_CODE_OAUTH_TOKEN. Without it the workflow does nothing.
+# GitHub runs the schedule from the default branch only.
+on:
+  schedule:
+    - cron: "23 */6 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "photo-check/REQUEST"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: photo-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      # Build only the pure-Kotlin modules.
+      ANDROID_HOME: ""
+      ANDROID_SDK_ROOT: ""
+      PER_RUN: ${{ vars.PHOTO_CHECKS_PER_RUN || '10' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Subscription token
+        id: token
+        env:
+          TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          # DRY_RUN=1 in photo-check/REQUEST runs everything except asking Claude, to test the steps.
+          dry=false; grep -q '^DRY_RUN=1' photo-check/REQUEST 2>/dev/null && [ "$GITHUB_EVENT_NAME" = push ] && dry=true
+          echo "dry=$dry" >> "$GITHUB_OUTPUT"
+          if [ -n "$TOKEN" ] && [ "$dry" = false ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"; echo "work=true" >> "$GITHUB_OUTPUT"
+          else
+            [ -z "$TOKEN" ] && echo "::notice::Photo checks are off: add the CLAUDE_CODE_OAUTH_TOKEN secret (from 'claude setup-token')."
+            echo "ready=false" >> "$GITHUB_OUTPUT"; echo "work=$dry" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-java@v4
+        if: steps.token.outputs.work == 'true'
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+        if: steps.token.outputs.work == 'true'
+      - name: Pick apartments and fetch their photos
+        if: steps.token.outputs.work == 'true'
+        env:
+          SHAQATI_WORK: ${{ secrets.SHAQATI_WORK }}
+          SHAQATI_RADIUS_KM: ${{ vars.SHAQATI_RADIUS_KM }}
+          SHAQATI_MAX_RENT: ${{ vars.SHAQATI_MAX_RENT }}
+        run: ./gradlew -q :tools:run --args="queue $PWD/build/photo-queue $PWD/photo-results/assessments.json $PER_RUN"
+      - name: Convert photos to JPEG
+        if: steps.token.outputs.work == 'true'
+        run: |
+          sudo apt-get install -y -qq imagemagick webp > /dev/null
+          for f in build/photo-queue/*/photo-*.*; do
+            [ -e "$f" ] || continue
+            out="${f%.*}.jpg"
+            case "$f" in
+              *.webp) dwebp -quiet "$f" -o "${f%.*}.png" && convert "${f%.*}.png" -resize '1280x1280>' -quality 85 "$out" && rm -f "${f%.*}.png" ;;
+              *.jpg) convert "$f" -resize '1280x1280>' -quality 85 "$out.tmp" && mv "$out.tmp" "$out" ;;
+              *) convert "$f" -resize '1280x1280>' -quality 85 "$out" ;;
+            esac
+            [ "$f" != "$out" ] && rm -f "$f"
+          done
+          ls -la build/photo-queue/* | head -60
+      - uses: actions/setup-node@v4
+        if: steps.token.outputs.work == 'true'
+        with:
+          node-version: "22"
+      - name: Install Claude Code
+        if: steps.token.outputs.work == 'true'
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Dry run (no Claude call)
+        if: steps.token.outputs.dry == 'true'
+        env:
+          ANTHROPIC_API_KEY: ""
+        run: |
+          claude --version
+          # Without a token this must fail on sign-in, not on the options.
+          first="$(ls -d build/photo-queue/*/ | head -1)"
+          (cd "$first" && timeout 120 claude -p "$(cat question.txt)" --model sonnet --permission-mode dontAsk \
+              --allowedTools Read --max-turns 2 --output-format json --json-schema "$(cat ../schema.json)") || true
+          for d in build/photo-queue/*/; do echo "$d: $(ls "$d" | tr '\n' ' ')"; head -c 400 "$d/ad.txt"; echo; done
+      - name: Ask Claude Code about each apartment
+        if: steps.token.outputs.ready == 'true'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # The subscription token must be what Claude Code uses, never an API key.
+          ANTHROPIC_API_KEY: ""
+        run: |
+          claude --version
+          claude auth status || true
+          mkdir -p build/photo-answers
+          schema="$(cat build/photo-queue/schema.json)"
+          for dir in build/photo-queue/*/; do
+            name="$(basename "$dir")"
+            [ -f "$dir/question.txt" ] || continue
+            echo "::group::$name $(head -c 120 "$dir/ad.txt" | tr '\n' ' ')"
+            (cd "$dir" && timeout 300 claude -p "$(cat question.txt)" \
+                --model sonnet \
+                --permission-mode dontAsk \
+                --allowedTools Read \
+                --max-turns 20 \
+                --output-format json \
+                --json-schema "$schema") > "build/photo-answers/$name.json" 2> "build/photo-answers/$name.err" || true
+            head -c 600 "build/photo-answers/$name.json"; echo
+            head -c 600 "build/photo-answers/$name.err"; echo
+            echo "::endgroup::"
+            # Stop early when the plan's usage limit is reached; the next run continues.
+            if grep -qi "usage limit\|rate limit\|limit reached" "build/photo-answers/$name.json" "build/photo-answers/$name.err"; then
+              echo "::warning::Claude usage limit reached; stopping this run."
+              break
+            fi
+          done
+      - name: Add the answers to the results
+        if: steps.token.outputs.ready == 'true'
+        run: ./gradlew -q :tools:run --args="collect $PWD/build/photo-queue $PWD/build/photo-answers $PWD/photo-results/assessments.json" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Commit results
+        if: steps.token.outputs.ready == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add photo-results/assessments.json
+          git commit -q -m "photo-check: results [skip ci]" || exit 0
+          for i in 1 2 3 4; do
+            git pull -q --rebase origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 5))
+          done
+          exit 1

@@ -1,0 +1,234 @@
+name: ci
+
+on:
+  push:
+    paths-ignore:
+      - "probe/**"
+      - "docs/**"
+      - "qa/**"
+      - "photo-results/**"
+      - "photo-check/**"
+      - "**.md"
+  # Run by hand from the Actions tab: live checks and device QA, and a release when ticked.
+  workflow_dispatch:
+    inputs:
+      release:
+        description: Publish the APK as a GitHub release
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ci-${{ github.ref }}
+  # Queue instead of cancelling, so device QA and live checks always finish.
+  cancel-in-progress: false
+
+jobs:
+  core:
+    name: core engine tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      # Build only the pure-Kotlin engine in this job.
+      ANDROID_HOME: ""
+      ANDROID_SDK_ROOT: ""
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Unit tests
+        run: ./gradlew :core:test :tools:test --continue
+      - name: Test summary
+        if: always()
+        run: python3 .github/scripts/junit_summary.py core/build/test-results tools/build/test-results
+      - name: Publish dependency bundle for offline development
+        if: contains(github.event.head_commit.message, '[deps]')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 .github/scripts/export_m2.py ~/.gradle/caches/modules-2/files-2.1 m2
+          (cd m2 && zip -qr ../m2.zip .)
+          ls -la m2.zip
+          gh release delete dev-deps -y --cleanup-tag || true
+          gh release create dev-deps m2.zip --prerelease --target "${GITHUB_SHA}" \
+            --title "Development dependency bundle" \
+            --notes "Maven-layout bundle of build dependencies for offline development sandboxes. Not an app release."
+
+  android:
+    name: android app
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Android SDK packages
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "build-tools;35.0.0" "build-tools;36.0.0" > /dev/null
+          ls "$ANDROID_HOME/platforms" "$ANDROID_HOME/build-tools"
+      - name: Resolve dependencies
+        run: ./gradlew :app:resolveAll --continue -q || true
+      - name: Build, unit tests and lint
+        run: ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug --continue
+      - name: Test summary
+        if: always()
+        run: python3 .github/scripts/junit_summary.py app/build/test-results || true
+      - name: Lint summary
+        if: always()
+        run: python3 .github/scripts/lint_summary.py app/build/reports/lint-results-debug.xml
+      - name: Upload APK
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shaqati-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+      - name: Publish Android SDK and dependency bundle for offline development
+        if: always() && contains(github.event.head_commit.message, '[sdk]')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 .github/scripts/export_m2.py ~/.gradle/caches/modules-2/files-2.1 m2
+          (cd m2 && zip -qr ../m2-android.zip .)
+          (cd "$ANDROID_HOME" && zip -qr "$GITHUB_WORKSPACE/android-sdk.zip" platforms/android-36 build-tools/35.0.0 build-tools/36.0.0 licenses)
+          ls -la m2-android.zip android-sdk.zip
+          gh release delete dev-sdk -y --cleanup-tag || true
+          gh release create dev-sdk m2-android.zip android-sdk.zip --prerelease --target "${GITHUB_SHA}" \
+            --title "Android development bundle" \
+            --notes "Android SDK platform/build-tools and Maven-layout build dependencies for offline development sandboxes. Not an app release."
+
+  live:
+    name: live sites check
+    if: contains(github.event.head_commit.message, '[live]') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ANDROID_HOME: ""
+      ANDROID_SDK_ROOT: ""
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Live adapters and engine
+        env:
+          SHAQATI_LIVE: "true"
+        run: ./gradlew :core:test --tests '*LiveSourcesTest*' -q
+      - name: Report
+        if: always()
+        run: cat core/build/live-report.txt || true
+
+  device:
+    name: on-device QA
+    needs: android
+    if: contains(github.event.head_commit.message, '[qa]') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Android SDK packages
+        run: |
+          SDKM="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKM" --licenses > /dev/null || true
+          "$SDKM" "platforms;android-36" "build-tools;35.0.0" > /dev/null
+          # The emulator download from Google's repository sometimes arrives corrupt ("Error on
+          # ZipFile unknown archive"); install it here with retries so the emulator step finds it.
+          for i in 1 2 3; do
+            "$SDKM" --install emulator --channel=0 > /dev/null && [ -x "$ANDROID_HOME/emulator/emulator" ] && break
+            echo "emulator install failed (attempt $i)"; sleep 15
+          done
+      - name: Build app and test APKs
+        run: ./gradlew :app:assembleDebug :app:assembleDebugAndroidTest
+      - name: Run QA on an emulator
+        id: qa
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          # Android 15 image: its newer WebView; the Android 14 image's WebView 113 drew no frames.
+          api-level: 35
+          arch: x86_64
+          target: google_apis
+          profile: pixel_7
+          disable-animations: true
+          # ANGLE on SwiftShader: WebView could not draw with the older swiftshader_indirect mode.
+          emulator-options: -no-window -gpu swangle_indirect -noaudio -no-boot-anim -camera-back none
+          script: bash .github/scripts/device_qa.sh
+      - name: Map page in Chrome
+        if: always()
+        run: python3 .github/scripts/map_preview.py
+      - name: Results
+        if: always()
+        run: |
+          # qa/ holds the previous run's files when the emulator step did not run its tests.
+          echo "emulator step: ${{ steps.qa.outcome }} (run ${GITHUB_RUN_NUMBER}, ${GITHUB_SHA::7})" | tee qa/status.txt
+          cat qa/qa-tour.txt qa/qa-live.txt qa/log.txt 2>/dev/null | tail -150 || true
+      - name: Commit screenshots
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add qa
+          git commit -q -m "qa: device screenshots for ${GITHUB_SHA::7} [skip ci]" || exit 0
+          for i in 1 2 3 4; do
+            git pull -q --rebase origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
+
+  release:
+    name: release APK
+    needs: [core, android]
+    if: contains(github.event.head_commit.message, '[release]') || (github.event_name == 'workflow_dispatch' && inputs.release)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Android SDK packages
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "build-tools;35.0.0" > /dev/null
+      - name: Build signed release APK
+        run: ./gradlew :app:assembleRelease
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION="1.0.${GITHUB_RUN_NUMBER}"
+          cp app/build/outputs/apk/release/app-release.apk "shaqati-${VERSION}.apk"
+          sha256sum "shaqati-${VERSION}.apk" > "shaqati-${VERSION}.apk.sha256"
+          FILES=("shaqati-${VERSION}.apk" "shaqati-${VERSION}.apk.sha256")
+          # A full release from the workflow token was once refused (HTTP 403) while pre-releases
+          # are accepted, so try a full release first and fall back to a pre-release.
+          if ! gh release create "shaqati-${VERSION}" "${FILES[@]}" --target "${GITHUB_SHA}" \
+              --title "Shaqati ${VERSION}" --notes-file .github/release-notes.md; then
+            gh release delete "shaqati-${VERSION}" -y --cleanup-tag 2>/dev/null || true
+            gh release create "shaqati-${VERSION}" "${FILES[@]}" --target "${GITHUB_SHA}" --prerelease \
+              --title "Shaqati ${VERSION}" --notes-file .github/release-notes.md
+          fi
+          gh release view "shaqati-${VERSION}" --json url,isPrerelease,assets --jq '{url, isPrerelease, assets: [.assets[].name]}'

@@ -1,0 +1,98 @@
+[
+ {
+  "name": "kite-devdocs-1",
+  "status": 404,
+  "len": 7403,
+  "final_url": "https://kite.sa/ar/developers",
+  "content_type": "text/html; charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "kite-devdocs-2",
+  "status": 404,
+  "len": 7403,
+  "final_url": "https://kite.sa/ar/developers",
+  "content_type": "text/html; charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "kite-devdocs-3",
+  "status": 404,
+  "len": 19295,
+  "final_url": "https://kite.sa/api/docs",
+  "content_type": "text/html; charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "kite-devdocs-4",
+  "status": 200,
+  "len": 183945,
+  "final_url": "https://platform.kite.sa/docs/guides/mcp",
+  "content_type": "text/html; charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "kite-listings-default",
+  "status": 200,
+  "len": 194860,
+  "final_url": "https://kite.sa/api/app/listings",
+  "content_type": "application/json;charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "kite-listings-riyadh",
+  "status": 200,
+  "len": 97686,
+  "final_url": "https://kite.sa/api/app/listings?city=riyadh&listing_type=rent&property_type=apartment&max_price=50000&min_bedrooms=2&sort=newest&page=1",
+  "content_type": "application/json;charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "kite-listings-riyadh-p2",
+  "status": 200,
+  "len": 97987,
+  "final_url": "https://kite.sa/api/app/listings?city=riyadh&listing_type=rent&property_type=apartment&max_price=50000&min_bedrooms=2&sort=newest&page=2",
+  "content_type": "application/json;charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "kite-map-masif",
+  "status": 200,
+  "len": 16826,
+  "final_url": "https://kite.sa/api/app/map-listings?bounds=24.70,46.60,24.83,46.76&zoom=14&sort=relevance",
+  "content_type": "application/json;charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "kite-listing-detail",
+  "status": 200,
+  "len": 171321,
+  "final_url": "https://kite.sa/ar/listing/112659998",
+  "content_type": "text/html; charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "kite-directions",
+  "status": 200,
+  "len": 1488,
+  "final_url": "https://kite.sa/api/app/directions?city=riyadh",
+  "content_type": "application/json;charset=utf-8",
+  "server": "cloudflare"
+ },
+ {
+  "name": "deal-guest",
+  "status": 200,
+  "len": 3578,
+  "final_url": "https://api.dealapp.sa/production/user/skip",
+  "content_type": "application/json; charset=utf-8",
+  "server": "nginx/1.24.0"
+ },
+ {
+  "name": "aqar-graphql-post",
+  "status": 200,
+  "len": 31,
+  "final_url": "https://sa.aqar.fm/graphql",
+  "content_type": "application/json; charset=utf-8",
+  "server": "cloudflare"
+ }
+]

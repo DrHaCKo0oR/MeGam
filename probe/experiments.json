@@ -1,0 +1,699 @@
+[
+ {
+  "name": "aq-full",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "query q($size:Int $from:Int $where:WhereInput $polygon:[LocationInput!] $sort:SortInput){ Web{ find(size:$size from:$from where:$where polygon:$polygon sort:$sort){ total listings { id price rent_period price_12_payments price_2_payments beds livings wc area category title path content imgs location{lat lng} district city create_time last_update published_at furnished family age ketchen fl lift ac car_entrance private_roof apartment_in_villa special_entrance two_entrances accept_monthly } } } }",
+   "variables": {
+    "size": 100,
+    "from": 0,
+    "where": {
+     "category": {
+      "eq": 1
+     },
+     "price": {
+      "lte": 50000
+     },
+     "beds": {
+      "gte": 2
+     }
+    },
+    "polygon": [
+     {
+      "lat": 24.82856,
+      "lng": 46.6802
+     },
+     {
+      "lat": 24.82376,
+      "lng": 46.70678
+     },
+     {
+      "lat": 24.81009,
+      "lng": 46.72931
+     },
+     {
+      "lat": 24.78963,
+      "lng": 46.74436
+     },
+     {
+      "lat": 24.7655,
+      "lng": 46.74965
+     },
+     {
+      "lat": 24.74137,
+      "lng": 46.74436
+     },
+     {
+      "lat": 24.72091,
+      "lng": 46.72931
+     },
+     {
+      "lat": 24.70724,
+      "lng": 46.70678
+     },
+     {
+      "lat": 24.70244,
+      "lng": 46.6802
+     },
+     {
+      "lat": 24.70724,
+      "lng": 46.65362
+     },
+     {
+      "lat": 24.72091,
+      "lng": 46.63109
+     },
+     {
+      "lat": 24.74137,
+      "lng": 46.61604
+     },
+     {
+      "lat": 24.7655,
+      "lng": 46.61075
+     },
+     {
+      "lat": 24.78963,
+      "lng": 46.61604
+     },
+     {
+      "lat": 24.81009,
+      "lng": 46.63109
+     },
+     {
+      "lat": 24.82376,
+      "lng": 46.65362
+     },
+     {
+      "lat": 24.82856,
+      "lng": 46.6802
+     }
+    ],
+    "sort": {
+     "last_update": "desc"
+    }
+   }
+  },
+  "keep": 3000,
+  "save": true
+ },
+ {
+  "name": "aq-user",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "query q($size:Int $from:Int $where:WhereInput $polygon:[LocationInput!] $sort:SortInput){ Web{ find(size:$size from:$from where:$where polygon:$polygon sort:$sort){ total listings { id user{name company_name} } } } }",
+   "variables": {
+    "size": 2,
+    "from": 0,
+    "where": {
+     "category": {
+      "eq": 1
+     },
+     "price": {
+      "lte": 50000
+     },
+     "beds": {
+      "gte": 2
+     }
+    },
+    "polygon": [
+     {
+      "lat": 24.82856,
+      "lng": 46.6802
+     },
+     {
+      "lat": 24.82376,
+      "lng": 46.70678
+     },
+     {
+      "lat": 24.81009,
+      "lng": 46.72931
+     },
+     {
+      "lat": 24.78963,
+      "lng": 46.74436
+     },
+     {
+      "lat": 24.7655,
+      "lng": 46.74965
+     },
+     {
+      "lat": 24.74137,
+      "lng": 46.74436
+     },
+     {
+      "lat": 24.72091,
+      "lng": 46.72931
+     },
+     {
+      "lat": 24.70724,
+      "lng": 46.70678
+     },
+     {
+      "lat": 24.70244,
+      "lng": 46.6802
+     },
+     {
+      "lat": 24.70724,
+      "lng": 46.65362
+     },
+     {
+      "lat": 24.72091,
+      "lng": 46.63109
+     },
+     {
+      "lat": 24.74137,
+      "lng": 46.61604
+     },
+     {
+      "lat": 24.7655,
+      "lng": 46.61075
+     },
+     {
+      "lat": 24.78963,
+      "lng": 46.61604
+     },
+     {
+      "lat": 24.81009,
+      "lng": 46.63109
+     },
+     {
+      "lat": 24.82376,
+      "lng": 46.65362
+     },
+     {
+      "lat": 24.82856,
+      "lng": 46.6802
+     }
+    ],
+    "sort": {
+     "last_update": "desc"
+    }
+   }
+  },
+  "keep": 3000,
+  "save": false
+ },
+ {
+  "name": "aq-license",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "query q($size:Int $from:Int $where:WhereInput $polygon:[LocationInput!] $sort:SortInput){ Web{ find(size:$size from:$from where:$where polygon:$polygon sort:$sort){ total listings { id ad_license_number } } } }",
+   "variables": {
+    "size": 2,
+    "from": 0,
+    "where": {
+     "category": {
+      "eq": 1
+     },
+     "price": {
+      "lte": 50000
+     },
+     "beds": {
+      "gte": 2
+     }
+    },
+    "polygon": [
+     {
+      "lat": 24.82856,
+      "lng": 46.6802
+     },
+     {
+      "lat": 24.82376,
+      "lng": 46.70678
+     },
+     {
+      "lat": 24.81009,
+      "lng": 46.72931
+     },
+     {
+      "lat": 24.78963,
+      "lng": 46.74436
+     },
+     {
+      "lat": 24.7655,
+      "lng": 46.74965
+     },
+     {
+      "lat": 24.74137,
+      "lng": 46.74436
+     },
+     {
+      "lat": 24.72091,
+      "lng": 46.72931
+     },
+     {
+      "lat": 24.70724,
+      "lng": 46.70678
+     },
+     {
+      "lat": 24.70244,
+      "lng": 46.6802
+     },
+     {
+      "lat": 24.70724,
+      "lng": 46.65362
+     },
+     {
+      "lat": 24.72091,
+      "lng": 46.63109
+     },
+     {
+      "lat": 24.74137,
+      "lng": 46.61604
+     },
+     {
+      "lat": 24.7655,
+      "lng": 46.61075
+     },
+     {
+      "lat": 24.78963,
+      "lng": 46.61604
+     },
+     {
+      "lat": 24.81009,
+      "lng": 46.63109
+     },
+     {
+      "lat": 24.82376,
+      "lng": 46.65362
+     },
+     {
+      "lat": 24.82856,
+      "lng": 46.6802
+     }
+    ],
+    "sort": {
+     "last_update": "desc"
+    }
+   }
+  },
+  "keep": 3000,
+  "save": false
+ },
+ {
+  "name": "aq-in",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "query q($size:Int $from:Int $where:WhereInput $polygon:[LocationInput!] $sort:SortInput){ Web{ find(size:$size from:$from where:$where polygon:$polygon sort:$sort){ total listings { id category } } } }",
+   "variables": {
+    "size": 5,
+    "from": 0,
+    "where": {
+     "category": {
+      "in": [
+       1,
+       4
+      ]
+     },
+     "price": {
+      "lte": 50000
+     }
+    },
+    "polygon": [
+     {
+      "lat": 24.82856,
+      "lng": 46.6802
+     },
+     {
+      "lat": 24.82376,
+      "lng": 46.70678
+     },
+     {
+      "lat": 24.81009,
+      "lng": 46.72931
+     },
+     {
+      "lat": 24.78963,
+      "lng": 46.74436
+     },
+     {
+      "lat": 24.7655,
+      "lng": 46.74965
+     },
+     {
+      "lat": 24.74137,
+      "lng": 46.74436
+     },
+     {
+      "lat": 24.72091,
+      "lng": 46.72931
+     },
+     {
+      "lat": 24.70724,
+      "lng": 46.70678
+     },
+     {
+      "lat": 24.70244,
+      "lng": 46.6802
+     },
+     {
+      "lat": 24.70724,
+      "lng": 46.65362
+     },
+     {
+      "lat": 24.72091,
+      "lng": 46.63109
+     },
+     {
+      "lat": 24.74137,
+      "lng": 46.61604
+     },
+     {
+      "lat": 24.7655,
+      "lng": 46.61075
+     },
+     {
+      "lat": 24.78963,
+      "lng": 46.61604
+     },
+     {
+      "lat": 24.81009,
+      "lng": 46.63109
+     },
+     {
+      "lat": 24.82376,
+      "lng": 46.65362
+     },
+     {
+      "lat": 24.82856,
+      "lng": 46.6802
+     }
+    ],
+    "sort": {
+     "last_update": "desc"
+    }
+   }
+  },
+  "keep": 3000,
+  "save": false
+ },
+ {
+  "name": "aq-cat4",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "query q($size:Int $from:Int $where:WhereInput $polygon:[LocationInput!] $sort:SortInput){ Web{ find(size:$size from:$from where:$where polygon:$polygon sort:$sort){ total listings { id category price } } } }",
+   "variables": {
+    "size": 5,
+    "from": 0,
+    "where": {
+     "category": {
+      "eq": 4
+     },
+     "price": {
+      "lte": 50000
+     },
+     "beds": {
+      "gte": 2
+     }
+    },
+    "polygon": [
+     {
+      "lat": 24.82856,
+      "lng": 46.6802
+     },
+     {
+      "lat": 24.82376,
+      "lng": 46.70678
+     },
+     {
+      "lat": 24.81009,
+      "lng": 46.72931
+     },
+     {
+      "lat": 24.78963,
+      "lng": 46.74436
+     },
+     {
+      "lat": 24.7655,
+      "lng": 46.74965
+     },
+     {
+      "lat": 24.74137,
+      "lng": 46.74436
+     },
+     {
+      "lat": 24.72091,
+      "lng": 46.72931
+     },
+     {
+      "lat": 24.70724,
+      "lng": 46.70678
+     },
+     {
+      "lat": 24.70244,
+      "lng": 46.6802
+     },
+     {
+      "lat": 24.70724,
+      "lng": 46.65362
+     },
+     {
+      "lat": 24.72091,
+      "lng": 46.63109
+     },
+     {
+      "lat": 24.74137,
+      "lng": 46.61604
+     },
+     {
+      "lat": 24.7655,
+      "lng": 46.61075
+     },
+     {
+      "lat": 24.78963,
+      "lng": 46.61604
+     },
+     {
+      "lat": 24.81009,
+      "lng": 46.63109
+     },
+     {
+      "lat": 24.82376,
+      "lng": 46.65362
+     },
+     {
+      "lat": 24.82856,
+      "lng": 46.6802
+     }
+    ],
+    "sort": {
+     "last_update": "desc"
+    }
+   }
+  },
+  "keep": 3000,
+  "save": false
+ },
+ {
+  "name": "aq-page2",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "query q($size:Int $from:Int $where:WhereInput $polygon:[LocationInput!] $sort:SortInput){ Web{ find(size:$size from:$from where:$where polygon:$polygon sort:$sort){ total listings { id } } } }",
+   "variables": {
+    "size": 50,
+    "from": 50,
+    "where": {
+     "category": {
+      "eq": 1
+     },
+     "price": {
+      "lte": 50000
+     },
+     "beds": {
+      "gte": 2
+     }
+    },
+    "polygon": [
+     {
+      "lat": 24.82856,
+      "lng": 46.6802
+     },
+     {
+      "lat": 24.82376,
+      "lng": 46.70678
+     },
+     {
+      "lat": 24.81009,
+      "lng": 46.72931
+     },
+     {
+      "lat": 24.78963,
+      "lng": 46.74436
+     },
+     {
+      "lat": 24.7655,
+      "lng": 46.74965
+     },
+     {
+      "lat": 24.74137,
+      "lng": 46.74436
+     },
+     {
+      "lat": 24.72091,
+      "lng": 46.72931
+     },
+     {
+      "lat": 24.70724,
+      "lng": 46.70678
+     },
+     {
+      "lat": 24.70244,
+      "lng": 46.6802
+     },
+     {
+      "lat": 24.70724,
+      "lng": 46.65362
+     },
+     {
+      "lat": 24.72091,
+      "lng": 46.63109
+     },
+     {
+      "lat": 24.74137,
+      "lng": 46.61604
+     },
+     {
+      "lat": 24.7655,
+      "lng": 46.61075
+     },
+     {
+      "lat": 24.78963,
+      "lng": 46.61604
+     },
+     {
+      "lat": 24.81009,
+      "lng": 46.63109
+     },
+     {
+      "lat": 24.82376,
+      "lng": 46.65362
+     },
+     {
+      "lat": 24.82856,
+      "lng": 46.6802
+     }
+    ],
+    "sort": {
+     "last_update": "desc"
+    }
+   }
+  },
+  "keep": 3000,
+  "save": false
+ },
+ {
+  "name": "aq-listing-one",
+  "url": "https://sa.aqar.fm/graphql",
+  "headers": {
+   "Origin": "https://sa.aqar.fm",
+   "Referer": "https://sa.aqar.fm/",
+   "Content-Type": "application/json"
+  },
+  "json": {
+   "query": "query q($id:Int!){ Web{ listing(id:$id){ id furnished family age ad_license_number } } }",
+   "variables": {
+    "id": 6708521
+   }
+  },
+  "keep": 2000
+ },
+ {
+  "name": "pf-page-0",
+  "url": "https://www.propertyfinder.sa/ar/للايجار/الرياض/شقق-للايجار.html?page=2",
+  "keep": 300,
+  "save": true
+ },
+ {
+  "name": "pf-page-1",
+  "url": "https://www.propertyfinder.sa/ar/للايجار/الرياض/شقق-للايجار-شمال-الرياض.html?page=3",
+  "keep": 300,
+  "save": true
+ },
+ {
+  "name": "pf-page-2",
+  "url": "https://www.propertyfinder.sa/ar/search?c=2&l=8216&t=1&rp=y&pt=50000&ob=nd&page=2",
+  "keep": 300,
+  "save": true
+ },
+ {
+  "name": "pf-page-3",
+  "url": "https://www.propertyfinder.sa/ar/search?c=2&l=8216&t=1&rp=y&pt=50000&ob=nd",
+  "keep": 300,
+  "save": true
+ },
+ {
+  "name": "deal-combo-price",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&city=6009d941950ada00061eeeab&purpose=RENT&propertyType=63091bcd45e4ba93412d5d25&maxPrice=50000",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-district",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&city=6009d941950ada00061eeeab&purpose=RENT&propertyType=63091bcd45e4ba93412d5d25&district=5dd490aebc2e91004242e4de",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-sort",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&city=6009d941950ada00061eeeab&purpose=RENT&propertyType=63091bcd45e4ba93412d5d25&sort=-createdAt",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-minrooms",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=3&city=6009d941950ada00061eeeab&purpose=RENT&propertyType=63091bcd45e4ba93412d5d25&minRooms=2",
+  "deal_auth": true,
+  "summarize": "deal"
+ },
+ {
+  "name": "deal-list-full",
+  "url": "https://api.dealapp.sa/production/ad?page=1&limit=20&city=6009d941950ada00061eeeab&purpose=RENT&propertyType=63091bcd45e4ba93412d5d25&maxPrice=50000",
+  "deal_auth": true,
+  "keep": 400,
+  "save": true
+ },
+ {
+  "name": "deal-detail-full",
+  "url": "https://api.dealapp.sa/production/ad/6ad0bcf5a53db52f093f832a",
+  "deal_auth": true,
+  "keep": 300,
+  "save": true
+ },
+ {
+  "name": "deal-districts",
+  "url": "https://api.dealapp.sa/production/district?city=6009d941950ada00061eeeab&limit=300&page=1",
+  "deal_auth": true,
+  "keep": 1500,
+  "save": true
+ }
+]

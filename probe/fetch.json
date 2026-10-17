@@ -1,0 +1,28 @@
+{
+  "jsgrep": [
+    {"name": "aqar", "page": "https://sa.aqar.fm/شقق-للإيجار/الرياض/شمال-الرياض/حي-المصيف",
+     "patterns": ["graphql", "operationName", "query [A-Za-z]+\\(", "findListings", "next-api/"], "max_js": 120, "max_hits": 5},
+    {"name": "kite", "page": "https://kite.sa/ar/search?city=riyadh",
+     "patterns": ["api/app/listings", "max_price", "min_bedrooms", "neighborhoods=", "searchParams", "developer", "x-search-request-id"], "max_js": 120, "max_hits": 6},
+    {"name": "deal", "page": "https://dealapp.sa/ar/tabs/marketplace",
+     "patterns": ["production/ad\\?", "\"ad\\?", "/ad\\?", "priceFrom", "minPrice", "propertyType=", "district", "purpose="], "max_js": 60, "max_hits": 6}
+  ],
+  "requests": [
+    {"name": "kite-devdocs-1", "url": "https://kite.sa/developers"},
+    {"name": "kite-devdocs-2", "url": "https://kite.sa/ar/developers"},
+    {"name": "kite-devdocs-3", "url": "https://kite.sa/api/docs"},
+    {"name": "kite-devdocs-4", "url": "https://kite.sa/docs"},
+    {"name": "kite-listings-default", "url": "https://kite.sa/api/app/listings?"},
+    {"name": "kite-listings-riyadh", "url": "https://kite.sa/api/app/listings?city=riyadh&listing_type=rent&property_type=apartment&max_price=50000&min_bedrooms=2&sort=newest&page=1"},
+    {"name": "kite-listings-riyadh-p2", "url": "https://kite.sa/api/app/listings?city=riyadh&listing_type=rent&property_type=apartment&max_price=50000&min_bedrooms=2&sort=newest&page=2"},
+    {"name": "kite-map-masif", "url": "https://kite.sa/api/app/map-listings?bounds=24.70,46.60,24.83,46.76&zoom=14&sort=relevance"},
+    {"name": "kite-listing-detail", "url": "https://kite.sa/ar/listing/112659998"},
+    {"name": "kite-directions", "url": "https://kite.sa/api/app/directions?city=riyadh"},
+    {"name": "deal-guest", "method": "POST", "url": "https://api.dealapp.sa/production/user/skip",
+     "json": {"os": "Mozilla/5.0 (Linux; Android 14)", "name": "Linux x86_64", "devicePlatform": "web"},
+     "headers": {"Origin": "https://dealapp.sa", "Accept-Language": "ar"}},
+    {"name": "aqar-graphql-post", "method": "POST", "url": "https://sa.aqar.fm/graphql",
+     "json": {"query": "{ __typename }"}, "headers": {"Origin": "https://sa.aqar.fm", "Referer": "https://sa.aqar.fm/"}}
+  ],
+  "browse": []
+}

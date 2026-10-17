@@ -1,0 +1,162 @@
+{
+  "sites": [
+    {
+      "name": "aqar",
+      "urls": [
+        "https://sa.aqar.fm/",
+        "https://sa.aqar.fm/شقق-للإيجار/الرياض",
+        "https://sa.aqar.fm/شقق-للإيجار/الرياض/شمال-الرياض/حي-المصيف"
+      ],
+      "detail_re": "aqar\\.fm/[^?#]*-\\d{5,}/?$|aqar\\.fm/\\d{5,}/?$",
+      "max_details": 2
+    },
+    {
+      "name": "bayut",
+      "urls": [
+        "https://www.bayut.sa/",
+        "https://www.bayut.sa/en/to-rent/apartments/riyadh/",
+        "https://www.bayut.sa/للايجار/شقق/الرياض/"
+      ],
+      "detail_re": "/property/details-\\d+",
+      "max_details": 2
+    },
+    {
+      "name": "propertyfinder",
+      "urls": [
+        "https://www.propertyfinder.sa/",
+        "https://www.propertyfinder.sa/en/rent/riyadh/apartments-for-rent.html",
+        "https://www.propertyfinder.sa/ar/rent/riyadh/apartments-for-rent.html"
+      ],
+      "detail_re": "/plp/|/property/",
+      "max_details": 2
+    },
+    {
+      "name": "wasalt",
+      "urls": [
+        "https://wasalt.sa/",
+        "https://www.wasalt.sa/ar/search/rent/riyadh",
+        "https://wasalt.com/"
+      ],
+      "detail_re": "/property/|/properties/",
+      "max_details": 2
+    },
+    {
+      "name": "haraj",
+      "urls": [
+        "https://haraj.com.sa/",
+        "https://haraj.com.sa/tags/شقق للايجار",
+        "https://haraj.com.sa/tags/الرياض_شقق للايجار"
+      ],
+      "detail_re": "haraj\\.com\\.sa/(?:11|1)\\d{6,}",
+      "max_details": 2
+    },
+    {
+      "name": "deal",
+      "urls": [
+        "https://dealapp.sa/",
+        "https://dealapp.sa/ar"
+      ],
+      "detail_re": "/ad/|/ads/|/listing|/property",
+      "max_details": 2
+    },
+    {
+      "name": "opensooq",
+      "urls": [
+        "https://sa.opensooq.com/ar",
+        "https://sa.opensooq.com/ar/الرياض/عقارات-للايجار/شقق-للايجار"
+      ],
+      "detail_re": "/search/\\d{6,}",
+      "max_details": 2
+    },
+    {
+      "name": "others",
+      "urls": [
+        "https://darak.app/",
+        "https://www.expatriates.com/classifieds/riyadh/housing/",
+        "https://www.mstaml.com/"
+      ],
+      "plain": [
+        "https://darak.app/",
+        "https://www.expatriates.com/classifieds/riyadh/housing/",
+        "https://www.mstaml.com/"
+      ],
+      "detail_re": "",
+      "max_details": 0
+    }
+  ],
+  "geocode": [
+    "حي المصيف، الرياض",
+    "Al Masif, Riyadh",
+    "Al Masif District, Riyadh, Saudi Arabia",
+    "سلام، المصيف، الرياض",
+    "Salam, Riyadh",
+    "كمبوند المربع، الرياض",
+    "حي المربع، الرياض",
+    "Al Murabba, Riyadh"
+  ],
+  "photon": [
+    "Salam R&D Riyadh",
+    "Salam Riyadh",
+    "سلام",
+    "Murabba compound Riyadh",
+    "كمبوند المربع"
+  ],
+  "overpass": {
+    "salam_near_masif": "[out:json][timeout:60];(nwr[\"name\"~\"Salam|سلام\",i](24.72,46.61,24.81,46.73);nwr[\"name:en\"~\"Salam\",i](24.72,46.61,24.81,46.73););out center 80;",
+    "masif_boundary": "[out:json][timeout:60];(relation[\"name\"~\"المصيف|Masif\",i](24.70,46.60,24.82,46.75);way[\"name\"~\"المصيف|Masif\",i][\"place\"](24.70,46.60,24.82,46.75);node[\"name\"~\"المصيف|Masif\",i](24.70,46.60,24.82,46.75););out center 30;",
+    "murabba_compound": "[out:json][timeout:60];(nwr[\"name\"~\"Murabba|المربع\",i](24.60,46.66,24.72,46.76););out center 60;"
+  },
+  "osrm": {
+    "murabba_to_masif": "https://router.project-osrm.org/route/v1/driving/46.712,24.662;46.665,24.765?overview=false",
+    "table_sample": "https://router.project-osrm.org/table/v1/driving/46.665,24.765;46.69,24.78;46.64,24.74;46.712,24.662?sources=1;2;3&destinations=0"
+  },
+  "google_maven": [
+    "com.android.tools.build:gradle",
+    "androidx.compose:compose-bom",
+    "androidx.activity:activity-compose",
+    "androidx.navigation:navigation-compose",
+    "androidx.room:room-runtime",
+    "androidx.work:work-runtime-ktx",
+    "androidx.datastore:datastore-preferences",
+    "androidx.lifecycle:lifecycle-runtime-compose",
+    "androidx.lifecycle:lifecycle-viewmodel-compose",
+    "androidx.core:core-ktx",
+    "androidx.core:core-splashscreen",
+    "androidx.webkit:webkit",
+    "androidx.appcompat:appcompat",
+    "androidx.test.ext:junit",
+    "androidx.test:runner",
+    "androidx.test:core",
+    "androidx.test:rules",
+    "androidx.test.espresso:espresso-core",
+    "androidx.test.uiautomator:uiautomator",
+    "androidx.compose.ui:ui-test-junit4",
+    "androidx.compose.material3:material3",
+    "androidx.compose.material:material-icons-extended",
+    "androidx.exifinterface:exifinterface",
+    "androidx.security:security-crypto",
+    "com.google.android.material:material"
+  ],
+  "central": [
+    "org.jetbrains.kotlin:kotlin-gradle-plugin",
+    "com.google.devtools.ksp:symbol-processing-api",
+    "com.squareup.okhttp3:okhttp",
+    "com.squareup.okhttp3:mockwebserver",
+    "io.coil-kt.coil3:coil-compose",
+    "io.coil-kt.coil3:coil-network-okhttp",
+    "org.robolectric:robolectric",
+    "com.anthropic:anthropic-java",
+    "org.jetbrains.kotlinx:kotlinx-coroutines-android",
+    "org.jetbrains.kotlinx:kotlinx-coroutines-test",
+    "org.jetbrains.kotlinx:kotlinx-serialization-json",
+    "org.jsoup:jsoup",
+    "app.cash.turbine:turbine",
+    "com.google.truth:truth"
+  ],
+  "plugins": [
+    "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin",
+    "org.jetbrains.kotlin.plugin.compose:org.jetbrains.kotlin.plugin.compose.gradle.plugin",
+    "org.jetbrains.kotlin.plugin.serialization:org.jetbrains.kotlin.plugin.serialization.gradle.plugin",
+    "org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin"
+  ]
+}

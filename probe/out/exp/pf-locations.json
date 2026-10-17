@@ -1,0 +1,669 @@
+{
+ "found": {
+  "المصيف": {
+   "status": 200,
+   "id": "8269",
+   "name": "المصيف",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  },
+  "النفل": {
+   "status": 200,
+   "id": "8266",
+   "name": "النفل",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  },
+  "التعاون": {
+   "status": 200,
+   "id": "8294",
+   "name": "التعاون",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  },
+  "النزهة": {
+   "status": 200,
+   "id": "8244",
+   "name": "النزهة",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 3
+  },
+  "الوادي": {
+   "status": 200,
+   "id": "8362",
+   "name": "الوادي",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 4
+  },
+  "الملك فهد": {
+   "status": 200,
+   "id": "8380",
+   "name": "الملك فهد",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 6
+  },
+  "الربيع": {
+   "status": 200,
+   "id": "8395",
+   "name": "الربيع",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 6
+  },
+  "الملك سلمان": {
+   "status": 200,
+   "id": "8253",
+   "name": "الملك سلمان",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 3
+  },
+  "الازدهار": {
+   "status": 200,
+   "id": "8343",
+   "name": "الإزدهار",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  },
+  "الفلاح": {
+   "status": 200,
+   "id": "8312",
+   "name": "الفلاح",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 8
+  },
+  "الندى": {
+   "status": 200,
+   "id": "8366",
+   "name": "الندى",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 8
+  },
+  "المحمدية": {
+   "status": 200,
+   "id": "8396",
+   "name": "المحمدية",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 6
+  },
+  "العقيق": {
+   "status": 200,
+   "id": "8219",
+   "name": "العقيق",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 7
+  },
+  "الصحافة": {
+   "status": 200,
+   "id": "8246",
+   "name": "الصحافة",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 19
+  },
+  "السليمانية": {
+   "status": 200,
+   "id": "8237",
+   "name": "السليمانية",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 12
+  },
+  "حطين": {
+   "status": 200,
+   "id": "8254",
+   "name": "حطين",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 11
+  },
+  "النخيل": {
+   "status": 200,
+   "id": "8243",
+   "name": "النخيل",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  },
+  "القدس": {
+   "status": 200,
+   "id": "8265",
+   "name": "القدس",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 3
+  },
+  "الياسمين": {
+   "status": 200,
+   "id": "8313",
+   "name": "الياسمين",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 18
+  },
+  "العليا": {
+   "status": 200,
+   "id": "8238",
+   "name": "العليا",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 43
+  },
+  "قرطبة": {
+   "status": 200,
+   "id": "8226",
+   "name": "قرطبة",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 18
+  },
+  "الملك عبدالعزيز": {
+   "status": 200,
+   "id": "8236",
+   "name": "الملك عبدالعزيز",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  },
+  "الملقا": {
+   "status": 200,
+   "id": "8218",
+   "name": "الملقا",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 35
+  },
+  "الروضة": {
+   "status": 200,
+   "id": "8397",
+   "name": "الروضة",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  }
+ },
+ "multi": [
+  {
+   "sep": "-",
+   "status": 404,
+   "locations": [],
+   "total": null,
+   "listing_location_ids": []
+  },
+  {
+   "sep": ",",
+   "status": 200,
+   "locations": [],
+   "total": 296,
+   "listing_location_ids": [
+    "4997",
+    "5005",
+    "5016",
+    "5017",
+    "5028",
+    "5038",
+    "5039",
+    "5043",
+    "5052",
+    "5070",
+    "8247",
+    "8313"
+   ]
+  },
+  {
+   "sep": "%2C",
+   "status": 200,
+   "locations": [],
+   "total": 296,
+   "listing_location_ids": [
+    "4997",
+    "5005",
+    "5016",
+    "5017",
+    "5028",
+    "5038",
+    "5039",
+    "5043",
+    "5052",
+    "5070",
+    "8247",
+    "8313"
+   ]
+  }
+ ],
+ "log": [
+  {
+   "district": "المصيف",
+   "status": 200,
+   "id": "8269",
+   "name": "المصيف",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  },
+  {
+   "district": "المروج",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "المرسلات",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "النفل",
+   "status": 200,
+   "id": "8266",
+   "name": "النفل",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  },
+  {
+   "district": "التعاون",
+   "status": 200,
+   "id": "8294",
+   "name": "التعاون",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  },
+  {
+   "district": "النزهة",
+   "status": 200,
+   "id": "8244",
+   "name": "النزهة",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 3
+  },
+  {
+   "district": "الوادي",
+   "status": 200,
+   "id": "8362",
+   "name": "الوادي",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 4
+  },
+  {
+   "district": "الغدير",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "الملك فهد",
+   "status": 200,
+   "id": "8380",
+   "name": "الملك فهد",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 6
+  },
+  {
+   "district": "الربيع",
+   "status": 200,
+   "id": "8395",
+   "name": "الربيع",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 6
+  },
+  {
+   "district": "صلاح الدين",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "الملك سلمان",
+   "status": 200,
+   "id": "8253",
+   "name": "الملك سلمان",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 3
+  },
+  {
+   "district": "الازدهار",
+   "status": 200,
+   "id": "8343",
+   "name": "الإزدهار",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  },
+  {
+   "district": "الفلاح",
+   "status": 200,
+   "id": "8312",
+   "name": "الفلاح",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 8
+  },
+  {
+   "district": "الواحة",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "الندى",
+   "status": 200,
+   "id": "8366",
+   "name": "الندى",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 8
+  },
+  {
+   "district": "المحمدية",
+   "status": 200,
+   "id": "8396",
+   "name": "المحمدية",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 6
+  },
+  {
+   "district": "الورود",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "المغرزات",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "العقيق",
+   "status": 200,
+   "id": "8219",
+   "name": "العقيق",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 7
+  },
+  {
+   "district": "الرحمانية",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "الصحافة",
+   "status": 200,
+   "id": "8246",
+   "name": "الصحافة",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 19
+  },
+  {
+   "district": "الشهداء",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "السليمانية",
+   "status": 200,
+   "id": "8237",
+   "name": "السليمانية",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 12
+  },
+  {
+   "district": "حطين",
+   "status": 200,
+   "id": "8254",
+   "name": "حطين",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 11
+  },
+  {
+   "district": "النخيل",
+   "status": 200,
+   "id": "8243",
+   "name": "النخيل",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  },
+  {
+   "district": "الملك عبدالله",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "القدس",
+   "status": 200,
+   "id": "8265",
+   "name": "القدس",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 3
+  },
+  {
+   "district": "الياسمين",
+   "status": 200,
+   "id": "8313",
+   "name": "الياسمين",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 18
+  },
+  {
+   "district": "الرائد",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "العليا",
+   "status": 200,
+   "id": "8238",
+   "name": "العليا",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 43
+  },
+  {
+   "district": "غرناطة",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "قرطبة",
+   "status": 200,
+   "id": "8226",
+   "name": "قرطبة",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 18
+  },
+  {
+   "district": "الملك عبدالعزيز",
+   "status": 200,
+   "id": "8236",
+   "name": "الملك عبدالعزيز",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  },
+  {
+   "district": "الملقا",
+   "status": 200,
+   "id": "8218",
+   "name": "الملقا",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 35
+  },
+  {
+   "district": "الحمرا",
+   "status": 404,
+   "id": null,
+   "name": null,
+   "types": [],
+   "total": null
+  },
+  {
+   "district": "ام الحمام الغربي",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "المعذر الشمالي",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "الخزامى",
+   "status": 200,
+   "id": "8216",
+   "name": "الرياض",
+   "types": [
+    "CITY"
+   ],
+   "total": 473
+  },
+  {
+   "district": "الروضة",
+   "status": 200,
+   "id": "8397",
+   "name": "الروضة",
+   "types": [
+    "DISTRICT"
+   ],
+   "total": 1
+  }
+ ]
+}

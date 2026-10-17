@@ -1,20 +1,171 @@
-# MeGam
+# Shaqati (شقتي)
 
-## REA (Reverse Engineer Anything) for Claude Code
+A personal Android app for finding a rental apartment in Riyadh near work. It reads the
+listing sites, keeps only the family apartments that meet the requirements, measures the
+rush-hour drive to work, and has Claude look at the photos to separate renovated, modern
+apartments from old ones.
 
-This repository registers [REA](https://github.com/morluto/rea) for Claude Code
-at project scope:
+## What it does
+
+- **Searches seven sites**: Aqar (عقار), Bayut (بيوت), Wasalt (وصلت), Haraj (حراج),
+  Property Finder, Deal (ديل) and OpenSooq (السوق المفتوح). The same apartment advertised on
+  several sites is shown once, matched by REGA licence number or phone, size and location.
+- **Bayut, Wasalt and Property Finder are read in a browser inside the app**, page by page,
+  like your own browsing. If a site asks for a check (a captcha or "checking your browser"),
+  the feed says so; tap **Open** and complete the check once, and the next search reads it.
+- **Applies the requirements** (all editable in Settings): rent up to 50,000 SAR a year
+  (monthly rents ×12), one bedroom plus at least one extra room, a living room, two
+  bathrooms, unfurnished or semi-furnished, families allowed, morning commute up to 40 min.
+- **Sorts results into four tabs**:
+  - **Matches**: every requirement is met and rent, rooms, bathrooms and location are
+    confirmed.
+  - **To check**: nothing is broken, but the ad leaves out the rent, the rooms, the bathrooms
+    or the location. A bathroom count the ad leaves out can be confirmed from the photos.
+  - **Almost**: misses one requirement by a little, for example 10% over budget or 5 minutes
+    too far.
+  - **All**: every ad around work.
+- **Commute**: Google traffic forecast for the next workday at 08:00 (home → work) and
+  17:00 (work → home). It is corrected with your real trip from your current home (75 min
+  in the morning, 80 in the evening). Without a Google key it uses a distance estimate
+  tuned to Riyadh rush hour.
+- **Finish check**:
+  - Claude rates floors, ceiling and lighting, walls and paint, doors and windows,
+    bathrooms and kitchen from up to 8 photos. It runs on your **Claude subscription**
+    (see below) or on an Anthropic API key.
+  - **Ask Claude about the photos** on any apartment opens the Claude app with its photos
+    and a ready question, on your subscription.
+  - It gives a verdict (modern / renovated / dated / old) with reasons in Arabic and
+    English.
+  - The ad text adds signals too: "أول ساكن", "مجددة بالكامل", "سبوت لايت", "تحتاج ترميم", …
+- **Map** of all results around the work pin: Google Maps with your key, or OpenStreetMap
+  without one.
+- **Actions** from each apartment: call, WhatsApp, open the original ad, Google Maps route,
+  save, hide (with a reason), and private notes.
+- **Languages**: Arabic and English, right-to-left aware. There are no notifications;
+  background search runs every few hours and results wait in the app.
+
+## Install
+
+1. Open the latest **Shaqati** release on this repository's Releases page.
+2. Download `shaqati-<version>.apk` and open it on the phone. Allow installing from the
+   browser or file manager if Android asks.
+3. Later versions install over the previous one, because every build is signed with the
+   same key.
+
+## First start
+
+1. **Work location.** Tap *Set work location*, then move the map so the pin sits on your
+   building, or paste a Google Maps link to it. Until then the app uses the centre of
+   Al Masif.
+2. **Keys (optional, can be added later in Settings):**
+   - **Google Maps Platform key**, for traffic-accurate commutes and the Google map.
+     1. In Google Cloud Console, create a project.
+     2. Enable **Routes API** and **Maps JavaScript API**.
+     3. Create an API key.
+     4. To restrict it, allow those two APIs and add the website restriction
+        `https://appassets.androidplatform.net/*`.
+     5. Each apartment location costs 2 route elements (morning and evening), and results
+        are cached per location. Normal use stays within Google's monthly free usage.
+   - **Anthropic API key** (optional), for photo analysis inside the app, billed to the key:
+     create one at console.anthropic.com. To use your Claude subscription instead, see
+     the next section.
+3. Tap **Start searching**. The first search takes a minute or two; pull down on the list
+   to search again.
+
+## Photo checks with your Claude subscription
+
+Anthropic lets only its own apps sign in with a Claude subscription, so Shaqati itself never
+asks for your Claude login. Instead, the official **Claude Code** runs the photo checks on your
+plan, in this repository's GitHub Actions (`.github/workflows/photo-check.yml`):
+
+- Every 6 hours it searches the sites a server can reach (Aqar, Haraj, Property Finder, Deal,
+  OpenSooq), picks up to 10 new apartments that match, and has Claude Code (Sonnet) rate their
+  photos with the same checklist as the app.
+- The verdicts go to `photo-results/assessments.json`; the app downloads them on every search
+  and shows them on each apartment. Photos and the token are never committed.
+
+Turn it on once:
+
+1. On a computer with Claude Code, run `claude setup-token` and sign in with your Claude
+   account. It prints a token that is valid for a year.
+2. In GitHub, add it as a repository secret named `CLAUDE_CODE_OAUTH_TOKEN`
+   (Settings → Secrets and variables → Actions → New repository secret).
+3. Merge the app's pull request: GitHub runs scheduled workflows from the default branch only.
+
+Optional: the secret `SHAQATI_WORK` (`lat,lng` of work) and the variables `SHAQATI_RADIUS_KM`
+(default 9), `SHAQATI_MAX_RENT` (default 50000) and `PHOTO_CHECKS_PER_RUN` (default 10). Usage counts against your plan's limits; when a limit is reached
+the run stops and the next one continues. Bayut and Wasalt apartments are rated when the same
+apartment is also on another site, or with **Ask Claude** on the apartment's page.
+
+## Photo analysis cost control (API key)
+
+- Only apartments in **Matches** with at least 3 photos are analysed, each one only once.
+- Photos are shrunk to about 640 px, and at most 6 are sent (up to 8 in Settings).
+- **Batch mode** (on by default) uses the Message Batches API at half price. Results arrive
+  within about an hour.
+- The long rating rubric is sent as a cached prompt, so it is billed at the cache rate.
+- A **monthly limit** (default $5) stops new analysis when reached. The spend so far is
+  shown in Settings.
+
+With the defaults one apartment costs about one cent, so $5 covers several hundred
+apartments.
+
+## What is not included, and why
+
+- **Kite** is an aggregator whose terms do not allow this use from a mobile app.
+- **Deal** only shows guests the newest pages of each search. The app reads those gently on
+  every refresh, so new Deal ads are picked up over time.
+
+## Privacy
+
+- Everything runs on the phone; there is no server.
+- API keys are encrypted with the Android Keystore and only sent to Google or Anthropic.
+- The subscription photo check runs in your own GitHub repository. Only verdicts (ad id,
+  ratings, notes and photo links) are published there; the app downloads that file.
+- Without a Google key, the map loads its tiles from OpenStreetMap.
+- Searches, saved apartments and notes stay in the app's private storage.
+
+## For developers
+
+- **`core/`**: pure Kotlin engine.
+  - Site adapters, Arabic text signals, filters, duplicate matching and ranking.
+  - Google Routes client and the Claude client (official `anthropic-java` SDK).
+  - Unit tests run against responses recorded from each site.
+- **`app/`**: Jetpack Compose UI, WorkManager background search, encrypted settings, the
+  map (WebView) and the in-app browser for sites with bot checks.
+- **`tools/`**: the photo check's command line (`queue` and `collect`), run by
+  `photo-check.yml` around `claude -p`.
+- **CI** (`.github/workflows/ci.yml`):
+  - Core tests, the Android build, unit tests and lint.
+  - On demand, with a tag in the commit message:
+    - `[live]` runs the adapters against the real sites.
+    - `[qa]` runs an emulator tour of every screen in both languages plus a live search,
+      and commits the screenshots to `qa/`.
+    - `[release]` publishes the signed APK as a GitHub release.
+  - Running the workflow by hand from the Actions tab does the live checks and device QA, and
+    publishes a release when *release* is ticked.
+- **Photo check** (`.github/workflows/photo-check.yml`): every 6 hours on the default branch, or
+  when `photo-check/REQUEST` changes. With `DRY_RUN=1` in that file it runs every step except
+  asking Claude (search, photos, Claude Code's options) and commits nothing.
+- **`probe/`**: the scripts used to learn how each site serves its listings.
+
+Build locally with `./gradlew :core:test :app:assembleDebug`. This needs JDK 17+, and the
+Android SDK only for `app`.
+
+### REA (Reverse Engineer Anything) for Claude Code
+
+This repository also registers [REA](https://github.com/morluto/rea) for Claude Code at
+project scope:
 
 - `.mcp.json` registers the `rea` MCP server (`npx -y rea-agents@6.5.0 mcp`).
 - `.claude/settings.json` pre-approves that server for this project.
-- `.claude/skills/reverse-engineer-anything/` is REA's bundled workflow skill
-  (copied from `rea-agents@6.5.0`).
+- `.claude/skills/reverse-engineer-anything/` is REA's bundled workflow skill (copied from
+  `rea-agents@6.5.0`).
 
-Requirements: Node.js 22.x (>=22.19), 24.x (>=24.11) or 26+, plus npm. On
-Linux, a procps-compatible `ps` is needed for JavaScript/Electron, Ghidra and
-JADX analysis. Native binary decompilation needs Hopper, Ghidra or IDA.
+Requirements:
+
+- Node.js 22.x (>=22.19), 24.x (>=24.11) or 26+, plus npm.
+- On Linux, a procps-compatible `ps` for JavaScript/Electron, Ghidra and JADX analysis.
+- Hopper, Ghidra or IDA for native binary decompilation.
 
 Restart Claude Code in this directory, then check with `claude mcp list`.
-
-To update, change the version in `.mcp.json` and refresh the skill from the
-same `rea-agents` release.

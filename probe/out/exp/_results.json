@@ -1,0 +1,277 @@
+[
+ {
+  "name": "aq-full",
+  "status": 200,
+  "len": 87211,
+  "body": "{\"data\":{\"Web\":{\"find\":{\"total\":497,\"listings\":[{\"id\":6906410,\"price\":8000,\"rent_period\":3,\"price_12_payments\":96000,\"price_2_payments\":90000,\"beds\":3,\"livings\":1,\"wc\":4,\"area\":121,\"category\":1,\"title\":\"شقة للإيجار في شارع العمرة, حي الملقا, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/شمال-الرياض/حي-الملقا/شارع-العمرة-حي-الملقا-مدينة-الرياض-منطقة-الرياض-6906410\",\"content\":\"شقة فاخرة للعوائل بحي الملقا للإيجار \\n\\nتتكون من \\n\\nغرفتين نوم ماستر ( كل غرفة معها دورة مياه خاصة بها ) \\nغرفة نوم إضافية \\nصالة \\nمجلس \\nمطبخ جاهز ومركب بالكامل ( غسالة + ثلاجة + فرن ) \\nحوش خارجي \\nموقف خاص للشقة بالقبو \\n\\n\\nالكهرب مستقل \\nالمبلغ شامل لرسوم إدارة الأملاك \\n\\nالايجار ٨٠٠٠ شهرياً\",\"imgs\":[\"013058897_1791222182690.jpg\",\"013058895_1791222208056.jpg\",\"013058891_1791222208093.jpg\",\"013058899_1791222208190.jpg\",\"013058899_1791222208186.jpg\",\"013058895_1791222208086.jpg\",\"013058892_1791222208081.jpg\",\"013058893_1791222208081.jpg\",\"013058896_1791222208076.jpg\",\"013058892_1791222231463.jpg\",\"013058893_1791222231442.jpg\",\"013058890_1791222231452.jpg\",\"013058892_1791222231435.jpg\",\"013058897_1791222231459.jpg\",\"013058893_1791222231445.jpg\"],\"location\":{\"lat\":24.795934,\"lng\":46.622693},\"district\":\"حي الملقا\",\"city\":\"الرياض\",\"create_time\":1791222519,\"last_update\":1792170323,\"published_at\":1791222519,\"furnished\":0,\"family\":1,\"age\":1,\"ketchen\":1,\"fl\":1,\"lift\":1,\"ac\":1,\"car_entrance\":0,\"private_roof\":true,\"apartment_in_villa\":false,\"special_entrance\":false,\"two_entrances\":false,\"accept_monthly\":true},{\"id\":6602539,\"price\":7500,\"rent_period\":3,\"price_12_payments\":90000,\"price_2_payments\":0,\"beds\":2,\"livings\":1,\"wc\":1,\"area\":100,\"category\":1,\"title\":\"شقة للإيجار في شارع الحوي, حي العقيق, مدينة الرياض, منطقة الرياض\",\"path\":\"/شقق-للإيجار/الرياض/شمال-الرياض/حي-العقيق/شارع-الحوي-حي-العقيق-مدينة-الرياض-منطقة-الرياض-6602539\",\"content\":\"فرصة سكنيه مميزه في حي العقيق 📍- عمارة السليمانيه 1✨\\n\\nجديد مفروش حي العقيق ✨\\n\\n\\n-غرفتين + صاله + مطبخ كاونتر + دورة مياه \\n\\n\\nالايجار شامل ✨\\nالكهرباء+ الماء \\n\\nمتوفر نظام السنوي ثلاث دفعات او دفعتين او دفعه اقل سعر ✨\\nومتاح  دفعات شهري ✨\\n\\nلتواصل ((رقم المعلن يظهر عند التواصل))\",\"imgs\":[\"028414946_1771881887521.jpg\",\"028414940_1771881898075.jpg\",\"028414947_1771881898074.jpg\",\"028414946_1771881898093.jpg\",\"028414941_1771881898083.jpg\",\"028414943_1771881898089.jpg\",\"028414942_1771881898084.jpg\",\"028414943_1771881898099.jpg\",\"028414941_1771881898090.jpg\"],\"location\":{\"lat\":24.782981,\"lng\":46.627095},\"district\":\"حي العقيق\",\"city\":\"الرياض\",\"create_time\":1771882026,\"last_update\":1792170311,\"published_at\":1779449264,\"furnished\":1,\"family\":1,\"age\":1,\"ketchen\":1,\"fl\":0,\"lift\":1,\"ac\":1,\"car_entrance\":0,\"private_roof\":false,\"apartment_in_villa\":false,\"special_entrance\":false,\"two_entrances\":false,\"accept_monthly\":true},{\"id\":6905404,\"price\":35000,\"rent_period\":null,\"price_12_payments\":null,\"price_2_payments\":null,\"beds\":2,\"livings\":null,\"wc\":null,\"area\":70,\"category\":1,\"title\":\"شقة للإيجار في شارع الامير ناصر بن سعود بن فرحان ال سعود, حي ا"
+ },
+ {
+  "name": "aq-user",
+  "status": 200,
+  "len": 225,
+  "body": "{\"data\":{\"Web\":{\"find\":{\"total\":497,\"listings\":[{\"id\":6906410,\"user\":{\"name\":\"عبداللطيف محمد بن عبدالله القاسم\",\"company_name\":null}},{\"id\":6602539,\"user\":{\"name\":\"محمد السليمان\",\"company_name\":\"شركة صرح نبل العقارية \"}}]}}}}"
+ },
+ {
+  "name": "aq-license",
+  "status": 200,
+  "len": 148,
+  "body": "{\"data\":{\"Web\":{\"find\":{\"total\":497,\"listings\":[{\"id\":6906410,\"ad_license_number\":\"7100328149\"},{\"id\":6602539,\"ad_license_number\":\"7200890516\"}]}}}}"
+ },
+ {
+  "name": "aq-in",
+  "status": 500,
+  "len": 282,
+  "body": "{\"errors\":[{\"error\":\"GRAPHQL_ERROR\",\"code\":414,\"message\":\"Variable \\\"$where\\\" got invalid value {\\\"category\\\":{\\\"in\\\":[1,4]},\\\"price\\\":{\\\"lte\\\":50000}}; Field \\\"in\\\" is not defined by type IntSearchField at value.category; did you mean inar?\",\"locations\":[{\"line\":1,\"column\":29}]}]}"
+ },
+ {
+  "name": "aq-cat4",
+  "status": 200,
+  "len": 216,
+  "body": "{\"data\":{\"Web\":{\"find\":{\"total\":4,\"listings\":[{\"id\":6774856,\"category\":4,\"price\":40000},{\"id\":6912184,\"category\":4,\"price\":50000},{\"id\":6898507,\"category\":4,\"price\":140},{\"id\":6822090,\"category\":4,\"price\":50000}]}}}}"
+ },
+ {
+  "name": "aq-page2",
+  "status": 200,
+  "len": 802,
+  "body": "{\"data\":{\"Web\":{\"find\":{\"total\":497,\"listings\":[{\"id\":6904988},{\"id\":6825756},{\"id\":6895912},{\"id\":6841796},{\"id\":6802681},{\"id\":6884888},{\"id\":6898100},{\"id\":6921974},{\"id\":6849599},{\"id\":6861060},{\"id\":6896367},{\"id\":6848514},{\"id\":6712843},{\"id\":6831796},{\"id\":6808218},{\"id\":6914110},{\"id\":6810787},{\"id\":6822675},{\"id\":6832216},{\"id\":6922989},{\"id\":6922151},{\"id\":6888465},{\"id\":6833653},{\"id\":6663025},{\"id\":6651712},{\"id\":6538050},{\"id\":6782920},{\"id\":6646357},{\"id\":6602566},{\"id\":6890391},{\"id\":6891267},{\"id\":6837661},{\"id\":6560654},{\"id\":6885080},{\"id\":6830074},{\"id\":6617546},{\"id\":6916970},{\"id\":6910514},{\"id\":6908927},{\"id\":6888044},{\"id\":6888038},{\"id\":6922433},{\"id\":6627670},{\"id\":6627664},{\"id\":6753913},{\"id\":6552521},{\"id\":6811570},{\"id\":6851693},{\"id\":6868132},{\"id\":6783111}]}}}}"
+ },
+ {
+  "name": "aq-listing-one",
+  "status": 200,
+  "len": 109,
+  "body": "{\"data\":{\"Web\":{\"listing\":{\"id\":6708521,\"furnished\":1,\"family\":1,\"age\":0,\"ad_license_number\":\"7200983241\"}}}}"
+ },
+ {
+  "name": "pf-page-0",
+  "status": 200,
+  "len": 1234914,
+  "body": "<!DOCTYPE html><html dir=\"rtl\" platform=\"mobile\" lang=\"ar\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link href=\"https://b2c.propertyfinder.sa/fragments/0.7.1/footer/v2/index.css\" rel=\"stylesheet\"/><style>\n          :root {\n            --styleg"
+ },
+ {
+  "name": "pf-page-1",
+  "status": 404,
+  "len": 676873,
+  "body": "<!DOCTYPE html><html dir=\"rtl\" platform=\"mobile\" lang=\"ar\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link href=\"https://b2c.propertyfinder.sa/fragments/0.7.1/footer/v2/index.css\" rel=\"stylesheet\"/><style>\n          :root {\n            --styleg"
+ },
+ {
+  "name": "pf-page-2",
+  "status": 200,
+  "len": 1044868,
+  "body": "<!DOCTYPE html><html dir=\"rtl\" platform=\"mobile\" lang=\"ar\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link href=\"https://b2c.propertyfinder.sa/fragments/0.7.1/footer/v2/index.css\" rel=\"stylesheet\"/><style>\n          :root {\n            --styleg"
+ },
+ {
+  "name": "pf-page-3",
+  "status": 200,
+  "len": 1019128,
+  "body": "<!DOCTYPE html><html dir=\"rtl\" platform=\"mobile\" lang=\"ar\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link href=\"https://b2c.propertyfinder.sa/fragments/0.7.1/footer/v2/index.css\" rel=\"stylesheet\"/><style>\n          :root {\n            --styleg"
+ },
+ {
+  "name": "deal-token",
+  "status": 200,
+  "headers": {
+   "Content-Type": "application/…",
+   "Transfer-Encoding": "chunked…",
+   "Connection": "keep-alive…",
+   "Date": "Fri, 16 Oct …",
+   "content-encoding": "gzip…",
+   "ETag": "W/\"e51-SQAsF…",
+   "Server": "nginx/1.24.0…",
+   "Access-Control-Allow-Origin": "*…",
+   "Access-Control-Expose-Headers": "authorizatio…",
+   "Content-Security-Policy": "default-src …",
+   "Cross-Origin-Opener-Policy": "same-origin…",
+   "Cross-Origin-Resource-Policy": "same-origin…",
+   "Origin-Agent-Cluster": "?1…",
+   "Referrer-Policy": "no-referrer…",
+   "Strict-Transport-Security": "max-age=3153…",
+   "X-Content-Type-Options": "nosniff…",
+   "X-DNS-Prefetch-Control": "off…",
+   "X-Download-Options": "noopen…",
+   "X-Frame-Options": "SAMEORIGIN…",
+   "X-Permitted-Cross-Domain-Policies": "none…",
+   "X-XSS-Protection": "0…",
+   "x-env-source": "production…",
+   "x-human": "true…",
+   "x-env": "production…",
+   "X-RateLimit-Limit": "20…",
+   "X-RateLimit-Remaining": "19…",
+   "X-RateLimit-Reset": "1792256925…",
+   "authorization": "eyJhbGciOiJI…",
+   "vary": "Accept-Encod…",
+   "X-Cache": "Miss from cl…",
+   "Via": "1.1 b37a32f1…",
+   "X-Amz-Cf-Pop": "ORD58-P14…",
+   "X-Amz-Cf-Id": "1RwoKGogShEK…"
+  },
+  "cookies": [],
+  "has_token": true
+ },
+ {
+  "name": "deal-combo-price",
+  "status": 200,
+  "len": 9378,
+  "total": 2215,
+  "sample": [
+   {
+    "price": 9000,
+    "purpose": "RENT",
+    "rentType": "MONTHLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الروضة",
+     "_id": "5dd490aebc2e91004242e4a7",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   },
+   {
+    "price": 18000,
+    "purpose": "RENT",
+    "rentType": "MONTHLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "حطين",
+     "_id": "5dd490aebc2e91004242e4de",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   },
+   {
+    "price": 23400,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "الفوطة",
+     "_id": "5dd490aebc2e91004242e4c8",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   }
+  ]
+ },
+ {
+  "name": "deal-district",
+  "status": 200,
+  "len": 8567,
+  "total": 47,
+  "sample": [
+   {
+    "price": 18000,
+    "purpose": "RENT",
+    "rentType": "MONTHLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "حطين",
+     "_id": "5dd490aebc2e91004242e4de",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   },
+   {
+    "price": 85000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "حطين",
+     "_id": "5dd490aebc2e91004242e4de",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   },
+   {
+    "price": 130000,
+    "purpose": "RENT",
+    "rentType": "ANNUALLY",
+    "city": {
+     "name_ar": "الرياض",
+     "_id": "6009d941950ada00061eeeab",
+     "propertyType": null
+    },
+    "district": {
+     "name_ar": "حطين",
+     "_id": "5dd490aebc2e91004242e4de",
+     "propertyType": null
+    },
+    "propertyType": {
+     "name_ar": null,
+     "_id": "63091bcd45e4ba93412d5d25",
+     "propertyType": "APARTMENT"
+    }
+   }
+  ]
+ },
+ {
+  "name": "deal-sort",
+  "status": 400,
+  "len": 58,
+  "total": null,
+  "sample": []
+ },
+ {
+  "name": "deal-minrooms",
+  "status": 400,
+  "len": 45,
+  "total": null,
+  "sample": []
+ },
+ {
+  "name": "deal-list-full",
+  "status": 400,
+  "len": 60,
+  "body": "{\"error\":{\"message\":\"limit يجب أن يكون أقل من أو يساوي 10\"}}"
+ },
+ {
+  "name": "deal-detail-full",
+  "status": 200,
+  "len": 4431,
+  "body": "{\"data\":{\"location\":{\"value\":{\"type\":\"Point\",\"coordinates\":[39.16469656725476,21.57420050532706]},\"type\":\"PRECISE\"},\"media\":{\"main\":{\"url\":\"https://uploads.deal-app.com/1bc5f009-a51d-45b7-9ab7-12344169e6b1.qt\",\"type\":\"VIDEO\",\"thumbnail\":\"https://uploads.deal-app.com/1bc5f009-a51d-45b7-9ab7-12344169e"
+ },
+ {
+  "name": "deal-districts",
+  "status": 404,
+  "len": 158,
+  "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /production/district</pre>\n</body>\n</html>\n"
+ }
+]

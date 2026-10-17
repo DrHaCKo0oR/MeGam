@@ -1,0 +1,94 @@
+locale  -> en
+shot en-01-onboarding
+seeded 57 ads; buckets={NEAR_MISSES=6, ALL=50, MATCHES=1}
+shot en-02-feed
+shot en-03-to-check
+shot en-04-close
+shot en-05-all
+shot en-05b-detail-bayut
+shot en-05b-detail-wasalt
+shot en-06-saved
+shot en-07-detail
+shot en-08-detail-finish
+shot en-08b-ask-claude
+shot en-09-detail-requirements
+map ready=true
+shot en-10-map
+js: "{\"vw\":412,\"vh\":759,\"dpr\":2.625,\"mw\":412,\"mh\":759,\"bg\":\"rgb(221, 221, 221)\",\"pos\":\"relative\",\"sheets\":2,\"tiles\":12,\"loaded\":12,\"pins\":1,\"work\":1,\"provider\":\"leaflet\",\"vis\":\"visible\"}"
+js: 759
+webShot en-10c-map-content
+js: "pins=1"
+map pin card=true
+shot en-10b-map-pin
+shot en-11-settings
+shot en-12-settings-ai
+shot en-12b-settings-subscription
+picker ready=true
+shot en-13-work-picker
+js: 915
+webShot en-13c-picker-content
+seeded 57 ads; buckets={NEAR_MISSES=6, ALL=50, MATCHES=1}
+locale en -> ar
+shot ar-02-feed
+shot ar-03-to-check
+shot ar-04-close
+shot ar-05-all
+shot ar-06-saved
+shot ar-07-detail
+shot ar-08-detail-finish
+shot ar-09-detail-requirements
+map ready=true
+shot ar-10-map
+js: "{\"vw\":412,\"vh\":759,\"dpr\":2.625,\"mw\":412,\"mh\":759,\"bg\":\"rgb(221, 221, 221)\",\"pos\":\"relative\",\"sheets\":2,\"tiles\":12,\"loaded\":12,\"pins\":1,\"work\":1,\"provider\":\"leaflet\",\"vis\":\"visible\"}"
+js: 759
+webShot ar-10c-map-content
+js: "pins=1"
+map pin card=true
+shot ar-10b-map-pin
+shot ar-11-settings
+shot ar-12-settings-ai
+shot ar-12b-settings-subscription
+picker ready=true
+shot ar-13-work-picker
+js: 915
+webShot ar-13c-picker-content
+shot zz-webview-control
+webShot zz-webview-control-content
+js: "{\"vw\":412,\"vh\":534,\"dpr\":2.625,\"mw\":412,\"mh\":534,\"bg\":\"rgb(221, 221, 221)\",\"pos\":\"relative\",\"sheets\":2,\"tiles\":12,\"loaded\":12,\"pins\":1,\"work\":1,\"provider\":\"leaflet\",\"vis\":\"visible\"}"
+shot zz-map-page-plain
+webShot zz-map-page-plain-content
+seeded 45 ads; buckets={NEAR_MISSES=6, ALL=38, MATCHES=1}
+locale ar -> en
+shot zz-site-check-banner
+shot zz-site-check-settings
+js: "Security check | Bayut"
+site check bayut passed=false title="Security check | Bayut"
+shot zz-site-check-bayut
+shot live-00-searching
+live error=null in 108s ads={aqar=718, haraj=127, pf=69, deal=61, opensooq=3} details=19 buckets={UNCONFIRMED=17, ALL=626, NEAR_MISSES=217, MATCHES=100}
+source aqar: ok=true found=718 pages=11 blocked=false 
+source bayut: ok=false found=0 pages=1 blocked=true bot check
+source wasalt: ok=false found=0 pages=1 blocked=true bot check
+source haraj: ok=true found=127 pages=28 blocked=false 
+source pf: ok=true found=69 pages=5 blocked=false 
+source deal: ok=true found=61 pages=18 blocked=false 
+source opensooq: ok=true found=3 pages=1 blocked=false 
+match 73 aqar:6920843 45000.0 am=9 المصيف photos=11
+match 72 aqar:6797817 50000.0 am=15 الوادي photos=8
+match 70 deal:6a527d19896877027ec3ae5e 40000.0 am=16 النفل photos=1
+match 66 aqar:6857317 30000.0 am=28 الازدهار photos=5
+match 66 aqar:6572375 50000.0 am=31 المغرزات photos=5
+match 66 aqar:6900371 45000.0 am=20 الوادي photos=17
+match 65 aqar:6798738 43000.0 am=37 العقيق photos=6
+match 64 aqar:6851693 50000.0 am=17 الوادي photos=13
+match 64 aqar:6918141 43300.0 am=12 المصيف photos=8
+match 64 aqar:6852748 47000.0 am=38 الصحافة photos=7
+shot live-01-feed
+shot live-02-detail
+live site check bayut passed=false
+shot live-02b-site-check-bayut
+live map ready=true
+shot live-03-map
+js: "{\"vw\":412,\"vh\":759,\"dpr\":2.625,\"mw\":412,\"mh\":759,\"bg\":\"rgb(221, 221, 221)\",\"pos\":\"relative\",\"sheets\":2,\"tiles\":12,\"loaded\":12,\"pins\":117,\"work\":1,\"provider\":\"leaflet\",\"vis\":\"visible\"}"
+js: 759
+webShot live-03c-map-content

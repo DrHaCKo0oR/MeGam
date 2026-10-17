@@ -1,0 +1,196 @@
+{
+ "requested_url": "https://www.expatriates.com/classifieds/riyadh/housing/",
+ "status": 404,
+ "final_url": "https://www.expatriates.com/classifieds/riyadh/housing/",
+ "title": "expatriates.com - page not found",
+ "html_len": 42325,
+ "html_head": "<!DOCTYPE html><html lang=\"ar\" dir=\"rtl\"><head>\n    <meta charset=\"utf-8\">\n    <meta name=\"robots\" content=\"[ROBOT_TAG]\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <script>\n        /*@shinsenter/defer.js*/!function(e,o,t,n,i,r){function c(e,t){r?n(e,t||80):i.push(e,t)}function f(e,t,n,i){return t&&o.getElementById(t)||(i=o.createElement(e||'SCRIPT'),t&&(i.id=t),n&&(i.onload=n),o.head.appendChild(i)),i||{}}r=/p/.test(o.readyState),c.dom=f,e.defer=c,e.addEventListener('on'+t in e?t:'load',function(){for(r=t;i[0];)c(i.shift(),i.shift())}),e.deferscript=function(t,n,e,i){c(function(e){f(!1,n,i).src=t},e)}}(this,document,'pageshow',setTimeout,[]),function(u,t){var a='IntersectionObserver',d='src',l='lazied',h='data-',p=h+l,m='forEach',y='getAttribute',c='appendChild',b=Function(),v=u.defer||b,f=v.dom||b;function g(e){return[].slice.call(t.querySelectorAll(e))}function e(s){return function(e,t,o,r,c,f){v(function(n,t){function i(n){!1!==(r||b).call(n,n)&&(f||['srcset',d,'data','style'])[m](function(e,t){(t=n[y](h+e))&&(n[e]=t)}),n.className+=' '+(o||l)}t=a in u?(n=new u[a](function(e){e[m](function(e,t){e.isIntersecting&&(t=e.target)&&(n.unobserve(t),i(t))})},c)).observe.bind(n):i,g(e||s+'['+h+d+']:not(['+p+'])')[m](function(e){e[y](p)||(e.setAttribute(p,s),t(e))})},t)}}function n(){var r=t.head;v(function(t,n,i,o){t=[].concat(g((i='script[type=deferjs]')+':not('+(o='[async]')+')'),g(i+o)),function e(){if(0!=t){for(o in n=f(),(i=t.shift()).parentNode.removeChild(i),i.removeAttribute('type'),i)'string'==typeof i[o]&&n[o]!=i[o]&&(n[o]=i[o]);n[d]&&!n.hasAttribute('async')?(n.onload=n.onerror=e,r[c](n)):(r[c](n),v(e,.1))}}()},8)}v.all=n,u.deferstyle=function(t,n,e,i){v(function(e){(e=f('LINK',n,i)).rel='stylesheet',e.href=t},e)},u.deferimg=e('IMG'),u.deferiframe=e('IFRAME'),n()}(this,document);\n    </script>\n    \n<title>\n\n\n\n\n\n\nexpatriates.com - page not found\n\n\n\n\n\n\n</title>\n\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com/\" crossorigin=\"\">\n    <style>\n        @font-face{font-family:'Montserrat';font-style:normal;font-weight:400;src:local('Montserrat Regular'),local('Montserrat-Regular'),url(https://fonts.gstatic.com/s/montserrat/v10/SKK6Nusyv8QPNMtI4j9J2yEAvth_LlrfE80CYdSH47w.woff2) format('woff2');unicode-range:U+0102-0103,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Montserrat';font-style:normal;font-weight:400;src:local('Montserrat Regular'),local('Montserrat-Regular'),url(https://fonts.gstatic.com/s/montserrat/v10/gFXtEMCp1m_YzxsBpKl68iEAvth_LlrfE80CYdSH47w.woff2) format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Montserrat';font-style:normal;font-weight:400;src:local('Montserrat Regular'),local('Montserrat-Regular'),url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v16/0eC6fl06luXEYWpBSJvXCBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');unicode-range:U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v16/Fl4y0QdOxyyTHEGMXX8kcRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v16/-L14Jk06m6pUHB-5mXQQnRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v16/I3S1wsgSg9YCurV6PUkTORJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');unicode-range:U+0370-03FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v16/NYDWBdD4gIq26G5XYbHsFBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');unicode-range:U+0102-0103,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v16/Pru33qjShpZSmG3z6VYwnRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v16/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v16/ek4gzZ-GeXAPcSbHtCeQI_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');unicode-range:U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v16/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v16/-2n2p-_Y08sg57CNWQfKNvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v16/u0TOpm082MNkS5K0Q4rhqvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');unicode-",
+ "anchors": [
+  [
+   "https://www.expatriates.com/",
+   ""
+  ],
+  [
+   "javascript:setLang('en')",
+   "English"
+  ],
+  [
+   "https://www.expatriates.com/scripts/posting/subscribe.epl",
+   "الاشتراك"
+  ],
+  [
+   "https://www.expatriates.com/html/contactus.html",
+   "اتصل بنا"
+  ],
+  [
+   "https://www.expatriates.com/scripts/users/my_ads.epl",
+   "إعلاناتي"
+  ],
+  [
+   "https://www.expatriates.com/scripts/posting/poststep1.epl",
+   "ضع إعلانا"
+  ],
+  [
+   "https://www.expatriates.com/scripts/posting/getlink.epl",
+   "تعديل إعلان"
+  ],
+  [
+   "https://www.expatriates.com/scripts/posting/unsubscribe.epl",
+   "إلغاء الاشتراك"
+  ],
+  [
+   "https://www.expatriates.com/html/advertising.html",
+   "إعلان"
+  ],
+  [
+   "https://www.expatriates.com/html/terms.of.use.html",
+   "تعليمات الاستخدام"
+  ],
+  [
+   "https://www.expatriates.com/html/privacy.html",
+   "الخصوصية"
+  ],
+  [
+   "https://www.expatriates.com/html/status.html",
+   "حالة النظام"
+  ],
+  [
+   "https://play.google.com/store/apps/details?id=com.expatriates.app",
+   "تطبيق أندرويد للموبايل"
+  ],
+  [
+   "https://www.expatriates.com/classifieds/riyadh/housing/index.xml",
+   "RSS"
+  ],
+  [
+   "https://www.expatriates.com/classifieds/riyadh/housing/#",
+   ""
+  ]
+ ],
+ "script_srcs": [
+  "https://www.expatriates.com/scripts/assets/js/select-lang.js",
+  "https://www.expatriates.com/scripts/assets/js/jquery-1.10.1.min.js",
+  "https://www.expatriates.com/scripts/assets/js/menu2.0.js",
+  "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920"
+ ],
+ "cookie_names": [
+  "cf_clearance",
+  "ph_phc_6DKKUjceEzIMd8MkFjmlGyDBZAeB4h5UgM1OweSCvDB_posthog",
+  "ph_phc_6DKKUjceEzIMd8MkFjmlGyDBZAeB4h5UgM1OweSCvDB_posthog_cpm"
+ ],
+ "body_text": "expatriates.com\nexpatriates.com\nEnglish\nالصفحة الرئيسية\nالاشتراك\nاتصل بنا\nإعلاناتي\nضع إعلانا\nPage Not Found\n\nHello, the page you are looking for could not be found. If you were looking for a classified ad, it has probably expired.\n\n\n\n\nClick here to view the expatriates.com home page. Thank you.\n\n\n\n\n\n© expatriates.com\nتعديل إعلان إلغاء الاشتراك إعلان تعليمات الاستخدام الخصوصية حالة النظام تطبيق أندرويد للموبايل RSS",
+ "network": [
+  {
+   "url": "https://www.expatriates.com/classifieds/riyadh/housing/",
+   "method": "GET",
+   "type": "document",
+   "status": 404,
+   "content_type": "text/html",
+   "req_headers": {
+    ":authority": "www.expatriates.com",
+    ":method": "GET",
+    ":path": "/classifieds/riyadh/housing/",
+    ":scheme": "https",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA",
+    "priority": "u=0, i",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "none",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://www.expatriates.com/cdn-cgi/speculation",
+   "method": "GET",
+   "type": "other",
+   "status": 200,
+   "content_type": "application/speculationrules+json",
+   "req_headers": {
+    ":authority": "www.expatriates.com",
+    ":method": "GET",
+    ":path": "/cdn-cgi/speculation",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "origin": "https://www.expatriates.com",
+    "priority": "u=4, i",
+    "referer": "https://www.expatriates.com/classifieds/riyadh/housing/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "speculationrules",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   },
+   "body": "{\"tag\":\"cf-speed-brain\",\"prefetch\":[{\"eagerness\":\"conservative\",\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\",\"relative_to\":\"document\"}]}}]}",
+   "body_len": 151
+  },
+  {
+   "url": "https://www.expatriates.com/cdn-cgi/rum?",
+   "method": "POST",
+   "type": "xhr",
+   "status": 204,
+   "content_type": "text/plain",
+   "post_data": "{\"startTime\":1792169266131,\"pageloadId\":\"6b44a657-a6a7-4a38-88fd-32a3b6e33354\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://www.expatriates.com/classifieds/riyadh/housing/\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.10.0\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"138\",\"bv\":\"138\",\"ov\":\"14\"},\"memory\":{\"totalJSHeapSize\":10000000,\"usedJSHeapSize\":10000000,\"jsHeapSizeLimit\":3760000000},\"firstPaint\":596,\"firstContentfulPaint\":596,\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":1,\"domainLookupEnd\":62,\"connectStart\":62,\"connectEnd\":93,\"secureConnectionStart\":75,\"requestStart\":94,\"responseStart\":513,\"responseEnd\":523,\"domInteractive\":637,\"domComplete\":687,\"loadEventStart\":688,\"loadEventEnd\":688,\"finalResponseHeadersStart\":513,\"firstInterimResponseStart\":0,\"transferSize\":11000,\"decodedBodySize\":42367},\"siteToken\":\"358902258a194beda4c60b5f20957280\",\"st\":2}",
+   "req_headers": {
+    ":authority": "www.expatriates.com",
+    ":method": "POST",
+    ":path": "/cdn-cgi/rum?",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "864",
+    "content-type": "application/json",
+    "origin": "https://www.expatriates.com",
+    "priority": "u=1, i",
+    "referer": "https://www.expatriates.com/classifieds/riyadh/housing/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://www.expatriates.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.1945624865898936:1792166432:dBguvyx0V_q0dURW7vOsekbe_Z-fy7CPUp-9Q7LhqEI/a4b88c19f87c115d",
+   "method": "POST",
+   "type": "xhr",
+   "status": 200,
+   "content_type": "text/plain; charset=UTF-8",
+   "post_data": "D$Mp3EwJxS$t8B9EHns2NjFDRB75hzdy6Z8OXzMJfi517N+VxLBIzxTk+qv5IN4akgI$IOdK2$zbCSZVT2xPxy8tUrTZw+7aD9RsFXHBe3JEbzTXf3p5-t+9$NipdK2aPcb$6S9zsW$wvLjgHkKgkcnk4-yejMPKNi5F8WLI1h1OZwGvEDOJ+cvt2cBbowSQHRN3CQ499RHUQYgwDgcj6i92EpO8gEEL7TiEz6PUWa$OR3Z$d-Ud5DgAxNBALM3pogOApMo9GsYcLUPqBoom86M1hIsQFx2-AplURU3p6K4lVn0aQt04vblmLWScqfbdSJ2lLrdKT-Ti5EAE8UbmwwqkBE3q5LV28o4qOEeIq7xKtKMphq8MW6+97ebRt5MhWpnZHWzioh6AsRXpOelqgLDJ$yp5fnqB0zjNQ8GxiC5ymPty7eLx1AgQgTB4ecpomq+IjL+oIeimFZQKjV$T2tkH8fogGn0pFNCLJMmViL5Hl+9B6Et-CUdPKHpCbWC-Xdi5Ujmi4A$2nhxa3nI4Z67GS-H4Ki4q$ZAU5CoFji$xg$-FdRMJonvKsD7zrXgIfttwmahXz7wrc63aRbNt+pwkhGBKPZE-84oDd69evJLZcjEwy93ExBliYwBCcM$fpYB3P24njxjm13wW4CPzBeA-JaK356UY+yBoMectobmQqLZkLJJ+0lPYgfXPkVxsnavENY865$paHesxkS05hjUrXSLaI4jqt-iNC+Ln0+XgnW2UNhTPqqQl2jVXSFil5BqmZtjmQHznCaR+WtW5dlw5O3rPeIO1F1N$WlesaBg9ElJmkpKPcCYvGJsV-aJ8+zKMwlt4W8t-SK$7w6bWB3eXm50TXA0Y61RYTmH$iH1pzgV6fUT+ScGMqd7170qg9E3HhcfZvKlJJTFrV6phA+l+C9-hFDKw1cdcsDeXnf-q6tO7Kq5aSvmTYTp0k+r$5EFUUVc94vafajVcIPx8w3+21Sdg8eNbC2k9WBjxx93+Lf9rgQjQGNTX460kaaPwBx-EQVn4w$m0gwqnrVBCOyeNqiszDKlyl4+oCmHiPKIvOJ4i1SFddBDwLLpwlP+YxmRZI4gWmLcFBVIcLnk9+voB3dAZZannavikYALGxnT4W82vLyD8QS5owGtoe8hAi6qQTQqAOjFMCrnz8akE-NXsa$Dg5XhpKH39PU4C3geezHZpqWAQCgkGvb2kTiXC6zze5locJlbN6phZaxE3rwqj1MO7FIeh+O7G4zCJ2xoRmq9z6GHvzBRMwh1x2wVco3n5g8PWaJ3qeTvDcHnJNy95pEFy3FSqVnYnpC5PLwKvRfbHQslnh4HqmMmyN7MaspMIW5E8AE+fvvkATFS+793XIGclA81K-1PJsSFHfmEblznlsPkaJdRtyOZznZ8OpGPzRiaO4BVFSfr6eD47akY5HdTKBe0iGfftteiU3Nooow3OEyf4bsHPvScNg1mwGB5PDKLG4TG7SbIT1yizB2V0lBCbiht0dbcxC4gRnALxpLNLCvqaM8N4vAgptxmKJcAwOFJ-Ld-2r-wjNqH9m8cN+OeLvXBELz6XeJyrjJ3Qc4D77DpJzzLND1y3ZXXN8N9djOopJa8pLq3sCv6sb3Ui7OPgwEFlEIYGmL8caAY9x+kFhMoLGtSQn8fPvNPD-i8-vU+Mm3Ar$OH0RHc6TjEhKe4GimtnjRSlsPjS+vrs1aj8UJvYyhT+UirX6VzVae+k5yg0TdEXCIXNh8DnOrXYI5MOYHb-nXkp++GtCRhRG6dEleZ9KWUfe5Jf$EmFZQEiZRs2bHNleOUOEQyx0cFFAyvSwpdWGhhoJ$H5Ix7ybIpyZ-d7l2dnyZNfZ64+$BhC8fg9J6Z2o2JqHc0wUY4dgYomGeNj6kfMQZMl$F9-Ix4O4CIPU8t26q6TVFokQ4oTGK92-nqvD$T8o40jAvz0gpj1I$rtLgbsWRi3fGU3roP8Qsk8v5Jo59W9L931yygK8vW--szXsjxG5CL321PUWZ$FaTilwZHk4j2O-IcgFMlT9OcCNSe$695-JOM81DwGRW0AMCntOWQ9b4wEzL09mhsFLMCaW7gcGLLU2J4oT0A9sDDYJB0xabQXpXZZByPWN-UbObHA50+IO5F8crTwUsF5FABlhFUiqjib0ZJBbYH1-PZwzo-TPDSnR-pY$x-AjJnNDYvYDVnKT1GrYNq3q4eEq+w7j-srYNw2eLF97FBo$Gn6HeSWTaKJ6dz3oUVaVYfbVCLoPZUd348X3N4TiDbqy3ORpyHj4NvI$pzzxl65OpLhrSBAP0VPiv26sdEBmW0GKw4Fe21AdPczK-xx07Msof-YMZTF-C$y-jphNbd2KU-NBArqtYptKLyNCvhN41mtCMkxGjr$H86gtAJl25xfG7Lc+1Atqtz4STYIMUxpE5gxq-LDtA9yUgGhUsEyO1Zt5hi$dkscCBC8z63Alh$TgwrNXWDdrL1VBbBg$kCLCh80wVobL9M9Yxq8shdCAp7XybV-NX6nWWbkYPJmye4Gh1SJ2Y5axWl60$QSnWhzGaA23Zoco9N5HNgs67Ulk7hepAwiwEerMvU9rp5qJUHy4xyD+bFDbfrh5znw8jwT+rxedaCPX0jb3ymU84zzTYXPInmnj2WCDaxBXCwMq3$QZdXAcnGeV4hZBNcmqwKx3fXhGyGXgFclD2gEUOTfk0fB2iiA1V9jy9j7y$alUXpg3eNA4UTPgFpTIG1GjUSGrv+hJP1yCJqIeQ9Z8F4y526Uw4RGAOSZP+boOiOVEHkfDUy6G4r34IbBQYld2lNoFE5PzSSI0RxAGLQk21rd0MmTGPlimnxvoFvxS4D6WtqXaVSg7GdRkA5TLsI7Rh7ToUaFoXi8GSXxjete0Qafdltm-DWepooQHOSXKfXxL$vZyew-EKbCYgY+yeB8+kEZaeBaNAHGvrlwEinekcdN$dyR-JA7tvOW7+siQUVdq0W7w4eTQgpZ3vSrNm$gt5YV6rbT$tXZF262Xxl6mdB18OOU7p8jKAgJmTa6cwHs8flc552pTJr2jsLRzMeYoie4gelqMg98LkMDCWkykONq1tA9UeOOl5F1pNFq1WIE-UUUEWY9RfXT+STS8lQFk20VBKYEFjCrBeajZl5kNreSqONIwSHBDOe$4N4ZnU18MUDtQ1PfkRIdLfBlpi0T1mdwFvBKt4bWhxeclp5cv3M4Q9bTPyAYtjo8kR87FzTrwJedKNa$1hC-wNC$ETwwoMk92Hps4Tv8VEmDaE+PZC4WEsC-85pm9RMhDh4Cg5oOYRGMFQ+J++7cbk+H++RXwpISS8$KZMjTtMT1cz2mGHmnL-4himtXQkc$oBVXE0cN6kIqczMFi0F2NprXsqRPG7Cet8WOhvkXJLHYqqW8ZbSKNbUvfiVxnrLIm+G$phEnvDPg73Wk1h4CbijyD9eO7KHmjanCl5HwwbYi-Tf3VIh83thvINBbGGGYt8$PSciKmp0jd-vY36jJVidoo$bXMT+fi$T-E63y3o4mFNOfvbwFJnmhAId670wPwCGAbXQ7fbbq6kvAMvsvIpPMKmz8RJr7dJAQgO9QrTk2Hpbe5eYdF7y9V3X2rQIilyymI1FCZTqoXNG$z-ypdwje9Kg7WZX6m3$BUxXVbrLogCl4rCNFMvLs$WnlEr5IvHM38F7wnR15HPl0UAZQ-P2L-c78+1J+P4+gygMEktgst15NUHN2C4PKKRYxwwFMJAQ6LUN3FUjmMX9WhWmJvq-+OQWwc6RMykio-IM+zB8c63zvl$$+ZqCbB3IzNRN0DkIsH9LaKq9eFySZc4e-xtR-jU+xwHX3TZMB+LZWlaW9zN+5m5rqZW9q2cjStq-1kHSbGiWXttnHdRBLORXIEjGVLSJW5QLhAGAcNjQK6rQfz48Jt9q0oUV+l2I7WH+WnIZsxSt$IQ5DtogyXe1sefUIrgK7b0FsH6y+asSyrO$9qNQBrbPw028hD4686xH6yviY6lX3dZxENZmYBI7gSEd4+686zVFWQp$9sK8TdFK4HqN098vdMmDS50oIOLjvB2ppJ8CGK702tDl5O4Xtp6jkOIr7G9LUTUmdTp5$f5yvAzblTmokySwwwMSYlfXblCTgetTAyR8e1NDm-qX1lepX0rbSILrzV$XOLUSiTRK0rGfcAh4Xo3CYwYClxJeeKdUXTpIl4XwG1YPASQ0VbKc1CsGDY8n8FrCi1E6ZKLqPb7y8Co2FMJnlUZvOrLxvjSVzsbfovFi4+jFoL3Ryd-IDOJ2Coamda6VowDssbef7Jcl3eg-+3SnVHGZ+3TRf$ODOb+kMndvxKJ5C3zKvfx0D37i1YNj115OZvH1vGe1hdfP8JTgeGHQIT5QqIV0Nz0qrvU7szymfUjc$$e1+b6llHly2WHUneqiFXw5Hxr-SYGUSKab$xbCZAee$d2H+wYPh2jQM7xPnhxy3F6Q317vFtrn+qgH4KQVP4Kyf$oaevvJNO7-OPx4O-FOAfAHWHqb+Njb1aogQYacdS4TzCcC0RKR+mDWi4+7EvIkCcn6e5f5wejy8v-PgFQrr+gvRzj-6IHHR1wtLeS0YeLGtfnTyEULzlTkmRzynYJx21TviZfbJsDR0gw5ArOCLMTpv34zOgrbWRb4xsLgc+gV3IrGcTB9iUKiL4t6dVzdRqCwTgJoSMpbxI$5RRE2FHa1scRE0Wy$7mP1cGSfWGo7o+iFAibkKAkle6GORacIYqs4Cr-WJzDSEp5LtnpeD-Ebgs$zWHm3DjZpBheZbAkzolLdWOt15PROEsa+OaKfhchU3fRxEC0LNbEQdA4jIdsJYqb5nq8eX6XmC+9CKXl+$RUMp9+hiGofs6ZnhFde78XO+o9v1Px-+sORZ-pDWlgzJVKKHY2t5KwHKLr9qSTjeUG$NB9bY+QJjNazn0gei3AKrgvmHcGSg6nxwyIqbVcroapqx8fZ6+4d79$Y3Oho+xNWYJOVsTed7xeTM4gcKcr1cf2H4iW1Nl9P2OwUtd4VLt0+tKia0a5F97khIhSTk8VagpkItsn9Tl5jM8B7GqKIMc$CGXm$Sfhq9-Ne4R2iVnSXN8O1VGjXYGo3yOwwhJJN9$GD-B9twW1CSz-hp57xnO9nkbaKi3lV+JBa5GSU9flezlgDq+0pqLgN9vApY$-qsHYx6zqk+tFZa0vkjHhbgPyzsmkvkWyxP++Ig6fQhF72VJYymPafT7gUcD$Q8N+5-sn-X$eqtgNo+NfBELPjw5XKs1bFxX3osiecTL34vBeayDTtV96-Z2+Te9WzfhC2xm4pPPEAiMqlzr918NDJnUdikLqU7NmmWJ2gbMtpO7hLZxW8dOCRLjZGn$kCatN8DEn9CkxvF3Qhw6S2P9hceEPkjox6zVOI2AGQnOrInA+1rknpz932BINLjByeTk5rVHwUXjNm9vUjllg4I0T4EQKvjFc686y9koR3fqF0RdccqHKUYmCvpiJWLxbmhUnZLzXWLPvQH7vNC6PoJ3-ly0XceUFFeQFwUJksF--AYzoVIwqyT9HRPZ27eKKisTI4ZfpKsQV1QdCWAVXw77Wzh32+tzGKlG57fxTBy9oqny2nYQHCGWW3ahNtnfQPOk5lHey6r16CvzOEjNL$g-6nR6a1d1TdNtFkqAC8wIjbRwyPdGOxmrh6GtnpTa68fCfvX48XOnjHjXKlmSbieks7Rlcjd45d6O9fnTLsR8rA-1pjbRieCoQgywb11-B51CGvqp8k-8kzkdKylHh5aAzzn6$L6XribqZlcG4QgBWG1N3xeFgSMLHmWw+VHac$VMrcN6Fip92jRO5QG8WUYiKVEYHIno7ijGl6K7zR8RKCpS4YZKb-+O$E4jjQHInUPnzlBj4maNb$otlJ50PGix82$8l1S87y7vwmaJRhxjqf1MVtn20lIw9EaPF86v$xoiOgFg7dlIhO8c8TQNKKpZcT-KzfJt$D+Ydkap5Gwg4Bcw9AK6oxM9CCCIVUK801OBZFp5QLcjgAcR+M2t-0oIVIdc6AmmYlGfVZJDLFE7O$mzLHC$trfPQX+Zpo45LQr84wbTQ2TdDC4XFJM74eSdGt05XC1kTKfcMAY2GzC4bQw220QhaY6ZVNR+c5aLEypEp5HywtIy3ARbQMo9Q6YX-5Jj2wSfU9z6ZBnMnoGNiFazdJTpMKOOlWdMGUaq2yKK29-zzyQlOaN-pSlTxfmS$n7B9LUoKzOBDNd8gkGv2SsYXmwp3K8SMNA+m$lWg-okJdHJLQ$BImk23U5tJTWLCfKW$rf69mbYtBPaD93CV7sD+GKKFVcHVMUhvtZV1DifPI7H4xgzQK9r-KhET$KMtD2AKXfH0x4GhENGL6AhS-yS9RzjY88bYUsd2qv0v8n2nktQqNWghk1FDreO4hjLmdB-QBshHZ4gvONF87ZwDxzxAowMLbME7eN+igFkCNX9EctUrGiHM5vmsDw9hBf7UYnjJzceHC4e74xSwRZSJyDJWVmq8VVIbmaEWYKEsW0wf86+PbWOyESmhiXS8wwrVNqf8orkN4m7K0rk8yYT3bdOq1wvwEAYn-bKz6jH3$Xq-xlLyNW-OReTZNnjyMxS9DiA97R6A7k3DhiZ+tiyXyKObNGm6OMS+JDlsOh7k2bOQGPAq9AeGeqq0e3B$LzDJVnfLnQ5qbbQ$oemZSGRwPY6ZaIicZp$YgRbzmTMPzkwEdW1T+Co-nemL1ohxsyAVj8Ie1-5CFiBQJlFIhzZyAW-wMdjjvEckJtZelVKXMjO4FLFHPr32w+KvWjJhXCMOzq0vOrC6$vaFRr2eHp32nI1joexsbTkGbH0K3zTa0zOvzgZP3dJf0639X9AbelOe+SOL0157ed9m1MjRPb7ZneUPNtldOodzoUZKcf-TGczx3sLFUTrzK$heX9JMg+51beo58-kg30Tk3xvjDmZ6Wq785ZD5LT98hQDK2mCKUdoK+MYNynY-NnZJ0lYJNI$0jO0w0fUDq217CyIsblsCi2GlyY$L36fhLnYYUzDfz7m3AFBLsqq2tPdoKvybiv6OHKa$MhnooRToZlcaWer-liOlL-Ma0mn6ATf3se799PnasXwyX9c+qJp0fZRPmnz9MKm+0YGBXqjSUf$R9LU+wNoJd1jpbJ3t1iy4h637ICg5prw3XtPF8wUZvQAAi9VGz3RiS10xtfP1vzypWYa2Jekz$L8dgAXEwY+PSacFGq6a3r-jrtafCYOc+9otac41pEvcaVxqL3z2WFXAiF1LFszN4xW7Kr+21OtXDiD1$GglJUg2BIi+y59n-5pbL4kRpWvNwXvzRj7VL9LJsOl+bcmRtseqkleGJ0JCcYXpMpON8XKFFdfWhGsWOCSUCTiVPe2pi8PJlx9BFpad-z-Rp3raq4qs6XvHGiopzx5wMDRoCvsGTPCi11G-+bwZl328P2fxdXlUrnhq8NbBrQShK-0$8lIMOVeHJKiH+FUeU$4xM1hAM2cF81QOKlywHA6m3pC5jaCATAxvNzdmtC8Zo0SCSHO-LH-ZN2cT6poi3WtFDecCX3ivxzcAfj$iGEvFcM69P7D53mq+UYM8RiOn4QdqM+VKELGAOfFywsRVH-aaGTGQDJComUECXqIJVE6omGo3-VWUdrrsEFBBiITYQ+yZt9hMULWXXQZIILHLkd28Vp5b8J$EoFVL1ine4iIKjm+Qb0xdkGEkYpw$2bS5yyTcJMmm9OQ-hNJo2BDZRgK6DNcVHm2dmF$ep74Ne5OPEmeHOB362YDnD$UvUVNV1UoKY-GDsbFnvBLVtRABJU9YeMsn0hwLK$kwvyUN0web2egtjc81HtfDZfpnoS4Rf+4M3k$tr3Nvc9nmSa1EhY-kypV8P2+nsCkXHoKS87nHLf5RnAYB3N5-FKoj7chAbMR9nYUMPC$8M$rAK+jnmEQsHjfpVSJLkn4sqZU$Q$W+G6LHhckw9iVcsQs8jwcr+fWo3m729pi7vgH0tS7Ue36dLNegKWZFpvyUYXzd2EV1s0r-7nv04p7G3GeEMLVfb9YjE6bJs+KXlYlh24-EOkp9hr6ekZAwCmWD-sEf7PFKmKgFxLvUaJxi5sRe4qHxdBPDUcVOWQoXDmJQM9pkK3Aak+9nkor46q-QtChx1Zz3ZRjYDxa2BbEt61xxVK4cqa$B2FEVPXNGy-HVsUoab1anYiWgUoKdsZ8sMcK3JkV5Z09ZNy4XRVetTsxcTSXZabzqO8p1HwTeBZkR40jMGhjq4-F5hjg9$Z8zzqJ4cMZIG5ktiegK+3QBex2mpdgUw6UY9Uaw9pMz40YRGj5XW-gKAXU6kK3LJOpMXoTwiFfRADHw1MLzbsAIiJCfrGyGfYs-sh2zHJoE5tLnbcSbWgAA0G0o1J6Qlw5ZZnsRnLNFjSUhqk4KhnlZDzFMgCRaCFlq0dOtDMYEK6DEnjf9i-P+gLnA$9eLqoSCxBNs4rJYDkb-Aw6O4N9V5VmvC+oWSGjyO8RJlh2WTOoTkq89gaU25UIkXEOsw$5QTA1dUP53+qIMJfH6yzq3zweI1ySWvoHdkeNd3BT85mQEafK3QdYR-JfHTkrvp09WW-2ozPaR2pcRCnsrjAeosBEEMnKf2MnPka5hFcoq2LmhmB1UiQ3qbbJ0Uthp76EAx+l9BgafEKYrKe71SZdoVav7aWeKtbKeXj2pgqLWiNXa74DlpCG9emf8gQWQgxV4hJ8Fq3r$siWaVOT26GsIreG713C4vOdgTr4o2-xi2TH6KbMSa9KzbkaNSgtMUKronUd2UTnPnbwY6XmvGN3GtYHrK6EO0SxGm0tZU$h1Me+wCbSG9Cp-kwqeNKjECaX1emwodOmfe9rTPA9R9zItW+kPoh+8EsBsYsslS4GlnD5lT3$QHPPettB3dk64gaiq-gWGq3mD3m+Qo1VkIlNMjSHbkoG-AV0Ysln4Il4-AOXi0zMJUxA7vS5WlLs11NoYG7s$OY1-hKSBg4sY$ljAzb20JWA94OqNdJaj5xfmLvlvTjx8FL-mCJZXgvgmiJajl3PMDzAvkyzK-0-910KixhwkAFvJZEZkX6Hsr-DMpxwnrwk3xNPR+E+$0iUkk+kd63XA6QMHqfvcmM-WC0d-BYHYnpi9JSFlLQrOP8sK9V2lXO8EGwfQgJ-j3TQx5neTZnXsjdy-dzdVgIwFbDLKccgJPphjV0CNIdLA6lMOavXEIYDthOIs71awyEH-p4K1jaDOJp8NgN5dQijMPG2gChZxjV+hrkjMk9DSr75-FD909o2YW3otBbAbLdQm3+j+$xbfI$tFbhmhLOhBFnNSWvAG0rRnDbNoNS9ALgq74AJFgSXQ2yMnOLkG0aUvI8V7XKpp45jPP4gVQqdhnwmdN6rySLZl3lrDlM4mzmFOszPW3GAdyxCoaXQw5ergHV8kExNQZdtjziEDb1AYFXrRVU98EESrpfS8cwms8ki0q-n505UejwfWpTfcfRY$Y0zAxR2YREpN23htOKywdM5y3G9R1zkEC6YIg2SYd4f6D6m$-iRUMlWe-zE8rqIOcmygbpaMGfTTCDI4UX0lp-vnZ6zJvLdFrcJztbAtNZpZd+eYf$FB73e7Dkk2l44MJ9$XhqMfoZccD3QaX5D+$6hEcaVrOeHmhLyAmoydgl1xsx$T5NJN1PA1597Tm349fQaN1OJOIosl7V$S4zPrmftq7Ft5-Od5NehC2yLq2DerQ2tyx30rhxC8cBaNahnp9hKwOgRH82UwPzAUGf3NQtTLYNN9awpGn$bevwTkWL2YQEHB-bPq9xMFoam6J0$sL0O2iQ0l+MvdrS+LCOljV8eioIi7d9H$on9btgT2$NU8HhjI-ddlAfRlOyjqr7LPgIoDPVWJiKURyS011nZkPFgmB1wRVpiV24LzR+yQhc3Tz-+JB465yPSlOvxFoUtTibxN0FLGpSJrg7MpcqTawHRcOMcArmW20WynaWrkb$UNIgy6LtyG8ZlJkqh++R$ho-itIpbxMWpwjAO7pmNno9Zs1VA8OxU1r+Rogmt7eADGxkeFJQeeKJsbTGlU6bAKqn6bR9XG3sNmV+kvYyAqca$$YaE8pMycxioZGo$J1bxc2xlTpNrSUj2k2FzjcnHR-qSML68RHNPh2-7+QV0FqhE9r6MSmRnvegE74oj0+7+JNnwELV1bkQPft0XP2IaneNEifUTwcP6DMdjJamCUZUS8TRlNhvztwoN8fzxYyaYIGTRU3G2Wrz8FwKkbyI70$zoLSgiwJTVkeaXX86taqsmq6rZk0ZT1AV4XIKBkKp44hlsQ-MNlXNSE-QUUDFXOt+VejPjNH8vBMx7y898b-1ar6RlV3ldjrHqs3bF$X+7lsU8X2tbMatHBqcyK+YQmZqb218mSsanBcI2RjG-eZXX$8T4Oz72JBJ2Cw+4MokP7N60lCrgG4XzpEL9cDhCVoOCoiSEd-Z4l74rgBwCxbjJNCK74OxOvq2e9yPHvI7Vz0dDqxhIY2W6sEcw6pwT2J9AfdBhM$YOaFxZat0CRzMFGyd-90lM5Y9d7thFEOWhmBQSb-PPUFzxiBjmbKzRzeZJ1yIlYz6PYKxRPJOJE28dn0rtq1kI3IJmBUMEdoBotrMw+yaKCRm9U9QyGj+E0ejnAhHrWYcpRJkhehHeCojjtnnQdVfE1U+UOI9xiqMzt7-4HQQxWzESO$G6BPNCgCrOvG4-4QI8nIb6wnhs1tZoTXxJ0Btb4cBNHF-cn2TQR9zv6chYHsjbHZAK8h5qOib5kTeLz-g3iXDzdr8GMO3n5syljgzLLFrL8LPPcThT0FE47TgnxAFHvG13kflNmSoM7dz5gFBgXCskXdn2sKyKB6E5a8cy4mUryeE8ZzFrVQM-GJXm9pd0xFSiTRZ9X9yl3FNp4qrxwPzPsg$Pc7hOfC94d$DwU4JT+VoF6ZNx9jTmq+KoD-C0MYXmm8wR+YE-f8Y8AqY+GjGT3-oGHqszDf9V6aaQ3K77Mzh9+Ys6jne$Yal9hDTYWDUy8w-jPjyj4DWGp9WTrdpj$gkcowgAHT55wrzTS6iaMnaLsfYxgn4eVE-8SpeD+$+5ZGBZ1Wx7JKgiz98FJMYoGoyo7-KAgSn7cMX5+OcnXGkokan5xGS5s5oWbyyJtVwfyWXZtLwP4pDYy9WJGkUfcxDwwQmg4tpijvz$RdcqYBe4xGDinOJYUzy4EO$Qb9YhVkvr$YdcolWk-mjzWLk5feOWlUTCjIMbaLowa3MFrQOpa$Drajk8OLkI1jkVPTs5BvIs3-EzjqQbxxcmeeIorNJ+UBLi2DsYqI0maK4HGfjvmCGzKyYWg2xTi9xvmTFfkdpZfa2G3rRjK+AUH23w+wjQSO7ijjECEEdtO+M81GXk8PHqS5UlEWGVcLny78j$catjkPJXTK9PMKIJPYLAbxrbgVdPAYs0YNhQUM$DHe55kl1rW8s4YMEavaIfSVdwgqmZLkkLLLiAnXTnMvgrhQ2XxGpT2PXJcKFyZwT2HoVTmtoWUI36H7y-wEOQ1hNi8x+3FTowwHfCavp10tLLnBvzFbdr23e-fytO541EvZgbKHIp0keTpH3fsDbzLCIBXdfpKkDapQcLorwgXX6Js6bvlGS85LqcYrpTae6bxxhLnQsp$KllkzJUT0AKDQGDJU3xhfvsnYqE7vPpa3L5nqKpE2Pwdj2MFxAFG3IioRf9zIjQElQdDh4$0VOe1ZCW5l4ERsT1w5T-QrWaH+Ep+7smQb4tBRomeeVnfnb2mDtjCUxcCPjS93cChl4DYFZHTHzGcYb74Bn7f25+n99ZZ9WrAie4TmeobZQPSP5xri53c8HOajVY1Tnyi+6Af-gR1zW4lz5gMrrG1gxsqpNBgXcD2jIRBJryTpXJtlsPzM6N0Al0TJJS7YK0MW7U87P1CSGmr2ojSq335dSIs-vmN8NXHprjMxhUZcEdgTAZhfyG3pOI7Omq3AEZgmfj0B+N+FE-gyICE6Hp$asFm6KO0MMt4PRt325$AMJjo55UoTedOFvl5k$w+T-2HzJ6ddHLpt65$q786$QMbN1-XwyN6jE1janKgyeNGvoj-2q$G+Z01ge3-nYq7Po5BgRvKvYpkjKBBYHbqW4egvgB1mBM7kiB8Otgf$+iKnkGammlJEcEY0Rm4n0gn0JKr$vFaoKeHU5fpfdjltoAsOEzq6lb5iJV+iv5SGZj-fSkmH-j-XY$TRBZbz9Vtz60BLc9HBnGE0AROhlTxVQQntSAYnPFzIdjITHoTsm0DifD2L7boUqaXb6I7h9HPJ2gJ6M6w$zA$t9URbecL5-$YDRtFNvz3Li2f0LV6pxgdqMcN9R5jd0Y1oKsmVrF-iO-j2tXJRlvFKF3rFLKT6MHGwXGoCCCIsom+-VcMSLTkZKNdFfioGswj-tj0Pe9lo$0X5CUFVVQCaPZdWLiOUp$PUFy3WVW0nkgsQ3FkvL+zyPmfdIDG6m8poUi6IH7ar33pjGXGh2sMgKdU4nKmSKzDBTLBSVZq1kDU+x0ni7sMgbVjaMFmBJpEbonGzPEoMthl6eEbv9V4gy7c7EB9Jw4xjbTLJLqhnct+CO6TP$iI8zp7G-vdi5-i04towXYa0GbNc-Pqk22SB+XzGiQavm2IFEQSYpci6crww-Uxa64XKVU632oCltHOzB5Ur4l-RVJzvney1$t8vlpqSYmL2xZQ+y94xzmjFJd51vrjVGtD1GmD+6EiaXXMEIeBqCG8ne5YPx$dNMEO24bfTyx2aXOpMYizLQL+U2yprUr17WXEJq9xFqfsAXnvw1BJeNUwMMqynPBzzd$TPevmO9ymK7S-61Q2-iHTRymp2VQQ-Bw5SsT+ffis0PaffemDNVKyxpzS-qJQqfPpEr9fmKN2RIrB8XaZMaQP+cYsfprNcN+NPf+-LiynC5DE8od1RWrcL3EmQGRB41d9h9wrk2TpKWIAsgeK6S759Qbyx6+$1BAaSwgV$5b92dioSG2DH$D9wKafkgZlhcq5$lBjf$etaPglRKxWE-6f0UOlOeS7$QrK7ldTHNicRxoOf4Na4aSxYs+Zh+SbGlc76OWB8BJCXwQZdkMCavpN+YPsMRzwVNmksSl62mTHYsrlMW1q-$cE4btFn52k0-aiDO622zcv0ZYBIp9Q095Ua6Ve$NwQUCAWFLb-XRwbMQf86iP$fSq$35oBlME1a7RU8GCt-YcOTy2L8cGjKwqWZsSKU+tlIS5gFa6F52Ey7EUjh$K5j0RpfsimZ$sAP2wK+68qJPKS6ZhfGq34NOppqS+VcEGczt2+bPbSw9MK2MVjL4r9HrbTfCHWjiG+2Pa5JY+TRAb5Vemoh5EiYTkLe0bTHIxEb0a5YMUI8SwV7NjYx+QM2a+9JP8FUZzNp1cbt$y0q5prHCTx6hFiRRmdvirsn+PUNjrfPHcJsOBfY5UBlPH3pHjoPdGt6LrUO$L8Y6zip3XKU1Cz0gBpi7EFwk35xQpdyjaEwaJdzF4a+ba1g7e7MtZJahGyMchIgGmFI7GkGbZGjHAAW$zZQFdOkEPrZ3aCFRj9aJ81jxCVnfUwAWFqDtjCddM9ea$Rih-kPo8qinZbIVcERkriDHJjElIZtOrMdRp0UeidetJZjkwAHExCAYR8z8V-o40we+KZcnGBYKDRNIhoIg4PrACV0DDhvE6x70d3CKWK6qGayAy27DIIwOE0TIFiTNYm57zWP+Qpz5MKKZUpalJ-sDRtKDd6n9DewdZYEQUo+-FkSkKbXQt1cgxVOBfpDyHOgareCpPcw0KaU8gYOBaZPJUP$fiIIOC-I0JMjtZkU6mlCByBZR$YwGYUpdqaiT3LtlxVzJe3YQ2j+mpj9zoYg6RFQg-rk0pmz0pr$2aYoSq+G-pelmKQYjSv8Vi685B3U+NJ2+sKvy+ZRxm7CWCgEVS2Bbg2YUmpFTtd9fMCzXDTPVDM7PtDcMzJbzMZnQNlce8y5cqt5WFXGahafvyUZ+QdmRhp57qFVhEpmR6$AdXT0lYgJ-cL9UkdF8pRixLV52e+H1345CTrmDhEQXTTdM+ByxzpLCqs62wom2EoWyr8AeoqKP$hT6wwIV2cqh3jdWykSVx49spox-8oXG$lFQjBiDRqDMkGri7-FRKU5gZmdvgDDhk8bYmVkV3RCZJr83fnX1jDK66xNm7SQVsJ3Fpv3UB5+aVgdkVZsWQtm0f37GzKFDeySfrHT48dnBki10gFPvUgAmQgGzt+j5rK+b8MYSnj9E6LgTqDybDQ96SteXna5E4fvhPA8Kk$AG30-sTKe1GA8FZ8qKoQZ$nM0eGl$o1B2Obxxw+OGJj$FZnzfg+xmXPUFdQgWhTlsIYQQWTH+Dhese+vAbdQZDEUEv5EPh4J3QabKQ88qh8NaAir3igzGs60T5aV9RFGwEwiak7F7U9VH7KpOP66ONeJvCx90acicGqjCfRhJMUt171ZbwK2yrOXv1C9TlC3rFZY1IZwkUaNz1-BSQ5k2g+zoIXvlEiqb81K9X5Ey-GFKd-FxVUowiTanlr3HeGG1$MVgxnrRVmZy1frLqjqrNDHf+VHiJacTnIjy7mz8XdeZV4P08oJhPLeaCj7ip9thOUbbY$q-3B8JGX89$rPk9QVhvFY-$IalE2pX5PvpgMRyDj1eV45mDCsQFT2dCn84AfhP9GNbSVdlZGN6ygDqKL2HxtvvbftGFdZjphyxe+mmTKX3X4mhd54G6jHh+k0pcJMG8j2ySgPrFBZJQ$K2bjmgFpKRR8YNSmVOXk6YzICvVmjDBtA0T7QQ2fp4OZy$MlQWQQIMmXdLBfeHKmpyIiGxylpgrmP4WB-e0JJbo4BKl4dAxEg-JgUjn9WnWtv8QLtk4BgXVIKSlWnRRD40NoxJv5HaIq-0Xv$6xD3H0KMmb49OLEXoeaRx5YZ97YLW6AyUTGYxKJJnwW64MnqdrI0Pkw1nHacQHq++X0LZ-PN$Dai+tesCynezw+5YU7hLbxYnilJ94PyiLhUCioredCBo+WsqyvFMb+nAtUpqF3-KBsCKe0l3Y7r-Xt-OhD7sDAv3wFOU4yr8otHRb0Ep1J7IsmN3-QkA6zEbPIozMtUJvzf74y5cybz7gXSnHZl25rtrsaV6g7wqeoi1Mca3Q07tZiz6bs2oKqmZ3ovXwDPVpcSqHc-+PVWiS549z1Pf9iIl1FXtn2ljBKAKMhw1lp0movBeV1Y2iQXoEzzhQ8gVlC6Xb7TKANaKZbAET-2FEpVYG7oLjixfXXyKRoHGs-O1bZcDlIN1J$gBwx5lSlwVEsN1+GYTCy-pHgnDonvggtqnb7LUlRWxr+cKONOUEBbatmi95mxLE4O4Tbt+c30bF3hx5pO7kB+DLMneErkmlKbkRBJVQ+yOp4Tst-KAe+Fe61dnRCq75tjgFoQrUL-K8LmdMo+po$gJJ9Z$Tbxd96dhkFkxNBeMv$rxZmBYh3I6ziIGKGNpHJpDoQEAbs8ztGWH7tHki8zfPG5HK1Inp1CXvCz6lPE+Z+-CBpmLyM2rxOfqYGRgLRts5R9bUsxK67QTyyMvMwhC8yliLJcPcv3P4-1gAAM$XjVzG-3jU84pUBbbPR3dBJeLhL37NLOxVwjmKY8QOPghHpcAhKBec9yDTfiYw3qCR7ARTinqJU4xAbmob8lGFQDX6BR4AnryZWyWKr5b+X33Nzb5gBYtsHrVx4heo9NRDsP$aM3xm9jmSp2mWgJHnfvHWGBqTh93wfkdHCgyR5ZBAQK9FlcFOp8Y-eUoRn-9+Lny5odIH-x0LKCWQ36oG5Pe9TbaOOf5-abQDgLsYZzfy$YqGVQ0B2pG7ND993XnIkZqip8mOtBBWClKezBC-zxDIiO3RZUP6gFb7b4mY69AdhYrtqls2nWUtMzmcQQvsTkz4mbmy6LKJ3FX79KlpccZ4Y8j2dG0Qb7KHsOlxEy1rch9l0v0tZhP46gepzYclkldxrh1NQq$vTTSkWV4hDcFU$NTis+alOYnzd9BERLtJOS+UVACzAXcC4NdykH8CWVPrwT2AMnV7Z4A-r$8$pgA2kWok4BKQVi0bO6ITIleSm+LDnE7C8AsOt2B43YtAVgF8bHK2Uk6W+zOMWBpFdlWs3AVvwk48oJNoPlH+YX3ZnNagFCPvKc1ydT00PG8lcYPEwL1emz33bMg9Hv3PZmVhth89Ks$38scFXd8eLpxxNJ+qCwNT9TMnTb5wA4EhZOULPjOO$FfLvDyqejKztLQOBXHUMVbfgWlJZ+G9+7C55vpEbV1JWi3UmFniLWXG13R75TBl2WPjAEW2r6iWN3KA-D8CVQhyvy3wzJiYj6b8eH1n3Lv7hQKdyVcvrBNSncoXLCfK1bNQk9W-nSpEnp4lwRbA-gBa1+GVToFsEDd7sbZln5j129vIvzWUcx6vDi0wYYwDsSRrknAKPR$z1fely8tTXlcgKOIN+y9+f+NtxhEMqVWj7dgAFNMPzYtw4yhen6jFr4QbJMSqKV6",
+   "req_headers": {
+    ":authority": "www.expatriates.com",
+    ":method": "POST",
+    ":path": "/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.1945624865898936:1792166432:dBguvyx0V_q0dURW7vOsekbe_Z-fy7CPUp-9Q7LhqEI/a4b88c19f87c115d",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "16451",
+    "content-type": "text/plain;charset=UTF-8",
+    "origin": "https://www.expatriates.com",
+    "priority": "u=1, i",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  }
+ ],
+ "elapsed_s": 16.3
+}

@@ -1,0 +1,1549 @@
+{
+ "requested_url": "https://sa.aqar.fm/",
+ "status": 200,
+ "final_url": "https://sa.aqar.fm/",
+ "title": "عقارات | تطبيق عقار",
+ "html_len": 456299,
+ "html_head": "<!DOCTYPE html><html lang=\"ar\" dir=\"rtl\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"><link rel=\"preload\" as=\"image\" imagesrcset=\"https://images.aqar.fm/webp/50x0/props/052936499_1784485334496.jpg 32w, https://images.aqar.fm/webp/50x0/props/052936499_1784485334496.jpg 48w, https://images.aqar.fm/webp/100x0/props/052936499_1784485334496.jpg 64w, https://images.aqar.fm/webp/100x0/props/052936499_1784485334496.jpg 96w, https://images.aqar.fm/webp/180x0/props/052936499_1784485334496.jpg 128w, https://images.aqar.fm/webp/300x0/props/052936499_1784485334496.jpg 256w, https://images.aqar.fm/webp/350x0/props/052936499_1784485334496.jpg 320w, https://images.aqar.fm/webp/640x0/props/052936499_1784485334496.jpg 384w, https://images.aqar.fm/webp/640x0/props/052936499_1784485334496.jpg 480w, https://images.aqar.fm/webp/640x0/props/052936499_1784485334496.jpg 640w, https://images.aqar.fm/webp/750x0/props/052936499_1784485334496.jpg 750w\" imagesizes=\"(max-width: 767px) 160px, 384px\" fetchpriority=\"high\"><link rel=\"stylesheet\" href=\"https://cdn.aqar.fm/website/next/_next/static/chunks/12a37e19yq4pi.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"https://cdn.aqar.fm/website/next/_next/static/chunks/3allq9ekwzl7x.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"https://cdn.aqar.fm/website/next/_next/static/chunks/1rkxr3g4ot8ya.css\" data-precedence=\"next\"><link rel=\"preload\" as=\"script\" fetchpriority=\"low\" href=\"https://cdn.aqar.fm/website/next/_next/static/chunks/0v7pnn84dtqh_.js\"><script type=\"text/javascript\" async=\"\" src=\"https://snap.licdn.com/li.lms-analytics/insight.min.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://analytics.tiktok.com/i18n/pixel/static/identify_0504602d.js\"></script><script async=\"true\" src=\"https://tr.snapchat.com/config/fm/e3c462bb-7314-4b8d-9b2d-623f851e9906.js?v=3.60.1-2610160116\" crossorigin=\"anonymous\"></script><script type=\"text/javascript\" async=\"\" src=\"https://analytics.tiktok.com/i18n/pixel/static/main.MWFjYmVlZGY0MQ.js\" data-id=\"CFI0VNBC77U110MKDP70\"></script><script async=\"\" src=\"https://scripts.clarity.ms/0.8.72/clarity.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_j1lyhu61j9ht\"></script><script async=\"\" src=\"https://www.clarity.ms/tag/on63e9ib19?ref=gtm2\"></script><script src=\"https://connect.facebook.net/signals/config/6234602059982020?v=2.9.419&amp;r=stable&amp;domain=sa.aqar.fm&amp;im=1&amp;hme=7459fa3e38c2784dbaf309537bed5fa7e8560fab51fb61e53e5ffafeb46a02a9&amp;ex_m=118%2C241%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C56%2C127%2C54%2C161%2C72%2C185%2C110%2C184%2C210%2C255%2C84%2C274%2C273%2C272%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C324%2C325%2C326%2C323%2C339%2C361%2C248%2C237%2C70%2C238%2C236%2C364%2C355%2C59%2C249%2C121%2C145%2C92%2C135%2C61%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189\" async=\"\"></script><script async=\"\" src=\"https://connect.facebook.net/en_US/fbevents.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CFI0VNBC77U110MKDP70&amp;lib=ttq\"></script><script async=\"\" src=\"https://sc-static.net/scevent.min.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://static.ads-twitter.com/uwt.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://bzrcdn.openai.com/sdk/oaiq.min.js\"></script><script type=\"text/javascript\" async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-8DTTM22D6F&amp;cx=c&amp;gtm=4e6ae1\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/0st90f40nk269.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/0v3ntoks2gpy0.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/1qh7w_q5-ckz5.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/turbopack-0cz__iqr_nm67.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/1o-pn8fwgidyp.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/1x051irjiq0qw.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/09c9s6qacrmm9.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/1smomiup4949s.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/0y506rsdu5gp4.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/0wrs-cai1xqiz.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/2m903oomz7kxl.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/0dm3acbttcnsx.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/23rxzbz-7o48o.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/43o1dr9f_k5g_.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/3jgshm0wejtr6.js\" async=\"\"></script><script src=\"https://cdn.aqar.fm/website/next/_next/static/chunks/30fhfcc5",
+ "anchors": [
+  [
+   "https://sa.aqar.fm/",
+   ""
+  ],
+  [
+   "https://sa.aqar.fm/%D8%A7%D9%84%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9",
+   ""
+  ],
+  [
+   "https://sa.aqar.fm/%D8%A5%D8%B6%D8%A7%D9%81%D8%A9-%D8%A5%D8%B9%D9%84%D8%A7%D9%86",
+   ""
+  ],
+  [
+   "https://sa.aqar.fm/login",
+   ""
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA",
+   "الإعلانات"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%AA%D8%B5%D9%81%D8%AD-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9",
+   "المشاريع"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%A7%D9%84%D8%AD%D8%AC%D9%88%D8%B2%D8%A7%D8%AA",
+   "الحجوزات"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1",
+   "شقق للإيجار"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D9%84%D9%84%D8%A8%D9%8A%D8%B9",
+   "أراضي للبيع"
+  ],
+  [
+   "https://sa.aqar.fm/%D9%81%D9%84%D9%84-%D9%84%D9%84%D8%A8%D9%8A%D8%B9",
+   "فلل للبيع"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%AF%D9%88%D8%B1-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1",
+   "دور للإيجار"
+  ],
+  [
+   "https://sa.aqar.fm/%D9%81%D9%84%D9%84-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1",
+   "فلل للإيجار"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B9",
+   "شقق للبيع"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%85%D8%A7%D8%A6%D8%B1-%D9%84%D9%84%D8%A8%D9%8A%D8%B9",
+   "عمائر للبيع"
+  ],
+  [
+   "https://sa.aqar.fm/%D9%85%D8%AD%D9%84%D8%A7%D8%AA-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1",
+   "محلات للإيجار"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AD%D8%A9-%D9%84%D9%84%D8%A8%D9%8A%D8%B9",
+   "استراحة للبيع"
+  ],
+  [
+   "https://sa.aqar.fm/%D9%85%D9%83%D8%AA%D8%A8-%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1",
+   "مكتب تجاري للإيجار"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1",
+   "أراضي للإيجار"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%85%D8%A7%D8%A6%D8%B1-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1",
+   "عمائر للإيجار"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%AF%D9%88%D8%B1-%D9%84%D9%84%D8%A8%D9%8A%D8%B9",
+   "دور للبيع"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%A7%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA-%D9%84%D9%84%D8%A8%D9%8A%D8%B9",
+   "استوديوهات للبيع"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%A7%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1",
+   "استوديوهات للإيجار"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+   "الرياض (86,472)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AC%D8%AF%D8%A9",
+   "جدة (43,096)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+   "الدمام (8,964)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+   "الخبر (8,672)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+   "المدينة المنورة (5,175)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+   "مكة المكرمة (4,155)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AC%D9%86%D9%88%D8%A8-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A8%D8%AF%D8%B1/%D8%B4%D8%A7%D8%B1%D8%B9-%D9%85%D8%A7%D9%84%D9%83-%D8%A8%D9%86-%D8%A7%D9%84%D8%AD%D8%A7%D8%B1%D8%AB-%D8%AD%D9%8A-%D8%A8%D8%AF%D8%B1-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6781382",
+   "شقة للبيع في شارع مالك بن الحارث, حي بدر, مدينة الرياض, منطقة الرياض\n\n599,000 §\n"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D8%B1%D9%88%D8%B6%D8%A9/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A3%D8%A8%D9%8A-%D8%A7%D9%84%D8%AF%D8%B1%D8%AF%D8%A7%D8%A1-%D8%AD%D9%8A-%D8%A7%D9%84%D8%B1%D9%88%D8%B6%D8%A9-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6874530",
+   "شقة للبيع في شارع أبي الدرداء, حي الروضة, مدينة الرياض, منطقة الرياض\n\n720,000 §\n"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%AC%D8%AF%D8%A9/%D8%B4%D9%85%D8%A7%D9%84-%D8%AC%D8%AF%D8%A9/%D8%AD%D9%8A-%D8%A7%D9%84%D9%81%D9%8A%D8%AD%D8%A7%D8%A1/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9-%D8%AD%D9%8A-%D8%A7%D9%84%D9%81%D9%8A%D8%AD%D8%A7%D8%A1-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%AC%D8%AF%D8%A9-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-6920745",
+   "شقة للإيجار في شارع حضارة, حي الفيحاء, مدينة جدة, منطقة مكة المكرمة\n\n18,000 §/سن"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D8%B4%D8%AC%D8%A7%D8%B9%D8%A9-%D8%AD%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6918516",
+   "شقة للإيجار في شارع الشجاعة, حي العارض, مدينة الرياض, منطقة الرياض\n\n39,000 §/سنو"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%AF%D8%B1%D9%8A%D8%A9/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%B1%D9%82%D9%85-156-%D8%AD%D9%8A-%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%AF%D8%B1%D9%8A%D8%A9-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6902527",
+   "شقة للبيع في شارع رقم 156, حي الجنادرية, مدينة الرياض, منطقة الرياض\n\n585,000 §\n\n"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%AF%D9%88%D8%B1-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D8%B9%D8%B0%D8%B1-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B5%D9%85%D8%AF-%D8%A7%D9%84%D8%AA%D9%86%D9%88%D8%AE%D9%8A-%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D8%B9%D8%B0%D8%B1-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6891946",
+   "دور للإيجار في شارع عبدالصمد التنوخي, حي المعذر الشمالي, مدينة الرياض, منطقة الر"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D9%82%D8%B1%D8%B7%D8%A8%D8%A9/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%A3%D8%B9%D9%84%D9%89-%D8%AD%D9%8A-%D9%82%D8%B1%D8%B7%D8%A8%D8%A9-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6834150",
+   "شقة للإيجار في شارع الوادي الأعلى, حي قرطبة, مدينة الرياض, منطقة الرياض\n\n95,000 "
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D9%84%D9%82%D8%A7/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D8%A3%D9%81%D8%B6%D9%84%D9%8A-%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D9%84%D9%82%D8%A7-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6881689",
+   "شقة للإيجار في شارع الأفضلي, حي الملقا, مدينة الرياض, منطقة الرياض\n\n85,000 §/سنو"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85/%D8%AD%D9%8A-%D8%A7%D9%84%D9%81%D8%B1%D8%AF%D9%88%D8%B3/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D9%87%D8%AF%D9%8A%D8%A9-%D8%AD%D9%8A-%D8%A7%D9%84%D9%81%D8%B1%D8%AF%D9%88%D8%B3-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9-6885838",
+   "شقة للبيع في شارع الهدية, حي الفردوس, مدينة الدمام, المنطقة الشرقية\n\n415,000 §\n\n"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%AF%D9%88%D8%B1-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AC%D9%86%D9%88%D8%A8-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A8%D8%AF%D8%B1/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D9%85-%D9%85%D8%B3%D9%84%D9%85-%D8%AD%D9%8A-%D8%A8%D8%AF%D8%B1-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6915841",
+   "دور للبيع في شارع الإمام مسلم, حي بدر, مدينة الرياض, منطقة الرياض\n\n600,000 §\n\n18"
+  ],
+  [
+   "https://sa.aqar.fm/%D9%81%D9%84%D9%84-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A/%D8%B4%D8%A7%D8%B1%D8%B9-%D9%85%D8%B9%D8%A7%D9%86-%D8%AD%D9%8A-%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6862267",
+   "فيلا للبيع في شارع معان, حي الوادي, مدينة الرياض, منطقة الرياض\n\n4,700,000 §\n\n500"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%BA%D8%B1%D8%A8-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%B8%D9%87%D8%B1%D8%A9-%D9%84%D8%A8%D9%86/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%AF%D8%B1%D9%8A%D9%87-%D8%AD%D9%8A-%D8%B8%D9%87%D8%B1%D8%A9-%D9%84%D8%A8%D9%86-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6909490",
+   "شقة للإيجار في شارع الجنادريه, حي ظهرة لبن, مدينة الرياض, منطقة الرياض\n\n43,000 §"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%AF%D9%88%D8%B1-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9/%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D9%84%D9%83-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A7%D8%A8%D9%86-%D8%A7%D9%84%D8%AD%D8%B5%D9%8A%D9%86-%D8%AD%D9%8A-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6916918",
+   "دور للإيجار في شارع ابن الحصين, حي المستقبل, مدينة المجمعة, منطقة الرياض\n\n30,000"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D8%B9%D9%82%D9%8A%D9%82/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%A8%D9%86-%D8%B4%D9%87%D9%8A%D9%88%D9%8A%D9%86-%D8%AD%D9%8A-%D8%A7%D9%84%D8%B9%D9%82%D9%8A%D9%82-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6672445",
+   "شقة للإيجار في شارع عبدالله بن شهيوين, حي العقيق, مدينة الرياض, منطقة الرياض\n\n54"
+  ],
+  [
+   "https://sa.aqar.fm/%D9%81%D9%84%D9%84-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%D8%A9-%D9%86%D9%88%D8%B1%D8%A9/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%B1%D9%82%D9%85-1095-%D8%AD%D9%8A-%D8%B3%D8%AF%D8%B1%D8%A9-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6896439",
+   "فيلا للإيجار في شارع رقم 1095, حي سدرة, مدينة الرياض, منطقة الرياض\n\n145,000 §/سن"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%86%D8%B1%D8%AC%D8%B3/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D8%B1%D8%A7%D9%81%D8%AF%D8%A9-%D8%AD%D9%8A-%D8%A7%D9%84%D9%86%D8%B1%D8%AC%D8%B3-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6902823",
+   "شقة للإيجار في شارع الرافدة, حي النرجس, مدينة الرياض, منطقة الرياض\n\n105,000 §/سن"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%AC%D8%AF%D8%A9/%D8%B4%D9%85%D8%A7%D9%84-%D8%AC%D8%AF%D8%A9/%D8%AD%D9%8A-%D8%B7%D9%8A%D8%A8%D8%A9/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%B9%D9%8A%D9%86-%D8%B4%D9%85%D8%B3-%D8%AD%D9%8A-%D8%AD%D9%83%D9%88%D9%85%D9%8A1-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%AC%D8%AF%D8%A9-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D9%85%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9-6885428",
+   "شقة للبيع في شارع عين شمس, حي حكومي1, مدينة جدة, منطقة مكة المكرمة\n\n580,000 §\n\n1"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B9/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85/%D8%AD%D9%8A-%D8%A7%D9%84%D8%B4%D8%B9%D9%84%D8%A9/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D8%A8%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-%D8%AD%D9%8A-%D8%A7%D9%84%D8%B4%D8%B9%D9%84%D8%A9-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9-6890881",
+   "شقة للبيع في شارع البساتين, حي الشعلة, مدينة الدمام, المنطقة الشرقية\n\n500,000 §\n"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%AF%D9%88%D8%B1-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%BA%D8%B1%D8%A8-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%B4%D8%A8%D8%B1%D8%A7/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D8%B4%D8%B9%D8%A7%D8%B9-%D8%AD%D9%8A-%D8%B4%D8%A8%D8%B1%D8%A7-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6874244",
+   "دور للإيجار في شارع الشعاع, حي شبرا, مدينة الرياض, منطقة الرياض\n\n48,000 §/سنوي\n\n"
+  ],
+  [
+   "https://sa.aqar.fm/%D9%81%D9%84%D9%84-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%BA%D8%B1%D8%A8-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%AD%D9%8A-%D8%A7%D9%84%D9%87%D8%AF%D8%A7/%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D9%86%D8%B9%D9%8A%D9%85%D8%A7%D9%86%D9%8A%D8%A9-%D8%AD%D9%8A-%D8%A7%D9%84%D9%87%D8%AF%D8%A7-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-6920984",
+   "فيلا للإيجار في شارع النعيمانية, حي الهدا, مدينة الرياض, منطقة الرياض\n\n420,000 §"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/2",
+   "2"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/3",
+   "3"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/4",
+   "4"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+   "بريدة (3,762)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+   "الطائف (1,746)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AC%D8%A7%D8%B2%D8%A7%D9%86",
+   "جازان (1,395)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D8%A8%D9%87%D8%A7",
+   "ابها (1,345)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%AD%D9%85%D9%8A%D8%A9",
+   "المزاحمية (1,276)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%87%D9%81%D9%88%D9%81",
+   "الهفوف (1,275)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AE%D9%85%D9%8A%D8%B3-%D9%85%D8%B4%D9%8A%D8%B7",
+   "خميس مشيط (1,198)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%AE%D8%B1%D8%AC",
+   "الخرج (1,137)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B9%D9%86%D9%8A%D8%B2%D8%A9",
+   "عنيزة (901)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AD%D8%A7%D8%A6%D9%84",
+   "حائل (794)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+   "الظهران (729)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84",
+   "الجبيل (714)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%A8%D9%83%D9%8A%D8%B1%D9%8A%D8%A9",
+   "البكيرية (659)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9",
+   "الدرعية (657)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AA%D8%A8%D9%88%D9%83",
+   "تبوك (499)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9",
+   "المجمعة (483)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AB%D8%A7%D8%AF%D9%82",
+   "ثادق (446)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AD%D9%81%D8%B1-%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+   "حفر الباطن (426)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9",
+   "الباحة (386)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D8%AD%D8%AF-%D8%B1%D9%81%D9%8A%D8%AF%D9%87",
+   "احد رفيده (385)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AB%D9%88%D9%84",
+   "ثول (376)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D8%A8%D9%88-%D8%B9%D8%B1%D9%8A%D8%B4",
+   "ابو عريش (335)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%82%D9%88%D9%8A%D8%B9%D9%8A%D8%A9",
+   "القويعية (312)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B4%D9%82%D8%B1%D8%A7%D8%A1",
+   "شقراء (306)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B1%D9%8A%D8%A7%D8%B6-%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1",
+   "رياض الخبراء (268)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%84%D9%83-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A9",
+   "مدينة الملك عبدالله الاقتصادية (249)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A8%D9%82%D9%8A%D9%82",
+   "بقيق (228)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%B2%D9%84%D9%81%D9%8A",
+   "الزلفي (223)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B5%D9%81%D9%88%D9%89",
+   "صفوى (189)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A8%D9%82%D8%B9%D8%A7%D8%A1",
+   "بقعاء (176)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%86%D8%B9%D9%8A%D8%B1%D9%8A%D8%A9",
+   "النعيرية (170)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%B1%D8%B3",
+   "الرس (166)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%AC%D8%A7%D8%B1%D8%AF%D8%A9",
+   "المجاردة (165)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D9%85%D8%AD%D8%A7%D9%8A%D9%84",
+   "محايل (164)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AF%D9%85%D9%8A",
+   "الدوادمي (158)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%A8%D8%AF%D8%A7%D8%A6%D8%B9",
+   "البدائع (149)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%AD%D9%86%D8%A7%D9%83%D9%8A%D8%A9",
+   "الحناكية (149)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9",
+   "القنفذة (146)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B1%D8%A7%D8%A8%D8%BA",
+   "رابغ (143)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%B4%D9%86%D8%A7%D9%86",
+   "الشنان (140)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B5%D8%A8%D9%8A%D8%A7",
+   "صبيا (134)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B9%D8%B1%D8%B9%D8%B1",
+   "عرعر (131)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%86%D8%A8%D9%87%D8%A7%D9%86%D9%8A%D8%A9",
+   "النبهانية (124)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%87%D9%8A%D8%A7%D8%AB%D9%85",
+   "الهياثم (124)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AD%D9%88%D8%B7%D8%A9-%D8%A8%D9%86%D9%8A-%D8%AA%D9%85%D9%8A%D9%85",
+   "حوطة بني تميم (123)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A8%D9%8A%D8%B4",
+   "بيش (120)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+   "نجران (119)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%85%D8%B0%D9%86%D8%A8",
+   "المذنب (112)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%AC%D9%85%D9%88%D9%85",
+   "الجموم (110)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%BA%D8%B2%D8%A7%D9%84%D8%A9",
+   "الغزالة (109)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B3%D9%8A%D9%87%D8%A7%D8%AA",
+   "سيهات (95)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%82%D8%B7%D9%8A%D9%81",
+   "القطيف (94)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%AE%D9%81%D8%AC%D9%8A",
+   "الخفجي (92)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A8%D9%8A%D8%B4%D8%A9",
+   "بيشة (85)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AA%D8%B1%D8%A8%D9%87",
+   "تربه (71)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%BA%D8%A7%D8%B7",
+   "الغاط (70)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B3%D9%83%D8%A7%D9%83%D8%A7",
+   "سكاكا (70)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B1%D9%85%D8%A7%D8%AD",
+   "رماح (67)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D9%8A%D9%86%D8%A8%D8%B9",
+   "ينبع (67)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D8%B3%D9%8A%D8%A9",
+   "الشماسية (63)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%AF%D9%84%D9%85",
+   "الدلم (62)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D8%AD%D8%AF-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%AD%D8%A9",
+   "احد المسارحة (51)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B9%D9%81%D9%8A%D9%81",
+   "عفيف (51)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A8%D9%84%D9%84%D8%B3%D9%85%D8%B1",
+   "بللسمر (50)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B5%D8%A7%D9%85%D8%B7%D8%A9",
+   "صامطة (49)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%B9%D9%84%D8%A7",
+   "العلا (47)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%84%D9%8A%D8%AB",
+   "الليث (41)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AF%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%AC%D9%86%D8%AF%D9%84",
+   "دومة الجندل (39)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AA%D8%A7%D8%B1%D9%88%D8%AA",
+   "تاروت (38)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%B3%D9%84%D9%8A%D9%84",
+   "السليل (36)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B1%D8%A7%D8%B3-%D8%AA%D9%86%D9%88%D8%B1%D8%A9",
+   "راس تنورة (35)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AA%D9%8A%D9%85%D8%A7%D8%A1",
+   "تيماء (28)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B4%D8%B1%D9%88%D8%B1%D8%A9",
+   "شرورة (26)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84",
+   "الكامل (24)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D9%85%D9%87%D8%AF-%D8%A7%D9%84%D8%B0%D9%87%D8%A8",
+   "مهد الذهب (24)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%B9%D9%8A%D9%88%D9%86",
+   "العيون (23)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B1%D9%81%D8%AD%D8%A7%D8%A1",
+   "رفحاء (21)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%AD%D8%B1%D9%8A%D9%82",
+   "الحريق (18)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AA%D8%AB%D9%84%D9%8A%D8%AB",
+   "تثليث (18)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B1%D9%86%D9%8A%D8%A9",
+   "رنية (17)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%88%D8%AC%D9%87",
+   "الوجه (11)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B7%D8%B1%D9%8A%D9%81",
+   "طريف (10)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B6%D8%A8%D8%A7",
+   "ضبا (9)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%82%D8%B1%D9%8A%D8%A7%D8%AA",
+   "القريات (8)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%AE%D8%B1%D9%85%D8%A9",
+   "الخرمة (6)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%85%D9%84%D8%AC",
+   "املج (6)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%B9%D9%86%D9%83",
+   "عنك (5)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A8%D8%AF%D8%B1",
+   "بدر (3)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%AE%D9%8A%D8%A8%D8%B1",
+   "خيبر (3)"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D9%88%D8%AF%D9%8A%D8%B9%D8%A9",
+   "الوديعة (1)"
+  ],
+  [
+   "https://apps.apple.com/sa/app/id879992882",
+   ""
+  ],
+  [
+   "https://play.google.com/store/apps/details?id=fm.aqar",
+   ""
+  ],
+  [
+   "https://appgallery.huawei.com/app/C100162543",
+   ""
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+   "شقق للإيجار بالرياض"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1/%D8%AC%D8%AF%D8%A9",
+   "شقق للإيجار بجدة"
+  ],
+  [
+   "https://sa.aqar.fm/user/campaigns",
+   "تمييز الإعلانات"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA",
+   "دفع الرسوم"
+  ],
+  [
+   "https://sa.aqar.fm/partners",
+   "شركاء النجاح"
+  ],
+  [
+   "https://sa.aqar.fm/financing/munaaseb",
+   "التمويل العقاري"
+  ],
+  [
+   "https://sa.aqar.fm/blog",
+   "مدونة عقار"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%A7%D9%84%D8%A5%D8%AD%D8%B5%D8%A7%D8%A6%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9",
+   "متوسط الأسعار"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%A7%D9%84%D8%B5%D9%81%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9",
+   "آخر الصفقات العقارية"
+  ],
+  [
+   "https://sa.aqar.fm/%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%B9%D9%82%D8%A7%D8%B1",
+   "اتفاقية الاستخدام"
+  ],
+  [
+   "https://sa.aqar.fm/user/ejar-contracts",
+   "عقود الإيجار"
+  ],
+  [
+   "https://www.youtube.com/channel/UCxWf_zM_FSEBaH5Z_4K8oaA/videos",
+   ""
+  ],
+  [
+   "https://www.snapchat.com/add/aqarapp",
+   ""
+  ],
+  [
+   "https://www.linkedin.com/company/aqarfm/about/",
+   ""
+  ],
+  [
+   "https://www.facebook.com/aqarapp",
+   ""
+  ],
+  [
+   "https://www.instagram.com/aqarapp",
+   ""
+  ],
+  [
+   "https://twitter.com/aqarapp",
+   ""
+  ],
+  [
+   "https://www.tiktok.com/@aqarapp",
+   ""
+  ],
+  [
+   "https://sa.aqar.fm/en",
+   "English"
+  ],
+  [
+   "https://ehsan.sa/FastDonation/F663F6DC6CB3F9BF6D94E7A6BAA658E9AE41AA889BF9DF3641EE295620B25612E3C0A8EDBEE37261F211E03CF47615F3",
+   "خدمة التبرع السريع"
+  ]
+ ],
+ "script_srcs": [
+  "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+  "https://analytics.tiktok.com/i18n/pixel/static/identify_0504602d.js",
+  "https://tr.snapchat.com/config/fm/e3c462bb-7314-4b8d-9b2d-623f851e9906.js?v=3.60.1-2610160116",
+  "https://analytics.tiktok.com/i18n/pixel/static/main.MWFjYmVlZGY0MQ.js",
+  "https://scripts.clarity.ms/0.8.72/clarity.js",
+  "https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_j1lyhu61j9ht",
+  "https://www.clarity.ms/tag/on63e9ib19?ref=gtm2",
+  "https://connect.facebook.net/signals/config/6234602059982020?v=2.9.419&r=stable&domain=sa.aqar.fm&im=1&hme=7459fa3e38c2784dbaf309537bed5fa7e8560fab51fb61e53e5ffafeb46a02a9&ex_m=118%2C241%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C56%2C127%2C54%2C161%2C72%2C185%2C110%2C184%2C210%2C255%2C84%2C274%2C273%2C272%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C324%2C325%2C326%2C323%2C339%2C361%2C248%2C237%2C70%2C238%2C236%2C364%2C355%2C59%2C249%2C121%2C145%2C92%2C135%2C61%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+  "https://connect.facebook.net/en_US/fbevents.js",
+  "https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CFI0VNBC77U110MKDP70&lib=ttq",
+  "https://sc-static.net/scevent.min.js",
+  "https://static.ads-twitter.com/uwt.js",
+  "https://bzrcdn.openai.com/sdk/oaiq.min.js",
+  "https://www.googletagmanager.com/gtag/js?id=G-8DTTM22D6F&cx=c&gtm=4e6ae1",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/0st90f40nk269.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/0v3ntoks2gpy0.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/1qh7w_q5-ckz5.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/turbopack-0cz__iqr_nm67.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/1o-pn8fwgidyp.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/1x051irjiq0qw.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/09c9s6qacrmm9.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/1smomiup4949s.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/0y506rsdu5gp4.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/0wrs-cai1xqiz.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/2m903oomz7kxl.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/0dm3acbttcnsx.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/23rxzbz-7o48o.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/43o1dr9f_k5g_.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/3jgshm0wejtr6.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/30fhfcc5idr-a.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/3hns7wqhp3ro9.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/10hjyjk2lkyuq.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/3vg2vbxwsrhoa.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/3_pfz9hmbzimu.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/0ihhr-nyd4hx2.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/1z4nwsfw7rem6.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/1xdnwtwu7p94e.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/2x7973vga7aew.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/27alapplzyhgc.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/1uglyq4xe0-u1.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/29e9o8v270tcd.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/2f3l1wjp_bxac.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/102-_07wh_9oa.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/2f84gdx2319cv.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/2f8miz7_gt3lo.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/1anbi7qfi9hez.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/0cz1d0mv5g_q7.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/32h5kybyt0mcs.js",
+  "https://cdn.aqar.fm/website/next/_next/static/chunks/0v7pnn84dtqh_.js",
+  "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920",
+  "https://www.googletagmanager.com/gtm.js?id=GTM-N8GZGTM"
+ ],
+ "cookie_names": [
+  "AnalyticsSyncHistory",
+  "TapAd_3WAY_SYNCS",
+  "TapAd_DID",
+  "TapAd_TS",
+  "UserMatchHistory",
+  "X-AB",
+  "__cf_bm",
+  "__obref",
+  "_cfuvid",
+  "_fbp",
+  "_ga",
+  "_ga_8DTTM22D6F",
+  "_gcl_au",
+  "_rdt_uuid",
+  "_scid",
+  "_scid_r",
+  "_sctr",
+  "_tt_enable_cookie",
+  "_ttp",
+  "_twpid",
+  "_twsid",
+  "bcookie",
+  "bscookie",
+  "cf_clearance",
+  "first_visit",
+  "fr",
+  "guest_id",
+  "guest_id_ads",
+  "guest_id_marketing",
+  "li_sugr",
+  "lidc",
+  "muc_ads",
+  "personalization_id",
+  "req-device-token",
+  "sc_at",
+  "ttcsid",
+  "ttcsid_CFI0VNBC77U110MKDP70"
+ ],
+ "body_text": "الإعلانات\nالمشاريع\nالحجوزات\nبحث\nالكل\nشقق للإيجار\nأراضي للبيع\nفلل للبيع\nدور للإيجار\nفلل للإيجار\nشقق للبيع\nعمائر للبيع\nمحلات للإيجار\nاستراحة للبيع\nمكتب تجاري للإيجار\nأراضي للإيجار\nعمائر للإيجار\nدور للبيع\nاستوديوهات للبيع\nاستوديوهات للإيجار\nالمزيد\nالرئيسية\nالكل\nالرياض (86,472)\nجدة (43,096)\nالدمام (8,964)\nالخبر (8,672)\nالمدينة المنورة (5,175)\nمكة المكرمة (4,155)\n\nشقة للبيع في شارع مالك بن الحارث, حي بدر, مدينة الرياض, منطقة الرياض\n\n599,000 §\n\n168م²\n5\n2\n1\n\nحي بدر, الرياض\n\nشقة للبيع في شارع أبي الدرداء, حي الروضة, مدينة الرياض, منطقة الرياض\n\n720,000 §\n\n110م²\n3\n2\n1\n\nحي الروضة, الرياض\n\nشقة للإيجار في شارع حضارة, حي الفيحاء, مدينة جدة, منطقة مكة المكرمة\n\n18,000 §/سنوي\n\n60م²\n1\n1\n1\n\nحي الفيحاء, جدة\n\nشقة للإيجار في شارع الشجاعة, حي العارض, مدينة الرياض, منطقة الرياض\n\n39,000 §/سنوي\n\n150م²\n2\n2\n1\n\nحي العارض, الرياض\n\nشقة للبيع في شارع رقم 156, حي الجنادرية, مدينة الرياض, منطقة الرياض\n\n585,000 §\n\n94م²\n5\n\nحي الجنادرية, الرياض\n\nدور للإيجار في شارع عبدالصمد التنوخي, حي المعذر الشمالي, مدينة الرياض, منطقة الرياض\n\n110,000 §/سنوي\n\n174م²\n3\n3\n1\n\nحي المعذر الشمالي, الرياض\n\nشقة للإيجار في شارع الوادي الأعلى, حي قرطبة, مدينة الرياض, منطقة الرياض\n\n95,000 §/سنوي\n\n127م²\n3\n\nحي قرطبة, الرياض\n\nشقة للإيجار في شارع الأفضلي, حي الملقا, مدينة الرياض, منطقة الرياض\n\n85,000 §/سنوي\n\n119م²\n3\n\nحي الملقا, الرياض\n\nشقة للبيع في شارع الهدية, حي الفردوس, مدينة الدمام, المنطقة الشرقية\n\n415,000 §\n\n143م²\n4\n3\n1\n\nحي الفردوس, الدمام\n\nدور للبيع في شارع الإمام مسلم, حي بدر, مدينة الرياض, منطقة الرياض\n\n600,000 §\n\n185م²\n3\n3\n\nحي بدر, الرياض\n\nفيلا للبيع في شارع معان, حي الوادي, مدينة الرياض, منطقة الرياض\n\n4,700,000 §\n\n500م²\n12\n5\n2\n\nحي الوادي, الرياض\n\nشقة للإيجار في شارع الجنادريه, حي ظهرة لبن, مدينة الرياض, منطقة الرياض\n\n43,000 §/سنوي\n\n114م²\n2\n3\n1\n\nحي ظهرة لبن, الرياض\n\nدور للإيجار في شارع ابن الحصين, حي المستقبل, مدينة المجمعة, منطقة الرياض\n\n30,000 §/سنوي\n\n660م²\n3\n1\n\nحي الملك عبدالله, المجمعة\n\nشقة للإيجار في شارع عبدالله بن شهيوين, حي العقيق, مدينة الرياض, منطقة الرياض\n\n54,000 §/سنوي\n\n100م²\n2\n1\n1\n\nحي العقيق, الرياض\n\nفيلا للإيجار في شارع رقم 1095, حي سدرة, مدينة الرياض, منطقة الرياض\n\n145,000 §/سنوي\n\n300م²\n4\n5\n2\n\nحي جامعة الأميرة نورة, الرياض\n\nشقة للإيجار في شارع الرافدة, حي النرجس, مدينة الرياض, منطقة الرياض\n\n105,000 §/سنوي\n\n245م²\n3\n4\n1\n\nحي النرجس, الرياض\n\nشقة للبيع في شارع عين شمس, حي حكومي1, مدينة جدة, منطقة مكة المكرمة\n\n580,000 §\n\n177م²\n5\n3\n1\n\nحي طيبة, جدة\n\nمميز\nوسيط الحي\n\nشقة للبيع في شارع البساتين, حي الشعلة, مدينة الدمام, المنطقة الشرقية\n\n500,000 §\n\n144م²\n5\n\nحي الشعلة, الدمام\n\nدور للإيجار في شارع الشعاع, حي شبرا, مدينة الرياض, منطقة الرياض\n\n48,000 §/سنوي\n\n420م²\n6\n4\n1\n\nحي شبرا, الرياض\n\nفيلا للإيجار في شارع النعيمانية, حي الهدا, مدينة الرياض, منطقة الرياض\n\n420,000 §/سنوي\n\n562م²\n3\n5\n2\n\nحي الهدا, الرياض\n\n«\n1\n2\n3\n4\n»\nمكة المكرمة (4,155)\nبريدة (3,762)\nالطائف (1,746)\nجازان (1,395)\nابها (1,345)\nالمزاحمية (1,276)\nالهفوف (1,275)\nخميس مشيط (1,198)\nالخرج (1,137)\nعنيزة (901)\nحائل (794)\nالظهران (729)\nالجبيل (714)\nالبكيرية (659)\nالدرعية (657)\nتبوك (499)\nالمجمعة (483)\nثادق (446)\nحفر الباطن (426)\nالباحة (386)\nاحد رفيده (385)\nثول (376)\nابو عريش (335)\nالقويعية (312)\nشقراء (306)\nرياض الخبراء (268)\nمدينة الملك عبدالله الاقتصادية (249)\nبقيق (228)\nالزلفي (223)\nصفوى (189)\nبقعاء (176)\nالنعيرية (170)\nالرس (166)\nالمجاردة (165)\nمحايل (164)\nالدوادمي (158)\nالبدائع (149)\nالحناكية (149)\nالقنفذة (146)\nرابغ (143)\nالشنان (140)\nصبيا (134)\nعرعر (131)\nالنبهانية (124)\nالهياثم (124)\nحوطة بني تميم (123)\nبيش (120)\nنجران (119)\nالمذنب (112)\nالجموم (110)\nالغزالة (109)\nسيهات (95)\nالقطيف (94)\nالخفجي (92)\nبيشة (85)\nتربه (71)\nالغاط (70)\nسكاكا (70)\nرماح (67)\nينبع (67)\nالشماسية (63)\nالدلم (62)\nاحد المسارحة (51)\nعفيف (51)\nبللسمر (50)\nصامطة (49)\nالعلا (47)\nالليث (41)\nدومة الجندل (39)\nتاروت (38)\nالسليل (36)\nراس تنورة (35)\nتيماء (28)\nشرورة (26)\nالكامل (24)\nمهد الذهب (24)\nالعيون (23)\nرفحاء (21)\nالحريق (18)\nتثليث (18)\nرنية (17)\nالوجه (11)\nطريف (10)\nضبا (9)\nالقريات (8)\nالخرمة (6)\nاملج (6)\nعنك (5)\nبدر (3)\nخيبر (3)\nالوديعة (1)\nخيارات البحث\nشقق للإيجار\nشقق للبيع\nفلل للإيجار\nأراضي للبيع\nدور للإيجار\nشقق للإيجار بالرياض\nفلل للبيع\nشقق للإيجار بجدة\nروابط سريعة\nإضافة إعلان\nتمييز الإعلانات\nدفع الرسوم\nشركاء النجاح\nالتمويل العقاري\nمدونة عقار\nمتوسط الأسعار\nآخر الصفقات العقارية\nاتفاقية الاستخدام\nعقود الإيجار\nاتصل بنا\nالوضع الليلي\nEnglish\nخدمة التبرع السريع\n\n© كافة الحقوق محفوظة لتطبيق عقار 2026\n\nتم حظر طلبك\n\nخطأ رقم: a4b87f866dc0116b-ORD\n\nفي حال استعمالك ل VPN أو Proxy يرجى إيقافه\n\nوإذا استمرت المشكلة يرجى التواصل معنا\n\nحسنا",
+ "network": [
+  {
+   "url": "https://sa.aqar.fm/",
+   "method": "GET",
+   "type": "document",
+   "status": 200,
+   "content_type": "text/html; charset=utf-8",
+   "req_headers": {
+    ":authority": "sa.aqar.fm",
+    ":method": "GET",
+    ":path": "/",
+    ":scheme": "https",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA",
+    "priority": "u=0, i",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "none",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://sa.aqar.fm/cdn-cgi/rum?",
+   "method": "POST",
+   "type": "xhr",
+   "status": 204,
+   "content_type": "text/plain",
+   "post_data": "{\"startTime\":1792168750569,\"pageloadId\":\"a1ac1fba-49da-402b-b14b-90f96ffa9c73\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://sa.aqar.fm/\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.10.0\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"138\",\"bv\":\"138\",\"ov\":\"14\"},\"memory\":{\"totalJSHeapSize\":10000000,\"usedJSHeapSize\":10000000,\"jsHeapSizeLimit\":3760000000},\"firstPaint\":332,\"firstContentfulPaint\":332,\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":1,\"domainLookupEnd\":2,\"connectStart\":2,\"connectEnd\":56,\"secureConnectionStart\":20,\"requestStart\":56,\"responseStart\":100,\"responseEnd\":105,\"domInteractive\":338,\"domComplete\":427,\"loadEventStart\":428,\"loadEventEnd\":428,\"finalResponseHeadersStart\":100,\"firstInterimResponseStart\":0,\"transferSize\":71218,\"decodedBodySize\":506006},\"siteToken\":\"3d7fe1e9f8524a48aa8a7ade6c8a7a8c\",\"st\":2}",
+   "req_headers": {
+    ":authority": "sa.aqar.fm",
+    ":method": "POST",
+    ":path": "/cdn-cgi/rum?",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "827",
+    "content-type": "application/json",
+    "origin": "https://sa.aqar.fm",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://sa.aqar.fm/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.1945624865898936:1792166432:dBguvyx0V_q0dURW7vOsekbe_Z-fy7CPUp-9Q7LhqEI/a4b87f837d620558",
+   "method": "POST",
+   "type": "xhr",
+   "status": 200,
+   "content_type": "text/plain; charset=UTF-8",
+   "post_data": "D$Mp3EwJxS$t8B9EHns2xjfIRj75hzdy6Z8OXzMJfi517N+VxLBIzxTk+qv5IN4akgI$IOdK2$zbCSZVT2xPxy8tUrTZw+7aD9RsFXHBe3JEbzTXf3p5-t+9$NipdK2aPcb$6S9zsW$wvLjgHkKgkcnk4-yejMPKNi5F8WLI1h1OZwGvEDOJ+cvt2cBbowSQHRN3CQ499RHUQYgwDgcj6i92EpO8gEEL7TiEz6PUWa$OR3Z$d-Ud5DgAxNBALM3pogOApMo9GsYcLUPqBoom86M1hIsQFx2-AplURU3p6K4lVn0aQt04vblmLWScqfbdSJ2lLrdKT-Ti5EAE8UbmwwqkBE3q5LV28o4qOEeIq7xKtKMphq8MW6+97ebRt5MhWpnZHWzioh6AsRXpOelqgLDJ$yp5fnqB0zjNQ8GxiC5ymPty7eLx1AgQgTB4ecpomq+IjL+oIeimFZQKjV$T2tkH8fogGn0pFNCLJMmViL5Hl+9B6Et-CUdPKHpCbWC-Xdi5Ujmi4A$2nhxa3nI4Z67GS-H4Ki4q$ZAU5CoFji$xg$-FdRMJonvKsD7zrXgIfttwmahXz7wrc63aRbNt+pwkhGBKPZE-84oDd69evJLZcjEwy93ExBliYwBCcM$fpYB3P24njxjm13wW4CPzBeA-JaK356UY+yBoMectobmQqLZkLJJ+0lPYgfXPkVxsnavENY865$paHesxkS05hjUrXSLaI4jqt-iNC+Ln0+XgnW2UNhTPqqQl2jVXSFil5BqmZtjmQHznCaR+WtW5dlw5O3rPeIO1F1N$WlesaBg9ElJmkpKPcCYvGJsV-aJ8+zKMwlt4W8t-SK$7w6bWB3eXm50TXA0Y61RYTmH$iH1pzgV6fUT+ScGMqd7170qg9E3HhcfZvKlJJTFrV6phA+l+C9-hFDKw1cdcsDeXnf-q6tO7Kq5aSvmTYTp0k+r$5EFUUVc94vafajVcIPx8w3+21Sdg8eNbC2k9WBjxx93+Lf9rgQjQGNTX460kaaPwBx-EQVn4w$m0gwqnrVBCOyeNqiszDKlyl4+oCmHiPKIvOJ4i1SFddBDwLLpwlP+YxmRZI4gWmLcFBVIcLnk9+voB3dAZZannavikYALGxnT4W82vLyD8QS5owGtoe8hAi6qQTQqAOjFMCrnz8akE-NXsa$Dg5XhpKH39PU4C3geezHZpqWAQCgkGvb2kTiXC6zze5locJlbN6phZaxE3rwqj1MO7FIeh+O7G4zCJ2xoRmq9z6GHvzBRMwh1x2wVco3n5g8PWaJ3qeTvDcHnJNy95pEFy3FSqVnYnpC5PLwKvRfbHQslnh4HqmMmyN7MaspMIW5E8AE+fvvkATFS+793XIGclA81K-1PJsSFHfmEblznlsPkaJdRtyOZznZ8OpGPzRiaO4BVFSfr6eD47akY5HdTKBe0iGfftteiU3Nooow3OEyf4bsHPvScNg1mwGB5PDKLG4TG7SbIT1yizB2V0lBCbiht0dbcxC4gRnALxpLNLCvqaM8N4vAgptxmKJcAwOFJ-Ld-2r-wjNqH9m8cN+OeLvXBELz6XeJyrjJ3Qc4D77DpJzzLND1y3ZXXN8N9djOopJa8pLq3sCv6sb3Ui7OPgwEFlEIYGmL8caAY9x+kFhMoLGtSQn8fPvNPD-i8-vU+Mm3Ar$OH0RHc6TjEhKe4GimtnjRSlsPjS+vrs1aj8UJvYyhT+UirX6VzVae+k5yg0TdEXCIXNh8DnOrXYI5MOYHb-nXkp++GtCRhRG6dEleZ9KWUfe5Jf$EmFZQEiZRs2bHNleOUOEQyx0cFFAyvSwpdWGhhoJ$H5Ix7ybIpyZ-d7l2dnyZNfZ64+$BhC8fg9J6Z2o2JqHc0wUY4dgYomGeNj6kfMQZMl$F9-Ix4O4CIPU8t26q6TVFokQ4oTGK92-nqvD$T8o40jAvz0gpj1I$rtLgbsWRi3fGU3roP8Qsk8v5Jo59W9L931yygK8vW--szXsjxG5CL321PUWZ$FaTilwZHk4j2O-IcgFMlT9OcCNSe$695-JOM81DwGRW0AMCntOWQ9b4wEzL09mhsFLMCaW7gcGLLU2J4oT0A9sDDYJB0xabQXpXZZByPWN-UbObHA50+IO5F8crTwUsF5FABlhFUiqjib0ZJBbYH1-PZwzo-TPDSnR-pY$x-AjJnNDYvYDVnKT1GrYNq3q4eEq+w7j-srYNw2eLF97FBo$Gn6HeSWTaKJ6dz3oUVaVYfbVCLoPZUd348X3N4TiDbqy3ORpyHj4NvI$pzzxl65OpLhrSBAP0VPiv26sdEBmW0GKw4Fe21AdPczK-xx07Msof-YMZTF-C$y-jphNbd2KU-NBArqtYptKLyNCvhN41mtCMkxGjr$H86gtAJl25xfG7Lc+1Atqtz4STYIMUxpE5gxq-LDtA9yUgGhUsEyO1Zt5hi$dkscCBC8z63Alh$TgwrNXWDdrL1VBbBg$kCLCh80wVobL9M9Yxq8shdCAp7XybV-NX6nWWbkYPJmye4Gh1SJ2Y5axWl60$QSnWhzGaA23Zoco9N5HNgs67Ulk7hepAwiwEerMvU9rp5qJUHy4xyD+bFDbfrh5znw8jwT+rxedaCPX0jb3ymU84zzTYXPInmnj2WCDaxBXCwMq3$QZdXAcnGeV4hZBNcmqwKx3fXhGyGXgFclD2gEUOTfk0fB2iiA1V9jy9j7y$alUXpg3eNA4UTPgFpTIG1GjUSGrv+hJP1yCJqIeQ9Z8F4y526Uw4RGAOSZP+boOiOVEHkfDUy6G4r34IbBQYld2lNoFE5PzSSI0RxAGLQk21rd0MmTGPlimnxvoFvxS4D6WtqXaVSg7GdRkA5TLsI7Rh7ToUaFoXi8GSXxjete0Qafdltm-DWepooQHOSXKfXxL$vZyew-EKbCYgY+yeB8+kEZaeBaNAHGvrlwEinekcdN$dyR-JA7tvOW7+siQUVdq0W7w4eTQgpZ3vSrNm$gt5YV6rbT$tXZF262Xxl6mdB18OOU7p8jKAgJmTa6cwHs8flc552pTJr2jsLRzMeYoie4gelqMg98LkMDCWkykONq1tA9UeOOl5F1pNFq1WIE-UUUEWY9RfXT+STS8lQFk20VBKYEFjCrBeajZl5kNreSqONIwSHBDOe$4N4ZnU18MUDtQ1PfkRIdLfBlpi0T1mdwFvBKt4bWhxeclp5cv3M4Q9bTPyAYtjo8kR87FzTrwJedKNa$1hC-wNC$ETwwoMk92Hps4Tv8VEmDaE+PZC4WEsC-85pm9RMhDh4Cg5oOYRGMFQ+J++7cbk+H++RXwpISS8$KZMjTtMT1cz2mGHmnL-4himtXQkc$oBVXE0cN6kIqczMFi0F2NprXsqRPG7Cet8WOhvkXJLHYqqW8ZbSKNbUvfiVxnrLIm+G$phEnvDPg73Wk1h4CbijyD9eO7KHmjanCl5HwwbYi-Tf3VIh83thvINBbGGGYt8$PSciKmp0jd-vY36jJVidoo$bXMT+fi$T-E63y3o4mFNOfvbwFJnmhAId670wPwCGAbXQ7fbbq6kvAMvsvIpPMKmz8RJr7dJAQgO9QrTk2Hpbe5eYdF7y9V3X2rQIilyymI1FCZTqoXNG$z-ypdwje9Kg7WZX6m3$BUxXVbrLogCl4rCNFMvLs$WnlEr5IvHM38F7wnR15HPl0UAZQ-P2L-c78+1J+P4+gygMEktgst15NUHN2C4PKKRYxwwFMJAQ6LUN3FUjmMX9WhWmJvq-+OQWwc6RMykio-IM+zB8c63zvl$$+ZqCbB3IzNRN0DkIsH9LaKq9eFySZc4e-xtR-jU+xwHX3TZMB+LZWlaW9zN+5m5rqZW9q2cjStq-1kHSbGiWXttnHdRBLORXIEjGVLSJW5QLhAGAcNjQK6rQfz48Jt9q0oUV+l2I7WH+WnIZsxSt$IQ5DtogyXe1sefUIrgK7b0FsH6y+asSyrO$9qNQBrbPw028hD4686xH6yviY6lX3dZxENZmYBI7gSEd4+686zVFWQp$9sK8TdFK4HqN098vdMmDS50oIOLjvB2ppJ8CGK702tDl5O4Xtp6jkOIr7G9LUTUmdTp5$f5yvAzblTmokySwwwMSYlfXblCTgetTAyR8e1NDm-qX1lepX0rbSILrzV$XOLUSiTRK0rGfcAh4Xo3CYwYClxJeeKdUXTpIl4XwG1YPASQ0VbKc1CsGDY8n8FrCi1E6ZKLqPb7y8Co2FMJnlUZvOrLxvjSVzsbfovFi4+jFoL3Ryd-IDOJ2Coamda6VowDssbef7Jcl3eg-+3SnVHGZ+3TRf$ODOb+kMndvxKJ5C3zKvfx0D37i1YNj115OZvH1vGe1hdfP8JTgeGHQIT5QqIV0Nz0qrvU7szymfUjc$$e1+b6llHly2WHUneqiFXw5Hxr-SYGUSKab$xbCZAee$d2H+wYPh2jQM7xPnhxy3F6Q317vFtrn+qgH4KQVP4Kyf$oaevvJNO7-OPx4ympoGDe9WnQZ5K2xDlZFQQLsN$I1XA+tjJveAwz$pss0n1Sx+zmyGf9Yy+ehokXCOsQUvS3hV$4Hc9T$JJkOG2+MK54mhfa9mseAjIHDrRObtBr23+cNIUG81dwpgRecawTmHjfWgg6VTFfqMespTZO4Wvd5W8kcddDr2HNl9GhdDUpTl6rOLq3-CjOvlfnbxrSkV3bH3c1kxfeFTP0+I2fZrZVfqZcCrZ7Fia7qiTzryByZp06pvXFGBUTHyRK-Uh3gKlNf3EeLCCyCgPFPzl63i5yHseGe4gHDhXvbQ86twr7TNXKOEEEExc-scG8r-AcdHq1gFqaqPJMvk2n7G7sA5glwfgHyaKqz40oE0TcjzP2yigTsn5WPKDz5y5$-a1z3p08yf22RDstTVb$yxz$i8M7lWIcP3QsZTWdB9MfyIGlPjOP-0x8Pm-+XomM6bKGGQboMfiDf2B+xwLs8Vbmk0GRH6--Z$jYRmRN-ltKr$2hizxJUx6X7dTH7Q9fSO2wVvLibhR2Fj2wi8WDUmQYSIqoGO8VZi3z+TQeYRTYd9qGRGpnrGdlK+NaPGJAZ0RNDmAJwe$ga2GoxLkOW5UrJbdPj2YLQnx5QXG+BbC1dMcRfrSP3wVGC0zaWfw05aGObZ86AMYMRpBDLlzFN2tUwJzgbVH3elBvf1OlB1V2kIn8XoDysfDmhEV3-E3MRQWfewVN67yPlB$ixgdQ44RqB+LNyEJjn0-rYiSRaAbMd95Km5DLVWXVvMh+TiDJX7M3bbqjP2HQS-AS4$qCPVSOxcwbrdeyqYBVl36qdcFSOxRiZFLUs8imLajAvBkIDSX$97KVmlxkddMsFMGnVhQnAc-l75dmkm0gPt50MDzIJo9vKpFq+dFm15R81d9y+z5YqZvqx3TiNe-Fc0rwDpcwHzOZ5f+GfYTbt+pOWMt5pmjcwCSVdMZd3yIMiqE$0U2AeK-1ondcTn2pC1VDQw-1mq-i6z9elwko1XhAoL4sHqxhsG+W3bp59GYfgbEJJ4dQ2Bm4MSR5ZykJoSR0k+9hQ$5dK$ZfdzOMragoMjTkic6C$z5gyWEcKdzRmD2ettGC8ICtceiHf5G5-hEA96-VIbJhQlU8ItPdf9JwLTbM3-bgNiqywm0E-Q9N$txp3W043iaib17vQfsm-Fydp8Wqh$hPAN1XGvAqYpLq7KAv00DabfMzwyP75clRs9Gg8GAjmdtAZe6OFscR04$jlem-BvMTzUrFvCWqwR2I1dNELDiORThcSyt3LMxtbrCjra2LPQPtrvLGF5T1MCxc22+QrkqTDNzE$-EEaR2VMZcFOIzgDnoV7zxl6bxKDzTv2K+focCJxl1J3LB$78hZtfY2P8ljCERol6YUP5U2x3NnVHFa$34Z5V8ZWyCpNnv+8ZbT4MP7faIDDkatrPL+C6wIDMa0$majEEytSNiOF-kfBsRzx5WhO28AiNB65TFvzQ5kDN8DEEPvt9Nth32ZPC1W52qthYDVHZ$I0r8b7rmkmo89C4r9XxXtdFM0+oiE6rVo4SrC+jWRTiU1XmsS7E30y4SjF2Oc9P3CekFOHO60qlm7wHyUSgac8JM4t2cLt3X6ZO-KTvt260Wsr$NWtraODMW24FtjOL6hstQDmjqx4KHxQVeVoYjAtOg6p5xfEyHvLOq$voI25V6c-wZvOzbr19Shi1W$3X2N2nR-J-RRmDkWY$ja1QX7rpi3eTvbEwGxbg4g4vxk$XIPQ7vDMWoT9KeVJ1sDKRW9pBU-vvJB2ktFbGw9zj65gb6BFgjRNJHmZSabU0hVp8bewvUAZByl7GIzzd$3zAYC64k2YIiOSe5mjGlNqthjiftx4rO46dmhmQPlMYynX-bUjbOBeIxKItFxK7fRoXRF+Jo5g$gpjTTDoAFYt3Y60$RqjA0zGJjrY$cb4+qZTC1h6kYwAFV-oTQFcYxgUgoXLBWtZtEngb$A8ASyzgrmcKZhzNk$iMf5tlctg5jvVt7QLTpvn1VlC$GXbfhU8l9dycBs37wvwbQxmPCJeTpjqr6HjioITna3Na4lEeU9PWmz5sdvJwxABQoWgPg3a$jbG3zH0K+BSQfqeIyaQ1EacZD9USCAKIK3qF2S0wJm$Sz6IW6GM9FWMJdyUgTgehZfg$ReoR5I9jvy3TRBO5p-vRkI7iei0XJvrpdZaNwgyrnIwdRx0infULNdNFtzspXYKaK5dA0dq55rMrgM8BxWl4d9AUZDX5EYSGL1ZfzvBYoCCFpahk5Ee-t20aHCmaw4ylj0TcVe4m0aBCGvFPF5qTVjkMigzf0ZzbFW+nGGYiRaWd6RY8-Pt68xigf-AOdhXPL-yOGj5KmMNQid3awiqtGxJNnhe7llzlP0aKzsT1qQNxGtv1WP-jU1FEMfW4VVgbrU$5bATjlwvyvZHzYRxQwQqCY2VtEnrehE50NiK4zypL9gMFeX+MeammRCwas30adyy9tjCGzJ5tZ-NzyRETAGrG$oRyimOqrW7TDJ8czTW+mIado2bYd4bcDNSdvLwnm0Hj2TLKYlipVqb8vkYrjhYd8qZSxvgteibxXq5BlaYlJ3SlXeGChaGpwCSYhwg4ZacHeq2VSHmSJK+tWkci7mWBDJRiJz74cFpOmzSwerLzC1XjvGxDsEadNDXh4IQ6oUjvbQBbd8SCBBZy3tD1$P$rtwWGXb21SL3nXYRo0m+IVUWCNMTcDB1L3Rkk9lC09A$ke7MHD9KD6l4PDLE7-RyGp8He53yzjQVA$VTItnYGmi-m0JU1nQodVvTa4EzbvxCNV8w0z2hprDstnd8LiBhs5A6x0qZ1M+mXyE$GrPn39c-0w$Thi25-hckDDzkfzMtFx+TV9lmQQUqe2rfbMbOEitO$8AQZiGHbvXOLWatykP-wB6wfdaSG4bMpKwRw8fcGDt9onrzFyfJZr4j+V-dpwSmiX8vmCFM-UzAGXdawfa-dkxYh0QsJ+60CxOzycFJaFP$mEBQDiMqUBZR9dM4OIQ6VkGc8qtFoM+3eWaaW+G3zIM6nsD5v6++WZiwegAXPcdf3IcZVh489vEITavTOX+pk$i5oekfIeKy3CzyTfPfyDCYxRpHjcP+ohojSVzx5obLIYIzP$dY6H$fxqvyHe8Rmrdzjb3R2R+qPzvRtUAIx+4NaOHlRnyr5reAsLxkP8aUVA$CnYyqvE5obTwWi7TBtekBZKglOnHEaLQilkb9t7qZpXoAQAk6VyUcP51J26z87ACwC7B5rHKgwJfziMdPzwIyB95ZarE16ptRW2yRUwfIvjJzt77h9V5BJFj-0WRv2jNKIptyBR83Ji8LKAafLFrGaeTtKwqm1PQOMO+61jr3Z8q8OZ4yNf1ELNl0j98Cokg064DSiakZj73c2TiXFdVrcC1r7wZ7svZ9NDgsNSFQjT2WveG-jqJhf7OMdQaYDaqrEmmUt3IE0d0LTqssCG9OPd9jP0HFndFtD5hS8ZGT-WfAHSlBK56JCe1yKoiSoCU-5hz9NhN4FroGhHS+-LTSwZmxAnbjZgOpDDxoPLwGMrbBT4$OAjNO0VfG5aypr6$EQxTaCLK-5NIon6+JxIgx1tfxJ4cFRrVoPN5$kag8oUoQDosJacJRbXgnfMS7D5zFcBr0wH7LaqgNp6cjTlP4c2dMJDTWpfEhztg+pQW1WvaskOcJRAio4i+BwDpBY$tOzSp4VM8YodNU1iZ6LgkivVMlZePsAO3Dfk4gBCjFha0St4680CGhTB0aGGGcb2QlUd+g$V3fWKOLL1VfUCgK6ijH03o2gUd5NWcmG7+RRvZQRnR0A1MmNkVyFWlqtMkcpx7$4-gXgRPsrlDSfvTC$pIjW3ZzavOFdjx3r3Z2-8Bqq+YdQih$rhJWUwgdkb90w-eeh1ao-ybs9DTDpw4GPi1Jv28$VILL-UxswbQ$W-j6XD+tNtiq6hhS1xK+F9opjF7JkSpmgCeVUUM$XAryMg+czfUXUTlTgWliPw9LwIbDb8Lb+GfYBbZxN1ZEpXP9ATfHAaXCp54eikp$28SO$qar$SgV6B$VyqCqQ2VO3RmTNnYU07lKWcRRBJkoJz2e2ni+OP$8Pf5DxFpM75c3ZQYVgQV$ZD4IaeLeazTXd4D5$QCjNRSGPJ1sJZtXzbFre4SnRzV26tUKdVnac-QK3OdlCM+RG3R0f8JFPAQ$AYZ8iMKmYx4LWDSvmC4t15Yz1vttjoPq$kF6lfGiEIycCv8dBBZXUUCMQLNqU0SIPlAvfCKrh2k1kjwfn-mPpn$rp5ZyFQ96xDnKBpL14qwoFZcj9+yFmtBQBtqzQD74aCl4YFvAzET4etNw6MNs2MLxXW5fxUfgm4wTlZpv497BERUoSM5A7b10$YLE1LtHRLwKp+5obx47mE5ponFSo-twgIpVYlKSdtWxtjNkGzzeRrJg1tzttPENqUoV6kZKwc9jp-CLtNYNTxPqVmjkeSNmP+zPmCXNld+SoNYNFmw$I4QKC3+H59pwNNyd8LMYd3E8hOcXSONcdRDs8Tcj+5p1o2+EJGqRbdE7f5FAaYsHGq6KpYJ1Sfk9HUUmJQHT4WW0-UYK-IBbjM7Kjrdb0AJ3ddrDgIkmzPbOWe2w2eS4xb+cd3OVArcKHLDhS05Rn9LXfcwQR6jPKf2L+bcSAob8Ylfw5b4NoybwRMQYfm-KrEJZQne7nkXjYO+PsDNxY5wZwEVCZTrNt6m-c2wLQTD3rNSYnq1H4GM0glkMfsAv0kh-OghrKpXsfe0V7JPFhDSNJDhxykjcMUXe5B6WwQVCw86Lm+aRCH6hJ+S3Bje7lCfZnIqqYV9xk8LPCjNXVBjCVYBOd7TfV-UZRRy0KZYQGGWa9YB2-S2OCzl4Pd2oUKA8aJaD1BZC3GjMZKA7eEXtbWWewmyNLwJl6W5rOJQCwd91th$tvTZfN7UMslk10nUY53Zo$iRA04L8MN7LSvD5Dh6tXccUhXDpFkci-rgfmV-CqgfO1H$PUNBDc1kQdywHXc8OkOZeAfj48mg3fSi1IApJtZ1rJxS0P0EV0lz9UKKfLR3w-3iUb4PEe+zFIG3z2em6a+MrplUhBiy1vHUi80A13npEs6vjLysS6dGnhNkscBF7qSRZFegMBsGm-+ba78N4OLtHnC2myQNMgdHmXv9BIS$-aYkHFamOcnpjqkz8HeHyg5bAVLJoPpqR5ymT2RIG1nm3P46qKW3ODYNNgDnteF+nFOO5s4KbR5jqH1r-ivE-HjL3W0y3wFq1Yp-ax7WoTkFzcW2jz0g5DUAtGtlNe6M-H195tiq66yIr$72-tlwqtcKeZtD47dNGafItK3tf1gXJ9BxAdsJIWsYBvo3tHh8QaFC5W+MZikAkzGK1BYm+QyHJqrRP7f56F6iF4IBi7QD0q+qfyiv0Pe8idGM2z7HL+SYTbwVl92rcAi+J5oqZrKJF39aP2LJ1T8plfWl4MZW+-eba2iA5UtPf+nGzZslaQOUML5GI9ZAiWpXkH14wXI5lC5XLL41v7-s+rDg4MaDNLanBiw$ro73FkDZnQHx+36QstvR2jqzkfWyN5YWMEHIokmizxtW2aR2EJYvJ62w0Fm5Za2rNnXdjX5PBkOfBBEhKxOFmW93FMRL97DSejNUx2YUW1I38fkgModrwIV+cQM3HcANYpIPRskafpaOsa1OUNPvrP8qXIT8kaA5SBLabzGoyDK7aKDfGwpcToWheXzsSb$FSNbWBHYTJqOWNwwQ1z+Ny5p4rqV6Y3GODV0KX4BnlEx25jO9rLqFXxiV1twJ2aJQbeQlXdPG$e4co4XYqcCryFCdqnqmT97t5+0higVtt7yKBFV5ch6SMLse5nJMrpZzCkm7Aa2piXldWFIpoJHK3kx6L4Kkr5bc7zCgQF8L6gyGYtREF5P4rx1OvBt2DxgBz$3AUkL9oV2M7CEBD77ZJMxL2xIzJoU6Mp9lDqh3No5jkzCXCcyJLXIwAJoqI+ijY3SrscF$G+haJLZAKnBLUo--i-UimWP9g2$7bzebjRW8Qzz60KwAAXk4bPirRRIfLWy6tgkwErhXGoAkJ-MYxf-pdTMT+CipbvF2LN5Q-HkUjC82fg$5rtARtYaOLRvBeR17kkXsUkC8Y5ybxaA1Bbc0O+2Lc1cL84gFI9t1Wc1Jf6edSlcgK8j+fkPwpkT7JhjDlShvY5eRLJdGg-K0lgkHi$BP5rT7MOk1h4hChEKoEvjnLoQ-gqB6DcCYI8W+qi+LW-Nj9t2mwWOvlom2E-l5TeYIGNxCp$o5hISSUl4cVpMfcmhcy1wHUrqomedlMOrnn0JCl7IpogeUI-WDnGhgT-rsgpSj2LUNKds4xtBcdnEpVGC$HSo68bjtvHNFZkk6VcZDA7FmICYqT8SFYDlsXmws3h4lBWf1hSXfqJldzh$aH0$mosOFd0D0VyHSgVAUzbq$g7lMPZsSK$29jX4i0yKGIsX8hdQs5Uh5nfSp0tH1SjlisaT+DnirZiMP6b+bLKj7+U$fXycrIKZdgGidCqmjvDLKGDWiElizx01ZRxqzPNHF9HZevvDF5fLFMZnk-f23THTgVP4G6qNYgTYRQUVTC8J2Gm6Kyi3NDn$QDnx13bXP-kO3ChJx7LMOGGXTOUpttF6jG4I13OUC9AfzCHIzyJvkbW1adnT3ldb7wtMppqnFEBvjHqM+66Ifbh1Kr8t7fQf5WiGH$2V4wboRFIkOfvp$Pxs1DsnfbRORepUreN1kkHgrH66dqCT74562tOJ76M+BooBUlKdNiWCQa3so1k8wPZPkQqL9CBTU9zyKabj2HPE9AdgMgQXRKfJ3BlABH2OkLsXWOvp2yMz6AzS7sMSaWg6MSTXdMNXTCqB$Xp2mWY8YXStcJhmLfFlsT3kgL8L$a0E8vFHP25K0J02m6S7xDl5wPAFl$$+5CAaAdqtgnksvKKFNslm3s4b4mhOj9ObARcrBLzd5HENgNrIxwvwOB9F23kiZeHCWAXylM4Snzm+sEW9xt44mhR$UpsyHB8Lja2jXzLZWiP6+YNl$dtVokFxfh12mfr+4NxzziEd2TlV8Br++J3vowa8fzA8NfiwpCzpWf16p45ARNKIgEKa1xABIoQl5tAXRCP+ikS8+08DokVLgGyMcKA0QO9FVHeW68+VThEI$kBCWzHwoe7dVpGIeD19bjkMYjKisL3gSd6NhS8gw0VEHSOgB4Sie1-MB7-yRbBn7nS7Wqk44ZE8EZFDVJ5wGy+mKrXJQbTw3UEAt0xee-7G+K7IRRckBCE8m$f$LUqpffPxyMyhLBFM8q1eHVEMzbEr7mPLnQqpJEp$6KmoQnkNLXqOHl4K8ZTr+o5Jp6WBhCUaOV0Kmb0WYbT-O6mdb4RTH8CjD+a+BQxBkbzHL7pZOGvX0ZYXUEtZar0TyUl$P$nQZINHHKFYlAGJXzHQzAMcHzmHVi4kFRz0wglXL$lgeJlPo4ielftZFqMFeOaOCX-tn5S2GH9aF-45wyr1lKkK-ojQB5yIWsL0loDh$aYk1vZoa7GOHiSeZoVJJdMURJB49Pb7XwhFvzKXFsqt3Uy57Er5Q6BPQM6VpFAL$aWcfPyxhpmgCs3KVI69jWrBEgvfyJ1vyXkhV95Fo9VzQM+kQLNoSFiXEXa3NbrEI4j1pzgIo781IzYwi1R0YemMdBkLqqOa0JAl4bEZrcDEn-KsxIdpIMHFsc$F72qjED6d6ZGQcOdg8OhykdLqA8cvr0QhhCACLvKwU+pwNjdI7WF3rEBswTLSrHYi9jNP85Ue2QoK1ZFKcUPPOBaQOGkwzVmdOyfX9sv$yZSs$ZsgJFQ4A4yXKN+0AmLCk5K88EH+hnnQDK9A4YtNf7iDwks0FUQp+lnrzztvN0d9xLh7Ti-EsUhCzCao1V7trgni19Gy+GacegwtBWNPNADpzvVL986Tbr6ZMIQYfave67T4CgvgANhAms-MHTKMGCQqtgE9LhGtaW9M0SiaqOKWeUNMa9b9wEOYRwOVLerzRFW1IgJTsdBvTrVI1ItalVLDAYfB$2Q57pk0BqXNAcqsr+zCnDASI2i8Tx5mbtAP20neLly-A0axsX63d5is-RSqQ7Pmg7f95DdacgmqgbvO4wGHD1UfvBvmRbj4zzkrg5VexPITHK-TFCZZ17lJS0fqbJCETLVA7lfX2KEmbYdfZ$zA-Xd6nebhCKp+ScbbfUfXemqcWMKFJMcIzM6FPgrRsCwk3mPedGAlOotlPhZwmiCL0C0oSND2rCafJcBtZFrD3hZp-97cC0ZPVTqc8pgZ5SBs3JvChI7U4t5QJwH5cXXNWSbOTbAjoL6OE+sfWSeMBdjjkawRlO7RcmOFohA4t2AginM5JNqgmc3JTYY$iU1rhOZ7Ei8+0-Snke8ZR8$gyy60Gn16o3t4Qd7wW2Zyh+gbI3gd-1sfD-MUtLv$ew45G5irPlgqQIIT3ngmcmViW2YtTTIarNOHfm7aZrAnN2qxA173njKKBM63LlD3eYoRynehC52WpE7JfgMU2vqzA6d6dXRCRN8rYx+jqhnmaOLjxt67N-oTNrjA5+4EPU7BiNNDwMhvGBiTdkqgZg6$k$4m214qF8Myy1lh8L9tascKk+XRc452bjljhtI0WEw+XTnjRL4I-2e7DsGMm-yEYa4V-sHBZ0d6OMW97n8MMPOee9vzazkQ8AgOkx+LG7ktXF8G2-LoSn4mClO$VMq0SJ3SnLMM9HlpwIrdTqxpSsvJTIEOM5JfCO0ML47kDK0fw+zhpLDecdV0X8qz3Id+qNbhQZyfO9cg8tJsjkTLPO63ocJEp8tW0m8Sqw12HoAMc3fGrFlQXMODZTvhRXlyUzsc$9iCazJbWh5+JxYqiPYrkh-$QZG1PstYpgoxpYJzTN7aOVOm7k4l6+B$ya1$a8GWrsni+sYewTfnrQD44NdrKb+0VPv+wOGm0AmqJjvwKjPV8GwX3LDbx$MmX76RSi95rdUQ0ggjVU83Uwz$Sv4azawh+KCZr3YNsc-C8NOJ4y0Kt7QivkH8H+jdkERmJ+I6z+e3NozsitsIE6cjPnta7WDd8eQQve2itUaUVj0SjPO$Ye0X$3PACxv5Lycpkb7Vo4FiXU4hbfa7QNxjPtKO6S$PR3EHPCJOc92Tm9acMg4dO9oYCXiyygKwVUy8Y0Sgr07YLy5fmXFKdR9rgdatQTm0E6pg4K$t30ESwais2xMVs69hECZzIFtN0FZOTCVbEL+TWO-84XGrPraUJCY34Hye85GRfgw1jpsAANY4$OEGPZI3Rlmxk-8+AZGF$a2zT3D4EPogoEifmmY1Feo$7OPdw1yI4XSd8xS6PFdo5W1isEs9OliR8iMYQeSm0h-S7Y9EbA28z0HdnG$Bkq5Jzf6ZscZXFGcFRdDjVKYmaVGEG$OReeXAI$wfZrdEsQRL6PhC42qiRMzCHvhF6EFCXv1w$MjYWo0cWQ7r-YyVjNIOrqzyUnwjz7RD9zXiHtOT+wEd9pgsFAfc6U4T9F82215mhd8CCllFMegWhUPYvSyi2SI7hKkizPmxawgJnoq8NGhVvqwPMqoTo6t8-48jzKaW6CAb3dwIdG6mmSwjRjUSeye7oA5KX$7Cs6NUgZtqAASb1XFMJZlMg7Jr1+C7ASxL-YGhVLk-BfNi6VkyViOK7HpVszPaY1aB0M-FrV$UgUopDhe7r1W2f4CN8wFnLFZm045Q$HE1+NUjpoGC1brmPgzbGqfT6QnTaV0IhZO+if8ZZM74ZrKslK+7GG4lTK9CjdX+8$GAU41oboro02Vggse40IbO4g4X0WbvLMkz7MMxFdLQ8nRZRzfqaDD8MQeYIKHyUkZQ2S+f8s3kbdENaNQNBef4A$xfUo4wbieD4OUy6AVN6iIfVVGyggFlxfirMTXf56J4WcV94TGCVDpBdECT+op-90h+HgoPXGYgYv3-3ljr-OcNMnitkO2owoCASXYFwFPf-avX7L$XfZNqPAlTHPJ8W02BQN75ocPRI7RMZlei4bs$pV4g4WIGgeYf+mGMnl0iN6ZcK$4jwRYlBfPWefd0N7caW+Qkx5AwdQmHbPCNEvwjTV+IVUa0qR1zObovVY5d996DA6bCkEfPlBtob6XwS6bfa55KZo81H352mKce-2n9VGJlJLw1gA3kEz39I33l1kHQaOMokqjLJUHLj9SyCH4$GkPgpoqKykHlMS$JAPx$TdkWYj2HsSES7vG-OvWc514+blBxiyKi5k4tVgzRcKyZ80x2ccyegceVljfpJOGpEbR+X2T1D$lEEv2jUhiskfRBQGs$a-HadywIj$o-7TfsiT69kJBn5LmDfHWa07HbeGYxyAA$0gvXz4ooblkaK4I+$Qd-MtdfQh-RXOyO6ZDIPZLfhBjXtho664OpHk32R1T9FOyLZ$fkwNXh-f$S+CFnFmwECmgFnyeOz8376vGgFR7FDnTHBykGm2oUiVjQJPdQi8MRwBf90XU$E+tjUTFwYO922FbV8eqDJALSW7r7lMqDGoykLXK41Q7x5lFkAM1$btCCdley2NQAsAIBTQ2ttnbFdi-Vs+7k-FMDr4YSDzzDVA-HZQbMnJJfk5smdxXZOG0AweA1XtlPxUNVPF+Ua1qAmvJFkvC$YUvM5OWKogHx4fmI6za1+O7UcWFtbMp2AcG7$c-SWVjIcByHdD5Xp0W6NMx9qwQqBr3rzXMv11d284TD+W3Im4m8p4$nrF1nKq2p2Q8IwTW$dSykVQX$VmhXsxrDSrqKUrST23joqvXqJ9rY79F$eXdyXWoaQlXXpgqMvfH$O1ULnC4eH8E7rHvwYAXxlSVxoPN9mkCEZSEJi$OPAbLKwOG7kKy$zHWRrTBNZTGg1hooi5yHANoWE0Y6ic$-P-a0lIjVNZm7KYsHcnRNoWhsZNClit-XWHT3QU3CchH-gNytr7cgG7bYi8Xt0dGpYyOSjrrwH$LmHJPjQD$2KeisGa7m6ws14w5ok9UYGXJN0msc4gyJbbZrW5GoY0vai7Ud9bD-cx5L6vSe4GE3YjqsHNEbM+wIQrFIleT-XTed$pH+14Ebi$f+CCRJfcyBbaFiezmMWFwDXkPlSWIFI7wBsCs2q7Qq1RxPpFKPmyLf+PgZE1zA$b8Zh0hlYzhE010n2Nh8ZCWWBQSlGcO5xwsAeA89W4qUohA5sms0MI2QxgKt3vowaqcC8z055R5rk1tRbE-d1Ph0Ui8W4Hwdh27bgXMm8ClaVMzKBHX7ND1x06UxPB$RwQbNV8NjdL0tgHPnY4v7qWsho3tExMg-OdH5tSq9dRDCsjk1DLM3-T3YEMxT+TbWZo61yQTdPX9mhdOMTSVas5eil3ge8tk03sDSWvO1LD8MUJpzLJeJMvX8$tBctmtBRW+U$rS+T8nwSCz$Xfl3F3rm-ihzAS+zEDdSX-UvLdw082DvtL8x-rKGd00C5iQHo01gmOwo0V9D8L1ToAgVqQq6TfOkWAybeR5JKk+P4E-XAR29ka+1s0V9Gx-J$xN9UjjVrvp0O7fsP2SDhz-3vvoQSAfICnznN05da+gyD1wngwFRZzNfEDoyrDXwB5VrOLGnaXhDJ3ntpnSZs2U1OagrmO$Cxy9L3LP19-F5vosGJG2eQCaRq8p3khV6+IKA$aclGMGOvTFJQJVh$eHL$frYL38t4tBiSUR5HXYm6eDxh2w27d4a7fGgzh7-4$el$f3naeJQ8wZbK180wGFLCsYkr+8VgEQsifpkjMkvi9et4ZXfgVR9ZQ4gBDMSPQI$2qLje$M88mRvFsy-i0tX2LL2a0b7ewWrhhr7B+rIrEZ29I5S28AcojHqgXa86glfx-k8IZliiT742K4ca9jWDRCwLR2m5I18F+h-XmvaIRTmIEUd36qVko96+xQTVCYjffDci9C4i-pnvjm2VgIcyGPaNqM4nYJfGg921F2pFMw3HcI$V",
+   "req_headers": {
+    ":authority": "sa.aqar.fm",
+    ":method": "POST",
+    ":path": "/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d2d3316b729e/0.1945624865898936:1792166432:dBguvyx0V_q0dURW7vOsekbe_Z-fy7CPUp-9Q7LhqEI/a4b87f837d620558",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "16410",
+    "content-type": "text/plain;charset=UTF-8",
+    "origin": "https://sa.aqar.fm",
+    "priority": "u=1, i",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://sa.aqar.fm/icons/district-broker.svg",
+   "method": "GET",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "image/svg+xml",
+   "req_headers": {
+    ":authority": "sa.aqar.fm",
+    ":method": "GET",
+    ":path": "/icons/district-broker.svg",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://assets.aqar.fm/icons/v2/map-pin.svg",
+   "method": "GET",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "image/svg+xml",
+   "req_headers": {
+    ":authority": "assets.aqar.fm",
+    ":method": "GET",
+    ":path": "/icons/v2/map-pin.svg",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "origin": "https://sa.aqar.fm",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://assets.aqar.fm/icons/v2/chevron-down.svg",
+   "method": "GET",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "image/svg+xml",
+   "req_headers": {
+    ":authority": "assets.aqar.fm",
+    ":method": "GET",
+    ":path": "/icons/v2/chevron-down.svg",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "origin": "https://sa.aqar.fm",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://sa.aqar.fm/auth-graphql",
+   "method": "POST",
+   "type": "fetch",
+   "status": 403,
+   "content_type": "text/html; charset=UTF-8",
+   "post_data": "{\"query\":\"query getAuthUser{User{get{user_id points_balance has_daily_rentable phone email name img chosen_user_type type paid role rega_approved iam_verified show_aqar_plus active_aqar_plus_user create_time manager_id can_sov permissions company_name company_logo free_licensing_eligible}}}\"}",
+   "req_headers": {
+    ":authority": "sa.aqar.fm",
+    ":method": "POST",
+    ":path": "/auth-graphql",
+    ":scheme": "https",
+    "accept": "application/json",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "app-version": "1.0.2",
+    "content-length": "293",
+    "content-type": "application/json",
+    "origin": "https://sa.aqar.fm",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "req-app": "web",
+    "req-device-token": "20fe5c65-4334-4555-9693-ac76f5d2568d",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   },
+   "body_error": "Error('Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier\\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.')"
+  },
+  {
+   "url": "https://assets.aqar.fm/icons/v2/warning-2.svg",
+   "method": "GET",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "image/svg+xml",
+   "req_headers": {
+    ":authority": "assets.aqar.fm",
+    ":method": "GET",
+    ":path": "/icons/v2/warning-2.svg",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "origin": "https://sa.aqar.fm",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://sa.aqar.fm/next-api/cities",
+   "method": "GET",
+   "type": "fetch",
+   "status": 403,
+   "content_type": "text/html; charset=UTF-8",
+   "req_headers": {
+    ":authority": "sa.aqar.fm",
+    ":method": "GET",
+    ":path": "/next-api/cities",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://sa.aqar.fm/next-api/config/specs?v=95ba3e13529e8864bd577b67543febc2d1ece76f234402ca86e065943ea5e8cc",
+   "method": "GET",
+   "type": "fetch",
+   "status": 403,
+   "content_type": "text/html; charset=UTF-8",
+   "req_headers": {
+    ":authority": "sa.aqar.fm",
+    ":method": "GET",
+    ":path": "/next-api/config/specs?v=95ba3e13529e8864bd577b67543febc2d1ece76f234402ca86e065943ea5e8cc",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://www.google.com/ccm/collect?rcb=0&frm=0&apvc=1&ae=g&auid=664468053.1792168751&dt=%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%7C%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1&en=page_view&dl=https%3A%2F%2Fsa.aqar.fm%2F&scrsrc=www.googletagmanager.com&rnd=1612944237.1792168751&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6ae1v861260067za200zd861260067xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385422~120469145~120469153~121246026~121246034&tft=1792168751489&tfd=921&fmt=8",
+   "method": "POST",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "",
+   "post_data": "",
+   "req_headers": {
+    "sec-ch-ua-platform": "\"Android\"",
+    "referer": "https://sa.aqar.fm/",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "sec-ch-ua-mobile": "?1"
+   }
+  },
+  {
+   "url": "https://ad.doubleclick.net/ccm/s/collect?auid=664468053.1792168751&gtm=45He6ae1v861260067za200zd861260067xeaxf1&fmt=8",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "content_type": "",
+   "post_data": "",
+   "req_headers": {
+    "sec-ch-ua-platform": "\"Android\"",
+    "referer": "https://sa.aqar.fm/",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "sec-ch-ua-mobile": "?1"
+   }
+  },
+  {
+   "url": "https://bzrcdn.openai.com/pixel-config/v1/8HXim3wmN2CAxMBMCTprBk.json",
+   "method": "GET",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "application/json",
+   "req_headers": {
+    ":authority": "bzrcdn.openai.com",
+    ":method": "GET",
+    ":path": "/pixel-config/v1/8HXim3wmN2CAxMBMCTprBk.json",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "origin": "https://sa.aqar.fm",
+    "priority": "u=1, i",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   },
+   "body": "{\"automatic_advanced_matching_enabled\":true}",
+   "body_len": 44
+  },
+  {
+   "url": "https://alb.reddit.com/rp?id=a2_j1lyhu61j9ht&event=PageVisit",
+   "method": "POST",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "text/plain; charset=utf-8",
+   "post_data": "ts=1792168751585&id=a2_j1lyhu61j9ht&event=PageVisit&m.itemCount=20&m.value=&m.transactionId=&m.orderId=&m.customEventName=&m.products=%5B%7B%22id%22%3A%226781382%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D9%85%D8%A7%D9%84%D9%83%20%D8%A8%D9%86%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B1%D8%AB%2C%20%D8%AD%D9%8A%20%D8%A8%D8%AF%D8%B1%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22apartment%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%A8%D8%AF%D8%B1%20%3E%20%D8%AC%D9%86%D9%88%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A599000%7D%2C%7B%22id%22%3A%226874530%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A3%D8%A8%D9%8A%20%D8%A7%D9%84%D8%AF%D8%B1%D8%AF%D8%A7%D8%A1%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B1%D9%88%D8%B6%D8%A9%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22apartment%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B1%D9%88%D8%B6%D8%A9%20%3E%20%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A720000%7D%2C%7B%22id%22%3A%226920745%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%81%D9%8A%D8%AD%D8%A7%D8%A1%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%AC%D8%AF%D8%A9%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9%22%2C%22category%22%3A%22apartment%20%3E%20%D8%AC%D8%AF%D8%A9%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%81%D9%8A%D8%AD%D8%A7%D8%A1%20%3E%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%AC%D8%AF%D8%A9%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A18000%7D%2C%7B%22id%22%3A%226918516%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B4%D8%AC%D8%A7%D8%B9%D8%A9%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22apartment%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6%20%3E%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A39000%7D%2C%7B%22id%22%3A%226902527%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%B1%D9%82%D9%85%20156%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%AF%D8%B1%D9%8A%D8%A9%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22apartment%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%AF%D8%B1%D9%8A%D8%A9%20%3E%20%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A585000%7D%2C%7B%22id%22%3A%226891946%22%2C%22name%22%3A%22%D8%AF%D9%88%D8%B1%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B5%D9%85%D8%AF%20%D8%A7%D9%84%D8%AA%D9%86%D9%88%D8%AE%D9%8A%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D8%B9%D8%B0%D8%B1%20%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22floor%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D8%B9%D8%B0%D8%B1%20%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A%20%3E%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A110000%7D%2C%7B%22id%22%3A%226834150%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%A3%D8%B9%D9%84%D9%89%2C%20%D8%AD%D9%8A%20%D9%82%D8%B1%D8%B7%D8%A8%D8%A9%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22apartment%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D9%82%D8%B1%D8%B7%D8%A8%D8%A9%20%3E%20%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A95000%7D%2C%7B%22id%22%3A%226881689%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%A3%D9%81%D8%B6%D9%84%D9%8A%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%82%D8%A7%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22apartment%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%82%D8%A7%20%3E%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A85000%7D%2C%7B%22id%22%3A%226885838%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%87%D8%AF%D9%8A%D8%A9%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%81%D8%B1%D8%AF%D9%88%D8%B3%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2C%20%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9%22%2C%22category%22%3A%22apartment%20%3E%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%81%D8%B1%D8%AF%D9%88%D8%B3%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A415000%7D%2C%7B%22id%22%3A%226915841%22%2C%22name%22%3A%22%D8%AF%D9%88%D8%B1%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D9%85%20%D9%85%D8%B3%D9%84%D9%85%2C%20%D8%AD%D9%8A%20%D8%A8%D8%AF%D8%B1%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22floor%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%A8%D8%AF%D8%B1%20%3E%20%D8%AC%D9%86%D9%88%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A600000%7D%2C%7B%22id%22%3A%226862267%22%2C%22name%22%3A%22%D9%81%D9%8A%D9%84%D8%A7%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D9%85%D8%B9%D8%A7%D9%86%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22villa%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A%20%3E%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A4700000%7D%2C%7B%22id%22%3A%226909490%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%AF%D8%B1%D9%8A%D9%87%2C%20%D8%AD%D9%8A%20%D8%B8%D9%87%D8%B1%D8%A9%20%D9%84%D8%A8%D9%86%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22apartment%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%B8%D9%87%D8%B1%D8%A9%20%D9%84%D8%A8%D9%86%20%3E%20%D8%BA%D8%B1%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A43000%7D%2C%7B%22id%22%3A%226916918%22%2C%22name%22%3A%22%D8%AF%D9%88%D8%B1%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D8%A8%D9%86%20%D8%A7%D9%84%D8%AD%D8%B5%D9%8A%D9%86%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22floor%20%3E%20%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A30000%7D%2C%7B%22id%22%3A%226672445%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%A8%D9%86%20%D8%B4%D9%87%D9%8A%D9%88%D9%8A%D9%86%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D9%8A%D9%82%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22apartment%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D9%8A%D9%82%20%3E%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A54000%7D%2C%7B%22id%22%3A%226896439%22%2C%22name%22%3A%22%D9%81%D9%8A%D9%84%D8%A7%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%B1%D9%82%D9%85%201095%2C%20%D8%AD%D9%8A%20%D8%B3%D8%AF%D8%B1%D8%A9%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22villa%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%AC%D8%A7%D9%85%D8%B9%D8%A9%20%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%D8%A9%20%D9%86%D9%88%D8%B1%D8%A9%20%3E%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A145000%7D%2C%7B%22id%22%3A%226902823%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%81%D8%AF%D8%A9%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%86%D8%B1%D8%AC%D8%B3%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22apartment%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%86%D8%B1%D8%AC%D8%B3%20%3E%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A105000%7D%2C%7B%22id%22%3A%226885428%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%B9%D9%8A%D9%86%20%D8%B4%D9%85%D8%B3%2C%20%D8%AD%D9%8A%20%D8%AD%D9%83%D9%88%D9%85%D9%8A1%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%AC%D8%AF%D8%A9%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9%22%2C%22category%22%3A%22apartment%20%3E%20%D8%AC%D8%AF%D8%A9%20%3E%20%D8%AD%D9%8A%20%D8%B7%D9%8A%D8%A8%D8%A9%20%3E%20%D8%B4%D9%85%D8%A7%D9%84%20%D8%AC%D8%AF%D8%A9%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A580000%7D%2C%7B%22id%22%3A%226890881%22%2C%22name%22%3A%22%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%A8%D8%B3%D8%A7%D8%AA%D9%8A%D9%86%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B4%D8%B9%D9%84%D8%A9%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2C%20%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9%22%2C%22category%22%3A%22apartment%20%3E%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B4%D8%B9%D9%84%D8%A9%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A500000%7D%2C%7B%22id%22%3A%226874244%22%2C%22name%22%3A%22%D8%AF%D9%88%D8%B1%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B4%D8%B9%D8%A7%D8%B9%2C%20%D8%AD%D9%8A%20%D8%B4%D8%A8%D8%B1%D8%A7%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22floor%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%B4%D8%A8%D8%B1%D8%A7%20%3E%20%D8%BA%D8%B1%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A48000%7D%2C%7B%22id%22%3A%226920984%22%2C%22name%22%3A%22%D9%81%D9%8A%D9%84%D8%A7%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%86%D8%B9%D9%8A%D9%85%D8%A7%D9%86%D9%8A%D8%A9%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%87%D8%AF%D8%A7%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22category%22%3A%22villa%20%3E%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%3E%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%87%D8%AF%D8%A7%20%3E%20%D8%BA%D8%B1%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%22%2C%22quantity%22%3A1%2C%22itemPrice%22%3A420000%7D%5D&m.conversionId=&uuid=09fad41a-0030-4e7c-b5cc-1811f393346e&aaid=&external_id=&idfa=&integration=gtm&partner=&partner_version=1.0.4%3A1&opt_out=0&sh=915&sw=412&v=rdt_d3960254&dpm=&dpcc=&dprc=&esurl=https%3A%2F%2Fsa.aqar.fm%2F&db=tsc-0.isc-0.pp-0.fetch-1.mo-1.iframe-0.ww-0.qsa-1.srv_cfg-1.src_pid-1.pms-5&mthd=POST&pm=%7B%22meta%22%3A%7B%22title%22%3A%22%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%7C%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1%22%2C%22description%22%3A%22%D8%AA%D8%B5%D9%81%D8%AD%20%D8%A2%D9%84%D8%A7%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%88%D8%B6%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%88%D8%A7%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D9%88%20%D9%85%D9%83%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%88%D8%AC%D8%AF%D8%A9%20%D9%88%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%20%D9%88%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%20%D9%88%D8%AC%D9%85%D9%8A%D8%B9%20%D9%85%D8%AF%D9%86%20%D9%88%D9%85%D9%86%D8%A7%D8%B7%D9%82%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%20%D8%A8%D9%85%D8%B3%D8%A7%D8%AD%D8%A7%D8%AA%20%D9%88%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%20%D8%B9%D9%84%D9%89%20%D8%A3%D9%81%D8%B6%D9%84%20%D8%A7%D9%84%D8%A3%D8%AD%D9%8A%D8%A7%D8%A1%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%D9%8B%D8%A7%20%D9%85%D9%86%20%D8%AE%D9%84%D8%A7%D9%84%20%D9%85%D9%8A%D8%B2%D8%A9%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%20%D8%A7%D9%84%D8%AD%D9%8A%20%D9%81%D9%8A%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1%22%2C%22keywords%22%3A%22%22%7D%2C%22og%22%3A%7B%22twitter%3Aapp%3Aname%3Aiphone%22%3A%22Aqar%22%2C%22twitter%3Aapp%3Aname%3Aipad%22%3A%22Aqar%22%2C%22twitter%3Aapp%3Aname%3Agoogleplay%22%3A%22Aqar%22%2C%22og%3Atitle%22%3A%22%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%22%2C%22og%3Adescription%22%3A%22%D8%AA%D8%B5%D9%81%D8%AD%20%D8%A2%D9%84%D8%A7%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%88%D8%B6%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%88%D8%A7%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D9%88%20%D9%85%D9%83%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%88%D8%AC%D8%AF%D8%A9%20%D9%88%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%20%D9%88%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%20%D9%88%D8%AC%D9%85%D9%8A%D8%B9%20%D9%85%D8%AF%D9%86%20%D9%88%D9%85%D9%86%D8%A7%D8%B7%D9%82%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%20%D8%A8%D9%85%D8%B3%D8%A7%D8%AD%D8%A7%D8%AA%20%D9%88%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%20%D8%B9%D9%84%D9%89%20%D8%A3%D9%81%D8%B6%D9%84%20%D8%A7%D9%84%D8%A3%D8%AD%D9%8A%D8%A7%D8%A1%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%D9%8B%D8%A7%20%D9%85%D9%86%20%D8%AE%D9%84%D8%A7%D9%84%20%D9%85%D9%8A%D8%B2%D8%A9%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%20%D8%A7%D9%84%D8%AD%D9%8A%20%D9%81%D9%8A%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1%22%2C%22og%3Aurl%22%3A%22https%3A%2F%2Fsa.aqar.fm%22%2C%22og%3Alocale%22%3A%22ar_SA%22%2C%22og%3Atype%22%3A%22article%22%2C%22twitter%3Acard%22%3A%22app%22%2C%22twitter%3Asite%22%3A%22%40aqarapp%22%2C%22twitter%3Atitle%22%3A%22%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%22%2C%22twitter%3Adescription%22%3A%22%D8%AA%D8%B5%D9%81%D8%AD%20%D8%A2%D9%84%D8%A7%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%88%D8%B6%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%88%D8%A7%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D9%88%20%D9%85%D9%83%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%88%D8%AC%D8%AF%D8%A9%20%D9%88%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%20%D9%88%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%20%D9%88%D8%AC%D9%85%D9%8A%D8%B9%20%D9%85%D8%AF%D9%86%20%D9%88%D9%85%D9%86%D8%A7%D8%B7%D9%82%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%20%D8%A8%D9%85%D8%B3%D8%A7%D8%AD%D8%A7%D8%AA%20%D9%88%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%20%D8%B9%D9%84%D9%89%20%D8%A3%D9%81%D8%B6%D9%84%20%D8%A7%D9%84%D8%A3%D8%AD%D9%8A%D8%A7%D8%A1%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%D9%8B%D8%A7%20%D9%85%D9%86%20%D8%AE%D9%84%D8%A7%D9%84%20%D9%85%D9%8A%D8%B2%D8%A9%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%20%D8%A7%D9%84%D8%AD%D9%8A%20%D9%81%D9%8A%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1%22%2C%22twitter%3Aapp%3Aid%3Aiphone%22%3A%22879992882%22%2C%22twitter%3Aapp%3Aid%3Aipad%22%3A%22879992882%22%2C%22twitter%3Aapp%3Aid%3Agoogleplay%22%3A%22879992882%22%7D%2C%22ld%22%3A%5B%7B%22%40context%22%3A%22https%3A%2F%2Fschema.org%22%2C%22%40type%22%3A%22Organization%22%2C%22name%22%3A%22%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1%22%2C%22alternateName%22%3A%22Aqar%20App%22%2C%22url%22%3A%22https%3A%2F%2Fsa.aqar.fm%22%2C%22logo%22%3A%22https%3A%2F%2Fsa.aqar.fm%2Fapple-touch-icon.png%22%2C%22sameAs%22%3A%5B%22https%3A%2F%2Ftwitter.com%2Faqarapp%22%2C%22https%3A%2F%2Fwww.instagram.com%2Faqarapp%22%5D%7D%2C%7B%22%40context%22%3A%22https%3A%2F%2Fschema.org%22%2C%22%40type%22%3A%22WebSite%22%2C%22name%22%3A%22%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1%22%2C%22alternateName%22%3A%22Aqar%20App%22%2C%22url%22%3A%22https%3A%2F%2Fsa.aqar.fm%22%2C%22inLanguage%22%3A%22ar%22%7D%5D%7D",
+   "req_headers": {
+    ":authority": "alb.reddit.com",
+    ":method": "POST",
+    ":path": "/rp?id=a2_j1lyhu61j9ht&event=PageVisit",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "19023",
+    "content-type": "application/x-www-form-urlencoded",
+    "origin": "https://sa.aqar.fm",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://www.google.com/measurement/conversion?random=1792168751696&cv=11&tid=G-8DTTM22D6F&fst=1792168751696&fmt=8&en=view_item_list&gtm=45je6ae1v9102846535z8861260067za20gzb861260067zd861260067xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&u_w=412&u_h=915&url=https%3A%2F%2Fsa.aqar.fm%2F&gacid=1211990442.1792168752&hn=www.googleadservices.com&frm=0&tiba=%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%7C%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1&npa=0&pscdl=noapi&auid=664468053.1792168751&uaa=arm&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uamb=1&uam=&uap=Android&uapv=14&uaw=0&rcb=4",
+   "method": "POST",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "",
+   "post_data": "",
+   "req_headers": {
+    "sec-ch-ua-platform": "\"Android\"",
+    "referer": "https://sa.aqar.fm/",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "sec-ch-ua-mobile": "?1"
+   }
+  },
+  {
+   "url": "https://analytics.google.com/g/collect?v=2&tid=G-8DTTM22D6F&gtm=45je6ae1v9102846535z8861260067za20gzb861260067zd861260067xf1&_p=1792168751171&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGAC&_prs=ok&cid=1211990442.1792168752&frm=0&pscdl=noapi&rcb=4&sr=412x915&uaa=arm&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=1&uap=Android&uapv=14&uaw=0&ul=ar-sa&gaf=2&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792168751&sct=1&seg=0&dl=https%3A%2F%2Fsa.aqar.fm%2F&dt=%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%7C%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1&en=page_view&_fv=1&_nsi=1&_ss=2&tfd=1148",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "content_type": "text/plain",
+   "post_data": "",
+   "req_headers": {
+    ":authority": "analytics.google.com",
+    ":method": "POST",
+    ":path": "/g/collect?v=2&tid=G-8DTTM22D6F&gtm=45je6ae1v9102846535z8861260067za20gzb861260067zd861260067xf1&_p=1792168751171&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGAC&_prs=ok&cid=1211990442.1792168752&frm=0&pscdl=noapi&rcb=4&sr=412x915&uaa=arm&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=1&uap=Android&uapv=14&uaw=0&ul=ar-sa&gaf=2&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792168751&sct=1&seg=0&dl=https%3A%2F%2Fsa.aqar.fm%2F&dt=%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%7C%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1&en=page_view&_fv=1&_nsi=1&_ss=2&tfd=1148",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "cache-control": "no-cache",
+    "content-length": "0",
+    "origin": "https://sa.aqar.fm",
+    "pragma": "no-cache",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://www.google.com/measurement/conversion?random=1792168751695&cv=11&tid=G-8DTTM22D6F&fst=1792168751695&fmt=8&en=session_start&gtm=45je6ae1v9102846535z8861260067za20gzb861260067zd861260067xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&u_w=412&u_h=915&url=https%3A%2F%2Fsa.aqar.fm%2F&gacid=1211990442.1792168752&hn=www.googleadservices.com&frm=0&tiba=%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%7C%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1&npa=0&pscdl=noapi&auid=664468053.1792168751&uaa=arm&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uamb=1&uam=&uap=Android&uapv=14&uaw=0&rcb=4",
+   "method": "POST",
+   "type": "fetch",
+   "status": 200,
+   "content_type": "",
+   "post_data": "",
+   "req_headers": {
+    "sec-ch-ua-platform": "\"Android\"",
+    "referer": "https://sa.aqar.fm/",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "sec-ch-ua-mobile": "?1"
+   }
+  },
+  {
+   "url": "https://analytics.google.com/g/collect?v=2&tid=G-8DTTM22D6F&gtm=45je6ae1v9102846535z8861260067za20gzb861260067zd861260067xf1&_p=1792168751171&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=IAAAAGQC&_prs=ok&cid=1211990442.1792168752&frm=0&pscdl=noapi&rcb=4&sr=412x915&uaa=arm&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=1&uap=Android&uapv=14&uaw=0&ul=ar-sa&gaf=2&_s=2&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792168751&sct=1&seg=0&dl=https%3A%2F%2Fsa.aqar.fm%2F&dt=%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%7C%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1&tfd=1156",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "content_type": "text/plain",
+   "post_data": "en=view_item_list&_c=1&pr1=id6781382~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D9%85%D8%A7%D9%84%D9%83%20%D8%A8%D9%86%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B1%D8%AB%2C%20%D8%AD%D9%8A%20%D8%A8%D8%AF%D8%B1%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp0~valisting~caapartment~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%A8%D8%AF%D8%B1~c5%D8%AC%D9%86%D9%88%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr599000~qt1&pr2=id6874530~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A3%D8%A8%D9%8A%20%D8%A7%D9%84%D8%AF%D8%B1%D8%AF%D8%A7%D8%A1%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B1%D9%88%D8%B6%D8%A9%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp1~valisting~caapartment~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B1%D9%88%D8%B6%D8%A9~c5%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr720000~qt1&pr3=id6920745~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%81%D9%8A%D8%AD%D8%A7%D8%A1%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%AC%D8%AF%D8%A9%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9~lp2~valisting~caapartment~c3%D8%AC%D8%AF%D8%A9~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D9%81%D9%8A%D8%AD%D8%A7%D8%A1~c5%D8%B4%D9%85%D8%A7%D9%84%20%D8%AC%D8%AF%D8%A9~pr18000~qt1&pr4=id6918516~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B4%D8%AC%D8%A7%D8%B9%D8%A9%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp3~valisting~caapartment~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B1%D8%B6~c5%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr39000~qt1&pr5=id6902527~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%B1%D9%82%D9%85%20156%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%AF%D8%B1%D9%8A%D8%A9%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp4~valisting~caapartment~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%AF%D8%B1%D9%8A%D8%A9~c5%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr585000~qt1&pr6=id6891946~nm%D8%AF%D9%88%D8%B1%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B5%D9%85%D8%AF%20%D8%A7%D9%84%D8%AA%D9%86%D9%88%D8%AE%D9%8A%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D8%B9%D8%B0%D8%B1%20%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp5~valisting~cafloor~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D8%B9%D8%B0%D8%B1%20%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A~c5%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr110000~qt1&pr7=id6834150~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%A3%D8%B9%D9%84%D9%89%2C%20%D8%AD%D9%8A%20%D9%82%D8%B1%D8%B7%D8%A8%D8%A9%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp6~valisting~caapartment~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D9%82%D8%B1%D8%B7%D8%A8%D8%A9~c5%D8%B4%D8%B1%D9%82%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr95000~qt1&pr8=id6881689~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%A3%D9%81%D8%B6%D9%84%D9%8A%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%82%D8%A7%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp7~valisting~caapartment~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%82%D8%A7~c5%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr85000~qt1&pr9=id6885838~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%87%D8%AF%D9%8A%D8%A9%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%81%D8%B1%D8%AF%D9%88%D8%B3%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2C%20%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9~lp8~valisting~caapartment~c3%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D9%81%D8%B1%D8%AF%D9%88%D8%B3~pr415000~qt1&pr10=id6915841~nm%D8%AF%D9%88%D8%B1%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D9%85%20%D9%85%D8%B3%D9%84%D9%85%2C%20%D8%AD%D9%8A%20%D8%A8%D8%AF%D8%B1%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp9~valisting~cafloor~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%A8%D8%AF%D8%B1~c5%D8%AC%D9%86%D9%88%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr600000~qt1&pr11=id6862267~nm%D9%81%D9%8A%D9%84%D8%A7%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D9%85%D8%B9%D8%A7%D9%86%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp10~valisting~cavilla~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D9%88%D8%A7%D8%AF%D9%8A~c5%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr4700000~qt1&pr12=id6909490~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%AF%D8%B1%D9%8A%D9%87%2C%20%D8%AD%D9%8A%20%D8%B8%D9%87%D8%B1%D8%A9%20%D9%84%D8%A8%D9%86%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp11~valisting~caapartment~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%B8%D9%87%D8%B1%D8%A9%20%D9%84%D8%A8%D9%86~c5%D8%BA%D8%B1%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr43000~qt1&pr13=id6916918~nm%D8%AF%D9%88%D8%B1%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D8%A8%D9%86%20%D8%A7%D9%84%D8%AD%D8%B5%D9%8A%D9%86%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp12~valisting~cafloor~c3%D8%A7%D9%84%D9%85%D8%AC%D9%85%D8%B9%D8%A9~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87~pr30000~qt1&pr14=id6672445~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%A8%D9%86%20%D8%B4%D9%87%D9%8A%D9%88%D9%8A%D9%86%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D9%8A%D9%82%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp13~valisting~caapartment~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B9%D9%82%D9%8A%D9%82~c5%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr54000~qt1&pr15=id6896439~nm%D9%81%D9%8A%D9%84%D8%A7%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%B1%D9%82%D9%85%201095%2C%20%D8%AD%D9%8A%20%D8%B3%D8%AF%D8%B1%D8%A9%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp14~valisting~cavilla~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%AC%D8%A7%D9%85%D8%B9%D8%A9%20%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%D8%A9%20%D9%86%D9%88%D8%B1%D8%A9~c5%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr145000~qt1&pr16=id6902823~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%81%D8%AF%D8%A9%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%86%D8%B1%D8%AC%D8%B3%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp15~valisting~caapartment~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D9%86%D8%B1%D8%AC%D8%B3~c5%D8%B4%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr105000~qt1&pr17=id6885428~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%B9%D9%8A%D9%86%20%D8%B4%D9%85%D8%B3%2C%20%D8%AD%D9%8A%20%D8%AD%D9%83%D9%88%D9%85%D9%8A1%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%AC%D8%AF%D8%A9%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9~lp16~valisting~caapartment~c3%D8%AC%D8%AF%D8%A9~c4%D8%AD%D9%8A%20%D8%B7%D9%8A%D8%A8%D8%A9~c5%D8%B4%D9%85%D8%A7%D9%84%20%D8%AC%D8%AF%D8%A9~pr580000~qt1&pr18=id6890881~nm%D8%B4%D9%82%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%A8%D8%B3%D8%A7%D8%AA%D9%8A%D9%86%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B4%D8%B9%D9%84%D8%A9%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%2C%20%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9~lp17~valisting~caapartment~c3%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B4%D8%B9%D9%84%D8%A9~pr500000~qt1&pr19=id6874244~nm%D8%AF%D9%88%D8%B1%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B4%D8%B9%D8%A7%D8%B9%2C%20%D8%AD%D9%8A%20%D8%B4%D8%A8%D8%B1%D8%A7%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp18~valisting~cafloor~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%B4%D8%A8%D8%B1%D8%A7~c5%D8%BA%D8%B1%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr48000~qt1&pr20=id6920984~nm%D9%81%D9%8A%D9%84%D8%A7%20%D9%84%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%20%D9%81%D9%8A%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%86%D8%B9%D9%8A%D9%85%D8%A7%D9%86%D9%8A%D8%A9%2C%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%87%D8%AF%D8%A7%2C%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%2C%20%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~lp19~valisting~cavilla~c3%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~c4%D8%AD%D9%8A%20%D8%A7%D9%84%D9%87%D8%AF%D8%A7~c5%D8%BA%D8%B1%D8%A8%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6~pr420000~qt1&ep.item_list_id=all_all&ep.item_list_name=all_all&_et=2",
+   "req_headers": {
+    ":authority": "analytics.google.com",
+    ":method": "POST",
+    ":path": "/g/collect?v=2&tid=G-8DTTM22D6F&gtm=45je6ae1v9102846535z8861260067za20gzb861260067zd861260067xf1&_p=1792168751171&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=IAAAAGQC&_prs=ok&cid=1211990442.1792168752&frm=0&pscdl=noapi&rcb=4&sr=412x915&uaa=arm&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=1&uap=Android&uapv=14&uaw=0&ul=ar-sa&gaf=2&_s=2&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792168751&sct=1&seg=0&dl=https%3A%2F%2Fsa.aqar.fm%2F&dt=%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%7C%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1&tfd=1156",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "cache-control": "no-cache",
+    "content-length": "11509",
+    "content-type": "text/plain;charset=UTF-8",
+    "origin": "https://sa.aqar.fm",
+    "pragma": "no-cache",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://tr.snapchat.com/cm/i?pid=e3c462bb-7314-4b8d-9b2d-623f851e9906&u_scsid=f4c8b390-6799-4c27-a56a-ea92e6745373&u_sclid=1ecaa9b7-848f-4739-990c-ba31a97be44c",
+   "method": "GET",
+   "type": "document",
+   "status": 200,
+   "content_type": "text/html",
+   "req_headers": {
+    ":authority": "tr.snapchat.com",
+    ":method": "GET",
+    ":path": "/cm/i?pid=e3c462bb-7314-4b8d-9b2d-623f851e9906&u_scsid=f4c8b390-6799-4c27-a56a-ea92e6745373&u_sclid=1ecaa9b7-848f-4739-990c-ba31a97be44c",
+    ":scheme": "https",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA",
+    "priority": "u=0, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "iframe",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://tr.snapchat.com/cm/s?bt=1d53c387&pnid=140&cb=1792168751976&u_scsid=6bda8b64-d145-4754-bd1f-0d47cfcb160c&u_sclid=5cbf2f40-fc87-42db-a5dc-bb198baeb06d",
+   "method": "GET",
+   "type": "document",
+   "status": 302,
+   "content_type": "",
+   "req_headers": {
+    ":authority": "tr.snapchat.com",
+    ":method": "GET",
+    ":path": "/cm/s?bt=1d53c387&pnid=140&cb=1792168751976&u_scsid=6bda8b64-d145-4754-bd1f-0d47cfcb160c&u_sclid=5cbf2f40-fc87-42db-a5dc-bb198baeb06d",
+    ":scheme": "https",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA",
+    "priority": "u=0, i",
+    "referer": "https://tr.snapchat.com/cm/i?pid=e3c462bb-7314-4b8d-9b2d-623f851e9906&u_scsid=f4c8b390-6799-4c27-a56a-ea92e6745373&u_sclid=1ecaa9b7-848f-4739-990c-ba31a97be44c",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "iframe",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-storage-access": "active",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://pixel.tapad.com/idsync/ex/push?partner_id=2884&partner_url=https%3A%2F%2Ftr.snapchat.com%2Fcm%2Fp%3Frand%3D1791935621369%26pnid%3D140%26pcid%3D%24%7BTA_DEVICE_ID%7D",
+   "method": "GET",
+   "type": "document",
+   "status": 302,
+   "content_type": "",
+   "req_headers": {
+    ":authority": "pixel.tapad.com",
+    ":method": "GET",
+    ":path": "/idsync/ex/push?partner_id=2884&partner_url=https%3A%2F%2Ftr.snapchat.com%2Fcm%2Fp%3Frand%3D1791935621369%26pnid%3D140%26pcid%3D%24%7BTA_DEVICE_ID%7D",
+    ":scheme": "https",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA",
+    "priority": "u=0, i",
+    "referer": "https://tr.snapchat.com/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "iframe",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://pixel.tapad.com/idsync/ex/push/check?partner_id=2884&partner_url=https%3A%2F%2Ftr.snapchat.com%2Fcm%2Fp%3Frand%3D1791935621369%26pnid%3D140%26pcid%3D%24%7BTA_DEVICE_ID%7D",
+   "method": "GET",
+   "type": "document",
+   "status": 302,
+   "content_type": "",
+   "req_headers": {
+    ":authority": "pixel.tapad.com",
+    ":method": "GET",
+    ":path": "/idsync/ex/push/check?partner_id=2884&partner_url=https%3A%2F%2Ftr.snapchat.com%2Fcm%2Fp%3Frand%3D1791935621369%26pnid%3D140%26pcid%3D%24%7BTA_DEVICE_ID%7D",
+    ":scheme": "https",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA",
+    "priority": "u=0, i",
+    "referer": "https://tr.snapchat.com/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "iframe",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://tr.snapchat.com/cm/p?rand=1791935621369&pnid=140&pcid=0e950cd9-0c82-4e85-b6d5-e7e0960bcaf2",
+   "method": "GET",
+   "type": "document",
+   "status": 200,
+   "content_type": "text/html",
+   "req_headers": {
+    ":authority": "tr.snapchat.com",
+    ":method": "GET",
+    ":path": "/cm/p?rand=1791935621369&pnid=140&pcid=0e950cd9-0c82-4e85-b6d5-e7e0960bcaf2",
+    ":scheme": "https",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA",
+    "priority": "u=0, i",
+    "referer": "https://tr.snapchat.com/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "iframe",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://tr.snapchat.com/p",
+   "method": "POST",
+   "type": "xhr",
+   "status": 200,
+   "content_type": "",
+   "post_data": "{\"ctx\":{\"bt\":\"1d53c387\",\"c1\":\"ba5710d8-7f73-431e-8228-9adaf39aa65f\",\"lc\":\"69d9018f-27cf-4036-9056-a9e3564bde8d\",\"ls\":\"1ecaa9b7-848f-4739-990c-ba31a97be44c\",\"r\":\"51d4c8f7-babc-41b2-b6c3-d83e9b98785d\",\"si\":\"lUq6VxDYf3McHmUomtrzmqZfduBiqrQF4jgeyqm3hI87OVAMujGpe-RM2lP7ickROWD0yLOQZ5kuJ8pq6pLmdFNzsFEFYqwrzHtp2QGPJ88xNqFWqeNWS96NJWJTUWxRh0xR1Mj3ury-sjTD2D6bmHhdHW0ayfGr\",\"ss\":\"f4c8b390-6799-4c27-a56a-ea92e6745373\",\"bg\":false,\"df\":true,\"mtp\":1,\"sh\":915,\"sw\":412,\"ua\":\"Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36\",\"url\":\"https://sa.aqar.fm/\",\"v\":\"3.60.1-2610160116\",\"a\":[3,74,76,76,0],\"p\":[337,342,332,427,1088],\"pv\":2,\"rd\":1692,\"sa\":1792168751656,\"sps\":604,\"ts\":1792168752261,\"d_a\":\"arm\",\"d_bvs\":\"[,{\\\"brand\\\":\\\"Not:A-Brand\\\",\\\"version\\\":\\\"8.0.0.0\\\"}{\\\"brand\\\":\\\"Chromium\\\",\\\"version\\\":\\\"156.0.8078.4\\\"}{\\\"brand\\\":\\\"HeadlessChrome\\\",\\\"version\\\":\\\"156.0.8078.4\\\"}]\",\"d_m\":true,\"d_ot\":\"Android\",\"d_os\":\"14\",\"huah\":true},\"req\":[{\"log\":{\"name\":\"TPFA\",\"message\":\"event_name\",\"pids\":[\"e3c462bb-7314-4b8d-9b2d-623f851e9906\"],\"stack\":\"    at Nt (https://sc-static.net/scevent.min.js:2:6415)\\n    at pa (https://sc-static.net/scevent.min.js:2:35167)\\n    at ka (https://sc-static.net/scevent.min.js:2:38669)\\n    at https://sc-static.net/scevent.min.js:2:39341\\n    at https://sc-static.net/scevent.min.js:2:4817\\n    at y (https://sc-static.net/scevent.min.js:2:2806)\\n    at s (https://sc-static.net/scevent.min.js:2:4794)\\n    at y (https://sc-static.net/scevent.min.js:2:2806)\\n    at c.send (https://sc-static.net/scevent.min.js:2:5102)\\n    at y (https://sc-static.net/scevent.min.js:2:2806)\\n    at https://sc-static.net/scevent.min.js:2:17696\\n    at n (https://cdn.aqar.fm/website/next/_next/static/chunks/32h5kybyt0mcs.js:5:12473)\"},\"del\":301},{\"md\":{\"md\":[{\"tagProtocol\":3,\"tagData\":{\"og:title\":\"عقارات\"}},{\"tagProtocol\":3,\"tagData\":{\"og:description\":\"تصفح آلاف العقارات المعروضة للبيع والايجار في الرياض و مكة والمدينة وجدة و الدمام و الطائف وجميع مدن ومناطق السعودية بمساحات وأسعار مختلفة مع الاطلاع على أفضل الأحياء تقييمًا من خلال ميزة تقييم الحي في تطبيق عقار\"}},{\"tagProtocol\":3,\"tagData\":{\"og:url\":\"https://sa.aqar.fm\"}},{\"tagProtocol\":3,\"tagData\":{\"og:locale\":\"ar_SA\"}},{\"tagProtocol\":3,\"tagData\":{\"og:type\":\"article\"}},{\"tagProtocol\":4,\"tagData\":{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"تطبيق عقار\",\"alternateName\":\"Aqar App\",\"url\":\"https://sa.aqar.fm\",\"logo\":\"https://sa.aqar.fm/apple-touch-icon.png\",\"sameAs.0\":\"https://twitter.com/aqarapp\",\"sameAs.1\":\"https://www.instagram.com/aqarapp\"}},{\"tagProtocol\":4,\"tagData\":{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"تطبيق عقار\",\"alternateName\":\"Aqar App\",\"url\":\"https://sa.aqar.fm\",\"inLanguage\":\"ar\"}},{\"tagProtocol\":4,\"tagData\":{\"@context\":\"https://schema.org\",\"@type.0\":\"SearchResultsPage\",\"@type.1\":\"Product\",\"@id\":\"https://sa.aqar.fm/عقارات\",\"name\":\"الكل\",\"url\":\"https://sa.aqar.fm/عقارات\",\"breadcrumb.@type\":\"BreadcrumbList\",\"breadcrumb.name\":\"الرئيسية › الكل\",\"breadcrumb.itemListElement.0.@type\":\"ListItem\",\"breadcrumb.itemListElement.0.position\":1,\"breadcrumb.itemListElement.0.name\":\"الرئيسية\",\"breadcrumb.itemListElement.0.item.@type\":\"WebPage\",\"breadcrumb.itemListElement.0.item.@id\":\"https://sa.aqar.fm/\",\"breadcrumb.itemListElement.0.item.name\":\"الرئيسية\",\"breadcrumb.itemListElement.1.@type\":\"ListItem\",\"breadcrumb.itemListElement.1.position\":2,\"breadcrumb.itemListElement.1.name\":\"الكل\",\"breadcrumb.itemListElement.1.item.@type\":\"CollectionPage\",\"breadcrumb.itemListElement.1.item.@id\":\"https://sa.aqar.fm/عقارات\",\"breadcrumb.itemListElement.1.item.name\":\"الكل\",\"offers.@type\":\"AggregateOffer\",\"offers.priceCurrency\":\"SAR\",\"offers.lowPrice\":18000,\"offers.highPrice\":4700000,\"offers.offerCount\":174268,\"mainEntity.@type\":\"ItemList\",\"mainEntity.name\":\"الكل\",\"mainEntity.numberOfItems\":174268,\"mainEntity.itemListElement.0.@type\":\"ListItem\",\"mainEntity.itemListElement.0.position\":1,\"mainEntity.itemListElement.0.item.@type\":\"RealEstateListing\",\"mainEntity.itemListElement.0.item.@id\":\"https://sa.aqar.fm/ad/6781382\",\"mainEntity.itemListElement.0.item.url\":\"https://sa.aqar.fm/شقق-للبيع/الرياض/جنوب-الرياض/حي-بدر/شارع-مالك-بن-الحارث-حي-بدر-مدينة-الرياض-منطقة-الرياض-6781382\",\"mainEntity.itemListElement.0.item.name\":\"شقة للبيع في شارع مالك بن الحارث, حي بدر, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.0.item.inLanguage\":\"ar\",\"mainEntity.itemListElement.0.item.mainEntity.@type.0\":\"Accommodation\",\"mainEntity.itemListElement.0.item.mainEntity.@type.1\":\"BuyAction\",\"mainEntity.itemListElement.0.item.mainEntity.name\":\"شقة للبيع في شارع مالك بن الحارث, حي بدر, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.0.item.mainEntity.url\":\"https://sa.aqar.fm/شقق-للبيع/الرياض/جنوب-الرياض/حي-بدر/شارع-مالك-بن-الحارث-حي-بدر-مدينة-الرياض-منطقة-الرياض-6781382\",\"mainEntity.itemListElement.0.item.mainEntity.numberOfBedrooms\":5,\"mainEntity.itemListElement.0.item.mainEntity.numberOfBathroomsTotal\":2,\"mainEntity.itemListElement.0.item.mainEntity.numberOfRooms\":6,\"mainEntity.itemListElement.0.item.mainEntity.floorSize.@type\":\"QuantitativeValue\",\"mainEntity.itemListElement.0.item.mainEntity.floorSize.value\":168,\"mainEntity.itemListElement.0.item.mainEntity.floorSize.unitCode\":\"MTK\",\"mainEntity.itemListElement.0.item.mainEntity.floorSize.unitText\":\"م²\",\"mainEntity.itemListElement.0.item.mainEntity.address.@type\":\"PostalAddress\",\"mainEntity.itemListElement.0.item.mainEntity.address.addressCountry\":\"SA\",\"mainEntity.itemListElement.0.item.mainEntity.address.addressRegion\":\"الرياض\",\"mainEntity.itemListElement.0.item.mainEntity.address.addressLocality\":\"حي بدر\",\"mainEntity.itemListElement.0.item.mainEntity.address.streetAddress\":\"شارع مالك بن الحارث, حي بدر, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.0.item.mainEntity.geo.@type\":\"GeoCoordinates\",\"mainEntity.itemListElement.0.item.mainEntity.geo.latitude\":24.501442,\"mainEntity.itemListElement.0.item.mainEntity.geo.longitude\":46.730402,\"mainEntity.itemListElement.0.item.mainEntity.description\":\"فرصة تملك مميزة في حي بدر – جنوب الرياض\\n\\nامتلك شقة + ملحق مستقل بسعر يبدأ من 599,000 ريال فقط، مع تصميم عصري ومساحات توفر الراحة والخصوصية لعائلتك.\\n\\n✅ مكيفات راكبة\\n✅ مطبخ جاهز\\n✅ مساحات واسعة\\n✅ حوش أو سطح (حسب الوحدة)\\n✅ تشطيبات مميزة\\n✅ ضمانات على السباكة والكهرباء\\n✅ ضمان على الهيكل الإنشائي\\n✅ تمويل متاح عبر البنوك وشركات التمويل\\n\\n📍 موقع حيوي قريب من الخدمات والمرافق الرئيسية.\\n\\nعدد محدود من الوحدات المتاحة بأسعار منافسة مقارنة بالمشاريع المشابهة.\\n\\n📞 تواصل الآن لمعرفة تفاصيل التمويل والأقساط وحجز موعد المعاينة.للتواصل ابو نايف\\nزر الاتصال\",\"mainEntity.itemListElement.0.item.mainEntity.image.0\":\"https://images.aqar.fm/webp/750x0/props/052936499_1784485334496.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.1\":\"https://images.aqar.fm/webp/750x0/props/052936491_1784485334551.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.2\":\"https://images.aqar.fm/webp/750x0/props/052936496_1784485334499.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.3\":\"https://images.aqar.fm/webp/750x0/props/052936499_1784485334536.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.4\":\"https://images.aqar.fm/webp/750x0/props/052936496_1784485334500.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.5\":\"https://images.aqar.fm/webp/750x0/props/052936493_1784485334507.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.6\":\"https://images.aqar.fm/webp/750x0/props/052936495_1784485334512.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.7\":\"https://images.aqar.fm/webp/750x0/props/052936492_1784485334509.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.8\":\"https://images.aqar.fm/webp/750x0/props/052936492_1784485334529.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.9\":\"https://images.aqar.fm/webp/750x0/props/052936493_1784485334527.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.price\":599000,\"mainEntity.itemListElement.0.item.mainEntity.priceCurrency\":\"SAR\",\"mainEntity.itemListElement.1.@type\":\"ListItem\",\"mainEntity.itemListElement.1.position\":2,\"mainEntity.itemListElement.1.item.@type\":\"RealEstateListing\",\"mainEntity.itemListElement.1.item.@id\":\"https://sa.aqar.fm/ad/6874530\",\"mainEntity.itemListElement.1.item.url\":\"https://sa.aqar.fm/شقق-للبيع/الرياض/شرق-الرياض/حي-الروضة/شارع-أبي-الدرداء-حي-الروضة-مدينة-الرياض-منطقة-الرياض-6874530\",\"mainEntity.itemListElement.1.item.name\":\"شقة للبيع في شارع أبي الدرداء, حي الروضة, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.1.item.inLanguage\":\"ar\",\"mainEntity.itemListElement.1.item.mainEntity.@type.0\":\"Accommodation\",\"mainEntity.itemListElement.1.item.mainEntity.@type.1\":\"BuyAction\",\"mainEntity.itemListElement.1.item.mainEntity.name\":\"شقة للبيع في شارع أبي الدرداء, حي الروضة, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.1.item.mainEntity.url\":\"https://sa.aqar.fm/شقق-للبيع/الرياض/شرق-الرياض/حي-الروضة/شارع-أبي-الدرداء-حي-الروضة-مدينة-الرياض-منطقة-الرياض-6874530\",\"mainEntity.itemListElement.1.item.mainEntity.numberOfBedrooms\":3,\"mainEntity.itemListElement.1.item.mainEntity.numberOfBathroomsTotal\":2,\"mainEntity.itemListElement.1.item.mainEntity.numberOfRooms\":4,\"mainEntity.itemListElement.1.item.mainEntity.floorSize.@type\":\"QuantitativeValue\",\"mainEntity.itemListElement.1.item.mainEntity.floorSize.value\":110,\"mainEntity.itemListElement.1.item.mainEntity.floorSize.unitCode\":\"MTK\",\"mainEntity.itemListElement.1.item.mainEntity.floorSize.unitText\":\"م²\",\"mainEntity.itemListElement.1.item.mainEntity.address.@type\":\"PostalAddress\",\"mainEntity.itemListElement.1.item.mainEntity.address.addressCountry\":\"SA\",\"mainEntity.itemListElement.1.item.mainEntity.address.addressRegion\":\"الرياض\",\"mainEntity.itemListElement.1.item.mainEntity.address.addressLocality\":\"حي الروضة\",\"mainEntity.itemListElement.1.item.mainEntity.address.streetAddress\":\"شارع أبي الدرداء, حي الروضة, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.1.item.mainEntity.geo.@type\":\"GeoCoordinates\",\"mainEntity.itemListElement.1.item.mainEntity.geo.latitude\":24.736127,\"mainEntity.itemListElement.1.item.mainEntity.geo.longitude\":46.760599,\"mainEntity.itemListElement.1.item.mainEntity.description\":\"شقة للبيع بحي الروضه \\n\\n-  الدور الثالث \\n-  المساحة 128 م \\n-  مؤثثة بالكامل \\n\\n-  صالة \\n- 3 غرف نوم \\n-  2  دورات مياه \\n-  مطبخ \\n\\n- المكيفات راكبة \\n- المطبخ راكب \\n- يوجد مصعد\\n\\n______________________\\n\\nApartment for sale at AL- RAWDAH \\n\\n-  2nd Floor \\n-  128 square meter \\n-  Fully furnished \\n\\n- Living Room \\n- 3  bedrooms \\n- 2 bathrooms\\n- Kitchen \\n\\n-  Kitchen  & AC’s install\",\"mainEntity.itemListElement.1.item.mainEntity.image.0\":\"https://images.aqar.fm/webp/750x0/props/016042611_1789406885686.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.1\":\"https://images.aqar.fm/webp/750x0/props/016042618_1789407029886.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.2\":\"https://images.aqar.fm/webp/750x0/props/016042611_1789407044431.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.3\":\"https://images.aqar.fm/webp/750x0/props/016042611_1789407057159.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.4\":\"https://images.aqar.fm/webp/750x0/props/016042610_1789407070194.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.5\":\"https://images.aqar.fm/webp/750x0/props/016042611_1789407086951.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.6\":\"https://images.aqar.fm/webp/750x0/props/016042614_1789407105820.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.7\":\"https://images.aqar.fm/webp/750x0/props/016042614_1789407120913.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.price\":720000,\"mainEntity.itemListElement.1.item.mainEntity.priceCurrency\":\"SAR\",\"mainEntity.itemListElement.2.@type\":\"ListItem\",\"mainEntity.itemListElement.2.position\":3,\"mainEntity.itemListElement.2.item.@type\":\"RealEstateListing\",\"mainEntity.itemListElement.2.item.@id\":\"https://sa.aqar.fm/ad/6920745\",\"mainEntity.itemListElement.2.item.url\":\"https://sa.aqar.fm/شقق-للإيجار/جدة/شمال-جدة/حي-الفيحاء/شارع-حضارة-حي-الفيحاء-مدينة-جدة-منطقة-مكة-المكرمة-6920745\",\"mainEntity.itemListElement.2.item.name\":\"شقة للإيجار في شارع حضارة, حي الفيحاء, مدينة جدة, منطقة مكة المكرمة\",\"mainEntity.itemListElement.2.item.inLanguage\":\"ar\",\"mainEntity.itemListElement.2.item.mainEntity.@type.0\":\"Accommodation\",\"mainEntity.itemListElement.2.item.mainEntity.@type.1\":\"RentAction\",\"mainEntity.itemListElement.2.item.mainEntity.name\":\"شقة للإيجار في شارع حضارة, حي الفيحاء, مدينة جدة, منطقة مكة المكرمة\",\"mainEntity.itemListElement.2.item.mainEntity.url\":\"https://sa.aqar.fm/شقق-للإيجار/جدة/شمال-جدة/حي-الفيحاء/شارع-حضارة-حي-الفيحاء-مدينة-جدة-منطقة-مكة-المكرمة-6920745\",\"mainEntity.itemListElement.2.item.mainEntity.numberOfBedrooms\":1,\"mainEntity.itemListElement.2.item.mainEntity.numberOfBathroomsTotal\":1,\"mainEntity.itemListElement.2.item.mainEntity.numberOfRooms\":2,\"mainEntity.itemListElement.2.item.mainEntity.floorSize.@type\":\"QuantitativeValue\",\"mainEntity.itemListElement.2.item.mainEntity.floorSize.value\":60,\"mainEntity.itemListElement.2.item.mainEntity.floorSize.unitCode\":\"MTK\",\"mainEntity.itemListElement.2.item.mainEntity.floorSize.unitText\":\"م²\",\"mainEntity.itemListElement.2.item.mainEntity.address.@type\":\"PostalAddress\",\"mainEntity.itemListElement.2.item.mainEntity.address.addressCountry\":\"SA\",\"mainEntity.itemListElement.2.item.mainEntity.address.addressRegion\":\"جدة\",\"mainEntity.itemListElement.2.item.mainEntity.address.addressLocality\":\"حي الفيحاء\",\"mainEntity.itemListElement.2.item.mainEntity.address.streetAddress\":\"شارع حضارة, حي الفيحاء, مدينة جدة, منطقة مكة المكرمة\",\"mainEntity.itemListElement.2.item.mainEntity.geo.@type\":\"GeoCoordinates\",\"mainEntity.itemListElement.2.item.mainEntity.geo.latitude\":21.501664,\"mainEntity.itemListElement.2.item.mainEntity.geo.longitude\":39.229261,\"mainEntity.itemListElement.2.item.mainEntity.description\":\"شقة عوائل للايجار السنوي حي الفيحاء قرب جامعة الملك عبدالعزيز و السلام مول \\n-- غرفة وصالة ومطبخ وحمام -- \\nساكن اول\\nمطبخ راكب \\nالايجار سنوي فقط على دفعتين ونعتذر للشهري\\nللتواصل : 8 0 2 6 9 2 2 5 5 0\",\"mainEntity.itemListElement.2.item.mainEntity.image.0\":\"https://images.aqar.fm/webp/750x0/props/051900094_1791999079990.jpg\",\"mainEntity.itemListElement.2.item.mainEntity.image.1\":\"https://images.aqar.fm/webp/750x0/props/051900097_1791999079989.jpg\",\"mainEntity.itemListElement.2.item.mainEntity.image.2\":\"https://images.aqar.fm/webp/750x0/props/051900091_1791999079962.jpg\",\"mainEntity.itemListElement.2.item.mainEntity.image.3\":\"https://images.aqar.fm/webp/750x0/props/051900094_1791999079979.jpg\",\"mainEntity.itemListElement.2.item.mainEntity.image.4\":\"https://images.aqar.fm/webp/750x0/props/051900096_1791999079982.jpg\",\"mainEntity.itemListElement.2.item.mainEntity.price\":18000,\"mainEntity.itemListElement.2.item.mainEntity.priceCurrency\":\"SAR\",\"mainEntity.itemListElement.3.@type\":\"ListItem\",\"mainEntity.itemListElement.3.position\":4,\"mainEntity.itemListElement.3.item.@type\":\"RealEstateListing\",\"mainEntity.itemListElement.3.item.@id\":\"https://sa.aqar.fm/ad/6918516\",\"mainEntity.itemListElement.3.item.url\":\"https://sa.aqar.fm/شقق-للإيجار/الرياض/شمال-الرياض/حي-العارض/شارع-الشجاعة-حي-العارض-مدينة-الرياض-منطقة-الرياض-6918516\",\"mainEntity.itemListElement.3.item.name\":\"شقة للإيجار في شارع الشجاعة, حي العارض, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.3.item.inLanguage\":\"ar\",\"mainEntity.itemListElement.3.item.mainEntity.@type.0\":\"Accommodation\",\"mainEntity.itemListElement.3.item.mainEntity.@type.1\":\"RentAction\",\"mainEntity.itemListElement.3.item.mainEntity.name\":\"شقة للإيجار في شارع الشجاعة, حي العارض, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.3.item.mainEntity.url\":\"https://sa.aqar.fm/شقق-للإيجار/الرياض/شمال-الرياض/حي-العارض/شارع-الشجاعة-حي-العارض-مدينة-الرياض-منطقة-الرياض-6918516\",\"mainEntity.itemListElement.3.item.mainEntity.numberOfBedrooms\":2,\"mainEntity.itemListElement.3.item.mainEntity.numberOfBathroomsTotal\":2,\"mainEntity.itemListElement.3.item.mainEntity.numberOfRooms\":3,\"mainEntity.itemListElement.3.item.mainEntity.floorSize.@type\":\"QuantitativeValue\",\"mainEntity.itemListElement.3.item.mainEntity.floorSize.value\":150,\"mainEntity.itemListElement.3.item.mainEntity.floorSize.unitCode\":\"MTK\",\"mainEntity.itemListElement.3.item.mainEntity.floorSize.unitText\":\"م²\",\"mainEntity.itemListElement.3.item.mainEntity.address.@type\":\"PostalAddress\",\"mainEntity.itemListElement.3.item.mainEntity.address.addressCountry\":\"SA\",\"mainEntity.itemListElement.3.item.mainEntity.address.addressRegion\":\"الرياض\",\"mainEntity.itemListElement.3.item.mainEntity.address.addressLocality\":\"حي العارض\",\"mainEntity.itemListElement.3.item.mainEntity.address.streetAddress\":\"شارع الشجاعة, حي العارض, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.3.item.mainEntity.geo.@type\":\"GeoCoordinates\",\"mainEntity.itemListElement.3.item.mainEntity.geo.latitude\":24.859199,\"mainEntity.itemListElement.3.item.mainEntity.geo.longitude\":46.605141,\"mainEntity.itemListElement.3.item.mainEntity.description\":\"شقه للايجار بحي العارض\\nالمربع الذهبي للرياض الجديدة\\n\\nشرق طريق الملك فهد \\nجنوب طريق الامير خالد بن بندر \\nوقبل كبري كلية اليمامه \\n\\nغرفتين نوم بدورة مياه\\nمجلس بدورة مياه \\nصاااااااله\\nمطبخ\\n              ✅     4 مكيفات راكبة\\nبدون مطبخ \\n39000 دفعه واحده \\n44000 دفعتين\\n\\nيمتاز الحي بالهدوء\\nويبعد عن شارع العليا بـ 300 متر \\nوبقربه من كبري كلية اليمامه للعوده لطريق الملك سلمان والافنيوز \\nمع طريق الملك فهد\\n\\nللاستفسار\\n((الرقم يظهر عند الضغط على اتصال))\\n\\nالموقع\\nhttps://maps.app.goo.gl/pSdajJAjceavYHhu8?g_st=iwb\",\"mainEntity.itemListElement.3.item.mainEntity.image.0\":\"https://images.aqar.fm/webp/750x0/props/004968058_1791899624690.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.1\":\"https://images.aqar.fm/webp/750x0/props/004968056_1791899674138.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.2\":\"https://images.aqar.fm/webp/750x0/props/004968051_1791899695218.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.3\":\"https://images.aqar.fm/webp/750x0/props/004968057_1791899722404.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.4\":\"https://images.aqar.fm/webp/750x0/props/004968058_1791899722414.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.5\":\"https://images.aqar.fm/webp/750x0/props/004968054_1791899722474.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.6\":\"https://images.aqar.fm/webp/750x0/props/004968052_1791899722299.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.7\":\"https://images.aqar.fm/webp/750x0/props/004968052_1791899722414.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.8\":\"https://images.aqar.fm/webp/750x0/props/004968059_1791899722427.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.9\":\"https://images.aqar.fm/webp/750x0/props/004968050_1791899722425.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.price\":39000,\"mainEntity.itemListElement.3.item.mainEntity.priceCurrency\":\"SAR\",\"mainEntity.itemListElement.4.@type\":\"ListItem\",\"mainEntity.itemListElement.4.position\":5,\"mainEntity.itemListElement.4.item.@type\":\"RealEstateListing\",\"mainEntity.itemListElement.4.item.@id\":\"https://sa.aqar.fm/ad/6902527\",\"mainEntity.itemListElement.4.item.url\":\"https://sa.aqar.fm/شقق-للبيع/الرياض/شرق-الرياض/حي-الجنادرية/شارع-رقم-156-حي-الجنادرية-مدينة-الرياض-منطقة-الرياض-6902527\",\"mainEntity.itemListElement.4.item.name\":\"شقة للبيع في شارع رقم 156, حي الجنادرية, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.4.item.inLanguage\":\"ar\",\"mainEntity.itemListElement.4.item.mainEntity.@type.0\":\"Accommodation\",\"mainEntity.itemListElement.4.item.mainEntity.@type.1\":\"BuyAction\",\"mainEntity.itemListElement.4.item.mainEntity.name\":\"شقة للبيع في شارع رقم 156, حي الجنادرية, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.4.item.mainEntity.url\":\"https://sa.aqar.fm/شقق-للبيع/الرياض/شرق-الرياض/حي-الجنادرية/شارع-رقم-156-حي-الجنادرية-مدينة-الرياض-منطقة-الرياض-6902527\",\"mainEntity.itemListElement.4.item.mainEntity.numberOfBedrooms\":5,\"mainEntity.itemListElement.4.item.",
+   "req_headers": {
+    ":authority": "tr.snapchat.com",
+    ":method": "POST",
+    ":path": "/p",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "95156",
+    "content-type": "application/json",
+    "origin": "https://sa.aqar.fm",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://d2lzit7vpk48z2.cloudfront.net/p",
+   "method": "POST",
+   "type": "xhr",
+   "status": 200,
+   "content_type": "",
+   "post_data": "{\"ctx\":{\"bt\":\"1d53c387\",\"c1\":\"ba5710d8-7f73-431e-8228-9adaf39aa65f\",\"lc\":\"69d9018f-27cf-4036-9056-a9e3564bde8d\",\"ls\":\"1ecaa9b7-848f-4739-990c-ba31a97be44c\",\"r\":\"009bbc35-8c59-46ba-b8c8-ff117e59c0af\",\"si\":\"lUq6VxDYf3McHmUomtrzmqZfduBiqrQF4jgeyqm3hI87OVAMujGpe-RM2lP7ickROWD0yLOQZ5kuJ8pq6pLmdFNzsFEFYqwrzHtp2QGPJ88xNqFWqeNWS96NJWJTUWxR3Z4Am7w1jFm7ujvI_xF-WcCvzCQOB8NO\",\"ss\":\"f4c8b390-6799-4c27-a56a-ea92e6745373\",\"bg\":false,\"df\":true,\"mtp\":1,\"sh\":915,\"sw\":412,\"ua\":\"Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36\",\"url\":\"https://sa.aqar.fm/\",\"v\":\"3.60.1-2610160116\",\"a\":[3,74,76,76,0],\"p\":[337,342,332,427,1088],\"pv\":2,\"rd\":1699,\"sa\":1792168751656,\"sps\":611,\"ts\":1792168752267,\"d_a\":\"arm\",\"d_bvs\":\"[,{\\\"brand\\\":\\\"Not:A-Brand\\\",\\\"version\\\":\\\"8.0.0.0\\\"}{\\\"brand\\\":\\\"Chromium\\\",\\\"version\\\":\\\"156.0.8078.4\\\"}{\\\"brand\\\":\\\"HeadlessChrome\\\",\\\"version\\\":\\\"156.0.8078.4\\\"}]\",\"d_m\":true,\"d_ot\":\"Android\",\"d_os\":\"14\",\"huah\":true},\"req\":[{\"log\":{\"name\":\"TPFA\",\"message\":\"event_name\",\"pids\":[\"e3c462bb-7314-4b8d-9b2d-623f851e9906\"],\"stack\":\"    at Nt (https://sc-static.net/scevent.min.js:2:6415)\\n    at pa (https://sc-static.net/scevent.min.js:2:35167)\\n    at ka (https://sc-static.net/scevent.min.js:2:38669)\\n    at https://sc-static.net/scevent.min.js:2:39341\\n    at https://sc-static.net/scevent.min.js:2:4817\\n    at y (https://sc-static.net/scevent.min.js:2:2806)\\n    at s (https://sc-static.net/scevent.min.js:2:4794)\\n    at y (https://sc-static.net/scevent.min.js:2:2806)\\n    at c.send (https://sc-static.net/scevent.min.js:2:5102)\\n    at y (https://sc-static.net/scevent.min.js:2:2806)\\n    at https://sc-static.net/scevent.min.js:2:17696\\n    at n (https://cdn.aqar.fm/website/next/_next/static/chunks/32h5kybyt0mcs.js:5:12473)\"},\"del\":301},{\"md\":{\"md\":[{\"tagProtocol\":3,\"tagData\":{\"og:title\":\"عقارات\"}},{\"tagProtocol\":3,\"tagData\":{\"og:description\":\"تصفح آلاف العقارات المعروضة للبيع والايجار في الرياض و مكة والمدينة وجدة و الدمام و الطائف وجميع مدن ومناطق السعودية بمساحات وأسعار مختلفة مع الاطلاع على أفضل الأحياء تقييمًا من خلال ميزة تقييم الحي في تطبيق عقار\"}},{\"tagProtocol\":3,\"tagData\":{\"og:url\":\"https://sa.aqar.fm\"}},{\"tagProtocol\":3,\"tagData\":{\"og:locale\":\"ar_SA\"}},{\"tagProtocol\":3,\"tagData\":{\"og:type\":\"article\"}},{\"tagProtocol\":4,\"tagData\":{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"تطبيق عقار\",\"alternateName\":\"Aqar App\",\"url\":\"https://sa.aqar.fm\",\"logo\":\"https://sa.aqar.fm/apple-touch-icon.png\",\"sameAs.0\":\"https://twitter.com/aqarapp\",\"sameAs.1\":\"https://www.instagram.com/aqarapp\"}},{\"tagProtocol\":4,\"tagData\":{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"تطبيق عقار\",\"alternateName\":\"Aqar App\",\"url\":\"https://sa.aqar.fm\",\"inLanguage\":\"ar\"}},{\"tagProtocol\":4,\"tagData\":{\"@context\":\"https://schema.org\",\"@type.0\":\"SearchResultsPage\",\"@type.1\":\"Product\",\"@id\":\"https://sa.aqar.fm/عقارات\",\"name\":\"الكل\",\"url\":\"https://sa.aqar.fm/عقارات\",\"breadcrumb.@type\":\"BreadcrumbList\",\"breadcrumb.name\":\"الرئيسية › الكل\",\"breadcrumb.itemListElement.0.@type\":\"ListItem\",\"breadcrumb.itemListElement.0.position\":1,\"breadcrumb.itemListElement.0.name\":\"الرئيسية\",\"breadcrumb.itemListElement.0.item.@type\":\"WebPage\",\"breadcrumb.itemListElement.0.item.@id\":\"https://sa.aqar.fm/\",\"breadcrumb.itemListElement.0.item.name\":\"الرئيسية\",\"breadcrumb.itemListElement.1.@type\":\"ListItem\",\"breadcrumb.itemListElement.1.position\":2,\"breadcrumb.itemListElement.1.name\":\"الكل\",\"breadcrumb.itemListElement.1.item.@type\":\"CollectionPage\",\"breadcrumb.itemListElement.1.item.@id\":\"https://sa.aqar.fm/عقارات\",\"breadcrumb.itemListElement.1.item.name\":\"الكل\",\"offers.@type\":\"AggregateOffer\",\"offers.priceCurrency\":\"SAR\",\"offers.lowPrice\":18000,\"offers.highPrice\":4700000,\"offers.offerCount\":174268,\"mainEntity.@type\":\"ItemList\",\"mainEntity.name\":\"الكل\",\"mainEntity.numberOfItems\":174268,\"mainEntity.itemListElement.0.@type\":\"ListItem\",\"mainEntity.itemListElement.0.position\":1,\"mainEntity.itemListElement.0.item.@type\":\"RealEstateListing\",\"mainEntity.itemListElement.0.item.@id\":\"https://sa.aqar.fm/ad/6781382\",\"mainEntity.itemListElement.0.item.url\":\"https://sa.aqar.fm/شقق-للبيع/الرياض/جنوب-الرياض/حي-بدر/شارع-مالك-بن-الحارث-حي-بدر-مدينة-الرياض-منطقة-الرياض-6781382\",\"mainEntity.itemListElement.0.item.name\":\"شقة للبيع في شارع مالك بن الحارث, حي بدر, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.0.item.inLanguage\":\"ar\",\"mainEntity.itemListElement.0.item.mainEntity.@type.0\":\"Accommodation\",\"mainEntity.itemListElement.0.item.mainEntity.@type.1\":\"BuyAction\",\"mainEntity.itemListElement.0.item.mainEntity.name\":\"شقة للبيع في شارع مالك بن الحارث, حي بدر, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.0.item.mainEntity.url\":\"https://sa.aqar.fm/شقق-للبيع/الرياض/جنوب-الرياض/حي-بدر/شارع-مالك-بن-الحارث-حي-بدر-مدينة-الرياض-منطقة-الرياض-6781382\",\"mainEntity.itemListElement.0.item.mainEntity.numberOfBedrooms\":5,\"mainEntity.itemListElement.0.item.mainEntity.numberOfBathroomsTotal\":2,\"mainEntity.itemListElement.0.item.mainEntity.numberOfRooms\":6,\"mainEntity.itemListElement.0.item.mainEntity.floorSize.@type\":\"QuantitativeValue\",\"mainEntity.itemListElement.0.item.mainEntity.floorSize.value\":168,\"mainEntity.itemListElement.0.item.mainEntity.floorSize.unitCode\":\"MTK\",\"mainEntity.itemListElement.0.item.mainEntity.floorSize.unitText\":\"م²\",\"mainEntity.itemListElement.0.item.mainEntity.address.@type\":\"PostalAddress\",\"mainEntity.itemListElement.0.item.mainEntity.address.addressCountry\":\"SA\",\"mainEntity.itemListElement.0.item.mainEntity.address.addressRegion\":\"الرياض\",\"mainEntity.itemListElement.0.item.mainEntity.address.addressLocality\":\"حي بدر\",\"mainEntity.itemListElement.0.item.mainEntity.address.streetAddress\":\"شارع مالك بن الحارث, حي بدر, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.0.item.mainEntity.geo.@type\":\"GeoCoordinates\",\"mainEntity.itemListElement.0.item.mainEntity.geo.latitude\":24.501442,\"mainEntity.itemListElement.0.item.mainEntity.geo.longitude\":46.730402,\"mainEntity.itemListElement.0.item.mainEntity.description\":\"فرصة تملك مميزة في حي بدر – جنوب الرياض\\n\\nامتلك شقة + ملحق مستقل بسعر يبدأ من 599,000 ريال فقط، مع تصميم عصري ومساحات توفر الراحة والخصوصية لعائلتك.\\n\\n✅ مكيفات راكبة\\n✅ مطبخ جاهز\\n✅ مساحات واسعة\\n✅ حوش أو سطح (حسب الوحدة)\\n✅ تشطيبات مميزة\\n✅ ضمانات على السباكة والكهرباء\\n✅ ضمان على الهيكل الإنشائي\\n✅ تمويل متاح عبر البنوك وشركات التمويل\\n\\n📍 موقع حيوي قريب من الخدمات والمرافق الرئيسية.\\n\\nعدد محدود من الوحدات المتاحة بأسعار منافسة مقارنة بالمشاريع المشابهة.\\n\\n📞 تواصل الآن لمعرفة تفاصيل التمويل والأقساط وحجز موعد المعاينة.للتواصل ابو نايف\\nزر الاتصال\",\"mainEntity.itemListElement.0.item.mainEntity.image.0\":\"https://images.aqar.fm/webp/750x0/props/052936499_1784485334496.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.1\":\"https://images.aqar.fm/webp/750x0/props/052936491_1784485334551.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.2\":\"https://images.aqar.fm/webp/750x0/props/052936496_1784485334499.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.3\":\"https://images.aqar.fm/webp/750x0/props/052936499_1784485334536.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.4\":\"https://images.aqar.fm/webp/750x0/props/052936496_1784485334500.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.5\":\"https://images.aqar.fm/webp/750x0/props/052936493_1784485334507.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.6\":\"https://images.aqar.fm/webp/750x0/props/052936495_1784485334512.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.7\":\"https://images.aqar.fm/webp/750x0/props/052936492_1784485334509.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.8\":\"https://images.aqar.fm/webp/750x0/props/052936492_1784485334529.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.image.9\":\"https://images.aqar.fm/webp/750x0/props/052936493_1784485334527.jpg\",\"mainEntity.itemListElement.0.item.mainEntity.price\":599000,\"mainEntity.itemListElement.0.item.mainEntity.priceCurrency\":\"SAR\",\"mainEntity.itemListElement.1.@type\":\"ListItem\",\"mainEntity.itemListElement.1.position\":2,\"mainEntity.itemListElement.1.item.@type\":\"RealEstateListing\",\"mainEntity.itemListElement.1.item.@id\":\"https://sa.aqar.fm/ad/6874530\",\"mainEntity.itemListElement.1.item.url\":\"https://sa.aqar.fm/شقق-للبيع/الرياض/شرق-الرياض/حي-الروضة/شارع-أبي-الدرداء-حي-الروضة-مدينة-الرياض-منطقة-الرياض-6874530\",\"mainEntity.itemListElement.1.item.name\":\"شقة للبيع في شارع أبي الدرداء, حي الروضة, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.1.item.inLanguage\":\"ar\",\"mainEntity.itemListElement.1.item.mainEntity.@type.0\":\"Accommodation\",\"mainEntity.itemListElement.1.item.mainEntity.@type.1\":\"BuyAction\",\"mainEntity.itemListElement.1.item.mainEntity.name\":\"شقة للبيع في شارع أبي الدرداء, حي الروضة, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.1.item.mainEntity.url\":\"https://sa.aqar.fm/شقق-للبيع/الرياض/شرق-الرياض/حي-الروضة/شارع-أبي-الدرداء-حي-الروضة-مدينة-الرياض-منطقة-الرياض-6874530\",\"mainEntity.itemListElement.1.item.mainEntity.numberOfBedrooms\":3,\"mainEntity.itemListElement.1.item.mainEntity.numberOfBathroomsTotal\":2,\"mainEntity.itemListElement.1.item.mainEntity.numberOfRooms\":4,\"mainEntity.itemListElement.1.item.mainEntity.floorSize.@type\":\"QuantitativeValue\",\"mainEntity.itemListElement.1.item.mainEntity.floorSize.value\":110,\"mainEntity.itemListElement.1.item.mainEntity.floorSize.unitCode\":\"MTK\",\"mainEntity.itemListElement.1.item.mainEntity.floorSize.unitText\":\"م²\",\"mainEntity.itemListElement.1.item.mainEntity.address.@type\":\"PostalAddress\",\"mainEntity.itemListElement.1.item.mainEntity.address.addressCountry\":\"SA\",\"mainEntity.itemListElement.1.item.mainEntity.address.addressRegion\":\"الرياض\",\"mainEntity.itemListElement.1.item.mainEntity.address.addressLocality\":\"حي الروضة\",\"mainEntity.itemListElement.1.item.mainEntity.address.streetAddress\":\"شارع أبي الدرداء, حي الروضة, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.1.item.mainEntity.geo.@type\":\"GeoCoordinates\",\"mainEntity.itemListElement.1.item.mainEntity.geo.latitude\":24.736127,\"mainEntity.itemListElement.1.item.mainEntity.geo.longitude\":46.760599,\"mainEntity.itemListElement.1.item.mainEntity.description\":\"شقة للبيع بحي الروضه \\n\\n-  الدور الثالث \\n-  المساحة 128 م \\n-  مؤثثة بالكامل \\n\\n-  صالة \\n- 3 غرف نوم \\n-  2  دورات مياه \\n-  مطبخ \\n\\n- المكيفات راكبة \\n- المطبخ راكب \\n- يوجد مصعد\\n\\n______________________\\n\\nApartment for sale at AL- RAWDAH \\n\\n-  2nd Floor \\n-  128 square meter \\n-  Fully furnished \\n\\n- Living Room \\n- 3  bedrooms \\n- 2 bathrooms\\n- Kitchen \\n\\n-  Kitchen  & AC’s install\",\"mainEntity.itemListElement.1.item.mainEntity.image.0\":\"https://images.aqar.fm/webp/750x0/props/016042611_1789406885686.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.1\":\"https://images.aqar.fm/webp/750x0/props/016042618_1789407029886.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.2\":\"https://images.aqar.fm/webp/750x0/props/016042611_1789407044431.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.3\":\"https://images.aqar.fm/webp/750x0/props/016042611_1789407057159.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.4\":\"https://images.aqar.fm/webp/750x0/props/016042610_1789407070194.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.5\":\"https://images.aqar.fm/webp/750x0/props/016042611_1789407086951.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.6\":\"https://images.aqar.fm/webp/750x0/props/016042614_1789407105820.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.image.7\":\"https://images.aqar.fm/webp/750x0/props/016042614_1789407120913.jpg\",\"mainEntity.itemListElement.1.item.mainEntity.price\":720000,\"mainEntity.itemListElement.1.item.mainEntity.priceCurrency\":\"SAR\",\"mainEntity.itemListElement.2.@type\":\"ListItem\",\"mainEntity.itemListElement.2.position\":3,\"mainEntity.itemListElement.2.item.@type\":\"RealEstateListing\",\"mainEntity.itemListElement.2.item.@id\":\"https://sa.aqar.fm/ad/6920745\",\"mainEntity.itemListElement.2.item.url\":\"https://sa.aqar.fm/شقق-للإيجار/جدة/شمال-جدة/حي-الفيحاء/شارع-حضارة-حي-الفيحاء-مدينة-جدة-منطقة-مكة-المكرمة-6920745\",\"mainEntity.itemListElement.2.item.name\":\"شقة للإيجار في شارع حضارة, حي الفيحاء, مدينة جدة, منطقة مكة المكرمة\",\"mainEntity.itemListElement.2.item.inLanguage\":\"ar\",\"mainEntity.itemListElement.2.item.mainEntity.@type.0\":\"Accommodation\",\"mainEntity.itemListElement.2.item.mainEntity.@type.1\":\"RentAction\",\"mainEntity.itemListElement.2.item.mainEntity.name\":\"شقة للإيجار في شارع حضارة, حي الفيحاء, مدينة جدة, منطقة مكة المكرمة\",\"mainEntity.itemListElement.2.item.mainEntity.url\":\"https://sa.aqar.fm/شقق-للإيجار/جدة/شمال-جدة/حي-الفيحاء/شارع-حضارة-حي-الفيحاء-مدينة-جدة-منطقة-مكة-المكرمة-6920745\",\"mainEntity.itemListElement.2.item.mainEntity.numberOfBedrooms\":1,\"mainEntity.itemListElement.2.item.mainEntity.numberOfBathroomsTotal\":1,\"mainEntity.itemListElement.2.item.mainEntity.numberOfRooms\":2,\"mainEntity.itemListElement.2.item.mainEntity.floorSize.@type\":\"QuantitativeValue\",\"mainEntity.itemListElement.2.item.mainEntity.floorSize.value\":60,\"mainEntity.itemListElement.2.item.mainEntity.floorSize.unitCode\":\"MTK\",\"mainEntity.itemListElement.2.item.mainEntity.floorSize.unitText\":\"م²\",\"mainEntity.itemListElement.2.item.mainEntity.address.@type\":\"PostalAddress\",\"mainEntity.itemListElement.2.item.mainEntity.address.addressCountry\":\"SA\",\"mainEntity.itemListElement.2.item.mainEntity.address.addressRegion\":\"جدة\",\"mainEntity.itemListElement.2.item.mainEntity.address.addressLocality\":\"حي الفيحاء\",\"mainEntity.itemListElement.2.item.mainEntity.address.streetAddress\":\"شارع حضارة, حي الفيحاء, مدينة جدة, منطقة مكة المكرمة\",\"mainEntity.itemListElement.2.item.mainEntity.geo.@type\":\"GeoCoordinates\",\"mainEntity.itemListElement.2.item.mainEntity.geo.latitude\":21.501664,\"mainEntity.itemListElement.2.item.mainEntity.geo.longitude\":39.229261,\"mainEntity.itemListElement.2.item.mainEntity.description\":\"شقة عوائل للايجار السنوي حي الفيحاء قرب جامعة الملك عبدالعزيز و السلام مول \\n-- غرفة وصالة ومطبخ وحمام -- \\nساكن اول\\nمطبخ راكب \\nالايجار سنوي فقط على دفعتين ونعتذر للشهري\\nللتواصل : 8 0 2 6 9 2 2 5 5 0\",\"mainEntity.itemListElement.2.item.mainEntity.image.0\":\"https://images.aqar.fm/webp/750x0/props/051900094_1791999079990.jpg\",\"mainEntity.itemListElement.2.item.mainEntity.image.1\":\"https://images.aqar.fm/webp/750x0/props/051900097_1791999079989.jpg\",\"mainEntity.itemListElement.2.item.mainEntity.image.2\":\"https://images.aqar.fm/webp/750x0/props/051900091_1791999079962.jpg\",\"mainEntity.itemListElement.2.item.mainEntity.image.3\":\"https://images.aqar.fm/webp/750x0/props/051900094_1791999079979.jpg\",\"mainEntity.itemListElement.2.item.mainEntity.image.4\":\"https://images.aqar.fm/webp/750x0/props/051900096_1791999079982.jpg\",\"mainEntity.itemListElement.2.item.mainEntity.price\":18000,\"mainEntity.itemListElement.2.item.mainEntity.priceCurrency\":\"SAR\",\"mainEntity.itemListElement.3.@type\":\"ListItem\",\"mainEntity.itemListElement.3.position\":4,\"mainEntity.itemListElement.3.item.@type\":\"RealEstateListing\",\"mainEntity.itemListElement.3.item.@id\":\"https://sa.aqar.fm/ad/6918516\",\"mainEntity.itemListElement.3.item.url\":\"https://sa.aqar.fm/شقق-للإيجار/الرياض/شمال-الرياض/حي-العارض/شارع-الشجاعة-حي-العارض-مدينة-الرياض-منطقة-الرياض-6918516\",\"mainEntity.itemListElement.3.item.name\":\"شقة للإيجار في شارع الشجاعة, حي العارض, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.3.item.inLanguage\":\"ar\",\"mainEntity.itemListElement.3.item.mainEntity.@type.0\":\"Accommodation\",\"mainEntity.itemListElement.3.item.mainEntity.@type.1\":\"RentAction\",\"mainEntity.itemListElement.3.item.mainEntity.name\":\"شقة للإيجار في شارع الشجاعة, حي العارض, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.3.item.mainEntity.url\":\"https://sa.aqar.fm/شقق-للإيجار/الرياض/شمال-الرياض/حي-العارض/شارع-الشجاعة-حي-العارض-مدينة-الرياض-منطقة-الرياض-6918516\",\"mainEntity.itemListElement.3.item.mainEntity.numberOfBedrooms\":2,\"mainEntity.itemListElement.3.item.mainEntity.numberOfBathroomsTotal\":2,\"mainEntity.itemListElement.3.item.mainEntity.numberOfRooms\":3,\"mainEntity.itemListElement.3.item.mainEntity.floorSize.@type\":\"QuantitativeValue\",\"mainEntity.itemListElement.3.item.mainEntity.floorSize.value\":150,\"mainEntity.itemListElement.3.item.mainEntity.floorSize.unitCode\":\"MTK\",\"mainEntity.itemListElement.3.item.mainEntity.floorSize.unitText\":\"م²\",\"mainEntity.itemListElement.3.item.mainEntity.address.@type\":\"PostalAddress\",\"mainEntity.itemListElement.3.item.mainEntity.address.addressCountry\":\"SA\",\"mainEntity.itemListElement.3.item.mainEntity.address.addressRegion\":\"الرياض\",\"mainEntity.itemListElement.3.item.mainEntity.address.addressLocality\":\"حي العارض\",\"mainEntity.itemListElement.3.item.mainEntity.address.streetAddress\":\"شارع الشجاعة, حي العارض, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.3.item.mainEntity.geo.@type\":\"GeoCoordinates\",\"mainEntity.itemListElement.3.item.mainEntity.geo.latitude\":24.859199,\"mainEntity.itemListElement.3.item.mainEntity.geo.longitude\":46.605141,\"mainEntity.itemListElement.3.item.mainEntity.description\":\"شقه للايجار بحي العارض\\nالمربع الذهبي للرياض الجديدة\\n\\nشرق طريق الملك فهد \\nجنوب طريق الامير خالد بن بندر \\nوقبل كبري كلية اليمامه \\n\\nغرفتين نوم بدورة مياه\\nمجلس بدورة مياه \\nصاااااااله\\nمطبخ\\n              ✅     4 مكيفات راكبة\\nبدون مطبخ \\n39000 دفعه واحده \\n44000 دفعتين\\n\\nيمتاز الحي بالهدوء\\nويبعد عن شارع العليا بـ 300 متر \\nوبقربه من كبري كلية اليمامه للعوده لطريق الملك سلمان والافنيوز \\nمع طريق الملك فهد\\n\\nللاستفسار\\n((الرقم يظهر عند الضغط على اتصال))\\n\\nالموقع\\nhttps://maps.app.goo.gl/pSdajJAjceavYHhu8?g_st=iwb\",\"mainEntity.itemListElement.3.item.mainEntity.image.0\":\"https://images.aqar.fm/webp/750x0/props/004968058_1791899624690.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.1\":\"https://images.aqar.fm/webp/750x0/props/004968056_1791899674138.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.2\":\"https://images.aqar.fm/webp/750x0/props/004968051_1791899695218.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.3\":\"https://images.aqar.fm/webp/750x0/props/004968057_1791899722404.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.4\":\"https://images.aqar.fm/webp/750x0/props/004968058_1791899722414.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.5\":\"https://images.aqar.fm/webp/750x0/props/004968054_1791899722474.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.6\":\"https://images.aqar.fm/webp/750x0/props/004968052_1791899722299.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.7\":\"https://images.aqar.fm/webp/750x0/props/004968052_1791899722414.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.8\":\"https://images.aqar.fm/webp/750x0/props/004968059_1791899722427.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.image.9\":\"https://images.aqar.fm/webp/750x0/props/004968050_1791899722425.jpg\",\"mainEntity.itemListElement.3.item.mainEntity.price\":39000,\"mainEntity.itemListElement.3.item.mainEntity.priceCurrency\":\"SAR\",\"mainEntity.itemListElement.4.@type\":\"ListItem\",\"mainEntity.itemListElement.4.position\":5,\"mainEntity.itemListElement.4.item.@type\":\"RealEstateListing\",\"mainEntity.itemListElement.4.item.@id\":\"https://sa.aqar.fm/ad/6902527\",\"mainEntity.itemListElement.4.item.url\":\"https://sa.aqar.fm/شقق-للبيع/الرياض/شرق-الرياض/حي-الجنادرية/شارع-رقم-156-حي-الجنادرية-مدينة-الرياض-منطقة-الرياض-6902527\",\"mainEntity.itemListElement.4.item.name\":\"شقة للبيع في شارع رقم 156, حي الجنادرية, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.4.item.inLanguage\":\"ar\",\"mainEntity.itemListElement.4.item.mainEntity.@type.0\":\"Accommodation\",\"mainEntity.itemListElement.4.item.mainEntity.@type.1\":\"BuyAction\",\"mainEntity.itemListElement.4.item.mainEntity.name\":\"شقة للبيع في شارع رقم 156, حي الجنادرية, مدينة الرياض, منطقة الرياض\",\"mainEntity.itemListElement.4.item.mainEntity.url\":\"https://sa.aqar.fm/شقق-للبيع/الرياض/شرق-الرياض/حي-الجنادرية/شارع-رقم-156-حي-الجنادرية-مدينة-الرياض-منطقة-الرياض-6902527\",\"mainEntity.itemListElement.4.item.mainEntity.numberOfBedrooms\":5,\"mainEntity.itemListElement.4.item.",
+   "req_headers": {
+    ":authority": "d2lzit7vpk48z2.cloudfront.net",
+    ":method": "POST",
+    ":path": "/p",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "95156",
+    "content-type": "application/json",
+    "origin": "https://sa.aqar.fm",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://bzr.openai.com/v1/sdk/events?pid=8HXim3wmN2CAxMBMCTprBk&st=oaiq-web&sv=0.1.41&t=1792168752788&ec=3",
+   "method": "POST",
+   "type": "fetch",
+   "status": 202,
+   "content_type": "",
+   "post_data": "{\"obref\":\"eaa60719-7a57-48f7-a32b-da1e554b22d5\",\"events\":[{\"type\":\"openai::sdk_init\",\"timestamp_ms\":1792168751536,\"id\":\"0751a4f9-af06-47ba-8fce-040d006118db\",\"source_url\":\"https://sa.aqar.fm/\",\"data\":{\"type\":\"sdk_lifecycle\"}},{\"type\":\"oai::diagnostic\",\"timestamp_ms\":1792168751536,\"id\":\"a074aff7-8edb-4b62-9027-82009c9498f5\",\"data\":{\"type\":\"diagnostic\",\"schema_version\":1,\"dropped_event_count\":0,\"dropped_event_reason_counts\":{},\"dropped_event_name_counts\":{},\"dropped_event_phase_counts\":{},\"consent\":true,\"is_first_visit_in_session\":true,\"is_first_consent_grant_in_session\":true,\"config\":{\"automatic_advanced_matching\":\"enabled\"}}},{\"type\":\"page_viewed\",\"timestamp_ms\":1792168751536,\"id\":\"fb5e580c-d364-453c-8682-6b2bdb0eba6e\",\"source_url\":\"https://sa.aqar.fm/\",\"opt_out\":false,\"data\":{\"type\":\"contents\"}}]}",
+   "req_headers": {
+    "sec-ch-ua-platform": "\"Android\"",
+    "referer": "https://sa.aqar.fm/",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "content-type": "text/plain",
+    "sec-ch-ua-mobile": "?1",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8"
+   }
+  },
+  {
+   "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "content_type": "",
+   "post_data": "H4sIAAAAAAAAA0VQy04bMRT9leiubWJ7XrZ3WVA0EgtEIjaoqq7HnmB1xhnGjqoKssmSHwGx66riTyZ/g0JoWR4dnecDDN5G0LdSqCwT/DuB2Ix+SDdujH4TQHPGGMsUgeR7B5pXSvBSVkXGckHAbnr0ATREPMN7HM/aHghsxw403KU0RD2ff1FzIPDLmeiTW/p1wO7a3W9dTLUFDaUoS8ulpKbhFVVOMlpwY6jJeGFNWVSlQCAw4NpdbtB+aIzKi5a7inImLc1VVVGVN5ZKq3KL1ra54kDAx9WIIXaYnAXdYhcdgc5/w1MyHMGFx5BOoPexAf0AQzTLhMmBpvnu6HLpw09n67AYhv82xz4rnzoHGqa3w356nv5Mz9Pr7HE2vU5/p5fD02E/+8cAgTvXgw7briMQP05Y/R6O4qvFxfmPm3pZrz5X1iEmDI07vdMWKEppqWFMUM4zQYsKG5ohb3JpUKmGw+4d1V6NX88BAAA=",
+   "req_headers": {
+    ":authority": "px.ads.linkedin.com",
+    ":method": "POST",
+    ":path": "/wa/?medium=fetch&fmt=g",
+    ":scheme": "https",
+    "accept": "*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "content-length": "492",
+    "content-type": "text/plain;charset=UTF-8",
+    "origin": "https://sa.aqar.fm",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://sa.aqar.fm/api/v1/events",
+   "method": "POST",
+   "type": "fetch",
+   "status": 403,
+   "content_type": "text/html; charset=UTF-8",
+   "post_data": "{\"events\":[{\"event_id\":\"e154c2cf-6930-40b9-83be-a46ca30bc79c\",\"event_name\":\"listing_impression\",\"event_time\":\"2026-10-16T16:39:12.104Z\",\"session_id\":\"1792168751\",\"page\":\"/\",\"referrer\":null,\"listing_id\":6902527},{\"event_id\":\"f18e36f5-8185-4c4d-afed-37fab922c713\",\"event_name\":\"listing_impression\",\"event_time\":\"2026-10-16T16:39:12.105Z\",\"session_id\":\"1792168751\",\"page\":\"/\",\"referrer\":null,\"listing_id\":6874530},{\"event_id\":\"84eb108a-2432-4e80-8c9b-dc3ece470aff\",\"event_name\":\"listing_impression\",\"event_time\":\"2026-10-16T16:39:12.105Z\",\"session_id\":\"1792168751\",\"page\":\"/\",\"referrer\":null,\"listing_id\":6781382},{\"event_id\":\"44bd8922-44d0-4411-a2e2-b44d03893ca9\",\"event_name\":\"listing_impression\",\"event_time\":\"2026-10-16T16:39:12.105Z\",\"session_id\":\"1792168751\",\"page\":\"/\",\"referrer\":null,\"listing_id\":6918516},{\"event_id\":\"f9f1cdc3-930e-404a-a8bf-7cc0c7ba05a6\",\"event_name\":\"listing_impression\",\"event_time\":\"2026-10-16T16:39:12.105Z\",\"session_id\":\"1792168751\",\"page\":\"/\",\"referrer\":null,\"listing_id\":6920745}]}",
+   "req_headers": {
+    ":authority": "sa.aqar.fm",
+    ":method": "POST",
+    ":path": "/api/v1/events",
+    ":scheme": "https",
+    "accept": "application/json",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "app-version": "1.0.2",
+    "content-length": "1012",
+    "content-type": "application/json",
+    "origin": "https://sa.aqar.fm",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "req-app": "web",
+    "req-device-token": "20fe5c65-4334-4555-9693-ac76f5d2568d",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://analytics.google.com/g/collect?v=2&tid=G-8DTTM22D6F&gtm=45je6ae1v9102846535z8861260067za20gzb861260067zd861260067xf1&_p=1792168751171&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&cid=1211990442.1792168752&frm=0&pscdl=noapi&rcb=4&sr=412x915&uaa=arm&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=1&uap=Android&uapv=14&uaw=0&ul=ar-sa&gaf=2&_s=3&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792168751&sct=1&seg=0&dl=https%3A%2F%2Fsa.aqar.fm%2F&dt=%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%7C%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1&en=view_properties&ep.listing_type=all&_et=1&tfd=6159",
+   "method": "POST",
+   "type": "fetch",
+   "status": 204,
+   "content_type": "text/plain",
+   "post_data": "",
+   "req_headers": {
+    ":authority": "analytics.google.com",
+    ":method": "POST",
+    ":path": "/g/collect?v=2&tid=G-8DTTM22D6F&gtm=45je6ae1v9102846535z8861260067za20gzb861260067zd861260067xf1&_p=1792168751171&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&cid=1211990442.1792168752&frm=0&pscdl=noapi&rcb=4&sr=412x915&uaa=arm&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=1&uap=Android&uapv=14&uaw=0&ul=ar-sa&gaf=2&_s=3&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792168751&sct=1&seg=0&dl=https%3A%2F%2Fsa.aqar.fm%2F&dt=%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%7C%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B9%D9%82%D8%A7%D8%B1&en=view_properties&ep.listing_type=all&_et=1&tfd=6159",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "cache-control": "no-cache",
+    "content-length": "0",
+    "origin": "https://sa.aqar.fm",
+    "pragma": "no-cache",
+    "priority": "u=1, i",
+    "referer": "https://sa.aqar.fm/",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-storage-access": "active",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  },
+  {
+   "url": "https://sa.aqar.fm/en?_rsc=VKSZ-gU4VgxFafAn",
+   "method": "GET",
+   "type": "fetch",
+   "status": 403,
+   "content_type": "text/html; charset=UTF-8",
+   "req_headers": {
+    ":authority": "sa.aqar.fm",
+    ":method": "GET",
+    ":path": "/en?_rsc=VKSZ-gU4VgxFafAn",
+    ":scheme": "https",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "ar-SA,ar;q=0.9,en;q=0.8",
+    "next-router-prefetch": "1",
+    "next-router-segment-prefetch": "/_tree",
+    "next-url": "/ar/search/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA",
+    "priority": "i",
+    "referer": "https://sa.aqar.fm/",
+    "rsc": "1",
+    "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"HeadlessChrome\";v=\"156\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+   }
+  }
+ ],
+ "elapsed_s": 35.5
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="leaflet.css">
+<style>
+  html, body, #map { height: 100%; margin: 0; padding: 0; }
+  body { background: #e9e3d8; font-family: system-ui, sans-serif; }
+  .pin {
+    padding: 3px 7px; border-radius: 12px; font: 600 12px system-ui, sans-serif; color: #fff;
+    white-space: nowrap; box-shadow: 0 1px 4px rgba(0,0,0,.35); border: 2px solid #fff; transform: translate(-50%, -50%);
+    position: absolute; left: 0; top: 0;
+  }
+  .pin.sel { transform: translate(-50%, -50%) scale(1.25); z-index: 1000; }
+  .work {
+    width: 20px; height: 20px; border-radius: 50%; background: #1F6F5C; border: 3px solid #fff;
+    box-shadow: 0 0 0 6px rgba(31,111,92,.25), 0 2px 6px rgba(0,0,0,.4); transform: translate(-50%, -50%);
+    position: absolute; left: 0; top: 0;
+  }
+  #cross {
+    display: none; position: absolute; left: 50%; top: 50%; width: 34px; height: 34px; margin: -34px 0 0 -17px;
+    z-index: 2000; pointer-events: none;
+  }
+  .leaflet-div-icon { background: transparent; border: none; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<svg id="cross" viewBox="0 0 24 24"><path fill="#C62828" stroke="#fff" stroke-width="1.2"
+  d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/></svg>
+<script src="leaflet.js"></script>
+<script>
+  var S = { provider: null, map: null, markers: [], work: null, pick: false, pending: null, pendingMove: null, selected: null, started: false };
+
+  window.addEventListener('error', function (e) { console.error('map error: ' + e.message + ' line ' + e.lineno); });
+
+  function bridge(name, payload) {
+    try { if (window.Android && Android[name]) Android[name](JSON.stringify(payload || {})); } catch (e) {}
+  }
+
+  // ---- Leaflet (no key needed) ----
+  function initLeaflet(cfg) {
+    S.provider = 'leaflet';
+    S.map = L.map('map', { zoomControl: false, attributionControl: true }).setView([cfg.lat, cfg.lng], cfg.zoom);
+    // OpenStreetMap's standard tiles: free for light use like this app, which identifies itself
+    // in the User-Agent and sends the page address as Referer.
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(S.map);
+    S.map.on('moveend', function () { if (S.pick) { var c = S.map.getCenter(); bridge('onCenter', { lat: c.lat, lng: c.lng }); } });
+    S.map.on('click', function () { select(null); });
+    ready();
+  }
+
+  function leafletMarker(p, html, onClick) {
+    var icon = L.divIcon({ className: '', html: html, iconSize: [0, 0] });
+    var m = L.marker([p.lat, p.lng], { icon: icon, zIndexOffset: p.z || 0 }).addTo(S.map);
+    if (onClick) m.on('click', function (e) { L.DomEvent.stopPropagation(e); onClick(); });
+    return { remove: function () { S.map.removeLayer(m); } };
+  }
+
+  // ---- Google Maps (with the user's key) ----
+  function initGoogle(cfg) {
+    window.gm_authFailure = function () { fallback(cfg); };
+    window.onGoogleReady = function () {
+      try {
+        S.provider = 'google';
+        S.map = new google.maps.Map(document.getElementById('map'), {
+          center: { lat: cfg.lat, lng: cfg.lng }, zoom: cfg.zoom, disableDefaultUI: true, zoomControl: false,
+          clickableIcons: false, gestureHandling: 'greedy'
+        });
+        S.map.addListener('idle', function () { if (S.pick) { var c = S.map.getCenter(); bridge('onCenter', { lat: c.lat(), lng: c.lng() }); } });
+        S.map.addListener('click', function () { select(null); });
+        defineOverlay();
+        ready();
+      } catch (e) { fallback(cfg); }
+    };
+    var s = document.createElement('script');
+    s.src = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(cfg.key) +
+      '&language=' + cfg.lang + '&region=SA&callback=onGoogleReady&loading=async';
+    s.async = true;
+    s.onerror = function () { fallback(cfg); };
+    document.head.appendChild(s);
+    setTimeout(function () { if (!S.map) fallback(cfg); }, 12000);
+  }
+
+  var HtmlOverlay = null;
+  function defineOverlay() {
+    HtmlOverlay = function (p, html, onClick) {
+      this.p = new google.maps.LatLng(p.lat, p.lng); this.html = html; this.onClick = onClick; this.z = p.z || 0;
+      this.setMap(S.map);
+    };
+    HtmlOverlay.prototype = new google.maps.OverlayView();
+    HtmlOverlay.prototype.onAdd = function () {
+      var d = document.createElement('div'); d.style.position = 'absolute'; d.style.zIndex = this.z; d.innerHTML = this.html;
+      var self = this;
+      if (this.onClick) d.addEventListener('click', function (e) { e.stopPropagation(); self.onClick(); });
+      this.div = d; this.getPanes().overlayMouseTarget.appendChild(d);
+    };
+    HtmlOverlay.prototype.draw = function () {
+      var pt = this.getProjection().fromLatLngToDivPixel(this.p);
+      if (pt && this.div) { this.div.style.left = pt.x + 'px'; this.div.style.top = pt.y + 'px'; }
+    };
+    HtmlOverlay.prototype.onRemove = function () { if (this.div) { this.div.remove(); this.div = null; } };
+  }
+
+  function googleMarker(p, html, onClick) {
+    var o = new HtmlOverlay(p, html, onClick);
+    return { remove: function () { o.setMap(null); } };
+  }
+
+  function fallback(cfg) {
+    if (S.provider === 'leaflet') return;
+    S.map = null; S.provider = null;
+    document.getElementById('map').innerHTML = '';
+    bridge('onProvider', { provider: 'leaflet', reason: 'google-failed' });
+    initLeaflet(cfg);
+  }
+
+  // ---- shared ----
+  // Safety net: if the page is laid out with no height (a WebView sized to its content does
+  // that), size the map to the window instead of leaving it collapsed.
+  function fitToWindow() {
+    var el = document.getElementById('map');
+    if (el.clientHeight === 0 && window.innerHeight > 0) {
+      el.style.height = window.innerHeight + 'px';
+      // The picker's centre pin is placed against the page, which has no height either.
+      document.getElementById('cross').style.top = (window.innerHeight / 2) + 'px';
+      console.log('map container had no height; sized to ' + window.innerHeight + 'px');
+    }
+    if (!S.map) return;
+    if (S.provider === 'google') google.maps.event.trigger(S.map, 'resize');
+    else S.map.invalidateSize();
+  }
+  window.addEventListener('resize', function () {
+    var el = document.getElementById('map');
+    if (el.style.height) {
+      el.style.height = window.innerHeight + 'px';
+      document.getElementById('cross').style.top = (window.innerHeight / 2) + 'px';
+    }
+    fitToWindow();
+  });
+
+  function ready() {
+    fitToWindow();
+    if (S.pick) document.getElementById('cross').style.display = 'block';
+    bridge('onReady', { provider: S.provider });
+    if (S.pending) { var d = S.pending; S.pending = null; setData(d); }
+    if (S.pendingMove) { var m = S.pendingMove; S.pendingMove = null; moveMap(m[0], m[1], m[2]); }
+  }
+
+  function marker(p, html, onClick) {
+    return S.provider === 'google' ? googleMarker(p, html, onClick) : leafletMarker(p, html, onClick);
+  }
+
+  function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+  function select(id) {
+    S.selected = id;
+    document.querySelectorAll('.pin').forEach(function (el) { el.classList.toggle('sel', el.getAttribute('data-id') === id); });
+    bridge('onSelect', { id: id });
+  }
+
+  window.setData = function (d) {
+    if (!S.map) { S.pending = d; return; }
+    S.markers.forEach(function (m) { m.remove(); }); S.markers = [];
+    if (d.work) S.markers.push(marker({ lat: d.work.lat, lng: d.work.lng, z: 900 }, '<div class="work"></div>', null));
+    (d.pins || []).forEach(function (p) {
+      var html = '<div class="pin" data-id="' + esc(p.id) + '" style="background:' + esc(p.color) + '">' + esc(p.label) + '</div>';
+      S.markers.push(marker(p, html, function () { select(p.id); }));
+    });
+    if (d.fit) fit(d);
+    console.log('map shows ' + (d.pins || []).length + ' pins on ' + S.provider);
+  };
+
+  function fit(d) {
+    var pts = (d.pins || []).map(function (p) { return [p.lat, p.lng]; });
+    if (d.work) pts.push([d.work.lat, d.work.lng]);
+    if (pts.length < 2) return;
+    if (S.provider === 'google') {
+      var b = new google.maps.LatLngBounds();
+      pts.forEach(function (p) { b.extend({ lat: p[0], lng: p[1] }); });
+      S.map.fitBounds(b, 48);
+    } else {
+      S.map.fitBounds(pts, { padding: [40, 40], maxZoom: 15 });
+    }
+  }
+
+  window.moveMap = function (lat, lng, zoom) {
+    if (!S.map) { S.pendingMove = [lat, lng, zoom]; return; }
+    if (S.provider === 'google') { S.map.setCenter({ lat: lat, lng: lng }); if (zoom) S.map.setZoom(zoom); }
+    else S.map.setView([lat, lng], zoom || S.map.getZoom());
+  };
+
+  // Called by the app once the page has loaded; a second call is ignored.
+  window.initMap = function (cfg) {
+    if (S.started) return 'started';
+    S.started = true;
+    S.pick = !!cfg.pick;
+    try {
+      if (cfg.key) initGoogle(cfg); else initLeaflet(cfg);
+    } catch (e) {
+      console.error('map init failed: ' + e);
+      S.started = false;
+      return 'failed';
+    }
+    return S.provider || 'loading';
+  };
+
+  bridge('onLoaded', {});
+</script>
+</body>
+</html>
