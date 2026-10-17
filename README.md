@@ -144,6 +144,9 @@ apartments.
     - `[release]` publishes the signed APK as a GitHub release.
   - Running the workflow by hand from the Actions tab does the live checks and device QA, and
     publishes a release when *release* is ticked.
+- **Photo check** (`.github/workflows/photo-check.yml`): every 6 hours on the default branch, or
+  when `photo-check/REQUEST` changes. With `DRY_RUN=1` in that file it runs every step except
+  asking Claude (search, photos, Claude Code's options) and commits nothing.
 - **`probe/`**: the scripts used to learn how each site serves its listings.
 
 Build locally with `./gradlew :core:test :app:assembleDebug`. This needs JDK 17+, and the
