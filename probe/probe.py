@@ -901,6 +901,57 @@ def archive3_step():
     print(json.dumps(log, ensure_ascii=False)[:6000], flush=True)
 
 
+WASALT_KEYS = ["NEWEST_FIRST", "relevance", "sortBy", "sort_by", "orderBy", "max_price", "pageSize",
+               "rent/search", "includeProperties", "zoneId"]
+
+
+def archive4_step():
+    """How Wasalt's search page builds its URLs (sort, price, paging), from its archived scripts."""
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": "Shaqati-probe/1.0 (personal apartment search research)"})
+    log = {"scripts": [], "search_pages": []}
+    page = OUT / "archive" / "wasalt-apartments-2.html"
+    html = page.read_text(encoding="utf-8")
+    srcs = sorted(set(re.findall(r'<script[^>]+src="(/_next/static/[^"]+\.js)"', html)))
+    snippets = {}
+    for src in srcs[:40]:
+        try:
+            r = sess.get(f"https://web.archive.org/web/2026id_/https://wasalt.sa{src}", timeout=60)
+            js = r.text if r.ok else ""
+            hits = {}
+            for key in WASALT_KEYS:
+                for m in list(re.finditer(re.escape(key), js))[:4]:
+                    hits.setdefault(key, []).append(js[max(0, m.start() - 220): m.end() + 220])
+            log["scripts"].append({"src": src, "status": r.status_code, "len": len(js), "keys": sorted(hits)})
+            if hits:
+                snippets[src] = hits
+        except Exception as e:  # noqa: BLE001
+            log["scripts"].append({"src": src, "error": repr(e)})
+        time.sleep(1)
+    write(OUT / "archive" / "_wasalt_js.json", snippets)
+    for pattern in ("wasalt.sa/rent/search", "wasalt.sa/en/rent/search", "wasalt.sa/ar/rent/search"):
+        st, rows = cdx_rows(sess, pattern, "prefix", "-20")
+        entry = {"pattern": pattern, "cdx": st, "rows": len(rows), "urls": [unquote(o) for _, o in rows[:10]]}
+        log["search_pages"].append(entry)
+        for ts, original in sorted(rows, key=lambda x: x[0], reverse=True)[:2]:
+            try:
+                r, body, title, blocked = archived(sess, ts, original)
+                nd = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', body, re.S)
+                pp = json.loads(nd.group(1)).get("props", {}).get("pageProps", {}) if nd else {}
+                sr = pp.get("searchResult") or {}
+                entry.setdefault("tried", []).append({"url": unquote(original), "status": r.status_code, "title": title,
+                                                      "count": sr.get("count"), "properties": len(sr.get("properties") or []),
+                                                      "filterQueries": pp.get("filterQueries")})
+                if sr.get("properties"):
+                    write(OUT / "archive" / "wasalt-search-route.html", redact_secrets(body))
+                    break
+            except Exception as e:  # noqa: BLE001
+                entry.setdefault("tried", []).append({"url": original, "error": repr(e)})
+            time.sleep(3)
+    write(OUT / "archive" / "_log4.json", log)
+    print(json.dumps(log, ensure_ascii=False)[:6000], flush=True)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     only = [x for x in os.environ.get("PROBE_ONLY", "").split(",") if x]
@@ -919,6 +970,8 @@ def main():
         archive2_step()
     if "archive3" in steps:
         archive3_step()
+    if "archive4" in steps:
+        archive4_step()
     if "versions" in steps:
         maven_versions()
     if "geo" in steps:

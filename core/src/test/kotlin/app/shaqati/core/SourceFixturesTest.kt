@@ -8,6 +8,8 @@ import app.shaqati.core.model.PropertyKind
 import app.shaqati.core.model.RentPeriod
 import app.shaqati.core.model.Resolver
 import app.shaqati.core.sources.AqarSource
+import app.shaqati.core.sources.BayutSource
+import app.shaqati.core.sources.BotCheck
 import app.shaqati.core.sources.DealSource
 import app.shaqati.core.sources.Districts
 import app.shaqati.core.sources.HarajSource
@@ -16,6 +18,7 @@ import app.shaqati.core.sources.PriceText
 import app.shaqati.core.sources.PropertyFinderSource
 import app.shaqati.core.sources.WantedAd
 import app.shaqati.core.util.Geo
+import app.shaqati.core.util.HttpResponse
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonObject
 import kotlin.test.Test
@@ -178,6 +181,88 @@ class SourceFixturesTest {
         assertTrue(Feature.ELEVATOR in full.features)
         assertEquals(2, full.bedrooms)
         assertEquals(2, full.floor)
+    }
+
+    @Test
+    fun `bayut search page state`() {
+        val page = assertNotNull(BayutSource.parseSearch(fixture("bayut-search.html")))
+        assertEquals(12, page.total)
+        assertEquals(1, page.pageCount)
+        assertEquals(12, page.listings.size)
+        val a = page.listings.first { it.sourceId == "88021423" }
+        assertEquals("شقة استوديو للإيجار في السلطانة، الرياض", a.title)
+        assertEquals(27_000.0, a.price)
+        assertEquals(RentPeriod.YEARLY, a.period)
+        assertEquals(3, a.bedrooms)
+        assertEquals(2, a.bathrooms)
+        assertEquals(150.0, a.areaSqm)
+        assertEquals(Furnishing.UNFURNISHED, a.furnishing)
+        // Titles say "Studio" for some multi-room ads; the room count wins.
+        assertEquals(PropertyKind.APARTMENT, a.kind)
+        assertEquals("الرياض", a.city)
+        assertEquals("سلطانة", a.district)
+        assertEquals(24.609768815889, a.location!!.lat, 1e-9)
+        assertEquals(LocationPrecision.APPROXIMATE, a.locationPrecision)
+        assertEquals(
+            listOf(9587649, 9587692, 9587693).map { "https://images.bayut.sa/thumbnails/$it-800x600.jpeg" },
+            a.photos,
+        )
+        assertEquals("https://www.bayut.sa/property/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-88021423.html", a.url)
+        assertEquals(1_782_401_524_000L, a.postedAt)
+        assertEquals("شركة مساكن اضداد العقارية", a.advertiserName)
+
+        // Zero rooms and zero baths means the advertiser left them out.
+        val b = page.listings.first { it.sourceId == "88025241" }
+        assertNull(b.bedrooms)
+        assertNull(b.bathrooms)
+        assertEquals(PropertyKind.STUDIO, b.kind)
+    }
+
+    @Test
+    fun `bayut arabic search page and ad page`() {
+        val page = assertNotNull(BayutSource.parseSearch(fixture("bayut-search-ar.html")))
+        assertEquals(3, page.listings.size)
+        val a = page.listings.first { it.sourceId == "88032420" }
+        assertEquals("شقة من غرفة نوم واحدة للإيجار في الوشم، الرياض", a.title)
+        assertEquals("الوشام", a.district)
+        assertEquals(1, a.bedrooms)
+        assertEquals(10, a.photos.size)
+
+        val listing = a.copy(sourceId = "88001416", location = app.shaqati.core.model.GeoPoint(24.893282, 46.642971))
+        val full = BayutSource.mergeDetails(listing, fixture("bayut-detail.html"))
+        assertTrue(full.description.startsWith("Consists of:\n3 bedrooms - 4 bathrooms - Hall - Kitchen"), full.description)
+        assertFalse(full.description.contains("<br"))
+        assertEquals(21, full.photos.size)
+        assertEquals("https://images.bayut.sa/thumbnails/9438720-800x600.jpeg", full.photos.first())
+        assertEquals(3, full.bedrooms)
+        assertEquals(4, full.bathrooms)
+        assertEquals(LocationPrecision.EXACT, full.locationPrecision)
+        assertEquals("7200996418", full.licenseNumber)
+        assertTrue(setOf(Feature.AC, Feature.MAID_ROOM, Feature.BALCONY, Feature.ELEVATOR, Feature.SMART_HOME).all { it in full.features }, "${full.features}")
+        // Details of a different ad are ignored.
+        assertEquals(a, BayutSource.mergeDetails(a, fixture("bayut-detail.html")))
+    }
+
+    @Test
+    fun `bayut search urls page newest first within the budget`() {
+        assertEquals(
+            "https://www.bayut.sa/en/to-rent/apartments/riyadh/?rent_frequency=yearly&price_max=50000&sort=date_desc",
+            BayutSource.searchUrl(1, 50_000.0),
+        )
+        assertEquals(
+            "https://www.bayut.sa/en/to-rent/apartments/riyadh/page-3/?rent_frequency=monthly&price_max=4166&sort=date_desc",
+            BayutSource.searchUrl(3, 50_000.0 / 12, "monthly"),
+        )
+    }
+
+    @Test
+    fun `bot check pages are recognised`() {
+        fun resp(status: Int, body: String) = HttpResponse(status, body, "https://www.bayut.sa/")
+        assertTrue(BotCheck.blocked(resp(503, "<html><title>Security check</title></html>")))
+        assertTrue(BotCheck.blocked(resp(200, "<html><title>Just a moment...</title><script src=\"https://challenges.cloudflare.com/x.js\"></script></html>")))
+        assertTrue(BotCheck.blocked(resp(200, "<div class=\"h-captcha\" data-sitekey=\"x\"></div>")))
+        assertFalse(BotCheck.blocked(resp(200, fixture("bayut-search.html"))))
+        assertFalse(BotCheck.blocked(resp(200, "<html><title>Wasalt</title></html>")))
     }
 
     @Test

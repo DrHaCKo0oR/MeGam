@@ -228,3 +228,18 @@ object WantedAd {
     )
     fun matches(title: String?): Boolean = wanted.containsMatchIn(ArabicText.normalizeLetters(title ?: ""))
 }
+
+/** Plain text from the small HTML some sites use in descriptions (`<p>`, `<br />`, entities). */
+object HtmlText {
+    private val breaks = Regex("""(?i)<br\s*/?>|</p>|</div>|</li>""")
+    private val tags = Regex("""<[^>]+>""")
+    private val blankLines = Regex("""\n{3,}""")
+
+    fun plain(html: String?): String? {
+        if (html.isNullOrBlank()) return null
+        val text = html.replace(breaks, "\n").replace(tags, "")
+            .replace("&nbsp;", " ").replace("&quot;", "\"").replace("&#39;", "'").replace("&lt;", "<").replace("&gt;", ">")
+            .replace("&amp;", "&")
+        return text.lines().joinToString("\n") { it.trim() }.replace(blankLines, "\n\n").trim().ifBlank { null }
+    }
+}
