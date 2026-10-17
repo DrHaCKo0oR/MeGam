@@ -1,0 +1,58 @@
+[
+ {
+  "url": "https://imagedelivery.net/1DNKFJPRaeUdy_j8F7HT3w/production/properties/5946174/images/1aeb9809-24fd-4809-bf60-aee04f88b843.webp/width=1000,quality=70,format=auto",
+  "accept": "image/*",
+  "status": 200,
+  "type": "image/jpeg",
+  "len": 65395
+ },
+ {
+  "url": "https://imagedelivery.net/1DNKFJPRaeUdy_j8F7HT3w/production/properties/5946174/images/1aeb9809-24fd-4809-bf60-aee04f88b843.webp/width=1000,quality=70,format=auto",
+  "accept": "image/avif,image/webp,image/*",
+  "status": 200,
+  "type": "image/avif",
+  "len": 44779
+ },
+ {
+  "url": "https://imagedelivery.net/1DNKFJPRaeUdy_j8F7HT3w/production/properties/5946174/images/1aeb9809-24fd-4809-bf60-aee04f88b843.webp/width=800,quality=60,format=auto",
+  "accept": "image/*",
+  "status": 200,
+  "type": "image/jpeg",
+  "len": 39378
+ },
+ {
+  "url": "https://imagedelivery.net/1DNKFJPRaeUdy_j8F7HT3w/production/properties/5946174/images/1aeb9809-24fd-4809-bf60-aee04f88b843.webp/width=800,quality=60,format=auto",
+  "accept": "image/avif,image/webp,image/*",
+  "status": 200,
+  "type": "image/avif",
+  "len": 31098
+ },
+ {
+  "url": "https://imagedelivery.net/1DNKFJPRaeUdy_j8F7HT3w/production/properties/5847704/images/555960e7-017e-45bd-8038-ecb74201ae82.jpg/width=500,quality=60,format=auto",
+  "accept": "image/*",
+  "status": 404,
+  "type": "text/plain; charset=utf-8",
+  "len": 87
+ },
+ {
+  "url": "https://imagedelivery.net/1DNKFJPRaeUdy_j8F7HT3w/production/properties/5847704/images/555960e7-017e-45bd-8038-ecb74201ae82.jpg/width=500,quality=60,format=auto",
+  "accept": "image/avif,image/webp,image/*",
+  "status": 404,
+  "type": "text/plain; charset=utf-8",
+  "len": 87
+ },
+ {
+  "url": "https://images.bayut.sa/thumbnails/9587649-800x600.jpeg",
+  "accept": "image/*",
+  "status": 200,
+  "type": "image/jpeg",
+  "len": 19270
+ },
+ {
+  "url": "https://images.bayut.sa/thumbnails/9587649-800x600.jpeg",
+  "accept": "image/avif,image/webp,image/*",
+  "status": 200,
+  "type": "image/jpeg",
+  "len": 19270
+ }
+]
