@@ -857,6 +857,50 @@ def archive2_step():
     print(json.dumps(log, ensure_ascii=False)[:6000], flush=True)
 
 
+WASALT_LISTS = [
+    "wasalt.sa/شقق-للايجار-في-الرياض",
+    "wasalt.sa/شقق-للايجار-في-شمال-الرياض",
+    "wasalt.sa/en/apartments-for-rent-in-riyadh",
+    "wasalt.sa/en/apartments-for-rent-in-north-riyadh",
+    "wasalt.sa/3-غرفة-نوم-شقق-للايجار-في-شمال-الرياض",
+    "wasalt.sa/عقارات-للايجار-في-الرياض",
+]
+
+
+def archive3_step():
+    """Wasalt apartment-rental list pages that carry results (the earlier ones were empty)."""
+    sess = requests.Session()
+    sess.headers.update({"User-Agent": "Shaqati-probe/1.0 (personal apartment search research)"})
+    log = []
+    saved = 0
+    for pattern in WASALT_LISTS:
+        st, rows = cdx_rows(sess, pattern, "prefix", "-30")
+        entry = {"pattern": pattern, "cdx": st, "rows": len(rows), "tried": []}
+        log.append(entry)
+        for ts, original in sorted(rows, key=lambda x: x[0], reverse=True)[:4]:
+            try:
+                r, html, title, blocked = archived(sess, ts, original)
+                nd = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
+                count = props = None
+                if nd:
+                    pp = json.loads(nd.group(1)).get("props", {}).get("pageProps", {})
+                    sr = pp.get("searchResult") or {}
+                    count, props = sr.get("count"), len(sr.get("properties") or [])
+                entry["tried"].append({"ts": ts, "url": unquote(original), "status": r.status_code, "title": title,
+                                       "blocked": blocked, "count": count, "properties": props})
+                if props:
+                    saved += 1
+                    write(OUT / "archive" / f"wasalt-apartments-{saved}.html", redact_secrets(html))
+                    break
+            except Exception as e:  # noqa: BLE001
+                entry["tried"].append({"url": original, "error": repr(e)})
+            time.sleep(3)
+        if saved >= 3:
+            break
+    write(OUT / "archive" / "_log3.json", log)
+    print(json.dumps(log, ensure_ascii=False)[:6000], flush=True)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     only = [x for x in os.environ.get("PROBE_ONLY", "").split(",") if x]
@@ -873,6 +917,8 @@ def main():
         archive_step()
     if "archive2" in steps:
         archive2_step()
+    if "archive3" in steps:
+        archive3_step()
     if "versions" in steps:
         maven_versions()
     if "geo" in steps:

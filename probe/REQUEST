@@ -1,4 +1,4 @@
 # Sourced by the probe workflow. Edit to request a new probe run.
-PROBE_STEPS=archive2
+PROBE_STEPS=archive3
 PROBE_ONLY=
-RUN=11
+RUN=12
