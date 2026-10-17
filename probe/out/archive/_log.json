@@ -1,0 +1,355 @@
+{
+ "bayut-search-en": {
+  "pattern": "bayut.sa/en/to-rent/apartments/riyadh/",
+  "tried": [
+   {
+    "ts": "20260711152132",
+    "url": "https://www.bayut.sa/en/to-rent/apartments/riyadh/west-riyadh/sultanah/",
+    "status": 200,
+    "len": 1219297,
+    "window_state": true,
+    "next_data": false,
+    "next_f": false,
+    "title": "12  Apartments &amp; Flats for Rent in Sultanah, Riyadh | Bayut KSA"
+   },
+   {
+    "ts": "20260711152132",
+    "url": "https://www.bayut.sa/en/to-rent/apartments/riyadh/west-riyadh/sultanah/",
+    "status": 200,
+    "len": 1219297,
+    "window_state": true,
+    "next_data": false,
+    "next_f": false,
+    "title": "12  Apartments &amp; Flats for Rent in Sultanah, Riyadh | Bayut KSA"
+   }
+  ],
+  "cdx": [
+   {
+    "host": "www.",
+    "status": 200,
+    "rows": 40
+   },
+   {
+    "host": "",
+    "status": 200,
+    "rows": 40
+   }
+  ]
+ },
+ "bayut-search-ar": {
+  "pattern": "bayut.sa/للايجار/شقق/الرياض/",
+  "tried": [
+   {
+    "ts": "20260711141910",
+    "url": "https://www.bayut.sa/%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1/%D8%B4%D9%82%D9%82/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D9%88%D8%B3%D8%B7-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%A7%D9%84%D9%88%D8%B4%D8%A7%D9%85/",
+    "status": 200,
+    "len": 1241283,
+    "window_state": true,
+    "next_data": false,
+    "next_f": false,
+    "title": "3 شقق  للايجار في حي الوشام, الرياض | بيوت السعودية"
+   },
+   {
+    "ts": "20260711141910",
+    "url": "https://www.bayut.sa/%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1/%D8%B4%D9%82%D9%82/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D9%88%D8%B3%D8%B7-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%A7%D9%84%D9%88%D8%B4%D8%A7%D9%85/",
+    "status": 200,
+    "len": 1241283,
+    "window_state": true,
+    "next_data": false,
+    "next_f": false,
+    "title": "3 شقق  للايجار في حي الوشام, الرياض | بيوت السعودية"
+   }
+  ],
+  "cdx": [
+   {
+    "host": "www.",
+    "status": 200,
+    "rows": 40
+   },
+   {
+    "host": "",
+    "status": 200,
+    "rows": 40
+   }
+  ]
+ },
+ "bayut-detail-en": {
+  "pattern": "bayut.sa/en/property/details-",
+  "tried": [
+   {
+    "ts": "20260713010445",
+    "url": "https://www.bayut.sa/en/property/details-88004814.html",
+    "status": 200,
+    "len": 1504414,
+    "window_state": true,
+    "next_data": false,
+    "next_f": false,
+    "title": "Apartment in Ghirnatah, Khamis Mushait at 650,000 - 16 Photos - 88004814 | Bayut KSA"
+   },
+   {
+    "ts": "20260713010445",
+    "url": "https://www.bayut.sa/en/property/details-88004814.html",
+    "status": 200,
+    "len": 1504414,
+    "window_state": true,
+    "next_data": false,
+    "next_f": false,
+    "title": "Apartment in Ghirnatah, Khamis Mushait at 650,000 - 16 Photos - 88004814 | Bayut KSA"
+   }
+  ],
+  "cdx": [
+   {
+    "host": "www.",
+    "status": 200,
+    "rows": 40
+   },
+   {
+    "host": "",
+    "status": 200,
+    "rows": 40
+   }
+  ]
+ },
+ "bayut-detail-ar": {
+  "pattern": "bayut.sa/property/details-",
+  "tried": [],
+  "cdx": [
+   {
+    "host": "www.",
+    "status": 200,
+    "rows": 0
+   },
+   {
+    "host": "",
+    "status": 200,
+    "rows": 0
+   }
+  ]
+ },
+ "wasalt-search-ar": {
+  "pattern": "wasalt.sa/ar/search/rent/riyadh",
+  "tried": [],
+  "cdx": [
+   {
+    "host": "www.",
+    "status": 200,
+    "rows": 0
+   },
+   {
+    "host": "",
+    "status": 200,
+    "rows": 0
+   }
+  ]
+ },
+ "wasalt-search-en": {
+  "pattern": "wasalt.sa/en/search/rent/riyadh",
+  "tried": [],
+  "cdx": [
+   {
+    "host": "www.",
+    "status": 200,
+    "rows": 0
+   },
+   {
+    "host": "",
+    "status": 200,
+    "rows": 0
+   }
+  ]
+ },
+ "wasalt-property": {
+  "pattern": "wasalt.sa/ar/property/",
+  "tried": [
+   {
+    "ts": "20251027103608",
+    "url": "https://wasalt.sa/ar/property/sale/%D9%81%D9%8A%D9%84%D8%A7-46838-%D9%85%D8%AA%D8%B1-%D9%85%D8%B1%D8%A8%D8%B9-%D8%B4%D8%B1%D9%82%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%B4%D8%A7%D8%B1%D8%B9-12%D9%85-5781102",
+    "status": 200,
+    "len": 287219,
+    "window_state": false,
+    "next_data": true,
+    "next_f": false,
+    "title": "فيلا 468.38 متر مربع شرقية على شارع 12م للبيع"
+   },
+   {
+    "ts": "20251027103608",
+    "url": "https://wasalt.sa/ar/property/sale/%D9%81%D9%8A%D9%84%D8%A7-46838-%D9%85%D8%AA%D8%B1-%D9%85%D8%B1%D8%A8%D8%B9-%D8%B4%D8%B1%D9%82%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%B4%D8%A7%D8%B1%D8%B9-12%D9%85-5781102",
+    "status": 200,
+    "len": 287219,
+    "window_state": false,
+    "next_data": true,
+    "next_f": false,
+    "title": "فيلا 468.38 متر مربع شرقية على شارع 12م للبيع"
+   },
+   {
+    "ts": "20250929005651",
+    "url": "https://wasalt.sa/ar/property/sale/%D9%81%D9%8A%D9%84%D8%A7-374-%D9%85%D8%AA%D8%B1-%D9%85%D8%B1%D8%A8%D8%B9-%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%B4%D8%A7%D8%B1%D8%B9-32%D9%85-5757773",
+    "status": 404,
+    "len": 4784,
+    "window_state": false,
+    "next_data": false,
+    "next_f": false,
+    "title": "Wayback Machine"
+   },
+   {
+    "ts": "20250929005651",
+    "url": "https://wasalt.sa/ar/property/sale/%D9%81%D9%8A%D9%84%D8%A7-374-%D9%85%D8%AA%D8%B1-%D9%85%D8%B1%D8%A8%D8%B9-%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%B4%D8%A7%D8%B1%D8%B9-32%D9%85-5757773",
+    "status": 404,
+    "len": 4784,
+    "window_state": false,
+    "next_data": false,
+    "next_f": false,
+    "title": "Wayback Machine"
+   },
+   {
+    "ts": "20250926194018",
+    "url": "https://wasalt.sa/ar/property/sale/%D9%81%D9%8A%D9%84%D8%A7-300-%D9%85%D8%AA%D8%B1-%D9%85%D8%B1%D8%A8%D8%B9-%D8%B4%D8%B1%D9%82%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%B4%D8%A7%D8%B1%D8%B9-12%D9%85-5777901",
+    "status": 404,
+    "len": 4784,
+    "window_state": false,
+    "next_data": false,
+    "next_f": false,
+    "title": "Wayback Machine"
+   },
+   {
+    "ts": "20250926194018",
+    "url": "https://wasalt.sa/ar/property/sale/%D9%81%D9%8A%D9%84%D8%A7-300-%D9%85%D8%AA%D8%B1-%D9%85%D8%B1%D8%A8%D8%B9-%D8%B4%D8%B1%D9%82%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%B4%D8%A7%D8%B1%D8%B9-12%D9%85-5777901",
+    "status": 404,
+    "len": 4784,
+    "window_state": false,
+    "next_data": false,
+    "next_f": false,
+    "title": "Wayback Machine"
+   },
+   {
+    "ts": "20250719103149",
+    "url": "https://wasalt.sa/ar/property/sale/5750354",
+    "status": 200,
+    "len": 250681,
+    "window_state": false,
+    "next_data": true,
+    "next_f": false,
+    "title": "عمارة 325 متر مربع بدورين واجهة جنوبية للبيع"
+   },
+   {
+    "ts": "20250719103149",
+    "url": "https://wasalt.sa/ar/property/sale/5750354",
+    "status": 200,
+    "len": 250681,
+    "window_state": false,
+    "next_data": true,
+    "next_f": false,
+    "title": "عمارة 325 متر مربع بدورين واجهة جنوبية للبيع"
+   }
+  ],
+  "cdx": [
+   {
+    "host": "www.",
+    "status": 200,
+    "rows": 40
+   },
+   {
+    "host": "",
+    "status": 200,
+    "rows": 40
+   }
+  ]
+ },
+ "wasalt-property-en": {
+  "pattern": "wasalt.sa/en/property/",
+  "tried": [
+   {
+    "ts": "20260212183112",
+    "url": "https://wasalt.sa/en/property/sale/villa-800-sqm-facing-east-on-15m-width-street-5743031",
+    "status": 200,
+    "len": 290439,
+    "window_state": false,
+    "next_data": true,
+    "next_f": false,
+    "title": "Villa 800 SQM Facing East on 15m Width Street For Sale"
+   },
+   {
+    "ts": "20260212183112",
+    "url": "https://wasalt.sa/en/property/sale/villa-800-sqm-facing-east-on-15m-width-street-5743031",
+    "status": 200,
+    "len": 290439,
+    "window_state": false,
+    "next_data": true,
+    "next_f": false,
+    "title": "Villa 800 SQM Facing East on 15m Width Street For Sale"
+   },
+   {
+    "ts": "20260121071453",
+    "url": "https://wasalt.sa/en/property/sale/villa-900-sqm-facing-south-on-15m-width-street-5781580",
+    "status": 200,
+    "len": 323530,
+    "window_state": false,
+    "next_data": true,
+    "next_f": false,
+    "title": "Villa 900 SQM Facing South on 15m Width Street For Sale"
+   },
+   {
+    "ts": "20260121071453",
+    "url": "https://wasalt.sa/en/property/sale/villa-900-sqm-facing-south-on-15m-width-street-5781580",
+    "status": 200,
+    "len": 323530,
+    "window_state": false,
+    "next_data": true,
+    "next_f": false,
+    "title": "Villa 900 SQM Facing South on 15m Width Street For Sale"
+   },
+   {
+    "ts": "20260120160750",
+    "url": "https://wasalt.sa/en/property/sale/villa-900-sqm-facing-west-on-15m-width-street-5782017",
+    "status": 200,
+    "len": 282934,
+    "window_state": false,
+    "next_data": true,
+    "next_f": false,
+    "title": "Villa 900 SQM Facing West on 15m Width Street For Sale"
+   },
+   {
+    "ts": "20260120160750",
+    "url": "https://wasalt.sa/en/property/sale/villa-900-sqm-facing-west-on-15m-width-street-5782017",
+    "status": 200,
+    "len": 282934,
+    "window_state": false,
+    "next_data": true,
+    "next_f": false,
+    "title": "Villa 900 SQM Facing West on 15m Width Street For Sale"
+   },
+   {
+    "ts": "20251209112034",
+    "url": "https://wasalt.sa/en/property/sale/villa-810-sqm-facing-south-on-10m-width-street-5744522",
+    "status": 200,
+    "len": 305287,
+    "window_state": false,
+    "next_data": true,
+    "next_f": false,
+    "title": "Villa 810 SQM Facing South on 10m Width Street For Sale"
+   },
+   {
+    "ts": "20251209112034",
+    "url": "https://wasalt.sa/en/property/sale/villa-810-sqm-facing-south-on-10m-width-street-5744522",
+    "status": 200,
+    "len": 305287,
+    "window_state": false,
+    "next_data": true,
+    "next_f": false,
+    "title": "Villa 810 SQM Facing South on 10m Width Street For Sale"
+   }
+  ],
+  "cdx": [
+   {
+    "host": "www.",
+    "status": 200,
+    "rows": 40
+   },
+   {
+    "host": "",
+    "status": 200,
+    "rows": 40
+   }
+  ]
+ }
+}
