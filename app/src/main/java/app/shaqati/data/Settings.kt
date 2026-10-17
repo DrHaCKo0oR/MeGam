@@ -23,6 +23,8 @@ data class Settings(
     val calibration: CalibrationTrip = CalibrationTrip(home = defaultCalibrationHome()),
     val corrections: LearnedCorrections? = null,
     val enabledSources: Set<Source> = SUPPORTED_SOURCES,
+    /** Sites the settings have offered so far; a site added in an update starts switched on. */
+    val sourcesOffered: Set<Source> = FIRST_SOURCES,
     val maxPages: Int = 5,
     /** 0 turns background refresh off. */
     val autoRefreshHours: Int = 6,
@@ -31,9 +33,20 @@ data class Settings(
     val language: String = "",
     val onboarded: Boolean = false,
 ) {
+    /** Switches on sites added since these settings were saved; sites the user turned off stay off. */
+    fun withNewSources(): Settings {
+        val added = SUPPORTED_SOURCES - sourcesOffered
+        return if (added.isEmpty()) this else copy(enabledSources = enabledSources + added, sourcesOffered = SUPPORTED_SOURCES)
+    }
+
     companion object {
-        /** Sites the app can read. Bayut and Wasalt refuse automated access. */
-        val SUPPORTED_SOURCES = setOf(Source.AQAR, Source.HARAJ, Source.PROPERTY_FINDER, Source.DEAL, Source.OPENSOOQ)
+        /** Sites the app can read. Bayut and Wasalt are read in a browser on the phone. */
+        val SUPPORTED_SOURCES = setOf(
+            Source.AQAR, Source.BAYUT, Source.WASALT, Source.HARAJ, Source.PROPERTY_FINDER, Source.DEAL, Source.OPENSOOQ,
+        )
+
+        /** The sites of the first versions, before Bayut and Wasalt. */
+        val FIRST_SOURCES = setOf(Source.AQAR, Source.HARAJ, Source.PROPERTY_FINDER, Source.DEAL, Source.OPENSOOQ)
 
         /** Centre of the user's current district, refined in Settings. */
         fun defaultCalibrationHome(): GeoPoint =

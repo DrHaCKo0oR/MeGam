@@ -23,7 +23,7 @@ class SettingsTest {
         assertEquals("08:00", s.schedule.morningDeparture)
         assertEquals("17:00", s.schedule.eveningDeparture)
         assertEquals(75, s.calibration.actualMorningMinutes)
-        assertTrue(Source.BAYUT !in s.enabledSources)
+        assertEquals(Settings.SUPPORTED_SOURCES, s.withNewSources().enabledSources)
         // The calibration home defaults to the Al Murabba district centre.
         assertEquals(24.66, s.calibration.home.lat, 0.02)
     }
@@ -32,6 +32,21 @@ class SettingsTest {
     fun survivesAJsonRoundTrip() {
         val s = Settings(workLabel = "Office", onboarded = true, autoRefreshHours = 12)
         assertEquals(s, json.decodeFromString(Settings.serializer(), json.encodeToString(Settings.serializer(), s)))
+    }
+
+    @Test
+    fun sitesAddedInAnUpdateStartSwitchedOn() {
+        // Saved by an earlier version, with OpenSooq turned off.
+        val old = json.decodeFromString(
+            Settings.serializer(),
+            """{"enabledSources":["AQAR","HARAJ","PROPERTY_FINDER","DEAL"],"onboarded":true}""",
+        ).withNewSources()
+        assertEquals(setOf(Source.AQAR, Source.HARAJ, Source.PROPERTY_FINDER, Source.DEAL, Source.BAYUT, Source.WASALT), old.enabledSources)
+        assertEquals(Settings.SUPPORTED_SOURCES, old.sourcesOffered)
+        // Turning Bayut off afterwards sticks.
+        val off = old.copy(enabledSources = old.enabledSources - Source.BAYUT)
+        val again = json.decodeFromString(Settings.serializer(), json.encodeToString(Settings.serializer(), off)).withNewSources()
+        assertTrue(Source.BAYUT !in again.enabledSources)
     }
 
     @Test

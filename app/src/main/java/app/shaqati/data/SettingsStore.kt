@@ -23,7 +23,7 @@ class SettingsStore(private val context: Context) {
     }
 
     private fun decode(text: String?): Settings =
-        text?.let { runCatching { json.decodeFromString(Settings.serializer(), it) }.getOrNull() } ?: Settings()
+        (text?.let { runCatching { json.decodeFromString(Settings.serializer(), it) }.getOrNull() } ?: Settings()).withNewSources()
 
     val flow: Flow<Settings> = context.settingsDataStore.data
         .catch { emit(emptyPreferences()) }

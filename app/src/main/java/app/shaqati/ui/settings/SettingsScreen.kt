@@ -55,6 +55,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.shaqati.BuildConfig
 import app.shaqati.R
+import app.shaqati.core.model.Source
 import app.shaqati.core.sources.Districts
 import app.shaqati.data.KeyVault
 import app.shaqati.data.Settings
@@ -72,7 +73,7 @@ import kotlin.math.roundToInt
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun SettingsScreen(vm: AppViewModel, openPicker: (String) -> Unit, openHidden: () -> Unit) {
+fun SettingsScreen(vm: AppViewModel, openPicker: (String) -> Unit, openHidden: () -> Unit, openCheck: (Source) -> Unit) {
     val settings by vm.settings.collectAsStateWithLifecycle()
     val catalog by vm.catalog.collectAsStateWithLifecycle()
     val hidden by vm.hidden.collectAsStateWithLifecycle()
@@ -128,6 +129,11 @@ fun SettingsScreen(vm: AppViewModel, openPicker: (String) -> Unit, openHidden: (
                                     color = if (st != null && !st.ok) AppTheme.status.warn else MaterialTheme.colorScheme.onSurfaceVariant,
                                     maxLines = 2,
                                 )
+                                if (st != null && st.blocked) {
+                                    TextButton(onClick = { openCheck(src) }, contentPadding = PaddingValues(horizontal = 0.dp)) {
+                                        Text(stringResource(R.string.source_open))
+                                    }
+                                }
                             }
                             Switch(
                                 checked = src in s.enabledSources,
@@ -136,7 +142,7 @@ fun SettingsScreen(vm: AppViewModel, openPicker: (String) -> Unit, openHidden: (
                         }
                     }
                     Spacer(Modifier.height(4.dp))
-                    Text(stringResource(R.string.sources_unsupported), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(stringResource(R.string.sources_browser), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
             }
             item {

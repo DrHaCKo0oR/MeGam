@@ -23,6 +23,7 @@ import app.shaqati.core.commute.GoogleRoutesClient
 import app.shaqati.core.filter.Check
 import app.shaqati.core.model.Source
 import app.shaqati.core.sources.AqarSource
+import app.shaqati.core.sources.BayutSource
 import app.shaqati.core.sources.DealSource
 import app.shaqati.core.sources.HarajSource
 import app.shaqati.core.sources.ListingSource
@@ -31,6 +32,7 @@ import app.shaqati.core.sources.PropertyFinderSource
 import app.shaqati.core.sources.SearchArea
 import app.shaqati.core.sources.SearchContext
 import app.shaqati.core.sources.SearchResult
+import app.shaqati.core.sources.WasaltSource
 import app.shaqati.core.store.CatalogSnapshot
 import app.shaqati.core.store.CatalogStore
 import app.shaqati.core.store.HideReason
@@ -127,10 +129,14 @@ class Repository(
     private val deal = DealSource()
     private val pf = PropertyFinderSource()
     private val openSooq = OpenSooqSource()
+    private val bayut = BayutSource()
+    private val wasalt = WasaltSource()
     private val detailSources: Map<Source, ListingSource> = mapOf(
         Source.PROPERTY_FINDER to pf,
         Source.OPENSOOQ to openSooq,
         Source.DEAL to deal,
+        Source.BAYUT to bayut,
+        Source.WASALT to wasalt,
     )
 
     private var service: CommuteService? = null
@@ -166,6 +172,9 @@ class Repository(
 
     private fun sources(s: Settings): List<ListingSource> = buildList {
         if (Source.AQAR in s.enabledSources) add(AqarSource())
+        // Read page by page in the browser, so they start early.
+        if (Source.BAYUT in s.enabledSources) add(bayut)
+        if (Source.WASALT in s.enabledSources) add(wasalt)
         if (Source.HARAJ in s.enabledSources) add(HarajSource())
         if (Source.PROPERTY_FINDER in s.enabledSources) add(pf)
         if (Source.DEAL in s.enabledSources) add(deal)

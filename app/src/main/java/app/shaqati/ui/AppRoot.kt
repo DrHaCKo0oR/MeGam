@@ -37,6 +37,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import app.shaqati.R
+import app.shaqati.core.model.Source
+import app.shaqati.ui.check.SiteCheckScreen
 import app.shaqati.ui.detail.DetailScreen
 import app.shaqati.ui.detail.PhotoViewer
 import app.shaqati.ui.feed.FeedScreen
@@ -71,7 +73,12 @@ fun AppRoot(vm: AppViewModel) {
             )
         }
         composable("home") {
-            HomeScreen(vm, openDetail, openPicker = { nav.navigate("pick/$it") }, openHidden = { nav.navigate("hidden") })
+            HomeScreen(
+                vm, openDetail,
+                openPicker = { nav.navigate("pick/$it") },
+                openHidden = { nav.navigate("hidden") },
+                openCheck = { nav.navigate("check/${it.key}") },
+            )
         }
         composable("detail/{id}", arguments = listOf(navArgument("id") { type = NavType.StringType })) { entry ->
             val id = entry.arguments?.getString("id").orEmpty()
@@ -93,11 +100,21 @@ fun AppRoot(vm: AppViewModel) {
         composable("hidden") {
             HiddenScreen(vm, onBack = { nav.popBackStack() }, openDetail = openDetail)
         }
+        composable("check/{source}", arguments = listOf(navArgument("source") { type = NavType.StringType })) { entry ->
+            val source = Source.fromKey(entry.arguments?.getString("source").orEmpty()) ?: Source.BAYUT
+            SiteCheckScreen(vm, source, onBack = { nav.popBackStack() })
+        }
     }
 }
 
 @Composable
-private fun HomeScreen(vm: AppViewModel, openDetail: (String) -> Unit, openPicker: (String) -> Unit, openHidden: () -> Unit) {
+private fun HomeScreen(
+    vm: AppViewModel,
+    openDetail: (String) -> Unit,
+    openPicker: (String) -> Unit,
+    openHidden: () -> Unit,
+    openCheck: (Source) -> Unit,
+) {
     var tab by rememberSaveable { mutableIntStateOf(0) }
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
@@ -117,10 +134,10 @@ private fun HomeScreen(vm: AppViewModel, openDetail: (String) -> Unit, openPicke
     ) { padding: PaddingValues ->
         Box(Modifier.fillMaxSize().padding(padding).consumeWindowInsets(padding)) {
             when (tab) {
-                0 -> FeedScreen(vm, openDetail)
+                0 -> FeedScreen(vm, openDetail, openCheck)
                 1 -> MapScreen(vm, openDetail)
                 2 -> SavedScreen(vm, openDetail)
-                else -> SettingsScreen(vm, openPicker, openHidden)
+                else -> SettingsScreen(vm, openPicker, openHidden, openCheck)
             }
         }
     }

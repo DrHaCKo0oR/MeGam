@@ -6,6 +6,7 @@ import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createEmptyComposeRule
 import androidx.compose.ui.test.onAllNodesWithContentDescription
 import androidx.compose.ui.test.onAllNodesWithTag
+import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
@@ -13,6 +14,7 @@ import androidx.compose.ui.test.performScrollTo
 import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import app.shaqati.core.FeedMode
+import app.shaqati.core.model.Source
 import app.shaqati.ui.MainActivity
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
@@ -51,7 +53,7 @@ class LiveRefreshTest {
             compose.waitUntil(20_000) { repo.status.value.running }
             settle(4_000)
             Qa.shot("live-00-searching")
-            runBlocking { withTimeout(420_000) { repo.status.first { !it.running } } }
+            runBlocking { withTimeout(720_000) { repo.status.first { !it.running } } }
             val status = repo.status.value
 
             val snap = repo.catalog.value
@@ -74,6 +76,20 @@ class LiveRefreshTest {
             settle()
             Qa.shot("live-02-detail")
             compose.onAllNodesWithContentDescription(Qa.str("en", R.string.action_back)).onFirst().performClick()
+
+            // Sites read in the browser: when one asked for a check, show what the check screen opens.
+            val checked = snap.sources.values.firstOrNull { it.blocked && it.source in setOf(Source.BAYUT, Source.WASALT) }
+            if (checked != null) {
+                compose.onNodeWithTag("site_check_banner").assertExists()
+                compose.onAllNodesWithText(Qa.str("en", R.string.check_title, checked.source.nameEn)).onFirst().performClick()
+                compose.waitUntilAtLeastOneExists(hasTestTag("site_check_web"), 10_000)
+                Thread.sleep(20_000)
+                val passed = compose.onAllNodesWithTag("site_check_passed").fetchSemanticsNodes().isNotEmpty()
+                Qa.log("live site check ${checked.source.key} passed=$passed")
+                Qa.shot("live-02b-site-check-${checked.source.key}")
+                compose.onAllNodesWithContentDescription(Qa.str("en", R.string.action_back)).onFirst().performClick()
+                compose.waitUntilAtLeastOneExists(hasTestTag("tab_map"), 10_000)
+            }
 
             compose.onNodeWithTag("tab_map").performClick()
             val mapReady = runCatching { compose.waitUntilAtLeastOneExists(hasTestTag("map_ready"), 25_000) }.isSuccess

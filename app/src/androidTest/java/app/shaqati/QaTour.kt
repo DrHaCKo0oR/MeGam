@@ -9,7 +9,9 @@ import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performScrollToIndex
+import androidx.compose.ui.test.performScrollToNode
 import android.view.ViewGroup
 import android.webkit.WebResourceRequest
 import android.webkit.WebResourceResponse
@@ -18,6 +20,7 @@ import androidx.webkit.WebViewAssetLoader
 import androidx.webkit.WebViewClientCompat
 import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import app.shaqati.core.model.Source
 import app.shaqati.ui.MainActivity
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertTrue
@@ -121,6 +124,29 @@ class QaTour {
     @Test
     fun c_arabic() = tour("ar")
 
+    /** A site that asked for a check: the feed says so, and the check screen opens the site. */
+    @Test
+    fun f_siteCheck() {
+        Qa.seed(blocked = setOf(Source.BAYUT))
+        ActivityScenario.launch(MainActivity::class.java).use { sc ->
+            Qa.setLocale(sc, "en")
+            compose.waitUntilAtLeastOneExists(hasTestTag("site_check_banner"), 15_000)
+            shot("zz-site-check-banner", 2_000)
+            compose.onNodeWithTag("tab_settings").performClick()
+            val open = hasText(Qa.str("en", R.string.source_open))
+            compose.onNodeWithTag("settings_list").performScrollToNode(open)
+            shot("zz-site-check-settings")
+            compose.onNode(open).performClick()
+            compose.waitUntilAtLeastOneExists(hasTestTag("site_check_web"), 10_000)
+            Thread.sleep(20_000)
+            val passed = compose.onAllNodesWithTag("site_check_passed").fetchSemanticsNodes().isNotEmpty()
+            Qa.log("site check bayut passed=$passed title=" + Qa.jsResult(sc, "document.title"))
+            shot("zz-site-check-bayut")
+            compose.onAllNodesWithContentDescription(Qa.str("en", R.string.action_back)).onFirst().performClick()
+            compose.waitUntilAtLeastOneExists(hasTestTag("settings_list"), 5_000)
+        }
+    }
+
     private fun tour(lang: String) {
         Qa.seed()
         ActivityScenario.launch(MainActivity::class.java).use { sc ->
@@ -145,6 +171,14 @@ class QaTour {
                 shot("$lang-07-detail", 2_500)
                 compose.onNodeWithTag("detail_list").performScrollToIndex(3)
                 shot("$lang-08-detail-finish")
+                // Ask Claude hands the photos to the Claude app, or the share sheet without it.
+                if (lang == "en" && compose.onAllNodesWithTag("ask_claude").fetchSemanticsNodes().isNotEmpty()) {
+                    compose.onNodeWithTag("ask_claude").performScrollTo().performClick()
+                    Thread.sleep(8_000)
+                    Qa.shot("$lang-08b-ask-claude")
+                    Qa.device.pressBack()
+                    compose.waitUntilAtLeastOneExists(hasTestTag("detail_list"), 10_000)
+                }
                 compose.onNodeWithTag("detail_list").performScrollToIndex(5)
                 shot("$lang-09-detail-requirements")
                 compose.onNodeWithTag("detail_list").performScrollToIndex(0)

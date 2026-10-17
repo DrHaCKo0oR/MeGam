@@ -19,6 +19,8 @@ import app.shaqati.core.ai.ItemRating
 import app.shaqati.core.ai.Verdict
 import app.shaqati.core.model.Source
 import app.shaqati.core.sources.AqarSource
+import app.shaqati.core.sources.BayutSource
+import app.shaqati.core.sources.BotCheck
 import app.shaqati.core.sources.HarajSource
 import app.shaqati.core.sources.ListingSource
 import app.shaqati.core.sources.OpenSooqSource
@@ -26,6 +28,7 @@ import app.shaqati.core.sources.PropertyFinderSource
 import app.shaqati.core.sources.SearchArea
 import app.shaqati.core.sources.SearchContext
 import app.shaqati.core.sources.SearchResult
+import app.shaqati.core.sources.WasaltSource
 import app.shaqati.core.util.Http
 import app.shaqati.core.util.HttpResponse
 import app.shaqati.data.Settings
@@ -50,9 +53,10 @@ object Qa {
         android.util.Log.i("ShaqatiQA", line)
     }
 
+    val device: UiDevice get() = UiDevice.getInstance(instr)
+
     /** Taps "Wait" on a system "isn't responding" dialog, which would otherwise cover the app. */
     fun dismissSystemDialogs() {
-        val device = UiDevice.getInstance(instr)
         repeat(3) {
             val wait = device.findObject(By.res("android", "aerr_wait")) ?: return
             log("dismissed a system 'not responding' dialog")
@@ -156,19 +160,26 @@ object Qa {
 
     private fun fixture(name: String): String = instr.context.assets.open("fixtures/$name").bufferedReader().use { it.readText() }
 
-    /** Fills the catalog with recorded listings from four sites, plus one analysed apartment. */
-    fun seed() = runBlocking {
+    /**
+     * Fills the catalog with recorded listings from six sites, plus one analysed apartment.
+     * Sites in [blocked] report a bot check instead of their listings.
+     */
+    fun seed(blocked: Set<Source> = emptySet()) = runBlocking {
         val s = settings()
         val data = mapOf(
             Source.AQAR to AqarSource.parseSearch(fixture("aqar-search.json")).listings,
             Source.HARAJ to HarajSource.parse(fixture("haraj-posts.json")),
             Source.PROPERTY_FINDER to PropertyFinderSource.parseSearch(fixture("pf-search.html")).first,
             Source.OPENSOOQ to OpenSooqSource.parseSearch(fixture("opensooq-search.html")).first,
+            Source.BAYUT to BayutSource.parseSearch(fixture("bayut-search.html"))!!.listings,
+            Source.WASALT to WasaltSource.parseSearch(fixture("wasalt-search.html"))!!.listings,
         )
         val sources = data.map { (src, items) ->
             object : ListingSource {
                 override val source = src
-                override suspend fun search(ctx: SearchContext) = SearchResult(src, items, 1)
+                override suspend fun search(ctx: SearchContext) =
+                    if (src in blocked) SearchResult(src, emptyList(), 1, listOf(BotCheck.MESSAGE), blocked = true)
+                    else SearchResult(src, items, 1)
             }
         }
         val engine = Engine()

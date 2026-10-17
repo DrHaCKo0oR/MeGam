@@ -232,9 +232,15 @@
     <string name="set_sources">Sites</string>
     <string name="source_status_ok">Ads: %1$d · %2$s</string>
     <string name="source_status_failed">Last search failed: %1$s</string>
-    <string name="source_status_blocked">The site refused access last time</string>
+    <string name="source_status_blocked">The site asked for a check last time. Open it once to pass it.</string>
     <string name="source_status_never">Not searched yet</string>
-    <string name="sources_unsupported">Bayut and Wasalt block apps from reading their listings, so they are not included.</string>
+    <string name="sources_browser">Bayut, Wasalt and Property Finder are read in a browser inside the app, as if you opened them yourself. If one asks for a check, open it here and complete the check.</string>
+    <string name="source_open">Open site</string>
+    <string name="check_title">Open %1$s</string>
+    <string name="check_hint">If the site shows a check, complete it here. Once its apartments appear, Shaqati can read them.</string>
+    <string name="check_passed">%1$s is open. Shaqati can read it now.</string>
+    <string name="check_search">Search now</string>
+    <string name="feed_site_check">%1$s asked for a check, so its apartments are missing. Open it once to pass the check.</string>
     <string name="set_auto_refresh">Background search</string>
     <string name="auto_off">Off</string>
     <string name="auto_hours">Every %1$d h</string>

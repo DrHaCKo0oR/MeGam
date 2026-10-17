@@ -3,6 +3,7 @@ package app.shaqati.core
 import app.shaqati.core.filter.Criteria
 import app.shaqati.core.model.Source
 import app.shaqati.core.sources.AqarSource
+import app.shaqati.core.sources.BayutSource
 import app.shaqati.core.sources.DealSource
 import app.shaqati.core.sources.HarajSource
 import app.shaqati.core.sources.ListingSource
@@ -11,6 +12,7 @@ import app.shaqati.core.sources.PropertyFinderSource
 import app.shaqati.core.sources.RiyadhNorth
 import app.shaqati.core.sources.SearchArea
 import app.shaqati.core.sources.SearchContext
+import app.shaqati.core.sources.WasaltSource
 import app.shaqati.core.util.OkHttpHttp
 import kotlinx.coroutines.runBlocking
 import org.junit.Assume.assumeTrue
@@ -33,7 +35,10 @@ class LiveSourcesTest {
     @Test
     fun `every source returns parsable rentals and the engine ranks them`() = runBlocking {
         live()
-        val sources: List<ListingSource> = listOf(AqarSource(), HarajSource(), PropertyFinderSource(), DealSource(), OpenSooqSource())
+        // Bayut and Wasalt are read in the phone's browser; from a server they are expected to report blocked.
+        val sources: List<ListingSource> = listOf(
+            AqarSource(), HarajSource(), PropertyFinderSource(), DealSource(), OpenSooqSource(), BayutSource(), WasaltSource(),
+        )
         val engine = Engine()
         val report = StringBuilder()
         val results = engine.refresh(sources, { http }, area, criteria, maxPages = 3, concurrency = 3)

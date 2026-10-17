@@ -53,6 +53,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.shaqati.R
 import app.shaqati.core.FeedMode
 import app.shaqati.core.Sort
+import app.shaqati.core.model.Source
 import app.shaqati.data.AiNote
 import app.shaqati.data.SourceRun
 import app.shaqati.data.SyncStatus
@@ -76,7 +77,7 @@ fun feedTabLabel(m: FeedMode): String = stringResource(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun FeedScreen(vm: AppViewModel, openDetail: (String) -> Unit) {
+fun FeedScreen(vm: AppViewModel, openDetail: (String) -> Unit, openCheck: (Source) -> Unit) {
     val feed by vm.feed.collectAsStateWithLifecycle()
     val status by vm.status.collectAsStateWithLifecycle()
     val settings by vm.settings.collectAsStateWithLifecycle()
@@ -129,6 +130,12 @@ fun FeedScreen(vm: AppViewModel, openDetail: (String) -> Unit) {
             }
         }
         StatusStrip(status)
+        if (!status.running) {
+            // Sites read in the browser that asked for a check on the last search.
+            catalog.sources.values
+                .filter { it.blocked && it.source in BROWSER_SITES && settings?.enabledSources?.contains(it.source) == true }
+                .forEach { SiteCheckBanner(it.source, openCheck) }
+        }
         PullToRefreshBox(
             isRefreshing = status.running && status.phase == SyncStatus.Phase.SEARCHING,
             onRefresh = { vm.refresh() },
@@ -230,6 +237,29 @@ private fun StatusStrip(status: SyncStatus) {
             color = if (error != null || note == AiNote.KEY_REJECTED) s.bad else s.neutral,
             modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
         )
+    }
+}
+
+/** Sites the app reads in a browser; a check they ask for can be passed in the app. */
+private val BROWSER_SITES = setOf(Source.BAYUT, Source.WASALT, Source.PROPERTY_FINDER)
+
+@Composable
+private fun SiteCheckBanner(source: Source, openCheck: (Source) -> Unit) {
+    val s = AppTheme.status
+    Surface(
+        color = s.warnContainer,
+        shape = MaterialTheme.shapes.small,
+        modifier = Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 6.dp).testTag("site_check_banner"),
+    ) {
+        Row(Modifier.padding(start = 12.dp, end = 4.dp, top = 4.dp, bottom = 4.dp), verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                stringResource(R.string.feed_site_check, sourceName(source)),
+                style = MaterialTheme.typography.labelMedium,
+                color = s.warn,
+                modifier = Modifier.weight(1f),
+            )
+            TextButton(onClick = { openCheck(source) }) { Text(stringResource(R.string.check_title, sourceName(source))) }
+        }
     }
 }
 

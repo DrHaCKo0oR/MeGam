@@ -17,6 +17,7 @@ import app.shaqati.core.sources.OpenSooqSource
 import app.shaqati.core.sources.PriceText
 import app.shaqati.core.sources.PropertyFinderSource
 import app.shaqati.core.sources.WantedAd
+import app.shaqati.core.sources.WasaltSource
 import app.shaqati.core.util.Geo
 import app.shaqati.core.util.HttpResponse
 import kotlinx.serialization.json.Json
@@ -263,6 +264,64 @@ class SourceFixturesTest {
         assertTrue(BotCheck.blocked(resp(200, "<div class=\"h-captcha\" data-sitekey=\"x\"></div>")))
         assertFalse(BotCheck.blocked(resp(200, fixture("bayut-search.html"))))
         assertFalse(BotCheck.blocked(resp(200, "<html><title>Wasalt</title></html>")))
+    }
+
+    @Test
+    fun `wasalt list page data`() {
+        val page = assertNotNull(WasaltSource.parseSearch(fixture("wasalt-search.html")))
+        assertEquals(3380, page.total)
+        assertEquals(106, page.pageCount)
+        // One of the twelve entries is a project (several units), not an ad.
+        assertEquals(11, page.listings.size)
+        val a = page.listings.first { it.sourceId == "5847704" }
+        assertEquals("شقة ب 3 غرف", a.title)
+        assertEquals("حطين", a.district)
+        assertEquals("الرياض", a.city)
+        assertEquals(60_000.0, a.price)
+        assertEquals(RentPeriod.YEARLY, a.period)
+        assertEquals(3, a.bedrooms)
+        assertNull(a.bathrooms)
+        assertEquals(146.0, a.areaSqm)
+        assertEquals(6, a.buildingAgeYears)
+        assertEquals(Furnishing.UNKNOWN, a.furnishing)
+        assertEquals(24.76250014749476, a.location!!.lat, 1e-9)
+        assertEquals(LocationPrecision.APPROXIMATE, a.locationPrecision)
+        assertEquals(9, a.photos.size)
+        assertEquals(
+            "https://imagedelivery.net/1DNKFJPRaeUdy_j8F7HT3w/production/properties/5847704/images/555960e7-017e-45bd-8038-ecb74201ae82.jpg/width=1000,quality=70,format=auto",
+            a.photos.first(),
+        )
+        assertEquals("7200779583", a.licenseNumber)
+        assertEquals(java.time.Instant.parse("2026-02-09T19:14:52.484Z").toEpochMilli(), a.postedAt)
+        assertEquals(AqarSource.encode("https://wasalt.sa/property/rent/شقة-ب-3-غرف-5847704"), a.url)
+
+        val b = page.listings.first { it.sourceId == "5846872" }
+        assertEquals(Furnishing.UNFURNISHED, b.furnishing)
+        assertEquals(3, b.bathrooms)
+        assertEquals(0, b.buildingAgeYears)
+    }
+
+    @Test
+    fun `wasalt list urls count pages from zero`() {
+        val base = AqarSource.encode("https://wasalt.sa/شقق-للايجار-في-الرياض")
+        assertEquals("$base?max_price=50000", WasaltSource.searchUrl(1, 50_000.0))
+        assertEquals("$base?max_price=50000&page=2", WasaltSource.searchUrl(3, 50_000.0))
+    }
+
+    @Test
+    fun `wasalt ad page adds the description and exact pin`() {
+        val item = assertNotNull(WasaltSource.parseSearch(fixture("wasalt-search.html"))).listings.first()
+        val listing = item.copy(sourceId = "5946174")
+        val full = WasaltSource.mergeDetails(listing, fixture("wasalt-detail.html"))
+        assertTrue(full.description.contains("سعرها 45000"), full.description)
+        assertFalse(full.description.contains("<p"))
+        assertEquals(listOf(WasaltSource.photo("5946174", "1aeb9809-24fd-4809-bf60-aee04f88b843.webp")), full.photos)
+        assertEquals(3, full.bedrooms)
+        assertEquals(280.0, full.areaSqm)
+        assertEquals(4, full.buildingAgeYears)
+        assertEquals(LocationPrecision.EXACT, full.locationPrecision)
+        // Details of a different ad are ignored.
+        assertEquals(item, WasaltSource.mergeDetails(item, fixture("wasalt-detail.html")))
     }
 
     @Test

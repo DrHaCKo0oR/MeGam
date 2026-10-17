@@ -232,9 +232,15 @@
     <string name="set_sources">المواقع</string>
     <string name="source_status_ok">الإعلانات: %1$d · %2$s</string>
     <string name="source_status_failed">فشل آخر بحث: %1$s</string>
-    <string name="source_status_blocked">رفض الموقع الوصول في آخر مرة</string>
+    <string name="source_status_blocked">طلب الموقع التحقق في آخر مرة. افتحه مرة واحدة لإكماله.</string>
     <string name="source_status_never">لم يُبحث بعد</string>
-    <string name="sources_unsupported">بيوت ووصلت تمنعان التطبيقات من قراءة إعلاناتهما، لذلك لم تُضمّنا.</string>
+    <string name="sources_browser">يقرأ التطبيق بيوت ووصلت وبروبرتي فايندر في متصفح داخله، كأنك فتحتها بنفسك. إذا طلب أحدها التحقق فافتحه من هنا وأكمل التحقق.</string>
+    <string name="source_open">افتح الموقع</string>
+    <string name="check_title">افتح %1$s</string>
+    <string name="check_hint">إذا طلب الموقع التحقق فأكمله هنا. عندما تظهر شققه يستطيع تطبيق شقتي قراءتها.</string>
+    <string name="check_passed">تم فتح %1$s. يستطيع شقتي قراءته الآن.</string>
+    <string name="check_search">ابحث الآن</string>
+    <string name="feed_site_check">طلب %1$s التحقق، لذلك شققه غير ظاهرة. افتحه مرة واحدة لإكمال التحقق.</string>
     <string name="set_auto_refresh">البحث في الخلفية</string>
     <string name="auto_off">إيقاف</string>
     <string name="auto_hours">كل %1$d ساعات</string>
