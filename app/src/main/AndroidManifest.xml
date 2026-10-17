@@ -17,6 +17,12 @@
         </intent>
         <package android:name="com.whatsapp" />
         <package android:name="com.google.android.apps.maps" />
+        <!-- The Claude app, to hand it an apartment's photos (uses the person's Claude plan). -->
+        <package android:name="com.anthropic.claude" />
+        <intent>
+            <action android:name="android.intent.action.SEND_MULTIPLE" />
+            <data android:mimeType="image/*" />
+        </intent>
     </queries>
 
     <application
@@ -42,6 +48,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Photos handed to the Claude app (or another app) from the apartment page. -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.share"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/share_paths" />
+        </provider>
 
         <!-- Keeps the chosen app language on Android 12 and older. -->
         <service

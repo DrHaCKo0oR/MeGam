@@ -1,6 +1,7 @@
 package app.shaqati.ui
 
 import android.app.Application
+import android.content.Intent
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
 import androidx.lifecycle.AndroidViewModel
@@ -9,7 +10,9 @@ import app.shaqati.core.FeedMode
 import app.shaqati.core.ListingView
 import app.shaqati.core.Sort
 import app.shaqati.core.model.GeoPoint
+import app.shaqati.core.model.Listing
 import app.shaqati.core.store.HideReason
+import app.shaqati.data.AskClaude
 import app.shaqati.data.LearnedCorrections
 import app.shaqati.data.Settings
 import app.shaqati.graph
@@ -48,6 +51,7 @@ sealed interface AssessState {
 class AppViewModel(app: Application) : AndroidViewModel(app) {
     private val graph = app.graph
     val repo = graph.repository
+    private val askClaude = AskClaude(app, graph.okHttp)
 
     val settings: StateFlow<Settings?> = repo.settings
     val status = repo.status
@@ -78,6 +82,12 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }.flowOn(Dispatchers.Default)
 
     fun setSort(s: Sort) = _sort.update { s }
+
+    /** The apartment's photos and [question] for the Claude app; null when no photo loaded. */
+    suspend fun askClaudeIntent(listing: Listing, question: String, chooserTitle: String): Intent? {
+        val uris = askClaude.photos(listing)
+        return if (uris.isEmpty()) null else askClaude.intent(uris, question, chooserTitle)
+    }
 
     fun refresh() {
         graph.scope.launch { repo.refresh() }

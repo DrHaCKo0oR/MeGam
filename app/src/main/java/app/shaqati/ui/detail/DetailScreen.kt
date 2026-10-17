@@ -115,6 +115,7 @@ import app.shaqati.ui.components.verdictLabel
 import app.shaqati.ui.theme.AppTheme
 import coil3.compose.AsyncImage
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import java.util.Locale
 
 @Composable
@@ -384,6 +385,7 @@ private fun FinishSection(v: ListingView, s: Settings, vm: AppViewModel, state: 
             Text(state.message, style = MaterialTheme.typography.bodySmall, color = AppTheme.status.bad)
         }
     }
+    AskClaudeButton(v, vm)
     val text = v.resolved.text
     if (text.positive.isNotEmpty() || text.negative.isNotEmpty()) {
         Spacer(Modifier.height(12.dp))
@@ -395,6 +397,44 @@ private fun FinishSection(v: ListingView, s: Settings, vm: AppViewModel, state: 
             text.positive.forEach { Pill("✓ " + signalText(it.phrase), AppTheme.status.goodContainer, AppTheme.status.good) }
             text.negative.forEach { Pill("✕ " + signalText(it.phrase), AppTheme.status.badContainer, AppTheme.status.bad) }
         }
+    }
+}
+
+/** Sends the photos and a ready question to the Claude app, which runs on the person's Claude plan. */
+@Composable
+private fun AskClaudeButton(v: ListingView, vm: AppViewModel) {
+    if (v.listing.photos.isEmpty()) return
+    val ctx = LocalContext.current
+    val scope = rememberCoroutineScope()
+    var busy by remember { mutableStateOf(false) }
+    var failed by remember { mutableStateOf(false) }
+    val question = stringResource(R.string.ask_claude_prompt, v.listing.url)
+    val chooser = stringResource(R.string.ask_claude_chooser)
+    Spacer(Modifier.height(12.dp))
+    HorizontalDivider()
+    Spacer(Modifier.height(10.dp))
+    OutlinedButton(
+        enabled = !busy,
+        onClick = {
+            busy = true
+            failed = false
+            scope.launch {
+                val intent = vm.askClaudeIntent(v.listing, question, chooser)
+                busy = false
+                failed = intent == null || runCatching { ctx.startActivity(intent) }.isFailure
+            }
+        },
+        modifier = Modifier.testTag("ask_claude"),
+    ) {
+        if (busy) CircularProgressIndicator(Modifier.size(16.dp), strokeWidth = 2.dp)
+        else Icon(Icons.Outlined.AutoAwesome, null, Modifier.size(18.dp))
+        Spacer(Modifier.width(8.dp))
+        Text(stringResource(if (busy) R.string.ask_claude_preparing else R.string.ask_claude))
+    }
+    Spacer(Modifier.height(4.dp))
+    Text(stringResource(R.string.ask_claude_body), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+    if (failed) {
+        Text(stringResource(R.string.ask_claude_failed), style = MaterialTheme.typography.bodySmall, color = AppTheme.status.bad)
     }
 }
 
