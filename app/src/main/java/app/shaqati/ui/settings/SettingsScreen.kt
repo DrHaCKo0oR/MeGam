@@ -1,5 +1,6 @@
 package app.shaqati.ui.settings
 
+import android.content.Intent
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -46,12 +47,17 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalClipboardManager
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
+import androidx.core.net.toUri
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.shaqati.BuildConfig
 import app.shaqati.R
@@ -59,6 +65,7 @@ import app.shaqati.core.model.Source
 import app.shaqati.core.sources.Districts
 import app.shaqati.data.KeyVault
 import app.shaqati.data.Settings
+import app.shaqati.data.SubscriptionChecks
 import app.shaqati.ui.AppViewModel
 import app.shaqati.ui.components.clock
 import app.shaqati.ui.components.coordinates
@@ -111,6 +118,7 @@ fun SettingsScreen(vm: AppViewModel, openPicker: (String) -> Unit, openHidden: (
             item { CommuteGroup(vm, s, openPicker) }
             item { KeysGroup(vm) }
             item { AiGroup(vm, s) }
+            item { SubscriptionGroup(vm) }
             item {
                 Group(stringResource(R.string.set_sources)) {
                     Settings.SUPPORTED_SOURCES.forEach { src ->
@@ -364,6 +372,52 @@ private fun AiGroup(vm: AppViewModel, s: Settings) {
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
+    }
+}
+
+/** Photo checks by Claude Code on the owner's Claude subscription, run by the GitHub workflow. */
+@Composable
+private fun SubscriptionGroup(vm: AppViewModel) {
+    val state by vm.subscription.collectAsStateWithLifecycle()
+    val ctx = LocalContext.current
+    val clipboard = LocalClipboardManager.current
+    fun open(url: String) = runCatching { ctx.startActivity(Intent(Intent.ACTION_VIEW, url.toUri())) }
+    Group(stringResource(R.string.set_sub)) {
+        Text(
+            when {
+                state.count > 0 -> pluralStringResource(R.plurals.set_sub_count, state.count, state.count, timeAgo(state.updatedAt))
+                else -> stringResource(R.string.set_sub_none)
+            },
+            style = MaterialTheme.typography.bodyMedium,
+            modifier = Modifier.testTag("subscription_status"),
+        )
+        if (state.failed) {
+            Text(stringResource(R.string.set_sub_failed), style = MaterialTheme.typography.bodySmall, color = AppTheme.status.warn)
+        }
+        Spacer(Modifier.height(10.dp))
+        Text(stringResource(R.string.set_sub_steps), style = MaterialTheme.typography.labelLarge)
+        Spacer(Modifier.height(4.dp))
+        Text(stringResource(R.string.set_sub_step1), style = MaterialTheme.typography.bodySmall)
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Surface(shape = MaterialTheme.shapes.small, color = MaterialTheme.colorScheme.surfaceContainerHigh, modifier = Modifier.weight(1f)) {
+                Text(
+                    SubscriptionChecks.SETUP_COMMAND,
+                    style = MaterialTheme.typography.bodyMedium.copy(fontFamily = FontFamily.Monospace),
+                    modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp),
+                )
+            }
+            TextButton(onClick = { clipboard.setText(AnnotatedString(SubscriptionChecks.SETUP_COMMAND)) }) {
+                Text(stringResource(R.string.set_sub_copy))
+            }
+        }
+        Text(stringResource(R.string.set_sub_step2, SubscriptionChecks.SECRET_NAME), style = MaterialTheme.typography.bodySmall)
+        TextButton(onClick = { open(SubscriptionChecks.SECRETS_URL) }) { Text(stringResource(R.string.set_sub_open_secrets)) }
+        Text(stringResource(R.string.set_sub_step3), style = MaterialTheme.typography.bodySmall)
+        TextButton(onClick = { open(SubscriptionChecks.PULL_URL) }) { Text(stringResource(R.string.set_sub_open_pull)) }
+        Spacer(Modifier.height(4.dp))
+        OutlinedButton(onClick = { vm.syncSubscriptionChecks() }) { Text(stringResource(R.string.set_sub_sync)) }
+        Spacer(Modifier.height(6.dp))
+        Text(stringResource(R.string.set_sub_ask), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }
 

@@ -112,6 +112,10 @@ class Repository(
     private val browser: Http by lazy { WebViewHttp(context) }
     private val http = Http { req -> if (req.mode == FetchMode.BROWSER) browser.send(req) else direct.send(req) }
     private val images = AndroidImagePreparer(okHttp)
+    private val subscription = SubscriptionChecks(okHttp, context.getSharedPreferences("subscription", Context.MODE_PRIVATE))
+
+    /** Photo checks from the owner's Claude subscription (the photo-check workflow). */
+    val subscriptionState: StateFlow<SubscriptionChecks.State> = subscription.state
 
     private val _catalog = MutableStateFlow(engine.snapshot)
     val catalog: StateFlow<CatalogSnapshot> = _catalog.asStateFlow()
@@ -146,6 +150,7 @@ class Repository(
         scope.launch {
             settingsStore.flow.map { it.autoRefreshHours }.distinctUntilChanged().collect { scheduleRefresh(it) }
         }
+        scope.launch { runCatching { syncSubscriptionChecks() } }
         // Commute results depend on the work pin, schedule, calibration and the Google key.
         scope.launch {
             combine(settingsStore.flow, vault.version) { s, _ -> commuteSignature(s) }
@@ -236,6 +241,9 @@ class Repository(
         runCatching { ensureCalibration(s) }
         runCatching { updateCommutes(settingsStore.current()) }
         publish()
+
+        // Before any API-key analysis, so apartments the subscription already checked are skipped.
+        runCatching { importSubscriptionChecks() }
 
         if (s.ai.enabled && vault.has(KeyVault.ANTHROPIC)) {
             _status.update { it.copy(phase = SyncStatus.Phase.PHOTOS, progress = "") }
@@ -431,6 +439,19 @@ class Repository(
             }
         }
         return AiNote.SUBMITTED
+    }
+
+    /** Downloads the subscription photo checks and adds the new ones. Returns how many were added. */
+    suspend fun syncSubscriptionChecks(): Int = jobLock.withLock { importSubscriptionChecks() }
+
+    private suspend fun importSubscriptionChecks(): Int {
+        val results = subscription.fetch() ?: return 0
+        val added = engine.importAssessments(results.assessments)
+        if (added > 0) {
+            publish()
+            saveSoon()
+        }
+        return added
     }
 
     /** Collects finished batch results. Returns how many listings got an assessment. */

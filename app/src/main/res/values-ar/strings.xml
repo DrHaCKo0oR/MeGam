@@ -208,7 +208,7 @@
     <string name="set_google_key">مفتاح Google Maps Platform</string>
     <string name="set_google_key_body">لحساب الزحام وقت الذروة (Routes API) ولخريطة Google. يُحفظ مشفراً على جهازك فقط.</string>
     <string name="set_anthropic_key">مفتاح Anthropic API</string>
-    <string name="set_anthropic_key_body">للتحليل التلقائي للصور بنموذج Claude Sonnet. تسمح Anthropic باستخدام اشتراك Claude في تطبيقاتها فقط، لذلك يلزم مفتاح API؛ ويبقى اشتراكك متاحاً عبر «اسأل Claude» في صفحة كل شقة. يُحفظ مشفراً على جهازك فقط.</string>
+    <string name="set_anthropic_key_body">اختياري: تحليل الصور داخل التطبيق على حساب مفتاح Anthropic API. لاستخدام اشتراك Claude بدلاً منه، انظر «اشتراك Claude» في الأسفل. يُحفظ مشفراً على جهازك فقط.</string>
     <string name="key_set">تم حفظ المفتاح</string>
     <string name="key_missing">غير مضاف</string>
     <string name="key_check">فحص وحفظ</string>
@@ -222,6 +222,26 @@
     <string name="ask_claude_chooser">إرسال إلى Claude</string>
     <string name="ask_claude_prompt">هذه صور شقة للإيجار في الرياض (الإعلان: %1$s).\nقيّم التشطيب الداخلي من الصور فقط. أعطِ درجة من 0 إلى 10 لكل من: الأرضيات، السقف والإضاءة، الجدران والدهان، الأبواب والنوافذ، دورات المياه، المطبخ. وقل هل تبدو حديثة أو مجددة أو قديمة نسبياً أو قديمة، واذكر ما يبدو جديداً وما يحتاج إلى إصلاح.</string>
     <string name="set_ai">تحليل الصور</string>
+    <string name="set_sub">اشتراك Claude</string>
+    <string name="set_sub_none">غير مفعّل بعد. بعد تفعيله يفحص Claude Code صور الشقق المطابقة الجديدة على خطة Claude الخاصة بك كل 6 ساعات، وتظهر النتائج في التطبيق.</string>
+    <plurals name="set_sub_count">
+        <item quantity="zero">تم فحص %1$d شقة باشتراك Claude · آخر تحديث %2$s</item>
+        <item quantity="one">تم فحص شقة واحدة باشتراك Claude · آخر تحديث %2$s</item>
+        <item quantity="two">تم فحص شقتين باشتراك Claude · آخر تحديث %2$s</item>
+        <item quantity="few">تم فحص %1$d شقق باشتراك Claude · آخر تحديث %2$s</item>
+        <item quantity="many">تم فحص %1$d شقة باشتراك Claude · آخر تحديث %2$s</item>
+        <item quantity="other">تم فحص %1$d شقة باشتراك Claude · آخر تحديث %2$s</item>
+    </plurals>
+    <string name="set_sub_failed">تعذّر تنزيل نتائج الفحص؛ سيُعاد المحاولة في البحث القادم.</string>
+    <string name="set_sub_steps">فعّله مرة واحدة:</string>
+    <string name="set_sub_step1">1. على جهاز كمبيوتر فيه Claude Code، شغّل هذا الأمر وسجّل الدخول بحساب Claude. سيعرض رمزاً (token).</string>
+    <string name="set_sub_copy">نسخ</string>
+    <string name="set_sub_step2">2. في GitHub، أضف هذا الرمز كسرّ (secret) للمستودع باسم %1$s.</string>
+    <string name="set_sub_open_secrets">أضف السرّ في GitHub</string>
+    <string name="set_sub_step3">3. ادمج طلب الدمج (pull request) الخاص بالتطبيق: GitHub يشغّل الجدول كل 6 ساعات من الفرع الرئيسي.</string>
+    <string name="set_sub_open_pull">افتح طلب الدمج</string>
+    <string name="set_sub_sync">تحقق من نتائج جديدة</string>
+    <string name="set_sub_ask">لشقة واحدة، زر «اسأل Claude عن الصور» في صفحتها يفتح تطبيق Claude.</string>
     <string name="set_ai_enabled">تحليل صور الشقق المطابقة تلقائياً</string>
     <string name="set_ai_batch">وضع الدفعات: نصف السعر، والنتائج خلال ساعة تقريباً</string>
     <string name="set_ai_cap">الحد الشهري: %1$s$</string>

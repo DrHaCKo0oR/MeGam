@@ -6,6 +6,8 @@ on:
       - "probe/**"
       - "docs/**"
       - "qa/**"
+      - "photo-results/**"
+      - "photo-check/**"
       - "**.md"
   # Run by hand from the Actions tab: live checks and device QA, and a release when ticked.
   workflow_dispatch:
@@ -40,10 +42,10 @@ jobs:
           java-version: "21"
       - uses: gradle/actions/setup-gradle@v4
       - name: Unit tests
-        run: ./gradlew :core:test --continue
+        run: ./gradlew :core:test :tools:test --continue
       - name: Test summary
         if: always()
-        run: python3 .github/scripts/junit_summary.py core/build/test-results
+        run: python3 .github/scripts/junit_summary.py core/build/test-results tools/build/test-results
       - name: Publish dependency bundle for offline development
         if: contains(github.event.head_commit.message, '[deps]')
         env:

@@ -4,7 +4,8 @@ import sys
 import xml.etree.ElementTree as ET
 
 total = failed = skipped = 0
-for path in sorted(glob.glob(sys.argv[1] + "/**/*.xml", recursive=True)):
+paths = [p for d in sys.argv[1:] for p in glob.glob(d + "/**/*.xml", recursive=True)]
+for path in sorted(paths):
     root = ET.parse(path).getroot()
     for case in root.iter("testcase"):
         total += 1

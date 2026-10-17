@@ -14,6 +14,7 @@ dependencyResolutionManagement {
 rootProject.name = "Shaqati"
 
 include(":core")
+include(":tools")
 
 // The Android app needs an Android SDK; the core engine builds anywhere.
 val hasAndroidSdk = !System.getenv("ANDROID_HOME").isNullOrBlank() ||

@@ -55,6 +55,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     val settings: StateFlow<Settings?> = repo.settings
     val status = repo.status
+    val subscription = repo.subscriptionState
     val catalog = repo.catalog
 
     private val _sort = MutableStateFlow(Sort.BEST)
@@ -91,6 +92,10 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     fun refresh() {
         graph.scope.launch { repo.refresh() }
+    }
+
+    fun syncSubscriptionChecks() {
+        graph.scope.launch { runCatching { repo.syncSubscriptionChecks() } }
     }
 
     fun setSaved(id: String, saved: Boolean) = repo.setSaved(id, saved)

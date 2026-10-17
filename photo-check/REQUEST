@@ -1,0 +1,2 @@
+# Edit to run the photo check now (needs the CLAUDE_CODE_OAUTH_TOKEN secret).
+RUN=0

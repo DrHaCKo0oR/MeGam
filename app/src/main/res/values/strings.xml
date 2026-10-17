@@ -208,7 +208,7 @@
     <string name="set_google_key">Google Maps Platform key</string>
     <string name="set_google_key_body">For rush-hour traffic (Routes API) and the Google map. Stored encrypted on this phone only.</string>
     <string name="set_anthropic_key">Anthropic API key</string>
-    <string name="set_anthropic_key_body">For automatic photo analysis with Claude Sonnet. Anthropic only lets its own apps use a Claude subscription, so this needs an API key; your subscription still works through "Ask Claude" on each apartment. Stored encrypted on this phone only.</string>
+    <string name="set_anthropic_key_body">Optional: photo analysis inside the app, billed to an Anthropic API key. To use your Claude subscription instead, see "Claude subscription" below. Stored encrypted on this phone only.</string>
     <string name="key_set">Key saved</string>
     <string name="key_missing">Not set</string>
     <string name="key_check">Check &amp; save</string>
@@ -222,6 +222,22 @@
     <string name="ask_claude_chooser">Send to Claude</string>
     <string name="ask_claude_prompt">These are photos of an apartment for rent in Riyadh (ad: %1$s).\nJudge the interior finish from the photos only. Rate from 0 to 10: floors, ceiling and lighting, walls and paint, doors and windows, bathrooms, kitchen. Say whether it looks modern, renovated, dated or old, and list what looks new and what needs work.</string>
     <string name="set_ai">Photo analysis</string>
+    <string name="set_sub">Claude subscription</string>
+    <string name="set_sub_none">Not set up yet. Once it is, Claude Code checks the photos of new matching apartments on your own Claude plan every 6 hours, and the verdicts appear in the app.</string>
+    <plurals name="set_sub_count">
+        <item quantity="one">%1$d apartment checked with your Claude subscription · updated %2$s</item>
+        <item quantity="other">%1$d apartments checked with your Claude subscription · updated %2$s</item>
+    </plurals>
+    <string name="set_sub_failed">Could not download the photo checks; the next search tries again.</string>
+    <string name="set_sub_steps">Turn it on once:</string>
+    <string name="set_sub_step1">1. On a computer with Claude Code, run this command and sign in with your Claude account. It prints a token.</string>
+    <string name="set_sub_copy">Copy</string>
+    <string name="set_sub_step2">2. In GitHub, add that token as a repository secret named %1$s.</string>
+    <string name="set_sub_open_secrets">Add the secret on GitHub</string>
+    <string name="set_sub_step3">3. Merge the app\'s pull request: GitHub runs the 6-hour schedule from the main branch.</string>
+    <string name="set_sub_open_pull">Open the pull request</string>
+    <string name="set_sub_sync">Check for new results</string>
+    <string name="set_sub_ask">For a single apartment, "Ask Claude about the photos" on its page opens the Claude app.</string>
     <string name="set_ai_enabled">Analyse photos of matching apartments automatically</string>
     <string name="set_ai_batch">Batch mode: half price, results within about an hour</string>
     <string name="set_ai_cap">Monthly limit: $%1$s</string>

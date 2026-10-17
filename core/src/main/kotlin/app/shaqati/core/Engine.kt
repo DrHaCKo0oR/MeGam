@@ -371,6 +371,17 @@ class Engine(
         snapshot = s.copy(ai = s.ai + (a.listingId to a), spend = spend.takeLast(24))
     }
 
+    /**
+     * Adds assessments made elsewhere (the photo check on the owner's Claude subscription) for
+     * listings in the catalog; a newer assessment already here wins. Returns how many were added.
+     */
+    suspend fun importAssessments(list: List<AiAssessment>): Int = mutex.withLock {
+        val s = snapshot
+        val fresh = list.filter { a -> a.listingId in s.tracked && (s.ai[a.listingId]?.assessedAt ?: Long.MIN_VALUE) < a.assessedAt }
+        if (fresh.isNotEmpty()) snapshot = s.copy(ai = s.ai + fresh.associateBy { it.listingId })
+        fresh.size
+    }
+
     fun spentThisMonth(): Double = snapshot.spend.firstOrNull { it.month == monthKey(clock()) }?.usd ?: 0.0
 
     suspend fun addBatch(b: PendingBatch) = mutex.withLock { snapshot = snapshot.copy(batches = snapshot.batches + b) }

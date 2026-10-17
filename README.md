@@ -7,9 +7,12 @@ apartments from old ones.
 
 ## What it does
 
-- **Searches five sites**: Aqar (عقار), Haraj (حراج), Property Finder, Deal (ديل) and
-  OpenSooq (السوق المفتوح). The same apartment advertised on several sites is shown once,
-  matched by REGA licence number or phone, size and location.
+- **Searches seven sites**: Aqar (عقار), Bayut (بيوت), Wasalt (وصلت), Haraj (حراج),
+  Property Finder, Deal (ديل) and OpenSooq (السوق المفتوح). The same apartment advertised on
+  several sites is shown once, matched by REGA licence number or phone, size and location.
+- **Bayut, Wasalt and Property Finder are read in a browser inside the app**, page by page,
+  like your own browsing. If a site asks for a check (a captcha or "checking your browser"),
+  the feed says so; tap **Open** and complete the check once, and the next search reads it.
 - **Applies the requirements** (all editable in Settings): rent up to 50,000 SAR a year
   (monthly rents ×12), one bedroom plus at least one extra room, a living room, two
   bathrooms, unfurnished or semi-furnished, families allowed, morning commute up to 40 min.
@@ -26,8 +29,11 @@ apartments from old ones.
   in the morning, 80 in the evening). Without a Google key it uses a distance estimate
   tuned to Riyadh rush hour.
 - **Finish check**:
-  - Claude Sonnet rates floors, ceiling and lighting, walls and paint, doors and windows,
-    bathrooms and kitchen from up to 8 photos.
+  - Claude rates floors, ceiling and lighting, walls and paint, doors and windows,
+    bathrooms and kitchen from up to 8 photos. It runs on your **Claude subscription**
+    (see below) or on an Anthropic API key.
+  - **Ask Claude about the photos** on any apartment opens the Claude app with its photos
+    and a ready question, on your subscription.
   - It gives a verdict (modern / renovated / dated / old) with reasons in Arabic and
     English.
   - The ad text adds signals too: "أول ساكن", "مجددة بالكامل", "سبوت لايت", "تحتاج ترميم", …
@@ -60,12 +66,38 @@ apartments from old ones.
         `https://appassets.androidplatform.net/*`.
      5. Each apartment location costs 2 route elements (morning and evening), and results
         are cached per location. Normal use stays within Google's monthly free usage.
-   - **Anthropic API key**, for photo analysis: create one at console.anthropic.com.
-     Apps cannot use a Claude.ai subscription, so an API key is needed.
+   - **Anthropic API key** (optional), for photo analysis inside the app, billed to the key:
+     create one at console.anthropic.com. To use your Claude subscription instead, see
+     the next section.
 3. Tap **Start searching**. The first search takes a minute or two; pull down on the list
    to search again.
 
-## Photo analysis cost control
+## Photo checks with your Claude subscription
+
+Anthropic lets only its own apps sign in with a Claude subscription, so Shaqati itself never
+asks for your Claude login. Instead, the official **Claude Code** runs the photo checks on your
+plan, in this repository's GitHub Actions (`.github/workflows/photo-check.yml`):
+
+- Every 6 hours it searches the sites a server can reach (Aqar, Haraj, Property Finder, Deal,
+  OpenSooq), picks up to 10 new apartments that match, and has Claude Code (Sonnet) rate their
+  photos with the same checklist as the app.
+- The verdicts go to `photo-results/assessments.json`; the app downloads them on every search
+  and shows them on each apartment. Photos and the token are never committed.
+
+Turn it on once:
+
+1. On a computer with Claude Code, run `claude setup-token` and sign in with your Claude
+   account. It prints a token that is valid for a year.
+2. In GitHub, add it as a repository secret named `CLAUDE_CODE_OAUTH_TOKEN`
+   (Settings → Secrets and variables → Actions → New repository secret).
+3. Merge the app's pull request: GitHub runs scheduled workflows from the default branch only.
+
+Optional: the secret `SHAQATI_WORK` (`lat,lng` of work) and the variables `SHAQATI_MAX_RENT`
+and `PHOTO_CHECKS_PER_RUN`. Usage counts against your plan's limits; when a limit is reached
+the run stops and the next one continues. Bayut and Wasalt apartments are rated when the same
+apartment is also on another site, or with **Ask Claude** on the apartment's page.
+
+## Photo analysis cost control (API key)
 
 - Only apartments in **Matches** with at least 3 photos are analysed, each one only once.
 - Photos are shrunk to about 640 px, and at most 6 are sent (up to 8 in Settings).
@@ -80,7 +112,6 @@ apartments.
 
 ## What is not included, and why
 
-- **Bayut** and **Wasalt** block automated access (bot checks), so the app cannot read them.
 - **Kite** is an aggregator whose terms do not allow this use from a mobile app.
 - **Deal** only shows guests the newest pages of each search. The app reads those gently on
   every refresh, so new Deal ads are picked up over time.
@@ -89,6 +120,8 @@ apartments.
 
 - Everything runs on the phone; there is no server.
 - API keys are encrypted with the Android Keystore and only sent to Google or Anthropic.
+- The subscription photo check runs in your own GitHub repository. Only verdicts (ad id,
+  ratings, notes and photo links) are published there; the app downloads that file.
 - Without a Google key, the map loads its tiles from OpenStreetMap.
 - Searches, saved apartments and notes stay in the app's private storage.
 
@@ -98,8 +131,10 @@ apartments.
   - Site adapters, Arabic text signals, filters, duplicate matching and ranking.
   - Google Routes client and the Claude client (official `anthropic-java` SDK).
   - Unit tests run against responses recorded from each site.
-- **`app/`**: Jetpack Compose UI, WorkManager background search, encrypted settings and the
-  map (WebView).
+- **`app/`**: Jetpack Compose UI, WorkManager background search, encrypted settings, the
+  map (WebView) and the in-app browser for sites with bot checks.
+- **`tools/`**: the photo check's command line (`queue` and `collect`), run by
+  `photo-check.yml` around `claude -p`.
 - **CI** (`.github/workflows/ci.yml`):
   - Core tests, the Android build, unit tests and lint.
   - On demand, with a tag in the commit message:
