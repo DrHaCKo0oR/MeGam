@@ -35,7 +35,8 @@ renovated/modern finish, and measures the real rush-hour drive to work.
 ## Architecture
 
 ```
-app/   Android (Kotlin, Jetpack Compose, WorkManager, DataStore, Keystore-encrypted keys)
+app/   Android (Kotlin, Jetpack Compose, WorkManager, DataStore, Keystore-encrypted keys),
+       plus a hidden in-app browser for sites with bot checks and a screen to pass a check
 core/  Pure Kotlin engine shared by the app and tests
        ├─ sources/   one adapter per site → common Listing model
        ├─ text/      Arabic normalization + renovation/furnishing/family signals
@@ -44,8 +45,11 @@ core/  Pure Kotlin engine shared by the app and tests
        ├─ dedupe/    same apartment across sites
        ├─ commute/   Google Routes (traffic) + approximate fallback + calibration
        └─ ai/        Sonnet photo assessment, batching, budget
+tools/ command line for the optional GitHub photo check (Claude Code on the subscription)
 probe/ GitHub Actions probe of the live sites (the build sandbox cannot reach them)
 ```
+
+Everything that was built, tested and fixed is listed in [`DETAILS.md`](DETAILS.md).
 
 ### Fetching
 Each site is read the way its own website reads it:
