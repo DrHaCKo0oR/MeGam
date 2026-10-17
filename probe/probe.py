@@ -657,6 +657,21 @@ ARCHIVE_TARGETS = {
 }
 
 
+SECRET_PATTERNS = [
+    (re.compile(r"\b[ps]k\.eyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+"), "MAPBOX_TOKEN_REDACTED"),
+    (re.compile(r"eyJ[A-Za-z0-9_\-]{10,}\.[A-Za-z0-9_\-]{10,}\.[A-Za-z0-9_\-]{10,}"), "JWT_REDACTED"),
+    (re.compile(r"AIza[0-9A-Za-z_\-]{35}"), "GOOGLE_KEY_REDACTED"),
+    (re.compile(r'(?i)("(?:api_?key|search_?key|secret|token|access_?token|algolia_?key)"\s*:\s*")[^"]{12,}(")'), r"\1REDACTED\2"),
+]
+
+
+def redact_secrets(text: str) -> str:
+    """Keys and tokens that sites embed in their pages are not ours to publish."""
+    for rx, repl in SECRET_PATTERNS:
+        text = rx.sub(repl, text)
+    return text
+
+
 def archive_step():
     """Saves archived copies (Internet Archive) of Bayut and Wasalt pages.
 
@@ -698,7 +713,7 @@ def archive_step():
                 entry["tried"].append(info)
                 if r.ok and len(html) > 20000 and "Security check" not in html and "challenge-platform" not in html:
                     saved += 1
-                    write(OUT / "archive" / f"{name}-{saved}.html", html)
+                    write(OUT / "archive" / f"{name}-{saved}.html", redact_secrets(html))
             except Exception as e:  # noqa: BLE001
                 entry["tried"].append({"ts": ts, "url": original, "error": repr(e)})
             time.sleep(3)
