@@ -5,6 +5,8 @@ shot en-02-feed
 shot en-03-to-check
 shot en-04-close
 shot en-05-all
+shot en-05b-detail-bayut
+shot en-05b-detail-wasalt
 shot en-06-saved
 shot en-07-detail
 shot en-08-detail-finish
@@ -20,6 +22,7 @@ map pin card=true
 shot en-10b-map-pin
 shot en-11-settings
 shot en-12-settings-ai
+shot en-12b-settings-subscription
 picker ready=true
 shot en-13-work-picker
 js: 915
@@ -44,6 +47,7 @@ map pin card=true
 shot ar-10b-map-pin
 shot ar-11-settings
 shot ar-12-settings-ai
+shot ar-12b-settings-subscription
 picker ready=true
 shot ar-13-work-picker
 js: 915
@@ -61,15 +65,14 @@ js: "Security check | Bayut"
 site check bayut passed=false title="Security check | Bayut"
 shot zz-site-check-bayut
 shot live-00-searching
-live error=null in 101s ads={aqar=718, haraj=126, pf=69, deal=61, opensooq=3} details=19 buckets={UNCONFIRMED=17, MATCHES=101, ALL=624, NEAR_MISSES=217}
+live error=null in 108s ads={aqar=718, haraj=127, pf=69, deal=61, opensooq=3} details=19 buckets={UNCONFIRMED=17, ALL=626, NEAR_MISSES=217, MATCHES=100}
 source aqar: ok=true found=718 pages=11 blocked=false 
-source bayut: ok=false found=0 pages=2 blocked=false no listings data
+source bayut: ok=false found=0 pages=1 blocked=true bot check
 source wasalt: ok=false found=0 pages=1 blocked=true bot check
-source haraj: ok=true found=126 pages=28 blocked=false 
+source haraj: ok=true found=127 pages=28 blocked=false 
 source pf: ok=true found=69 pages=5 blocked=false 
 source deal: ok=true found=61 pages=18 blocked=false 
 source opensooq: ok=true found=3 pages=1 blocked=false 
-match 77 aqar:6891322 25000.0 am=6 المصيف photos=1
 match 73 aqar:6920843 45000.0 am=9 المصيف photos=11
 match 72 aqar:6797817 50000.0 am=15 الوادي photos=8
 match 70 deal:6a527d19896877027ec3ae5e 40000.0 am=16 النفل photos=1
@@ -79,12 +82,13 @@ match 66 aqar:6900371 45000.0 am=20 الوادي photos=17
 match 65 aqar:6798738 43000.0 am=37 العقيق photos=6
 match 64 aqar:6851693 50000.0 am=17 الوادي photos=13
 match 64 aqar:6918141 43300.0 am=12 المصيف photos=8
+match 64 aqar:6852748 47000.0 am=38 الصحافة photos=7
 shot live-01-feed
 shot live-02-detail
-live site check wasalt passed=false
-shot live-02b-site-check-wasalt
+live site check bayut passed=false
+shot live-02b-site-check-bayut
 live map ready=true
 shot live-03-map
-js: "{\"vw\":412,\"vh\":759,\"dpr\":2.625,\"mw\":412,\"mh\":759,\"bg\":\"rgb(221, 221, 221)\",\"pos\":\"relative\",\"sheets\":2,\"tiles\":12,\"loaded\":12,\"pins\":118,\"work\":1,\"provider\":\"leaflet\",\"vis\":\"visible\"}"
+js: "{\"vw\":412,\"vh\":759,\"dpr\":2.625,\"mw\":412,\"mh\":759,\"bg\":\"rgb(221, 221, 221)\",\"pos\":\"relative\",\"sheets\":2,\"tiles\":12,\"loaded\":12,\"pins\":117,\"work\":1,\"provider\":\"leaflet\",\"vis\":\"visible\"}"
 js: 759
 webShot live-03c-map-content

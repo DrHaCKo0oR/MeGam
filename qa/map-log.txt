@@ -1,60 +1,63 @@
 --------- beginning of main
-10-17 07:55:58.928 W/chromium( 1340): [1017/075558.927850:WARNING:dns_config_service_android.cc(81)] Failed to read DnsConfig.
-10-17 07:55:59.669 W/chromium( 1340): [1017/075559.669794:WARNING:dns_config_service_android.cc(81)] Failed to read DnsConfig.
-10-17 07:56:24.731 W/chromium( 1504): [1017/075624.729897:WARNING:url_request_context_config.cc(716)] Unrecognized Cronet experimental option "enable_telemetry" with params "false
-10-17 07:56:24.731 W/chromium( 1504): 
-10-17 07:56:37.359 W/chromium( 1504): [1017/075637.359426:WARNING:url_request_context_config.cc(716)] Unrecognized Cronet experimental option "enable_telemetry" with params "false
-10-17 07:56:37.359 W/chromium( 1504): 
-10-17 07:56:38.983 I/chromium( 1504): [1017/075638.977163:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
-10-17 07:56:38.983 I/chromium( 1504): [1017/075638.983864:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
-10-17 07:57:13.600 I/chromium( 2573): [1017/075713.593749:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
-10-17 07:57:13.600 I/chromium( 2573): [1017/075713.600513:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
-10-17 07:57:13.969 W/chromium( 4269): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
-10-17 07:57:13.972 W/chromium( 4269): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
-10-17 07:57:14.857 I/ShaqatiMap( 2573): ready {"provider":"leaflet"}
-10-17 07:57:14.862 I/ShaqatiMap( 2573): setData 1 pins
-10-17 07:57:14.867 I/ShaqatiMap( 2573): initMap -> "leaflet"
-10-17 07:57:14.902 I/ShaqatiMap( 2573): LOG map shows 1 pins on leaflet (map.html:175)
-10-17 07:57:15.511 I/ShaqatiMap( 2573): page loaded
-10-17 07:57:15.826 I/ShaqatiMap( 2573): initMap -> "started"
-10-17 07:57:23.525 E/chromium( 2573): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4269) crash detected (code -1).
-10-17 07:57:28.327 W/chromium( 4372): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
-10-17 07:57:28.329 W/chromium( 4372): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
-10-17 07:57:28.463 I/ShaqatiMap( 2573): ready {"provider":"leaflet"}
-10-17 07:57:28.469 I/ShaqatiMap( 2573): initMap -> "leaflet"
-10-17 07:57:28.868 E/chromium( 2573): [ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.492 s for first_image_paint 0.48 s
-10-17 07:57:28.869 E/chromium( 2573): [ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.492 s for first_image_paint 0.48 s
-10-17 07:57:29.177 E/chromium( 2573): [ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.492 s for first_image_paint 0.48 s
-10-17 07:57:29.185 E/chromium( 2573): [ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.492 s for first_image_paint 0.48 s
-10-17 07:57:29.304 I/ShaqatiMap( 2573): page loaded
-10-17 07:57:29.449 E/chromium( 2573): [ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.492 s for first_image_paint 0.48 s
-10-17 07:57:29.618 I/ShaqatiMap( 2573): initMap -> "started"
-10-17 07:57:29.732 E/chromium( 2573): [ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.492 s for first_image_paint 0.48 s
-10-17 07:57:34.598 E/chromium( 2573): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4372) crash detected (code -1).
-10-17 07:58:02.308 W/chromium( 4476): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
-10-17 07:58:02.308 W/chromium( 4476): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
-10-17 07:58:02.509 I/ShaqatiMap( 2573): page loaded
-10-17 07:58:02.523 I/ShaqatiMap( 2573): ready {"provider":"leaflet"}
-10-17 07:58:02.524 I/ShaqatiMap( 2573): setData 1 pins
-10-17 07:58:02.530 I/ShaqatiMap( 2573): initMap -> "leaflet"
-10-17 07:58:02.530 I/ShaqatiMap( 2573): initMap -> "started"
-10-17 07:58:02.541 I/ShaqatiMap( 2573): LOG map shows 1 pins on leaflet (map.html:175)
-10-17 07:58:11.172 E/chromium( 2573): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4476) crash detected (code -1).
-10-17 07:58:15.986 W/chromium( 4513): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
-10-17 07:58:15.986 W/chromium( 4513): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
-10-17 07:58:16.249 I/ShaqatiMap( 2573): ready {"provider":"leaflet"}
-10-17 07:58:16.253 I/ShaqatiMap( 2573): initMap -> "leaflet"
-10-17 07:58:16.302 I/ShaqatiMap( 2573): page loaded
-10-17 07:58:16.309 I/ShaqatiMap( 2573): initMap -> "started"
-10-17 07:58:22.361 E/chromium( 2573): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4513) crash detected (code -1).
-10-17 07:58:25.558 W/chromium( 4555): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
-10-17 07:58:25.558 W/chromium( 4555): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
-10-17 07:58:34.889 I/chromium( 2573): [INFO:CONSOLE(175)] "map shows 1 pins on leaflet", source: https://appassets.androidplatform.net/assets/map/map.html (175)
-10-17 07:58:46.798 E/chromium( 2573): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4555) crash detected (code -1).
-10-17 07:58:55.272 W/chromium( 4623): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
-10-17 07:58:55.279 W/chromium( 4623): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
-10-17 07:58:56.098 I/chromium( 2573): [INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.bayut.sa/en/to-rent/apartments/riyadh/?rent_frequency=yearly&price_max=50000&sort=date_desc (0)
-10-17 07:58:57.960 I/chromium( 2573): [INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.bayut.sa/en/to-rent/apartments/riyadh/?rent_frequency=yearly&price_max=50000&sort=date_desc (0)
-10-17 07:58:59.557 I/chromium( 2573): [INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.bayut.sa/en/to-rent/apartments/riyadh/?rent_frequency=yearly&price_max=50000&sort=date_desc (0)
-10-17 07:59:01.417 I/chromium( 2573): [INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.bayut.sa/en/to-rent/apartments/riyadh/?rent_frequency=yearly&price_max=50000&sort=date_desc (0)
-10-17 07:59:18.128 E/chromium( 2573): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4623) crash detected (code -1).
+10-17 08:19:58.620 W/chromium( 1316): [1017/081958.610185:WARNING:dns_config_service_android.cc(81)] Failed to read DnsConfig.
+10-17 08:20:03.166 W/chromium( 1175): [1017/082003.166398:WARNING:dns_config_service_android.cc(81)] Failed to read DnsConfig.
+10-17 08:20:15.481 W/chromium( 1596): [1017/082015.481161:WARNING:url_request_context_config.cc(716)] Unrecognized Cronet experimental option "enable_telemetry" with params "false
+10-17 08:20:15.481 W/chromium( 1596): 
+10-17 08:20:50.686 W/chromium( 1596): [1017/082050.685848:WARNING:url_request_context_config.cc(716)] Unrecognized Cronet experimental option "enable_telemetry" with params "false
+10-17 08:20:50.686 W/chromium( 1596): 
+10-17 08:21:47.137 I/chromium( 2407): [INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
+10-17 08:21:47.138 I/chromium( 2407): [INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
+10-17 08:21:47.527 W/chromium( 4384): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+10-17 08:21:47.529 W/chromium( 4384): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+10-17 08:21:48.262 I/ShaqatiMap( 2407): ready {"provider":"leaflet"}
+10-17 08:21:48.271 I/ShaqatiMap( 2407): setData 1 pins
+10-17 08:21:48.275 I/ShaqatiMap( 2407): initMap -> "leaflet"
+10-17 08:21:48.276 I/ShaqatiMap( 2407): LOG map shows 1 pins on leaflet (map.html:175)
+10-17 08:21:48.873 I/ShaqatiMap( 2407): page loaded
+10-17 08:21:49.180 I/ShaqatiMap( 2407): initMap -> "started"
+10-17 08:21:56.456 E/chromium( 2407): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4384) crash detected (code -1).
+10-17 08:22:03.509 W/chromium( 4492): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+10-17 08:22:03.512 W/chromium( 4492): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+10-17 08:22:03.648 I/ShaqatiMap( 2407): ready {"provider":"leaflet"}
+10-17 08:22:03.651 I/ShaqatiMap( 2407): initMap -> "leaflet"
+10-17 08:22:03.916 E/chromium( 2407): [ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.52 s for first_image_paint 0.51 s
+10-17 08:22:03.916 E/chromium( 2407): [ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.52 s for first_image_paint 0.51 s
+10-17 08:22:04.080 E/chromium( 2407): [ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.52 s for first_image_paint 0.51 s
+10-17 08:22:04.080 I/ShaqatiMap( 2407): page loaded
+10-17 08:22:04.265 E/chromium( 2407): [ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.52 s for first_image_paint 0.51 s
+10-17 08:22:04.396 I/ShaqatiMap( 2407): initMap -> "started"
+10-17 08:22:04.665 E/chromium( 2407): [ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.52 s for first_image_paint 0.51 s
+10-17 08:22:09.659 E/chromium( 2407): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4492) crash detected (code -1).
+10-17 08:22:13.175 I/chromium( 1596): [1017/082213.175334:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
+10-17 08:22:13.176 I/chromium( 1596): [1017/082213.176394:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
+10-17 08:22:13.674 E/chromium( 1596): [ERROR:simple_file_enumerator.cc(21)] opendir /data/user/0/com.google.android.googlequicksearchbox/cache/WebView/Profile 1/HTTP Cache/Code Cache/js: No such file or directory (2)
+10-17 08:22:13.674 E/chromium( 1596): [ERROR:simple_index_file.cc(614)] Could not reconstruct index from disk
+10-17 08:22:13.748 E/chromium( 1596): [ERROR:simple_file_enumerator.cc(21)] opendir /data/user/0/com.google.android.googlequicksearchbox/cache/WebView/Profile 1/HTTP Cache/Code Cache/wasm: No such file or directory (2)
+10-17 08:22:13.748 E/chromium( 1596): [ERROR:simple_index_file.cc(614)] Could not reconstruct index from disk
+10-17 08:22:37.751 W/chromium( 4668): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+10-17 08:22:37.757 W/chromium( 4668): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+10-17 08:22:38.167 I/ShaqatiMap( 2407): ready {"provider":"leaflet"}
+10-17 08:22:38.171 I/ShaqatiMap( 2407): initMap -> "leaflet"
+10-17 08:22:38.175 I/ShaqatiMap( 2407): setData 1 pins
+10-17 08:22:38.178 I/ShaqatiMap( 2407): LOG map shows 1 pins on leaflet (map.html:175)
+10-17 08:22:38.341 I/ShaqatiMap( 2407): page loaded
+10-17 08:22:38.352 I/ShaqatiMap( 2407): initMap -> "started"
+10-17 08:22:46.335 E/chromium( 2407): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4668) crash detected (code -1).
+10-17 08:22:53.402 W/chromium( 4699): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+10-17 08:22:53.407 W/chromium( 4699): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+10-17 08:22:53.599 I/ShaqatiMap( 2407): ready {"provider":"leaflet"}
+10-17 08:22:53.617 I/ShaqatiMap( 2407): initMap -> "leaflet"
+10-17 08:22:53.694 I/ShaqatiMap( 2407): page loaded
+10-17 08:22:53.701 I/ShaqatiMap( 2407): initMap -> "started"
+10-17 08:22:59.629 E/chromium( 2407): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4699) crash detected (code -1).
+10-17 08:23:03.624 W/chromium( 4739): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+10-17 08:23:03.624 W/chromium( 4739): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+10-17 08:23:13.711 I/chromium( 2407): [INFO:CONSOLE(175)] "map shows 1 pins on leaflet", source: https://appassets.androidplatform.net/assets/map/map.html (175)
+10-17 08:23:25.381 E/chromium( 2407): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4739) crash detected (code -1).
+10-17 08:23:33.815 W/chromium( 4805): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+10-17 08:23:33.819 W/chromium( 4805): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+10-17 08:23:36.887 I/chromium( 2407): [INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.bayut.sa/en/to-rent/apartments/riyadh/?rent_frequency=yearly&price_max=50000&sort=date_desc (0)
+10-17 08:23:38.986 I/chromium( 2407): [INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.bayut.sa/en/to-rent/apartments/riyadh/?rent_frequency=yearly&price_max=50000&sort=date_desc (0)
+10-17 08:23:38.986 I/chromium( 2407): [INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.bayut.sa/en/to-rent/apartments/riyadh/?rent_frequency=yearly&price_max=50000&sort=date_desc (0)
+10-17 08:23:41.511 I/chromium( 2407): [INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.bayut.sa/en/to-rent/apartments/riyadh/?rent_frequency=yearly&price_max=50000&sort=date_desc (0)
+10-17 08:23:56.633 E/chromium( 2407): [ERROR:aw_browser_terminator.cc(154)] Renderer process (4805) crash detected (code -1).
