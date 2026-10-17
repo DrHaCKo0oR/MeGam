@@ -1,0 +1,48 @@
+{
+ "params": {
+  "rent_frequency": {
+   "n": 147,
+   "examples": [
+    "https://www.bayut.sa/en/to-rent/apartments/abu-arish/al-nahdah/?rent_frequency=yearly",
+    "https://www.bayut.sa/en/to-rent/apartments/abu-arish/al-wurud/?rent_frequency=yearly",
+    "https://www.bayut.sa/en/to-rent/apartments/al-ghat/?rent_frequency=yearly"
+   ]
+  },
+  "furnishing_status": {
+   "n": 15,
+   "examples": [
+    "https://www.bayut.sa/en/to-rent/apartments/al-khobar/al-hamra/?furnishing_status=furnished",
+    "https://www.bayut.sa/en/to-rent/apartments/al-khobar/al-rakah-al-janubiyah/?furnishing_status=furnished",
+    "https://www.bayut.sa/en/to-rent/apartments/al-khobar/al-sheraa/?furnishing_status=furnished"
+   ]
+  },
+  "categories": {
+   "n": 3,
+   "examples": [
+    "https://www.bayut.sa/en/to-rent/offices/jeddah/page-2/?categories=commercial-buildings&sort=price_desc",
+    "https://www.bayut.sa/en/to-rent/offices/jeddah/page-3/?categories=commercial-buildings&sort=price_desc",
+    "https://www.bayut.sa/en/to-rent/offices/jeddah/?categories=commercial-buildings&sort=price_desc"
+   ]
+  },
+  "sort": {
+   "n": 3,
+   "examples": [
+    "https://www.bayut.sa/en/to-rent/offices/jeddah/page-2/?categories=commercial-buildings&sort=price_desc",
+    "https://www.bayut.sa/en/to-rent/offices/jeddah/page-3/?categories=commercial-buildings&sort=price_desc",
+    "https://www.bayut.sa/en/to-rent/offices/jeddah/?categories=commercial-buildings&sort=price_desc"
+   ]
+  }
+ },
+ "pages": [
+  "https://www.bayut.sa/en/to-rent/1-bedroom-apartments/riyadh/east-riyadh/al-khaleej/page-2/",
+  "https://www.bayut.sa/en/to-rent/1-bedroom-apartments/riyadh/east-riyadh/al-khaleej/page-3/",
+  "https://www.bayut.sa/en/to-rent/1-bedroom-apartments/riyadh/east-riyadh/al-khaleej/page-5/",
+  "https://www.bayut.sa/en/to-rent/1-bedroom-apartments/riyadh/north-riyadh/al-yasmin/page-2/",
+  "https://www.bayut.sa/en/to-rent/1-bedroom-apartments/riyadh/north-riyadh/al-yasmin/page-3/",
+  "https://www.bayut.sa/en/to-rent/1-bedroom-apartments/riyadh/north-riyadh/al-yasmin/page-4/",
+  "https://www.bayut.sa/en/to-rent/2-bedroom-apartments/jeddah/north-jeddah/al-rawdah/page-3/",
+  "https://www.bayut.sa/en/to-rent/2-bedroom-apartments/jeddah/north-jeddah/al-rawdah/page-5/",
+  "https://www.bayut.sa/en/to-rent/3-bedroom-villas/riyadh/north-riyadh/al-arid/page-2/",
+  "https://www.bayut.sa/en/to-rent/apartments/al-ahsa/page-2/"
+ ]
+}

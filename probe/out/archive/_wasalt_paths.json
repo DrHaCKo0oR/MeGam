@@ -1,0 +1,1352 @@
+{
+ "/en/property/sale": {
+  "n": 7327,
+  "examples": [
+   "https://wasalt.sa/en/property/sale/2-bedrooms-floor-sale-5758232",
+   "https://wasalt.sa/en/property/sale/2-bedrooms-floor-sale-5760680",
+   "https://wasalt.sa/en/property/sale/3-bedrooms-floor-sale-5744454",
+   "https://wasalt.sa/en/property/sale/4-bedrooms-apartment-sale-5746048"
+  ]
+ },
+ "/en/property/rent": {
+  "n": 1201,
+  "examples": [
+   "https://wasalt.sa/en/property/rent/2-bedrooms-apartment-rent-5752314",
+   "https://wasalt.sa/en/property/rent/2-bedrooms-apartment-rent-5763832",
+   "https://wasalt.sa/en/property/rent/3-bedrooms-apartment-rent-192008",
+   "https://wasalt.sa/en/property/rent/3-bedrooms-apartment-rent-199297"
+  ]
+ },
+ "/en/dailyrental/apartment-for-booking-N": {
+  "n": 855,
+  "examples": [
+   "https://wasalt.sa/en/dailyrental/apartment-for-booking-1027",
+   "https://wasalt.sa/en/dailyrental/apartment-for-booking-1045",
+   "https://wasalt.sa/en/dailyrental/apartment-for-booking-1057",
+   "https://wasalt.sa/en/dailyrental/apartment-for-booking-1063"
+  ]
+ },
+ "/property/sale/شقة-N-متر-مربع-ب-N-غرف-N": {
+  "n": 838,
+  "examples": [
+   "https://wasalt.sa/property/sale/شقة-100-متر-مربع-ب-3-غرف-182063",
+   "https://wasalt.sa/property/sale/شقة-100-متر-مربع-ب-3-غرف-182101",
+   "https://wasalt.sa/property/sale/شقة-10002-متر-مربع-ب-3-غرف-251341",
+   "https://wasalt.sa/property/sale/شقة-10089-متر-مربع-ب-4-غرف-237188"
+  ]
+ },
+ "/property/sale/شقة-ب-N-غرف-N": {
+  "n": 738,
+  "examples": [
+   "https://wasalt.sa/property/sale/شقة-ب-3-غرف-254238",
+   "https://wasalt.sa/property/sale/شقة-ب-3-غرف-254338",
+   "https://wasalt.sa/property/sale/شقة-ب-3-غرف-5749139",
+   "https://wasalt.sa/property/sale/شقة-ب-3-غرف-5749936"
+  ]
+ },
+ "/dailyrental/شقة-للحجز-N": {
+  "n": 685,
+  "examples": [
+   "https://wasalt.sa/dailyrental/شقة-للحجز-166",
+   "https://wasalt.sa/dailyrental/شقة-للحجز-174",
+   "https://wasalt.sa/dailyrental/شقة-للحجز-2407",
+   "https://wasalt.sa/dailyrental/شقة-للحجز-2410"
+  ]
+ },
+ "/en/properties-for-sale-in-jeddah": {
+  "n": 469,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah?page=100",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah?page=101"
+  ]
+ },
+ "/عقارات-للبيع-في-جدة": {
+  "n": 456,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-في-جدة",
+   "https://wasalt.sa/عقارات-للبيع-في-جدة?page=10",
+   "https://wasalt.sa/عقارات-للبيع-في-جدة?page=100",
+   "https://wasalt.sa/عقارات-للبيع-في-جدة?page=101"
+  ]
+ },
+ "/en/apartments-for-sale-in-saudi-arabia": {
+  "n": 348,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-sale-in-saudi-arabia",
+   "https://wasalt.sa/en/apartments-for-sale-in-saudi-arabia?page=10",
+   "https://wasalt.sa/en/apartments-for-sale-in-saudi-arabia?page=106",
+   "https://wasalt.sa/en/apartments-for-sale-in-saudi-arabia?page=107"
+  ]
+ },
+ "/property/sale/دور-N-متر-مربع-ب-N-غرف-N": {
+  "n": 286,
+  "examples": [
+   "https://wasalt.sa/property/sale/دور-114-متر-مربع-ب-4-غرف-5862864",
+   "https://wasalt.sa/property/sale/دور-11765-متر-مربع-ب-6-غرف-5767534",
+   "https://wasalt.sa/property/sale/دور-11805-متر-مربع-ب-3-غرف-5747404",
+   "https://wasalt.sa/property/sale/دور-11918-متر-مربع-ب-4-غرف-5760087"
+  ]
+ },
+ "/شقق-للبيع-في-جدة": {
+  "n": 240,
+  "examples": [
+   "https://wasalt.sa/شقق-للبيع-في-جدة",
+   "https://wasalt.sa/شقق-للبيع-في-جدة?page=10",
+   "https://wasalt.sa/شقق-للبيع-في-جدة?page=101",
+   "https://wasalt.sa/شقق-للبيع-في-جدة?page=103"
+  ]
+ },
+ "/en/properties-for-sale-in-riyadh": {
+  "n": 203,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-riyadh",
+   "https://wasalt.sa/en/properties-for-sale-in-riyadh?gad_source=1&gclid=Cj0KCQiA1Km7BhC9ARIsAFZfEIt2x_lU32pY6bQXZWjMkhymfxpbJvS_zIxJ3rQGHOkhgZ9lhZh8ToYaAslhEALw_wcB",
+   "https://wasalt.sa/en/properties-for-sale-in-riyadh?page=103",
+   "https://wasalt.sa/en/properties-for-sale-in-riyadh?page=109"
+  ]
+ },
+ "/عقارات-للبيع-في-الرياض": {
+  "n": 200,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-في-الرياض",
+   "https://wasalt.sa/عقارات-للبيع-في-الرياض?page=100",
+   "https://wasalt.sa/عقارات-للبيع-في-الرياض?page=103",
+   "https://wasalt.sa/عقارات-للبيع-في-الرياض?page=106"
+  ]
+ },
+ "/en/villas-for-sale-in-saudi-arabia": {
+  "n": 186,
+  "examples": [
+   "https://wasalt.sa/en/villas-for-sale-in-saudi-arabia",
+   "https://wasalt.sa/en/villas-for-sale-in-saudi-arabia?page=102",
+   "https://wasalt.sa/en/villas-for-sale-in-saudi-arabia?page=103",
+   "https://wasalt.sa/en/villas-for-sale-in-saudi-arabia?page=106"
+  ]
+ },
+ "/فلل-للبيع-في-السعودية": {
+  "n": 170,
+  "examples": [
+   "https://wasalt.sa/فلل-للبيع-في-السعودية",
+   "https://wasalt.sa/فلل-للبيع-في-السعودية?page=10",
+   "https://wasalt.sa/فلل-للبيع-في-السعودية?page=100",
+   "https://wasalt.sa/فلل-للبيع-في-السعودية?page=102"
+  ]
+ },
+ "/en/apartments-for-sale-in-jeddah": {
+  "n": 169,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah?page=101",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah?page=104",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah?page=11"
+  ]
+ },
+ "/N-غرفة-نوم-شقق-للايجار-في-السعودية": {
+  "n": 108,
+  "examples": [
+   "https://wasalt.sa/1-غرفة-نوم-شقق-للايجار-في-السعودية",
+   "https://wasalt.sa/1-غرفة-نوم-شقق-للايجار-في-السعودية?page=10",
+   "https://wasalt.sa/1-غرفة-نوم-شقق-للايجار-في-السعودية?page=100",
+   "https://wasalt.sa/1-غرفة-نوم-شقق-للايجار-في-السعودية?page=103"
+  ]
+ },
+ "/شقق-للبيع-في-الرياض": {
+  "n": 92,
+  "examples": [
+   "https://wasalt.sa/شقق-للبيع-في-الرياض",
+   "https://wasalt.sa/شقق-للبيع-في-الرياض?page=101",
+   "https://wasalt.sa/شقق-للبيع-في-الرياض?page=105",
+   "https://wasalt.sa/شقق-للبيع-في-الرياض?page=108"
+  ]
+ },
+ "/N-غرفة-نوم-شقق-للايجار-في-الرياض": {
+  "n": 86,
+  "examples": [
+   "https://wasalt.sa/1-غرفة-نوم-شقق-للايجار-في-الرياض",
+   "https://wasalt.sa/1-غرفة-نوم-شقق-للايجار-في-الرياض?page=10",
+   "https://wasalt.sa/1-غرفة-نوم-شقق-للايجار-في-الرياض?page=16",
+   "https://wasalt.sa/1-غرفة-نوم-شقق-للايجار-في-الرياض?page=19"
+  ]
+ },
+ "/property/sale/دور-ب-N-غرف-N": {
+  "n": 83,
+  "examples": [
+   "https://wasalt.sa/property/sale/دور-ب-3-غرف-5747408",
+   "https://wasalt.sa/property/sale/دور-ب-3-غرف-5752286",
+   "https://wasalt.sa/property/sale/دور-ب-3-غرف-5752945",
+   "https://wasalt.sa/property/sale/دور-ب-3-غرف-5835023"
+  ]
+ },
+ "/en/dailyrental/chalet-for-booking-N": {
+  "n": 72,
+  "examples": [
+   "https://wasalt.sa/en/dailyrental/chalet-for-booking-1120",
+   "https://wasalt.sa/en/dailyrental/chalet-for-booking-1651",
+   "https://wasalt.sa/en/dailyrental/chalet-for-booking-2409",
+   "https://wasalt.sa/en/dailyrental/chalet-for-booking-2560"
+  ]
+ },
+ "/عقارات-للبيع-في-مكة": {
+  "n": 68,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-في-مكة",
+   "https://wasalt.sa/عقارات-للبيع-في-مكة?page=10",
+   "https://wasalt.sa/عقارات-للبيع-في-مكة?page=102",
+   "https://wasalt.sa/عقارات-للبيع-في-مكة?page=106"
+  ]
+ },
+ "/en/properties-for-sale-in-east-riyadh": {
+  "n": 67,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-east-riyadh",
+   "https://wasalt.sa/en/properties-for-sale-in-east-riyadh?page=100",
+   "https://wasalt.sa/en/properties-for-sale-in-east-riyadh?page=109",
+   "https://wasalt.sa/en/properties-for-sale-in-east-riyadh?page=110"
+  ]
+ },
+ "/en/properties-for-rent-in-saudi-arabia": {
+  "n": 65,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-rent-in-saudi-arabia",
+   "https://wasalt.sa/en/properties-for-rent-in-saudi-arabia?page=10",
+   "https://wasalt.sa/en/properties-for-rent-in-saudi-arabia?page=103",
+   "https://wasalt.sa/en/properties-for-rent-in-saudi-arabia?page=105"
+  ]
+ },
+ "/en/villas-for-sale-in-riyadh": {
+  "n": 65,
+  "examples": [
+   "https://wasalt.sa/en/villas-for-sale-in-riyadh",
+   "https://wasalt.sa/en/villas-for-sale-in-riyadh?page=103",
+   "https://wasalt.sa/en/villas-for-sale-in-riyadh?page=104",
+   "https://wasalt.sa/en/villas-for-sale-in-riyadh?page=108"
+  ]
+ },
+ "/property/rent/شقة-N-متر-مربع-ب-N-غرف-N": {
+  "n": 61,
+  "examples": [
+   "https://wasalt.sa/property/rent/شقة-1012-متر-مربع-ب-5-غرف-5863483",
+   "https://wasalt.sa/property/rent/شقة-10538-متر-مربع-ب-3-غرف-5747292",
+   "https://wasalt.sa/property/rent/شقة-11357-متر-مربع-ب-3-غرف-198488",
+   "https://wasalt.sa/property/rent/شقة-1144-متر-مربع-ب-3-غرف-5746303"
+  ]
+ },
+ "/عقارات-للايجار-في-السعودية": {
+  "n": 59,
+  "examples": [
+   "https://wasalt.sa/عقارات-للايجار-في-السعودية",
+   "https://wasalt.sa/عقارات-للايجار-في-السعودية?page=104",
+   "https://wasalt.sa/عقارات-للايجار-في-السعودية?page=109",
+   "https://wasalt.sa/عقارات-للايجار-في-السعودية?page=111"
+  ]
+ },
+ "/عقارات-للبيع-في-شمال-الرياض": {
+  "n": 59,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-في-شمال-الرياض",
+   "https://wasalt.sa/عقارات-للبيع-في-شمال-الرياض?page=103",
+   "https://wasalt.sa/عقارات-للبيع-في-شمال-الرياض?page=104",
+   "https://wasalt.sa/عقارات-للبيع-في-شمال-الرياض?page=105"
+  ]
+ },
+ "/فلل-للبيع-في-جدة": {
+  "n": 57,
+  "examples": [
+   "https://wasalt.sa/فلل-للبيع-في-جدة",
+   "https://wasalt.sa/فلل-للبيع-في-جدة?page=11",
+   "https://wasalt.sa/فلل-للبيع-في-جدة?page=12",
+   "https://wasalt.sa/فلل-للبيع-في-جدة?page=14"
+  ]
+ },
+ "/en/properties-for-sale-in-north-riyadh": {
+  "n": 57,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-north-riyadh",
+   "https://wasalt.sa/en/properties-for-sale-in-north-riyadh?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-north-riyadh?page=100",
+   "https://wasalt.sa/en/properties-for-sale-in-north-riyadh?page=101"
+  ]
+ },
+ "/en/properties-for-sale-in-dammam": {
+  "n": 56,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-dammam",
+   "https://wasalt.sa/en/properties-for-sale-in-dammam?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-dammam?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-dammam?page=12"
+  ]
+ },
+ "/عقارات-للبيع-في-الدمام": {
+  "n": 55,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-في-الدمام",
+   "https://wasalt.sa/عقارات-للبيع-في-الدمام?page=12",
+   "https://wasalt.sa/عقارات-للبيع-في-الدمام?page=13",
+   "https://wasalt.sa/عقارات-للبيع-في-الدمام?page=14"
+  ]
+ },
+ "/en/properties-for-sale-in-west-riyadh": {
+  "n": 55,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-west-riyadh",
+   "https://wasalt.sa/en/properties-for-sale-in-west-riyadh?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-west-riyadh?page=100",
+   "https://wasalt.sa/en/properties-for-sale-in-west-riyadh?page=11"
+  ]
+ },
+ "/عقارات-للبيع-في-شرق-الرياض": {
+  "n": 54,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-في-شرق-الرياض",
+   "https://wasalt.sa/عقارات-للبيع-في-شرق-الرياض?page=102",
+   "https://wasalt.sa/عقارات-للبيع-في-شرق-الرياض?page=106",
+   "https://wasalt.sa/عقارات-للبيع-في-شرق-الرياض?page=107"
+  ]
+ },
+ "/project/الرياض/N.N": {
+  "n": 54,
+  "examples": [
+   "https://wasalt.sa/project/الرياض/0.00",
+   "https://wasalt.sa/project/الرياض/0.05",
+   "https://wasalt.sa/project/الرياض/0.06",
+   "https://wasalt.sa/project/الرياض/0.07"
+  ]
+ },
+ "/en/floors-for-sale-in-saudi-arabia": {
+  "n": 51,
+  "examples": [
+   "https://wasalt.sa/en/floors-for-sale-in-saudi-arabia",
+   "https://wasalt.sa/en/floors-for-sale-in-saudi-arabia?page=10",
+   "https://wasalt.sa/en/floors-for-sale-in-saudi-arabia?page=100",
+   "https://wasalt.sa/en/floors-for-sale-in-saudi-arabia?page=103"
+  ]
+ },
+ "/property/rent/شقة-N-متر-مربع-بغرفة-N": {
+  "n": 51,
+  "examples": [
+   "https://wasalt.sa/property/rent/شقة-100-متر-مربع-بغرفة-5745826",
+   "https://wasalt.sa/property/rent/شقة-1323-متر-مربع-بغرفة-5746707",
+   "https://wasalt.sa/property/rent/شقة-25-متر-مربع-بغرفة-5870291",
+   "https://wasalt.sa/property/rent/شقة-25-متر-مربع-بغرفة-5870300"
+  ]
+ },
+ "/ادوار-للبيع-في-السعودية": {
+  "n": 49,
+  "examples": [
+   "https://wasalt.sa/ادوار-للبيع-في-السعودية",
+   "https://wasalt.sa/ادوار-للبيع-في-السعودية?page=10",
+   "https://wasalt.sa/ادوار-للبيع-في-السعودية?page=100",
+   "https://wasalt.sa/ادوار-للبيع-في-السعودية?page=105"
+  ]
+ },
+ "/dailyrental/شاليه-للحجز-N": {
+  "n": 47,
+  "examples": [
+   "https://wasalt.sa/dailyrental/شاليه-للحجز-2409",
+   "https://wasalt.sa/dailyrental/شاليه-للحجز-2861",
+   "https://wasalt.sa/dailyrental/شاليه-للحجز-2867",
+   "https://wasalt.sa/dailyrental/شاليه-للحجز-2868"
+  ]
+ },
+ "/عقارات-للايجار-في-الرياض": {
+  "n": 46,
+  "examples": [
+   "https://wasalt.sa/عقارات-للايجار-في-الرياض",
+   "https://wasalt.sa/عقارات-للايجار-في-الرياض?page=101",
+   "https://wasalt.sa/عقارات-للايجار-في-الرياض?page=103",
+   "https://wasalt.sa/عقارات-للايجار-في-الرياض?page=11"
+  ]
+ },
+ "/en/dailyrental/studio-for-booking-N": {
+  "n": 46,
+  "examples": [
+   "https://wasalt.sa/en/dailyrental/studio-for-booking-23",
+   "https://wasalt.sa/en/dailyrental/studio-for-booking-2408",
+   "https://wasalt.sa/en/dailyrental/studio-for-booking-2541",
+   "https://wasalt.sa/en/dailyrental/studio-for-booking-332"
+  ]
+ },
+ "/عقارات-للبيع-في-الخبر": {
+  "n": 44,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-في-الخبر",
+   "https://wasalt.sa/عقارات-للبيع-في-الخبر?page=12",
+   "https://wasalt.sa/عقارات-للبيع-في-الخبر?page=13",
+   "https://wasalt.sa/عقارات-للبيع-في-الخبر?page=14"
+  ]
+ },
+ "/property/rent/شقة-ب-N-غرف-N": {
+  "n": 43,
+  "examples": [
+   "https://wasalt.sa/property/rent/شقة-ب-3-غرف-5751979",
+   "https://wasalt.sa/property/rent/شقة-ب-3-غرف-5752169",
+   "https://wasalt.sa/property/rent/شقة-ب-3-غرف-5752275",
+   "https://wasalt.sa/property/rent/شقة-ب-3-غرف-5752283"
+  ]
+ },
+ "/en/apartments-for-rent-in-saudi-arabia": {
+  "n": 42,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-rent-in-saudi-arabia",
+   "https://wasalt.sa/en/apartments-for-rent-in-saudi-arabia?page=100",
+   "https://wasalt.sa/en/apartments-for-rent-in-saudi-arabia?page=101",
+   "https://wasalt.sa/en/apartments-for-rent-in-saudi-arabia?page=11"
+  ]
+ },
+ "/property/sale/أرض-N-متر-مربع-شمالية-على-شارع-Nم-N": {
+  "n": 42,
+  "examples": [
+   "https://wasalt.sa/property/sale/أرض-1000-متر-مربع-شمالية-على-شارع-40م-5811319",
+   "https://wasalt.sa/property/sale/أرض-10445-متر-مربع-شمالية-على-شارع-40م-5766672",
+   "https://wasalt.sa/property/sale/أرض-1050-متر-مربع-شمالية-على-شارع-15م-5807802",
+   "https://wasalt.sa/property/sale/أرض-141504-متر-مربع-شمالية-على-شارع-30م-5758170"
+  ]
+ },
+ "/عقارات-للبيع-في-المدينة": {
+  "n": 40,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-في-المدينة",
+   "https://wasalt.sa/عقارات-للبيع-في-المدينة?page=10",
+   "https://wasalt.sa/عقارات-للبيع-في-المدينة?page=11",
+   "https://wasalt.sa/عقارات-للبيع-في-المدينة?page=14"
+  ]
+ },
+ "/عقارات-للبيع-في-غرب-الرياض": {
+  "n": 40,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-في-غرب-الرياض",
+   "https://wasalt.sa/عقارات-للبيع-في-غرب-الرياض?page=10",
+   "https://wasalt.sa/عقارات-للبيع-في-غرب-الرياض?page=100",
+   "https://wasalt.sa/عقارات-للبيع-في-غرب-الرياض?page=11"
+  ]
+ },
+ "/en/project/Riyadh": {
+  "n": 40,
+  "examples": [
+   "https://wasalt.sa/en/project/Riyadh/شقق-للبيع-في-السويدي-عمارة119-100101",
+   "https://wasalt.sa/en/project/Riyadh/شقق-للبيع-في-السويدي-عمارة120-100100",
+   "https://wasalt.sa/en/project/Riyadh/مشروع-اثل-كومبلكس-شقق-للبيع-100240",
+   "https://wasalt.sa/en/project/Riyadh/مشروع-ايجاز-30-شقق-للبيع-100199"
+  ]
+ },
+ "/en/properties-for-sale-in-makkah": {
+  "n": 40,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-makkah",
+   "https://wasalt.sa/en/properties-for-sale-in-makkah?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-makkah?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-makkah?page=115"
+  ]
+ },
+ "/property/sale/أرض-N-متر-مربع-جنوبية-على-شارع-Nم-N": {
+  "n": 40,
+  "examples": [
+   "https://wasalt.sa/property/sale/أرض-1050-متر-مربع-جنوبية-على-شارع-18م-5758160",
+   "https://wasalt.sa/property/sale/أرض-14316-متر-مربع-جنوبية-على-شارع-15م-5759094",
+   "https://wasalt.sa/property/sale/أرض-300181-متر-مربع-جنوبية-على-شارع-50م-5753374",
+   "https://wasalt.sa/property/sale/أرض-3205-متر-مربع-جنوبية-على-شارع-20م-251206"
+  ]
+ },
+ "/en/properties-for-sale-in-al-khobar": {
+  "n": 39,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-al-khobar",
+   "https://wasalt.sa/en/properties-for-sale-in-al-khobar?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-al-khobar?page=12",
+   "https://wasalt.sa/en/properties-for-sale-in-al-khobar?page=14"
+  ]
+ },
+ "/en/apartments-for-sale-in-east-riyadh": {
+  "n": 37,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-sale-in-east-riyadh",
+   "https://wasalt.sa/en/apartments-for-sale-in-east-riyadh?page=11",
+   "https://wasalt.sa/en/apartments-for-sale-in-east-riyadh?page=15",
+   "https://wasalt.sa/en/apartments-for-sale-in-east-riyadh?page=17"
+  ]
+ },
+ "/property/sale/شقة-N": {
+  "n": 37,
+  "examples": [
+   "https://wasalt.sa/property/sale/شقة-5754768",
+   "https://wasalt.sa/property/sale/شقة-5834106",
+   "https://wasalt.sa/property/sale/شقة-5834925",
+   "https://wasalt.sa/property/sale/شقة-5846808"
+  ]
+ },
+ "/ar/property/sale": {
+  "n": 36,
+  "examples": [
+   "https://wasalt.sa/ar/property/sale/أرض-للبيع-5743122",
+   "https://wasalt.sa/ar/property/sale/أرض-550-متر-مربع-شرقية-على-شارع-15م-255591",
+   "https://wasalt.sa/ar/property/sale/أرض-630-متر-مربع-شرقية-على-شارع-15م-250424",
+   "https://wasalt.sa/ar/property/sale/دور-155-متر-مربع-ب-4-غرف-5740575"
+  ]
+ },
+ "/en/lands-for-sale-in-saudi-arabia": {
+  "n": 36,
+  "examples": [
+   "https://wasalt.sa/en/lands-for-sale-in-saudi-arabia",
+   "https://wasalt.sa/en/lands-for-sale-in-saudi-arabia?page=10",
+   "https://wasalt.sa/en/lands-for-sale-in-saudi-arabia?page=15",
+   "https://wasalt.sa/en/lands-for-sale-in-saudi-arabia?page=16"
+  ]
+ },
+ "/property/sale/أرض-N-متر-مربع-غربية-على-شارع-Nم-N": {
+  "n": 36,
+  "examples": [
+   "https://wasalt.sa/property/sale/أرض-1080-متر-مربع-غربية-على-شارع-20م-5781380",
+   "https://wasalt.sa/property/sale/أرض-13673-متر-مربع-غربية-على-شارع-12م-5766642",
+   "https://wasalt.sa/property/sale/أرض-300-متر-مربع-غربية-على-شارع-15م-5814178",
+   "https://wasalt.sa/property/sale/أرض-312-متر-مربع-غربية-على-شارع-16م-5811312"
+  ]
+ },
+ "/عقارات-للبيع-في-الطائف": {
+  "n": 35,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-في-الطائف",
+   "https://wasalt.sa/عقارات-للبيع-في-الطائف?page=10",
+   "https://wasalt.sa/عقارات-للبيع-في-الطائف?page=11",
+   "https://wasalt.sa/عقارات-للبيع-في-الطائف?page=12"
+  ]
+ },
+ "/en/properties-for-sale-in-taif": {
+  "n": 35,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-taif",
+   "https://wasalt.sa/en/properties-for-sale-in-taif?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-taif?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-taif?page=13"
+  ]
+ },
+ "/dailyrental/ستوديو-للحجز-N": {
+  "n": 34,
+  "examples": [
+   "https://wasalt.sa/dailyrental/ستوديو-للحجز-23",
+   "https://wasalt.sa/dailyrental/ستوديو-للحجز-2408",
+   "https://wasalt.sa/dailyrental/ستوديو-للحجز-2541",
+   "https://wasalt.sa/dailyrental/ستوديو-للحجز-3536"
+  ]
+ },
+ "/en/apartments-for-sale-in-north-riyadh": {
+  "n": 34,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-sale-in-north-riyadh",
+   "https://wasalt.sa/en/apartments-for-sale-in-north-riyadh?page=10",
+   "https://wasalt.sa/en/apartments-for-sale-in-north-riyadh?page=12",
+   "https://wasalt.sa/en/apartments-for-sale-in-north-riyadh?page=14"
+  ]
+ },
+ "/en/properties-for-rent-in-north-riyadh": {
+  "n": 33,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-rent-in-north-riyadh",
+   "https://wasalt.sa/en/properties-for-rent-in-north-riyadh?page=11",
+   "https://wasalt.sa/en/properties-for-rent-in-north-riyadh?page=13",
+   "https://wasalt.sa/en/properties-for-rent-in-north-riyadh?page=15"
+  ]
+ },
+ "/en/properties-for-sale-in-south-riyadh": {
+  "n": 32,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-south-riyadh",
+   "https://wasalt.sa/en/properties-for-sale-in-south-riyadh?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-south-riyadh?page=12",
+   "https://wasalt.sa/en/properties-for-sale-in-south-riyadh?page=13"
+  ]
+ },
+ "/property/sale/أرض-N-متر-مربع-شرقية-على-شارع-Nم-N": {
+  "n": 32,
+  "examples": [
+   "https://wasalt.sa/property/sale/أرض-10392-متر-مربع-شرقية-على-شارع-30م-5754495",
+   "https://wasalt.sa/property/sale/أرض-1120-متر-مربع-شرقية-على-شارع-25م-5753383",
+   "https://wasalt.sa/property/sale/أرض-1155-متر-مربع-شرقية-على-شارع-15م-5756288",
+   "https://wasalt.sa/property/sale/أرض-2464-متر-مربع-شرقية-على-شارع-32م-5777976"
+  ]
+ },
+ "/ادوار-للبيع-في-الرياض": {
+  "n": 31,
+  "examples": [
+   "https://wasalt.sa/ادوار-للبيع-في-الرياض",
+   "https://wasalt.sa/ادوار-للبيع-في-الرياض?page=10",
+   "https://wasalt.sa/ادوار-للبيع-في-الرياض?page=13",
+   "https://wasalt.sa/ادوار-للبيع-في-الرياض?page=17"
+  ]
+ },
+ "/عقارات-للايجار-في-شمال-الرياض": {
+  "n": 30,
+  "examples": [
+   "https://wasalt.sa/عقارات-للايجار-في-شمال-الرياض",
+   "https://wasalt.sa/عقارات-للايجار-في-شمال-الرياض?page=10",
+   "https://wasalt.sa/عقارات-للايجار-في-شمال-الرياض?page=12",
+   "https://wasalt.sa/عقارات-للايجار-في-شمال-الرياض?page=15"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-الصفا": {
+  "n": 30,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الصفا",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الصفا?page=10",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الصفا?page=12",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الصفا?page=13"
+  ]
+ },
+ "/en/villas-for-sale-in-jeddah": {
+  "n": 30,
+  "examples": [
+   "https://wasalt.sa/en/villas-for-sale-in-jeddah",
+   "https://wasalt.sa/en/villas-for-sale-in-jeddah?page=19",
+   "https://wasalt.sa/en/villas-for-sale-in-jeddah?page=2",
+   "https://wasalt.sa/en/villas-for-sale-in-jeddah?page=20"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-السلامة": {
+  "n": 29,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-السلامة",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-السلامة?page=11",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-السلامة?page=12",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-السلامة?page=13"
+  ]
+ },
+ "/شقق-للبيع-في-الدمام": {
+  "n": 28,
+  "examples": [
+   "https://wasalt.sa/شقق-للبيع-في-الدمام",
+   "https://wasalt.sa/شقق-للبيع-في-الدمام?page=10",
+   "https://wasalt.sa/شقق-للبيع-في-الدمام?page=11",
+   "https://wasalt.sa/شقق-للبيع-في-الدمام?page=12"
+  ]
+ },
+ "/property/sale/شقة-N-متر-مربع-بغرفتين-N": {
+  "n": 28,
+  "examples": [
+   "https://wasalt.sa/property/sale/شقة-104-متر-مربع-بغرفتين-5799240",
+   "https://wasalt.sa/property/sale/شقة-1045-متر-مربع-بغرفتين-5758523",
+   "https://wasalt.sa/property/sale/شقة-105-متر-مربع-بغرفتين-5856503",
+   "https://wasalt.sa/property/sale/شقة-12842-متر-مربع-بغرفتين-5745673"
+  ]
+ },
+ "/en/property/Riyadh": {
+  "n": 26,
+  "examples": [
+   "https://wasalt.sa/en/property/Riyadh/apartment-190-sqm-with-4-bedrooms-5760469",
+   "https://wasalt.sa/en/property/Riyadh/apartment-with-2-bedrooms-5751427",
+   "https://wasalt.sa/en/property/Riyadh/apartment-with-3-bedrooms-5755927",
+   "https://wasalt.sa/en/property/Riyadh/apartment-with-3-bedrooms-5756377"
+  ]
+ },
+ "/شقق-للبيع-جدة-حى-السلامة": {
+  "n": 25,
+  "examples": [
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-السلامة",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-السلامة?page=13",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-السلامة?page=14",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-السلامة?page=15"
+  ]
+ },
+ "/فلل-للبيع-في-الدمام": {
+  "n": 25,
+  "examples": [
+   "https://wasalt.sa/فلل-للبيع-في-الدمام",
+   "https://wasalt.sa/فلل-للبيع-في-الدمام?page=10",
+   "https://wasalt.sa/فلل-للبيع-في-الدمام?page=11",
+   "https://wasalt.sa/فلل-للبيع-في-الدمام?page=12"
+  ]
+ },
+ "/en/apartments-for-rent-in-north-riyadh": {
+  "n": 25,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-rent-in-north-riyadh",
+   "https://wasalt.sa/en/apartments-for-rent-in-north-riyadh?page=12",
+   "https://wasalt.sa/en/apartments-for-rent-in-north-riyadh?page=17",
+   "https://wasalt.sa/en/apartments-for-rent-in-north-riyadh?page=20"
+  ]
+ },
+ "/en/properties-for-sale-in-jeddah-as-salamah": {
+  "n": 25,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-as-salamah",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-as-salamah?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-as-salamah?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-as-salamah?page=12"
+  ]
+ },
+ "/en/properties-for-sale-in-khamis-mushayt": {
+  "n": 23,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-khamis-mushayt",
+   "https://wasalt.sa/en/properties-for-sale-in-khamis-mushayt?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-khamis-mushayt?page=12",
+   "https://wasalt.sa/en/properties-for-sale-in-khamis-mushayt?page=14"
+  ]
+ },
+ "/فلل-للبيع-في-مكة": {
+  "n": 22,
+  "examples": [
+   "https://wasalt.sa/فلل-للبيع-في-مكة",
+   "https://wasalt.sa/فلل-للبيع-في-مكة?page=10",
+   "https://wasalt.sa/فلل-للبيع-في-مكة?page=11",
+   "https://wasalt.sa/فلل-للبيع-في-مكة?page=12"
+  ]
+ },
+ "/en/properties-for-sale-in-jeddah-al-marwah": {
+  "n": 22,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-al-marwah",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-al-marwah?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-al-marwah?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-al-marwah?page=12"
+  ]
+ },
+ "/en/villas-for-sale-in-east-riyadh": {
+  "n": 22,
+  "examples": [
+   "https://wasalt.sa/en/villas-for-sale-in-east-riyadh",
+   "https://wasalt.sa/en/villas-for-sale-in-east-riyadh?page=10",
+   "https://wasalt.sa/en/villas-for-sale-in-east-riyadh?page=12",
+   "https://wasalt.sa/en/villas-for-sale-in-east-riyadh?page=14"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-المروة": {
+  "n": 21,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-المروة",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-المروة?page=10",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-المروة?page=11",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-المروة?page=12"
+  ]
+ },
+ "/en/apartments-for-sale-in-makkah": {
+  "n": 21,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-sale-in-makkah",
+   "https://wasalt.sa/en/apartments-for-sale-in-makkah?page=13",
+   "https://wasalt.sa/en/apartments-for-sale-in-makkah?page=15",
+   "https://wasalt.sa/en/apartments-for-sale-in-makkah?page=16"
+  ]
+ },
+ "/en/properties-for-sale-in-abha": {
+  "n": 21,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-abha",
+   "https://wasalt.sa/en/properties-for-sale-in-abha?page=12",
+   "https://wasalt.sa/en/properties-for-sale-in-abha?page=13",
+   "https://wasalt.sa/en/properties-for-sale-in-abha?page=14"
+  ]
+ },
+ "/en/properties-for-sale-in-madinah": {
+  "n": 21,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-madinah",
+   "https://wasalt.sa/en/properties-for-sale-in-madinah?page=13",
+   "https://wasalt.sa/en/properties-for-sale-in-madinah?page=15",
+   "https://wasalt.sa/en/properties-for-sale-in-madinah?page=16"
+  ]
+ },
+ "/en/villas-for-sale-in-makkah": {
+  "n": 21,
+  "examples": [
+   "https://wasalt.sa/en/villas-for-sale-in-makkah",
+   "https://wasalt.sa/en/villas-for-sale-in-makkah?page=11",
+   "https://wasalt.sa/en/villas-for-sale-in-makkah?page=12",
+   "https://wasalt.sa/en/villas-for-sale-in-makkah?page=15"
+  ]
+ },
+ "/شقق-للايجار-في-الرياض": {
+  "n": 20,
+  "examples": [
+   "https://wasalt.sa/شقق-للايجار-في-الرياض",
+   "https://wasalt.sa/شقق-للايجار-في-الرياض?page=10",
+   "https://wasalt.sa/شقق-للايجار-في-الرياض?page=11",
+   "https://wasalt.sa/شقق-للايجار-في-الرياض?page=14"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-الريان": {
+  "n": 20,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الريان",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الريان?page=10",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الريان?page=11",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الريان?page=12"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-النزهة": {
+  "n": 20,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-النزهة",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-النزهة?page=10",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-النزهة?page=13",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-النزهة?page=15"
+  ]
+ },
+ "/عقارات-للبيع-في-ابها": {
+  "n": 20,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-في-ابها",
+   "https://wasalt.sa/عقارات-للبيع-في-ابها?page=11",
+   "https://wasalt.sa/عقارات-للبيع-في-ابها?page=12",
+   "https://wasalt.sa/عقارات-للبيع-في-ابها?page=20"
+  ]
+ },
+ "/عقارات-للبيع-في-جازان": {
+  "n": 20,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-في-جازان",
+   "https://wasalt.sa/عقارات-للبيع-في-جازان?page=12",
+   "https://wasalt.sa/عقارات-للبيع-في-جازان?page=13",
+   "https://wasalt.sa/عقارات-للبيع-في-جازان?page=14"
+  ]
+ },
+ "/N-غرفة-نوم-شقق-للايجار-في-شمال-الرياض": {
+  "n": 20,
+  "examples": [
+   "https://wasalt.sa/3-غرفة-نوم-شقق-للايجار-في-شمال-الرياض?page=14",
+   "https://wasalt.sa/3-غرفة-نوم-شقق-للايجار-في-شمال-الرياض?page=18",
+   "https://wasalt.sa/3-غرفة-نوم-شقق-للايجار-في-شمال-الرياض?page=20",
+   "https://wasalt.sa/3-غرفة-نوم-شقق-للايجار-في-شمال-الرياض?page=21"
+  ]
+ },
+ "/en/properties-for-sale-in-jeddah-al-wahah": {
+  "n": 20,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-al-wahah",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-al-wahah?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-al-wahah?page=12",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-al-wahah?page=13"
+  ]
+ },
+ "/project/جدة/مشروع-مسكان-السدن-فلل-للبيع-N": {
+  "n": 20,
+  "examples": [
+   "https://wasalt.sa/project/جدة/مشروع-مسكان-السدن-فلل-للبيع-100214",
+   "https://wasalt.sa/project/جدة/مشروع-مسكان-السدن-فلل-للبيع-100263",
+   "https://wasalt.sa/project/جدة/مشروع-مسكان-السدن-فلل-للبيع-100263/فيلا-250-متر-مربع-شمالية-على-شارع-20م-258851",
+   "https://wasalt.sa/project/جدة/مشروع-مسكان-السدن-فلل-للبيع-100263/فيلا-282-متر-مربع-شمالية-على-شارع-20م-258853"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-الفيحاء": {
+  "n": 19,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الفيحاء",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الفيحاء?page=10",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الفيحاء?page=12",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الفيحاء?page=13"
+  ]
+ },
+ "/en/N-bedroom-apartments-for-rent-in-saudi-arabia": {
+  "n": 19,
+  "examples": [
+   "https://wasalt.sa/en/1-bedroom-apartments-for-rent-in-saudi-arabia?page=100",
+   "https://wasalt.sa/en/1-bedroom-apartments-for-rent-in-saudi-arabia?page=12",
+   "https://wasalt.sa/en/1-bedroom-apartments-for-rent-in-saudi-arabia?page=20",
+   "https://wasalt.sa/en/1-bedroom-apartments-for-rent-in-saudi-arabia?page=25"
+  ]
+ },
+ "/en/N-bedroom-apartments-for-rent-in-north-riyadh": {
+  "n": 19,
+  "examples": [
+   "https://wasalt.sa/en/3-bedroom-apartments-for-rent-in-north-riyadh?page=14",
+   "https://wasalt.sa/en/3-bedroom-apartments-for-rent-in-north-riyadh?page=17",
+   "https://wasalt.sa/en/3-bedroom-apartments-for-rent-in-north-riyadh?page=20",
+   "https://wasalt.sa/en/3-bedroom-apartments-for-rent-in-north-riyadh?page=21"
+  ]
+ },
+ "/en/properties-for-sale-in-jeddah-an-nuzhah": {
+  "n": 19,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-an-nuzhah",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-an-nuzhah?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-an-nuzhah?page=12",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-an-nuzhah?page=17"
+  ]
+ },
+ "/en/properties-for-sale-in-jeddah-ar-riyadh": {
+  "n": 19,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-ar-riyadh",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-ar-riyadh?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-ar-riyadh?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-ar-riyadh?page=12"
+  ]
+ },
+ "/property/sale/شقة-بغرفتين-N": {
+  "n": 19,
+  "examples": [
+   "https://wasalt.sa/property/sale/شقة-بغرفتين-253491",
+   "https://wasalt.sa/property/sale/شقة-بغرفتين-254237",
+   "https://wasalt.sa/property/sale/شقة-بغرفتين-254337",
+   "https://wasalt.sa/property/sale/شقة-بغرفتين-5748328"
+  ]
+ },
+ "/شقق-للايجار-في-شمال-الرياض": {
+  "n": 18,
+  "examples": [
+   "https://wasalt.sa/شقق-للايجار-في-شمال-الرياض",
+   "https://wasalt.sa/شقق-للايجار-في-شمال-الرياض?page=10",
+   "https://wasalt.sa/شقق-للايجار-في-شمال-الرياض?page=11",
+   "https://wasalt.sa/شقق-للايجار-في-شمال-الرياض?page=15"
+  ]
+ },
+ "/شقق-للبيع-جدة-حى-الواحة": {
+  "n": 18,
+  "examples": [
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الواحة",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الواحة?page=10",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الواحة?page=11",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الواحة?page=13"
+  ]
+ },
+ "/عقارات-للبيع-فى-شمال-الرياض-حى-العارض": {
+  "n": 18,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-فى-شمال-الرياض-حى-العارض",
+   "https://wasalt.sa/عقارات-للبيع-فى-شمال-الرياض-حى-العارض?page=10",
+   "https://wasalt.sa/عقارات-للبيع-فى-شمال-الرياض-حى-العارض?page=11",
+   "https://wasalt.sa/عقارات-للبيع-فى-شمال-الرياض-حى-العارض?page=12"
+  ]
+ },
+ "/N-غرفة-نوم-شقق-للايجار-في-شرق-الرياض": {
+  "n": 18,
+  "examples": [
+   "https://wasalt.sa/1-غرفة-نوم-شقق-للايجار-في-شرق-الرياض?page=10",
+   "https://wasalt.sa/1-غرفة-نوم-شقق-للايجار-في-شرق-الرياض?page=11",
+   "https://wasalt.sa/1-غرفة-نوم-شقق-للايجار-في-شرق-الرياض?page=12",
+   "https://wasalt.sa/1-غرفة-نوم-شقق-للايجار-في-شرق-الرياض?page=13"
+  ]
+ },
+ "/en/N-bedroom-apartments-for-rent-in-jeddah": {
+  "n": 18,
+  "examples": [
+   "https://wasalt.sa/en/2-bedroom-apartments-for-rent-in-jeddah",
+   "https://wasalt.sa/en/2-bedroom-apartments-for-rent-in-jeddah?page=4",
+   "https://wasalt.sa/en/3-bedroom-apartments-for-rent-in-jeddah",
+   "https://wasalt.sa/en/3-bedroom-apartments-for-rent-in-jeddah?page=10"
+  ]
+ },
+ "/en/floors-for-sale-in-south-riyadh": {
+  "n": 18,
+  "examples": [
+   "https://wasalt.sa/en/floors-for-sale-in-south-riyadh",
+   "https://wasalt.sa/en/floors-for-sale-in-south-riyadh?page=10",
+   "https://wasalt.sa/en/floors-for-sale-in-south-riyadh?page=13",
+   "https://wasalt.sa/en/floors-for-sale-in-south-riyadh?page=19"
+  ]
+ },
+ "/en/properties-for-rent-in-jeddah": {
+  "n": 18,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-rent-in-jeddah",
+   "https://wasalt.sa/en/properties-for-rent-in-jeddah?page=10",
+   "https://wasalt.sa/en/properties-for-rent-in-jeddah?page=12",
+   "https://wasalt.sa/en/properties-for-rent-in-jeddah?page=15"
+  ]
+ },
+ "/en/villas-for-sale-in-west-riyadh": {
+  "n": 18,
+  "examples": [
+   "https://wasalt.sa/en/villas-for-sale-in-west-riyadh",
+   "https://wasalt.sa/en/villas-for-sale-in-west-riyadh?page=11",
+   "https://wasalt.sa/en/villas-for-sale-in-west-riyadh?page=14",
+   "https://wasalt.sa/en/villas-for-sale-in-west-riyadh?page=16"
+  ]
+ },
+ "/property/rent/شقة-N-متر-مربع-بغرفتين-N": {
+  "n": 18,
+  "examples": [
+   "https://wasalt.sa/property/rent/شقة-107-متر-مربع-بغرفتين-5872838",
+   "https://wasalt.sa/property/rent/شقة-110-متر-مربع-بغرفتين-5864347",
+   "https://wasalt.sa/property/rent/شقة-113-متر-مربع-بغرفتين-5874404",
+   "https://wasalt.sa/property/rent/شقة-12238-متر-مربع-بغرفتين-5747304"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-الروضة": {
+  "n": 17,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الروضة",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الروضة?page=12",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الروضة?page=14",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الروضة?page=15"
+  ]
+ },
+ "/en/apartments-for-sale-in-jeddah-as-safa": {
+  "n": 17,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-as-safa",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-as-safa?page=10",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-as-safa?page=14",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-as-safa?page=16"
+  ]
+ },
+ "/en/properties-for-sale-in-jazan": {
+  "n": 17,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-jazan",
+   "https://wasalt.sa/en/properties-for-sale-in-jazan?page=13",
+   "https://wasalt.sa/en/properties-for-sale-in-jazan?page=15",
+   "https://wasalt.sa/en/properties-for-sale-in-jazan?page=16"
+  ]
+ },
+ "/شقق-للبيع-جدة-حى-الصفا": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الصفا",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الصفا?page=11",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الصفا?page=12",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الصفا?page=16"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-الواحة": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الواحة",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الواحة?page=11",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الواحة?page=13",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الواحة?page=14"
+  ]
+ },
+ "/عقارات-للبيع-فى-شمال-الرياض-حى-النرجس": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-فى-شمال-الرياض-حى-النرجس",
+   "https://wasalt.sa/عقارات-للبيع-فى-شمال-الرياض-حى-النرجس?page=11",
+   "https://wasalt.sa/عقارات-للبيع-فى-شمال-الرياض-حى-النرجس?page=14",
+   "https://wasalt.sa/عقارات-للبيع-فى-شمال-الرياض-حى-النرجس?page=15"
+  ]
+ },
+ "/عقارات-للبيع-مكة-حي-الشامية-الجديد": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-مكة-حي-الشامية-الجديد",
+   "https://wasalt.sa/عقارات-للبيع-مكة-حي-الشامية-الجديد?page=10",
+   "https://wasalt.sa/عقارات-للبيع-مكة-حي-الشامية-الجديد?page=11",
+   "https://wasalt.sa/عقارات-للبيع-مكة-حي-الشامية-الجديد?page=12"
+  ]
+ },
+ "/en/apartments-for-sale-in-jeddah-an-nuzhah": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-an-nuzhah",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-an-nuzhah?page=11",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-an-nuzhah?page=12",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-an-nuzhah?page=13"
+  ]
+ },
+ "/en/apartments-for-sale-in-jeddah-ar-rayaan": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-ar-rayaan",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-ar-rayaan?page=10",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-ar-rayaan?page=11",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-ar-rayaan?page=12"
+  ]
+ },
+ "/en/apartments-for-sale-in-jeddah-as-salamah": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-as-salamah",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-as-salamah?page=15",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-as-salamah?page=16",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-as-salamah?page=18"
+  ]
+ },
+ "/en/properties-for-sale-in-east-riyadh-al-qadisiyah": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-east-riyadh-al-qadisiyah",
+   "https://wasalt.sa/en/properties-for-sale-in-east-riyadh-al-qadisiyah?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-east-riyadh-al-qadisiyah?page=14",
+   "https://wasalt.sa/en/properties-for-sale-in-east-riyadh-al-qadisiyah?page=2"
+  ]
+ },
+ "/en/properties-for-sale-in-jeddah-ar-rayaan": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-ar-rayaan",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-ar-rayaan?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-ar-rayaan?page=13",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-ar-rayaan?page=14"
+  ]
+ },
+ "/en/properties-for-sale-in-makkah-as-shamiaa": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-makkah-as-shamiaa",
+   "https://wasalt.sa/en/properties-for-sale-in-makkah-as-shamiaa?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-makkah-as-shamiaa?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-makkah-as-shamiaa?page=12"
+  ]
+ },
+ "/en/properties-for-sale-in-north-riyadh-al-narjis": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-north-riyadh-al-narjis",
+   "https://wasalt.sa/en/properties-for-sale-in-north-riyadh-al-narjis?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-north-riyadh-al-narjis?page=13",
+   "https://wasalt.sa/en/properties-for-sale-in-north-riyadh-al-narjis?page=15"
+  ]
+ },
+ "/en/properties-for-sale-in-south-riyadh-badr": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-south-riyadh-badr",
+   "https://wasalt.sa/en/properties-for-sale-in-south-riyadh-badr?page=13",
+   "https://wasalt.sa/en/properties-for-sale-in-south-riyadh-badr?page=15",
+   "https://wasalt.sa/en/properties-for-sale-in-south-riyadh-badr?page=16"
+  ]
+ },
+ "/en/villas-for-sale-in-dammam": {
+  "n": 16,
+  "examples": [
+   "https://wasalt.sa/en/villas-for-sale-in-dammam",
+   "https://wasalt.sa/en/villas-for-sale-in-dammam?page=10",
+   "https://wasalt.sa/en/villas-for-sale-in-dammam?page=13",
+   "https://wasalt.sa/en/villas-for-sale-in-dammam?page=15"
+  ]
+ },
+ "/اراضي-للبيع-في-الرياض": {
+  "n": 15,
+  "examples": [
+   "https://wasalt.sa/اراضي-للبيع-في-الرياض",
+   "https://wasalt.sa/اراضي-للبيع-في-الرياض?page=11",
+   "https://wasalt.sa/اراضي-للبيع-في-الرياض?page=13",
+   "https://wasalt.sa/اراضي-للبيع-في-الرياض?page=14"
+  ]
+ },
+ "/شقق-للايجار-في-جدة": {
+  "n": 15,
+  "examples": [
+   "https://wasalt.sa/شقق-للايجار-في-جدة",
+   "https://wasalt.sa/شقق-للايجار-في-جدة?page=10",
+   "https://wasalt.sa/شقق-للايجار-في-جدة?page=11",
+   "https://wasalt.sa/شقق-للايجار-في-جدة?page=14"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-الصوارى": {
+  "n": 15,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الصوارى",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الصوارى?page=10",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الصوارى?page=11",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الصوارى?page=12"
+  ]
+ },
+ "/en/properties-for-sale-in-jeddah-ar-rawdah": {
+  "n": 15,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-ar-rawdah",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-ar-rawdah?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-ar-rawdah?page=12",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-ar-rawdah?page=13"
+  ]
+ },
+ "/en/properties-for-sale-in-jeddah-as-safa": {
+  "n": 15,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-as-safa",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-as-safa?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-as-safa?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-as-safa?page=16"
+  ]
+ },
+ "/property/sale/شقة-N-متر-مربع-N": {
+  "n": 15,
+  "examples": [
+   "https://wasalt.sa/property/sale/شقة-11735-متر-مربع-5754034",
+   "https://wasalt.sa/property/sale/شقة-12972-متر-مربع-5752098",
+   "https://wasalt.sa/property/sale/شقة-15252-متر-مربع-5749512",
+   "https://wasalt.sa/property/sale/شقة-154-متر-مربع-5874702"
+  ]
+ },
+ "/اراضي-للبيع-في-جدة": {
+  "n": 14,
+  "examples": [
+   "https://wasalt.sa/اراضي-للبيع-في-جدة",
+   "https://wasalt.sa/اراضي-للبيع-في-جدة?page=10",
+   "https://wasalt.sa/اراضي-للبيع-في-جدة?page=11",
+   "https://wasalt.sa/اراضي-للبيع-في-جدة?page=13"
+  ]
+ },
+ "/شقق-للبيع-في-مكة": {
+  "n": 14,
+  "examples": [
+   "https://wasalt.sa/شقق-للبيع-في-مكة",
+   "https://wasalt.sa/شقق-للبيع-في-مكة?page=10",
+   "https://wasalt.sa/شقق-للبيع-في-مكة?page=11",
+   "https://wasalt.sa/شقق-للبيع-في-مكة?page=12"
+  ]
+ },
+ "/عقارات-للايجار-في-جدة": {
+  "n": 14,
+  "examples": [
+   "https://wasalt.sa/عقارات-للايجار-في-جدة",
+   "https://wasalt.sa/عقارات-للايجار-في-جدة?page=12",
+   "https://wasalt.sa/عقارات-للايجار-في-جدة?page=17",
+   "https://wasalt.sa/عقارات-للايجار-في-جدة?page=19"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-المنار": {
+  "n": 14,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-المنار",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-المنار?page=10",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-المنار?page=11",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-المنار?page=14"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-النعيم": {
+  "n": 14,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-النعيم",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-النعيم?page=10",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-النعيم?page=11",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-النعيم?page=18"
+  ]
+ },
+ "/en/apartments-for-rent-in-jeddah": {
+  "n": 14,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-rent-in-jeddah",
+   "https://wasalt.sa/en/apartments-for-rent-in-jeddah?page=10",
+   "https://wasalt.sa/en/apartments-for-rent-in-jeddah?page=11",
+   "https://wasalt.sa/en/apartments-for-rent-in-jeddah?page=14"
+  ]
+ },
+ "/en/project/Madinah": {
+  "n": 14,
+  "examples": [
+   "https://wasalt.sa/en/project/Madinah/مشروع-بدر-2-فلل-للبيع-100277",
+   "https://wasalt.sa/en/project/Madinah/مشروع-سكب-شقق-للبيع-100245",
+   "https://wasalt.sa/en/project/Madinah/مشروع-سكب-شقق-للبيع-100245/apartment-124-sqm-with-2-bedrooms-239678",
+   "https://wasalt.sa/en/project/Madinah/مشروع-سكب-شقق-للبيع-100245/apartment-169-sqm-with-3-bedrooms-239680"
+  ]
+ },
+ "/en/properties-for-sale-in-east-riyadh-al-munisiyah": {
+  "n": 14,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-east-riyadh-al-munisiyah",
+   "https://wasalt.sa/en/properties-for-sale-in-east-riyadh-al-munisiyah?page=12",
+   "https://wasalt.sa/en/properties-for-sale-in-east-riyadh-al-munisiyah?page=17",
+   "https://wasalt.sa/en/properties-for-sale-in-east-riyadh-al-munisiyah?page=2"
+  ]
+ },
+ "/en/properties-for-sale-in-jeddah-al-manar": {
+  "n": 14,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-al-manar",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-al-manar?page=13",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-al-manar?page=14",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-al-manar?page=15"
+  ]
+ },
+ "/en/properties-for-sale-in-jeddah-as-swaryee": {
+  "n": 14,
+  "examples": [
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-as-swaryee",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-as-swaryee?page=10",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-as-swaryee?page=11",
+   "https://wasalt.sa/en/properties-for-sale-in-jeddah-as-swaryee?page=12"
+  ]
+ },
+ "/شقق-للبيع-جدة-حى-الروضة": {
+  "n": 13,
+  "examples": [
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الروضة",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الروضة?page=13",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الروضة?page=14",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الروضة?page=16"
+  ]
+ },
+ "/شقق-للبيع-جدة-حى-الريان": {
+  "n": 13,
+  "examples": [
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الريان",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الريان?page=10",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الريان?page=11",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الريان?page=12"
+  ]
+ },
+ "/شقق-للبيع-جدة-حى-الفيحاء": {
+  "n": 13,
+  "examples": [
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الفيحاء",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الفيحاء?page=13",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الفيحاء?page=14",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-الفيحاء?page=21"
+  ]
+ },
+ "/شقق-للبيع-جدة-حى-المنار": {
+  "n": 13,
+  "examples": [
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-المنار",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-المنار?page=10",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-المنار?page=12",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-المنار?page=14"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-الرياض": {
+  "n": 13,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الرياض",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الرياض?page=10",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الرياض?page=11",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الرياض?page=12"
+  ]
+ },
+ "/en/apartments-for-sale-in-jeddah-ar-rawdah": {
+  "n": 13,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-ar-rawdah",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-ar-rawdah?page=12",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-ar-rawdah?page=14",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-ar-rawdah?page=18"
+  ]
+ },
+ "/شقق-للبيع-جدة-حى-النعيم": {
+  "n": 12,
+  "examples": [
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-النعيم",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-النعيم?page=10",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-النعيم?page=13",
+   "https://wasalt.sa/شقق-للبيع-جدة-حى-النعيم?page=15"
+  ]
+ },
+ "/عقارات-للبيع-جدة-حى-الرحمانية": {
+  "n": 12,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الرحمانية",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الرحمانية?page=10",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الرحمانية?page=11",
+   "https://wasalt.sa/عقارات-للبيع-جدة-حى-الرحمانية?page=12"
+  ]
+ },
+ "/عقارات-للبيع-فى-غرب-الرياض-حى-طويق": {
+  "n": 12,
+  "examples": [
+   "https://wasalt.sa/عقارات-للبيع-فى-غرب-الرياض-حى-طويق",
+   "https://wasalt.sa/عقارات-للبيع-فى-غرب-الرياض-حى-طويق?page=10",
+   "https://wasalt.sa/عقارات-للبيع-فى-غرب-الرياض-حى-طويق?page=11",
+   "https://wasalt.sa/عقارات-للبيع-فى-غرب-الرياض-حى-طويق?page=12"
+  ]
+ },
+ "/en/apartments-for-sale-in-dammam": {
+  "n": 12,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-sale-in-dammam",
+   "https://wasalt.sa/en/apartments-for-sale-in-dammam?page=12",
+   "https://wasalt.sa/en/apartments-for-sale-in-dammam?page=14",
+   "https://wasalt.sa/en/apartments-for-sale-in-dammam?page=17"
+  ]
+ },
+ "/en/apartments-for-sale-in-jeddah-an-naim": {
+  "n": 12,
+  "examples": [
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-an-naim",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-an-naim?page=10",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-an-naim?page=11",
+   "https://wasalt.sa/en/apartments-for-sale-in-jeddah-an-naim?page=18"
+  ]
+ }
+}

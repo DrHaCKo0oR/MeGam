@@ -1,0 +1,284 @@
+{
+ "wasalt_cdx": {
+  "status": 200,
+  "rows": 30000
+ },
+ "wasalt-rent-property": [
+  {
+   "ts": "20261009182630",
+   "url": "https://wasalt.sa/property/rent/شقة-280-متر-مربع-ب-3-غرف-5946174",
+   "status": 200,
+   "len": 319015,
+   "next_data": true,
+   "title": "شقة 280 متر مربع ب 3 غرف للايجار",
+   "blocked": false
+  },
+  {
+   "ts": "20260617013226",
+   "url": "https://wasalt.sa/property/rent/شقة-بغرفتين-5874806",
+   "status": 200,
+   "len": 395586,
+   "next_data": true,
+   "title": "شقة بغرفتين للايجار",
+   "blocked": false
+  }
+ ],
+ "wasalt-rent-list": [
+  {
+   "ts": "20260617013702",
+   "url": "https://wasalt.sa/استراحات-للايجار-اليومي-فى-غرب-الرياض-حى-الفاخرية",
+   "status": 200,
+   "len": 231002,
+   "next_data": true,
+   "title": "استراحات للايجار اليومي حى الفاخرية الرياض",
+   "blocked": false
+  },
+  {
+   "ts": "20260617013624",
+   "url": "https://wasalt.sa/en/rest-houses-for-daily-rental-in-central-riyadh-jabrah",
+   "status": 200,
+   "len": 243955,
+   "next_data": true,
+   "title": "Rest houses for Daily Rentals in Jabrah",
+   "blocked": false
+  }
+ ],
+ "bayut_cdx": {
+  "status": 200,
+  "rows": 6255
+ },
+ "bayut-filtered": [
+  {
+   "ts": "20250805201159",
+   "url": "https://www.bayut.sa/en/to-rent/apartments/al-majmaah-riyadh-region/?furnishing_status=furnished",
+   "status": 200,
+   "title": "Furnished Apartments for Rent in Al Majmaah Riyadh Region | Bayut KSA",
+   "blocked": false,
+   "params": {
+    "purpose": "for-rent",
+    "category": "apartments",
+    "categories": [],
+    "locations": [
+     {
+      "slug": "/al-majmaah-riyadh-region"
+     }
+    ],
+    "locationData": [
+     {
+      "id": 25,
+      "name": "Al Majmaah Riyadh Region",
+      "name_l1": "المجمعة منطقة الرياض",
+      "externalID": "148",
+      "slug": "/al-majmaah-riyadh-region",
+      "slug_l1": "/المجمعة-منطقة-الرياض",
+      "_geoloc": {
+       "lat": 25.90908333,
+       "lng": 45.34766667
+      },
+      "geography": {
+       "lat": 25.90908333,
+       "lng": 45.34766667
+      },
+      "geo_point": [
+       45.34766667,
+       25.90908333
+      ],
+      "level": 1,
+      "hierarchy": [
+       {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name": "KSA",
+        "name_l1": "السعودية",
+        "slug": "/ksa",
+        "slug_l1": "/السعودية"
+       },
+       {
+        "id": 25,
+        "level": 1,
+        "externalID": "148",
+        "name": "Al Majmaah Riyadh Region",
+        "name_l1": "المجمعة منطقة الرياض",
+        "slug": "/al-majmaah-riyadh-region",
+        "slug_l1": "/المجمعة-منطقة-الرياض"
+       }
+      ],
+      "adCount": 19,
+      "aliases": [],
+      "type": null,
+      "hasBuilding": false,
+      "trackID": null,
+      "roles": null,
+      "completionStatus": "completed",
+      "hasChildren": true,
+      "objectID": "25"
+     }
+    ],
+    "agencies": [],
+    "developers": [],
+    "agents": [],
+    "excludeAgencies": null,
+    "page": 1,
+    "rentFrequency": "any",
+    "price": null,
+    "downPayment": null,
+    "area": null,
+    "beds": [],
+    "baths": [],
+    "keywords": [],
+    "amenities": [],
+    "city": null,
+    "videoCount": null,
+    "photoCount": null,
+    "occupancyStatus": null,
+    "ownershipStatus": null,
+    "isVerified": null,
+    "propertyTour": null,
+    "paymentType": null,
+    "timeSinceCreation": null,
+    "agencySlug": null,
+    "agencyTier": null,
+    "productType": [],
+    "completionStatus": null,
+    "furnishingStatus": "furnished",
+    "saleType": null,
+    "residenceType": null,
+    "commute": null,
+    "panoramaCount": null,
+    "hasFloorPlan": null,
+    "listingType": null,
+    "completionPercentage": null,
+    "preHandoverPayment": null,
+    "handoverDate": null,
+    "isAreaPage": false,
+    "isBedroomPage": false,
+    "isCustomPage": false,
+    "areaPageUnit": null,
+    "areaPageValue": null,
+    "basePath": null,
+    "breadcrumbLeafText": null,
+    "pagetype": null,
+    "fallbackIndexActive": false,
+    "utm_source": null,
+    "utm_medium": null,
+    "utm_campaign": null,
+    "utm_term": null,
+    "utm_content": null,
+    "gclid": null,
+    "wbraid": null,
+    "custom_traffic_source": null,
+    "agentSlug": null,
+    "activeTab": null,
+    "mapActive": false,
+    "clusterId": null,
+    "mapZoom": null,
+    "mapCenterLat": null,
+    "mapCenterLong": null,
+    "mapView": null,
+    "commuteActive": false,
+    "commuteMaxTime": 30,
+    "commuteSortBy": "balanced",
+    "pinnedListingId": null,
+    "agentAnalytics": {
+     "searchHash": null,
+     "focusedListing": null
+    },
+    "unknownParams": {}
+   }
+  }
+ ],
+ "bayut-rent-detail-en": [
+  {
+   "cdx": 200,
+   "rows": 300
+  },
+  {
+   "ts": "20260713010935",
+   "title": "Apartment in Al Hazm, West Riyadh at 580,000 - 13 Photos - 87995249 | Bayut KSA",
+   "purpose": "for-sale",
+   "where": [
+    "KSA",
+    "Riyadh",
+    "West Riyadh",
+    "Al Hazm"
+   ]
+  },
+  {
+   "ts": "20260713010751",
+   "title": "Apartment in Al Salamah, North Jeddah at 579,000 - 23 Photos - 87997149 | Bayut KSA",
+   "purpose": "for-sale",
+   "where": [
+    "KSA",
+    "Jeddah",
+    "North Jeddah",
+    "Al Salamah"
+   ]
+  },
+  {
+   "ts": "20260713010445",
+   "title": "Apartment in Ghirnatah, Khamis Mushait at 650,000 - 16 Photos - 88004814 | Bayut KSA",
+   "purpose": "for-sale",
+   "where": [
+    "KSA",
+    "Khamis Mushait",
+    "Ghirnatah"
+   ]
+  },
+  {
+   "ts": "20260713010252",
+   "title": "Floor in Al Narjis, North Riyadh at 110,000 -- 21 Photos - 88001416 | Bayut KSA",
+   "purpose": "for-rent",
+   "where": [
+    "KSA",
+    "Riyadh",
+    "North Riyadh",
+    "Al Narjis"
+   ]
+  }
+ ],
+ "bayut-rent-detail-ar": [
+  {
+   "cdx": 200,
+   "rows": 0
+  }
+ ],
+ "photos": [
+  {
+   "url": "https://images.bayut.sa/thumbnails/9587649-800x600.jpeg",
+   "status": 200,
+   "type": "image/jpeg",
+   "len": 19270
+  },
+  {
+   "url": "https://images.bayut.sa/thumbnails/9587649-800x600.webp",
+   "status": 200,
+   "type": "image/webp",
+   "len": 11122
+  },
+  {
+   "url": "https://cdn.wasalt.sa/images/ms-icon-144x144.png",
+   "status": 200,
+   "type": "image/png",
+   "len": 2913
+  },
+  {
+   "url": "https://cdn.wasalt.sa/images/apple-touch-icon-180.png",
+   "status": 200,
+   "type": "image/png",
+   "len": 10780
+  },
+  {
+   "url": "https://cdn.wasalt.sa/images/ms-icon-144x144.png",
+   "status": 200,
+   "type": "image/png",
+   "len": 2913
+  },
+  {
+   "url": "https://cdn.wasalt.sa/images/apple-touch-icon-180.png",
+   "status": 200,
+   "type": "image/png",
+   "len": 10780
+  }
+ ]
+}
