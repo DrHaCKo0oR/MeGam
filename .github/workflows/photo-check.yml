@@ -31,34 +31,36 @@ jobs:
       ANDROID_SDK_ROOT: ""
       PER_RUN: ${{ vars.PHOTO_CHECKS_PER_RUN || '10' }}
     steps:
+      - uses: actions/checkout@v4
       - name: Subscription token
         id: token
         env:
           TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: |
-          if [ -z "$TOKEN" ]; then
-            echo "::notice::Photo checks are off: add the CLAUDE_CODE_OAUTH_TOKEN secret (from 'claude setup-token')."
-            echo "ready=false" >> "$GITHUB_OUTPUT"
+          # DRY_RUN=1 in photo-check/REQUEST runs everything except asking Claude, to test the steps.
+          dry=false; grep -q '^DRY_RUN=1' photo-check/REQUEST 2>/dev/null && [ "$GITHUB_EVENT_NAME" = push ] && dry=true
+          echo "dry=$dry" >> "$GITHUB_OUTPUT"
+          if [ -n "$TOKEN" ] && [ "$dry" = false ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"; echo "work=true" >> "$GITHUB_OUTPUT"
           else
-            echo "ready=true" >> "$GITHUB_OUTPUT"
+            [ -z "$TOKEN" ] && echo "::notice::Photo checks are off: add the CLAUDE_CODE_OAUTH_TOKEN secret (from 'claude setup-token')."
+            echo "ready=false" >> "$GITHUB_OUTPUT"; echo "work=$dry" >> "$GITHUB_OUTPUT"
           fi
-      - uses: actions/checkout@v4
-        if: steps.token.outputs.ready == 'true'
       - uses: actions/setup-java@v4
-        if: steps.token.outputs.ready == 'true'
+        if: steps.token.outputs.work == 'true'
         with:
           distribution: temurin
           java-version: "21"
       - uses: gradle/actions/setup-gradle@v4
-        if: steps.token.outputs.ready == 'true'
+        if: steps.token.outputs.work == 'true'
       - name: Pick apartments and fetch their photos
-        if: steps.token.outputs.ready == 'true'
+        if: steps.token.outputs.work == 'true'
         env:
           SHAQATI_WORK: ${{ secrets.SHAQATI_WORK }}
           SHAQATI_MAX_RENT: ${{ vars.SHAQATI_MAX_RENT }}
         run: ./gradlew -q :tools:run --args="queue $PWD/build/photo-queue $PWD/photo-results/assessments.json $PER_RUN"
       - name: Convert photos to JPEG
-        if: steps.token.outputs.ready == 'true'
+        if: steps.token.outputs.work == 'true'
         run: |
           sudo apt-get install -y -qq imagemagick webp > /dev/null
           for f in build/photo-queue/*/photo-*.*; do
@@ -73,12 +75,23 @@ jobs:
           done
           ls -la build/photo-queue/* | head -60
       - uses: actions/setup-node@v4
-        if: steps.token.outputs.ready == 'true'
+        if: steps.token.outputs.work == 'true'
         with:
           node-version: "22"
       - name: Install Claude Code
-        if: steps.token.outputs.ready == 'true'
+        if: steps.token.outputs.work == 'true'
         run: npm install -g @anthropic-ai/claude-code
+      - name: Dry run (no Claude call)
+        if: steps.token.outputs.dry == 'true'
+        env:
+          ANTHROPIC_API_KEY: ""
+        run: |
+          claude --version
+          # Without a token this must fail on sign-in, not on the options.
+          first="$(ls -d build/photo-queue/*/ | head -1)"
+          (cd "$first" && timeout 120 claude -p "$(cat question.txt)" --model sonnet --permission-mode dontAsk \
+              --allowedTools Read --max-turns 2 --output-format json --json-schema "$(cat ../schema.json)") || true
+          for d in build/photo-queue/*/; do echo "$d: $(ls "$d" | tr '\n' ' ')"; head -c 400 "$d/ad.txt"; echo; done
       - name: Ask Claude Code about each apartment
         if: steps.token.outputs.ready == 'true'
         env:
